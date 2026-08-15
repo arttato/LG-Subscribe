@@ -1,0 +1,466 @@
+{
+  "products": [
+    {
+      "code": "WD110MN.ABGPLMT",
+      "page": 3,
+      "title": "บริการดูแลเครื่องกรองน้ำ"
+    },
+    {
+      "code": "WD516",
+      "page": 3,
+      "title": "บริการดูแลเครื่องกรองน้ำ"
+    },
+    {
+      "code": "WD518",
+      "page": 3,
+      "title": "บริการดูแลเครื่องกรองน้ำ"
+    },
+    {
+      "code": "F2520RNTB.AEBPETH",
+      "page": 10,
+      "title": "บริการดูแลเครื่องซักผ้าฝาหน้า"
+    },
+    {
+      "code": "FV1409H4W.ABWPETH",
+      "page": 10,
+      "title": "บริการดูแลเครื่องซักผ้าฝาหน้า"
+    },
+    {
+      "code": "FV1413H4M.AMBPETH",
+      "page": 10,
+      "title": "บริการดูแลเครื่องซักผ้าฝาหน้า"
+    },
+    {
+      "code": "FV1413S4M.AMBPETH",
+      "page": 10,
+      "title": "บริการดูแลเครื่องซักผ้าฝาหน้า"
+    },
+    {
+      "code": "TX2315DT5G.DEGPETH",
+      "page": 11,
+      "title": "บริการดูแลเครื่องซักผ้าฝาบน"
+    },
+    {
+      "code": "TX2723ST5J.APBPETH",
+      "page": 11,
+      "title": "บริการดูแลเครื่องซักผ้าฝาบน"
+    },
+    {
+      "code": "A9T-CORE.DCGPETH",
+      "page": 15,
+      "title": "บริการดูแลเครื่องดูดฝุ่น"
+    },
+    {
+      "code": "A9T-LITE.DCGPETH",
+      "page": 15,
+      "title": "บริการดูแลเครื่องดูดฝุ่น"
+    },
+    {
+      "code": "A9T-ULTRA.DCBPETH",
+      "page": 15,
+      "title": "บริการดูแลเครื่องดูดฝุ่น"
+    },
+    {
+      "code": "ART13A.SR1",
+      "page": 24,
+      "title": "บริการดูแลเครื่องปรับอากาศ"
+    },
+    {
+      "code": "ART18A.SR1",
+      "page": 24,
+      "title": "บริการดูแลเครื่องปรับอากาศ"
+    },
+    {
+      "code": "IXY11A",
+      "page": 24,
+      "title": "บริการดูแลเครื่องปรับอากาศ"
+    },
+    {
+      "code": "IXY13A",
+      "page": 24,
+      "title": "บริการดูแลเครื่องปรับอากาศ"
+    },
+    {
+      "code": "IXY18A",
+      "page": 24,
+      "title": "บริการดูแลเครื่องปรับอากาศ"
+    },
+    {
+      "code": "IXY24A",
+      "page": 24,
+      "title": "บริการดูแลเครื่องปรับอากาศ"
+    },
+    {
+      "code": "SAQ11A",
+      "page": 24,
+      "title": "บริการดูแลเครื่องปรับอากาศ"
+    },
+    {
+      "code": "SAQ13A",
+      "page": 24,
+      "title": "บริการดูแลเครื่องปรับอากาศ"
+    },
+    {
+      "code": "SAQ18B",
+      "page": 24,
+      "title": "บริการดูแลเครื่องปรับอากาศ"
+    },
+    {
+      "code": "SAQ24B",
+      "page": 24,
+      "title": "บริการดูแลเครื่องปรับอากาศ"
+    },
+    {
+      "code": "SIQ11B",
+      "page": 24,
+      "title": "บริการดูแลเครื่องปรับอากาศ"
+    },
+    {
+      "code": "SIQ13B",
+      "page": 24,
+      "title": "บริการดูแลเครื่องปรับอากาศ"
+    },
+    {
+      "code": "SIQ18B",
+      "page": 24,
+      "title": "บริการดูแลเครื่องปรับอากาศ"
+    },
+    {
+      "code": "SIQ24B",
+      "page": 24,
+      "title": "บริการดูแลเครื่องปรับอากาศ"
+    },
+    {
+      "code": "ZT1Q12GULA1.EWGHATH",
+      "page": 25,
+      "title": "บริการดูแลเครื่องปรับอากาศเชิงพาณิชย์"
+    },
+    {
+      "code": "ZT1Q18GTLA1.EWGHATH",
+      "page": 25,
+      "title": "บริการดูแลเครื่องปรับอากาศเชิงพาณิชย์"
+    },
+    {
+      "code": "ZT1Q24GTLA1.EWGHATH",
+      "page": 25,
+      "title": "บริการดูแลเครื่องปรับอากาศเชิงพาณิชย์"
+    },
+    {
+      "code": "ZT4Q18GPLA1.EWGHATH",
+      "page": 25,
+      "title": "บริการดูแลเครื่องปรับอากาศเชิงพาณิชย์"
+    },
+    {
+      "code": "ZT4Q24GPLA1.EWGHATH",
+      "page": 25,
+      "title": "บริการดูแลเครื่องปรับอากาศเชิงพาณิชย์"
+    },
+    {
+      "code": "ZT4Q36GNLA1.EWGHATH",
+      "page": 25,
+      "title": "บริการดูแลเครื่องปรับอากาศเชิงพาณิชย์"
+    },
+    {
+      "code": "ZT4Q48GMLA1.EWGHATH",
+      "page": 25,
+      "title": "บริการดูแลเครื่องปรับอากาศเชิงพาณิชย์"
+    },
+    {
+      "code": "ZTRQ36GYLA1.EWGHATH",
+      "page": 25,
+      "title": "บริการดูแลเครื่องปรับอากาศเชิงพาณิชย์"
+    },
+    {
+      "code": "ZTRQ48GYLA1.EWGHATH",
+      "page": 25,
+      "title": "บริการดูแลเครื่องปรับอากาศเชิงพาณิชย์"
+    },
+    {
+      "code": "AS10GDBY0.ABAE",
+      "page": 17,
+      "title": "บริการดูแลเครื่องฟอกอากาศ"
+    },
+    {
+      "code": "AS25GCBY0.ABAE",
+      "page": 19,
+      "title": "บริการดูแลเครื่องฟอกอากาศ"
+    },
+    {
+      "code": "AS35GGW10.ATH",
+      "page": 18,
+      "title": "บริการดูแลเครื่องฟอกอากาศ"
+    },
+    {
+      "code": "AS60GHWG0.ABAE",
+      "page": 17,
+      "title": "บริการดูแลเครื่องฟอกอากาศ"
+    },
+    {
+      "code": "AS65GDBY0.ABAE",
+      "page": 17,
+      "title": "บริการดูแลเครื่องฟอกอากาศ"
+    },
+    {
+      "code": "DD23GMWE1S.ATH",
+      "page": 22,
+      "title": "บริการดูแลเครื่องลดความชื้น"
+    },
+    {
+      "code": "MD19GQGA1.ATH",
+      "page": 22,
+      "title": "บริการดูแลเครื่องลดความชื้น"
+    },
+    {
+      "code": "DFC335HM.ABMPETH",
+      "page": 23,
+      "title": "บริการดูแลเครื่องล้างจาน"
+    },
+    {
+      "code": "DFC533FV.APYPETH",
+      "page": 23,
+      "title": "บริการดูแลเครื่องล้างจาน"
+    },
+    {
+      "code": "RV10VHP2B.BBLPETH",
+      "page": 12,
+      "title": "บริการดูแลเครื่องอบผ้า"
+    },
+    {
+      "code": "S3MFC.ALBPETH",
+      "page": 14,
+      "title": "บริการดูแลตู้ถนอมผ้า"
+    },
+    {
+      "code": "GN-F392PQAK.AEPPLM1",
+      "page": 5,
+      "title": "บริการดูแลตู้เย็น"
+    },
+    {
+      "code": "GN-F452PQAK.AEPPLMT",
+      "page": 5,
+      "title": "บริการดูแลตู้เย็น"
+    },
+    {
+      "code": "GN-V389FQEF.AEPPLMT",
+      "page": 5,
+      "title": "บริการดูแลตู้เย็น"
+    },
+    {
+      "code": "GC-B48FPGAM.ADBPLMT",
+      "page": 5,
+      "title": "บริการดูแลตู้เย็น"
+    },
+    {
+      "code": "GC-G24FFQKB.AEEPLM1",
+      "page": 5,
+      "title": "บริการดูแลตู้เย็น"
+    },
+    {
+      "code": "GC-L24FFCBB.AEVPLM1",
+      "page": 6,
+      "title": "บริการดูแลตู้เย็นระบบต่อท่อน้ำ พร้อมชุดกรองน้ำ"
+    },
+    {
+      "code": "GC-V22FFQMB.AEPPLMT",
+      "page": 5,
+      "title": "บริการดูแลตู้เย็น"
+    },
+    {
+      "code": "GV-B25FFGDB.ABMPLMT",
+      "page": 5,
+      "title": "บริการดูแลตู้เย็น"
+    },
+    {
+      "code": "GV-V25FFGRB.ABMPLMT",
+      "page": 5,
+      "title": "บริการดูแลตู้เย็น"
+    },
+    {
+      "code": "GC-B257SQYL.AMCPLMT",
+      "page": 5,
+      "title": "บริการดูแลตู้เย็น"
+    },
+    {
+      "code": "GC-J257SQZW.AEPPLMT",
+      "page": 5,
+      "title": "บริการดูแลตู้เย็น"
+    },
+    {
+      "code": "GC-L257KQKW.AEPPLMT",
+      "page": 5,
+      "title": "บริการดูแลตู้เย็น"
+    },
+    {
+      "code": "GC-L257SFZW.APYPLMT",
+      "page": 5,
+      "title": "บริการดูแลตู้เย็น"
+    },
+    {
+      "code": "GC-X257CMEW.ATEPLMT",
+      "page": 5,
+      "title": "บริการดูแลตู้เย็น"
+    },
+    {
+      "code": "GC-X257CMHW.AEEPLMT",
+      "page": 6,
+      "title": "บริการดูแลตู้เย็นระบบต่อท่อน้ำ พร้อมชุดกรองน้ำ"
+    },
+    {
+      "code": "100MRGB96BS.ATM",
+      "page": null,
+      "title": null
+    },
+    {
+      "code": "100QNED86BS.ATM",
+      "page": null,
+      "title": null
+    },
+    {
+      "code": "27LX6TDGA.ATM",
+      "page": null,
+      "title": null
+    },
+    {
+      "code": "32LX6BDGA.ATM",
+      "page": null,
+      "title": null
+    },
+    {
+      "code": "55QNED80BSA.ATM",
+      "page": null,
+      "title": null
+    },
+    {
+      "code": "65NU855BPSA.ATM",
+      "page": null,
+      "title": null
+    },
+    {
+      "code": "65QNED80BSA.ATM",
+      "page": null,
+      "title": null
+    },
+    {
+      "code": "75NU855BPSA.ATM",
+      "page": null,
+      "title": null
+    },
+    {
+      "code": "75QNED86BSA.ATM",
+      "page": null,
+      "title": null
+    },
+    {
+      "code": "85QNED80BSA.ATM",
+      "page": null,
+      "title": null
+    },
+    {
+      "code": "OLED48C6PSA.ATM",
+      "page": null,
+      "title": null
+    },
+    {
+      "code": "OLED55C6PSA.ATM",
+      "page": null,
+      "title": null
+    },
+    {
+      "code": "OLED65C6PSA.ATM",
+      "page": null,
+      "title": null
+    },
+    {
+      "code": "OLED77C6PSA.ATM",
+      "page": null,
+      "title": null
+    },
+    {
+      "code": "27GX704A-B.ATM",
+      "page": null,
+      "title": null
+    },
+    {
+      "code": "32U889SA-W.ATM",
+      "page": null,
+      "title": null
+    },
+    {
+      "code": "34U650A-B.ATM",
+      "page": null,
+      "title": null
+    },
+    {
+      "code": "40U990A-W.ATM",
+      "page": null,
+      "title": null
+    },
+    {
+      "code": "45GX950A-B.ATM",
+      "page": null,
+      "title": null
+    },
+    {
+      "code": "52G930B-B.ATM",
+      "page": null,
+      "title": null
+    },
+    {
+      "code": "MS3032JAS.BBKPETH",
+      "page": null,
+      "title": null
+    },
+    {
+      "code": "S70TY.ATHALLD",
+      "page": null,
+      "title": null
+    },
+    {
+      "code": "S95TR.DTHALLK",
+      "page": null,
+      "title": null
+    },
+    {
+      "code": "XBOOM-BOUNCE",
+      "page": null,
+      "title": null
+    },
+    {
+      "code": "XBOOM-GRAB",
+      "page": null,
+      "title": null
+    },
+    {
+      "code": "XBOOM-STAGE301",
+      "page": null,
+      "title": null
+    },
+    {
+      "code": "WT1410NHEG.ABGPQTH",
+      "page": 9,
+      "title": "บริการดูแลเครื่องซักผ้าและเครื่องอบผ้า"
+    },
+    {
+      "code": "WT1410NHEN.ABNPQTH",
+      "page": 9,
+      "title": "บริการดูแลเครื่องซักผ้าและเครื่องอบผ้า"
+    },
+    {
+      "code": "WT2116SHEG.ABGPETH",
+      "page": 9,
+      "title": "บริการดูแลเครื่องซักผ้าและเครื่องอบผ้า"
+    },
+    {
+      "code": "WT2520NHEG.ABGPETH",
+      "page": 9,
+      "title": "บริการดูแลเครื่องซักผ้าและเครื่องอบผ้า"
+    },
+    {
+      "code": "WT2520NHEN.ABNPETH",
+      "page": 9,
+      "title": "บริการดูแลเครื่องซักผ้าและเครื่องอบผ้า"
+    }
+  ],
+  "source": "Care Service 2026.pdf",
+  "note": "page = หน้าที่ render ใน public/img/care/care-NN.png"
+}

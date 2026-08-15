@@ -5,6 +5,7 @@ import data from '../../data/products.json';
 import lgSpecs from '../../data/lg-specs.json';
 import lgGallery from '../../data/lg-gallery.json';
 import pdfSpecs from '../../data/pdf-specs.json';
+import careData from '../../data/care.json';
 import { slugify } from '../../lib/utils';
 
 export function getStaticPaths() {
@@ -36,6 +37,8 @@ else {
   }
 }
 const gallery = lgGallery.products.find((s) => s.code === p.code);
+const care = careData.products.find((s) => s.code === p.code);
+const careImg = care && care.page ? `${base}img/care/care-${String(care.page).padStart(2, '0')}.png` : null;
 
 // ── แผนการชำระเงิน (ทดลอง WD516) — คำนวณใน frontmatter (JS ล้วน ไม่ผ่าน expression slot ของ Astro) ──
 const planCards = (() => {
@@ -294,6 +297,18 @@ const planCards = (() => {
             {specFromPdf ? 'ข้อมูลจากเอกสาร PDF ราคา (คอลัมน์รายการสินค้า)' : (
               <>ข้อมูลจาก <a href={spec.url} target="_blank" rel="noopener">เว็บ LG Thailand</a></>
             )}
+          </div>
+        </section>
+      )}
+
+      {careImg && (
+        <section class="care">
+          <h2 class="care-title">บริการดูแลจากผู้เชี่ยวชาญ LG</h2>
+          <div class="care-body">
+            <img class="care-img" src={careImg} alt={care.title || 'บริการดูแล'} loading="lazy" />
+            <p class="care-caption">
+              {care.title || 'บริการดูแล'} — ตามเอกสาร <b>Care Service 2026</b> สำหรับลูกค้า Subscribe
+            </p>
           </div>
         </section>
       )}

@@ -76,6 +76,18 @@ npm run pdfspecs
 - เขียน `src/data/pdf-specs.json` แล้ว commit — หน้า detail แสดงเป็นกลุ่ม "สเปคจากเอกสาร" พร้อมข้อความบอกที่มา
 - ครอบคลุมทุกรุ่นที่เหลือ → สินค้า**ทุกตัว (91/91) มีสเปค** (84 จากเว็บ LG + 7 จาก PDF)
 
+### รูปบริการดูแล (Care Service 2026.pdf)
+
+หน้า detail ของสินค้าเครื่องใช้ไฟฟ้าแสดงหัวข้อ "บริการดูแลจากผู้เชี่ยวชาญ LG" พร้อมรูปหน้าบริการดูแลที่ตรงกับหมวดของสินค้า (เครื่องกรองน้ำ ตู้เย็น เครื่องซักผ้า/อบผ้า แอร์ ฟอกอากาศ ฯลฯ):
+
+```bash
+npm run care
+```
+
+- เรนเดอร์หน้า 3-25 ของ `Care Service 2026.pdf` → `public/img/care/care-NN.png` (ใช้ `mupdf` WASM — `pdf.js` render + `@napi-rs/canvas` เครชบน Node 24)
+- จับคู่สินค้า 66/92 รายการกับหน้าที่ตรงกัน (ทีวี/จอ/ไมโครเวฟ/Sound bar — PDF ไม่มีหน้าบริการดูแล) → `src/data/care.json` แล้ว commit
+- ตู้เย็นรุ่นต่อท่อน้ำพร้อมชุดกรองน้ำ (GC-X257CMHW, GC-L24FFCBB) ใช้หน้าพิเศษ (หน้า 6)
+
 ### ตรวจสอบราคากับ PDF ต้นฉบับ
 
 เทียบราคา policy ของทุกสินค้าใน `products.json` กับแถวราคาจริงใน PDF (จำลองการจับคู่แบบเดียวกับ `extract`):
@@ -191,6 +203,7 @@ npm run specs && npm run gallery && npm run banners
 | `npm run pdfspecs` | ดึงสเปคย่อของรุ่นที่ LG ไม่มีหน้าจาก PDF → `src/data/pdf-specs.json` (ต้อง commit) |
 | `npm run gallery` | ดึง URL รูปหลายมุมจากเว็บ LG → `src/data/lg-gallery.json` (ต้อง commit) |
 | `npm run banners` | ดึง banner โปรโมชันหน้า LG Subscribe → `public/img/banners/` + `src/data/banners.json` (ต้อง commit) |
+| `npm run care` | เรนเดอร์รูปบริการดูแลจาก `Care Service 2026.pdf` → `public/img/care/` + จับคู่สินค้า → `src/data/care.json` (ต้อง commit) |
 
 ### หมายเหตุ banner โปรโมชัน (หน้าแรก)
 

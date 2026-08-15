@@ -9,6 +9,7 @@
     "images": "node scripts/extract-images.mjs",
     "specs": "node scripts/fetch-lg-specs.mjs",
     "pdfspecs": "node scripts/extract-pdf-specs.mjs",
+    "care": "node scripts/extract-care.mjs",
     "gallery": "node scripts/fetch-lg-gallery.mjs",
     "gallery2": "node scripts/fill-missing-galleries.mjs",
     "gallery3": "node scripts/refetch-missing.mjs",
@@ -32,6 +33,7 @@
   },
   "devDependencies": {
     "@napi-rs/canvas": "^1.0.6",
+    "mupdf": "^1.28.0",
     "tesseract.js": "^7.0.0"
   }
 }
