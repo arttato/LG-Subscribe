@@ -1,0 +1,185 @@
+{
+  "source": "PDF ราคา (คอลัมน์รายการสินค้า)",
+  "products": [
+    {
+      "code": "FV1413H4M.AMBPETH",
+      "slug": "fv1413h4m-ambpeth",
+      "source": "Price list_Aug_V3.pdf",
+      "page": 19,
+      "specs": [
+        {
+          "name": "ความจุ (ซัก/อบ)",
+          "value": "13 / 8 กก."
+        },
+        {
+          "name": "การรับประกัน",
+          "value": "มอเตอร์ 10 ปี"
+        },
+        {
+          "name": "ขนาดผลิตภัณฑ์ (กว้างxสูงxลึก มม.)",
+          "value": "600x850x615"
+        }
+      ]
+    },
+    {
+      "code": "ZT4Q24GPLA1.EWGHATH",
+      "slug": "zt4q24gpla1-ewghath",
+      "source": "Price list_Aug_V3.pdf",
+      "page": 38,
+      "specs": [
+        {
+          "name": "ความเย็น (Btu)",
+          "value": "24,500"
+        },
+        {
+          "name": "ประเภทเครื่อง",
+          "value": "แอร์แบบ 4 ทิศทาง (คาสเซ็ท)"
+        },
+        {
+          "name": "ขนาดตัวเครื่องภายในอาคาร (กว้างxสูงxลึก มม.)",
+          "value": "840x204x840"
+        },
+        {
+          "name": "ขนาดตัวเครื่องภายนอกอาคาร (กว้างxสูงxลึก มม.)",
+          "value": "870x650x330"
+        },
+        {
+          "name": "มาตรฐานประหยัดไฟ",
+          "value": "เบอร์ 5"
+        }
+      ]
+    },
+    {
+      "code": "WT1410NHEN.ABNPQTH",
+      "slug": "wt1410nhen-abnpqth",
+      "source": "Price list_Aug_V3.pdf",
+      "page": 17,
+      "specs": [
+        {
+          "name": "สี",
+          "value": "Navy/Beige"
+        },
+        {
+          "name": "การรับประกัน",
+          "value": "มอเตอร์และคอมเพรสเซอร์ 10 ปี"
+        },
+        {
+          "name": "ขนาดผลิตภัณฑ์ (กว้างxสูงxลึก มม.)",
+          "value": "600x1655x660"
+        }
+      ]
+    },
+    {
+      "code": "IXY11A",
+      "slug": "ixy11a",
+      "source": "Sale Price8 - Subscription_V3.pdf",
+      "page": 7,
+      "specs": [
+        {
+          "name": "ความเย็น (Btu)",
+          "value": "9,212"
+        },
+        {
+          "name": "ขนาดตัวเครื่องภายในอาคาร (กว้างxสูงxลึก มม.)",
+          "value": "837x308x189"
+        },
+        {
+          "name": "ขนาดตัวเครื่องภายนอกอาคาร (กว้างxสูงxลึก มม.)",
+          "value": "717x495x230"
+        },
+        {
+          "name": "คอมเพรสเซอร์",
+          "value": "Dual Inverter"
+        },
+        {
+          "name": "มาตรฐานประหยัดไฟ",
+          "value": "เบอร์ 5"
+        }
+      ]
+    },
+    {
+      "code": "IXY13A",
+      "slug": "ixy13a",
+      "source": "Sale Price8 - Subscription_V3.pdf",
+      "page": 7,
+      "specs": [
+        {
+          "name": "ความเย็น (Btu)",
+          "value": "12,283"
+        },
+        {
+          "name": "ขนาดตัวเครื่องภายในอาคาร (กว้างxสูงxลึก มม.)",
+          "value": "837x308x189"
+        },
+        {
+          "name": "คอมเพรสเซอร์",
+          "value": "Dual Inverter"
+        },
+        {
+          "name": "ขนาดตัวเครื่องภายนอกอาคาร (กว้างxสูงxลึก มม.)",
+          "value": "717x495x230"
+        },
+        {
+          "name": "มาตรฐานประหยัดไฟ",
+          "value": "เบอร์ 5"
+        }
+      ]
+    },
+    {
+      "code": "IXY18A",
+      "slug": "ixy18a",
+      "source": "Sale Price8 - Subscription_V3.pdf",
+      "page": 7,
+      "specs": [
+        {
+          "name": "ความเย็น (Btu)",
+          "value": "18,084"
+        },
+        {
+          "name": "ขนาดตัวเครื่องภายในอาคาร (กว้างxสูงxลึก มม.)",
+          "value": "998x345x210"
+        },
+        {
+          "name": "คอมเพรสเซอร์",
+          "value": "Dual Inverter"
+        },
+        {
+          "name": "ขนาดตัวเครื่องภายนอกอาคาร (กว้างxสูงxลึก มม.)",
+          "value": "870x650x330"
+        },
+        {
+          "name": "มาตรฐานประหยัดไฟ",
+          "value": "เบอร์ 5"
+        }
+      ]
+    },
+    {
+      "code": "IXY24A",
+      "slug": "ixy24a",
+      "source": "Sale Price8 - Subscription_V3.pdf",
+      "page": 7,
+      "specs": [
+        {
+          "name": "ความเย็น (Btu)",
+          "value": "21,154"
+        },
+        {
+          "name": "ขนาดตัวเครื่องภายในอาคาร (กว้างxสูงxลึก มม.)",
+          "value": "998x345x210"
+        },
+        {
+          "name": "ขนาดตัวเครื่องภายนอกอาคาร (กว้างxสูงxลึก มม.)",
+          "value": "870x650x330"
+        },
+        {
+          "name": "คอมเพรสเซอร์",
+          "value": "Dual Inverter"
+        },
+        {
+          "name": "มาตรฐานประหยัดไฟ",
+          "value": "เบอร์ 5"
+        }
+      ]
+    }
+  ]
+}

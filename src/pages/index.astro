@@ -3,17 +3,18 @@ import fs from 'node:fs';
 import '../styles/global.css';
 import data from '../data/products.json';
 import lgSpecs from '../data/lg-specs.json';
+import pdfSpecs from '../data/pdf-specs.json';
 
 const products = data.products;
 const base = import.meta.env.BASE_URL;
 
-// สเปคเด่น 2-3 รายการสำหรับ tooltip บนการ์ด (จากเว็บ LG Thailand)
-const specMap = new Map(lgSpecs.products.map((s) => [s.code, s]));
+// สเปคเด่น 2-3 รายการสำหรับ tooltip บนการ์ด (จากเว็บ LG Thailand + PDF ราคา)
+const specMap = new Map([...lgSpecs.products, ...pdfSpecs.products].map((s) => [s.code, s]));
 const tipMap = new Map();
 for (const p of products) {
   const s = specMap.get(p.code);
   if (!s) continue;
-  const items = s.keySpecs.length ? s.keySpecs : (s.groups[0]?.specs || []);
+  const items = (s.keySpecs && s.keySpecs.length) ? s.keySpecs : (s.groups?.[0]?.specs || s.specs || []);
   tipMap.set(p.slug, items.filter((i) => i.name && i.value).slice(0, 3));
 }
 

@@ -4,6 +4,7 @@ import '../../styles/global.css';
 import data from '../../data/products.json';
 import lgSpecs from '../../data/lg-specs.json';
 import lgGallery from '../../data/lg-gallery.json';
+import pdfSpecs from '../../data/pdf-specs.json';
 import { slugify } from '../../lib/utils';
 
 export function getStaticPaths() {
@@ -19,7 +20,18 @@ const fmt = (n) => (n == null ? '—' : n.toLocaleString('th-TH'));
 const modeLabel = (m) => (m === 'outright' ? 'บาท (ซื้อขาด)' : 'บาท/เดือน');
 const base = import.meta.env.BASE_URL;
 const titleText = p.code.startsWith('XBOOM-') ? p.name : p.name !== p.code ? `${p.name} — ${p.code}` : p.code;
-const spec = lgSpecs.products.find((s) => s.code === p.code);
+// สเปค: มาจากเว็บ LG (keySpecs + groups) หรือ PDF ราคา (specs รายการตรง)
+let spec = null;
+let specFromPdf = false;
+const lgSpec = lgSpecs.products.find((s) => s.code === p.code);
+if (lgSpec) spec = lgSpec;
+else {
+  const pdfSpec = pdfSpecs.products.find((s) => s.code === p.code);
+  if (pdfSpec) {
+    spec = { keySpecs: [], groups: [{ title: 'สเปคจากเอกสาร', specs: pdfSpec.specs }], url: null };
+    specFromPdf = true;
+  }
+}
 const gallery = lgGallery.products.find((s) => s.code === p.code);
 ---
 
@@ -115,7 +127,9 @@ const gallery = lgGallery.products.find((s) => s.code === p.code);
             </details>
           ))}
           <div class="specs-source">
-            ข้อมูลจาก <a href={spec.url} target="_blank" rel="noopener">เว็บ LG Thailand</a>
+            {specFromPdf ? 'ข้อมูลจากเอกสาร PDF ราคา (คอลัมน์รายการสินค้า)' : (
+              <>ข้อมูลจาก <a href={spec.url} target="_blank" rel="noopener">เว็บ LG Thailand</a></>
+            )}
           </div>
         </section>
       )}

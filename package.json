@@ -8,6 +8,7 @@
     "extract": "node scripts/extract.mjs",
     "images": "node scripts/extract-images.mjs",
     "specs": "node scripts/fetch-lg-specs.mjs",
+    "pdfspecs": "node scripts/extract-pdf-specs.mjs",
     "gallery": "node scripts/fetch-lg-gallery.mjs",
     "prebuild": "node scripts/extract.mjs",
     "dev": "astro dev",

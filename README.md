@@ -10,9 +10,11 @@ scripts/extract.mjs       ← สคริปต์อ่าน PDF → สร�
 scripts/extract-images.mjs← สคริปต์ดึงรูปสินค้าจาก PDF → public/img/products/ (ต้อง commit)
 scripts/fetch-lg-specs.mjs← สคริปต์ดึงคุณสมบัติ/สเปคจากเว็บ LG Thailand → src/data/lg-specs.json
 scripts/fetch-lg-gallery.mjs ← สคริปต์ดึง URL รูปสินค้าหลายมุมจากเว็บ LG → src/data/lg-gallery.json
+scripts/extract-pdf-specs.mjs ← สคริปต์ดึงสเปคย่อของรุ่นที่ LG ไม่มีหน้าจากคอลัมน์ "รายการ" ใน PDF → src/data/pdf-specs.json
 src/data/products.json    ← ข้อมูลสินค้าที่สกัดได้ (ห้ามแก้เอง — สคริปต์เขียนทับ)
 src/data/lg-specs.json    ← สเปคสินค้าจากเว็บ LG Thailand (รัน npm run specs — commit ไฟล์นี้)
 src/data/lg-gallery.json  ← URL รูป gallery จากเว็บ LG (รัน npm run gallery — commit ไฟล์นี้)
+src/data/pdf-specs.json   ← สเปคย่อจาก PDF ราคา (รัน npm run pdfspecs — commit ไฟล์นี้)
 src/data/meta.json        ← ใส่ชื่อไทย/หมวดหมู่ที่ต้องการให้สินค้า (กรอกเองได้)
 src/pages/                ← หน้าเว็บ (Astro static)
 public/pdfs/              ← PDF ฉบับย่อที่เว็บใช้แสดง (สคริปต์สร้างให้อัตโนมัติ — ไม่ต้อง commit)
@@ -37,6 +39,7 @@ npm run images
 
 # 6. (แนะนำ) ดึงคุณสมบัติ/สเปค + รูปหลายมุมจากเว็บ LG Thailand ใส่หน้า detail
 npm run specs
+npm run pdfspecs     # สเปคย่อของรุ่นที่ LG ไม่มีหน้า (อ่านจากคอลัมน์รายการใน PDF)
 npm run gallery
 
 # 7. build และ deploy
@@ -59,6 +62,18 @@ npm run gallery
 - **รูปไม่ได้เก็บใน repo** — เป็น URL hotlink ไปยัง CDN ของ LG โดยตรง (โหลดจากเว็บ LG ตอนแสดงผล) จึงไม่เปลืองพื้นที่ repo
 - รุ่นที่ไม่มี gallery (LG ลงรูปเดียว หรือไม่มีหน้า) จะแสดงรูปจาก PDF เหมือนเดิม
 
+### สเปคย่อจาก PDF (รุ่นที่เว็บ LG ไม่มีหน้า)
+
+รุ่นที่ LG ไทยไม่มีหน้า product (แอร์ IXY, แอร์คาสเซ็ท ZT4Q24GPLA1, เครื่องซัก FV1413H4M, WashTower WT1410NHEN) — ดึงสเปคย่อที่อยู่ในคอลัมน์ "รายการ" ของ PDF ราคาเอง:
+
+```bash
+npm run pdfspecs
+```
+
+- อ่านบรรทัดในแถบตำแหน่งของแต่ละรุ่น (ยึดบรรทัดรหัสสินค้า/BTU เป็น anchor) → แยกเป็นสเปค (Btu, ขนาดตัวเครื่อง, ความจุ, การรับประกัน, มาตรฐานเบอร์ 5 ฯลฯ)
+- เขียน `src/data/pdf-specs.json` แล้ว commit — หน้า detail แสดงเป็นกลุ่ม "สเปคจากเอกสาร" พร้อมข้อความบอกที่มา
+- ครอบคลุมทุกรุ่นที่เหลือ → สินค้า**ทุกตัว (91/91) มีสเปค** (84 จากเว็บ LG + 7 จาก PDF)
+
 ### ดึงสเปคจากเว็บ LG Thailand (หน้า detail)
 
 หน้า detail ของแต่ละสินค้าจะแสดงส่วน **"คุณสมบัติและสเปค"** (จุดเด่น + ตารางสเปคเป็นหมวด) ดึงจากหน้า product ทางการของ LG Thailand:
@@ -71,7 +86,7 @@ npm run specs
 - ข้อมูลที่ดึงได้เขียนไป `src/data/lg-specs.json` แล้ว commit — หน้า detail อ่านจากไฟล์นี้ (โหลดตอน build)
 - กลุ่มสเปคแสดงเป็นหัวข้อเปิด/ปิดได้ (`<details>`) — กลุ่มแรกเปิดให้ดูทันที + จุดเด่นเป็นการ์ดด้านบน
 - หน้าแคตตาล็อก: ชี้การ์ดค้างไว้จะเห็น **tooltip สเปคเด่น 2-3 รายการ** (ข้อมูลจากไฟล์เดียวกัน)
-- ครอบคลุม 84/91 รุ่น — รุ่นที่ LG ไทยไม่มีหน้า product (เช่น แอร์ติดฝ้า ZT4Q24GPLA1, เครื่องซัก FV1413H4M, แอร์ IXY) จะไม่มีส่วนสเปค — แสดงเฉพาะ รูป ชื่อ ราคา เหมือนเดิม
+- ครอบคลุม **91/91 รุ่น**: 84 รุ่นจากเว็บ LG + 7 รุ่นที่เหลือ (แอร์ IXY, ZT4Q24GPLA1, FV1413H4M, WT1410NHEN) จากสเปคย่อใน PDF ราคา (npm run pdfspecs)
 
 ### รุ่นที่ PDF ไม่มีรูป → ดึงจากเว็บ LG Thailand
 
@@ -157,6 +172,7 @@ npm run extract && cat scripts/report.txt
 | `npm run extract` | อ่าน PDF ใน `pdfs/` → เขียน `src/data/products.json` + `scripts/report.txt` |
 | `npm run images` | ดึงรูปสินค้าจาก PDF → `public/img/products/` (ต้อง commit) |
 | `npm run specs` | ดึงสเปคจากเว็บ LG Thailand → `src/data/lg-specs.json` (ต้อง commit) |
+| `npm run pdfspecs` | ดึงสเปคย่อของรุ่นที่ LG ไม่มีหน้าจาก PDF → `src/data/pdf-specs.json` (ต้อง commit) |
 | `npm run gallery` | ดึง URL รูปหลายมุมจากเว็บ LG → `src/data/lg-gallery.json` (ต้อง commit) |
 | `npm run dev` | รัน dev server (localhost:4321) |
 | `npm run build` | build เว็บ static ไปที่ `dist/` |
