@@ -483,6 +483,31 @@ a {
   box-shadow: var(--shadow);
 }
 
+.card-img {
+  width: calc(100% + 36px);
+  margin: -18px -18px 0;
+  height: 130px;
+  object-fit: contain;
+  object-position: center;
+  background: #fff;
+  border-bottom: 1px solid var(--border);
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+.detail-img {
+  display: block;
+  max-width: 100%;
+  max-height: 220px;
+  object-fit: contain;
+  background: #fff;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 12px;
+  box-sizing: border-box;
+  margin-bottom: 16px;
+}
+
 .card-category {
   font-size: 0.72rem;
   color: var(--brand);

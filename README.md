@@ -7,10 +7,12 @@
 ```
 pdfs/                     ← วางไฟล์ PDF ราคาใหม่ที่นี่ (ไฟล์ละกี่ไฟล์ก็ได้)
 scripts/extract.mjs       ← สคริปต์อ่าน PDF → สร้างข้อมูล + ตัด PDF เหลือหน้าสินค้าไป public/pdfs/
+scripts/extract-images.mjs← สคริปต์ดึงรูปสินค้าจาก PDF → public/img/products/ (ต้อง commit)
 src/data/products.json    ← ข้อมูลสินค้าที่สกัดได้ (ห้ามแก้เอง — สคริปต์เขียนทับ)
 src/data/meta.json        ← ใส่ชื่อไทย/หมวดหมู่ที่ต้องการให้สินค้า (กรอกเองได้)
 src/pages/                ← หน้าเว็บ (Astro static)
 public/pdfs/              ← PDF ฉบับย่อที่เว็บใช้แสดง (สคริปต์สร้างให้อัตโนมัติ — ไม่ต้อง commit)
+public/img/products/      ← รูปสินค้าที่สกัดจาก PDF (รัน npm run images — commit ไฟล์เหล่านี้)
 scripts/report.txt        ← รายงาน diff: สินค้าใหม่ / ราคาเปลี่ยน / สินค้าหาย
 ```
 
@@ -26,9 +28,15 @@ npm run extract
 
 # 4. (ถ้าต้องการ) เพิ่มชื่อไทย/หมวดหมู่ใน src/data/meta.json แล้วรัน npm run extract ใหม่
 
-# 5. build และ deploy
+# 5. ดึงรูปสินค้าจาก PDF (รุ่นไหน PDF มีรูปให้ จะได้รูปคู่กัน)
+npm run images
+
+# 6. build และ deploy
 npm run build        # ผลลัพธ์อยู่ในโฟลเดอร์ dist/
 ```
+
+> รูปสินค้าถูกดึงจากรูปที่ฝังใน PDF (จับคู่ตามตำแหน่งบนหน้า) — ต้องรัน `npm run images` แล้ว commit ไฟล์ใน `public/img/products/` ด้วย ไม่งั้น CI จะ build โดยไม่มีรูป (รุ่นที่ PDF ไม่มีรูปจะแสดงแบบไม่มีการ์ดรูป)
+> CI (GitHub Actions) ไม่รัน `npm run images` เพื่อให้ build เร็ว — รูปที่ commit ไว้จะถูกใช้
 
 > ต้องการ Node.js 18+ เท่านั้น — ไม่ต้องติดตั้ง Python หรือไลบรารีอื่น
 
@@ -100,6 +108,7 @@ npm run extract && cat scripts/report.txt
 | คำสั่ง | ความหมาย |
 |---|---|
 | `npm run extract` | อ่าน PDF ใน `pdfs/` → เขียน `src/data/products.json` + `scripts/report.txt` |
+| `npm run images` | ดึงรูปสินค้าจาก PDF → `public/img/products/` (ต้อง commit) |
 | `npm run dev` | รัน dev server (localhost:4321) |
 | `npm run build` | build เว็บ static ไปที่ `dist/` |
 | `npm run preview` | ทดสอบเวอร์ชัน build ที่ `dist/` |

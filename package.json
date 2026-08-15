@@ -6,6 +6,7 @@
   "description": "เว็บรายการสินค้า LG Subscribe — สร้างข้อมูลจากไฟล์ PDF ราคารายเดือนด้วยสคริปต์อัตโนมัติ",
   "scripts": {
     "extract": "node scripts/extract.mjs",
+    "images": "node scripts/extract-images.mjs",
     "prebuild": "node scripts/extract.mjs",
     "dev": "astro dev",
     "build": "astro build",
@@ -15,5 +16,8 @@
     "astro": "^5.7.0",
     "pdf-lib": "^1.17.1",
     "pdfjs-dist": "^4.10.38"
+  },
+  "devDependencies": {
+    "@napi-rs/canvas": "^1.0.6"
   }
 }

@@ -1,9 +1,14 @@
 ---
+import fs from 'node:fs';
 import '../styles/global.css';
 import data from '../data/products.json';
 
 const products = data.products;
 const base = import.meta.env.BASE_URL;
+
+// รูปสินค้าที่สกัดจาก PDF (scripts/extract-images.mjs) — รุ่นไหนไม่มีรูปจะไม่แสดง <img>
+const imgDir = process.cwd() + '/public/img/products';
+const imgSlugs = new Set(fs.existsSync(imgDir) ? fs.readdirSync(imgDir).map((f) => f.replace(/\.jpg$/, '')) : []);
 
 // รวมหมวดหมู่ย่อยเป็นกลุ่มหลักแบบ LG (ตู้เย็น / 2 ประตู → ตู้เย็น)
 const topCat = (c) => (c || 'อื่นๆ').split(' / ')[0];
@@ -218,6 +223,9 @@ function policyChips(p) {
                     data-search={(p.name + ' ' + p.code + ' ' + (p.category || '')).toLowerCase()}
                     data-cat={sec.name}
                   >
+                    {imgSlugs.has(p.slug) && (
+                      <img class="card-img" src={`${base}img/products/${p.slug}.jpg`} alt={p.name} loading="lazy" />
+                    )}
                     <div class="card-category">{p.category || sec.name}</div>
                     {p.name !== p.code && <div class="card-name">{p.name}</div>}
                     <div class="card-code">{p.code}</div>

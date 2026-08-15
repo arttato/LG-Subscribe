@@ -401,7 +401,12 @@ function parsePage(pageNo, rawLines, inheritedCategory) {
   const products = anchors.map((a) => {
     const cluster = clusterAt(a.y);
     const lines = cluster ? cluster.lines : [a.line];
-    return { category, page: pageNo, code: a.code, y: a.y, line: a.line, named: a.named, lines, rows: byCode.get(a.code) || [] };
+    // แถบ y ของสินค้า (ใช้สำหรับ crop รูปจาก PDF: y=บน, y2=ล่าง ในพิกัดจุดของหน้า)
+    // รวม y ของรหัส + cluster + แถวราคาที่จับคู่ — เพราะ cluster เองแคบเกินไป (GAP 21pt แยกตอนช่องว่างใหญ่)
+    const rowYs = (byCode.get(a.code) || []).map((r) => r.y);
+    const yFirst = Math.max(a.y, cluster ? cluster.yFirst : -Infinity, ...rowYs);
+    const yLast = Math.min(a.y, cluster ? cluster.yLast : Infinity, ...rowYs);
+    return { category, page: pageNo, code: a.code, y: a.y, yFirst, yLast, line: a.line, named: a.named, lines, rows: byCode.get(a.code) || [] };
   });
   return { category, products };
 }
@@ -467,6 +472,9 @@ function buildBlock(model, pdfFile) {
     name: name || model.code,
     source: pdfFile,
     page: model.page,
+    srcPage: model.page, // หน้าต้นฉบับใน PDF (ไม่ถูก remap ตามการตัดหน้า)
+    y: Math.round(model.yFirst), // แถบตำแหน่งสินค้าในหน้า (จุด) — ใช้ crop รูป
+    y2: Math.round(model.yLast),
     pdf: `/pdfs/${encodeURIComponent(pdfFile)}`,
     mode,
     price: best ? best.price : null,
