@@ -453,67 +453,98 @@ a {
   color: var(--muted);
 }
 
-/* ================= compare strip ================= */
+/* ================= ซื้อขาด VS LG Subscribe (ตารางเปรียบเทียบ) ================= */
 .compare {
   margin: 40px 0 8px;
-  background: linear-gradient(135deg, var(--brand), #6d001f);
+  background: #faf7f1;
+  border: 1px solid var(--border);
   border-radius: 16px;
-  padding: 26px 28px;
-  color: #fff;
-  display: grid;
-  grid-template-columns: 1fr auto;
-  gap: 24px;
-  align-items: center;
-}
-
-@media (max-width: 860px) {
-  .compare {
-    grid-template-columns: 1fr;
-  }
+  padding: 32px 28px;
 }
 
 .compare h2 {
-  margin: 0 0 6px;
-  font-size: 1.25rem;
+  margin: 0 0 22px;
+  text-align: center;
+  font-size: 1.5rem;
   font-weight: 800;
+  color: var(--text);
 }
 
-.compare p {
-  margin: 0;
-  font-size: 0.9rem;
-  color: rgba(255, 255, 255, 0.85);
+.cmp-head {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+  margin-bottom: 16px;
 }
 
-.compare-cols {
+.cmp-head span {
+  background: #454548;
+  color: #fff;
+  border-radius: 10px;
+  padding: 11px 0;
+  text-align: center;
+  font-weight: 700;
+  font-size: 0.95rem;
+}
+
+.cmp-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.cmp-col + .cmp-col {
+  border-left: 1px solid var(--border);
+}
+
+.cmp-cell {
+  padding: 16px 18px;
   display: flex;
   gap: 12px;
-  flex-wrap: wrap;
+  align-items: flex-start;
 }
 
-.compare-col {
-  background: rgba(255, 255, 255, 0.1);
-  border: 1px solid rgba(255, 255, 255, 0.18);
-  border-radius: 12px;
-  padding: 14px 18px;
-  min-width: 200px;
+.cmp-cell + .cmp-cell {
+  border-top: 1px solid var(--border);
 }
 
-.compare-col .lbl {
-  font-size: 0.72rem;
-  letter-spacing: 0.5px;
-  color: rgba(255, 255, 255, 0.7);
-}
-
-.compare-col b {
-  display: block;
-  font-size: 1.35rem;
+.cmp-label {
+  flex: none;
+  width: 96px;
+  font-size: 0.8rem;
   font-weight: 800;
-  margin: 2px 0;
+  line-height: 1.45;
 }
 
-.compare-col small {
-  font-size: 0.78rem;
-  color: rgba(255, 255, 255, 0.75);
+.cmp-cell.sub .cmp-label {
+  color: var(--brand);
+}
+
+.cmp-cell.outright .cmp-label {
+  color: var(--muted);
+}
+
+.cmp-cell p {
+  margin: 0;
+  font-size: 0.85rem;
+  color: var(--text);
+  line-height: 1.6;
+}
+
+@media (max-width: 860px) {
+  .cmp-head {
+    grid-template-columns: 1fr;
+  }
+  .cmp-grid {
+    grid-template-columns: 1fr;
+  }
+  .cmp-col + .cmp-col {
+    border-left: none;
+    border-top: 1px solid var(--border);
+  }
 }
 
 /* ================= catalog ================= */

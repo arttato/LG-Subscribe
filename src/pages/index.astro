@@ -72,19 +72,6 @@ const sections = [...groups.entries()]
 
 const categories = sections.map((s) => s.name);
 
-// ส่วน "ซื้อขาด VS Subscribe" — สินค้าที่มีราคาซื้อขาด (2Y) เทียบกับรายเดือนในตระกูลเดียวกัน
-const compareItems = products
-  .filter((p) => p.policies.some((r) => /^2Y/.test(r.policy)))
-  .map((p) => {
-    const outright = Math.min(...p.policies.filter((r) => /^2Y/.test(r.policy)).map((r) => r.price));
-    const monthly = Math.min(
-      ...products.filter((x) => x.code.startsWith(p.code.split('.')[0]) && x.mode !== 'outright' && x.price != null).map((x) => x.price)
-    );
-    return { code: p.code, name: p.name, outright, monthly };
-  })
-  .filter((c) => c.monthly != null && c.monthly !== Infinity)
-  .slice(0, 2);
-
 const fmt = (n) => (n == null ? '—' : n.toLocaleString('th-TH'));
 const modeLabel = (m) => (m === 'outright' ? 'บาท (ซื้อขาด)' : 'บาท/เดือน');
 const priceLabel = (m) => (m === 'outright' ? 'ซื้อขาด' : 'เริ่มต้น');
@@ -221,27 +208,50 @@ const VIDEO_ID = 'uNwPkrefazo';
         </div>
       </section>
 
-      <!-- ซื้อขาด VS Subscribe -->
-      {compareItems.length > 0 && (
-        <section class="compare">
-          <div>
-            <h2>ซื้อขาด VS Subscribe</h2>
-            <p>
-              เปรียบเทียบราคาเครื่องกรองน้ำ LG — ซื้อขาดจ่ายครั้งเดียว หรือ Subscribe แบ่งจ่ายรายเดือน
-              พร้อมบริการดูแลตลอดสัญญา
-            </p>
+      <!-- ซื้อขาด VS LG Subscribe -->
+      <section class="compare">
+        <h2>การซื้อขาด VS LG Subscribe</h2>
+        <div class="cmp-head">
+          <span>ค่าใช้จ่าย</span>
+          <span>การรับประกัน</span>
+          <span>การบำรุงรักษา</span>
+        </div>
+        <div class="cmp-grid">
+          <div class="cmp-col">
+            <div class="cmp-cell sub">
+              <span class="cmp-label">LG Subscribe</span>
+              <p>
+                เข้าถึงง่ายกว่าโดยไม่ต้องเสียค่าใช้จ่ายก้อนใหญ่ล่วงหน้า ก็สามารถเป็นเจ้าของเครื่องใช้ไฟฟ้า
+                ได้ด้วยการจ่ายค่าเช่ารายเดือน
+              </p>
+            </div>
+            <div class="cmp-cell outright">
+              <span class="cmp-label">การซื้อขาด</span>
+              <p>ต้องใช้เงินก้อนใหญ่ในการซื้อ ซึ่งอาจเป็นภาระทางการเงินได้</p>
+            </div>
           </div>
-          <div class="compare-cols">
-            {compareItems.map((c) => (
-              <div class="compare-col">
-                <span class="lbl">{c.code} · ซื้อขาด</span>
-                <b>{fmt(c.outright)} บาท</b>
-                <small>vs Subscribe เริ่ม {fmt(c.monthly)} บาท/เดือน</small>
-              </div>
-            ))}
+          <div class="cmp-col">
+            <div class="cmp-cell sub">
+              <span class="cmp-label">LG Subscribe</span>
+              <p>มีการรับประกัน 5 - 7 ปี (ตลอดอายุสัญญา)</p>
+            </div>
+            <div class="cmp-cell outright">
+              <span class="cmp-label">การซื้อขาด</span>
+              <p>มีการรับประกัน 1 - 2 ปี</p>
+            </div>
           </div>
-        </section>
-      )}
+          <div class="cmp-col">
+            <div class="cmp-cell sub">
+              <span class="cmp-label">LG Subscribe</span>
+              <p>ครอบคลุมการบำรุงรักษา และการเปลี่ยนอะไหล่สิ้นเปลืองตลอดระยะสัญญา</p>
+            </div>
+            <div class="cmp-cell outright">
+              <span class="cmp-label">การซื้อขาด</span>
+              <p>ผู้ซื้อขาดแบบเต็มจำนวนต้องรับผิดชอบค่าใช้จ่ายทั้งหมดสำหรับการบำรุงรักษาและซ่อมแซม</p>
+            </div>
+          </div>
+        </div>
+      </section>
 
       <!-- แคตตาล็อก -->
       <section class="catalog" id="catalog">
