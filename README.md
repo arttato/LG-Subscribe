@@ -41,6 +41,7 @@ npm run images
 npm run specs        # คุณสมบัติ/สเปคจาก lg.com/th (จำเป็นสำหรับขั้นตอนนี้)
 npm run gallery      # URL รูปหลายมุมจาก lg.com/th
 npm run lgimages     # ดาวน์โหลดรูปจริงลง public/img/products/ (ทับรูป PDF)
+npm run cardhero     # ตรวจ/แก้รูปการ์ดให้เป็นรูปสินค้าจริงตามหน้า LG (og:image)
 
 # 7. build และ deploy
 npm run build        # ผลลัพธ์อยู่ในโฟลเดอร์ dist/

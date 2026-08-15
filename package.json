@@ -18,6 +18,7 @@
     "titles": "node scripts/fetch-lg-titles.mjs",
     "lgimages": "node scripts/download-all-lg-images.mjs",
     "imgupgrade": "node scripts/upgrade-small-images.mjs",
+    "cardhero": "node scripts/fix-card-heroes.mjs",
     "banners": "node scripts/fetch-lg-banners.mjs",
     "bannertext": "node scripts/ocr-banners.mjs",
     "auditprices": "node scripts/audit-prices.mjs",
