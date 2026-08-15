@@ -40,6 +40,10 @@ const POLICY_CODE_RE = /\b(?:VISIT|SELF|NOSERVICE|OUT)_[A-Z0-9_%().\-]{4,}\b/;
 const SCHEDULE_RE = /(\d+)\s*-\s*(\d+)\s*\(\s*([\d,]+(?:\.\d+)?)/;
 const RANGE_RE = /รอบบิลที่\s*(\d+)\s*(?:ถึง|-)\s*(\d+)\s*\(\s*([\d,]+(?:\.\d+)?)/g;
 const CAPACITY_RE = /^\d[\d.,]*\s*Btu\b/;
+// สินค้าที่ไม่มีรหัสใน PDF (หน้า Sound bar แบบ Advance payment เช่น "LG xboom Grab")
+// → จับคู่ด้วยชื่อที่ปรากฏ สร้างรหัสสังเคราะห์ XBOOM-xxx ใช้ติดตาม diff ข้ามเดือน
+// (ถ้า LG เปลี่ยนชื่อเดือนหน้า รหัสใหม่จะโผล่ใน report เป็นสินค้าใหม่)
+const NAMED_ANCHOR_RE = /^LG\s+xboom\s+([A-Za-z0-9]+)/i;
 
 // ---------- บรรทัดที่ไม่ใช่ข้อมูลสินค้า ----------
 function isNoise(line) {
@@ -301,6 +305,7 @@ function parsePage(pageNo, rawLines, inheritedCategory) {
   //    บรรทัด "WD516 หรือ WD518" = 2 รุ่นที่ใช้ราคาชุดเดียวกัน
   const anchors = [];
   const seen = new Set();
+  const advancePage = /Advance\s+payment/i.test(items.map((i) => i.text).join(' '));
   for (const { y, text: line } of items) {
     // บรรทัดต่อของชื่อชุด (เช่น "(DFC533FV.APYPETH+" / "MS2032GAS.BBKPETH)") — ไม่ใช่รุ่นจริง
     if (/^\(/.test(line)) continue;
@@ -317,10 +322,19 @@ function parsePage(pageNo, rawLines, inheritedCategory) {
     } else {
       codes = [];
     }
+    // ไม่มีรหัสจริงในบรรทัด → ลองจับคู่ชื่อสินค้าไร้รหัส (เฉพาะหน้าแบบ Advance payment = Sound bar)
+    let named = null;
+    if (codes.length === 0 && advancePage) {
+      const nm = line.match(NAMED_ANCHOR_RE);
+      if (nm) {
+        codes = ['XBOOM-' + nm[1].toUpperCase()];
+        named = nm[0]; // ชื่อสะอาด (ไม่รวมเศษตารางงวดที่ติดท้ายบรรทัด)
+      }
+    }
     for (const code of codes) {
       if (seen.has(code)) continue;
       seen.add(code);
-      anchors.push({ code, y, line });
+      anchors.push({ code, y, line, named });
     }
   }
 
@@ -357,24 +371,26 @@ function parsePage(pageNo, rawLines, inheritedCategory) {
   }
 
   // 5) กลุ่มบรรทัดรอบรหัส ใช้หาชื่อ/คำอธิบาย
+  //    (บรรทัดเรียงจากบนลงล่าง — y ลดลงเรื่อยๆ จึงใช้ระยะห่างสัมบูรณ์ตัด cluster)
   const clusters = [];
   let current = null;
   for (const { y, text: line } of items) {
-    if (!current || y - current.yLast > CLUSTER_GAP) {
+    if (!current || Math.abs(y - current.yLast) > CLUSTER_GAP) {
       if (current) clusters.push(current);
-      current = { yLast: y, lines: [line] };
+      current = { yFirst: y, yLast: y, lines: [line] };
     } else {
       current.yLast = y;
       current.lines.push(line);
     }
   }
   if (current) clusters.push(current);
-  const clusterAt = (y) => clusters.find((c) => y >= c.yLast - CLUSTER_GAP && y <= c.yLast + 2 * CLUSTER_GAP);
+  // anchor อยู่ที่ไหนก็ได้ภายในช่วงของ cluster (yFirst=บน, yLast=ล่าง) — รองรับ cluster หลายบรรทัด
+  const clusterAt = (y) => clusters.find((c) => y >= c.yLast - CLUSTER_GAP && y <= c.yFirst + CLUSTER_GAP);
 
   const products = anchors.map((a) => {
     const cluster = clusterAt(a.y);
     const lines = cluster ? cluster.lines : [a.line];
-    return { category, page: pageNo, code: a.code, y: a.y, lines, rows: byCode.get(a.code) || [] };
+    return { category, page: pageNo, code: a.code, y: a.y, line: a.line, named: a.named, lines, rows: byCode.get(a.code) || [] };
   });
   return { category, products };
 }
@@ -422,7 +438,7 @@ function buildBlock(model, pdfFile) {
     if (!best || p.price < best.price) best = p;
   }
 
-  const name = pickName(lines);
+  const name = model.named ? thaiJoin(model.named) : pickName(lines);
   const description = lines
     .filter((l) => !/^•/.test(l) && !/^รอบบิลที่/.test(l))
     .map((l) => thaiJoin(l))

@@ -1,11 +1,11 @@
 {
-  "generatedAt": "2026-08-15T03:31:40.345Z",
+  "generatedAt": "2026-08-15T03:38:02.932Z",
   "sources": [
     {
       "file": "Price list_Aug_V3.pdf",
       "pages": 60,
       "keptPages": 49,
-      "products": 86
+      "products": 89
     },
     {
       "file": "Sale Price8 - Subscription_V3.pdf",
@@ -19,7 +19,7 @@
       "code": "WD110MN.ABGPLMT",
       "slug": "wd110mn-abgplmt",
       "category": "เครื่องกรองน้ำ",
-      "name": "WD110MN.ABGPLMT",
+      "name": "NEW",
       "source": "Price list_Aug_V3.pdf",
       "page": 2,
       "pdf": "/pdfs/Price%20list_Aug_V3.pdf",
@@ -52,7 +52,7 @@
           "promoCode": "SELF_7Y_6M_PRO_149(1M)_DC50%(11M"
         }
       ],
-      "description": "WD110MN.ABGPLMT"
+      "description": "(NEW)\n5Y_Visit ทุกๆ 6 เดือน 799 รอบบิลที่ 2-12 (399) 5,050 VISIT_5Y_6M_PRO_149(1M)_DC50%(11M)\nราคา 149.- (1 รอบบิลแรก) รอบบิลที่ 13-60 (799)\nWD516AN.ACNPLMT (น้ำเงิน)\nWD516AN.AEWPLMT (ขาว) ลด 50% 11 เดือน (รอบบิลที่ 2-12) รอบบิลที่ 1 (149)\nWD516AN.ASLPLMT (เงิน)\n5Y_Self ทุกๆ 6 เดือน 699 รอบบิลที่ 2-12 (349) 4,400 SELF_5Y_6M_PRO_149(1M)_DC50%(11M)\nWD518AN.ABGPLMT (เบจ) รอบบิลที่ 13-60 (699)\nWD518AN.AWHPLMT (ขาว)\nขนาดผลิตภัณฑ์ (กxสxลมม.) WD518AN.ACGPLMT (เทา)\nWD516: 170 x 419 x 550 7Y_Visit ทุกๆ 6 เดือน 599 รอบบิลที่ 2-12 (299) 3,750 VISIT_7Y_6M_PRO_149(1M)_DC50%(11M)\nWD518: 168 x 398 x 400\nราคา 149.- (1 รอบบิลแรก) รอบบิลที่ 13-84 (599)\n(ทุกสี)\nลด 50% 11 เดือน (รอบบิลที่ 2-12) รอบบิลที่ 1 (149)\n7Y_Self ทุกๆ 6 เดือน 499 รอบบิลที่ 2-12 (249) 3,100 SELF_7Y_6M_PRO_149(1M)_DC50%(11M)\n5Y_Visit ทุกๆ 6 เดือน 549 รอบบิลที่ 2-12 (274) 3,425 VISIT_5Y_6M_PRO_149(1M)_DC50%(11M)\nราคา 149.- (1 รอบบิลแรก) รอบบิลที่ 13-60 (549)\nลด 50% 11 เดือน (รอบบิลที่ 2-12) รอบบิลที่ 1 (149)\n5Y_Self ทุกๆ 6 เดือน 499 รอบบิลที่ 2-12 (249) 3,100 SELF_5Y_6M_PRO_149(1M)_DC50%(11M)\nWD110MN.ABGPLMT\n(Calming Beige)\n7Y_Visit ทุกๆ 6 เดือน 449 รอบบิลที่ 2-12 (224) 2,775 VISIT_7Y_6M_PRO_149(1M)_DC50%(11M)\nขนาดผลิตภัณฑ์ (กxสxลมม.)\n132 x 358 x 230 ราคา 149.- (1 รอบบิลแรก) รอบบิลที่ 13-84 (449)\nลด 50% 11 เดือน (รอบบิลที่ 2-12) รอบบิลที่ 1 (149)\n7Y_Self ทุกๆ 6 เดือน 399 รอบบิลที่ 2-12 (199) 2,450 SELF_7Y_6M_PRO_149(1M)_DC50%(11M)"
     },
     {
       "code": "WD516",
@@ -79,7 +79,7 @@
           "promoCode": "OUT_SELF_2Y_DC10%_2026"
         }
       ],
-      "description": "WD516 หรือ WD518"
+      "description": "WD516 หรือ WD518\nOutright"
     },
     {
       "code": "WD516AN.ACNPLMT",
@@ -100,7 +100,7 @@
           "promoCode": "VISIT_5Y_6M_PRO_149(1M)_DC50%(11M"
         }
       ],
-      "description": "WD516AN.ACNPLMT (น้ำเงิน)"
+      "description": "(NEW)\n5Y_Visit ทุกๆ 6 เดือน 799 รอบบิลที่ 2-12 (399) 5,050 VISIT_5Y_6M_PRO_149(1M)_DC50%(11M)\nราคา 149.- (1 รอบบิลแรก) รอบบิลที่ 13-60 (799)\nWD516AN.ACNPLMT (น้ำเงิน)\nWD516AN.AEWPLMT (ขาว) ลด 50% 11 เดือน (รอบบิลที่ 2-12) รอบบิลที่ 1 (149)\nWD516AN.ASLPLMT (เงิน)\n5Y_Self ทุกๆ 6 เดือน 699 รอบบิลที่ 2-12 (349) 4,400 SELF_5Y_6M_PRO_149(1M)_DC50%(11M)\nWD518AN.ABGPLMT (เบจ) รอบบิลที่ 13-60 (699)\nWD518AN.AWHPLMT (ขาว)\nขนาดผลิตภัณฑ์ (กxสxลมม.) WD518AN.ACGPLMT (เทา)\nWD516: 170 x 419 x 550 7Y_Visit ทุกๆ 6 เดือน 599 รอบบิลที่ 2-12 (299) 3,750 VISIT_7Y_6M_PRO_149(1M)_DC50%(11M)\nWD518: 168 x 398 x 400\nราคา 149.- (1 รอบบิลแรก) รอบบิลที่ 13-84 (599)\n(ทุกสี)\nลด 50% 11 เดือน (รอบบิลที่ 2-12) รอบบิลที่ 1 (149)\n7Y_Self ทุกๆ 6 เดือน 499 รอบบิลที่ 2-12 (249) 3,100 SELF_7Y_6M_PRO_149(1M)_DC50%(11M)\n5Y_Visit ทุกๆ 6 เดือน 549 รอบบิลที่ 2-12 (274) 3,425 VISIT_5Y_6M_PRO_149(1M)_DC50%(11M)\nราคา 149.- (1 รอบบิลแรก) รอบบิลที่ 13-60 (549)\nลด 50% 11 เดือน (รอบบิลที่ 2-12) รอบบิลที่ 1 (149)\n5Y_Self ทุกๆ 6 เดือน 499 รอบบิลที่ 2-12 (249) 3,100 SELF_5Y_6M_PRO_149(1M)_DC50%(11M)\nWD110MN.ABGPLMT\n(Calming Beige)\n7Y_Visit ทุกๆ 6 เดือน 449 รอบบิลที่ 2-12 (224) 2,775 VISIT_7Y_6M_PRO_149(1M)_DC50%(11M)\nขนาดผลิตภัณฑ์ (กxสxลมม.)\n132 x 358 x 230 ราคา 149.- (1 รอบบิลแรก) รอบบิลที่ 13-84 (449)\nลด 50% 11 เดือน (รอบบิลที่ 2-12) รอบบิลที่ 1 (149)\n7Y_Self ทุกๆ 6 เดือน 399 รอบบิลที่ 2-12 (199) 2,450 SELF_7Y_6M_PRO_149(1M)_DC50%(11M)"
     },
     {
       "code": "WD516AN.AEWPLMT",
@@ -114,7 +114,7 @@
       "price": 599,
       "priceFrom": null,
       "policies": [],
-      "description": "WD516AN.AEWPLMT (ขาว) ลด 50% 11 เดือน (รอบบิลที่ 2-12) รอบบิลที่ 1 (149)",
+      "description": "(NEW)\n5Y_Visit ทุกๆ 6 เดือน 799 รอบบิลที่ 2-12 (399) 5,050 VISIT_5Y_6M_PRO_149(1M)_DC50%(11M)\nราคา 149.- (1 รอบบิลแรก) รอบบิลที่ 13-60 (799)\nWD516AN.ACNPLMT (น้ำเงิน)\nWD516AN.AEWPLMT (ขาว) ลด 50% 11 เดือน (รอบบิลที่ 2-12) รอบบิลที่ 1 (149)\nWD516AN.ASLPLMT (เงิน)\n5Y_Self ทุกๆ 6 เดือน 699 รอบบิลที่ 2-12 (349) 4,400 SELF_5Y_6M_PRO_149(1M)_DC50%(11M)\nWD518AN.ABGPLMT (เบจ) รอบบิลที่ 13-60 (699)\nWD518AN.AWHPLMT (ขาว)\nขนาดผลิตภัณฑ์ (กxสxลมม.) WD518AN.ACGPLMT (เทา)\nWD516: 170 x 419 x 550 7Y_Visit ทุกๆ 6 เดือน 599 รอบบิลที่ 2-12 (299) 3,750 VISIT_7Y_6M_PRO_149(1M)_DC50%(11M)\nWD518: 168 x 398 x 400\nราคา 149.- (1 รอบบิลแรก) รอบบิลที่ 13-84 (599)\n(ทุกสี)\nลด 50% 11 เดือน (รอบบิลที่ 2-12) รอบบิลที่ 1 (149)\n7Y_Self ทุกๆ 6 เดือน 499 รอบบิลที่ 2-12 (249) 3,100 SELF_7Y_6M_PRO_149(1M)_DC50%(11M)\n5Y_Visit ทุกๆ 6 เดือน 549 รอบบิลที่ 2-12 (274) 3,425 VISIT_5Y_6M_PRO_149(1M)_DC50%(11M)\nราคา 149.- (1 รอบบิลแรก) รอบบิลที่ 13-60 (549)\nลด 50% 11 เดือน (รอบบิลที่ 2-12) รอบบิลที่ 1 (149)\n5Y_Self ทุกๆ 6 เดือน 499 รอบบิลที่ 2-12 (249) 3,100 SELF_5Y_6M_PRO_149(1M)_DC50%(11M)\nWD110MN.ABGPLMT\n(Calming Beige)\n7Y_Visit ทุกๆ 6 เดือน 449 รอบบิลที่ 2-12 (224) 2,775 VISIT_7Y_6M_PRO_149(1M)_DC50%(11M)\nขนาดผลิตภัณฑ์ (กxสxลมม.)\n132 x 358 x 230 ราคา 149.- (1 รอบบิลแรก) รอบบิลที่ 13-84 (449)\nลด 50% 11 เดือน (รอบบิลที่ 2-12) รอบบิลที่ 1 (149)\n7Y_Self ทุกๆ 6 เดือน 399 รอบบิลที่ 2-12 (199) 2,450 SELF_7Y_6M_PRO_149(1M)_DC50%(11M)",
       "priceNote": "ราคารุ่นเดียวกัน"
     },
     {
@@ -136,7 +136,7 @@
           "promoCode": "SELF_5Y_6M_PRO_149(1M)_DC50%(11M"
         }
       ],
-      "description": "WD516AN.ASLPLMT (เงิน)"
+      "description": "(NEW)\n5Y_Visit ทุกๆ 6 เดือน 799 รอบบิลที่ 2-12 (399) 5,050 VISIT_5Y_6M_PRO_149(1M)_DC50%(11M)\nราคา 149.- (1 รอบบิลแรก) รอบบิลที่ 13-60 (799)\nWD516AN.ACNPLMT (น้ำเงิน)\nWD516AN.AEWPLMT (ขาว) ลด 50% 11 เดือน (รอบบิลที่ 2-12) รอบบิลที่ 1 (149)\nWD516AN.ASLPLMT (เงิน)\n5Y_Self ทุกๆ 6 เดือน 699 รอบบิลที่ 2-12 (349) 4,400 SELF_5Y_6M_PRO_149(1M)_DC50%(11M)\nWD518AN.ABGPLMT (เบจ) รอบบิลที่ 13-60 (699)\nWD518AN.AWHPLMT (ขาว)\nขนาดผลิตภัณฑ์ (กxสxลมม.) WD518AN.ACGPLMT (เทา)\nWD516: 170 x 419 x 550 7Y_Visit ทุกๆ 6 เดือน 599 รอบบิลที่ 2-12 (299) 3,750 VISIT_7Y_6M_PRO_149(1M)_DC50%(11M)\nWD518: 168 x 398 x 400\nราคา 149.- (1 รอบบิลแรก) รอบบิลที่ 13-84 (599)\n(ทุกสี)\nลด 50% 11 เดือน (รอบบิลที่ 2-12) รอบบิลที่ 1 (149)\n7Y_Self ทุกๆ 6 เดือน 499 รอบบิลที่ 2-12 (249) 3,100 SELF_7Y_6M_PRO_149(1M)_DC50%(11M)\n5Y_Visit ทุกๆ 6 เดือน 549 รอบบิลที่ 2-12 (274) 3,425 VISIT_5Y_6M_PRO_149(1M)_DC50%(11M)\nราคา 149.- (1 รอบบิลแรก) รอบบิลที่ 13-60 (549)\nลด 50% 11 เดือน (รอบบิลที่ 2-12) รอบบิลที่ 1 (149)\n5Y_Self ทุกๆ 6 เดือน 499 รอบบิลที่ 2-12 (249) 3,100 SELF_5Y_6M_PRO_149(1M)_DC50%(11M)\nWD110MN.ABGPLMT\n(Calming Beige)\n7Y_Visit ทุกๆ 6 เดือน 449 รอบบิลที่ 2-12 (224) 2,775 VISIT_7Y_6M_PRO_149(1M)_DC50%(11M)\nขนาดผลิตภัณฑ์ (กxสxลมม.)\n132 x 358 x 230 ราคา 149.- (1 รอบบิลแรก) รอบบิลที่ 13-84 (449)\nลด 50% 11 เดือน (รอบบิลที่ 2-12) รอบบิลที่ 1 (149)\n7Y_Self ทุกๆ 6 เดือน 399 รอบบิลที่ 2-12 (199) 2,450 SELF_7Y_6M_PRO_149(1M)_DC50%(11M)"
     },
     {
       "code": "WD518",
@@ -163,7 +163,7 @@
           "promoCode": "OUT_SELF_2Y_DC10%_2026"
         }
       ],
-      "description": "WD516 หรือ WD518"
+      "description": "WD516 หรือ WD518\nOutright"
     },
     {
       "code": "WD518AN.ABGPLMT",
@@ -177,7 +177,7 @@
       "price": 499,
       "priceFrom": null,
       "policies": [],
-      "description": "WD518AN.ABGPLMT (เบจ) รอบบิลที่ 13-60 (699)",
+      "description": "(NEW)\n5Y_Visit ทุกๆ 6 เดือน 799 รอบบิลที่ 2-12 (399) 5,050 VISIT_5Y_6M_PRO_149(1M)_DC50%(11M)\nราคา 149.- (1 รอบบิลแรก) รอบบิลที่ 13-60 (799)\nWD516AN.ACNPLMT (น้ำเงิน)\nWD516AN.AEWPLMT (ขาว) ลด 50% 11 เดือน (รอบบิลที่ 2-12) รอบบิลที่ 1 (149)\nWD516AN.ASLPLMT (เงิน)\n5Y_Self ทุกๆ 6 เดือน 699 รอบบิลที่ 2-12 (349) 4,400 SELF_5Y_6M_PRO_149(1M)_DC50%(11M)\nWD518AN.ABGPLMT (เบจ) รอบบิลที่ 13-60 (699)\nWD518AN.AWHPLMT (ขาว)\nขนาดผลิตภัณฑ์ (กxสxลมม.) WD518AN.ACGPLMT (เทา)\nWD516: 170 x 419 x 550 7Y_Visit ทุกๆ 6 เดือน 599 รอบบิลที่ 2-12 (299) 3,750 VISIT_7Y_6M_PRO_149(1M)_DC50%(11M)\nWD518: 168 x 398 x 400\nราคา 149.- (1 รอบบิลแรก) รอบบิลที่ 13-84 (599)\n(ทุกสี)\nลด 50% 11 เดือน (รอบบิลที่ 2-12) รอบบิลที่ 1 (149)\n7Y_Self ทุกๆ 6 เดือน 499 รอบบิลที่ 2-12 (249) 3,100 SELF_7Y_6M_PRO_149(1M)_DC50%(11M)\n5Y_Visit ทุกๆ 6 เดือน 549 รอบบิลที่ 2-12 (274) 3,425 VISIT_5Y_6M_PRO_149(1M)_DC50%(11M)\nราคา 149.- (1 รอบบิลแรก) รอบบิลที่ 13-60 (549)\nลด 50% 11 เดือน (รอบบิลที่ 2-12) รอบบิลที่ 1 (149)\n5Y_Self ทุกๆ 6 เดือน 499 รอบบิลที่ 2-12 (249) 3,100 SELF_5Y_6M_PRO_149(1M)_DC50%(11M)\nWD110MN.ABGPLMT\n(Calming Beige)\n7Y_Visit ทุกๆ 6 เดือน 449 รอบบิลที่ 2-12 (224) 2,775 VISIT_7Y_6M_PRO_149(1M)_DC50%(11M)\nขนาดผลิตภัณฑ์ (กxสxลมม.)\n132 x 358 x 230 ราคา 149.- (1 รอบบิลแรก) รอบบิลที่ 13-84 (449)\nลด 50% 11 เดือน (รอบบิลที่ 2-12) รอบบิลที่ 1 (149)\n7Y_Self ทุกๆ 6 เดือน 399 รอบบิลที่ 2-12 (199) 2,450 SELF_7Y_6M_PRO_149(1M)_DC50%(11M)",
       "priceNote": "ราคารุ่นเดียวกัน"
     },
     {
@@ -205,13 +205,13 @@
           "promoCode": "SELF_7Y_6M_PRO_149(1M)_DC50%(11M"
         }
       ],
-      "description": "WD518AN.AWHPLMT (ขาว)"
+      "description": "(NEW)\n5Y_Visit ทุกๆ 6 เดือน 799 รอบบิลที่ 2-12 (399) 5,050 VISIT_5Y_6M_PRO_149(1M)_DC50%(11M)\nราคา 149.- (1 รอบบิลแรก) รอบบิลที่ 13-60 (799)\nWD516AN.ACNPLMT (น้ำเงิน)\nWD516AN.AEWPLMT (ขาว) ลด 50% 11 เดือน (รอบบิลที่ 2-12) รอบบิลที่ 1 (149)\nWD516AN.ASLPLMT (เงิน)\n5Y_Self ทุกๆ 6 เดือน 699 รอบบิลที่ 2-12 (349) 4,400 SELF_5Y_6M_PRO_149(1M)_DC50%(11M)\nWD518AN.ABGPLMT (เบจ) รอบบิลที่ 13-60 (699)\nWD518AN.AWHPLMT (ขาว)\nขนาดผลิตภัณฑ์ (กxสxลมม.) WD518AN.ACGPLMT (เทา)\nWD516: 170 x 419 x 550 7Y_Visit ทุกๆ 6 เดือน 599 รอบบิลที่ 2-12 (299) 3,750 VISIT_7Y_6M_PRO_149(1M)_DC50%(11M)\nWD518: 168 x 398 x 400\nราคา 149.- (1 รอบบิลแรก) รอบบิลที่ 13-84 (599)\n(ทุกสี)\nลด 50% 11 เดือน (รอบบิลที่ 2-12) รอบบิลที่ 1 (149)\n7Y_Self ทุกๆ 6 เดือน 499 รอบบิลที่ 2-12 (249) 3,100 SELF_7Y_6M_PRO_149(1M)_DC50%(11M)\n5Y_Visit ทุกๆ 6 เดือน 549 รอบบิลที่ 2-12 (274) 3,425 VISIT_5Y_6M_PRO_149(1M)_DC50%(11M)\nราคา 149.- (1 รอบบิลแรก) รอบบิลที่ 13-60 (549)\nลด 50% 11 เดือน (รอบบิลที่ 2-12) รอบบิลที่ 1 (149)\n5Y_Self ทุกๆ 6 เดือน 499 รอบบิลที่ 2-12 (249) 3,100 SELF_5Y_6M_PRO_149(1M)_DC50%(11M)\nWD110MN.ABGPLMT\n(Calming Beige)\n7Y_Visit ทุกๆ 6 เดือน 449 รอบบิลที่ 2-12 (224) 2,775 VISIT_7Y_6M_PRO_149(1M)_DC50%(11M)\nขนาดผลิตภัณฑ์ (กxสxลมม.)\n132 x 358 x 230 ราคา 149.- (1 รอบบิลแรก) รอบบิลที่ 13-84 (449)\nลด 50% 11 เดือน (รอบบิลที่ 2-12) รอบบิลที่ 1 (149)\n7Y_Self ทุกๆ 6 เดือน 399 รอบบิลที่ 2-12 (199) 2,450 SELF_7Y_6M_PRO_149(1M)_DC50%(11M)"
     },
     {
       "code": "F2520RNTB.AEBPETH",
       "slug": "f2520rntb-aebpeth",
       "category": "เครื่องซักผ้า",
-      "name": "F2520RNTB.AEBPETH",
+      "name": "ซัก : 20 กก. อบ 10 กก. • ราคา 149.- (1 รอบบิลแรก)",
       "source": "Price list_Aug_V3.pdf",
       "page": 16,
       "pdf": "/pdfs/Price%20list_Aug_V3.pdf",
@@ -244,13 +244,13 @@
           "promoCode": "SELF_6Y_12M_PRO_149(1M)_DC50%(7M"
         }
       ],
-      "description": "F2520RNTB.AEBPETH"
+      "description": "F2520RNTB.AEBPETH\nซัก : 20 กก. อบ 10 กก. • ราคา 149.- (1 รอบบิลแรก)\n5Y_Self ทุกๆ 12 เดือน 849 3,675 SELF_5Y_12M_PRO_149(1M)_DC50%(7M)\nรับประกันมอเตอร์ 10 ปี"
     },
     {
       "code": "FV1409H4W.ABWPETH",
       "slug": "fv1409h4w-abwpeth",
       "category": "เครื่องซักผ้า",
-      "name": "FV1409H4W.ABWPETH",
+      "name": "8รอบบิล) รอบบิลที่ 9 ถึง 72 (349",
       "source": "Sale Price8 - Subscription_V3.pdf",
       "page": 3,
       "pdf": "/pdfs/Sale%20Price8%20-%20Subscription_V3.pdf",
@@ -283,7 +283,7 @@
           "promoCode": "SELF_6Y_12M_DC50%8M_AUG"
         }
       ],
-      "description": "FV1409H4W.ABWPETH"
+      "description": "FV1409H4W.ABWPETH\nซัก : 9 กก. อบ 5 กก. Disc.50%\n5Y_Self ทุกๆ 12 เดือน 349 1,400 SELF_5Y_12M_DC50%8M_AUG\n(8รอบบิล) รอบบิลที่ 9 ถึง 72 (349)\nรับประกันมอเตอร์ 10 ปี\nOBS Subscription\nขนาดผลิตภัณฑ์\nDisc.50%\n6Y_Visit ทุกๆ 12 เดือน 349 1,400 VISIT_6Y_12M_DC50%8M_AUG\n(กว้างxสูงxลึก, มม.) (8 รอบบิล)\n600 x 850 x 475"
     },
     {
       "code": "FV1413H4M.AMBPETH",
@@ -322,13 +322,13 @@
           "promoCode": "SELF_6Y_12M_PRO_149(1M)_DC50%(7M"
         }
       ],
-      "description": "FV1413H4M.AMBPETH •"
+      "description": "FV1413H4M.AMBPETH •\nซัก : 13 กก. อบ 8 กก. 5Y_Self ทุกๆ 12 เดือน 649 2,775 SELF_5Y_12M_PRO_149(1M)_DC50%(7M)\nรับประกันมอเตอร์ 10 ปี •"
     },
     {
       "code": "FV1413S4M.AMBPETH",
       "slug": "fv1413s4m-ambpeth",
       "category": "เครื่องซักผ้า",
-      "name": "FV1413S4M.AMBPETH",
+      "name": "ซัก : 13 กก. • รอบบิลที่ 2-3 (299)",
       "source": "Price list_Aug_V3.pdf",
       "page": 18,
       "pdf": "/pdfs/Price%20list_Aug_V3.pdf",
@@ -361,7 +361,7 @@
           "promoCode": "SELF_6Y_12M_PRO_149(1M)_DC50%(2M"
         }
       ],
-      "description": "FV1413S4M.AMBPETH ราคา 149.- (1 รอบบิลแรก)"
+      "description": "FV1413S4M.AMBPETH ราคา 149.- (1 รอบบิลแรก)\n5Y_Self ทุกๆ 12 เดือน 599 1,050 SELF_5Y_12M_PRO_149(1M)_DC50%(2M)\nซัก : 13 กก. • รอบบิลที่ 2-3 (299)\nรับประกันมอเตอร์ 10 ปี"
     },
     {
       "code": "TX2315DT5G.DEGPETH",
@@ -400,7 +400,7 @@
           "promoCode": "SELF_6Y_12M_PRO_149(1M"
         }
       ],
-      "description": "TX2315DT5G.DEGPETH • รอบบิลที่ 1 (149)"
+      "description": "TX2315DT5G.DEGPETH • รอบบิลที่ 1 (149)\nSIZE : 15 KG\n5Y_Self ทุกๆ 12 เดือน 449 • ราคา 149.- (1 รอบบิลแรก) 300 SELF_5Y_12M_PRO_149(1M)"
     },
     {
       "code": "TX2723ST5J.APBPETH",
@@ -439,13 +439,13 @@
           "promoCode": "SELF_6Y_12M_PRO_149(1M)_DC50%(2M"
         }
       ],
-      "description": "TX2723ST5J.APBPETH"
+      "description": "TX2723ST5J.APBPETH\nSIZE : 23KG 5Y_Self ทุกๆ 12 เดือน 599 รอบบิลที่ 2-3 (299) 1,050 SELF_5Y_12M_PRO_149(1M)_DC50%(2M)\nT/L LG AI DD Inverter"
     },
     {
       "code": "A9T-CORE.DCGPETH",
       "slug": "a9t-core-dcgpeth",
       "category": "เครื่องดูดฝุ่น",
-      "name": "A9T-CORE.DCGPETH",
+      "name": "All in one Tower.",
       "source": "Price list_Aug_V3.pdf",
       "page": 3,
       "pdf": "/pdfs/Price%20list_Aug_V3.pdf",
@@ -460,7 +460,7 @@
           "promoCode": "SELF_5Y_12M_PRO_149(1M"
         }
       ],
-      "description": "A9T-CORE.DCGPETH"
+      "description": "A9T-CORE.DCGPETH\nAll in one Tower.\nBattery = 2 5Y_Self ทุกๆ 12 เดือน 649 500 SELF_5Y_12M_PRO_149(1M)\nสี : Calming Green"
     },
     {
       "code": "A9T-LITE.DCGPETH",
@@ -487,7 +487,7 @@
       "code": "A9T-ULTRA.DCBPETH",
       "slug": "a9t-ultra-dcbpeth",
       "category": "เครื่องดูดฝุ่น",
-      "name": "A9T-ULTRA.DCBPETH",
+      "name": "สี : Calming Beige",
       "source": "Price list_Aug_V3.pdf",
       "page": 3,
       "pdf": "/pdfs/Price%20list_Aug_V3.pdf",
@@ -502,13 +502,13 @@
           "promoCode": "SELF_5Y_12M_PRO_149(1M)_DC50%(2M"
         }
       ],
-      "description": "A9T-ULTRA.DCBPETH"
+      "description": "A9T-ULTRA.DCBPETH\nรับประกันมอเตอร์ 10 ปี • ราคา 149.- (1 รอบบิลแรก)\n5Y_Self ทุกๆ 12 เดือน 749 1,350 SELF_5Y_12M_PRO_149(1M)_DC50%(2M)\nBattery = 2 •\nสี : Calming Beige"
     },
     {
       "code": "ART13A.SR1",
       "slug": "art13a-sr1",
       "category": "เครื่องปรับอากาศ",
-      "name": "ART13A.SR1",
+      "name": "กว้างxสูงxลึก(มม.",
       "source": "Price list_Aug_V3.pdf",
       "page": 31,
       "pdf": "/pdfs/Price%20list_Aug_V3.pdf",
@@ -529,13 +529,13 @@
           "promoCode": "VISIT_5Y_12M_PRO_149(1M)_DC50%(7M"
         }
       ],
-      "description": "ART13A.SR1"
+      "description": "11.942 Btu • ราคา 149.- (1 รอบบิลแรก)\n5Y_Visit ทุกๆ 6 เดือน 1,049 4,575 VISIT_5Y_6M_PRO_149(1M)_DC50%(7M)\nART13A.SR1\nขนาดตัวเครื่องภายในอาคารรอบบิลที่ 9-60 (1,049)\n(กว้างxสูงxลึก(มม.)\n895x307x235\n11.942Btu ขนาดตัวเครื่องภายนอกอาคาร\n770x545x288\nประหยัดไฟเบอร์ 5 ★★★★★ • รอบบิลที่ 1 (149)\nLG ARTCOOL AI • ราคา 149.- (1 รอบบิลแรก)\n5Y_Visit ทุกๆ 12 เดือน 949 4,125 VISIT_5Y_12M_PRO_149(1M)_DC50%(7M)"
     },
     {
       "code": "ART18A.SR1",
       "slug": "art18a-sr1",
       "category": "เครื่องปรับอากาศ",
-      "name": "ART18A.SR1",
+      "name": "กว้างxสูงxลึก(มม.",
       "source": "Price list_Aug_V3.pdf",
       "page": 31,
       "pdf": "/pdfs/Price%20list_Aug_V3.pdf",
@@ -556,13 +556,13 @@
           "promoCode": "VISIT_5Y_12M_PRO_149(1M)_DC50%(7M"
         }
       ],
-      "description": "ART18A.SR1"
+      "description": "5Y_Visit ทุกๆ 6 เดือน 1,249 5,475\n18,084Btu\nART18A.SR1\nขนาดตัวเครื่องภายในอาคาร\n(กว้างxสูงxลึก(มม.)\n935x307x235\nขนาดตัวเครื่องภายนอกอาคาร\n870x650x330\nLG ARTCOOL AI ประหยัดไฟเบอร์ 5 ★★★ 5Y_Visit ทุกๆ 12 เดือน 1,149 5,025 VISIT_5Y_12M_PRO_149(1M)_DC50%(7M)"
     },
     {
       "code": "IXY11A",
       "slug": "ixy11a",
       "category": "เครื่องปรับอากาศ",
-      "name": "IXY11A",
+      "name": "New",
       "source": "Sale Price8 - Subscription_V3.pdf",
       "page": 6,
       "pdf": "/pdfs/Sale%20Price8%20-%20Subscription_V3.pdf",
@@ -577,13 +577,13 @@
           "promoCode": "VISIT_5Y_6M00"
         }
       ],
-      "description": "IXY11A รอบบิลที่ 2 ถึง 60 (499)"
+      "description": "(New)\n9,212Btu รอบบิลที่ 1 (149)\nIXY11A รอบบิลที่ 2 ถึง 60 (499)\n5Y_Visit ทุกๆ 6 เดือน 499 350 VISIT_5Y_6M00\nขนาดตัวเครื่องภายในอาคาร\n(กว้างxสูงxลึก(มม.)\n837x308x189\nขนาดตัวเครื่องภายนอกอาคาร\n717x495x230 5Y_Visit ทุกๆ 12 เดือน 399 250 VISIT_5Y_12M\nLG DUAL INVERTER\nประหยัดไฟเบอร์ 5"
     },
     {
       "code": "IXY13A",
       "slug": "ixy13a",
       "category": "เครื่องปรับอากาศ",
-      "name": "IXY13A",
+      "name": "กว้างxสูงxลึก(มม.",
       "source": "Sale Price8 - Subscription_V3.pdf",
       "page": 6,
       "pdf": "/pdfs/Sale%20Price8%20-%20Subscription_V3.pdf",
@@ -604,13 +604,13 @@
           "promoCode": "VISIT_5Y_6M"
         }
       ],
-      "description": "IXY13A รอบบิลที่ 2 ถึง 60 (549)"
+      "description": "9200Btu\n12,283Btu รอบบิลที่ 1 (149)\nIXY13A รอบบิลที่ 2 ถึง 60 (549)\n5Y_Visit ทุกๆ 6 เดือน 549 400 VISIT_5Y_6M\nขนาดตัวเครื่องภายในอาคาร\n(กว้างxสูงxลึก(มม.)\n837x308x189 Promotion Aug รอบบิลที่ 1 (149)\nขนาดตัวเครื่องภายนอกอาคารรอบบิลที่ 2 ถึง 60 (449)\nLG DUAL INVERTER 5Y_Visit ทุกๆ 12 เดือน 449 300 VISIT_5Y_12M\n717x495x230\n(1st Billing) 149\nประหยัดไฟเบอร์ 5\nOBS Subscription\n18,084Btu\nBuy 2 RAC Get Free\nIXY18A รอบบิลที่ 2 ถึง 60 (699)\n5Y_Visit ทุกๆ 6 เดือน 699 550 VISIT_5Y_6M\nขนาดตัวเครื่องภายในอาคาร\n(กว้างxสูงxลึก(มม.) 1 AS35\n998x345x210 รอบบิลที่ 1 (149)\nขนาดตัวเครื่องภายนอกอาคารรอบบิลที่ 2 ถึง 60 (599)\nLG DUAL INVERTER 5Y_Visit ทุกๆ 12 เดือน 599 450 VISIT_5Y_12M\n870x650x330\nประหยัดไฟเบอร์ 5\n21,154 Btu\nIXY24A\n5Y_Visit ทุกๆ 6 เดือน 849 700 VISIT_5Y_6M\nขนาดตัวเครื่องภายในอาคาร\n(กว้างxสูงxลึก(มม.)\n998x345x210\nขนาดตัวเครื่องภายนอกอาคาร\nLG DUAL INVERTER 870x650x330 5Y_Visit ทุกๆ 12 เดือน 749 600 VISIT_5Y_12M\nประหยัดไฟเบอร์ 5"
     },
     {
       "code": "IXY18A",
       "slug": "ixy18a",
       "category": "เครื่องปรับอากาศ",
-      "name": "IXY18A",
+      "name": "กว้างxสูงxลึก(มม.",
       "source": "Sale Price8 - Subscription_V3.pdf",
       "page": 6,
       "pdf": "/pdfs/Sale%20Price8%20-%20Subscription_V3.pdf",
@@ -631,13 +631,13 @@
           "promoCode": "VISIT_5Y_6M"
         }
       ],
-      "description": "IXY18A รอบบิลที่ 2 ถึง 60 (699)"
+      "description": "9200Btu\n12,283Btu รอบบิลที่ 1 (149)\nIXY13A รอบบิลที่ 2 ถึง 60 (549)\n5Y_Visit ทุกๆ 6 เดือน 549 400 VISIT_5Y_6M\nขนาดตัวเครื่องภายในอาคาร\n(กว้างxสูงxลึก(มม.)\n837x308x189 Promotion Aug รอบบิลที่ 1 (149)\nขนาดตัวเครื่องภายนอกอาคารรอบบิลที่ 2 ถึง 60 (449)\nLG DUAL INVERTER 5Y_Visit ทุกๆ 12 เดือน 449 300 VISIT_5Y_12M\n717x495x230\n(1st Billing) 149\nประหยัดไฟเบอร์ 5\nOBS Subscription\n18,084Btu\nBuy 2 RAC Get Free\nIXY18A รอบบิลที่ 2 ถึง 60 (699)\n5Y_Visit ทุกๆ 6 เดือน 699 550 VISIT_5Y_6M\nขนาดตัวเครื่องภายในอาคาร\n(กว้างxสูงxลึก(มม.) 1 AS35\n998x345x210 รอบบิลที่ 1 (149)\nขนาดตัวเครื่องภายนอกอาคารรอบบิลที่ 2 ถึง 60 (599)\nLG DUAL INVERTER 5Y_Visit ทุกๆ 12 เดือน 599 450 VISIT_5Y_12M\n870x650x330\nประหยัดไฟเบอร์ 5\n21,154 Btu\nIXY24A\n5Y_Visit ทุกๆ 6 เดือน 849 700 VISIT_5Y_6M\nขนาดตัวเครื่องภายในอาคาร\n(กว้างxสูงxลึก(มม.)\n998x345x210\nขนาดตัวเครื่องภายนอกอาคาร\nLG DUAL INVERTER 870x650x330 5Y_Visit ทุกๆ 12 เดือน 749 600 VISIT_5Y_12M\nประหยัดไฟเบอร์ 5"
     },
     {
       "code": "IXY24A",
       "slug": "ixy24a",
       "category": "เครื่องปรับอากาศ",
-      "name": "IXY24A",
+      "name": "กว้างxสูงxลึก(มม.",
       "source": "Sale Price8 - Subscription_V3.pdf",
       "page": 6,
       "pdf": "/pdfs/Sale%20Price8%20-%20Subscription_V3.pdf",
@@ -664,13 +664,13 @@
           "promoCode": "VISIT_5Y_12M"
         }
       ],
-      "description": "IXY24A"
+      "description": "9200Btu\n12,283Btu รอบบิลที่ 1 (149)\nIXY13A รอบบิลที่ 2 ถึง 60 (549)\n5Y_Visit ทุกๆ 6 เดือน 549 400 VISIT_5Y_6M\nขนาดตัวเครื่องภายในอาคาร\n(กว้างxสูงxลึก(มม.)\n837x308x189 Promotion Aug รอบบิลที่ 1 (149)\nขนาดตัวเครื่องภายนอกอาคารรอบบิลที่ 2 ถึง 60 (449)\nLG DUAL INVERTER 5Y_Visit ทุกๆ 12 เดือน 449 300 VISIT_5Y_12M\n717x495x230\n(1st Billing) 149\nประหยัดไฟเบอร์ 5\nOBS Subscription\n18,084Btu\nBuy 2 RAC Get Free\nIXY18A รอบบิลที่ 2 ถึง 60 (699)\n5Y_Visit ทุกๆ 6 เดือน 699 550 VISIT_5Y_6M\nขนาดตัวเครื่องภายในอาคาร\n(กว้างxสูงxลึก(มม.) 1 AS35\n998x345x210 รอบบิลที่ 1 (149)\nขนาดตัวเครื่องภายนอกอาคารรอบบิลที่ 2 ถึง 60 (599)\nLG DUAL INVERTER 5Y_Visit ทุกๆ 12 เดือน 599 450 VISIT_5Y_12M\n870x650x330\nประหยัดไฟเบอร์ 5\n21,154 Btu\nIXY24A\n5Y_Visit ทุกๆ 6 เดือน 849 700 VISIT_5Y_6M\nขนาดตัวเครื่องภายในอาคาร\n(กว้างxสูงxลึก(มม.)\n998x345x210\nขนาดตัวเครื่องภายนอกอาคาร\nLG DUAL INVERTER 870x650x330 5Y_Visit ทุกๆ 12 เดือน 749 600 VISIT_5Y_12M\nประหยัดไฟเบอร์ 5"
     },
     {
       "code": "SAQ11A",
       "slug": "saq11a",
       "category": "เครื่องปรับอากาศ",
-      "name": "SAQ11A",
+      "name": "กว้างxสูงxลึก(มม.) • รอบบิลที่ 9-60 (899",
       "source": "Price list_Aug_V3.pdf",
       "page": 32,
       "pdf": "/pdfs/Price%20list_Aug_V3.pdf",
@@ -691,13 +691,13 @@
           "promoCode": null
         }
       ],
-      "description": "9,200 Btu SAQ11A 5Y_Visit ทุกๆ 6 เดือน 899 3,900 VISIT_5Y_6M_PRO_149(1M)_DC50%(7M)"
+      "description": "9,200 Btu SAQ11A 5Y_Visit ทุกๆ 6 เดือน 899 3,900 VISIT_5Y_6M_PRO_149(1M)_DC50%(7M)\nขนาดตัวเครื่องภายในอาคารลด 50% 7 เดือน (รอบบิลที่ 2-8)\n(กว้างxสูงxลึก(มม.) • รอบบิลที่ 9-60 (899)\n895x307x235\nขนาดตัวเครื่องภายนอกอาคาร\n770x545x288\nประหยัดไฟเบอร์ 5 ★★★★★ 5Y_Visit ทุกๆ 12 เดือน 799 3,490\nLG DUALCOOL AI"
     },
     {
       "code": "SAQ13A",
       "slug": "saq13a",
       "category": "เครื่องปรับอากาศ",
-      "name": "SAQ13A",
+      "name": "กว้างxสูงxลึก(มม.) •",
       "source": "Price list_Aug_V3.pdf",
       "page": 32,
       "pdf": "/pdfs/Price%20list_Aug_V3.pdf",
@@ -718,13 +718,13 @@
           "promoCode": "VISIT_5Y_12M_PRO_149(1M)_DC50%(7M"
         }
       ],
-      "description": "SAQ13A • รอบบิลที่ 2-8 (474)"
+      "description": "12,000Btu 5Y_Visit ทุกๆ 6 เดือน 949 4,125 VISIT_5Y_6M_PRO_149(1M)_DC50%(7M)\nSAQ13A • รอบบิลที่ 2-8 (474)\nขนาดตัวเครื่องภายในอาคาร • ลด 50% 7 เดือน (รอบบิลที่ 2-8)\n(กว้างxสูงxลึก(มม.) •\n895x307x235\nขนาดตัวเครื่องภายนอกอาคาร\n770x545x288 • รอบบิลที่ 1 (149)\nLG DUALCOOL AI ประหยัดไฟเบอร์ 5 ★★★★★ • ราคา 149.- (1 รอบบิลแรก)\n5Y_Visit ทุกๆ 12 เดือน 849 3,675 VISIT_5Y_12M_PRO_149(1M)_DC50%(7M)"
     },
     {
       "code": "SAQ18B",
       "slug": "saq18b",
       "category": "เครื่องปรับอากาศ",
-      "name": "SAQ18B",
+      "name": "กว้างxสูงxลึก(มม.",
       "source": "Price list_Aug_V3.pdf",
       "page": 33,
       "pdf": "/pdfs/Price%20list_Aug_V3.pdf",
@@ -745,13 +745,13 @@
           "promoCode": "VISIT_5Y_12M_PRO_149(1M)_DC50%(7M"
         }
       ],
-      "description": "SAQ18B."
+      "description": "18,000Btu\n5Y_Visit ทุกๆ 6 เดือน 1.149 5,025 VISIT_5Y_6M_PRO_149(1M)_DC50%(7M)\nSAQ18B.\nขนาดตัวเครื่องภายในอาคาร • รอบบิลที่ 9-60 (1,149)\n(กว้างxสูงxลึก(มม.)\n1050x307x235\nขนาดตัวเครื่องภายนอกอาคาร\n9200Btu • รอบบิลที่ 1 (149)\n870x650x330\nLG DUALCOOL AI\nประหยัดไฟเบอร์ 5 ★★★★ 5Y_Visit ทุกๆ 12 เดือน 1,049 รอบบิลที่ 2-8 (524) 4,575 VISIT_5Y_12M_PRO_149(1M)_DC50%(7M)"
     },
     {
       "code": "SAQ24B",
       "slug": "saq24b",
       "category": "เครื่องปรับอากาศ",
-      "name": "SAQ24B",
+      "name": "กว้างxสูงxลึก(มม.",
       "source": "Price list_Aug_V3.pdf",
       "page": 33,
       "pdf": "/pdfs/Price%20list_Aug_V3.pdf",
@@ -772,13 +772,13 @@
           "promoCode": "VISIT_5Y_12M_PRO_149(1M)_DC50%(7M"
         }
       ],
-      "description": "SAQ24B. • รอบบิลที่ 2-8 (649)"
+      "description": "24,000Btu • ราคา 149.- (1 รอบบิลแรก)\n5Y_Visit ทุกๆ 6 เดือน 1,299 5,700 VISIT_5Y_6M_PRO_149(1M)_DC50%(7M)\nSAQ24B. • รอบบิลที่ 2-8 (649)\nลด 50% 7 เดือน (รอบบิลที่ 2-8)\nขนาดตัวเครื่องภายในอาคาร •\n(กว้างxสูงxลึก(มม.)\n1050x307x235\nขนาดตัวเครื่องภายนอกอาคาร\n870x650x330 • รอบบิลที่ 1 (149)\nLG DUALCOOL AI\nราคา 149.- (1 รอบบิลแรก)\nประหยัดไฟเบอร์ 5 ★★★ •\n5Y_Visit ทุกๆ 12 เดือน 1,199 5,250 VISIT_5Y_12M_PRO_149(1M)_DC50%(7M)"
     },
     {
       "code": "SIQ11B",
       "slug": "siq11b",
       "category": "เครื่องปรับอากาศ",
-      "name": "SIQ11B",
+      "name": "กว้างxสูงxลึก(มม.",
       "source": "Price list_Aug_V3.pdf",
       "page": 34,
       "pdf": "/pdfs/Price%20list_Aug_V3.pdf",
@@ -799,13 +799,13 @@
           "promoCode": null
         }
       ],
-      "description": "SIQ11B ลด 50% 7 เดือน (รอบบิลที่ 2-8)"
+      "description": "9,200Btu 5Y_Visit ทุกๆ 6 เดือน 699 3,000 VISIT_5Y_6M_PRO_149(1M)_DC50%(7M)\nSIQ11B ลด 50% 7 เดือน (รอบบิลที่ 2-8)\nขนาดตัวเครื่องภายในอาคาร • รอบบิลที่ 9-60 (699)\n(กว้างxสูงxลึก(มม.)\n799x307x235\nขนาดตัวเครื่องภายนอกอาคาร\n717x495x230 ราคา 149.- (1 รอบบิลแรก)\n5Y_Visit ทุกๆ 12 เดือน 599\nประหยัดไฟเบอร์ 5 ★ • รอบบิลที่ 2-8 (299)\nLG DUALCOOL AI 2,550 VISIT_5Y_12M_PRO_149(1M)_DC50%(7M)"
     },
     {
       "code": "SIQ13B",
       "slug": "siq13b",
       "category": "เครื่องปรับอากาศ",
-      "name": "SIQ13B",
+      "name": "กว้างxสูงxลึก(มม.",
       "source": "Price list_Aug_V3.pdf",
       "page": 34,
       "pdf": "/pdfs/Price%20list_Aug_V3.pdf",
@@ -826,13 +826,13 @@
           "promoCode": "VISIT_5Y_12M_PRO_149(1M)_DC50%(7M"
         }
       ],
-      "description": "SIQ13B"
+      "description": "5Y_Visit ทุกๆ 6 เดือน 799 3,450 VISIT_5Y_6M_PRO_149(1M)_DC50%(7M)\n920012,200 BtuBtu • รอบบิลที่ 2-8 (399)\nSIQ13B\nขนาดตัวเครื่องภายในอาคารรอบบิลที่ 9-60 (799)\n(กว้างxสูงxลึก(มม.)\n799x307x235\nขนาดตัวเครื่องภายนอกอาคาร\n717x495x230\nประหยัดไฟเบอร์ 5 ★ 5Y_Visit ทุกๆ 12 เดือน 699 รอบบิลที่ 2-8 (349) 3000 VISIT_5Y_12M_PRO_149(1M)_DC50%(7M)\nLG DUALCOOL AI"
     },
     {
       "code": "SIQ18B",
       "slug": "siq18b",
       "category": "เครื่องปรับอากาศ",
-      "name": "SIQ18B",
+      "name": "กว้างxสูงxลึก(มม.",
       "source": "Price list_Aug_V3.pdf",
       "page": 35,
       "pdf": "/pdfs/Price%20list_Aug_V3.pdf",
@@ -853,13 +853,13 @@
           "promoCode": "VISIT_5Y_12M_PRO_149(1M)_DC50%(7M"
         }
       ],
-      "description": "SIQ18B"
+      "description": "5Y_Visit ทุกๆ 6 เดือน 999 4,350 VISIT_5Y_6M_PRO_149(1M)_DC50%(7M)\n18,000Btu • รอบบิลที่ 2-8 (499)\nSIQ18B\nขนาดตัวเครื่องภายในอาคาร • รอบบิลที่ 9-60 (999)\n(กว้างxสูงxลึก(มม.)\n895x307x235\nขนาดตัวเครื่องภายนอกอาคาร\n770x545x288\nประหยัดไฟเบอร์ 5 ★\nLG DUALCOOL AI 5Y_Visit ทุกๆ 12 เดือน 899 3,900 VISIT_5Y_12M_PRO_149(1M)_DC50%(7M)"
     },
     {
       "code": "SIQ24B",
       "slug": "siq24b",
       "category": "เครื่องปรับอากาศ",
-      "name": "SIQ24B",
+      "name": "กว้างxสูงxลึก(มม.",
       "source": "Price list_Aug_V3.pdf",
       "page": 35,
       "pdf": "/pdfs/Price%20list_Aug_V3.pdf",
@@ -880,13 +880,13 @@
           "promoCode": "VISIT_5Y_12M_PRO_149(1M)_DC50%(7M"
         }
       ],
-      "description": "SIQ24B"
+      "description": "24,000Btu\n5Y_Visit ทุกๆ 6 เดือน 1,199 5.250 VISIT_5Y_6M_PRO_149(1M)_DC50%(7M)\nSIQ24B\nขนาดตัวเครื่องภายในอาคาร\n(กว้างxสูงxลึก(มม.)\n895x307x235\nขนาดตัวเครื่องภายนอกอาคาร\nLG DUALCOOL AI 870x650x330 • รอบบิลที่ 1 (149)\nราคา 149.- (1 รอบบิลแรก)\nประหยัดไฟเบอร์ 5 ★ •\n5Y_Visit ทุกๆ 12 เดือน 1,099 4,800 VISIT_5Y_12M_PRO_149(1M)_DC50%(7M)"
     },
     {
       "code": "ZT1Q12GULA1.EWGHATH",
       "slug": "zt1q12gula1-ewghath",
       "category": "เครื่องปรับอากาศ",
-      "name": "ZT1Q12GULA1.EWGHATH",
+      "name": "กว้างxสูงxลึก (มม.) 5Y_Visit ทุกๆ 4 เดือน 1,499 - VISIT_5Y_4M",
       "source": "Price list_Aug_V3.pdf",
       "page": 37,
       "pdf": "/pdfs/Price%20list_Aug_V3.pdf",
@@ -901,13 +901,13 @@
           "promoCode": "VISIT_5Y_4M"
         }
       ],
-      "description": "ZT1Q12GULA1.EWGHATH"
+      "description": "ZT1Q12GULA1.EWGHATH\n10,500Btu\nแอร์แบบ 1 ทิศทาง\nขนาดตัวเครื่องภายในอาคาร\n(กว้างxสูงxลึก (มม.) 5Y_Visit ทุกๆ 4 เดือน 1,499 - VISIT_5Y_4M\n860x132x450\nขนาดตัวเครื่องภายนอกอาคาร\nSEER 18.05/ประหยัดไฟเบอร์ 5 717x483x230"
     },
     {
       "code": "ZT1Q18GTLA1.EWGHATH",
       "slug": "zt1q18gtla1-ewghath",
       "category": "เครื่องปรับอากาศ",
-      "name": "ZT1Q18GTLA1.EWGHATH",
+      "name": "กว้างxสูงxลึก (มม.",
       "source": "Price list_Aug_V3.pdf",
       "page": 37,
       "pdf": "/pdfs/Price%20list_Aug_V3.pdf",
@@ -922,13 +922,13 @@
           "promoCode": "VISIT_5Y_4M"
         }
       ],
-      "description": "ZT1Q18GTLA1.EWGHATH"
+      "description": "18,000 Btu\nZT1Q18GTLA1.EWGHATH\nแอร์แบบ 1 ทิศทาง\nขนาดตัวเครื่องภายในอาคาร\n5Y_Visit ทุกๆ 4 เดือน 1,599 - VISIT_5Y_4M\n(กว้างxสูงxลึก (มม.)\n1,180x132x450\nขนาดตัวเครื่องภายนอกอาคาร\nSEER 17.92/ ประหยัดไฟเบอร์5 770x545x288"
     },
     {
       "code": "ZT1Q24GTLA1.EWGHATH",
       "slug": "zt1q24gtla1-ewghath",
       "category": "เครื่องปรับอากาศ",
-      "name": "ZT1Q24GTLA1.EWGHATH",
+      "name": "กว้างxสูงxลึก (มม.) 5Y_Visit ทุกๆ 4 เดือน 1,799 - VISIT_5Y_4M",
       "source": "Price list_Aug_V3.pdf",
       "page": 37,
       "pdf": "/pdfs/Price%20list_Aug_V3.pdf",
@@ -943,13 +943,13 @@
           "promoCode": "VISIT_5Y_4M"
         }
       ],
-      "description": "23,500 Btu ZT1Q24GTLA1.EWGHATH"
+      "description": "23,500 Btu ZT1Q24GTLA1.EWGHATH\nแอร์แบบ 1 ทิศทาง\nขนาดตัวเครื่องภายในอาคาร\n(กว้างxสูงxลึก (มม.) 5Y_Visit ทุกๆ 4 เดือน 1,799 - VISIT_5Y_4M\n1,180x132x450\nขนาดตัวเครื่องภายนอกอาคาร\nSEER 17.61/ ประหยัดไฟเบอร์5 870x650x330"
     },
     {
       "code": "ZT4Q18GPLA1.EWGHATH",
       "slug": "zt4q18gpla1-ewghath",
       "category": "เครื่องปรับอากาศ",
-      "name": "ZT4Q18GPLA1.EWGHATH",
+      "name": "กว้างxสูงxลึก (มม.) 5Y_Visit ทุกๆ 4 เดือน 1,899 - VISIT_5Y_4M",
       "source": "Price list_Aug_V3.pdf",
       "page": 36,
       "pdf": "/pdfs/Price%20list_Aug_V3.pdf",
@@ -964,13 +964,13 @@
           "promoCode": "VISIT_5Y_4M"
         }
       ],
-      "description": "ZT4Q18GPLA1.EWGHATH"
+      "description": "ZT4Q18GPLA1.EWGHATH\n18,000 Btu แอร์แบบ 4 ทิศทาง\nขนาดตัวเครื่องภายในอาคาร\n(กว้างxสูงxลึก (มม.) 5Y_Visit ทุกๆ 4 เดือน 1,899 - VISIT_5Y_4M\n840x204x840\nขนาดตัวเครื่องภายนอกอาคาร\nSEER 19.04/ประหยัดไฟเบอร์ 5 717x483x230"
     },
     {
       "code": "ZT4Q24GPLA1.EWGHATH",
       "slug": "zt4q24gpla1-ewghath",
       "category": "เครื่องปรับอากาศ",
-      "name": "ZT4Q24GPLA1.EWGHATH",
+      "name": "กว้างxสูงxลึก (มม.",
       "source": "Price list_Aug_V3.pdf",
       "page": 36,
       "pdf": "/pdfs/Price%20list_Aug_V3.pdf",
@@ -985,13 +985,13 @@
           "promoCode": "VISIT_5Y_4M"
         }
       ],
-      "description": "ZT4Q24GPLA1.EWGHATH"
+      "description": "24,500Btu\nZT4Q24GPLA1.EWGHATH\nแอร์แบบ 4 ทิศทาง\nขนาดตัวเครื่องภายในอาคาร 5Y_Visit ทุกๆ 4 เดือน 1,949 - VISIT_5Y_4M\n(กว้างxสูงxลึก (มม.)\n840x204x840\nขนาดตัวเครื่องภายนอกอาคาร"
     },
     {
       "code": "ZT4Q36GNLA1.EWGHATH",
       "slug": "zt4q36gnla1-ewghath",
       "category": "เครื่องปรับอากาศ",
-      "name": "ZT4Q36GNLA1.EWGHATH",
+      "name": "กว้างxสูงxลึก (มม.",
       "source": "Price list_Aug_V3.pdf",
       "page": 36,
       "pdf": "/pdfs/Price%20list_Aug_V3.pdf",
@@ -1006,13 +1006,13 @@
           "promoCode": "VISIT_5Y_4M"
         }
       ],
-      "description": "ZT4Q36GNLA1.EWGHATH"
+      "description": "ZT4Q36GNLA1.EWGHATH\n36,200Btu\nแอร์แบบ 4ทิศทาง Phase (220V)\nขนาดตัวเครื่องภายในอาคาร\n5Y_Visit ทุกๆ 4 เดือน 2,349 - VISIT_5Y_4M\n(กว้างxสูงxลึก (มม.)\n840x246x840\nขนาดตัวเครื่องภายนอกอาคาร\n950x834x330\nSEER 18.07/ ประหยัดไฟเบอร์5"
     },
     {
       "code": "ZT4Q48GMLA1.EWGHATH",
       "slug": "zt4q48gmla1-ewghath",
       "category": "เครื่องปรับอากาศ",
-      "name": "ZT4Q48GMLA1.EWGHATH",
+      "name": "กว้างxสูงxลึก (มม.",
       "source": "Price list_Aug_V3.pdf",
       "page": 36,
       "pdf": "/pdfs/Price%20list_Aug_V3.pdf",
@@ -1027,13 +1027,13 @@
           "promoCode": "VISIT_5Y_4M"
         }
       ],
-      "description": "48,000Btu ZT4Q48GMLA1.EWGHATH"
+      "description": "48,000Btu ZT4Q48GMLA1.EWGHATH\nแอร์แบบ 4ทิศทาง Phase (220V)\nขนาดตัวเครื่องภายในอาคาร\n5Y_Visit ทุกๆ 4 เดือน 2,499 - VISIT_5Y_4M\n(กว้างxสูงxลึก (มม.)\n840x288x840\nขนาดตัวเครื่องภายนอกอาคาร\nSEER 17.60/ ประหยัดไฟเบอร์5 950x834x330"
     },
     {
       "code": "ZTRQ36GYLA1.EWGHATH",
       "slug": "ztrq36gyla1-ewghath",
       "category": "เครื่องปรับอากาศ",
-      "name": "ZTRQ36GYLA1.EWGHATH",
+      "name": "แอร์แบบวงกลมม (คาสเซ็ทรอบทิศทาง)",
       "source": "Price list_Aug_V3.pdf",
       "page": 38,
       "pdf": "/pdfs/Price%20list_Aug_V3.pdf",
@@ -1048,13 +1048,13 @@
           "promoCode": "VISIT_5Y_4M"
         }
       ],
-      "description": "36,700Btu ZTRQ36GYLA1.EWGHATH"
+      "description": "36,700Btu ZTRQ36GYLA1.EWGHATH\nแอร์แบบวงกลมม (คาสเซ็ทรอบทิศทาง)\nPhase (220V)"
     },
     {
       "code": "ZTRQ48GYLA1.EWGHATH",
       "slug": "ztrq48gyla1-ewghath",
       "category": "เครื่องปรับอากาศ",
-      "name": "ZTRQ48GYLA1.EWGHATH",
+      "name": "แอร์แบบวงกลมม (คาสเซ็ทรอบทิศทาง)",
       "source": "Price list_Aug_V3.pdf",
       "page": 38,
       "pdf": "/pdfs/Price%20list_Aug_V3.pdf",
@@ -1069,13 +1069,13 @@
           "promoCode": "VISIT_5Y_4M"
         }
       ],
-      "description": "47,100 Btu ZTRQ48GYLA1.EWGHATH"
+      "description": "47,100 Btu ZTRQ48GYLA1.EWGHATH\nแอร์แบบวงกลมม (คาสเซ็ทรอบทิศทาง)\nPhase (220V)"
     },
     {
       "code": "AS10GDBY0.ABAE",
       "slug": "as10gdby0-abae",
       "category": "เครื่องฟอกอากาศ",
-      "name": "AS10GDBY0.ABAE",
+      "name": "Alpha Pet",
       "source": "Price list_Aug_V3.pdf",
       "page": 30,
       "pdf": "/pdfs/Price%20list_Aug_V3.pdf",
@@ -1096,13 +1096,13 @@
           "promoCode": "SELF_5Y_12M_PRO_149(1M)_DC50%(2M"
         }
       ],
-      "description": "AS10GDBY0.ABAE"
+      "description": "AS10GDBY0.ABAE\n(Alpha Pet)\n5Y Self ทุกๆ 12 เดือน 2,050 SELF_5Y_12M_PRO_149(1M)_DC50%(2M)\n1,099 • รอบบิลที่ 2-3 (549)\nพื้นที่การใช้งาน 104 ตร.ม.\nH13 HEPA/กาจัดกลิ่น • รอบบิลที่ 4 ถึง 60 (1,099)\nระบบ Baby-Care\n*ไม่มีรีโมท\nขนาดผลิตภัณฑ์ 2,250 VISIT_5Y_6M_PRO_149(1M)_DC50%(2M)\n1,199 รอบบิลที่ 2-3 (599)\n5Y Visit ทุกๆ 6 เดือน •\nกว้างxสูงxลึก (มม.) • ลด 50% 2 เดือน (รอบบิลที่ 2-3)\n377 x11002x 377\n*ไม่มีรีโมท"
     },
     {
       "code": "AS25GCBY0.ABAE",
       "slug": "as25gcby0-abae",
       "category": "เครื่องฟอกอากาศ",
-      "name": "AS25GCBY0.ABAE",
+      "name": "LG PuriCare AeroCat",
       "source": "Price list_Aug_V3.pdf",
       "page": 27,
       "pdf": "/pdfs/Price%20list_Aug_V3.pdf",
@@ -1123,13 +1123,13 @@
           "promoCode": "SELF_5Y_12M_PRO_149(1M)_DC50%(2M"
         }
       ],
-      "description": "AS25GCBY0.ABAE • ราคา 149.- (1 รอบบิลแรก)"
+      "description": "AS25GCBY0.ABAE • ราคา 149.- (1 รอบบิลแรก)\n5Y_Visit ทุกๆ 12 เดือน 599 1,050 VISIT_5Y_12M_PRO_149(1M)_DC50%(2M)\nLG PuriCare AeroCat\nTower\nพื้นที่การใช้งาน 24.8 ตร.ม."
     },
     {
       "code": "AS35GGW10.ATH",
       "slug": "as35ggw10-ath",
       "category": "เครื่องฟอกอากาศ",
-      "name": "AS35GGW10.ATH",
+      "name": "3 รอบบิล) รอบที่ 4 ถึง 60 (249",
       "source": "Sale Price8 - Subscription_V3.pdf",
       "page": 5,
       "pdf": "/pdfs/Sale%20Price8%20-%20Subscription_V3.pdf",
@@ -1150,13 +1150,13 @@
           "promoCode": "SELF_5Y_6M"
         }
       ],
-      "description": "AS35GGW10.ATH Disc.50% รอบที่ 1 ถึง 3 (124)"
+      "description": "AS35GGW10.ATH Disc.50% รอบที่ 1 ถึง 3 (124)\nAeroHit 5Y_Visit ทุกๆ 6 เดือน 249 375 VISIT_5Y_6M\n(3 รอบบิล) รอบที่ 4 ถึง 60 (249)\nพื้นที่การใช้งาน 32 ตร.ม.\nOBS Subscription\nขนาดผลิตภัณฑ์\nกว้างxสูงxลึก (มม.)\nรอบที่ 1 ถึง60(199)\n240 x 500 x 240 5Y_Self ทุกๆ 6 เดือน 199 SELF_5Y_6M\n*ไม่มีรีโมท"
     },
     {
       "code": "AS60GHWG0.ABAE",
       "slug": "as60ghwg0-abae",
       "category": "เครื่องฟอกอากาศ",
-      "name": "AS60GHWG0.ABAE",
+      "name": "Hit) 5Y Self ทุกๆ 12 เดือน 650 SELF_5Y_12M_PRO_149(1M)_DC50%(2M",
       "source": "Price list_Aug_V3.pdf",
       "page": 28,
       "pdf": "/pdfs/Price%20list_Aug_V3.pdf",
@@ -1189,13 +1189,13 @@
           "promoCode": "SELF_5Y_6M_PRO_149(1M)_DC50%(2M"
         }
       ],
-      "description": "AS60GHWG0.ABAE • รอบบิลที่ 1 (149)"
+      "description": "AS60GHWG0.ABAE • รอบบิลที่ 1 (149)\n(Hit) 5Y Self ทุกๆ 12 เดือน 650 SELF_5Y_12M_PRO_149(1M)_DC50%(2M)\n399 • รอบบิลที่ 2-3 (199)\nพื้นที่การใช้งาน 61 ตร.ม."
     },
     {
       "code": "AS65GDBY0.ABAE",
       "slug": "as65gdby0-abae",
       "category": "เครื่องฟอกอากาศ",
-      "name": "AS65GDBY0.ABAE",
+      "name": "Alpha Pet) • รอบบิลที่ 1 (149",
       "source": "Price list_Aug_V3.pdf",
       "page": 29,
       "pdf": "/pdfs/Price%20list_Aug_V3.pdf",
@@ -1222,7 +1222,7 @@
           "promoCode": null
         }
       ],
-      "description": "AS65GDBY0.ABAE"
+      "description": "AS65GDBY0.ABAE\n(Alpha Pet) • รอบบิลที่ 1 (149)\n5Y Self ทุกๆ 12 เดือน 1,250 SELF_5Y_12M_PRO_149(1M)_DC50%(2M)\n699 • รอบบิลที่ 2-3 (349)\nลด 50% 2 เดือน (รอบบิลที่ 2-3)\nพื้นที่การใช้งาน 61.2 ตร.ม. •\nH13 HEPA/กาจัดกลิ่น"
     },
     {
       "code": "DD23GMWE1.ATH",
@@ -1242,7 +1242,7 @@
       "code": "DD23GMWE1S.ATH",
       "slug": "dd23gmwe1s-ath",
       "category": "เครื่องลดความชื้น",
-      "name": "DD23GMWE1S.ATH",
+      "name": "23 ลิตร • แถมฟรี AeroMini • รอบบิลที่ 4-60 (599)",
       "source": "Price list_Aug_V3.pdf",
       "page": 26,
       "pdf": "/pdfs/Price%20list_Aug_V3.pdf",
@@ -1263,13 +1263,13 @@
           "promoCode": "SELF_5Y_12M_PRO_149(1M)_DC50%(2M)_FREE_GIFT"
         }
       ],
-      "description": "DD23GMWE1S.ATH"
+      "description": "5Y_Visit ทุกๆ 12 เดือน 599 1,050 VISIT_5Y_12M_PRO_149(1M)_DC50%(2M)_FREE_GIFT)\nDD23GMWE1S.ATH\n23 ลิตร • แถมฟรี AeroMini • รอบบิลที่ 4-60 (599)"
     },
     {
       "code": "MD19GQGA1.ATH",
       "slug": "md19gqga1-ath",
       "category": "เครื่องลดความชื้น",
-      "name": "MD19GQGA1.ATH",
+      "name": "3รอบบิล) รอบบิลที่ 4 ถึง 60(449) 675",
       "source": "Sale Price8 - Subscription_V3.pdf",
       "page": 4,
       "pdf": "/pdfs/Sale%20Price8%20-%20Subscription_V3.pdf",
@@ -1290,13 +1290,13 @@
           "promoCode": "SELF_5Y_12M_DC50%3M_AUG"
         }
       ],
-      "description": "MD19GQGA1.ATH Disc.50% รอบบิลที่ 1 ถึง 3 (224)"
+      "description": "MD19GQGA1.ATH Disc.50% รอบบิลที่ 1 ถึง 3 (224)\n5Y_Visit ทุกๆ 12 เดือน 449 VISIT_5Y_12M_DC50%3M_AUG\n(3รอบบิล) รอบบิลที่ 4 ถึง 60(449) 675\n19 ลิตร\nOBS Subscription\nขนาดผลิตภัณฑ์\nDisc.50%\n(กxสxลมม.) รอบบิลที่ 1 ถึง 3 (199)\n5Y_Self ทุกๆ 12 เดือน 399 SELF_5Y_12M_DC50%3M_AUG\n415 x 715 x 296 (3 รอบบิล) รอบบิลที่ 4 ถึง 60(399) 600"
     },
     {
       "code": "DFC335HM.ABMPETH",
       "slug": "dfc335hm-abmpeth",
       "category": "เครื่องล้างจาน",
-      "name": "DFC335HM.ABMPETH",
+      "name": "899 • รอบบิลที่ 2-8 (449)",
       "source": "Price list_Aug_V3.pdf",
       "page": 22,
       "pdf": "/pdfs/Price%20list_Aug_V3.pdf",
@@ -1317,7 +1317,7 @@
           "promoCode": "SELF_5Y_12M_PRO_149(1M)_DC50%(7M"
         }
       ],
-      "description": "DFC335HM.ABMPETH"
+      "description": "5Y Visit ทุกๆ 12 เดือน 3,900 VISIT_5Y_12M_PRO_149(1M)_DC50%(7M)\n899 • รอบบิลที่ 2-8 (449)\nDFC335HM.ABMPETH\nราคา 149.- (1 รอบบิลแรก)\nสีดา WI-FI control •\n5Y Self ทุกๆ 12 เดือน 3,675 SELF_5Y_12M_PRO_149(1M)_DC50%(7M)\n849 • รอบบิลที่ 2-8 (424)\nFunction Auto Open Dry"
     },
     {
       "code": "DFC533FV.APYPETH",
@@ -1371,13 +1371,13 @@
           "promoCode": "SELF_6Y_12M_PRO_149(1M)_DC50%(7M"
         }
       ],
-      "description": "RV10VHP2B.BBLPETH •"
+      "description": "RV10VHP2B.BBLPETH •\n749 3,225 SELF_5Y_12M_PRO_149(1M)_DC50%(7M)\nSIZE : 10 KG 5Y_Self ทุกๆ 12 เดือน • รอบบิลที่ 2-8 (374)\nรับประกันมอเตอร์ 10 ปี"
     },
     {
       "code": "S3MFC.ALBPETH",
       "slug": "s3mfc-albpeth",
       "category": "ตู้ถนอมผ้า",
-      "name": "S3MFC.ALBPETH",
+      "name": "899 • รอบบิลที่ 2-8 (449)",
       "source": "Price list_Aug_V3.pdf",
       "page": 24,
       "pdf": "/pdfs/Price%20list_Aug_V3.pdf",
@@ -1398,13 +1398,13 @@
           "promoCode": "SELF_6Y_12M_PRO_149(1M)_DC50%(7M"
         }
       ],
-      "description": "S3MFC.ALBPETH"
+      "description": "5Y Self ทุกๆ 12 เดือน 3,900 SELF_5Y_12M_PRO_149(1M)_DC50%(7M)\n899 • รอบบิลที่ 2-8 (449)\nS3MFC.ALBPETH"
     },
     {
       "code": "GC-B257SQYL.AMCPLMT",
       "slug": "gc-b257sqyl-amcplmt",
       "category": "ตู้เย็น",
-      "name": "GC-B257SQYL.AMCPLMT",
+      "name": "1st Billing) 149 รอบบิลที่ 2 ถึง 60 (549",
       "source": "Sale Price8 - Subscription_V3.pdf",
       "page": 2,
       "pdf": "/pdfs/Sale%20Price8%20-%20Subscription_V3.pdf",
@@ -1425,13 +1425,13 @@
           "promoCode": "VISIT_6Y_24M"
         }
       ],
-      "description": "GC-B257SQYL.AMCPLMT"
+      "description": "Promotion Aug รอบบิลที่ 1 (149)\n5Y_Visit ทุกๆ 24 เดือน 549 400 VISIT_5Y_24M\n(1st Billing) 149 รอบบิลที่ 2 ถึง 60 (549)\nGC-B257SQYL.AMCPLMT\n(Side by Side)"
     },
     {
       "code": "GC-L257KQKW.AEPPLMT",
       "slug": "gc-l257kqkw-aepplmt",
       "category": "ตู้เย็น",
-      "name": "GC-L257KQKW.AEPPLMT",
+      "name": "3รอบบิล) รอบบิลที่ 4 ถึง 60 (749",
       "source": "Sale Price8 - Subscription_V3.pdf",
       "page": 1,
       "pdf": "/pdfs/Sale%20Price8%20-%20Subscription_V3.pdf",
@@ -1452,13 +1452,13 @@
           "promoCode": "VISIT_6Y_24M"
         }
       ],
-      "description": "GC-L257KQKW.AEPPLMT"
+      "description": "Disc.50% รอบบิลที่ 1 ถึง 3 (374)\n5Y_Visit ทุกๆ 24 เดือน 749 1,125 VISIT_5Y_24M\n(3รอบบิล) รอบบิลที่ 4 ถึง 60 (749)\nGC-L257KQKW.AEPPLMT\n(Side by Side)\nSIZE : 22.6 คิว/ 641 ลิตร\nขนาดผลิตภัณฑ์รอบบิลที่ 1 ถึง 3 (324)\nDisc.50%\n(กว้างxสูงxลึก, มม.) รอบบิล) รอบบิลที่ 4 ถึง 72 (649)\n6Y_Visit ทุกๆ 24 เดือน 649 (3 975 VISIT_6Y_24M\n913 x 1790 x 735"
     },
     {
       "code": "GN-F392PQAK.AEPPLM1",
       "slug": "gn-f392pqak-aepplm1",
       "category": "ตู้เย็น",
-      "name": "GN-F392PQAK.AEPPLM1",
+      "name": "3รอบบิล",
       "source": "Sale Price8 - Subscription_V3.pdf",
       "page": 2,
       "pdf": "/pdfs/Sale%20Price8%20-%20Subscription_V3.pdf",
@@ -1479,13 +1479,13 @@
           "promoCode": "VISIT_6Y_24M"
         }
       ],
-      "description": "GN-F392PQAK.AEPPLM1 5Y_Visit ทุกๆ 24 เดือน 449 รอบบิลที่ 4 ถึง 60 (449) VISIT_5Y_24M"
+      "description": "Disc.50%\nGN-F392PQAK.AEPPLM1 5Y_Visit ทุกๆ 24 เดือน 449 รอบบิลที่ 4 ถึง 60 (449) VISIT_5Y_24M\n(3รอบบิล)\n(Top Freezer)"
     },
     {
       "code": "GV-B25FFGDB.ABMPLMT",
       "slug": "gv-b25ffgdb-abmplmt",
       "category": "ตู้เย็น",
-      "name": "GV-B25FFGDB.ABMPLMT",
+      "name": "Multi Door",
       "source": "Sale Price8 - Subscription_V3.pdf",
       "page": 1,
       "pdf": "/pdfs/Sale%20Price8%20-%20Subscription_V3.pdf",
@@ -1506,13 +1506,13 @@
           "promoCode": "VISIT_6Y_24M"
         }
       ],
-      "description": "GV-B25FFGDB.ABMPLMT (1st Billing) 149 รอบบิลที่ 2 ถึง 60 (699)"
+      "description": "Promotion Aug รอบบิลที่ 1 (149)\n5Y_Visit ทุกๆ 24 เดือน 699 550 VISIT_5Y_24M\nGV-B25FFGDB.ABMPLMT (1st Billing) 149 รอบบิลที่ 2 ถึง 60 (699)\n(Multi Door)\nSIZE : 21.6 คิว / 611 ลิตร"
     },
     {
       "code": "GN-F452PQAK.AEPPLMT",
       "slug": "gn-f452pqak-aepplmt",
       "category": "ตู้เย็น / 2 ประตู",
-      "name": "GN-F452PQAK.AEPPLMT",
+      "name": "Top Freezer) • รอบบิลที่ 2-3 (299",
       "source": "Price list_Aug_V3.pdf",
       "page": 10,
       "pdf": "/pdfs/Price%20list_Aug_V3.pdf",
@@ -1527,13 +1527,13 @@
           "promoCode": "VISIT_5Y_24M_PRO_149(1M)_DC50%(2M"
         }
       ],
-      "description": "GN-F452PQAK.AEPPLMT"
+      "description": "GN-F452PQAK.AEPPLMT\n5Y_Visit ทุกๆ 24 เดือน 599 1,050 VISIT_5Y_24M_PRO_149(1M)_DC50%(2M)\n(Top Freezer) • รอบบิลที่ 2-3 (299)\nSIZE : 16.2 คิว/ 459 ลิตร"
     },
     {
       "code": "GN-V389FQEF.AEPPLMT",
       "slug": "gn-v389fqef-aepplmt",
       "category": "ตู้เย็น / 2 ประตู",
-      "name": "GN-V389FQEF.AEPPLMT",
+      "name": "Bottom Freezer) •",
       "source": "Price list_Aug_V3.pdf",
       "page": 10,
       "pdf": "/pdfs/Price%20list_Aug_V3.pdf",
@@ -1560,13 +1560,13 @@
           "promoCode": "VISIT_6Y_24M_PRO_149(1M)_DC50%(2M"
         }
       ],
-      "description": "GN-V389FQEF.AEPPLMT ราคา 149.- (1 รอบบิลแรก)"
+      "description": "GN-V389FQEF.AEPPLMT ราคา 149.- (1 รอบบิลแรก)\n5Y_Visit ทุกๆ 24 เดือน 649 1,150 VISIT_5Y_24M_PRO_149(1M)_DC50%(2M)\n(Bottom Freezer) •\n2 Doors Instaview\nSIZE : 12 คิว/ 340 ลิตร\nขนาดผลิตภัณฑ์ • รอบบิลที่ 1 (149)\n(กว้างxสูงxลึก, มม.)\n6Y_Visit ทุกๆ 24 เดือน 549 950 VISIT_6Y_24M_PRO_149(1M)_DC50%(2M)\n600 x 1720 x 720"
     },
     {
       "code": "GC-B48FPGAM.ADBPLMT",
       "slug": "gc-b48fpgam-adbplmt",
       "category": "ตู้เย็น / Multi-Door",
-      "name": "GC-B48FPGAM.ADBPLMT",
+      "name": "Multi Door",
       "source": "Price list_Aug_V3.pdf",
       "page": 8,
       "pdf": "/pdfs/Price%20list_Aug_V3.pdf",
@@ -1587,13 +1587,13 @@
           "promoCode": "VISIT_6Y_24M_PRO_149(1M)_DC50%(2M"
         }
       ],
-      "description": "GC-B48FPGAM.ADBPLMT • รอบบิลที่ 2-3 (399)"
+      "description": "NEW\n5Y_Visit ทุกๆ 24 เดือน 799 1,450 VISIT_5Y_24M_PRO_149(1M)_DC50%(2M)\nGC-B48FPGAM.ADBPLMT • รอบบิลที่ 2-3 (399)\n(Multi Door)\nSmart Inverter Compressor"
     },
     {
       "code": "GC-G24FFQKB.AEEPLM1",
       "slug": "gc-g24ffqkb-aeeplm1",
       "category": "ตู้เย็น / Multi-Door",
-      "name": "GC-G24FFQKB.AEEPLM1",
+      "name": "Multi Door) •",
       "source": "Price list_Aug_V3.pdf",
       "page": 7,
       "pdf": "/pdfs/Price%20list_Aug_V3.pdf",
@@ -1608,13 +1608,13 @@
           "promoCode": "VISIT_5Y_24M_PRO_149(1M)_DC50%(7M"
         }
       ],
-      "description": "GC-G24FFQKB.AEEPLM1 • รอบบิลที่ 1 (149)"
+      "description": "GC-G24FFQKB.AEEPLM1 • รอบบิลที่ 1 (149)\nราคา 149.- (1 รอบบิลแรก)\n(Multi Door) •\n5Y_Visit ทุกๆ 24 เดือน 1,349 5,925 VISIT_5Y_24M_PRO_149(1M)_DC50%(7M)\nSmart Inverter Compressor\n(I&W Dispenser)\nสี : เบจ\nSIZE : 22.5 คิว/ 637 ลิตรราคา 149.- (1 รอบบิลแรก)\nขนาดผลิตภัณฑ์ 6Y_Visit ทุกๆ 24 เดือน 1,149 รอบบิลที่ 2-8 (574) 5,025 VISIT_6Y_24M_PRO_149(1M)_DC50%(7M)\n(กว้างxสูงxลึก, มม.) • ลด 50% 7 เดือน (รอบบิลที่ 2-8)\n914x 1,792 x 733 • รอบบิลที่ 9-72 (1,149)"
     },
     {
       "code": "GC-V22FFQMB.AEPPLMT",
       "slug": "gc-v22ffqmb-aepplmt",
       "category": "ตู้เย็น / Multi-Door",
-      "name": "GC-V22FFQMB.AEPPLMT",
+      "name": "Multi Door) • ลด 50% 2 เดือน (รอบบิลที่ 2-3",
       "source": "Price list_Aug_V3.pdf",
       "page": 7,
       "pdf": "/pdfs/Price%20list_Aug_V3.pdf",
@@ -1641,13 +1641,13 @@
           "promoCode": "VISIT_6Y_24M_PRO_149(1M)_DC50%(2M"
         }
       ],
-      "description": "GC-V22FFQMB.AEPPLMT 5Y_Visit ทุกๆ 24 เดือน 949 1,750 VISIT_5Y_24M_PRO_149(1M)_DC50%(2M)"
+      "description": "GC-V22FFQMB.AEPPLMT 5Y_Visit ทุกๆ 24 เดือน 949 1,750 VISIT_5Y_24M_PRO_149(1M)_DC50%(2M)\n(Multi Door) • ลด 50% 2 เดือน (รอบบิลที่ 2-3)\nSIZE : 18.7 คิว/ 530 ลิตร\nขนาดผลิตภัณฑ์\n(กว้างxสูงxลึก, มม.)\n835x 1787x 730\n6Y_Visit ทุกๆ 24 เดือน 799 1,450 VISIT_6Y_24M_PRO_149(1M)_DC50%(2M)"
     },
     {
       "code": "GV-V25FFGRB.ABMPLMT",
       "slug": "gv-v25ffgrb-abmplmt",
       "category": "ตู้เย็น / Multi-Door",
-      "name": "GV-V25FFGRB.ABMPLMT",
+      "name": "Multi Door) รอบบิลที่ 2-60 (999",
       "source": "Price list_Aug_V3.pdf",
       "page": 9,
       "pdf": "/pdfs/Price%20list_Aug_V3.pdf",
@@ -1668,7 +1668,7 @@
           "promoCode": "VISIT_6Y_24M_PRO_149(1M"
         }
       ],
-      "description": "GV-V25FFGRB.ABMPLMT 5Y_Visit ทุกๆ 24 เดือน 999 850 VISIT_5Y_24M_PRO_149(1M)"
+      "description": "GV-V25FFGRB.ABMPLMT 5Y_Visit ทุกๆ 24 เดือน 999 850 VISIT_5Y_24M_PRO_149(1M)\n(Multi Door) รอบบิลที่ 2-60 (999)\nSmart Inverter Compressor"
     },
     {
       "code": "GC-L24FFCBB.AEVPLM1",
@@ -1695,7 +1695,7 @@
       "code": "GC-J257SQZW.AEPPLMT",
       "slug": "gc-j257sqzw-aepplmt",
       "category": "ตู้เย็น / Side-by-Side",
-      "name": "GC-J257SQZW.AEPPLMT",
+      "name": "Side by Side",
       "source": "Price list_Aug_V3.pdf",
       "page": 6,
       "pdf": "/pdfs/Price%20list_Aug_V3.pdf",
@@ -1716,13 +1716,13 @@
           "promoCode": "VISIT_6Y_24M_PRO_149(1M)_DC50%(2M"
         }
       ],
-      "description": "GC-J257SQZW.AEPPLMT"
+      "description": "5Y_Visit ทุกๆ 24 เดือน 1,049 1,950 VISIT_5Y_24M_PRO_149(1M)_DC50%(2M)\nGC-J257SQZW.AEPPLMT\n(Side by Side)\nSIZE : 22.4 คิว /635 ลิตร\nขนาดผลิตภัณฑ์รอบบิลที่ 1 (149)\nราคา 149.- (1 รอบบิลแรก)\n(กว้างxสูงxลึก, มม.) •\n6Y_Visit ทุกๆ 24 เดือน 899 1,650 VISIT_6Y_24M_PRO_149(1M)_DC50%(2M)\n913 x 1790 x 735"
     },
     {
       "code": "GC-L257SFZW.APYPLMT",
       "slug": "gc-l257sfzw-apyplmt",
       "category": "ตู้เย็น / Side-by-Side",
-      "name": "GC-L257SFZW.APYPLMT",
+      "name": "Side by Side",
       "source": "Price list_Aug_V3.pdf",
       "page": 5,
       "pdf": "/pdfs/Price%20list_Aug_V3.pdf",
@@ -1749,13 +1749,13 @@
           "promoCode": "VISIT_6Y_24M_PRO_149(1M"
         }
       ],
-      "description": "GC-L257SFZW.APYPLMT • รอบบิลที่ 1 (149)"
+      "description": "GC-L257SFZW.APYPLMT • รอบบิลที่ 1 (149)\n5Y_Visit ทุกๆ 24 เดือน 849 700 VISIT_5Y_24M_PRO_149(1M)\nราคา 149.- (1 รอบบิลแรก)\n(Side by Side)\nSIZE : 22.4 คิว/ 635 ลิตร"
     },
     {
       "code": "GC-X257CMEW.ATEPLMT",
       "slug": "gc-x257cmew-ateplmt",
       "category": "ตู้เย็น / Side-by-Side",
-      "name": "GC-X257CMEW.ATEPLMT",
+      "name": "Side by Side) (InstaView) • รอบบิลที่ 9-60 (1,249",
       "source": "Price list_Aug_V3.pdf",
       "page": 6,
       "pdf": "/pdfs/Price%20list_Aug_V3.pdf",
@@ -1776,13 +1776,13 @@
           "promoCode": "VISIT_6Y_24M_PRO_149(1M)_DC50%(7M"
         }
       ],
-      "description": "GC-X257CMEW.ATEPLMT ลด 50% 7 เดือน (รอบบิลที่ 2-8)"
+      "description": "5Y_Visit ทุกๆ 24 เดือน 1,249 5,475 VISIT_5Y_24M_PRO_149(1M)_DC50%(7M)\nGC-X257CMEW.ATEPLMT ลด 50% 7 เดือน (รอบบิลที่ 2-8)\n(Side by Side) (InstaView) • รอบบิลที่ 9-60 (1,249)"
     },
     {
       "code": "GC-X257CMHW.AEEPLMT",
       "slug": "gc-x257cmhw-aeeplmt",
       "category": "ตู้เย็น / Side-by-Side",
-      "name": "GC-X257CMHW.AEEPLMT",
+      "name": "กว้างxสูงxลึก, มม.) • รอบบิลที่ 2-72 (1,249",
       "source": "Price list_Aug_V3.pdf",
       "page": 5,
       "pdf": "/pdfs/Price%20list_Aug_V3.pdf",
@@ -1797,13 +1797,13 @@
           "promoCode": null
         }
       ],
-      "description": "GC-X257CMHW.AEEPLMT"
+      "description": "GC-X257CMHW.AEEPLMT\n(Side by Side) Plumbing 5Y_Visit ทุกๆ 6 เดือน 1,449 ราคา 149.- (1 รอบบิลแรก) 1,300\nWATERFILTER\n+ Water Filter • รอบบิลที่ 2-60 (1,449)\nSIZE : 22.4 คิว/ 635 ลิตร\nสี Beige\nVISIT_6Y_6M_PRO_149(1M)_ADD_\nขนาดผลิตภัณฑ์ 6Y_Visit ทุกๆ 6 เดือน 1,249 1,100 WATERFILTER\nราคา 149.- (1 รอบบิลแรก)\n(กว้างxสูงxลึก, มม.) • รอบบิลที่ 2-72 (1,249)\n913x 1790x 735"
     },
     {
       "code": "100MRGB96BS.ATM",
       "slug": "100mrgb96bs-atm",
       "category": "โทรทัศน์",
-      "name": "100MRGB96BS.ATM",
+      "name": "WxHxD mm",
       "source": "Price list_Aug_V3.pdf",
       "page": 39,
       "pdf": "/pdfs/Price%20list_Aug_V3.pdf",
@@ -1818,13 +1818,13 @@
           "promoCode": null
         }
       ],
-      "description": "100MRGB96BS.ATM"
+      "description": "NEW\n5Y\n100MRGB96BS.ATM\nขนาดทีวีแบบไม่รวมขาตั้ง\n(WxHxD mm)\n2230 x 1277 x 49.9 26,994 4,499 รอบบิลที่ 13 - 20 (2,249) 18,000\nNo DC50%(8M)\nขนาดทีวีแบบรวมขาตั้ง • 13M~20M (8 Months 50% Discount)\nService\n(WxHxD mm) • รอบบิลที่ 21 - 60 (4,499)\n2230 x 1372 x 434"
     },
     {
       "code": "100QNED86BS.ATM",
       "slug": "100qned86bs-atm",
       "category": "โทรทัศน์",
-      "name": "100QNED86BS.ATM",
+      "name": "No • Advance payment 50% 12 บิลแรก",
       "source": "Price list_Aug_V3.pdf",
       "page": 43,
       "pdf": "/pdfs/Price%20list_Aug_V3.pdf",
@@ -1839,13 +1839,13 @@
           "promoCode": null
         }
       ],
-      "description": "100QNED86BS.ATM"
+      "description": "100QNED86BS.ATM\n5Y\nขนาดทีวีแบบไม่รวมขาตั้ง (WxHxD mm)\n2230 x 1277 x 49.9 15,594 2,599 - NOSERVICE_5Y_PRO_ADV50%(12M)\nNo • Advance payment 50% 12 บิลแรก\nขนาดทีวีแบบรวมขาตั้ง (WxHxD mm) •รอบบิลที่ 13 - 60 (2,599)\nService\n2230 x 1372 x 434"
     },
     {
       "code": "27LX6TDGA.ATM",
       "slug": "27lx6tdga-atm",
       "category": "โทรทัศน์",
-      "name": "27LX6TDGA.ATM",
+      "name": "LG StanbyME2 • รอบบิลที่ 1- 12 (374.50)",
       "source": "Price list_Aug_V3.pdf",
       "page": 41,
       "pdf": "/pdfs/Price%20list_Aug_V3.pdf",
@@ -1860,13 +1860,13 @@
           "promoCode": null
         }
       ],
-      "description": "27LX6TDGA.ATM"
+      "description": "Life Style TV 5Y\n27LX6TDGA.ATM\nLG StanbyME2 • รอบบิลที่ 1- 12 (374.50)\nขนาดทีวีแบบไม่รวมขาตั้ง (WxHxD mm) •\n4,494 749 3,000\n623 x 364 x 28.5 No DC50%(8M)\nขนาดทีวีแบบรวมขาตั้ง (WxHxD mm) Service\n623 x 1265 x 398"
     },
     {
       "code": "27LX6TDGA.GRAB",
       "slug": "27lx6tdga-grab",
       "category": "โทรทัศน์",
-      "name": "27LX6TDGA.GRAB",
+      "name": "27LX6TDGA.ATM+GRAB",
       "source": "Price list_Aug_V3.pdf",
       "page": 41,
       "pdf": "/pdfs/Price%20list_Aug_V3.pdf",
@@ -1881,13 +1881,13 @@
           "promoCode": null
         }
       ],
-      "description": "27LX6TDGA.GRAB"
+      "description": "Life Style TV\n27LX6TDGA.GRAB\n5Y\n(27LX6TDGA.ATM+GRAB)\nNOSERVICE_5Y_PRO_ADV50%(12M)_\nLG StanbyME2\nขนาดทีวีแบบไม่รวมขาตั้ง (WxHxD mm) 4,494 749 1,125 DC50%(3M)_FREE_GIFT\n623 x 364 x 28.5 แถมฟรี xboom GRAB รอบบิลที่ 16 - 60 (749)\nNo\nขนาดทีวีแบบรวมขาตั้ง (WxHxD mm)\nService\n623 x 1265 x 398"
     },
     {
       "code": "32LX6BDGA.ATM",
       "slug": "32lx6bdga-atm",
       "category": "โทรทัศน์",
-      "name": "32LX6BDGA.ATM",
+      "name": "LG StanbyME 2 Max NOSERVICE_5Y_PRO_ADV50%(12M)_",
       "source": "Price list_Aug_V3.pdf",
       "page": 45,
       "pdf": "/pdfs/Price%20list_Aug_V3.pdf",
@@ -1902,13 +1902,13 @@
           "promoCode": null
         }
       ],
-      "description": "32LX6BDGA.ATM"
+      "description": "Life Style TV\nLG StanbyME 2 Max NOSERVICE_5Y_PRO_ADV50%(12M)_\n5Y 5,094 849 3,400\nDC50%(8M)\n32LX6BDGA.ATM"
     },
     {
       "code": "32U889.GRAB",
       "slug": "32u889-grab",
       "category": "โทรทัศน์",
-      "name": "32U889.GRAB",
+      "name": "32U889SA-W+GRAB",
       "source": "Price list_Aug_V3.pdf",
       "page": 47,
       "pdf": "/pdfs/Price%20list_Aug_V3.pdf",
@@ -1923,13 +1923,13 @@
           "promoCode": null
         }
       ],
-      "description": "32U889.GRAB 5Y"
+      "description": "32U889.GRAB 5Y\n(32U889SA-W+GRAB)\nNOSERVICE_5Y_PRO_ADV50%(12M)\nจอมอนิเตอร์ 31.5\" 4K IPS\n4,194 699 1,050 _DC50%(3M)\nSmart Monitor รอบบิลที่ 13 - 15 (349)\n13M~15M (3 Months 50% Discount)\nSwing จอสัมผัสขาตั้งหมุนได้ •\nNo Service\nขนาดแบบรวมขาตั้ง (WxHxD mm) • รอบบิลที่ 16 - 60 (699)\n727.4 x 1312.3 x 420 *มีรีโมท"
     },
     {
       "code": "32U889SA-W.ATM",
       "slug": "32u889sa-w-atm",
       "category": "โทรทัศน์",
-      "name": "32U889SA-W.ATM",
+      "name": "จอมอนิเตอร์ 31.5\" 4K IPS Smart Monitor",
       "source": "Price list_Aug_V3.pdf",
       "page": 46,
       "pdf": "/pdfs/Price%20list_Aug_V3.pdf",
@@ -1944,13 +1944,13 @@
           "promoCode": null
         }
       ],
-      "description": "32U889SA-W.ATM 5Y"
+      "description": "32U889SA-W.ATM 5Y\nNOSERVICE_5Y_PRO_ADV50%(12M) _\nจอมอนิเตอร์ 31.5\" 4K IPS Smart Monitor\nSwing จอสัมผัสขาตั้งหมุนได้ 4,194 699 2,800 DC50%(8M)\nขนาดแบบรวมขาตั้ง (WxHxD mm) No • 13M~20M (8 Months 50% Discount)\n727.4 x 1312.3 x 420 *มีรีโมท Service • รอบบิลที่ 21 - 60 (699)"
     },
     {
       "code": "34U650A-B.ATM",
       "slug": "34u650a-b-atm",
       "category": "โทรทัศน์",
-      "name": "34U650A-B.ATM",
+      "name": "LG UltraGear 45\" OLED Dual-Mode",
       "source": "Price list_Aug_V3.pdf",
       "page": 46,
       "pdf": "/pdfs/Price%20list_Aug_V3.pdf",
@@ -1965,13 +1965,13 @@
           "promoCode": null
         }
       ],
-      "description": "34U650A-B.ATM"
+      "description": "จาก\nรยะเวลาราคา\nราคาต่อโปรโมชัน\nรอบ\nจานวนเงินที่ต้องชาระราคาโปรปกติ\nเดือน (New)\nบริการ\n45GX950A-B.ATM\n5Y\nLG UltraGear 45\" OLED Dual-Mode\n5K2K 0.03ms, DisplayHDR True Black 8,994 1,499 Advance payment 50% 12 บิลแรก - NOSERVICE_5Y_PRO_ADV50%(12M)\nNo\nขนาดแบบรวมขาตั้ง (WxHxD mm) •รอบบิลที่ 13 - 60 (1,499)\nService\n991.6 x 665.6 x 342 *ไม่มีรีโมท\n52G930B-B.ATM\n5Y\nLG UltraGear evo G9| จอเกมมิ่ง 52”\nThe World’s Largest 5K2K 240Hz 7,194 1,199 Advance payment 50% 12 บิลแรก - NOSERVICE_5Y_PRO_ADV50%(12M)\nNo\nขนาดแบบรวมขาตั้ง (WxHxD mm) รอบบิลที่ 13 - 60 (1,199)\nService\n1174.6 x 713.1 x 350 *ไม่มีรีโมท\n40U990A-W.ATM\n5Y\nLG UltraFine 40 นิ้ว |40U990A| Nano IPS\nBlack 5K2K with Thunderbolt 5 5,994 999 Advance payment 50% 12 บิลแรก - NOSERVICE_5Y_PRO_ADV50%(12M)\nNo\nขนาดแบบรวมขาตั้ง (WxHxD mm) รอบบิลที่ 13 - 60 (999)\nService\n947.7 x 614.3 x 260 *ไม่มีรีโมท\n34U650A-B.ATM\n5Y\n“34” WQHD IPS 100Hz” IPS,\nCurved (3800R) IPS 100Hz 2,394 399 Advance payment 50% 12 บิลแรก - NOSERVICE_5Y_PRO_ADV50%(12M)\nNo\nขนาดแบบรวมขาตั้ง (WxHxD mm) รอบบิลที่ 13 - 60 (399)\nService\n816.7x535.2x230 *ไม่มีรีโมท"
     },
     {
       "code": "40U990A-W.ATM",
       "slug": "40u990a-w-atm",
       "category": "โทรทัศน์",
-      "name": "40U990A-W.ATM",
+      "name": "LG UltraGear 45\" OLED Dual-Mode",
       "source": "Price list_Aug_V3.pdf",
       "page": 46,
       "pdf": "/pdfs/Price%20list_Aug_V3.pdf",
@@ -1986,13 +1986,13 @@
           "promoCode": null
         }
       ],
-      "description": "40U990A-W.ATM"
+      "description": "จาก\nรยะเวลาราคา\nราคาต่อโปรโมชัน\nรอบ\nจานวนเงินที่ต้องชาระราคาโปรปกติ\nเดือน (New)\nบริการ\n45GX950A-B.ATM\n5Y\nLG UltraGear 45\" OLED Dual-Mode\n5K2K 0.03ms, DisplayHDR True Black 8,994 1,499 Advance payment 50% 12 บิลแรก - NOSERVICE_5Y_PRO_ADV50%(12M)\nNo\nขนาดแบบรวมขาตั้ง (WxHxD mm) •รอบบิลที่ 13 - 60 (1,499)\nService\n991.6 x 665.6 x 342 *ไม่มีรีโมท\n52G930B-B.ATM\n5Y\nLG UltraGear evo G9| จอเกมมิ่ง 52”\nThe World’s Largest 5K2K 240Hz 7,194 1,199 Advance payment 50% 12 บิลแรก - NOSERVICE_5Y_PRO_ADV50%(12M)\nNo\nขนาดแบบรวมขาตั้ง (WxHxD mm) รอบบิลที่ 13 - 60 (1,199)\nService\n1174.6 x 713.1 x 350 *ไม่มีรีโมท\n40U990A-W.ATM\n5Y\nLG UltraFine 40 นิ้ว |40U990A| Nano IPS\nBlack 5K2K with Thunderbolt 5 5,994 999 Advance payment 50% 12 บิลแรก - NOSERVICE_5Y_PRO_ADV50%(12M)\nNo\nขนาดแบบรวมขาตั้ง (WxHxD mm) รอบบิลที่ 13 - 60 (999)\nService\n947.7 x 614.3 x 260 *ไม่มีรีโมท\n34U650A-B.ATM\n5Y\n“34” WQHD IPS 100Hz” IPS,\nCurved (3800R) IPS 100Hz 2,394 399 Advance payment 50% 12 บิลแรก - NOSERVICE_5Y_PRO_ADV50%(12M)\nNo\nขนาดแบบรวมขาตั้ง (WxHxD mm) รอบบิลที่ 13 - 60 (399)\nService\n816.7x535.2x230 *ไม่มีรีโมท"
     },
     {
       "code": "45GX950A-B.ATM",
       "slug": "45gx950a-b-atm",
       "category": "โทรทัศน์",
-      "name": "45GX950A-B.ATM",
+      "name": "LG UltraGear 45\" OLED Dual-Mode",
       "source": "Price list_Aug_V3.pdf",
       "page": 46,
       "pdf": "/pdfs/Price%20list_Aug_V3.pdf",
@@ -2007,13 +2007,13 @@
           "promoCode": null
         }
       ],
-      "description": "45GX950A-B.ATM"
+      "description": "จาก\nรยะเวลาราคา\nราคาต่อโปรโมชัน\nรอบ\nจานวนเงินที่ต้องชาระราคาโปรปกติ\nเดือน (New)\nบริการ\n45GX950A-B.ATM\n5Y\nLG UltraGear 45\" OLED Dual-Mode\n5K2K 0.03ms, DisplayHDR True Black 8,994 1,499 Advance payment 50% 12 บิลแรก - NOSERVICE_5Y_PRO_ADV50%(12M)\nNo\nขนาดแบบรวมขาตั้ง (WxHxD mm) •รอบบิลที่ 13 - 60 (1,499)\nService\n991.6 x 665.6 x 342 *ไม่มีรีโมท\n52G930B-B.ATM\n5Y\nLG UltraGear evo G9| จอเกมมิ่ง 52”\nThe World’s Largest 5K2K 240Hz 7,194 1,199 Advance payment 50% 12 บิลแรก - NOSERVICE_5Y_PRO_ADV50%(12M)\nNo\nขนาดแบบรวมขาตั้ง (WxHxD mm) รอบบิลที่ 13 - 60 (1,199)\nService\n1174.6 x 713.1 x 350 *ไม่มีรีโมท\n40U990A-W.ATM\n5Y\nLG UltraFine 40 นิ้ว |40U990A| Nano IPS\nBlack 5K2K with Thunderbolt 5 5,994 999 Advance payment 50% 12 บิลแรก - NOSERVICE_5Y_PRO_ADV50%(12M)\nNo\nขนาดแบบรวมขาตั้ง (WxHxD mm) รอบบิลที่ 13 - 60 (999)\nService\n947.7 x 614.3 x 260 *ไม่มีรีโมท\n34U650A-B.ATM\n5Y\n“34” WQHD IPS 100Hz” IPS,\nCurved (3800R) IPS 100Hz 2,394 399 Advance payment 50% 12 บิลแรก - NOSERVICE_5Y_PRO_ADV50%(12M)\nNo\nขนาดแบบรวมขาตั้ง (WxHxD mm) รอบบิลที่ 13 - 60 (399)\nService\n816.7x535.2x230 *ไม่มีรีโมท"
     },
     {
       "code": "52G930B-B.ATM",
       "slug": "52g930b-b-atm",
       "category": "โทรทัศน์",
-      "name": "52G930B-B.ATM",
+      "name": "LG UltraGear 45\" OLED Dual-Mode",
       "source": "Price list_Aug_V3.pdf",
       "page": 46,
       "pdf": "/pdfs/Price%20list_Aug_V3.pdf",
@@ -2028,7 +2028,7 @@
           "promoCode": null
         }
       ],
-      "description": "52G930B-B.ATM"
+      "description": "จาก\nรยะเวลาราคา\nราคาต่อโปรโมชัน\nรอบ\nจานวนเงินที่ต้องชาระราคาโปรปกติ\nเดือน (New)\nบริการ\n45GX950A-B.ATM\n5Y\nLG UltraGear 45\" OLED Dual-Mode\n5K2K 0.03ms, DisplayHDR True Black 8,994 1,499 Advance payment 50% 12 บิลแรก - NOSERVICE_5Y_PRO_ADV50%(12M)\nNo\nขนาดแบบรวมขาตั้ง (WxHxD mm) •รอบบิลที่ 13 - 60 (1,499)\nService\n991.6 x 665.6 x 342 *ไม่มีรีโมท\n52G930B-B.ATM\n5Y\nLG UltraGear evo G9| จอเกมมิ่ง 52”\nThe World’s Largest 5K2K 240Hz 7,194 1,199 Advance payment 50% 12 บิลแรก - NOSERVICE_5Y_PRO_ADV50%(12M)\nNo\nขนาดแบบรวมขาตั้ง (WxHxD mm) รอบบิลที่ 13 - 60 (1,199)\nService\n1174.6 x 713.1 x 350 *ไม่มีรีโมท\n40U990A-W.ATM\n5Y\nLG UltraFine 40 นิ้ว |40U990A| Nano IPS\nBlack 5K2K with Thunderbolt 5 5,994 999 Advance payment 50% 12 บิลแรก - NOSERVICE_5Y_PRO_ADV50%(12M)\nNo\nขนาดแบบรวมขาตั้ง (WxHxD mm) รอบบิลที่ 13 - 60 (999)\nService\n947.7 x 614.3 x 260 *ไม่มีรีโมท\n34U650A-B.ATM\n5Y\n“34” WQHD IPS 100Hz” IPS,\nCurved (3800R) IPS 100Hz 2,394 399 Advance payment 50% 12 บิลแรก - NOSERVICE_5Y_PRO_ADV50%(12M)\nNo\nขนาดแบบรวมขาตั้ง (WxHxD mm) รอบบิลที่ 13 - 60 (399)\nService\n816.7x535.2x230 *ไม่มีรีโมท"
     },
     {
       "code": "55QNED80BSA.ATM",
@@ -2049,13 +2049,13 @@
           "promoCode": null
         }
       ],
-      "description": "55QNED80BSA.ATM"
+      "description": "5Y\n55QNED80BSA.ATM\nขนาดทีวีแบบไม่รวมขาตั้ง (WxHxD mm)\n1236 x 718 x 67.9 No 3,294 549 -\nขนาดทีวีแบบรวมขาตั้ง (WxHxD mm) Service\n1236 x 780 x 230"
     },
     {
       "code": "65NU855BPSA.ATM",
       "slug": "65nu855bpsa-atm",
       "category": "โทรทัศน์",
-      "name": "65NU855BPSA.ATM",
+      "name": "1447 x 838 x 70.8 • รอบบิลที่ 1- 12 (274.50)",
       "source": "Price list_Aug_V3.pdf",
       "page": 44,
       "pdf": "/pdfs/Price%20list_Aug_V3.pdf",
@@ -2070,13 +2070,13 @@
           "promoCode": null
         }
       ],
-      "description": "65NU855BPSA.ATM"
+      "description": "65NU855BPSA.ATM\n5Y\nขนาดทีวีแบบไม่รวมขาตั้ง (WxHxD mm)\n1447 x 838 x 70.8 • รอบบิลที่ 1- 12 (274.50)\n3,294 549 - NOSERVICE_5Y_PRO_ADV50%(12M)\nขนาดทีวีแบบรวมขาตั้ง (WxHxD mm) No •\n1447 x 901 x 269 Service"
     },
     {
       "code": "65QNED80BSA.ATM",
       "slug": "65qned80bsa-atm",
       "category": "โทรทัศน์",
-      "name": "65QNED80BSA.ATM",
+      "name": "No • Advance payment 50% 12 บิลแรก",
       "source": "Price list_Aug_V3.pdf",
       "page": 43,
       "pdf": "/pdfs/Price%20list_Aug_V3.pdf",
@@ -2091,7 +2091,7 @@
           "promoCode": null
         }
       ],
-      "description": "65QNED80BSA.ATM"
+      "description": "65QNED80BSA.ATM\n5Y\nขนาดทีวีแบบไม่รวมขาตั้ง (WxHxD mm)\n1455 x 841 x 67.9 3,894 649 - NOSERVICE_5Y_PRO_ADV50%(12M)\nNo • Advance payment 50% 12 บิลแรก\nขนาดทีวีแบบรวมขาตั้ง (WxHxD mm) รอบบิลที่ 13 - 60 (649)\nService\n1455 x 904 x 269"
     },
     {
       "code": "75NU855BPSA.ATM",
@@ -2112,13 +2112,13 @@
           "promoCode": null
         }
       ],
-      "description": "75NU855BPSA.ATM 5Y"
+      "description": "75NU855BPSA.ATM 5Y\nขนาดทีวีแบบไม่รวมขาตั้ง (WxHxD mm)\n1669 x 963 x 72.1 4,194 699 -\nNOSERVICE_5Y_PRO_ADV50%(12M)\nขนาดทีวีแบบรวมขาตั้ง (WxHxD mm) No •รอบบิลที่ 13 - 60 (699)\n1669 x1026 x 361 Service"
     },
     {
       "code": "75QNED86BSA.ATM",
       "slug": "75qned86bsa-atm",
       "category": "โทรทัศน์",
-      "name": "75QNED86BSA.ATM",
+      "name": "Payment ราคาปกติ •Advance payment 50% 12 บิลแรก",
       "source": "Sale Price8 - Subscription_V3.pdf",
       "page": 7,
       "pdf": "/pdfs/Sale%20Price8%20-%20Subscription_V3.pdf",
@@ -2139,7 +2139,7 @@
           "promoCode": null
         }
       ],
-      "description": "75QNED86BSA.ATM 5Y"
+      "description": "75QNED86BSA.ATM 5Y\n(Payment ราคาปกติ •Advance payment 50% 12 บิลแรก\n(WxHxD mm)\nOBS Subscription สัญญา Deposit5,094) 849 •รอบบิลที่ 13 - 60 (849) - NOSERVICE_5Y_PRO_ADV50%(12M)\n5,394 899\n1677 x 965 x 30.9 ส่วนลดจาก\n(WxHxD mm)\nNo service\n16777 x 1024 x 370 ระยะเวลาจานวนเงินที่ต้องราคาต่อเดือน"
     },
     {
       "code": "85QNED80BSA.ATM",
@@ -2160,13 +2160,13 @@
           "promoCode": null
         }
       ],
-      "description": "85QNED80BSA.ATM 5Y"
+      "description": "85QNED80BSA.ATM 5Y\nขนาดทีวีแบบไม่รวมขาตั้ง (WxHxD mm)\n1889 x 1087 x 67.0 8,094 1,349 - NOSERVICE_5Y_PRO_ADV50%(12M)\nNo • Advance payment 50% 12 บิลแรก • รอบบิลที่ 13 - 60 (1,349)\nขนาดทีวีแบบรวมขาตั้ง (WxHxD mm)\nService\n1889 x 1149 x 362"
     },
     {
       "code": "OLED48C6PSA.ATM",
       "slug": "oled48c6psa-atm",
       "category": "โทรทัศน์",
-      "name": "OLED48C6PSA.ATM",
+      "name": "WxHxD mm",
       "source": "Sale Price8 - Subscription_V3.pdf",
       "page": 7,
       "pdf": "/pdfs/Sale%20Price8%20-%20Subscription_V3.pdf",
@@ -2181,13 +2181,13 @@
           "promoCode": null
         }
       ],
-      "description": "OLED48C6PSA.ATM 5Y"
+      "description": "OLED48C6PSA.ATM 5Y\nขนาดทีวีแบบไม่รวมขาตั้ง\n(WxHxD mm)\nOBS Subscription 4,194 699 รอบบิลที่•รอบบิลที่1313 - 60 (699)-20(374) 3,000- NOSERVICE_5Y_PRO_ADV50%(12M)\n1071 x 620 x 46.9 4,494 749\nขนาดทีวีแบบรวมขาตั้งรอบบิลที่ 21-60 (749)\n+Discount 50 %\n(WxHxD mm)\nNo service\n1071 x 675 x 230 (8 Month)"
     },
     {
       "code": "OLED55C6PSA.ATM",
       "slug": "oled55c6psa-atm",
       "category": "โทรทัศน์",
-      "name": "OLED55C6PSA.ATM",
+      "name": "WxHxD mm",
       "source": "Price list_Aug_V3.pdf",
       "page": 42,
       "pdf": "/pdfs/Price%20list_Aug_V3.pdf",
@@ -2202,13 +2202,13 @@
           "promoCode": null
         }
       ],
-      "description": "OLED55C6PSA.ATM"
+      "description": "OLED55C6PSA.ATM\n5Y • รอบบิลที่ 1- 12 (549.50)\nขนาดทีวีแบบไม่รวมขาตั้ง\nNOSERVICE_5Y_PRO_ADV50%(12M)_\n(WxHxD mm)\n1222 x 703 x 45.1 6,594 1,099 4,400 DC50%(8M)\nขนาดทีวีแบบรวมขาตั้งรอบบิลที่ 21 - 60 (1,099)\nNo Service\n(WxHxD mm)\n1222 x 757 x 230"
     },
     {
       "code": "OLED55C6PSA.S30A",
       "slug": "oled55c6psa-s30a",
       "category": "โทรทัศน์",
-      "name": "OLED55C6PSA.S30A",
+      "name": "OLED55C6PSA+S30A",
       "source": "Price list_Aug_V3.pdf",
       "page": 40,
       "pdf": "/pdfs/Price%20list_Aug_V3.pdf",
@@ -2223,13 +2223,13 @@
           "promoCode": null
         }
       ],
-      "description": "OLED55C6PSA.S30A"
+      "description": "OLED55C6PSA.S30A\n5Y • Advance payment 50% 12 บิลแรก • รอบบิลที่ 1 - 12 (549.50)\n(OLED55C6PSA+S30A)\nNOSERVICE_5Y_PRO_ADV50%(12M)_\nSound bar 150W ขนาด 6,594 1,099 1,650 DC50%(3M)_FREE_GIFT\n720 x 63 x 80 mm แถมฟรี Sound Bar S30A.ATHALLK รอบบิลที่ 16 - 60 (1,099)\nขนาด Sub Woofer No Service\n220 x 345 x 220 mm"
     },
     {
       "code": "OLED65C6PSA.ATM",
       "slug": "oled65c6psa-atm",
       "category": "โทรทัศน์",
-      "name": "OLED65C6PSA.ATM",
+      "name": "WxHxD mm",
       "source": "Price list_Aug_V3.pdf",
       "page": 42,
       "pdf": "/pdfs/Price%20list_Aug_V3.pdf",
@@ -2244,13 +2244,13 @@
           "promoCode": null
         }
       ],
-      "description": "OLED65C6PSA.ATM"
+      "description": "OLED65C6PSA.ATM\nขนาดทีวีแบบไม่รวมขาตั้ง 5Y\n(WxHxD mm)\n1441 x 826 x 45.1 7,794 1,299 5,200\nDC50%(8M)\nขนาดทีวีแบบรวมขาตั้ง 13M~20M (8 Months 50% Discount)\nNo Service\n(WxHxD mm) • รอบบิลที่ 21 - 60 (1,299)\n1441 x 880 x 230"
     },
     {
       "code": "OLED65C6PSA.S80TY",
       "slug": "oled65c6psa-s80ty",
       "category": "โทรทัศน์",
-      "name": "OLED65C6PSA.S80TY",
+      "name": "OLED65C6PSA+S80TY) 5Y",
       "source": "Price list_Aug_V3.pdf",
       "page": 40,
       "pdf": "/pdfs/Price%20list_Aug_V3.pdf",
@@ -2265,13 +2265,13 @@
           "promoCode": null
         }
       ],
-      "description": "OLED65C6PSA.S80TY"
+      "description": "OLED65C6PSA.S80TY\n(OLED65C6PSA+S80TY) 5Y\nNOSERVICE_5Y_PRO_ADV50%(12M)_\nSound bar 480W ขนาด 7,794 1,299 1,950\nDC50%(3M)_FREE_GIFT\n1000 x 63 x 135 mm\nNo Service\nขนาด Sub Woofer • แถมฟรี Sound Bar S80TY.DTHALLK • รอบบิลที่ 16 - 60 (1,299)\n201.7 x 407.0 x 403.0 mm"
     },
     {
       "code": "OLED77C6PSA.ATM",
       "slug": "oled77c6psa-atm",
       "category": "โทรทัศน์",
-      "name": "OLED77C6PSA.ATM",
+      "name": "WxHxD mm",
       "source": "Price list_Aug_V3.pdf",
       "page": 42,
       "pdf": "/pdfs/Price%20list_Aug_V3.pdf",
@@ -2286,13 +2286,13 @@
           "promoCode": null
         }
       ],
-      "description": "OLED77C6PSA.ATM"
+      "description": "OLED77C6PSA.ATM\n5Y\nขนาดทีวีแบบไม่รวมขาตั้ง\n(WxHxD mm)\n1711 x 982 x 47.1 11,994 1,999 8,000 NOSERVICE_5Y_PRO_ADV50%(12M)_\nขนาดทีวีแบบรวมขาตั้ง 13M~20M (8 Months 50% Discount) DC50%(8M)\nNo Service\n(WxHxD mm) •รอบบิลที่ 21 - 60 (1,999)\n1711 x 1035 x 267"
     },
     {
       "code": "OLED77C6PSA.S80TY",
       "slug": "oled77c6psa-s80ty",
       "category": "โทรทัศน์",
-      "name": "OLED77C6PSA.S80TY",
+      "name": "OLED77C6PSA+S80TY",
       "source": "Price list_Aug_V3.pdf",
       "page": 40,
       "pdf": "/pdfs/Price%20list_Aug_V3.pdf",
@@ -2307,13 +2307,13 @@
           "promoCode": null
         }
       ],
-      "description": "OLED77C6PSA.S80TY"
+      "description": "OLED77C6PSA.S80TY\n5Y\n(OLED77C6PSA+S80TY)\nSound bar 480W ขนาด 11,994 1,999 3,000 NOSERVICE_5Y_PRO_ADV50%(12M)_\n1000 x 63 x 135 mm DC50%(3M)_FREE_GIFT\nNo Service\nขนาด Sub Woofer • แถมฟรี Sound Bar S80TY.DTHALLK • รอบบิลที่ 16 - 60 (1,999)\n201.7 x 407.0 x 403.0 mm"
     },
     {
       "code": "27GX704A-B.ATM",
       "slug": "27gx704a-b-atm",
       "category": "มอนิเตอร์",
-      "name": "27GX704A-B.ATM",
+      "name": "WxHxD mm",
       "source": "Sale Price8 - Subscription_V3.pdf",
       "page": 8,
       "pdf": "/pdfs/Sale%20Price8%20-%20Subscription_V3.pdf",
@@ -2328,7 +2328,7 @@
           "promoCode": null
         }
       ],
-      "description": "27GX704A-B.ATM 5Y •รอบบิลที่ 1- 12 (174.50)"
+      "description": "27GX704A-B.ATM 5Y •รอบบิลที่ 1- 12 (174.50)\nบิลแรก\nLG UltraGear™ GX7 27 นิ้ว240Hz รอบบิลที่ 1-12 (199.5)\nOLED QHD Gaming Monitor\nDisplayHDR™ True Black 400 รอบบิลที่ 13-15 (199)\nOBS Subscription 2,094 349 - NOSERVICE_5Y_PRO_ADV50%(12M)\nขนาดแบบรวมขาตั้ง 2,394 399 +Discount 50 % 600\n(WxHxD mm)\nNo service •รอบบิลที่ 13 - 60 (349)\n605.2x532.6x220\n(3Month)\n*ไม่มีรีโมท"
     },
     {
       "code": "MS3032JAS.BBKPETH",
@@ -2361,7 +2361,7 @@
       "code": "S70TY.ATHALLD",
       "slug": "s70ty-athalld",
       "category": "Sound bar",
-      "name": "S70TY.ATHALLD",
+      "name": "LG Sound bar 5Y",
       "source": "Price list_Aug_V3.pdf",
       "page": 49,
       "pdf": "/pdfs/Price%20list_Aug_V3.pdf",
@@ -2376,13 +2376,13 @@
           "promoCode": null
         }
       ],
-      "description": "S70TY.ATHALLD • รอบบิลที่ 1- 12 (94.50)"
+      "description": "LG Sound bar 5Y\nS70TY.ATHALLD • รอบบิลที่ 1- 12 (94.50)\nDolby Atmos 3.1.1 channel\n1,134 189 -\nพลังเสียง 400W / Hi-res 24bit/96kHz\nขนาดผลิตภัณฑ์ (WxHxD mm)\nNo Service\nซาวด์บาร์: 950 x 63x 115\nซับวูฟเฟอร์ : 202 x 377 x285"
     },
     {
       "code": "S95TR.DTHALLK",
       "slug": "s95tr-dthallk",
       "category": "Sound bar",
-      "name": "S95TR.DTHALLK",
+      "name": "LG Sound bar 5Y",
       "source": "Price list_Aug_V3.pdf",
       "page": 49,
       "pdf": "/pdfs/Price%20list_Aug_V3.pdf",
@@ -2397,13 +2397,76 @@
           "promoCode": null
         }
       ],
-      "description": "S95TR.DTHALLK"
+      "description": "LG Sound bar 5Y\nS95TR.DTHALLK\nDolby Atmos 9.1.5 channel\n2,694 449 -\nพลังเสียง 820W / Hi-res 24bit/96kHz Advance payment 50% 12 บิลแรก\nNOSERVICE_5Y_PRO_ADV50%(12M)\nขนาดผลิตภัณฑ์ (WxHxD mm) •รอบบิลที่ 13 - 60 (449)\nNo Service\nซาวด์บาร์: 1250 x 63x 135\nซับวูฟเฟอร์ : 202 x 407 x403"
+    },
+    {
+      "code": "XBOOM-BOUNCE",
+      "slug": "xboom-bounce",
+      "category": "Sound bar",
+      "name": "LG xboom Bounce",
+      "source": "Price list_Aug_V3.pdf",
+      "page": 48,
+      "pdf": "/pdfs/Price%20list_Aug_V3.pdf",
+      "mode": "monthly",
+      "price": 139,
+      "priceFrom": "5Y",
+      "policies": [
+        {
+          "policy": "5Y",
+          "term": null,
+          "price": 139,
+          "promoCode": null
+        }
+      ],
+      "description": "LG xboom Bounce\n5Y"
+    },
+    {
+      "code": "XBOOM-GRAB",
+      "slug": "xboom-grab",
+      "category": "Sound bar",
+      "name": "LG xboom Grab",
+      "source": "Price list_Aug_V3.pdf",
+      "page": 48,
+      "pdf": "/pdfs/Price%20list_Aug_V3.pdf",
+      "mode": "monthly",
+      "price": 109,
+      "priceFrom": "5Y",
+      "policies": [
+        {
+          "policy": "5Y",
+          "term": null,
+          "price": 109,
+          "promoCode": null
+        }
+      ],
+      "description": "LG xboom Grab\n5Y\nพลังเสียง 20W (Woofer)+ 10W •รอบบิลที่ 1- 12 (54.50)\n654 109 -\n(Tweeter) • NOSERVICE_5Y_PRO_ADV50%(12M)\nNo •รอบบิลที่ 13 - 60 (109)\nขนาดผลิตภัณฑ์ (WxHxD mm)\nService\n211 x 71.6 x 70"
+    },
+    {
+      "code": "XBOOM-STAGE301",
+      "slug": "xboom-stage301",
+      "category": "Sound bar",
+      "name": "LG xboom STAGE301",
+      "source": "Price list_Aug_V3.pdf",
+      "page": 48,
+      "pdf": "/pdfs/Price%20list_Aug_V3.pdf",
+      "mode": "monthly",
+      "price": 299,
+      "priceFrom": "5Y",
+      "policies": [
+        {
+          "policy": "5Y",
+          "term": null,
+          "price": 299,
+          "promoCode": null
+        }
+      ],
+      "description": "5Y\nLG xboom STAGE301 • รอบบิลที่ 1- 12 (149.50)\n1,794 299 -\nขนาดผลิตภัณฑ์ •\n(WxHxD mm) 352 x 415 x 385 No\nService"
     },
     {
       "code": "WT1410NHEG.ABGPQTH",
       "slug": "wt1410nheg-abgpqth",
       "category": "Wash Tower",
-      "name": "WT1410NHEG.ABGPQTH",
+      "name": "ซัก 14 กก./ อบ 10 กก.",
       "source": "Price list_Aug_V3.pdf",
       "page": 14,
       "pdf": "/pdfs/Price%20list_Aug_V3.pdf",
@@ -2436,7 +2499,7 @@
           "promoCode": "SELF_6Y_12M_PRO_149(1M)_DC50%(11M"
         }
       ],
-      "description": "WT1410NHEG.ABGPQTH"
+      "description": "WT1410NHEG.ABGPQTH\nซัก 14 กก./ อบ 10 กก.\n5Y_Self ทุกๆ 12 เดือน 1,499 9,600 SELF_5Y_12M_PRO_149(1M)_DC50%(11M)\nรับประกันมอเตอร์และ • ลด 50% 11 เดือน (รอบบิลที่ 2-12)\nคอมเพรสเซอร์ 10 ปี"
     },
     {
       "code": "WT1410NHEN.ABNPQTH",
@@ -2469,13 +2532,13 @@
           "promoCode": "VISIT_6Y_12M_PRO_149(1M)_DC50%(11M"
         }
       ],
-      "description": "WT1410NHEN.ABNPQTH • รอบบิลที่ 13-60 (1,599)"
+      "description": "5Y_Visit ทุกๆ 12 เดือน 1,599 10,250 VISIT_5Y_12M_PRO_149(1M)_DC50%(11M)\nWT1410NHEN.ABNPQTH • รอบบิลที่ 13-60 (1,599)"
     },
     {
       "code": "WT2116SHEG.ABGPETH",
       "slug": "wt2116sheg-abgpeth",
       "category": "Wash Tower",
-      "name": "WT2116SHEG.ABGPETH",
+      "name": "กว้างxสูงxลึก, มม.",
       "source": "Price list_Aug_V3.pdf",
       "page": 13,
       "pdf": "/pdfs/Price%20list_Aug_V3.pdf",
@@ -2508,13 +2571,13 @@
           "promoCode": "SELF_6Y_12M_PRO_149(1M)_DC50%(11M"
         }
       ],
-      "description": "WT2116SHEG.ABGPETH รอบบิลที่ 1 (149)"
+      "description": "WT2116SHEG.ABGPETH รอบบิลที่ 1 (149)\nซัก 21 กก./ อบ 16 กก. • ราคา 149.- (1 รอบบิลแรก)\n5Y_Self ทุกๆ 12 เดือน 1,899 12,200 SELF_5Y_12M_PRO_149(1M)_DC50%(11M)\nรับประกันมอเตอร์และรอบบิลที่ 13-60 (1,899)\nคอมเพรสเซอร์ 10 ปี\nขนาดผลิตภัณฑ์ • ราคา 149.- (1 รอบบิลแรก)\n6Y_Visit ทุกๆ 12 เดือน 1,749 11,225 VISIT_6Y_12M_PRO_149(1M)_DC50%(11M)\n(กว้างxสูงxลึก, มม.)\n700 x 1890 x 770"
     },
     {
       "code": "WT2520NHEG.ABGPETH",
       "slug": "wt2520nheg-abgpeth",
       "category": "Wash Tower",
-      "name": "WT2520NHEG.ABGPETH",
+      "name": "ซัก 25 กก./ อบ 20 กก. รอบบิลที่ 1 (149)",
       "source": "Price list_Aug_V3.pdf",
       "page": 11,
       "pdf": "/pdfs/Price%20list_Aug_V3.pdf",
@@ -2547,13 +2610,13 @@
           "promoCode": "SELF_6Y_12M_PRO_149(1M)_DC50%(11M"
         }
       ],
-      "description": "WT2520NHEG.ABGPETH"
+      "description": "5Y_Visit ทุกๆ 12 เดือน 2,399 15,450 VISIT_5Y_12M_PRO_149(1M)_DC50%(11M)\nWT2520NHEG.ABGPETH\nซัก 25 กก./ อบ 20 กก. รอบบิลที่ 1 (149)\n5Y_Self ทุกๆ 12 เดือน 2,199 14,150 SELF_5Y_12M_PRO_149(1M)_DC50%(11M)\nรับประกันมอเตอร์และ\nคอมเพรสเซอร์ 10 ปีรอบบิลที่ 13-60 (2,199)"
     },
     {
       "code": "WT2520NHEN.ABNPETH",
       "slug": "wt2520nhen-abnpeth",
       "category": "Wash Tower",
-      "name": "WT2520NHEN.ABNPETH",
+      "name": "กว้างxสูงxลึก, มม.",
       "source": "Price list_Aug_V3.pdf",
       "page": 12,
       "pdf": "/pdfs/Price%20list_Aug_V3.pdf",
@@ -2586,7 +2649,7 @@
           "promoCode": "SELF_6Y_12M_PRO_149(1M)_DC50%(11M"
         }
       ],
-      "description": "WT2520NHEN.ABNPETH รอบบิลที่ 1 (149)"
+      "description": "WT2520NHEN.ABNPETH รอบบิลที่ 1 (149)\nซัก 25 กก./ อบ 20 กก. • ราคา 149.- (1 รอบบิลแรก)\n5Y_Self ทุกๆ 12 เดือน 2,199 14,150 SELF_5Y_12M_PRO_149(1M)_DC50%(11M)\nรับประกันมอเตอร์และคอมเพรสเซอร์รอบบิลที่ 13-60 (2,199)\n10 ปี\nขนาดผลิตภัณฑ์ • ราคา 149.- (1 รอบบิลแรก)\n6Y_Visit ทุกๆ 12 เดือน 2,199 14,150 VISIT_6Y_12M_PRO_149(1M)_DC50%(11M)\n(กว้างxสูงxลึก, มม.)\n700 x 1890 x 830"
     }
   ]
 }

@@ -55,7 +55,7 @@ const modeLabel = (m) => (m === 'outright' ? 'บาท (ซื้อขาด)'
           <a class="card" href={`${base}product/${p.slug}/`} data-search={(p.name + ' ' + p.code + ' ' + (p.category || '')).toLowerCase()} data-cat={p.category || ''}>
             <div class="card-category">{p.category || 'อื่นๆ'}</div>
             {p.name !== p.code && <div class="card-name">{p.name}</div>}
-            <div class="card-code">{p.code}</div>
+            {!p.code.startsWith('XBOOM-') && <div class="card-code">{p.code}</div>}
             <div class="card-price">
               <span class="price-amount">{fmt(p.price)}</span>
               <span class="price-unit">{modeLabel(p.mode)}</span>

@@ -13,6 +13,7 @@ const modeLabel = (m) => (m === 'outright' ? 'บาท (ซื้อขาด)'
 const base = import.meta.env.BASE_URL;
 const pdfUrl = `${base}${p.pdf}`.replace(/\/{2,}/g, '/'); // base + '/pdfs/...' → ไม่ให้มี // ซ้อน
 const pdfPage = p.page ? `#page=${p.page}` : '';
+const titleText = p.code.startsWith('XBOOM-') ? p.name : p.name !== p.code ? `${p.name} — ${p.code}` : p.code;
 ---
 
 <!doctype html>
@@ -20,7 +21,7 @@ const pdfPage = p.page ? `#page=${p.page}` : '';
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>{p.name !== p.code ? `${p.name} — ` : ''}{p.code}</title>
+    <title>{titleText}</title>
     <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📦</text></svg>" />
   </head>
   <body>
@@ -42,13 +43,13 @@ const pdfPage = p.page ? `#page=${p.page}` : '';
         <span> › </span>
         <span>{p.category || 'อื่นๆ'}</span>
         <span> › </span>
-        <span>{p.code}</span>
+        <span>{p.code.startsWith('XBOOM-') ? p.name : p.code}</span>
       </nav>
 
       <section class="detail-head">
         <div class="detail-category">{p.category || 'อื่นๆ'}</div>
         {p.name !== p.code && <h1 class="detail-name">{p.name}</h1>}
-        <div class="detail-code">รุ่น: {p.code}</div>
+        {!p.code.startsWith('XBOOM-') && <div class="detail-code">รุ่น: {p.code}</div>}
         <div class="price-row">
           <span class="price-amount">{fmt(p.price)}</span>
           <span class="price-unit">{modeLabel(p.mode)}</span>
