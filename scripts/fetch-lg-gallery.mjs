@@ -8,7 +8,7 @@ const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const OUT = path.join(ROOT, 'src', 'data', 'lg-gallery.json');
 const UA = 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0 Safari/537.36';
 const DELAY_MS = 200;
-const MAX_PER_PRODUCT = 6;
+const MAX_PER_PRODUCT = 20; // แสดงมุมทั้งหมดตามหน้า LG จริง (บางรุ่นมี 13-15 มุม)
 
 function extractFlightStrings(html) {
   const out = [];
