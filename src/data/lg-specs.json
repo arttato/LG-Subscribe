@@ -3389,6 +3389,53 @@
         }
       ],
       "groups": []
+    },
+    {
+      "code": "WD110MN.ABGPLMT",
+      "slug": "wd110mn-abgplmt",
+      "url": "https://www.lg.com/th/water-purifiers/wd110mn/",
+      "features": [
+        "UV Sterilization",
+        "Mood Light",
+        "สะดวกสบาย ง่ายต่อการใช้งาน",
+        "ดีไซน์สวยงาม",
+        "LG ThinQ™"
+      ],
+      "keySpecs": [
+        {
+          "name": "สี",
+          "value": "สีคลามมิ่ง เบจ"
+        },
+        {
+          "name": "ขนาดที่กดน้ำ (Øxสxล มล.)",
+          "value": "No"
+        },
+        {
+          "name": "การติดตั้งแบบ Flexible",
+          "value": "ไม่"
+        },
+        {
+          "name": "ประเภทการติดตั้ง",
+          "value": "ประเภทแผงควบคุม"
+        },
+        {
+          "name": "ดีไซน์ผลิตภัณฑ์",
+          "value": "ไม่"
+        },
+        {
+          "name": "ขนาดผลิตภัณฑ์ (กxสxล มล.)",
+          "value": "132 x 358 x 230"
+        },
+        {
+          "name": "จอแสดงผล",
+          "value": "ไม่"
+        },
+        {
+          "name": "น้ำประปา",
+          "value": "แบบด่วน"
+        }
+      ],
+      "groups": []
     }
   ]
 }
