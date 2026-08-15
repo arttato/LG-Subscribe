@@ -119,6 +119,25 @@ const gallery = lgGallery.products.find((s) => s.code === p.code);
                   return { yr: yr.replace('Y', ' ปี'), svc };
                 };
                 const fmtN = (n) => (n == null ? '—' : n.toLocaleString('th-TH'));
+                // ถอดรหัส promoCode → ข้อความโปรโมชัน/รอบบิล
+                const decodePromo = (x) => {
+                  const code = x.promoCode || '';
+                  const out = [];
+                  if (/^2Y/.test(x.policy)) {
+                    const dc = code.match(/DC(\d+)%/);
+                    if (dc) out.push(`ลด ${dc[1]}%`);
+                    const yr = code.match(/_(20\d{2})$/);
+                    if (yr) out.push(`แคมเปญ ${yr[1]}`);
+                  } else {
+                    const m1 = code.match(/PRO_(\d+)\((\d+)M\)?/); // วงเล็บปิดอาจถูกตัดใน PDF
+                    if (m1) out.push(`รอบบิลแรก ${m1[1]}.-`);
+                    const dc = code.match(/DC(\d+)%\((\d+)M\)?/);
+                    if (dc) out.push(`ลด ${dc[1]}% นาน ${dc[2]} รอบบิล`);
+                    const [type] = x.policy.split('_').slice(1);
+                    if (x.term) out.push(`${type === 'Visit' ? 'ช่างเข้าบริการ' : 'จัดส่งอะไหล่'}ทุก ${x.term} เดือน`);
+                  }
+                  return out.length ? out : null;
+                };
                 return (
                   <>
                     {outright.length > 0 && (
@@ -127,16 +146,19 @@ const gallery = lgGallery.products.find((s) => s.code === p.code);
                           <span>ซื้อขาด</span>
                           <small>จ่ายครั้งเดียว · รับประกัน 2 ปี</small>
                         </div>
-                        <table class="plans-table">
-                          <tbody>
-                            {outright.map((x) => (
-                              <tr>
-                                <th scope="row">{planName(x.policy).svc}</th>
-                                <td class="plans-price">{fmtN(x.price)} <span>บาท</span></td>
-                              </tr>
-                            ))}
-                          </tbody>
-                        </table>
+                        <div class="plans-cards">
+                          {outright.map((x) => (
+                            <div class="plan-card">
+                              <div class="plan-card-head">{planName(x.policy).svc}</div>
+                              <div class="plan-card-price">{fmtN(x.price)} <span>บาท</span></div>
+                              <ul class="plan-card-promo">
+                                {(decodePromo(x) || []).map((t) => (
+                                  <li>{t}</li>
+                                ))}
+                              </ul>
+                            </div>
+                          ))}
+                        </div>
                       </div>
                     )}
                     {monthly.length > 0 && (
@@ -145,22 +167,23 @@ const gallery = lgGallery.products.find((s) => s.code === p.code);
                           <span>Subscribe รายเดือน</span>
                           <small>รวมค่าดูแลตลอดสัญญา</small>
                         </div>
-                        <table class="plans-table">
-                          <tbody>
-                            {monthly.map((x) => (
-                              <tr>
-                                <th scope="row">
-                                  <b>{planName(x.policy).yr}</b>
-                                  <span class="plans-svc">{planName(x.policy).svc}</span>
-                                </th>
-                                <td class="plans-price">
-                                  {x.price === minMonthly && <span class="plans-best">เริ่มต้น</span>}
-                                  {fmtN(x.price)} <span>บาท/เดือน</span>
-                                </td>
-                              </tr>
-                            ))}
-                          </tbody>
-                        </table>
+                        <div class="plans-cards">
+                          {monthly.map((x) => (
+                            <div class={`plan-card${x.price === minMonthly ? ' is-best' : ''}`}>
+                              <div class="plan-card-head">
+                                <b>{planName(x.policy).yr}</b>
+                                <span class="plan-card-svc">{planName(x.policy).svc}</span>
+                                {x.price === minMonthly && <span class="plans-best">เริ่มต้น</span>}
+                              </div>
+                              <div class="plan-card-price">{fmtN(x.price)} <span>บาท/เดือน</span></div>
+                              <ul class="plan-card-promo">
+                                {(decodePromo(x) || []).map((t) => (
+                                  <li>{t}</li>
+                                ))}
+                              </ul>
+                            </div>
+                          ))}
+                        </div>
                       </div>
                     )}
                   </>
