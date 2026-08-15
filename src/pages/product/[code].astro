@@ -95,6 +95,7 @@ const gallery = lgGallery.products.find((s) => s.code === p.code);
           <span class="price-unit">{modeLabel(p.mode)}</span>
           {p.priceNote && <span class="price-note">({p.priceNote})</span>}
         </div>
+        <button class="btn btn-primary btn-interest" data-open-inquiry>สนใจรุ่นนี้</button>
       </section>
 
       {spec && (
@@ -137,7 +138,84 @@ const gallery = lgGallery.products.find((s) => s.code === p.code);
       )}
     </main>
 
+    <!-- แบบฟอร์มสอบถามราคา -->
+    <div class="inquiry" data-inquiry hidden data-name={p.name} data-code={p.code} data-price={fmt(p.price)} data-pricelabel={priceLabel(p.mode)}>
+      <div class="inquiry-backdrop" data-inquiry-close></div>
+      <div class="inquiry-box" role="dialog" aria-modal="true" aria-labelledby="inquiry-title">
+        <button class="inquiry-close" data-inquiry-close aria-label="ปิด">×</button>
+        <h3 id="inquiry-title">สนใจรุ่นนี้</h3>
+        <div class="inquiry-product">
+          <div class="inquiry-name">{p.name}</div>
+          <div class="inquiry-code">{p.code}</div>
+          <div class="inquiry-price">
+            <span class="price-from">{priceLabel(p.mode)}</span>
+            <b>{fmt(p.price)}</b> บาท/เดือน
+          </div>
+        </div>
+        <label class="inquiry-field">
+          <span>ชื่อ-นามสกุล</span>
+          <input type="text" data-field="name" placeholder="เช่น สมชาย ใจดี" autocomplete="name" />
+        </label>
+        <label class="inquiry-field">
+          <span>เบอร์โทร / LINE ID</span>
+          <input type="text" data-field="contact" placeholder="เช่น 081-234-5678" />
+        </label>
+        <label class="inquiry-field">
+          <span>ข้อความเพิ่มเติม</span>
+          <textarea data-field="note" rows="3" placeholder="คำถามหรือรายละเอียดที่อยากสอบถาม (ไม่บังคับ)"></textarea>
+        </label>
+        <div class="inquiry-actions">
+          <a class="btn btn-primary" data-inquiry-line target="_blank" rel="noopener">ส่งผ่าน LINE</a>
+          <a class="btn btn-ghost" data-inquiry-mail>ส่งอีเมล</a>
+          <button class="btn btn-ghost" data-inquiry-copy>คัดลอกข้อความ</button>
+        </div>
+        <p class="inquiry-hint" data-inquiry-hint role="status"></p>
+      </div>
+    </div>
+
     <script>
+      const inq = document.querySelector('[data-inquiry]');
+      if (inq) {
+        const name = inq.dataset.name;
+        const code = inq.dataset.code;
+        const price = inq.dataset.price;
+        const priceLabel = inq.dataset.pricelabel;
+        const fields = {
+          name: inq.querySelector('[data-field="name"]'),
+          contact: inq.querySelector('[data-field="contact"]'),
+          note: inq.querySelector('[data-field="note"]'),
+        };
+        const hint = inq.querySelector('[data-inquiry-hint]');
+        const buildMsg = () => {
+          const lines = [`สนใจรุ่น ${name}`];
+          lines.push(`รุ่น: ${code}`);
+          lines.push(`ราคา${priceLabel === 'ซื้อขาด' ? 'ซื้อขาด' : 'เริ่มต้น'}: ${price} บาท/เดือน`);
+          if (fields.name.value.trim()) lines.push(`ชื่อ: ${fields.name.value.trim()}`);
+          if (fields.contact.value.trim()) lines.push(`เบอร์โทร/LINE: ${fields.contact.value.trim()}`);
+          if (fields.note.value.trim()) lines.push('', fields.note.value.trim());
+          return lines.join('\n');
+        };
+        const open = () => { inq.hidden = false; document.body.style.overflow = 'hidden'; };
+        const close = () => { inq.hidden = true; document.body.style.overflow = ''; hint.textContent = ''; };
+        document.querySelectorAll('[data-open-inquiry]').forEach((b) => b.addEventListener('click', open));
+        inq.querySelectorAll('[data-inquiry-close]').forEach((el) => el.addEventListener('click', close));
+        inq.querySelector('[data-inquiry-line]').addEventListener('click', function () {
+          this.href = 'https://line.me/R/msg/text/?' + encodeURIComponent(buildMsg());
+        });
+        inq.querySelector('[data-inquiry-mail]').addEventListener('click', function () {
+          this.href = 'mailto:?subject=' + encodeURIComponent('สนใจ ' + name + ' (' + code + ')') + '&body=' + encodeURIComponent(buildMsg());
+        });
+        inq.querySelector('[data-inquiry-copy]').addEventListener('click', async function () {
+          try {
+            await navigator.clipboard.writeText(buildMsg());
+            hint.textContent = '✅ คัดลอกข้อความแล้ว — ไปวางใน LINE / แชทได้เลย';
+          } catch {
+            hint.textContent = 'คัดลอกไม่สำเร็จ — ลองกดปุ่มส่งผ่าน LINE/อีเมลแทน';
+          }
+        });
+        document.addEventListener('keydown', (e) => { if (e.key === 'Escape') close(); });
+      }
+
       const gal = document.querySelector('[data-gallery]');
       if (gal) {
         const thumbs = [...gal.querySelectorAll('[data-thumb]')];
