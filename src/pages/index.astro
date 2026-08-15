@@ -100,9 +100,17 @@ const policyRows = [...heroProduct.policies]
               <picture>
                 {s.mobile && <source media="(max-width: 768px)" srcSet={`${base}${s.mobile.replace(/^\//, '')}`} />}
                 {s.desktop && <source media="(min-width: 769px)" srcSet={`${base}${s.desktop.replace(/^\//, '')}`} />}
-                <img src={`${base}${s.desktop.replace(/^\//, '')}`} alt={s.title || 'โปรโมชัน LG Subscribe'} loading="eager" />
+                <img src={`${base}${s.desktop.replace(/^\//, '')}`} alt={(s.title || '') + (s.subtitle ? ' — ' + s.subtitle : '')} loading="eager" />
               </picture>
-              {s.title && <span class="banner-label">{s.title}</span>}
+              {(s.title || s.category) && (
+                <div class="banner-caption">
+                  <span class="banner-caption-text">
+                    {s.title && <b>{s.title}</b>}
+                    {s.subtitle && <small>{s.subtitle}</small>}
+                  </span>
+                  {s.category && <span class="banner-caption-cat">{s.category}</span>}
+                </div>
+              )}
             </div>
           ))}
         </div>

@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-08-15T08:21:29.558Z",
+  "fetchedAt": "2026-08-15T08:15:00.000Z",
   "source": "https://www.lg.com/th/subscribe/",
   "slides": [
     {
@@ -7,7 +7,8 @@
       "mobile": "/img/banners/banner-01-m.jpg",
       "lgDesktop": "https://www.lg.com/content/dam/channel/wcms/th/image-update/subscription/promotion/2026/08-birthday/-Birthday_1920x720.jpg",
       "lgMobile": "https://www.lg.com/content/dam/channel/wcms/th/image-update/subscription/promotion/2026/08-birthday/-Birthday_720x960.jpg",
-      "title": "LG Birthday — ฉลองวันเกิด LG กับทีวี & Soundbar",
+      "title": "ซับ 1 แถม 1",
+      "subtitle": "ซื้อ TV OLED 65″ รับฟรี! Soundbar (มูลค่า 15,151.-) · 1 ส.ค. – 31 ส.ค. 2569",
       "category": "โทรทัศน์"
     },
     {
@@ -15,7 +16,8 @@
       "mobile": "/img/banners/banner-02-m.jpg",
       "lgDesktop": "https://www.lg.com/content/dam/channel/wcms/th/image-update/subscription/promotion/2026/08-birthday/IXY_1920x720.jpg",
       "lgMobile": "https://www.lg.com/content/dam/channel/wcms/th/image-update/subscription/promotion/2026/08-birthday/IXY_720x960.jpg",
-      "title": "แอร์ LG IXY — DUAL INVERTER",
+      "title": "แอร์ LG IXY",
+      "subtitle": "รับฟรี! เครื่องฟอกอากาศ เมื่อ Subscribe แอร์ 2 เครื่อง",
       "category": "เครื่องปรับอากาศ",
       "query": "ixy"
     },
@@ -24,7 +26,8 @@
       "mobile": "/img/banners/banner-03-m.jpg",
       "lgDesktop": "https://www.lg.com/content/dam/channel/wcms/th/image-update/subscription/promotion/2026/08-birthday/OLED-S80TY_1920x720.jpg",
       "lgMobile": "https://www.lg.com/content/dam/channel/wcms/th/image-update/subscription/promotion/2026/08-birthday/OLED-S80TY_720x960.jpg",
-      "title": "LG OLED evo — รับฟรี!",
+      "title": "LG OLED evo AI",
+      "subtitle": "รับฟรี! Soundbar",
       "category": "โทรทัศน์",
       "query": "oled"
     },
@@ -33,7 +36,8 @@
       "mobile": "/img/banners/banner-04-m.jpg",
       "lgDesktop": "https://www.lg.com/content/dam/channel/wcms/th/image-update/subscription/promotion/2026/08-birthday/AP_1920x720.jpg",
       "lgMobile": "https://www.lg.com/content/dam/channel/wcms/th/image-update/subscription/promotion/2026/08-birthday/AP_720x960.jpg",
-      "title": "เครื่องฟอกอากาศ PuriCare — Pet Mode",
+      "title": "เครื่องฟอกอากาศ PuriCare",
+      "subtitle": "Pet Mode — ดูแลอากาศดีๆ ให้สัตว์เลี้ยง",
       "category": "เครื่องฟอกอากาศ",
       "query": "alpha"
     },
@@ -42,7 +46,8 @@
       "mobile": "/img/banners/banner-05-m.jpg",
       "lgDesktop": "https://www.lg.com/content/dam/channel/wcms/th/image-update/subscription/promotion/2026/07-sub/all-Banner_1920x720.jpg",
       "lgMobile": "https://www.lg.com/content/dam/channel/wcms/th/image-update/subscription/promotion/2026/07-sub/all-Banner_720x960.jpg",
-      "title": "ของดีต้องบอกต่อ — รับฟรีค่าบริการ 1 เดือนเมื่อเพื่อนสมัครสำเร็จ",
+      "title": "ของดีต้องบอกต่อ!",
+      "subtitle": "รับฟรีค่าบริการเดือนถัดไปเมื่อเพื่อนสมัครสำเร็จ",
       "category": ""
     },
     {
@@ -51,6 +56,7 @@
       "lgDesktop": "https://www.lg.com/content/dam/channel/wcms/th/image-update/subscription/promotion/2026/07-sub/AWO-Subscribe-Banner_1920x720.jpg",
       "lgMobile": "https://www.lg.com/content/dam/channel/wcms/th/image-update/subscription/promotion/2026/07-sub/AWO-Subscribe-Banner_720x960.jpg",
       "title": "LG Subscribe — โปรจัดเต็ม",
+      "subtitle": "เครื่องใช้ไฟฟ้าครบทุกรุ่น ทุกหมวด",
       "category": ""
     },
     {
@@ -58,7 +64,8 @@
       "mobile": "/img/banners/banner-07-m.jpg",
       "lgDesktop": "https://www.lg.com/content/dam/channel/wcms/th/image-update/subscription/promotion/2026/07-sub/WP_1920x720.jpg",
       "lgMobile": "https://www.lg.com/content/dam/channel/wcms/th/image-update/subscription/promotion/2026/07-sub/WP_720x960.jpg",
-      "title": "ฟรีบริการเปลี่ยนไส้กรองตลอดสัญญาสูงสุด 5 ปี",
+      "title": "ฟรี! บริการเปลี่ยนไส้กรอง",
+      "subtitle": "ตลอดสัญญาสูงสุด 5 ปี",
       "category": "เครื่องกรองน้ำ"
     },
     {
@@ -66,7 +73,8 @@
       "mobile": "/img/banners/banner-08-m.jpg",
       "lgDesktop": "https://www.lg.com/content/dam/channel/wcms/th/image-update/subscription/promotion/2026/07-sub/Sub07-TV_1920x720.jpg",
       "lgMobile": "https://www.lg.com/content/dam/channel/wcms/th/image-update/subscription/promotion/2026/07-sub/Sub07-TV_720x960.jpg",
-      "title": "LG OLED 48 นิ้ว — รับฟรี!",
+      "title": "LG OLED 48″",
+      "subtitle": "รับฟรี! · WORLD'S No.1 OLED TV FOR 13 YEARS",
       "category": "โทรทัศน์",
       "query": "oled48"
     }

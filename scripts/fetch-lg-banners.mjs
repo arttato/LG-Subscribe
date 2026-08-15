@@ -79,7 +79,7 @@ const prevByFile = new Map(prev.map((s) => [fileKey(s.lgDesktop), s]));
 
 const slidesOut = saved.filter((s) => s.desktop).map((s) => {
   const p = prevByFile.get(fileKey(s.lgDesktop)) || {};
-  return { ...s, title: p.title || '', category: p.category || '', query: p.query || '' };
+  return { ...s, title: p.title || '', subtitle: p.subtitle || '', category: p.category || '', query: p.query || '' };
 });
 const out = {
   fetchedAt: new Date().toISOString(),

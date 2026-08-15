@@ -121,20 +121,45 @@ a {
   height: auto;
 }
 
-.banner-label {
-  position: absolute;
-  top: 14px;
-  left: 14px;
-  max-width: 62%;
-  background: rgba(0, 0, 0, 0.55);
+.banner-caption {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 14px;
+  padding: 12px 18px;
+  background: linear-gradient(135deg, var(--brand), var(--brand-dark));
   color: #fff;
-  font-size: 0.82rem;
-  font-weight: 600;
+}
+
+.banner-caption-text {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  min-width: 0;
+}
+
+.banner-caption-text b {
+  font-size: 1rem;
+  font-weight: 800;
   line-height: 1.35;
-  padding: 7px 13px;
+}
+
+.banner-caption-text small {
+  font-size: 0.8rem;
+  font-weight: 500;
+  color: rgba(255, 255, 255, 0.85);
+  line-height: 1.4;
+}
+
+.banner-caption-cat {
+  flex-shrink: 0;
+  font-size: 0.72rem;
+  font-weight: 700;
+  background: rgba(255, 255, 255, 0.16);
+  border: 1px solid rgba(255, 255, 255, 0.4);
   border-radius: 999px;
-  backdrop-filter: blur(3px);
-  pointer-events: none;
+  padding: 4px 11px;
+  white-space: nowrap;
 }
 
 .banner-arrow {
@@ -204,11 +229,20 @@ a {
     border-radius: 12px;
   }
 
-  .banner-label {
-    top: 10px;
-    left: 10px;
+  .banner-caption {
+    padding: 10px 14px;
+  }
+
+  .banner-caption-text b {
+    font-size: 0.88rem;
+  }
+
+  .banner-caption-text small {
     font-size: 0.72rem;
-    padding: 5px 10px;
+  }
+
+  .banner-caption-cat {
+    display: none;
   }
 }
 
