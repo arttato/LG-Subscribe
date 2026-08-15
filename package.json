@@ -10,6 +10,7 @@
     "specs": "node scripts/fetch-lg-specs.mjs",
     "pdfspecs": "node scripts/extract-pdf-specs.mjs",
     "gallery": "node scripts/fetch-lg-gallery.mjs",
+    "gallery2": "node scripts/fill-missing-galleries.mjs",
     "lgimages": "node scripts/download-all-lg-images.mjs",
     "imgupgrade": "node scripts/upgrade-small-images.mjs",
     "banners": "node scripts/fetch-lg-banners.mjs",
