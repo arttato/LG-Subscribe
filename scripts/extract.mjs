@@ -586,7 +586,7 @@ async function main() {
     }
     byCode.set(p.code, p);
   }
-  const products = [...byCode.values()];
+  let products = [...byCode.values()];
 
   // ชื่อไทย/หมวดหมู่ที่กรอกเองใน meta.json (คีย์ = รุ่นก่อนจุด เช่น "WD516AN" หรือโค้ดเต็ม)
   // คีย์ที่ขึ้นต้น _ (คำอธิบาย/ตัวอย่าง) ถูกข้าม
@@ -612,6 +612,22 @@ async function main() {
       p.price = famPrice.get(familyOf(p.code));
       p.priceNote = 'ราคารุ่นเดียวกัน';
     }
+  }
+
+  // รวมรุ่นสี/เวอร์ชันที่ราคาเท่ากันเป็น 1 การ์ด (เช่น 27LX6TDGA.ATM/.GRAB, OLED55C6PSA.ATM/.S30A, 32U889.GRAB/32U889SA-W)
+  // — ราคาเท่ากัน = สินค้าตัวเดียวกันคนละสี/เวอร์ชัน ไม่ต้องโชว์ซ้ำ (ต้องรันหลังเติมราคาครอบครัว ราคาจะได้ครบก่อนจับกลุ่ม)
+  // ราคาต่างกันในครอบครัวเดียวกัน (เช่น WD516AN.ACNPLMT 799 ≠ 599) = สินค้าคนละแบบ → ยังแยกการ์ด
+  const variantGroup = (c) => Object.keys(CATEGORY_OVERRIDES).find((k) => c.startsWith(k)) || c.split('.')[0];
+  const keepScore = (p) => (p.code.includes('.ATM') ? 2 : 0) + Math.min(p.policies.length, 3);
+  const byVariant = new Map();
+  for (const p of products) {
+    const key = `${variantGroup(p.code)}|${p.price}`;
+    const cur = byVariant.get(key);
+    if (!cur || keepScore(p) > keepScore(cur)) byVariant.set(key, p);
+  }
+  products = [...byVariant.values()];
+
+  for (const p of products) {
     const m = meta[p.code] || meta[familyOf(p.code)];
     if (m) {
       if (m.name) p.name = m.name;
