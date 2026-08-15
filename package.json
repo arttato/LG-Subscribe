@@ -13,6 +13,7 @@
     "gallery2": "node scripts/fill-missing-galleries.mjs",
     "gallery3": "node scripts/refetch-missing.mjs",
     "auditgallery": "node scripts/audit-galleries.mjs",
+    "auditnames": "node scripts/audit-names.mjs",
     "titles": "node scripts/fetch-lg-titles.mjs",
     "lgimages": "node scripts/download-all-lg-images.mjs",
     "imgupgrade": "node scripts/upgrade-small-images.mjs",
