@@ -89,12 +89,8 @@ const fmt = (n) => (n == null ? '—' : n.toLocaleString('th-TH'));
 const modeLabel = (m) => (m === 'outright' ? 'บาท (ซื้อขาด)' : 'บาท/เดือน');
 const priceLabel = (m) => (m === 'outright' ? 'ซื้อขาด' : 'เริ่มต้น');
 
-// ตัวอย่างตารางแผนใน hero — สินค้าที่มี policy หลากหลาย
-const heroProduct = products.find((p) => p.policies.length >= 4) || products[0];
-const policyRows = [...heroProduct.policies]
-  .filter((r) => r.price != null)
-  .slice(0, 4)
-  .map((r) => ({ label: r.policy.replace(/[_ ]/g, ' '), price: r.price }));
+// วิดีโอแนะนำ LG Subscribe (ตัวอย่างแผนบริการ) — YouTube embed
+const VIDEO_ID = 'uNwPkrefazo';
 
 ---
 
@@ -180,16 +176,16 @@ const policyRows = [...heroProduct.policies]
           <a class="hero-cta" href="#catalog">ดูแคตตาล็อกสินค้า ↓</a>
         </div>
         <div class="hero-visual">
-          <div class="plan-label">ตัวอย่างแผนบริการ · {heroProduct.code}</div>
-          {policyRows.map((r) => (
-            <div class="plan-row">
-              <span class="tag">{r.label}</span>
-              <b>{fmt(r.price)} บาท/เดือน</b>
-            </div>
-          ))}
-          <div class="plan-row">
-            <span class="tag">ราคาเริ่มต้น</span>
-            <b>{fmt(heroProduct.price)} บาท/เดือน</b>
+          <div class="plan-label">▶ ตัวอย่างแผนบริการ — วิดีโอแนะนำ LG Subscribe</div>
+          <div class="hero-video">
+            <iframe
+              src={`https://www.youtube.com/embed/${VIDEO_ID}`}
+              title="ตัวอย่างแผนบริการ LG Subscribe"
+              loading="lazy"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin"
+              allowfullscreen
+            ></iframe>
           </div>
         </div>
       </div>

@@ -384,25 +384,22 @@ a {
   margin-bottom: 12px;
 }
 
-.hero-visual .plan-row {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 10px 0;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-  font-size: 0.9rem;
+.hero-video {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  border-radius: 12px;
+  overflow: hidden;
+  background: #000;
+  border: 1px solid rgba(255, 255, 255, 0.14);
 }
 
-.hero-visual .plan-row:last-child {
-  border-bottom: none;
-}
-
-.hero-visual .plan-row .tag {
-  color: rgba(255, 255, 255, 0.75);
-}
-
-.hero-visual .plan-row b {
-  color: #ffd9e3;
+.hero-video iframe {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
 }
 
 @media (max-width: 860px) {
