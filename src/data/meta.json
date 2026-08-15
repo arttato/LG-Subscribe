@@ -44,7 +44,7 @@
   "AS35GGW10": { "name": "เครื่องฟอกอากาศ LG PuriCare AeroHit 32 ตร.ม.", "category": "เครื่องฟอกอากาศ" },
   "AS60GHWG0": { "name": "เครื่องฟอกอากาศ LG PuriCare AeroHit 61 ตร.ม.", "category": "เครื่องฟอกอากาศ" },
   "AS65GDBY0": { "name": "เครื่องฟอกอากาศ LG PuriCare Alpha Pet 61.2 ตร.ม.", "category": "เครื่องฟอกอากาศ" },
-  "DD23GMWE1": { "name": "เครื่องลดความชื้น LG 23 ลิตร", "category": "เครื่องลดความชื้น" },
+  "DD23GMWE1": { "name": "เครื่องลดความชื้น LG 23 ลิตร", "category": "เครื่องลดความชื้น", "hide": true },
   "DD23GMWE1S": { "name": "เครื่องลดความชื้น LG 23 ลิตร (แถมฟรี AeroMini)", "category": "เครื่องลดความชื้น" },
   "MD19GQGA1": { "name": "เครื่องลดความชื้น LG 19 ลิตร", "category": "เครื่องลดความชื้น" },
   "DFC335HM": { "name": "เครื่องล้างจาน LG Wi-Fi สีดำ", "category": "เครื่องล้างจาน" },
