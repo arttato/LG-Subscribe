@@ -15,48 +15,6 @@
   ],
   "products": [
     {
-      "code": "WD110MN.ABGPLMT",
-      "slug": "wd110mn-abgplmt",
-      "category": "เครื่องกรองน้ำ",
-      "name": "เครื่องกรองน้ำ LG WD110MN",
-      "source": "Price list_Aug_V3.pdf",
-      "page": 2,
-      "srcPage": 4,
-      "y": 418,
-      "y2": 35,
-      "pdf": "/pdfs/Price%20list_Aug_V3.pdf",
-      "mode": "monthly",
-      "price": 399,
-      "priceFrom": "7Y_Self",
-      "policies": [
-        {
-          "policy": "5Y_Visit",
-          "term": 6,
-          "price": 549,
-          "promoCode": "VISIT_5Y_6M_PRO_149(1M)_DC50%(11M"
-        },
-        {
-          "policy": "5Y_Self",
-          "term": 6,
-          "price": 449,
-          "promoCode": "SELF_5Y_6M_PRO_149(1M)_DC50%(11M"
-        },
-        {
-          "policy": "7Y_Visit",
-          "term": 6,
-          "price": 449,
-          "promoCode": "VISIT_7Y_6M_PRO_149(1M)_DC50%(11M"
-        },
-        {
-          "policy": "7Y_Self",
-          "term": 6,
-          "price": 399,
-          "promoCode": "SELF_7Y_6M_PRO_149(1M)_DC50%(11M"
-        }
-      ],
-      "description": "(NEW)\n5Y_Visit ทุกๆ 6 เดือน 799 รอบบิลที่ 2-12 (399) 5,050 VISIT_5Y_6M_PRO_149(1M)_DC50%(11M)\nราคา 149.- (1 รอบบิลแรก) รอบบิลที่ 13-60 (799)\nWD516AN.ACNPLMT (น้ำเงิน)\nWD516AN.AEWPLMT (ขาว) ลด 50% 11 เดือน (รอบบิลที่ 2-12) รอบบิลที่ 1 (149)\nWD516AN.ASLPLMT (เงิน)\n5Y_Self ทุกๆ 6 เดือน 699 รอบบิลที่ 2-12 (349) 4,400 SELF_5Y_6M_PRO_149(1M)_DC50%(11M)\nWD518AN.ABGPLMT (เบจ) รอบบิลที่ 13-60 (699)\nWD518AN.AWHPLMT (ขาว)\nขนาดผลิตภัณฑ์ (กxสxลมม.) WD518AN.ACGPLMT (เทา)\nWD516: 170 x 419 x 550 7Y_Visit ทุกๆ 6 เดือน 599 รอบบิลที่ 2-12 (299) 3,750 VISIT_7Y_6M_PRO_149(1M)_DC50%(11M)\nWD518: 168 x 398 x 400\nราคา 149.- (1 รอบบิลแรก) รอบบิลที่ 13-84 (599)\n(ทุกสี)\nลด 50% 11 เดือน (รอบบิลที่ 2-12) รอบบิลที่ 1 (149)\n7Y_Self ทุกๆ 6 เดือน 499 รอบบิลที่ 2-12 (249) 3,100 SELF_7Y_6M_PRO_149(1M)_DC50%(11M)\n5Y_Visit ทุกๆ 6 เดือน 549 รอบบิลที่ 2-12 (274) 3,425 VISIT_5Y_6M_PRO_149(1M)_DC50%(11M)\nราคา 149.- (1 รอบบิลแรก) รอบบิลที่ 13-60 (549)\nลด 50% 11 เดือน (รอบบิลที่ 2-12) รอบบิลที่ 1 (149)\n5Y_Self ทุกๆ 6 เดือน 499 รอบบิลที่ 2-12 (249) 3,100 SELF_5Y_6M_PRO_149(1M)_DC50%(11M)\nWD110MN.ABGPLMT\n(Calming Beige)\n7Y_Visit ทุกๆ 6 เดือน 449 รอบบิลที่ 2-12 (224) 2,775 VISIT_7Y_6M_PRO_149(1M)_DC50%(11M)\nขนาดผลิตภัณฑ์ (กxสxลมม.)\n132 x 358 x 230 ราคา 149.- (1 รอบบิลแรก) รอบบิลที่ 13-84 (449)\nลด 50% 11 เดือน (รอบบิลที่ 2-12) รอบบิลที่ 1 (149)\n7Y_Self ทุกๆ 6 เดือน 399 รอบบิลที่ 2-12 (199) 2,450 SELF_7Y_6M_PRO_149(1M)_DC50%(11M)"
-    },
-    {
       "code": "WD516",
       "slug": "wd516",
       "category": "เครื่องกรองน้ำ",
@@ -67,9 +25,9 @@
       "y": 303,
       "y2": 191,
       "pdf": "/pdfs/Price%20list_Aug_V3.pdf",
-      "mode": "outright",
-      "price": 34900,
-      "priceFrom": "2Y_Self",
+      "mode": "monthly",
+      "price": 499,
+      "priceFrom": "7Y_Self",
       "policies": [
         {
           "policy": "2Y_Visit",
@@ -82,103 +40,19 @@
           "term": 6,
           "price": 34900,
           "promoCode": "OUT_SELF_2Y_DC10%_2026"
-        }
-      ],
-      "description": "WD516 หรือ WD518\nOutright"
-    },
-    {
-      "code": "WD516AN.ACNPLMT",
-      "slug": "wd516an-acnplmt",
-      "category": "เครื่องกรองน้ำ",
-      "name": "เครื่องกรองน้ำ LG WD516AN (สีน้ำเงิน)",
-      "source": "Price list_Aug_V3.pdf",
-      "page": 2,
-      "srcPage": 4,
-      "y": 418,
-      "y2": 35,
-      "pdf": "/pdfs/Price%20list_Aug_V3.pdf",
-      "mode": "monthly",
-      "price": 799,
-      "priceFrom": "5Y_Visit",
-      "policies": [
+        },
         {
           "policy": "5Y_Visit",
           "term": 6,
           "price": 799,
           "promoCode": "VISIT_5Y_6M_PRO_149(1M)_DC50%(11M"
-        }
-      ],
-      "description": "(NEW)\n5Y_Visit ทุกๆ 6 เดือน 799 รอบบิลที่ 2-12 (399) 5,050 VISIT_5Y_6M_PRO_149(1M)_DC50%(11M)\nราคา 149.- (1 รอบบิลแรก) รอบบิลที่ 13-60 (799)\nWD516AN.ACNPLMT (น้ำเงิน)\nWD516AN.AEWPLMT (ขาว) ลด 50% 11 เดือน (รอบบิลที่ 2-12) รอบบิลที่ 1 (149)\nWD516AN.ASLPLMT (เงิน)\n5Y_Self ทุกๆ 6 เดือน 699 รอบบิลที่ 2-12 (349) 4,400 SELF_5Y_6M_PRO_149(1M)_DC50%(11M)\nWD518AN.ABGPLMT (เบจ) รอบบิลที่ 13-60 (699)\nWD518AN.AWHPLMT (ขาว)\nขนาดผลิตภัณฑ์ (กxสxลมม.) WD518AN.ACGPLMT (เทา)\nWD516: 170 x 419 x 550 7Y_Visit ทุกๆ 6 เดือน 599 รอบบิลที่ 2-12 (299) 3,750 VISIT_7Y_6M_PRO_149(1M)_DC50%(11M)\nWD518: 168 x 398 x 400\nราคา 149.- (1 รอบบิลแรก) รอบบิลที่ 13-84 (599)\n(ทุกสี)\nลด 50% 11 เดือน (รอบบิลที่ 2-12) รอบบิลที่ 1 (149)\n7Y_Self ทุกๆ 6 เดือน 499 รอบบิลที่ 2-12 (249) 3,100 SELF_7Y_6M_PRO_149(1M)_DC50%(11M)\n5Y_Visit ทุกๆ 6 เดือน 549 รอบบิลที่ 2-12 (274) 3,425 VISIT_5Y_6M_PRO_149(1M)_DC50%(11M)\nราคา 149.- (1 รอบบิลแรก) รอบบิลที่ 13-60 (549)\nลด 50% 11 เดือน (รอบบิลที่ 2-12) รอบบิลที่ 1 (149)\n5Y_Self ทุกๆ 6 เดือน 499 รอบบิลที่ 2-12 (249) 3,100 SELF_5Y_6M_PRO_149(1M)_DC50%(11M)\nWD110MN.ABGPLMT\n(Calming Beige)\n7Y_Visit ทุกๆ 6 เดือน 449 รอบบิลที่ 2-12 (224) 2,775 VISIT_7Y_6M_PRO_149(1M)_DC50%(11M)\nขนาดผลิตภัณฑ์ (กxสxลมม.)\n132 x 358 x 230 ราคา 149.- (1 รอบบิลแรก) รอบบิลที่ 13-84 (449)\nลด 50% 11 เดือน (รอบบิลที่ 2-12) รอบบิลที่ 1 (149)\n7Y_Self ทุกๆ 6 เดือน 399 รอบบิลที่ 2-12 (199) 2,450 SELF_7Y_6M_PRO_149(1M)_DC50%(11M)"
-    },
-    {
-      "code": "WD516AN.ASLPLMT",
-      "slug": "wd516an-aslplmt",
-      "category": "เครื่องกรองน้ำ",
-      "name": "เครื่องกรองน้ำ LG WD516AN",
-      "source": "Price list_Aug_V3.pdf",
-      "page": 2,
-      "srcPage": 4,
-      "y": 418,
-      "y2": 35,
-      "pdf": "/pdfs/Price%20list_Aug_V3.pdf",
-      "mode": "monthly",
-      "price": 599,
-      "priceFrom": "5Y_Self",
-      "policies": [
+        },
         {
           "policy": "5Y_Self",
           "term": 6,
-          "price": 599,
+          "price": 699,
           "promoCode": "SELF_5Y_6M_PRO_149(1M)_DC50%(11M"
-        }
-      ],
-      "description": "(NEW)\n5Y_Visit ทุกๆ 6 เดือน 799 รอบบิลที่ 2-12 (399) 5,050 VISIT_5Y_6M_PRO_149(1M)_DC50%(11M)\nราคา 149.- (1 รอบบิลแรก) รอบบิลที่ 13-60 (799)\nWD516AN.ACNPLMT (น้ำเงิน)\nWD516AN.AEWPLMT (ขาว) ลด 50% 11 เดือน (รอบบิลที่ 2-12) รอบบิลที่ 1 (149)\nWD516AN.ASLPLMT (เงิน)\n5Y_Self ทุกๆ 6 เดือน 699 รอบบิลที่ 2-12 (349) 4,400 SELF_5Y_6M_PRO_149(1M)_DC50%(11M)\nWD518AN.ABGPLMT (เบจ) รอบบิลที่ 13-60 (699)\nWD518AN.AWHPLMT (ขาว)\nขนาดผลิตภัณฑ์ (กxสxลมม.) WD518AN.ACGPLMT (เทา)\nWD516: 170 x 419 x 550 7Y_Visit ทุกๆ 6 เดือน 599 รอบบิลที่ 2-12 (299) 3,750 VISIT_7Y_6M_PRO_149(1M)_DC50%(11M)\nWD518: 168 x 398 x 400\nราคา 149.- (1 รอบบิลแรก) รอบบิลที่ 13-84 (599)\n(ทุกสี)\nลด 50% 11 เดือน (รอบบิลที่ 2-12) รอบบิลที่ 1 (149)\n7Y_Self ทุกๆ 6 เดือน 499 รอบบิลที่ 2-12 (249) 3,100 SELF_7Y_6M_PRO_149(1M)_DC50%(11M)\n5Y_Visit ทุกๆ 6 เดือน 549 รอบบิลที่ 2-12 (274) 3,425 VISIT_5Y_6M_PRO_149(1M)_DC50%(11M)\nราคา 149.- (1 รอบบิลแรก) รอบบิลที่ 13-60 (549)\nลด 50% 11 เดือน (รอบบิลที่ 2-12) รอบบิลที่ 1 (149)\n5Y_Self ทุกๆ 6 เดือน 499 รอบบิลที่ 2-12 (249) 3,100 SELF_5Y_6M_PRO_149(1M)_DC50%(11M)\nWD110MN.ABGPLMT\n(Calming Beige)\n7Y_Visit ทุกๆ 6 เดือน 449 รอบบิลที่ 2-12 (224) 2,775 VISIT_7Y_6M_PRO_149(1M)_DC50%(11M)\nขนาดผลิตภัณฑ์ (กxสxลมม.)\n132 x 358 x 230 ราคา 149.- (1 รอบบิลแรก) รอบบิลที่ 13-84 (449)\nลด 50% 11 เดือน (รอบบิลที่ 2-12) รอบบิลที่ 1 (149)\n7Y_Self ทุกๆ 6 เดือน 399 รอบบิลที่ 2-12 (199) 2,450 SELF_7Y_6M_PRO_149(1M)_DC50%(11M)"
-    },
-    {
-      "code": "WD518",
-      "slug": "wd518",
-      "category": "เครื่องกรองน้ำ",
-      "name": "เครื่องกรองน้ำ LG WD518",
-      "source": "Price list_Aug_V3.pdf",
-      "page": 1,
-      "srcPage": 3,
-      "y": 303,
-      "y2": 191,
-      "pdf": "/pdfs/Price%20list_Aug_V3.pdf",
-      "mode": "outright",
-      "price": 34900,
-      "priceFrom": "2Y_Self",
-      "policies": [
-        {
-          "policy": "2Y_Visit",
-          "term": 6,
-          "price": 37900,
-          "promoCode": "OUT_VISIT_2Y_DC10%_2026"
         },
-        {
-          "policy": "2Y_Self",
-          "term": 6,
-          "price": 34900,
-          "promoCode": "OUT_SELF_2Y_DC10%_2026"
-        }
-      ],
-      "description": "WD516 หรือ WD518\nOutright"
-    },
-    {
-      "code": "WD518AN.AWHPLMT",
-      "slug": "wd518an-awhplmt",
-      "category": "เครื่องกรองน้ำ",
-      "name": "เครื่องกรองน้ำ LG WD518AN",
-      "source": "Price list_Aug_V3.pdf",
-      "page": 2,
-      "srcPage": 4,
-      "y": 418,
-      "y2": 35,
-      "pdf": "/pdfs/Price%20list_Aug_V3.pdf",
-      "mode": "monthly",
-      "price": 499,
-      "priceFrom": "7Y_Self",
-      "policies": [
         {
           "policy": "7Y_Visit",
           "term": 6,
@@ -192,7 +66,49 @@
           "promoCode": "SELF_7Y_6M_PRO_149(1M)_DC50%(11M"
         }
       ],
-      "description": "(NEW)\n5Y_Visit ทุกๆ 6 เดือน 799 รอบบิลที่ 2-12 (399) 5,050 VISIT_5Y_6M_PRO_149(1M)_DC50%(11M)\nราคา 149.- (1 รอบบิลแรก) รอบบิลที่ 13-60 (799)\nWD516AN.ACNPLMT (น้ำเงิน)\nWD516AN.AEWPLMT (ขาว) ลด 50% 11 เดือน (รอบบิลที่ 2-12) รอบบิลที่ 1 (149)\nWD516AN.ASLPLMT (เงิน)\n5Y_Self ทุกๆ 6 เดือน 699 รอบบิลที่ 2-12 (349) 4,400 SELF_5Y_6M_PRO_149(1M)_DC50%(11M)\nWD518AN.ABGPLMT (เบจ) รอบบิลที่ 13-60 (699)\nWD518AN.AWHPLMT (ขาว)\nขนาดผลิตภัณฑ์ (กxสxลมม.) WD518AN.ACGPLMT (เทา)\nWD516: 170 x 419 x 550 7Y_Visit ทุกๆ 6 เดือน 599 รอบบิลที่ 2-12 (299) 3,750 VISIT_7Y_6M_PRO_149(1M)_DC50%(11M)\nWD518: 168 x 398 x 400\nราคา 149.- (1 รอบบิลแรก) รอบบิลที่ 13-84 (599)\n(ทุกสี)\nลด 50% 11 เดือน (รอบบิลที่ 2-12) รอบบิลที่ 1 (149)\n7Y_Self ทุกๆ 6 เดือน 499 รอบบิลที่ 2-12 (249) 3,100 SELF_7Y_6M_PRO_149(1M)_DC50%(11M)\n5Y_Visit ทุกๆ 6 เดือน 549 รอบบิลที่ 2-12 (274) 3,425 VISIT_5Y_6M_PRO_149(1M)_DC50%(11M)\nราคา 149.- (1 รอบบิลแรก) รอบบิลที่ 13-60 (549)\nลด 50% 11 เดือน (รอบบิลที่ 2-12) รอบบิลที่ 1 (149)\n5Y_Self ทุกๆ 6 เดือน 499 รอบบิลที่ 2-12 (249) 3,100 SELF_5Y_6M_PRO_149(1M)_DC50%(11M)\nWD110MN.ABGPLMT\n(Calming Beige)\n7Y_Visit ทุกๆ 6 เดือน 449 รอบบิลที่ 2-12 (224) 2,775 VISIT_7Y_6M_PRO_149(1M)_DC50%(11M)\nขนาดผลิตภัณฑ์ (กxสxลมม.)\n132 x 358 x 230 ราคา 149.- (1 รอบบิลแรก) รอบบิลที่ 13-84 (449)\nลด 50% 11 เดือน (รอบบิลที่ 2-12) รอบบิลที่ 1 (149)\n7Y_Self ทุกๆ 6 เดือน 399 รอบบิลที่ 2-12 (199) 2,450 SELF_7Y_6M_PRO_149(1M)_DC50%(11M)"
+      "description": "WD516 หรือ WD518\nOutright"
+    },
+    {
+      "code": "WD518",
+      "slug": "wd518",
+      "category": "เครื่องกรองน้ำ",
+      "name": "เครื่องกรองน้ำ LG WD518",
+      "source": "Price list_Aug_V3.pdf",
+      "page": 1,
+      "srcPage": 3,
+      "y": 303,
+      "y2": 191,
+      "pdf": "/pdfs/Price%20list_Aug_V3.pdf",
+      "mode": "monthly",
+      "price": 499,
+      "priceFrom": "5Y_Self",
+      "policies": [
+        {
+          "policy": "2Y_Visit",
+          "term": 6,
+          "price": 37900,
+          "promoCode": "OUT_VISIT_2Y_DC10%_2026"
+        },
+        {
+          "policy": "2Y_Self",
+          "term": 6,
+          "price": 34900,
+          "promoCode": "OUT_SELF_2Y_DC10%_2026"
+        },
+        {
+          "policy": "5Y_Visit",
+          "term": 6,
+          "price": 549,
+          "promoCode": "VISIT_5Y_6M_PRO_149(1M)_DC50%(11M"
+        },
+        {
+          "policy": "5Y_Self",
+          "term": 6,
+          "price": 499,
+          "promoCode": "SELF_5Y_6M_PRO_149(1M)_DC50%(11M"
+        }
+      ],
+      "description": "WD516 หรือ WD518\nOutright"
     },
     {
       "code": "F2520RNTB.AEBPETH",
@@ -254,7 +170,7 @@
         {
           "policy": "5Y_Visit",
           "term": 12,
-          "price": 349,
+          "price": 399,
           "promoCode": "VISIT_5Y_12M_DC50%8M_AUG"
         },
         {
@@ -386,7 +302,7 @@
         {
           "policy": "5Y_Self",
           "term": 12,
-          "price": 499,
+          "price": 449,
           "promoCode": "SELF_5Y_12M_PRO_149(1M"
         },
         {
@@ -1573,7 +1489,7 @@
         {
           "policy": "6Y_Visit",
           "term": 24,
-          "price": 699,
+          "price": 649,
           "promoCode": "VISIT_6Y_24M"
         }
       ],

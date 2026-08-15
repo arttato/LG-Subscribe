@@ -56,6 +56,23 @@ const CATEGORY_OVERRIDES = {
   '52G930B': 'มอนิเตอร์',
 };
 
+// หน้าแบบตารางหลายคอลัมน์: รหัสสี (ทุกสี) อยู่คอลัมน์ซ้าย แต่แถวราคาอยู่คอลัมน์กลาง
+// → y ของรหัสกับแถวราคาสลับกัน ระยะ "ใกล้ที่สุด" จึงจับคู่ผิด (เช่น รหัส WD518AN อยู่ระหว่างแถวราคาของ WD516AN)
+// กำหนดบล็อกช่วง y ของแถวราคาแต่ละรุ่น (ค่า y จาก PDF ต้นฉบับ — ถ้า LG เปลี่ยนโครงสร้างหน้าต้องอัปเดต)
+// ไฟล์ → หน้า → [ { yMin, yMax, family } ]
+const POLICY_BLOCK_OVERRIDES = {
+  'Price list_Aug_V3.pdf': {
+    4: [
+      { yMin: 235, yMax: 390, family: 'WD516AN' }, // 5Y_Visit 799 / 5Y_Self 699 / 7Y_Visit 599 / 7Y_Self 499
+      { yMin: 140, yMax: 200, family: 'WD518AN' }, // 5Y_Visit 549 / 5Y_Self 499
+      { yMin: 45, yMax: 135, family: 'WD110MN' }, // 7Y_Visit 449 / 7Y_Self 399
+    ],
+  },
+};
+
+// ตระกูลของรหัส (ก่อนจุด) เช่น "WD516AN.ACNPLMT" → "WD516AN"
+const familyOf = (c) => (c || '').split('.')[0];
+
 // ---------- บรรทัดที่ไม่ใช่ข้อมูลสินค้า ----------
 function isNoise(line) {
   if (!line) return true;
@@ -256,8 +273,14 @@ function parsePolicyRow(lines, lineIndex, policyToken, noService, clusterText) {
     if (price != null && price >= PRICE_MIN) {
       // ใช้ราคาจากตารางงวด ("รอบบิลที่ X-Y (ราคา)") แทน เพราะเป็นราคาต่อเดือนจริงเสมอ
       // (ราคาโปรรวม/ราคาโปรโมชันในคอลัมน์ข้างๆ อาจน้อยหรือมากกว่าราคาจริงก็ได้)
-      const window = lines.slice(lineIndex, lineIndex + 8).join(' ');
-      const ranges = [...window.matchAll(RANGE_RE)];
+      // จำกัด window เฉพาะบรรทัดต่อเนื่องของแถวเดียวกัน (หยุดเมื่อเจอแถว policy ถัดไป)
+      // — เดิมใช้ 8 บรรทัดตายตัว ทำราคาจากแถวถัดไปหลุดเข้ามา (เช่น 5Y_Self 699 → 599)
+      const windowLines = [lines[lineIndex]];
+      for (let k = lineIndex + 1; k < lines.length && windowLines.length < 8; k++) {
+        if (/[2567]Y[\s_](Visit|Self)/.test(lines[k])) break; // เจอแถว policy ถัดไป → หยุด
+        windowLines.push(lines[k]);
+      }
+      const ranges = [...windowLines.join(' ').matchAll(RANGE_RE)];
       if (ranges.length > 0) {
         // ราคาต่อเดือนจริง = งวดที่สิ้นสุดไกลสุด (9-60/13-72) และจำนวนมากที่สุด
         const best = ranges.reduce((a, b) =>
@@ -280,7 +303,7 @@ function parsePolicyRow(lines, lineIndex, policyToken, noService, clusterText) {
 // ---------- แยกหน้าเป็นสินค้า ----------
 // หลักการ: ดึง "รหัสสินค้า" และ "แถวราคา" ออกจากกันทั้งหน้า แล้วจับคู่กันด้วยระยะ y ที่ใกล้ที่สุด
 // เพราะตารางใน PDF มีหลายคอลัมน์ รหัสกับราคาอาจอยู่คนละตำแหน่ง/คนละบรรทัด
-function parsePage(pageNo, rawLines, inheritedCategory) {
+function parsePage(pageNo, rawLines, inheritedCategory, pdfFile) {
   const items = [];
   for (const { y, text } of rawLines) {
     const line = text.trim();
@@ -353,11 +376,15 @@ function parsePage(pageNo, rawLines, inheritedCategory) {
   const rows = parsePolicies(items);
 
   // 3) จับคู่แถวราคากับรหัสที่อยู่ใกล้ที่สุด (ภายใน 200pt)
+  //    หน้าแบบตารางหลายคอลัมน์ (รหัสสี "ทุกสี") → บังคับตามบล็อกช่วง y ของแต่ละรุ่น (POLICY_BLOCK_OVERRIDES)
+  const blocks = (POLICY_BLOCK_OVERRIDES[pdfFile] || {})[pageNo] || [];
   const byCode = new Map();
   for (const r of rows) {
     let best = null;
     let bestD = 201;
+    const block = blocks.find((b) => r.y >= b.yMin && r.y <= b.yMax);
     for (const a of anchors) {
+      if (block && familyOf(a.code) !== block.family) continue; // จำกัดเฉพาะรุ่นในบล็อก
       const d = Math.abs(r.y - a.y);
       if (d < bestD) {
         bestD = d;
@@ -553,7 +580,7 @@ async function main() {
     let lastCat = null;
     const pageProducts = [];
     for (const p of pages) {
-      const parsed = parsePage(p.page, p.lines, lastCat);
+      const parsed = parsePage(p.page, p.lines, lastCat, file);
       if (parsed.products.length === 0) continue; // ข้ามหน้าปก/หน้าโปรโมชันรวม
       if (parsed.category) lastCat = parsed.category;
       pageProducts.push(...parsed.products);
@@ -609,7 +636,6 @@ async function main() {
   }
 
   // รุ่นสี variants ไม่มีแถวราคาของตัวเอง (เช่น WD516AN.AEWPLMT) → ใช้ราคาต่ำสุดของครอบครัวเดียวกัน
-  const familyOf = (c) => (c || '').split('.')[0];
   const famPrice = new Map();
   for (const p of products) {
     const f = familyOf(p.code);
@@ -636,16 +662,64 @@ async function main() {
   products = [...byVariant.values()];
 
   for (const p of products) {
-    const m = meta[p.code] || meta[familyOf(p.code)];
+    const mExact = meta[p.code];
+    const mFam = meta[familyOf(p.code)];
+    const m = mExact || mFam;
     if (m) {
       if (m.name) p.name = m.name;
       if (m.category) p.category = m.category;
+      if ((mExact && mExact.hide) || (mFam && mFam.hide)) p.hidden = true; // ต้องการซ่อนรุ่นนี้ออกจากแคตตาล็อก (meta.json)
     }
+    // รวมการ์ดรุ่นย่อยเข้ากับรุ่นหลัก (เช่น WD516AN.ACNPLMT → WD516) — ค่าจาก meta `merge`
+    p._merge = (mExact && mExact.merge) || (mFam && mFam.merge) || null;
     // บังคับหมวดหมู่สำหรับรุ่นที่ PDF วางผิดหน้า (ใส่หลัง meta เพื่อให้ override เสมอ)
     // เทียบเป็น prefix เพราะรหัสมี suffix สี/เวอร์ชันคั่นด้วย - เช่น "32U889SA-W.ATM", "45GX950A-B.ATM"
     const overrideKey = Object.keys(CATEGORY_OVERRIDES).find((k) => p.code.startsWith(k));
     if (overrideKey) p.category = CATEGORY_OVERRIDES[overrideKey];
   }
+
+  // รวมรุ่นย่อยเข้าด้วยกันตาม meta `merge` (เช่น WD516AN.* + WD516 ซื้อขาด → การ์ดเดียว "WD516")
+  // — รวม policy ทั้งหมด (dedupe ด้วย policy|price) แล้วเก็บการ์ดหลักไว้ (หน้า/แถบ y สำหรับรูปมาจากการ์ดหลัก)
+  const mergeMap = new Map(); // target -> รายการรุ่นย่อยที่จะรวมเข้า
+  for (const p of products) {
+    const t = p._merge;
+    if (t && t !== p.code) {
+      if (!mergeMap.has(t)) mergeMap.set(t, []);
+      mergeMap.get(t).push(p);
+    }
+  }
+  for (const [target, subs] of mergeMap) {
+    const base = products.find((p) => p.code === target);
+    if (!base) {
+      console.warn(`⚠️ merge: ไม่พบการ์ดหลัก ${target}`);
+      continue;
+    }
+    const seen = new Set(base.policies.map((r) => `${r.policy}|${r.price}`));
+    for (const s of subs) {
+      for (const r of s.policies) {
+        const k = `${r.policy}|${r.price}`;
+        if (!seen.has(k)) {
+          base.policies.push(r);
+          seen.add(k);
+        }
+      }
+      if (!base.description && s.description) base.description = s.description;
+    }
+    // คำนวณราคาเริ่มต้นใหม่ (ต่ำสุดจาก policy ทั้งหมด) + mode
+    let best = null;
+    for (const r of base.policies) if (r.price != null && (!best || r.price < best.price)) best = r;
+    base.price = best ? best.price : null;
+    base.priceFrom = best ? best.policy : null;
+    const monthly = base.policies.filter((r) => !/^2Y/.test(r.policy));
+    base.mode = monthly.length > 0 ? 'monthly' : base.mode;
+    console.log(`🔀 รวม ${subs.length + 1} การ์ด → ${base.code} (policy ${base.policies.length} รายการ, เริ่มต้น ${base.price})`);
+  }
+  products = products.filter((p) => !p._merge || p._merge === p.code);
+  for (const p of products) delete p._merge;
+
+  const hiddenCount = products.filter((p) => p.hidden).length;
+  products = products.filter((p) => !p.hidden);
+  if (hiddenCount > 0) console.log(`ℹ️ ซ่อนตาม meta.json: ${hiddenCount} รายการ`);
 
   products.sort(
     (a, b) =>
