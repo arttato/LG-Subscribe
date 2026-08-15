@@ -97,6 +97,10 @@ a {
   position: relative;
   overflow: hidden;
   background: var(--dark);
+  max-width: 1160px;
+  margin: 16px auto 0;
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.18);
 }
 
 .banner-track {
@@ -107,12 +111,30 @@ a {
 .banner-slide {
   flex: 0 0 100%;
   min-width: 0;
+  position: relative;
+  cursor: pointer;
 }
 
 .banner-slide img {
   display: block;
   width: 100%;
   height: auto;
+}
+
+.banner-label {
+  position: absolute;
+  top: 14px;
+  left: 14px;
+  max-width: 62%;
+  background: rgba(0, 0, 0, 0.55);
+  color: #fff;
+  font-size: 0.82rem;
+  font-weight: 600;
+  line-height: 1.35;
+  padding: 7px 13px;
+  border-radius: 999px;
+  backdrop-filter: blur(3px);
+  pointer-events: none;
 }
 
 .banner-arrow {
@@ -175,6 +197,18 @@ a {
 @media (max-width: 768px) {
   .banner-arrow {
     display: none;
+  }
+
+  .banner-carousel {
+    margin: 14px 12px 0;
+    border-radius: 12px;
+  }
+
+  .banner-label {
+    top: 10px;
+    left: 10px;
+    font-size: 0.72rem;
+    padding: 5px 10px;
   }
 }
 

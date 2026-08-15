@@ -70,11 +70,23 @@ for (let i = 0; i < slides.length; i++) {
 }
 
 // ── 4. เขียน src/data/banners.json ──
+// คง title/category ที่เคยตั้งไว้ (จับคู่ด้วยชื่อไฟล์ต้นทาง) — สไลด์ใหม่จะได้ title ว่างให้ใส่เอง
+const fileKey = (u) => (u ? u.split('/').pop().replace(/\.(jpg|png|webp)$/i, '') : '');
+const prev = (() => {
+  try { return JSON.parse(fs.readFileSync(OUT_JSON, 'utf8')).slides; } catch { return []; }
+})();
+const prevByFile = new Map(prev.map((s) => [fileKey(s.lgDesktop), s]));
+
+const slidesOut = saved.filter((s) => s.desktop).map((s) => {
+  const p = prevByFile.get(fileKey(s.lgDesktop)) || {};
+  return { ...s, title: p.title || '', category: p.category || '' };
+});
 const out = {
   fetchedAt: new Date().toISOString(),
   source: PAGE,
-  slides: saved.filter((s) => s.desktop),
+  slides: slidesOut,
 };
 fs.writeFileSync(OUT_JSON, JSON.stringify(out, null, 2));
-const okCount = saved.filter((s) => s.desktop).length;
-console.log(`\nบันทึก: ${path.relative(ROOT, OUT_JSON)} (${okCount}/${slides.length} สไลด์)`);
+const noTitle = slidesOut.filter((s) => !s.title).length;
+console.log(`\nบันทึก: ${path.relative(ROOT, OUT_JSON)} (${slidesOut.length}/${slides.length} สไลด์)`);
+if (noTitle) console.log(`⚠️  สไลด์ใหม่ ${noTitle} ใบ ยังไม่มี title/category — เปิด ${path.relative(ROOT, OUT_JSON)} แล้วใส่ให้`);

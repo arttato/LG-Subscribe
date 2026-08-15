@@ -11,6 +11,7 @@
     "pdfspecs": "node scripts/extract-pdf-specs.mjs",
     "gallery": "node scripts/fetch-lg-gallery.mjs",
     "banners": "node scripts/fetch-lg-banners.mjs",
+    "bannertext": "node scripts/ocr-banners.mjs",
     "prebuild": "node scripts/extract.mjs",
     "dev": "astro dev",
     "build": "astro build",
@@ -22,6 +23,7 @@
     "pdfjs-dist": "^4.10.38"
   },
   "devDependencies": {
-    "@napi-rs/canvas": "^1.0.6"
+    "@napi-rs/canvas": "^1.0.6",
+    "tesseract.js": "^7.0.0"
   }
 }

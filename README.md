@@ -177,6 +177,13 @@ npm run specs && npm run gallery && npm run banners
 | `npm run pdfspecs` | ดึงสเปคย่อของรุ่นที่ LG ไม่มีหน้าจาก PDF → `src/data/pdf-specs.json` (ต้อง commit) |
 | `npm run gallery` | ดึง URL รูปหลายมุมจากเว็บ LG → `src/data/lg-gallery.json` (ต้อง commit) |
 | `npm run banners` | ดึง banner โปรโมชันหน้า LG Subscribe → `public/img/banners/` + `src/data/banners.json` (ต้อง commit) |
+
+### หมายเหตุ banner โปรโมชัน (หน้าแรก)
+
+- **ข้อความบน banner** (`title` ใน `src/data/banners.json`) เป็นข้อมูลที่จัดทำจากตัวหนังสือในรูปจริง (อ่านด้วย OCR) — ถ้าเดือนหน้า LG เปลี่ยน banner สไลด์ใหม่จะได้ `title` ว่าง ให้เปิด `src/data/banners.json` แล้วใส่ข้อความ + หมวดเอง
+- **การคลิก banner → กรองแคตตาล็อก:** สไลด์ที่มี `category` (เช่น `โทรทัศน์`) จะกรองหมวดนั้น; สไลด์ที่ `category` ว่างจะแสดงทั้งหมด
+- สคริปต์ `npm run banners` คง `title`/`category` เดิมไว้ให้อัตโนมัติ (จับคู่ด้วยชื่อไฟล์ต้นทางของ LG) — แก้เฉพาะสไลด์ใหม่เท่านั้น
+- มีสคริปต์ช่วย `npm run bannertext` (OCR ภาษาไทย) อ่านตัวหนังสือจากรูป banner เพื่อเอามาใส่ `title` — ใช้เมื่อสไลด์ใหม่ไม่มีข้อความ |
 | `npm run dev` | รัน dev server (localhost:4321) |
 | `npm run build` | build เว็บ static ไปที่ `dist/` |
 | `npm run preview` | ทดสอบเวอร์ชัน build ที่ `dist/` |

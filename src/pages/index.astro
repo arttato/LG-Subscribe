@@ -96,12 +96,13 @@ const policyRows = [...heroProduct.policies]
       <div class="banner-carousel" id="banner-carousel">
         <div class="banner-track">
           {banners.slides.map((s) => (
-            <div class="banner-slide">
+            <div class="banner-slide" data-cat={s.category || ''} role="button" tabindex="0" aria-label={s.title ? `${s.title} — ดูสินค้าหมวด${s.category ? ' ' + s.category : 'ทั้งหมด'}` : 'โปรโมชัน LG Subscribe'}>
               <picture>
                 {s.mobile && <source media="(max-width: 768px)" srcSet={`${base}${s.mobile.replace(/^\//, '')}`} />}
                 {s.desktop && <source media="(min-width: 769px)" srcSet={`${base}${s.desktop.replace(/^\//, '')}`} />}
-                <img src={`${base}${s.desktop.replace(/^\//, '')}`} alt="โปรโมชัน LG Subscribe" loading="eager" />
+                <img src={`${base}${s.desktop.replace(/^\//, '')}`} alt={s.title || 'โปรโมชัน LG Subscribe'} loading="eager" />
               </picture>
+              {s.title && <span class="banner-label">{s.title}</span>}
             </div>
           ))}
         </div>
@@ -341,14 +342,32 @@ const policyRows = [...heroProduct.policies]
 
         // ปัดนิ้ว (มือถือ)
         let startX = null;
-        carousel.addEventListener('touchstart', (e) => { startX = e.touches[0].clientX; }, { passive: true });
+        let swiped = false;
+        carousel.addEventListener('touchstart', (e) => { startX = e.touches[0].clientX; swiped = false; }, { passive: true });
         carousel.addEventListener('touchend', (e) => {
           if (startX == null) return;
           const dx = e.changedTouches[0].clientX - startX;
-          if (Math.abs(dx) > 40) go(idx + (dx < 0 ? 1 : -1));
+          if (Math.abs(dx) > 40) { go(idx + (dx < 0 ? 1 : -1)); swiped = true; }
           autoplay();
           startX = null;
         }, { passive: true });
+
+        // คลิกสไลด์ → เลื่อนไปแคตตาล็อก + กรองตามหมวดของ banner
+        const openCatalog = (cat) => {
+          const chip = [...document.querySelectorAll('.chip')].find((c) => c.dataset.cat === cat);
+          if (chip) chip.click();
+          document.getElementById('catalog').scrollIntoView({ behavior: 'smooth' });
+        };
+        slides.forEach((sl) => {
+          const onClick = () => {
+            if (swiped) return;
+            openCatalog(sl.dataset.cat || '');
+          };
+          sl.addEventListener('click', onClick);
+          sl.addEventListener('keydown', (e) => {
+            if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); onClick(); }
+          });
+        });
 
         // หยุดเลื่อนอัตโนมัติเมื่อชี้/สัมผัส
         carousel.addEventListener('mouseenter', () => clearInterval(timer));
