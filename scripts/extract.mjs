@@ -616,7 +616,8 @@ async function main() {
   );
 
   const data = {
-    generatedAt: new Date().toISOString(),
+    // ไม่มี generatedAt — ถ้าใส่ timestamp จะทำให้ products.json ต่างทุกครั้งที่ build (diff รก)
+    // ดูวันเวลาล่าสุดได้จาก scripts/report.txt (บรรทัด "อัปเดตเมื่อ")
     sources,
     products,
   };
