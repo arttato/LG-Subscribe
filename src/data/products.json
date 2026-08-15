@@ -560,13 +560,13 @@
       "y2": 6,
       "pdf": "/pdfs/Sale%20Price8%20-%20Subscription_V3.pdf",
       "mode": "monthly",
-      "price": 230,
+      "price": 300,
       "priceFrom": "5Y_Visit",
       "policies": [
         {
           "policy": "5Y_Visit",
           "term": 12,
-          "price": 230,
+          "price": 300,
           "promoCode": "VISIT_5Y_12M"
         },
         {
@@ -866,13 +866,13 @@
       "y2": 294,
       "pdf": "/pdfs/Price%20list_Aug_V3.pdf",
       "mode": "monthly",
-      "price": 450,
+      "price": 1499,
       "priceFrom": "5Y_Visit",
       "policies": [
         {
           "policy": "5Y_Visit",
           "term": 4,
-          "price": 450,
+          "price": 1499,
           "promoCode": "VISIT_5Y_4M"
         }
       ],
@@ -914,13 +914,13 @@
       "y2": 31,
       "pdf": "/pdfs/Price%20list_Aug_V3.pdf",
       "mode": "monthly",
-      "price": 450,
+      "price": 1799,
       "priceFrom": "5Y_Visit",
       "policies": [
         {
           "policy": "5Y_Visit",
           "term": 4,
-          "price": 450,
+          "price": 1799,
           "promoCode": "VISIT_5Y_4M"
         }
       ],
@@ -938,13 +938,13 @@
       "y2": 345,
       "pdf": "/pdfs/Price%20list_Aug_V3.pdf",
       "mode": "monthly",
-      "price": 840,
+      "price": 1899,
       "priceFrom": "5Y_Visit",
       "policies": [
         {
           "policy": "5Y_Visit",
           "term": 4,
-          "price": 840,
+          "price": 1899,
           "promoCode": "VISIT_5Y_4M"
         }
       ],

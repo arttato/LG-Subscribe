@@ -278,8 +278,12 @@ function parsePolicyRow(lines, lineIndex, policyToken, noService, clusterText) {
       const cands = [...same];
       // ราคาต่อเดือนจริงบางทีอยู่บรรทัดถัดไป (หรือเป็นค่าที่น้อยกว่าในบรรทัดเดียวกัน)
       // มองหาตัวเลข ≥ 3 หลักตัวแรกของบรรทัดถัดไป โดยข้ามเลขที่อยู่ในวงเล็บ (ตารางงวด)
+      // และข้ามบรรทัดมิติตัวเครื่อง (เช่น "840x204x840", "1,180x132x450") — ตัวเลขในนั้นไม่ใช่ราคา
+      // (เคยเป็นบั๊ก: เอา 840/450 จากมิติไปทำ Math.min กับราคาจริง 1,899 → ราคาผิด)
       const nextLine = lines[lineIndex + 1] || '';
-      const m = nextLine.match(/(?<![(\d])[\d,]{3,}(?:\.\d+)?\b/);
+      const m = !/[\d,]+x[\d,]+/.test(nextLine)
+        ? nextLine.match(/(?<![(\d])[\d,]{3,}(?:\.\d+)?\b/)
+        : null;
       if (m) cands.push(toNumber(m[0]));
       const valid = cands.filter((n) => n != null && n >= PRICE_MIN);
       if (valid.length >= 1) price = Math.min(...valid);
