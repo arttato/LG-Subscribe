@@ -15,7 +15,9 @@ const tipMap = new Map();
 for (const p of products) {
   const s = specMap.get(p.code);
   if (!s) continue;
-  const items = (s.keySpecs && s.keySpecs.length) ? s.keySpecs : (s.groups?.[0]?.specs || s.specs || []);
+  const items = (s.keySpecs && s.keySpecs.length) ? s.keySpecs
+    : (s.features && s.features.length) ? s.features.map((f) => ({ name: 'คุณลักษณะ', value: f }))
+    : (s.groups?.[0]?.specs || s.specs || []);
   tipMap.set(p.slug, items.filter((i) => i.name && i.value).slice(0, 3));
 }
 

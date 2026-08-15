@@ -100,8 +100,14 @@ const gallery = lgGallery.products.find((s) => s.code === p.code);
 
       {spec && (
         <section class="specs">
-          <h2 class="specs-title">คุณสมบัติและสเปค</h2>
-          {spec.keySpecs.length > 0 && (
+          <h2 class="specs-title">{spec.features && spec.features.length > 0 ? 'คุณลักษณะที่สำคัญ' : 'คุณสมบัติและสเปค'}</h2>
+          {spec.features && spec.features.length > 0 ? (
+            <ul class="specs-features">
+              {spec.features.map((f) => (
+                <li>{f}</li>
+              ))}
+            </ul>
+          ) : spec.keySpecs.length > 0 ? (
             <div class="specs-highlights">
               {spec.keySpecs.map((k) => (
                 <div class="specs-highlight">
@@ -110,25 +116,26 @@ const gallery = lgGallery.products.find((s) => s.code === p.code);
                 </div>
               ))}
             </div>
+          ) : (
+            spec.groups.map((g, gi) => (
+              <details class="specs-group" open={gi === 0}>
+                <summary>
+                  {g.title}
+                  <span class="specs-count">{g.specs.length}</span>
+                </summary>
+                <table class="specs-table">
+                  <tbody>
+                    {g.specs.map((s) => (
+                      <tr>
+                        <th scope="row">{s.name}</th>
+                        <td>{s.value}</td>
+                      </tr>
+                    ))}
+                  </tbody>
+                </table>
+              </details>
+            ))
           )}
-          {spec.groups.map((g, gi) => (
-            <details class="specs-group" open={gi === 0}>
-              <summary>
-                {g.title}
-                <span class="specs-count">{g.specs.length}</span>
-              </summary>
-              <table class="specs-table">
-                <tbody>
-                  {g.specs.map((s) => (
-                    <tr>
-                      <th scope="row">{s.name}</th>
-                      <td>{s.value}</td>
-                    </tr>
-                  ))}
-                </tbody>
-              </table>
-            </details>
-          ))}
           <div class="specs-source">
             {specFromPdf ? 'ข้อมูลจากเอกสาร PDF ราคา (คอลัมน์รายการสินค้า)' : (
               <>ข้อมูลจาก <a href={spec.url} target="_blank" rel="noopener">เว็บ LG Thailand</a></>

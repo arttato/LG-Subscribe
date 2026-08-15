@@ -60,27 +60,30 @@ function parseItem(li) {
   return { name, value };
 }
 
-// เดิน HTML ตามลำดับ: items ก่อนหัวกลุ่มแรก = คุณลักษณะเด่น, ต่อจากหัวกลุ่ม = สเปคกลุ่มนั้น
+// แยกข้อมูลจาก HTML:
+//   features  = "คุณลักษณะที่สำคัญ" (id=keyFeatureList) — จุดเด่น marketing แบบ bullet
+//   keySpecs  = "คุณลักษณะเด่น" (ตาราง c-compare-selling ชื่อ/ค่า) — ใช้ทำ tooltip บนการ์ด
 function extractSpecsFromHtml(html) {
-  const keySpecs = [];
-  const groups = [];
-  let current = null;
-  const re = /(class="[^"]*c-compare-selling__table-head[^"]*"[\s\S]*?<h4[^>]*>([\s\S]*?)<\/h4>)|(<li[^>]*class="[^"]*c-compare-selling__item[^"]*"[\s\S]*?<\/li>)/g;
-  let m;
-  while ((m = re.exec(html))) {
-    if (m[1]) {
-      const title = stripTags(m[2]);
-      if (!title) continue;
-      current = { title, specs: [] };
-      groups.push(current);
-    } else if (m[3]) {
-      const item = parseItem(m[3]);
-      if (!item) continue;
-      if (current) current.specs.push(item);
-      else keySpecs.push(item);
+  // คุณลักษณะที่สำคัญ (bullet list id=keyFeatureList) — แสดงบนหน้า detail
+  const features = [];
+  const fm = html.match(/<ul[^>]*id="keyFeatureList"[^>]*>([\s\S]*?)<\/ul>/);
+  if (fm) {
+    for (const lm of fm[1].matchAll(/<li[^>]*>[\s\S]*?<span[^>]*>([\s\S]*?)<\/span>/g)) {
+      const t = stripTags(lm[1]);
+      if (t) features.push(t);
     }
   }
-  return { keySpecs, groups };
+
+  // คุณลักษณะเด่น = ตาราง spec-list แรกของหน้า (หัวข้อ "คุณลักษณะเด่น")
+  const keySpecs = [];
+  const firstList = html.match(/<ul[^>]*class="[^"]*c-compare-selling__spec-list[^"]*">([\s\S]*?)<\/ul>/);
+  if (firstList) {
+    for (const lm of firstList[1].matchAll(/<li[^>]*class="[^"]*c-compare-selling__item[^"]*">([\s\S]*?)<\/li>/g)) {
+      const item = parseItem(lm[1]);
+      if (item) keySpecs.push(item);
+    }
+  }
+  return { features, keySpecs, groups: [] };
 }
 
 async function fetchHtml(url) {
@@ -131,11 +134,11 @@ for (let i = 0; i < targets.length; i++) {
   const t = targets[i];
   try {
     const html = await fetchHtml(t.url);
-    const { keySpecs, groups } = extractSpecsFromHtml(html);
-    if (groups.length === 0 && keySpecs.length === 0) throw new Error('ไม่พบตารางสเปกในหน้า');
-    results.push({ code: t.code, slug: t.slug, url: t.url, keySpecs, groups });
+    const { features, keySpecs, groups } = extractSpecsFromHtml(html);
+    if (features.length === 0 && keySpecs.length === 0) throw new Error('ไม่พบคุณลักษณะ/สเปกในหน้า');
+    results.push({ code: t.code, slug: t.slug, url: t.url, features, keySpecs, groups });
     ok++;
-    console.log(`✅ [${i + 1}/${targets.length}] ${t.code} → ${groups.length} กลุ่ม, ${keySpecs.length} จุดเด่น`);
+    console.log(`✅ [${i + 1}/${targets.length}] ${t.code} → ${features.length} จุดเด่น, ${keySpecs.length} สเปคเด่น`);
   } catch (e) {
     fail++;
     console.log(`❌ [${i + 1}/${targets.length}] ${t.code} — ${e.message}`);
