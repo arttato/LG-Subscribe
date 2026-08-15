@@ -1419,69 +1419,9 @@
       "description": "5Y Self ทุกๆ 12 เดือน 3,900 SELF_5Y_12M_PRO_149(1M)_DC50%(7M)\n899 • รอบบิลที่ 2-8 (449)\nS3MFC.ALBPETH"
     },
     {
-      "code": "GC-B257SQYL.AMCPLMT",
-      "slug": "gc-b257sqyl-amcplmt",
-      "category": "ตู้เย็น",
-      "name": "ตู้เย็น LG Side by Side",
-      "source": "Sale Price8 - Subscription_V3.pdf",
-      "page": 2,
-      "srcPage": 3,
-      "y": 328,
-      "y2": 235,
-      "pdf": "/pdfs/Sale%20Price8%20-%20Subscription_V3.pdf",
-      "mode": "monthly",
-      "price": 449,
-      "priceFrom": "6Y_Visit",
-      "policies": [
-        {
-          "policy": "5Y_Visit",
-          "term": 24,
-          "price": 549,
-          "promoCode": "VISIT_5Y_24M"
-        },
-        {
-          "policy": "6Y_Visit",
-          "term": 24,
-          "price": 449,
-          "promoCode": "VISIT_6Y_24M"
-        }
-      ],
-      "description": "Promotion Aug รอบบิลที่ 1 (149)\n5Y_Visit ทุกๆ 24 เดือน 549 400 VISIT_5Y_24M\n(1st Billing) 149 รอบบิลที่ 2 ถึง 60 (549)\nGC-B257SQYL.AMCPLMT\n(Side by Side)"
-    },
-    {
-      "code": "GC-L257KQKW.AEPPLMT",
-      "slug": "gc-l257kqkw-aepplmt",
-      "category": "ตู้เย็น",
-      "name": "ตู้เย็น LG Side by Side 22.6 คิว",
-      "source": "Sale Price8 - Subscription_V3.pdf",
-      "page": 1,
-      "srcPage": 2,
-      "y": 322,
-      "y2": 229,
-      "pdf": "/pdfs/Sale%20Price8%20-%20Subscription_V3.pdf",
-      "mode": "monthly",
-      "price": 649,
-      "priceFrom": "5Y_Visit",
-      "policies": [
-        {
-          "policy": "5Y_Visit",
-          "term": 24,
-          "price": 649,
-          "promoCode": "VISIT_5Y_24M"
-        },
-        {
-          "policy": "6Y_Visit",
-          "term": 24,
-          "price": 649,
-          "promoCode": "VISIT_6Y_24M"
-        }
-      ],
-      "description": "Disc.50% รอบบิลที่ 1 ถึง 3 (374)\n5Y_Visit ทุกๆ 24 เดือน 749 1,125 VISIT_5Y_24M\n(3รอบบิล) รอบบิลที่ 4 ถึง 60 (749)\nGC-L257KQKW.AEPPLMT\n(Side by Side)\nSIZE : 22.6 คิว/ 641 ลิตร\nขนาดผลิตภัณฑ์รอบบิลที่ 1 ถึง 3 (324)\nDisc.50%\n(กว้างxสูงxลึก, มม.) รอบบิล) รอบบิลที่ 4 ถึง 72 (649)\n6Y_Visit ทุกๆ 24 เดือน 649 (3 975 VISIT_6Y_24M\n913 x 1790 x 735"
-    },
-    {
       "code": "GN-F392PQAK.AEPPLM1",
       "slug": "gn-f392pqak-aepplm1",
-      "category": "ตู้เย็น",
+      "category": "ตู้เย็น 2 ประตู",
       "name": "ตู้เย็น LG ช่องแช่แข็งบน (F392)",
       "source": "Sale Price8 - Subscription_V3.pdf",
       "page": 2,
@@ -1509,39 +1449,9 @@
       "description": "Disc.50%\nGN-F392PQAK.AEPPLM1 5Y_Visit ทุกๆ 24 เดือน 449 รอบบิลที่ 4 ถึง 60 (449) VISIT_5Y_24M\n(3รอบบิล)\n(Top Freezer)"
     },
     {
-      "code": "GV-B25FFGDB.ABMPLMT",
-      "slug": "gv-b25ffgdb-abmplmt",
-      "category": "ตู้เย็น",
-      "name": "ตู้เย็น LG หลายประตู 21.6 คิว",
-      "source": "Sale Price8 - Subscription_V3.pdf",
-      "page": 1,
-      "srcPage": 2,
-      "y": 163,
-      "y2": 70,
-      "pdf": "/pdfs/Sale%20Price8%20-%20Subscription_V3.pdf",
-      "mode": "monthly",
-      "price": 599,
-      "priceFrom": "6Y_Visit",
-      "policies": [
-        {
-          "policy": "5Y_Visit",
-          "term": 24,
-          "price": 699,
-          "promoCode": "VISIT_5Y_24M"
-        },
-        {
-          "policy": "6Y_Visit",
-          "term": 24,
-          "price": 599,
-          "promoCode": "VISIT_6Y_24M"
-        }
-      ],
-      "description": "Promotion Aug รอบบิลที่ 1 (149)\n5Y_Visit ทุกๆ 24 เดือน 699 550 VISIT_5Y_24M\nGV-B25FFGDB.ABMPLMT (1st Billing) 149 รอบบิลที่ 2 ถึง 60 (699)\n(Multi Door)\nSIZE : 21.6 คิว / 611 ลิตร"
-    },
-    {
       "code": "GN-F452PQAK.AEPPLMT",
       "slug": "gn-f452pqak-aepplmt",
-      "category": "ตู้เย็น / 2 ประตู",
+      "category": "ตู้เย็น 2 ประตู",
       "name": "ตู้เย็น LG ช่องแช่แข็งบน 16.2 คิว",
       "source": "Price list_Aug_V3.pdf",
       "page": 10,
@@ -1565,7 +1475,7 @@
     {
       "code": "GN-V389FQEF.AEPPLMT",
       "slug": "gn-v389fqef-aepplmt",
-      "category": "ตู้เย็น / 2 ประตู",
+      "category": "ตู้เย็น 2 ประตู",
       "name": "ตู้เย็น LG 2 ประตู InstaView 12 คิว",
       "source": "Price list_Aug_V3.pdf",
       "page": 10,
@@ -1601,7 +1511,7 @@
     {
       "code": "GC-B48FPGAM.ADBPLMT",
       "slug": "gc-b48fpgam-adbplmt",
-      "category": "ตู้เย็น / Multi-Door",
+      "category": "ตู้เย็น หลายประตู",
       "name": "ตู้เย็น LG หลายประตู (B48FPGAM)",
       "source": "Price list_Aug_V3.pdf",
       "page": 8,
@@ -1631,7 +1541,7 @@
     {
       "code": "GC-G24FFQKB.AEEPLM1",
       "slug": "gc-g24ffqkb-aeeplm1",
-      "category": "ตู้เย็น / Multi-Door",
+      "category": "ตู้เย็น หลายประตู",
       "name": "ตู้เย็น LG หลายประตู พร้อมตู้กดน้ำและน้ำแข็ง",
       "source": "Price list_Aug_V3.pdf",
       "page": 7,
@@ -1653,9 +1563,33 @@
       "description": "GC-G24FFQKB.AEEPLM1 • รอบบิลที่ 1 (149)\nราคา 149.- (1 รอบบิลแรก)\n(Multi Door) •\n5Y_Visit ทุกๆ 24 เดือน 1,349 5,925 VISIT_5Y_24M_PRO_149(1M)_DC50%(7M)\nSmart Inverter Compressor\n(I&W Dispenser)\nสี : เบจ\nSIZE : 22.5 คิว/ 637 ลิตรราคา 149.- (1 รอบบิลแรก)\nขนาดผลิตภัณฑ์ 6Y_Visit ทุกๆ 24 เดือน 1,149 รอบบิลที่ 2-8 (574) 5,025 VISIT_6Y_24M_PRO_149(1M)_DC50%(7M)\n(กว้างxสูงxลึก, มม.) • ลด 50% 7 เดือน (รอบบิลที่ 2-8)\n914x 1,792 x 733 • รอบบิลที่ 9-72 (1,149)"
     },
     {
+      "code": "GC-L24FFCBB.AEVPLM1",
+      "slug": "gc-l24ffcbb-aevplm1",
+      "category": "ตู้เย็น หลายประตู",
+      "name": "ตู้เย็น LG ต่อระบบน้ำ (L24FFCBB)",
+      "source": "Price list_Aug_V3.pdf",
+      "page": 4,
+      "srcPage": 6,
+      "y": 440,
+      "y2": 258,
+      "pdf": "/pdfs/Price%20list_Aug_V3.pdf",
+      "mode": "monthly",
+      "price": 1249,
+      "priceFrom": "5Y_Visit",
+      "policies": [
+        {
+          "policy": "5Y_Visit",
+          "term": 6,
+          "price": 1249,
+          "promoCode": null
+        }
+      ],
+      "description": "GC-L24FFCBB.AEVPLM1 รับฟรี! ไมโครเวฟ 20 ลิตรรุ่น MS2032GAS.BBKPETH"
+    },
+    {
       "code": "GC-V22FFQMB.AEPPLMT",
       "slug": "gc-v22ffqmb-aepplmt",
-      "category": "ตู้เย็น / Multi-Door",
+      "category": "ตู้เย็น หลายประตู",
       "name": "ตู้เย็น LG หลายประตู 18.7 คิว",
       "source": "Price list_Aug_V3.pdf",
       "page": 7,
@@ -1689,9 +1623,39 @@
       "description": "GC-V22FFQMB.AEPPLMT 5Y_Visit ทุกๆ 24 เดือน 949 1,750 VISIT_5Y_24M_PRO_149(1M)_DC50%(2M)\n(Multi Door) • ลด 50% 2 เดือน (รอบบิลที่ 2-3)\nSIZE : 18.7 คิว/ 530 ลิตร\nขนาดผลิตภัณฑ์\n(กว้างxสูงxลึก, มม.)\n835x 1787x 730\n6Y_Visit ทุกๆ 24 เดือน 799 1,450 VISIT_6Y_24M_PRO_149(1M)_DC50%(2M)"
     },
     {
+      "code": "GV-B25FFGDB.ABMPLMT",
+      "slug": "gv-b25ffgdb-abmplmt",
+      "category": "ตู้เย็น หลายประตู",
+      "name": "ตู้เย็น LG หลายประตู 21.6 คิว",
+      "source": "Sale Price8 - Subscription_V3.pdf",
+      "page": 1,
+      "srcPage": 2,
+      "y": 163,
+      "y2": 70,
+      "pdf": "/pdfs/Sale%20Price8%20-%20Subscription_V3.pdf",
+      "mode": "monthly",
+      "price": 599,
+      "priceFrom": "6Y_Visit",
+      "policies": [
+        {
+          "policy": "5Y_Visit",
+          "term": 24,
+          "price": 699,
+          "promoCode": "VISIT_5Y_24M"
+        },
+        {
+          "policy": "6Y_Visit",
+          "term": 24,
+          "price": 599,
+          "promoCode": "VISIT_6Y_24M"
+        }
+      ],
+      "description": "Promotion Aug รอบบิลที่ 1 (149)\n5Y_Visit ทุกๆ 24 เดือน 699 550 VISIT_5Y_24M\nGV-B25FFGDB.ABMPLMT (1st Billing) 149 รอบบิลที่ 2 ถึง 60 (699)\n(Multi Door)\nSIZE : 21.6 คิว / 611 ลิตร"
+    },
+    {
       "code": "GV-V25FFGRB.ABMPLMT",
       "slug": "gv-v25ffgrb-abmplmt",
-      "category": "ตู้เย็น / Multi-Door",
+      "category": "ตู้เย็น หลายประตู",
       "name": "ตู้เย็น LG หลายประตู (V25FFGRB)",
       "source": "Price list_Aug_V3.pdf",
       "page": 9,
@@ -1719,33 +1683,39 @@
       "description": "GV-V25FFGRB.ABMPLMT 5Y_Visit ทุกๆ 24 เดือน 999 850 VISIT_5Y_24M_PRO_149(1M)\n(Multi Door) รอบบิลที่ 2-60 (999)\nSmart Inverter Compressor"
     },
     {
-      "code": "GC-L24FFCBB.AEVPLM1",
-      "slug": "gc-l24ffcbb-aevplm1",
-      "category": "ตู้เย็น / Plumbing",
-      "name": "ตู้เย็น LG ต่อระบบน้ำ (L24FFCBB)",
-      "source": "Price list_Aug_V3.pdf",
-      "page": 4,
-      "srcPage": 6,
-      "y": 440,
-      "y2": 258,
-      "pdf": "/pdfs/Price%20list_Aug_V3.pdf",
+      "code": "GC-B257SQYL.AMCPLMT",
+      "slug": "gc-b257sqyl-amcplmt",
+      "category": "ตู้เย็น Side by Side",
+      "name": "ตู้เย็น LG Side by Side",
+      "source": "Sale Price8 - Subscription_V3.pdf",
+      "page": 2,
+      "srcPage": 3,
+      "y": 328,
+      "y2": 235,
+      "pdf": "/pdfs/Sale%20Price8%20-%20Subscription_V3.pdf",
       "mode": "monthly",
-      "price": 1249,
-      "priceFrom": "5Y_Visit",
+      "price": 449,
+      "priceFrom": "6Y_Visit",
       "policies": [
         {
           "policy": "5Y_Visit",
-          "term": 6,
-          "price": 1249,
-          "promoCode": null
+          "term": 24,
+          "price": 549,
+          "promoCode": "VISIT_5Y_24M"
+        },
+        {
+          "policy": "6Y_Visit",
+          "term": 24,
+          "price": 449,
+          "promoCode": "VISIT_6Y_24M"
         }
       ],
-      "description": "GC-L24FFCBB.AEVPLM1 รับฟรี! ไมโครเวฟ 20 ลิตรรุ่น MS2032GAS.BBKPETH"
+      "description": "Promotion Aug รอบบิลที่ 1 (149)\n5Y_Visit ทุกๆ 24 เดือน 549 400 VISIT_5Y_24M\n(1st Billing) 149 รอบบิลที่ 2 ถึง 60 (549)\nGC-B257SQYL.AMCPLMT\n(Side by Side)"
     },
     {
       "code": "GC-J257SQZW.AEPPLMT",
       "slug": "gc-j257sqzw-aepplmt",
-      "category": "ตู้เย็น / Side-by-Side",
+      "category": "ตู้เย็น Side by Side",
       "name": "ตู้เย็น LG Side by Side 22.4 คิว (J257SQZW)",
       "source": "Price list_Aug_V3.pdf",
       "page": 6,
@@ -1773,9 +1743,39 @@
       "description": "5Y_Visit ทุกๆ 24 เดือน 1,049 1,950 VISIT_5Y_24M_PRO_149(1M)_DC50%(2M)\nGC-J257SQZW.AEPPLMT\n(Side by Side)\nSIZE : 22.4 คิว /635 ลิตร\nขนาดผลิตภัณฑ์รอบบิลที่ 1 (149)\nราคา 149.- (1 รอบบิลแรก)\n(กว้างxสูงxลึก, มม.) •\n6Y_Visit ทุกๆ 24 เดือน 899 1,650 VISIT_6Y_24M_PRO_149(1M)_DC50%(2M)\n913 x 1790 x 735"
     },
     {
+      "code": "GC-L257KQKW.AEPPLMT",
+      "slug": "gc-l257kqkw-aepplmt",
+      "category": "ตู้เย็น Side by Side",
+      "name": "ตู้เย็น LG Side by Side 22.6 คิว",
+      "source": "Sale Price8 - Subscription_V3.pdf",
+      "page": 1,
+      "srcPage": 2,
+      "y": 322,
+      "y2": 229,
+      "pdf": "/pdfs/Sale%20Price8%20-%20Subscription_V3.pdf",
+      "mode": "monthly",
+      "price": 649,
+      "priceFrom": "5Y_Visit",
+      "policies": [
+        {
+          "policy": "5Y_Visit",
+          "term": 24,
+          "price": 649,
+          "promoCode": "VISIT_5Y_24M"
+        },
+        {
+          "policy": "6Y_Visit",
+          "term": 24,
+          "price": 649,
+          "promoCode": "VISIT_6Y_24M"
+        }
+      ],
+      "description": "Disc.50% รอบบิลที่ 1 ถึง 3 (374)\n5Y_Visit ทุกๆ 24 เดือน 749 1,125 VISIT_5Y_24M\n(3รอบบิล) รอบบิลที่ 4 ถึง 60 (749)\nGC-L257KQKW.AEPPLMT\n(Side by Side)\nSIZE : 22.6 คิว/ 641 ลิตร\nขนาดผลิตภัณฑ์รอบบิลที่ 1 ถึง 3 (324)\nDisc.50%\n(กว้างxสูงxลึก, มม.) รอบบิล) รอบบิลที่ 4 ถึง 72 (649)\n6Y_Visit ทุกๆ 24 เดือน 649 (3 975 VISIT_6Y_24M\n913 x 1790 x 735"
+    },
+    {
       "code": "GC-L257SFZW.APYPLMT",
       "slug": "gc-l257sfzw-apyplmt",
-      "category": "ตู้เย็น / Side-by-Side",
+      "category": "ตู้เย็น Side by Side",
       "name": "ตู้เย็น LG Side by Side 22.4 คิว (L257SFZW)",
       "source": "Price list_Aug_V3.pdf",
       "page": 5,
@@ -1811,7 +1811,7 @@
     {
       "code": "GC-X257CMEW.ATEPLMT",
       "slug": "gc-x257cmew-ateplmt",
-      "category": "ตู้เย็น / Side-by-Side",
+      "category": "ตู้เย็น Side by Side",
       "name": "ตู้เย็น LG Side by Side InstaView",
       "source": "Price list_Aug_V3.pdf",
       "page": 6,
@@ -1841,7 +1841,7 @@
     {
       "code": "GC-X257CMHW.AEEPLMT",
       "slug": "gc-x257cmhw-aeeplmt",
-      "category": "ตู้เย็น / Side-by-Side",
+      "category": "ตู้เย็น Side by Side",
       "name": "ตู้เย็น LG Side by Side พร้อมเครื่องกรองน้ำ",
       "source": "Price list_Aug_V3.pdf",
       "page": 5,

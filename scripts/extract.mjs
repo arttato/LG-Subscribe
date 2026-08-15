@@ -54,6 +54,20 @@ const CATEGORY_OVERRIDES = {
   '40U990A': 'มอนิเตอร์',
   '45GX950A': 'มอนิเตอร์',
   '52G930B': 'มอนิเตอร์',
+  // ตู้เย็นจาก Sale PDF (หัวข้อหน้าคือ "ตู้เย็น" ไม่มีหมวดย่อย แต่แถวมีป้ายในวงเล็บ เช่น "(Side by Side)")
+  'GC-B257SQYL': 'ตู้เย็น Side by Side',
+  'GC-L257KQKW': 'ตู้เย็น Side by Side',
+  'GN-F392PQAK': 'ตู้เย็น 2 ประตู',
+  'GV-B25FFGDB': 'ตู้เย็น หลายประตู',
+  'GC-L24FFCBB': 'ตู้เย็น หลายประตู', // PDF: "(Multi Door)/ Plumbing"
+};
+
+// หมวดย่อยตู้เย็นใน Price list PDF → ชื่อหมวดบนเว็บ (แยกการ์ดตามหัวข้อย่อยของ PDF: Plumbing, Side-by-Side, Multi-Door, 2 ประตู)
+const FRIDGE_SUB = {
+  'ตู้เย็น / Side-by-Side': 'ตู้เย็น Side by Side',
+  'ตู้เย็น / Multi-Door': 'ตู้เย็น หลายประตู',
+  'ตู้เย็น / 2 ประตู': 'ตู้เย็น 2 ประตู',
+  'ตู้เย็น / Plumbing': 'ตู้เย็น หลายประตู',
 };
 
 // หน้าแบบตารางหลายคอลัมน์: รหัสสี (ทุกสี) อยู่คอลัมน์ซ้าย แต่แถวราคาอยู่คอลัมน์กลาง
@@ -676,6 +690,7 @@ async function main() {
     // เทียบเป็น prefix เพราะรหัสมี suffix สี/เวอร์ชันคั่นด้วย - เช่น "32U889SA-W.ATM", "45GX950A-B.ATM"
     const overrideKey = Object.keys(CATEGORY_OVERRIDES).find((k) => p.code.startsWith(k));
     if (overrideKey) p.category = CATEGORY_OVERRIDES[overrideKey];
+    if (p.category && FRIDGE_SUB[p.category]) p.category = FRIDGE_SUB[p.category];
   }
 
   // รวมรุ่นย่อยเข้าด้วยกันตาม meta `merge` (เช่น WD516AN.* + WD516 ซื้อขาด → การ์ดเดียว "WD516")

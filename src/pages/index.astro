@@ -39,10 +39,13 @@ for (const p of products) {
   groups.get(g).push(p);
 }
 // ลำดับหมวดหมู่ตามหัวข้อในไฟล์ PDF ราคา (Price list_Aug_V3.pdf) — มอนิเตอร์/Sound bar ต่อท้าย (ไม่มีหัวข้อแยกใน PDF หลัก)
+// ตู้เย็นแยกเป็นหมวดย่อยตาม PDF (Side-by-Side p7-8 → Multi-Door p9-11 → 2 ประตู p12)
 const CATEGORY_ORDER = [
   'เครื่องกรองน้ำ',
   'เครื่องดูดฝุ่น',
-  'ตู้เย็น',
+  'ตู้เย็น Side by Side',
+  'ตู้เย็น หลายประตู',
+  'ตู้เย็น 2 ประตู',
   'Wash Tower',
   'เครื่องซักผ้า',
   'เครื่องอบผ้า',
