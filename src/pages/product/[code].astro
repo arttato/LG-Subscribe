@@ -375,7 +375,7 @@ const planCards = (() => {
             item.className = 'plan-detail-notice-item';
             const num = document.createElement('span');
             num.className = 'plan-detail-notice-num';
-            num.textContent = i + 1;
+            num.textContent = '*'.repeat(i + 1);
             const span = document.createElement('span');
             span.textContent = txt;
             item.append(num, span);
