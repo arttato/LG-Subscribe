@@ -706,6 +706,14 @@ a {
   font-size: 1.7rem;
 }
 
+.detail .price-row .price-from {
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--text);
+  letter-spacing: 0;
+  text-transform: none;
+}
+
 .price-note {
   font-size: 0.8rem;
   color: var(--muted);

@@ -18,6 +18,7 @@ const imgUrl = `${import.meta.env.BASE_URL}img/products/${p.slug}.jpg`;
 
 const fmt = (n) => (n == null ? '—' : n.toLocaleString('th-TH'));
 const modeLabel = (m) => (m === 'outright' ? 'บาท (ซื้อขาด)' : 'บาท/เดือน');
+const priceLabel = (m) => (m === 'outright' ? 'ซื้อขาด' : 'เริ่มต้น');
 const base = import.meta.env.BASE_URL;
 const titleText = p.code.startsWith('XBOOM-') ? p.name : p.name !== p.code ? `${p.name} — ${p.code}` : p.code;
 // สเปค: มาจากเว็บ LG (keySpecs + groups) หรือ PDF ราคา (specs รายการตรง)
@@ -89,6 +90,7 @@ const gallery = lgGallery.products.find((s) => s.code === p.code);
         {p.name !== p.code && <h1 class="detail-name">{p.name}</h1>}
         {!p.code.startsWith('XBOOM-') && <div class="detail-code">รุ่น: {p.code}</div>}
         <div class="price-row">
+          <span class="price-from">{priceLabel(p.mode)}</span>
           <span class="price-amount">{fmt(p.price)}</span>
           <span class="price-unit">{modeLabel(p.mode)}</span>
           {p.priceNote && <span class="price-note">({p.priceNote})</span>}
