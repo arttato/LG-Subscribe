@@ -364,9 +364,15 @@ const planCards = (() => {
             tb.appendChild(tr);
           }
           t.appendChild(tb);
-          const total = document.createElement('div');
-          total.className = 'plan-detail-total';
-          total.textContent = 'รวมตลอดสัญญา ' + s.total + ' รอบบิล = ' + fmtB(s.sum) + ' บาท';
+          const notice = document.createElement('div');
+          notice.className = 'plan-detail-notice';
+          const h1 = document.createElement('div');
+          h1.className = 'plan-detail-notice-title';
+          h1.textContent = 'ยอดค่าบริการที่ต้องชำระและรายละเอียดการผ่อนชำระขึ้นอยู่กับสินค้าและแผนที่เลือก';
+          const h2 = document.createElement('div');
+          h2.className = 'plan-detail-notice-title';
+          h2.textContent = 'ราคาในภาพแสดงเพียงส่วนลด อาจมีส่วนลดเพิ่มเติมหากซื้อสินค้าเพิ่มขึ้น';
+          notice.append(h1, h2);
           const promoList = document.createElement('ul');
           promoList.className = 'plan-detail-promo';
           (promo || []).forEach((p) => {
@@ -374,7 +380,7 @@ const planCards = (() => {
             li.textContent = p;
             promoList.appendChild(li);
           });
-          planBody.replaceChildren(promoList, t, total);
+          planBody.replaceChildren(promoList, t, notice);
         };
         const renderOutright = (price, pay, promo, svc) => {
           const box = document.createElement('div');
@@ -411,6 +417,16 @@ const planCards = (() => {
           svcNote.className = 'plan-detail-svc';
           svcNote.textContent = 'บริการ: ' + svc + ' · รับประกัน 2 ปี';
           box.appendChild(svcNote);
+          const notice = document.createElement('div');
+          notice.className = 'plan-detail-notice';
+          const n1 = document.createElement('div');
+          n1.className = 'plan-detail-notice-title';
+          n1.textContent = 'ยอดค่าบริการที่ต้องชำระและรายละเอียดการผ่อนชำระขึ้นอยู่กับสินค้าและแผนที่เลือก';
+          const n2 = document.createElement('div');
+          n2.className = 'plan-detail-notice-title';
+          n2.textContent = 'ราคาในภาพแสดงเพียงส่วนลด อาจมีส่วนลดเพิ่มเติมหากซื้อสินค้าเพิ่มขึ้น';
+          notice.append(n1, n2);
+          box.appendChild(notice);
           planBody.replaceChildren(box);
         };
         document.querySelectorAll('[data-plan]').forEach((card) => {
