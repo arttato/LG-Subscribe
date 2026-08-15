@@ -5,9 +5,14 @@ import data from '../data/products.json';
 import lgSpecs from '../data/lg-specs.json';
 import pdfSpecs from '../data/pdf-specs.json';
 import banners from '../data/banners.json';
+import { lgShortName } from '../lib/utils';
 
 const products = data.products;
 const base = import.meta.env.BASE_URL;
+
+// ชื่อสินค้าสำหรับการ์ด: ใช้ชื่อเต็มจากเว็บ LG (ตัด "รุ่น XXXX"/หัวข้อย่อย) ถ้ามี, ไม่งั้นชื่อเดิม
+const lgNameMap = new Map(lgSpecs.products.map((s) => [s.code, s.lgName]).filter(([, n]) => n));
+const cardNameOf = (p) => (lgNameMap.has(p.code) ? lgShortName(lgNameMap.get(p.code)) : p.name);
 
 // สเปคเด่น 2-3 รายการสำหรับ tooltip บนการ์ด (จากเว็บ LG Thailand + PDF ราคา)
 const specMap = new Map([...lgSpecs.products, ...pdfSpecs.products].map((s) => [s.code, s]));
@@ -283,14 +288,14 @@ const VIDEO_ID = 'uNwPkrefazo';
                   <a
                     class="card"
                     href={`${base}product/${p.slug}/`}
-                    data-search={(p.name + ' ' + p.code + ' ' + (p.category || '')).toLowerCase()}
+                    data-search={(cardNameOf(p) + ' ' + p.name + ' ' + p.code + ' ' + (p.category || '')).toLowerCase()}
                     data-cat={sec.name}
                   >
                     {imgSlugs.has(p.slug) && (
-                      <img class="card-img" src={`${base}img/products/${p.slug}.jpg`} alt={p.name} loading="lazy" />
+                      <img class="card-img" src={`${base}img/products/${p.slug}.jpg`} alt={cardNameOf(p)} loading="lazy" />
                     )}
                     <div class="card-category">{p.category || sec.name}</div>
-                    {p.name !== p.code && <div class="card-name">{p.name}</div>}
+                    {cardNameOf(p) !== p.code && <div class="card-name">{cardNameOf(p)}</div>}
                     <div class="card-code">{p.code}</div>
                     {tipMap.get(p.slug) && tipMap.get(p.slug).length > 0 && (
                       <div class="card-tip">

@@ -20,7 +20,9 @@ const fmt = (n) => (n == null ? '—' : n.toLocaleString('th-TH'));
 const modeLabel = (m) => (m === 'outright' ? 'บาท (ซื้อขาด)' : 'บาท/เดือน');
 const priceLabel = (m) => (m === 'outright' ? 'ซื้อขาด' : 'เริ่มต้น');
 const base = import.meta.env.BASE_URL;
-const titleText = p.code.startsWith('XBOOM-') ? p.name : p.name !== p.code ? `${p.name} — ${p.code}` : p.code;
+// ชื่อเต็มจากเว็บ LG (ถ้ามี) — ใช้เป็นหัวข้อ/alt เหมือนเว็บจริง; XBOOM ใช้ชื่อเล่นจาก PDF
+const fullName = (lgSpecs.products.find((s) => s.code === p.code)?.lgName) || p.name;
+const titleText = fullName;
 // สเปค: มาจากเว็บ LG (keySpecs + groups) หรือ PDF ราคา (specs รายการตรง)
 let spec = null;
 let specFromPdf = false;
@@ -142,7 +144,7 @@ const planCards = (() => {
         <span> › </span>
         <span>{p.category || 'อื่นๆ'}</span>
         <span> › </span>
-        <span>{p.code.startsWith('XBOOM-') ? p.name : p.code}</span>
+        <span>{fullName !== p.code ? fullName : p.code}</span>
       </nav>
 
       <section class="detail-head">
@@ -150,7 +152,7 @@ const planCards = (() => {
           <div class="gallery" data-gallery>
             <div class="gallery-stage">
               <button class="gallery-nav prev" aria-label="รูปก่อนหน้า" data-prev>‹</button>
-              <img class="detail-img gallery-img" src={gallery.images[0]} alt={p.name} data-img />
+              <img class="detail-img gallery-img" src={gallery.images[0]} alt={fullName} data-img />
               <button class="gallery-nav next" aria-label="รูปถัดไป" data-next>›</button>
               <span class="gallery-count" data-count>1 / {gallery.images.length}</span>
             </div>
@@ -163,10 +165,10 @@ const planCards = (() => {
             </div>
           </div>
         ) : (
-          hasImg && <img class="detail-img" src={imgUrl} alt={p.name} />
+          hasImg && <img class="detail-img" src={imgUrl} alt={fullName} />
         )}
         <div class="detail-category">{p.category || 'อื่นๆ'}</div>
-        {p.name !== p.code && <h1 class="detail-name">{p.name}</h1>}
+        {fullName !== p.code && <h1 class="detail-name">{fullName}</h1>}
         {!p.code.startsWith('XBOOM-') && <div class="detail-code">รุ่น: {p.code}</div>}
         <div class="price-row">
           <span class="price-from">{priceLabel(p.mode)}</span>
@@ -298,13 +300,13 @@ const planCards = (() => {
     </main>
 
     <!-- แบบฟอร์มสอบถามราคา -->
-    <div class="inquiry" data-inquiry hidden data-name={p.name} data-code={p.code} data-price={fmt(p.price)} data-pricelabel={priceLabel(p.mode)}>
+    <div class="inquiry" data-inquiry hidden data-name={fullName} data-code={p.code} data-price={fmt(p.price)} data-pricelabel={priceLabel(p.mode)}>
       <div class="inquiry-backdrop" data-inquiry-close></div>
       <div class="inquiry-box" role="dialog" aria-modal="true" aria-labelledby="inquiry-title">
         <button class="inquiry-close" data-inquiry-close aria-label="ปิด">×</button>
         <h3 id="inquiry-title">สนใจรุ่นนี้</h3>
         <div class="inquiry-product">
-          <div class="inquiry-name">{p.name}</div>
+          <div class="inquiry-name">{fullName}</div>
           <div class="inquiry-code">{p.code}</div>
           <div class="inquiry-price">
             <span class="price-from">{priceLabel(p.mode)}</span>

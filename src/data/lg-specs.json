@@ -46,7 +46,8 @@
           "value": "แบบด่วน"
         }
       ],
-      "groups": []
+      "groups": [],
+      "lgName": "เครื่องกรองน้ำ LG PuriCare รุ่น WD516AN.ACNPLMT สีน้ำเงิน"
     },
     {
       "code": "WD518",
@@ -92,7 +93,8 @@
           "value": "แบบด่วน"
         }
       ],
-      "groups": []
+      "groups": [],
+      "lgName": "เครื่องกรองน้ำ สีเบจ LG PuriCare Objet Collection รุ่น WD518AN.ABGPLMT"
     },
     {
       "code": "F2520RNTB.AEBPETH",
@@ -132,7 +134,8 @@
           "value": "ใช่"
         }
       ],
-      "groups": []
+      "groups": [],
+      "lgName": "เครื่องซักผ้าฝาหน้า ซัก 20/ อบ 10 กก. F2520RNTB ระบบ AI DD™"
     },
     {
       "code": "FV1409H4W.ABWPETH",
@@ -171,7 +174,8 @@
           "value": "ใช่"
         }
       ],
-      "groups": []
+      "groups": [],
+      "lgName": "เครื่องซักผ้า FV1409H4W ซัก 9 กก. / อบ 5 กก."
     },
     {
       "code": "FV1413H4M.AMBPETH",
@@ -185,7 +189,8 @@
         "ThinQ™"
       ],
       "keySpecs": [],
-      "groups": []
+      "groups": [],
+      "lgName": "เครื่องซักผ้า 13 กก. / อบ 8 กก. รุ่น FV1413H4M ระบบ AI DD™ พร้อม Smart WI-FI control ควบคุมสั่งงานผ่านสมาร์ทโฟน"
     },
     {
       "code": "FV1413S4M.AMBPETH",
@@ -223,7 +228,8 @@
           "value": "ใช่"
         }
       ],
-      "groups": []
+      "groups": [],
+      "lgName": "เครื่องซักผ้า 13 กก. รุ่น FV1413S4M AI DD™"
     },
     {
       "code": "TX2315DT5G.DEGPETH",
@@ -254,7 +260,8 @@
           "value": "ใช่"
         }
       ],
-      "groups": []
+      "groups": [],
+      "lgName": "เครื่องซักผ้าฝาบน 15 กก รุ่น TX2315DT5G ระบบ Inverter Direct Drive"
     },
     {
       "code": "TX2723ST5J.APBPETH",
@@ -286,7 +293,8 @@
           "value": "ใช่"
         }
       ],
-      "groups": []
+      "groups": [],
+      "lgName": "เครื่องซักผ้าฝาบน 23 กก รุ่น TX2723ST5J ระบบ Inverter Direct Drive"
     },
     {
       "code": "A9T-CORE.DCGPETH",
@@ -329,7 +337,8 @@
           "value": "ใช่"
         }
       ],
-      "groups": []
+      "groups": [],
+      "lgName": "เครื่องดูดฝุ่น LG CordZero™ รุ่น A9T-CORE แบบด้ามจับ All-in-One Tower"
     },
     {
       "code": "A9T-LITE.DCGPETH",
@@ -379,7 +388,8 @@
           "value": "ใช่"
         }
       ],
-      "groups": []
+      "groups": [],
+      "lgName": "เครื่องดูดฝุ่น LG CordZero™ รุ่น A9T-LITE แบบด้ามจับ All-in-One Tower"
     },
     {
       "code": "A9T-ULTRA.DCBPETH",
@@ -430,7 +440,8 @@
           "value": "ใช่"
         }
       ],
-      "groups": []
+      "groups": [],
+      "lgName": "เครื่องดูดฝุ่น LG CordZero™ รุ่น A9T-ULTRA แบบด้ามจับ All-in-One Tower พร้อม Smart WI-FI control ควบคุมสั่งงานผ่านสมาร์ทโฟน"
     },
     {
       "code": "ART13A.SR1",
@@ -461,7 +472,8 @@
           "value": "ใช่ (4G)"
         }
       ],
-      "groups": []
+      "groups": [],
+      "lgName": "แอร์อินเวอร์เตอร์ 12,000 BTU LG ARTCOOL รุ่น ART13A"
     },
     {
       "code": "ART18A.SR1",
@@ -492,7 +504,8 @@
           "value": "ใช่ (4G)"
         }
       ],
-      "groups": []
+      "groups": [],
+      "lgName": "แอร์อินเวอร์เตอร์ 18,000 BTU LG ARTCOOL รุ่น ART18A"
     },
     {
       "code": "IXY11A",
@@ -507,7 +520,8 @@
         "รับประกันคอมเพรสเซอร์นาน 10 ปี"
       ],
       "keySpecs": [],
-      "groups": []
+      "groups": [],
+      "lgName": "แอร์อินเวอร์เตอร์ 9,212 BTU LG DUALCOOL รุ่น IXY11A"
     },
     {
       "code": "IXY13A",
@@ -522,7 +536,8 @@
         "รับประกันคอมเพรสเซอร์นาน 10 ปี"
       ],
       "keySpecs": [],
-      "groups": []
+      "groups": [],
+      "lgName": "แอร์อินเวอร์เตอร์ 12,283 BTU LG DUALCOOL รุ่น IXY13A"
     },
     {
       "code": "IXY18A",
@@ -537,7 +552,8 @@
         "รับประกันคอมเพรสเซอร์นาน 10 ปี"
       ],
       "keySpecs": [],
-      "groups": []
+      "groups": [],
+      "lgName": "แอร์อินเวอร์เตอร์ 18,084 BTU LG DUALCOOL รุ่น IXY18A"
     },
     {
       "code": "IXY24A",
@@ -552,7 +568,8 @@
         "รับประกันคอมเพรสเซอร์นาน 10 ปี"
       ],
       "keySpecs": [],
-      "groups": []
+      "groups": [],
+      "lgName": "แอร์อินเวอร์เตอร์ 21,154 BTU LG DUALCOOL รุ่น IXY24A"
     },
     {
       "code": "SAQ11A",
@@ -584,7 +601,8 @@
           "value": "ใช่ (4G)"
         }
       ],
-      "groups": []
+      "groups": [],
+      "lgName": "แอร์อินเวอร์เตอร์ 9,200 BTU LG DUALCOOL AI Air รุ่น SAQ"
     },
     {
       "code": "SAQ13A",
@@ -616,7 +634,8 @@
           "value": "ใช่ (4G)"
         }
       ],
-      "groups": []
+      "groups": [],
+      "lgName": "แอร์อินเวอร์เตอร์ 12,000 BTU LG DUALCOOL AI Air รุ่น SAQ"
     },
     {
       "code": "SAQ18B",
@@ -648,7 +667,8 @@
           "value": "ใช่ (4G)"
         }
       ],
-      "groups": []
+      "groups": [],
+      "lgName": "แอร์อินเวอร์เตอร์ 18,084 BTU LG DUALCOOL AI Air รุ่น SAQ18B"
     },
     {
       "code": "SAQ24B",
@@ -680,7 +700,8 @@
           "value": "ใช่ (4G)"
         }
       ],
-      "groups": []
+      "groups": [],
+      "lgName": "แอร์อินเวอร์เตอร์ 24,225 BTU LG DUALCOOL AI Air รุ่น SAQ24B"
     },
     {
       "code": "SIQ11B",
@@ -711,7 +732,8 @@
           "value": "ใช่ (4G)"
         }
       ],
-      "groups": []
+      "groups": [],
+      "lgName": "แอร์อินเวอร์เตอร์ 9,212 BTU LG DUALCOOL AI Air รุ่น SIQ11B"
     },
     {
       "code": "SIQ13B",
@@ -742,7 +764,8 @@
           "value": "ใช่ (4G)"
         }
       ],
-      "groups": []
+      "groups": [],
+      "lgName": "แอร์อินเวอร์เตอร์ 12,283 BTU LG DUALCOOL AI Air รุ่น SIQ13B"
     },
     {
       "code": "SIQ18B",
@@ -773,7 +796,8 @@
           "value": "ใช่ (4G)"
         }
       ],
-      "groups": []
+      "groups": [],
+      "lgName": "แอร์อินเวอร์เตอร์ 18,084 BTU LG DUALCOOL AI Air รุ่น SIQ18B"
     },
     {
       "code": "SIQ24B",
@@ -804,7 +828,8 @@
           "value": "ใช่ (4G)"
         }
       ],
-      "groups": []
+      "groups": [],
+      "lgName": "แอร์อินเวอร์เตอร์ 22,178 BTU LG DUALCOOL AI Air รุ่น SIQ24B"
     },
     {
       "code": "ZT1Q12GULA1.EWGHATH",
@@ -824,7 +849,8 @@
           "value": "TU"
         }
       ],
-      "groups": []
+      "groups": [],
+      "lgName": "เครื่องปรับอากาศ 1-Way Cassette ขนาด 10,500 BTU"
     },
     {
       "code": "ZT1Q18GTLA1.EWGHATH",
@@ -842,7 +868,8 @@
           "value": "TT"
         }
       ],
-      "groups": []
+      "groups": [],
+      "lgName": "(PM 2.5, DUAL Vane) เครื่องปรับอากาศ 1-Way Cassette ขนาด 18,000 BTU"
     },
     {
       "code": "ZT1Q24GTLA1.EWGHATH",
@@ -862,7 +889,8 @@
           "value": "TT"
         }
       ],
-      "groups": []
+      "groups": [],
+      "lgName": "เครื่องปรับอากาศ 1-Way Cassette ขนาด 23,500 BTU"
     },
     {
       "code": "ZT4Q18GPLA1.EWGHATH",
@@ -880,7 +908,8 @@
           "value": "TP"
         }
       ],
-      "groups": []
+      "groups": [],
+      "lgName": "เครื่องปรับอากาศ 4-Way Cassette ขนาด 18,000 BTU"
     },
     {
       "code": "ZT4Q36GNLA1.EWGHATH",
@@ -898,7 +927,8 @@
           "value": "TN"
         }
       ],
-      "groups": []
+      "groups": [],
+      "lgName": "เครื่องปรับอากาศ 4-Way Cassette ขนาด 36,200 BTU"
     },
     {
       "code": "ZT4Q48GMLA1.EWGHATH",
@@ -916,7 +946,8 @@
           "value": "TM"
         }
       ],
-      "groups": []
+      "groups": [],
+      "lgName": "เครื่องปรับอากาศ 4-Way Cassette ขนาด 48,000 BTU"
     },
     {
       "code": "ZTRQ36GYLA1.EWGHATH",
@@ -939,7 +970,8 @@
           "value": "Accessory"
         }
       ],
-      "groups": []
+      "groups": [],
+      "lgName": "เครื่องปรับอากาศ Round Cassette 36,700 BTU"
     },
     {
       "code": "ZTRQ48GYLA1.EWGHATH",
@@ -962,7 +994,8 @@
           "value": "Accessory"
         }
       ],
-      "groups": []
+      "groups": [],
+      "lgName": "เครื่องปรับอากาศ Round Cassette 36,700 BTU"
     },
     {
       "code": "AS10GDBY0.ABAE",
@@ -1026,7 +1059,8 @@
           "value": "220~240V / 50/60Hz"
         }
       ],
-      "groups": []
+      "groups": [],
+      "lgName": "เครื่องฟอกอากาศ LG PuriCare 360° สีเบจ รุ่น AS10GDBY0 พร้อมฟังก์ชันสัตว์เลี้ยง"
     },
     {
       "code": "AS25GCBY0.ABAE",
@@ -1092,7 +1126,8 @@
           "value": "No"
         }
       ],
-      "groups": []
+      "groups": [],
+      "lgName": "เครื่องฟอกอากาศ LG PuriCare AeroCat Tower สีเบจ รุ่น AS25GCBY0 สำหรับน้องแมว"
     },
     {
       "code": "AS35GGW10.ATH",
@@ -1150,7 +1185,8 @@
           "value": "100-240โวลต์~ 50/60เฮิรตซ์"
         }
       ],
-      "groups": []
+      "groups": [],
+      "lgName": "เครื่องฟอกอากาศ LG PuriCare AeroHit สีขาว รุ่น AS35GGW10"
     },
     {
       "code": "AS60GHWG0.ABAE",
@@ -1209,7 +1245,8 @@
           "value": "220~240V / 50/60Hz"
         }
       ],
-      "groups": []
+      "groups": [],
+      "lgName": "เครื่องฟอกอากาศ LG PuriCare 360 Hit รุ่น AS60GHWG0"
     },
     {
       "code": "AS65GDBY0.ABAE",
@@ -1273,7 +1310,8 @@
           "value": "220~240V / 50/60Hz"
         }
       ],
-      "groups": []
+      "groups": [],
+      "lgName": "เครื่องฟอกอากาศ LG PuriCare 360° สีเบจ รุ่น AS65GDBY0 พร้อมฟังก์ชันสัตว์เลี้ยง"
     },
     {
       "code": "DD23GMWE1S.ATH",
@@ -1302,7 +1340,8 @@
           "value": "ใช่"
         }
       ],
-      "groups": []
+      "groups": [],
+      "lgName": "เครื่องลดความชื้น LG PuriCare Dehumidifier 23 รุ่น DD23GMWE1 40 ลิตร"
     },
     {
       "code": "MD19GQGA1.ATH",
@@ -1322,7 +1361,8 @@
           "value": "ถังเก็บน้ำ / ท่อน้ำทิ้ง"
         }
       ],
-      "groups": []
+      "groups": [],
+      "lgName": "เครื่องลดความชื้น LG PuriCare Dehumidifier 19 รุ่น MD19GQGA1 30 ลิตร"
     },
     {
       "code": "DFC335HM.ABMPETH",
@@ -1353,7 +1393,8 @@
           "value": "STS"
         }
       ],
-      "groups": []
+      "groups": [],
+      "lgName": "เครื่องล้างจาน DFC335HM สีดำ มี WI-FI control"
     },
     {
       "code": "DFC533FV.APYPETH",
@@ -1384,7 +1425,8 @@
           "value": "STS"
         }
       ],
-      "groups": []
+      "groups": [],
+      "lgName": "เครื่องล้างจาน DFC533FV สีเงิน WI-FI control"
     },
     {
       "code": "RV10VHP2B.BBLPETH",
@@ -1431,7 +1473,8 @@
           "value": "มี"
         }
       ],
-      "groups": []
+      "groups": [],
+      "lgName": "เครื่องอบผ้า รุ่น RV10VHP2B ระบบ DUAL Inverter Heat Pump™ ความจุ 10 กก. พร้อม Smart WI-FI control ควบคุมสั่งงานผ่านสมาร์ทโฟน"
     },
     {
       "code": "S3MFC.ALBPETH",
@@ -1455,7 +1498,8 @@
           "value": "ระบบสัมผัส"
         }
       ],
-      "groups": []
+      "groups": [],
+      "lgName": "LG Styler ตู้ถนอมผ้า รุ่น S3MFC"
     },
     {
       "code": "GC-B257SQYL.AMCPLMT",
@@ -1500,7 +1544,8 @@
           "value": "PCM สีดำโลหะ"
         }
       ],
-      "groups": []
+      "groups": [],
+      "lgName": "ตู้เย็น Side by Side GC-B257SQYL 22.9 คิว"
     },
     {
       "code": "GC-L257KQKW.AEPPLMT",
@@ -1550,7 +1595,8 @@
           "value": "สีดำแมท"
         }
       ],
-      "groups": []
+      "groups": [],
+      "lgName": "ตู้เย็น Side by Side GC-L257KQKW 22.4 คิว"
     },
     {
       "code": "GN-F392PQAK.AEPPLM1",
@@ -1593,7 +1639,8 @@
           "value": "สีดำแมท"
         }
       ],
-      "groups": []
+      "groups": [],
+      "lgName": "ตู้เย็น 2 ประตู 13.9 คิว รุ่น GN-F392PQAK Smart Inverter Compressor"
     },
     {
       "code": "GV-B25FFGDB.ABMPLMT",
@@ -1631,7 +1678,8 @@
           "value": "สีดำ"
         }
       ],
-      "groups": []
+      "groups": [],
+      "lgName": "ตู้เย็น Multi-Door  GV-B25FFGDB ขนาด 21.6 คิว ระบบ Smart Inverter Compressor"
     },
     {
       "code": "GN-F452PQAK.AEPPLMT",
@@ -1674,7 +1722,8 @@
           "value": "สีดำแมท"
         }
       ],
-      "groups": []
+      "groups": [],
+      "lgName": "ตู้เย็น 2 ประตู ขนาด 16.2 คิว รุ่น GN-F452PQAK ระบบ Smart Inverter"
     },
     {
       "code": "GN-V389FQEF.AEPPLMT",
@@ -1694,7 +1743,8 @@
           "value": "ช่องแช่แข็งด้านล่าง"
         }
       ],
-      "groups": []
+      "groups": [],
+      "lgName": "ตู้เย็น 2 ประตู Instaview 12 คิว รุ่น GN-V389FQEF ระบบ Smart Inverter"
     },
     {
       "code": "GC-B48FPGAM.ADBPLMT",
@@ -1733,7 +1783,8 @@
           "value": "กระจกสีดำ"
         }
       ],
-      "groups": []
+      "groups": [],
+      "lgName": "ตู้เย็น Multi-Door รุ่น GC-B48FPGAM ขนาด 17.4 คิว ระบบ Inverter Compressor"
     },
     {
       "code": "GC-G24FFQKB.AEEPLM1",
@@ -1772,7 +1823,8 @@
           "value": "เบจ-เบจ"
         }
       ],
-      "groups": []
+      "groups": [],
+      "lgName": "ตู้เย็น Instaview Multi-Door 22.5 คิว GC-G24FFQKB Smart Inverter Compressor"
     },
     {
       "code": "GC-V22FFQMB.AEPPLMT",
@@ -1809,7 +1861,8 @@
           "value": "สีดำแมท"
         }
       ],
-      "groups": []
+      "groups": [],
+      "lgName": "ตู้เย็น Instaview Multi-Door 18.7 คิว GC-V22FFQMB Smart Inverter"
     },
     {
       "code": "GV-V25FFGRB.ABMPLMT",
@@ -1848,7 +1901,8 @@
           "value": "สีดำ"
         }
       ],
-      "groups": []
+      "groups": [],
+      "lgName": "ตู้เย็น Instaview Multi-Door 21.6 คิว GV-V25FFGRB Smart Inverter Compressor"
     },
     {
       "code": "GC-L24FFCBB.AEVPLM1",
@@ -1886,7 +1940,8 @@
           "value": "เอสเซ้นส์แบล็คสตีล"
         }
       ],
-      "groups": []
+      "groups": [],
+      "lgName": "ตู้เย็น Multi-Door GC-L24FFCBB 22.6 คิว ระบบ Smart Inverter Compressor"
     },
     {
       "code": "GC-J257SQZW.AEPPLMT",
@@ -1937,7 +1992,8 @@
           "value": "สีดำแมท"
         }
       ],
-      "groups": []
+      "groups": [],
+      "lgName": "ตู้เย็น Side by Side GC-J257SQZW 22.4 คิว"
     },
     {
       "code": "GC-L257SFZW.APYPLMT",
@@ -1988,7 +2044,8 @@
           "value": "สีเงิน"
         }
       ],
-      "groups": []
+      "groups": [],
+      "lgName": "ตู้เย็น Side-by-Side 22.4 คิว รุ่น GC-L257SFZW รองรับ Smart Wi-Fi"
     },
     {
       "code": "GC-X257CMEW.ATEPLMT",
@@ -2039,7 +2096,8 @@
           "value": "สีมิ้นท์-สีเบจ"
         }
       ],
-      "groups": []
+      "groups": [],
+      "lgName": "ตู้เย็น Instaview Side by Side 22.4 คิว GC-X257CMEW Smart Inverter Compressor™"
     },
     {
       "code": "GC-X257CMHW.AEEPLMT",
@@ -2086,7 +2144,8 @@
           "value": "เบจ-เบจ"
         }
       ],
-      "groups": []
+      "groups": [],
+      "lgName": "ตู้เย็น Multi-Door  รุ่น GC-X257CMHW ขนาด 22.4 คิว ระบบ Inverter Compressor"
     },
     {
       "code": "100MRGB96BS.ATM",
@@ -2114,7 +2173,8 @@
           "value": "ใช่"
         }
       ],
-      "groups": []
+      "groups": [],
+      "lgName": "ทีวี 100\" LG Micro RGB evo AI MRGB96 4K Smart TV 2026 รุ่น 100MRGB96BS"
     },
     {
       "code": "100QNED86BS.ATM",
@@ -2142,7 +2202,8 @@
           "value": "ใช่"
         }
       ],
-      "groups": []
+      "groups": [],
+      "lgName": "ทีวี 100\" LG QNED evo AI Mini LED QNED86 4K Smart TV 2026 รุ่น 100QNED86BS"
     },
     {
       "code": "27LX6TDGA.ATM",
@@ -2170,7 +2231,8 @@
           "value": "ใช่"
         }
       ],
-      "groups": []
+      "groups": [],
+      "lgName": "LG StanbyME2 รุ่น 27LX6TDGA | Super Portable Screen | Motion Art"
     },
     {
       "code": "32LX6BDGA.ATM",
@@ -2210,7 +2272,8 @@
           "value": "Definable Spec Only in LG.COM"
         }
       ],
-      "groups": []
+      "groups": [],
+      "lgName": "LG StanbyME 2 Max LX6 จอไลฟ์สไตล์ไร้สาย 4K ขนาด 32 นิ้ว รุ่น 32LX6BDGA"
     },
     {
       "code": "55QNED80BSA.ATM",
@@ -2262,7 +2325,8 @@
           "value": "11.5"
         }
       ],
-      "groups": []
+      "groups": [],
+      "lgName": "ทีวี 55\" LG QNED evo AI Mini LED QNED80 4K Smart TV 2026 รุ่น 55QNED80BSA"
     },
     {
       "code": "65NU855BPSA.ATM",
@@ -2310,7 +2374,8 @@
           "value": "13.9"
         }
       ],
-      "groups": []
+      "groups": [],
+      "lgName": "ทีวี 65\" LG NANO 4K UHD AI NU85 4K Smart TV 2026 รุ่น 65NU855BPSA"
     },
     {
       "code": "65QNED80BSA.ATM",
@@ -2362,7 +2427,8 @@
           "value": "16.5"
         }
       ],
-      "groups": []
+      "groups": [],
+      "lgName": "ทีวี 65\" LG QNED evo AI Mini LED QNED80 4K Smart TV 2026 รุ่น 65QNED80BSA"
     },
     {
       "code": "75NU855BPSA.ATM",
@@ -2410,7 +2476,8 @@
           "value": "22.1"
         }
       ],
-      "groups": []
+      "groups": [],
+      "lgName": "ทีวี 75\" LG NANO 4K UHD AI NU85 4K Smart TV 2026 รุ่น 75NU855BPSA"
     },
     {
       "code": "75QNED86BSA.ATM",
@@ -2466,7 +2533,8 @@
           "value": "32.8"
         }
       ],
-      "groups": []
+      "groups": [],
+      "lgName": "ทีวี 75\" LG QNED evo AI Mini LED QNED86 4K Smart TV 2026 รุ่น 75QNED86BSA"
     },
     {
       "code": "85QNED80BSA.ATM",
@@ -2494,7 +2562,8 @@
           "value": "ใช่"
         }
       ],
-      "groups": []
+      "groups": [],
+      "lgName": "ทีวี 85\" LG QNED evo AI Mini LED QNED80 4K Smart TV 2026 รุ่น 85QNED80BSA"
     },
     {
       "code": "OLED48C6PSA.ATM",
@@ -2558,7 +2627,8 @@
           "value": "14.9"
         }
       ],
-      "groups": []
+      "groups": [],
+      "lgName": "ทีวี 48\" LG OLED evo C6 4K Smart TV 2026 รุ่น OLED48C6PSA"
     },
     {
       "code": "OLED55C6PSA.ATM",
@@ -2622,7 +2692,8 @@
           "value": "14.1"
         }
       ],
-      "groups": []
+      "groups": [],
+      "lgName": "ทีวี 55\" LG OLED evo C6 4K Smart TV 2026 รุ่น OLED55C6PSA"
     },
     {
       "code": "OLED65C6PSA.ATM",
@@ -2686,7 +2757,8 @@
           "value": "16.6"
         }
       ],
-      "groups": []
+      "groups": [],
+      "lgName": "ทีวี 65\" LG OLED evo C6 4K Smart TV 2026 รุ่น OLED65C6PSA"
     },
     {
       "code": "OLED77C6PSA.ATM",
@@ -2750,7 +2822,8 @@
           "value": "23.5"
         }
       ],
-      "groups": []
+      "groups": [],
+      "lgName": "ทีวี 77\" LG OLED evo C6 4K Smart TV 2026 รุ่น OLED77C6PSA"
     },
     {
       "code": "27GX704A-B.ATM",
@@ -2774,7 +2847,8 @@
           "value": "Y25"
         }
       ],
-      "groups": []
+      "groups": [],
+      "lgName": "LG UltraGear™ GX7 27 นิ้ว240Hz OLED QHD Gaming Monitor 27GX704A DisplayHDR™ True Black 400"
     },
     {
       "code": "32U889SA-W.ATM",
@@ -2825,7 +2899,8 @@
           "value": "Tilt/Height/Swivel/Pivot"
         }
       ],
-      "groups": []
+      "groups": [],
+      "lgName": "จอมอนิเตอร์ 31.5\" 4K IPS Smart Monitor Swing จอสัมผัส ขาตั้งหมุนได้"
     },
     {
       "code": "34U650A-B.ATM",
@@ -2881,7 +2956,8 @@
           "value": "Tilt/Height/Swivel"
         }
       ],
-      "groups": []
+      "groups": [],
+      "lgName": "34\" 21:9 UltraWide™ WQHD (3440x1440) IPS Monitor | HDR10 with sRGB 99% (Typ.), All-in-one USB-C Connectivity"
     },
     {
       "code": "40U990A-W.ATM",
@@ -2903,7 +2979,8 @@
           "value": "Y25"
         }
       ],
-      "groups": []
+      "groups": [],
+      "lgName": "LG UltraFine™ 40 นิ้ว |40U990A| Nano IPS Black 5K2K with Thunderbolt™ 5"
     },
     {
       "code": "45GX950A-B.ATM",
@@ -2959,7 +3036,8 @@
           "value": "Tilt/Height/Swivel"
         }
       ],
-      "groups": []
+      "groups": [],
+      "lgName": "LG UltraGear™ 45\" OLED Dual-Mode 5K2K 0.03ms, DisplayHDR True Black"
     },
     {
       "code": "52G930B-B.ATM",
@@ -2983,7 +3061,8 @@
           "value": "Y26"
         }
       ],
-      "groups": []
+      "groups": [],
+      "lgName": "LG UltraGear evo G9| จอเกมมิ่ง 52” | The World’s Largest 5K2K 240Hz Gaming Monitor"
     },
     {
       "code": "MS3032JAS.BBKPETH",
@@ -3032,7 +3111,8 @@
           "value": "โซโล"
         }
       ],
-      "groups": []
+      "groups": [],
+      "lgName": "ไมโครเวฟอุ่นอาหาร ขนาด 30 ลิตร สีดำ รุ่น MS3032JAS"
     },
     {
       "code": "S70TY.ATHALLD",
@@ -3060,7 +3140,8 @@
           "value": "950 x 63 x 115 mm"
         }
       ],
-      "groups": []
+      "groups": [],
+      "lgName": "ลำโพง SoundBar รุ่น S70TY |3.1.1 ch  400W | Dolby Atmos"
     },
     {
       "code": "S95TR.DTHALLK",
@@ -3103,7 +3184,8 @@
           "value": "201.7 x 407.0 x 403.0 mm"
         }
       ],
-      "groups": []
+      "groups": [],
+      "lgName": "LG ซาวด์บาร์ สำหรับ TV with Dolby Atmos 9.1.5 channel รุ่น S95TR"
     },
     {
       "code": "XBOOM-BOUNCE",
@@ -3131,7 +3213,8 @@
           "value": "ใช่"
         }
       ],
-      "groups": []
+      "groups": [],
+      "lgName": "ลำโพงพกพา LG xboom Bounce by will.i.am รุ่น Bounce"
     },
     {
       "code": "XBOOM-GRAB",
@@ -3158,7 +3241,8 @@
           "value": "ใช่"
         }
       ],
-      "groups": []
+      "groups": [],
+      "lgName": "ลำโพงพกพา LG xboom Grab tuned by will.i.am รุ่น Grab"
     },
     {
       "code": "XBOOM-STAGE301",
@@ -3182,7 +3266,8 @@
           "value": "ใช่"
         }
       ],
-      "groups": []
+      "groups": [],
+      "lgName": "LG xboom Stage 301 tuned by will.i.am"
     },
     {
       "code": "WT1410NHEG.ABGPQTH",
@@ -3230,7 +3315,8 @@
           "value": "ใช่"
         }
       ],
-      "groups": []
+      "groups": [],
+      "lgName": "WashTower ซักผ้า 14 กก. และอบผ้า 10 กก. รุ่น WT1410NHEG ระบบ AI DD™ พร้อม Smart WI-FI control ควบคุมสั่งงานผ่านสมาร์ทโฟน"
     },
     {
       "code": "WT1410NHEN.ABNPQTH",
@@ -3245,7 +3331,8 @@
         "ThinQ™"
       ],
       "keySpecs": [],
-      "groups": []
+      "groups": [],
+      "lgName": "WashTower รุ่น WT1410NHEN ระบบ AI DD™ ความจุเครื่องซักผ้า 14 กก./ เครื่องอบผ้า 10 กก. พร้อม Smart WI-FI control ควบคุมสั่งงานผ่านสมาร์ทโฟน"
     },
     {
       "code": "WT2116SHEG.ABGPETH",
@@ -3293,7 +3380,8 @@
           "value": "มี"
         }
       ],
-      "groups": []
+      "groups": [],
+      "lgName": "WashTower ซักผ้า 21 กก. และอบ 16 กก. รุ่น WT2116SHEG ระบบ AI DD™ พร้อม Smart WI-FI control ควบคุมสั่งงานผ่านสมาร์ทโฟน"
     },
     {
       "code": "WT2520NHEG.ABGPETH",
@@ -3340,7 +3428,8 @@
           "value": "ใช่"
         }
       ],
-      "groups": []
+      "groups": [],
+      "lgName": "Wash Tower รุ่น WT2520NHEG ระบบ AI DD™ ความจุเครื่องซักผ้า 25 กก./ เครื่องอบผ้า 20 กก. พร้อม Smart WI-FI control ควบคุมสั่งงานผ่านสมาร์ทโฟน"
     },
     {
       "code": "WT2520NHEN.ABNPETH",
@@ -3388,7 +3477,8 @@
           "value": "ใช่"
         }
       ],
-      "groups": []
+      "groups": [],
+      "lgName": "Wash Tower รุ่น WT2520NHEN ระบบ AI DD™ ความจุเครื่องซักผ้า 25 กก./ เครื่องอบผ้า 20 กก. พร้อม Smart WI-FI control ควบคุมสั่งงานผ่านสมาร์ทโฟน"
     },
     {
       "code": "WD110MN.ABGPLMT",
@@ -3435,7 +3525,8 @@
           "value": "แบบด่วน"
         }
       ],
-      "groups": []
+      "groups": [],
+      "lgName": "เครื่องกรองน้ำ สีเบจ LG PuriCare Objet Collection รุ่น WD110MN.ABGPLMT"
     }
   ]
 }
