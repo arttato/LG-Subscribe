@@ -38,9 +38,31 @@ for (const p of products) {
   if (!groups.has(g)) groups.set(g, []);
   groups.get(g).push(p);
 }
+// ลำดับหมวดหมู่ตามหัวข้อในไฟล์ PDF ราคา (Price list_Aug_V3.pdf) — มอนิเตอร์/Sound bar ต่อท้าย (ไม่มีหัวข้อแยกใน PDF หลัก)
+const CATEGORY_ORDER = [
+  'เครื่องกรองน้ำ',
+  'เครื่องดูดฝุ่น',
+  'ตู้เย็น',
+  'Wash Tower',
+  'เครื่องซักผ้า',
+  'เครื่องอบผ้า',
+  'เครื่องล้างจาน',
+  'ตู้ถนอมผ้า',
+  'ไมโครเวฟ',
+  'เครื่องลดความชื้น',
+  'เครื่องฟอกอากาศ',
+  'เครื่องปรับอากาศ',
+  'โทรทัศน์',
+  'มอนิเตอร์',
+  'Sound bar',
+];
+const orderOf = (name) => {
+  const i = CATEGORY_ORDER.indexOf(name);
+  return i === -1 ? CATEGORY_ORDER.length : i;
+};
 const sections = [...groups.entries()]
   .map(([name, list]) => ({ name, count: list.length, products: [...list].sort((a, b) => (a.price ?? 9e9) - (b.price ?? 9e9)) }))
-  .sort((a, b) => a.name.localeCompare(b.name, 'th'));
+  .sort((a, b) => orderOf(a.name) - orderOf(b.name));
 
 const categories = sections.map((s) => s.name);
 
