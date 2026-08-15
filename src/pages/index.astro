@@ -177,14 +177,32 @@ const VIDEO_ID = 'uNwPkrefazo';
         </div>
         <div class="hero-visual">
           <div class="plan-label">▶ ตัวอย่างแผนบริการ — วิดีโอแนะนำ LG Subscribe</div>
-          <div class="hero-video">
+          <div
+            class="hero-video"
+            data-yt={`https://www.youtube.com/embed/${VIDEO_ID}?autoplay=1`}
+            data-title="ตัวอย่างแผนบริการ LG Subscribe"
+          >
+            <button
+              class="hero-video-cover"
+              type="button"
+              aria-label="เล่นวิดีโอตัวอย่างแผนบริการ LG Subscribe"
+            >
+              <img
+                src={`${base}img/products/wd516.jpg`}
+                alt=""
+                loading="lazy"
+              />
+              <span class="hero-video-shade"></span>
+              <span class="hero-video-play">▶</span>
+              <span class="hero-video-caption">ดูวิดีโอแนะนำแผนบริการ LG Subscribe</span>
+            </button>
             <iframe
-              src={`https://www.youtube.com/embed/${VIDEO_ID}`}
               title="ตัวอย่างแผนบริการ LG Subscribe"
               loading="lazy"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
               referrerpolicy="strict-origin-when-cross-origin"
               allowfullscreen
+              hidden
             ></iframe>
           </div>
         </div>
@@ -349,6 +367,26 @@ const VIDEO_ID = 'uNwPkrefazo';
 
       search.addEventListener('input', render);
       render();
+
+      // ── วิดีโอ YouTube: คลิกปกแล้วค่อยโหลด iframe ──
+      const heroVideo = document.querySelector('.hero-video');
+      if (heroVideo) {
+        const cover = heroVideo.querySelector('.hero-video-cover');
+        const iframe = heroVideo.querySelector('iframe');
+        const play = () => {
+          if (iframe.src) return;
+          iframe.src = heroVideo.dataset.yt;
+          iframe.hidden = false;
+          cover.hidden = true;
+        };
+        cover.addEventListener('click', play);
+        cover.addEventListener('keydown', (e) => {
+          if (e.key === 'Enter' || e.key === ' ') {
+            e.preventDefault();
+            play();
+          }
+        });
+      }
     </script>
 
     <script>
