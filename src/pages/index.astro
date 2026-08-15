@@ -96,7 +96,7 @@ const policyRows = [...heroProduct.policies]
       <div class="banner-carousel" id="banner-carousel">
         <div class="banner-track">
           {banners.slides.map((s) => (
-            <div class="banner-slide" data-cat={s.category || ''} role="button" tabindex="0" aria-label={s.title ? `${s.title} — ดูสินค้าหมวด${s.category ? ' ' + s.category : 'ทั้งหมด'}` : 'โปรโมชัน LG Subscribe'}>
+            <div class="banner-slide" data-cat={s.category || ''} data-query={s.query || ''} role="button" tabindex="0" aria-label={s.title ? `${s.title} — ดูสินค้าที่เกี่ยวข้อง` : 'โปรโมชัน LG Subscribe'}>
               <picture>
                 {s.mobile && <source media="(max-width: 768px)" srcSet={`${base}${s.mobile.replace(/^\//, '')}`} />}
                 {s.desktop && <source media="(min-width: 769px)" srcSet={`${base}${s.desktop.replace(/^\//, '')}`} />}
@@ -352,16 +352,25 @@ const policyRows = [...heroProduct.policies]
           startX = null;
         }, { passive: true });
 
-        // คลิกสไลด์ → เลื่อนไปแคตตาล็อก + กรองตามหมวดของ banner
-        const openCatalog = (cat) => {
-          const chip = [...document.querySelectorAll('.chip')].find((c) => c.dataset.cat === cat);
-          if (chip) chip.click();
+        // คลิกสไลด์ → เลื่อนไปแคตตาล็อก + กรอง (หมวด หรือ ค้นหาเฉพาะรุ่น)
+        const openCatalog = (cat, query) => {
+          const input = document.getElementById('search');
+          if (query) {
+            const allChip = [...document.querySelectorAll('.chip')].find((c) => c.dataset.cat === '');
+            if (allChip) allChip.click();
+            input.value = query;
+            input.dispatchEvent(new Event('input'));
+          } else {
+            input.value = '';
+            const chip = [...document.querySelectorAll('.chip')].find((c) => c.dataset.cat === cat);
+            if (chip) chip.click();
+          }
           document.getElementById('catalog').scrollIntoView({ behavior: 'smooth' });
         };
         slides.forEach((sl) => {
           const onClick = () => {
             if (swiped) return;
-            openCatalog(sl.dataset.cat || '');
+            openCatalog(sl.dataset.cat || '', sl.dataset.query || '');
           };
           sl.addEventListener('click', onClick);
           sl.addEventListener('keydown', (e) => {

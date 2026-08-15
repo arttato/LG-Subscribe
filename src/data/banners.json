@@ -16,7 +16,8 @@
       "lgDesktop": "https://www.lg.com/content/dam/channel/wcms/th/image-update/subscription/promotion/2026/08-birthday/IXY_1920x720.jpg",
       "lgMobile": "https://www.lg.com/content/dam/channel/wcms/th/image-update/subscription/promotion/2026/08-birthday/IXY_720x960.jpg",
       "title": "แอร์ LG IXY — DUAL INVERTER",
-      "category": "เครื่องปรับอากาศ"
+      "category": "เครื่องปรับอากาศ",
+      "query": "ixy"
     },
     {
       "desktop": "/img/banners/banner-03.jpg",
@@ -24,7 +25,8 @@
       "lgDesktop": "https://www.lg.com/content/dam/channel/wcms/th/image-update/subscription/promotion/2026/08-birthday/OLED-S80TY_1920x720.jpg",
       "lgMobile": "https://www.lg.com/content/dam/channel/wcms/th/image-update/subscription/promotion/2026/08-birthday/OLED-S80TY_720x960.jpg",
       "title": "LG OLED evo — รับฟรี!",
-      "category": "โทรทัศน์"
+      "category": "โทรทัศน์",
+      "query": "oled"
     },
     {
       "desktop": "/img/banners/banner-04.jpg",
@@ -32,7 +34,8 @@
       "lgDesktop": "https://www.lg.com/content/dam/channel/wcms/th/image-update/subscription/promotion/2026/08-birthday/AP_1920x720.jpg",
       "lgMobile": "https://www.lg.com/content/dam/channel/wcms/th/image-update/subscription/promotion/2026/08-birthday/AP_720x960.jpg",
       "title": "เครื่องฟอกอากาศ PuriCare — Pet Mode",
-      "category": "เครื่องฟอกอากาศ"
+      "category": "เครื่องฟอกอากาศ",
+      "query": "alpha"
     },
     {
       "desktop": "/img/banners/banner-05.jpg",
@@ -64,7 +67,8 @@
       "lgDesktop": "https://www.lg.com/content/dam/channel/wcms/th/image-update/subscription/promotion/2026/07-sub/Sub07-TV_1920x720.jpg",
       "lgMobile": "https://www.lg.com/content/dam/channel/wcms/th/image-update/subscription/promotion/2026/07-sub/Sub07-TV_720x960.jpg",
       "title": "LG OLED 48 นิ้ว — รับฟรี!",
-      "category": "โทรทัศน์"
+      "category": "โทรทัศน์",
+      "query": "oled48"
     }
   ]
 }
