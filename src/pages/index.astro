@@ -3,11 +3,70 @@ import '../styles/global.css';
 import data from '../data/products.json';
 
 const products = data.products;
-const categories = [...new Set(products.map((p) => p.category).filter(Boolean))].sort((a, b) => a.localeCompare(b, 'th'));
 const base = import.meta.env.BASE_URL;
+
+// รวมหมวดหมู่ย่อยเป็นกลุ่มหลักแบบ LG (ตู้เย็น / 2 ประตู → ตู้เย็น)
+const topCat = (c) => (c || 'อื่นๆ').split(' / ')[0];
+
+const groups = new Map();
+for (const p of products) {
+  const g = topCat(p.category);
+  if (!groups.has(g)) groups.set(g, []);
+  groups.get(g).push(p);
+}
+const sections = [...groups.entries()]
+  .map(([name, list]) => ({ name, count: list.length, products: [...list].sort((a, b) => (a.price ?? 9e9) - (b.price ?? 9e9)) }))
+  .sort((a, b) => a.name.localeCompare(b.name, 'th'));
+
+const categories = sections.map((s) => s.name);
+
+// ส่วน "ซื้อขาด VS Subscribe" — สินค้าที่มีราคาซื้อขาด (2Y) เทียบกับรายเดือนในตระกูลเดียวกัน
+const compareItems = products
+  .filter((p) => p.policies.some((r) => /^2Y/.test(r.policy)))
+  .map((p) => {
+    const outright = Math.min(...p.policies.filter((r) => /^2Y/.test(r.policy)).map((r) => r.price));
+    const monthly = Math.min(
+      ...products.filter((x) => x.code.startsWith(p.code.split('.')[0]) && x.mode !== 'outright' && x.price != null).map((x) => x.price)
+    );
+    return { code: p.code, name: p.name, outright, monthly };
+  })
+  .filter((c) => c.monthly != null && c.monthly !== Infinity)
+  .slice(0, 2);
 
 const fmt = (n) => (n == null ? '—' : n.toLocaleString('th-TH'));
 const modeLabel = (m) => (m === 'outright' ? 'บาท (ซื้อขาด)' : 'บาท/เดือน');
+const priceLabel = (m) => (m === 'outright' ? 'ซื้อขาด' : 'เริ่มต้น');
+
+// ตัวอย่างตารางแผนใน hero — สินค้าที่มี policy หลากหลาย
+const heroProduct = products.find((p) => p.policies.length >= 4) || products[0];
+const policyRows = [...heroProduct.policies]
+  .filter((r) => r.price != null)
+  .slice(0, 4)
+  .map((r) => ({ label: r.policy.replace(/[_ ]/g, ' '), price: r.price }));
+
+// จัดเรียง policy สำหรับชิปบนการ์ด: ปีน้อยก่อน, Visit ก่อน Self
+function sortPolicies(rows) {
+  const order = { Visit: 0, Self: 1, No: 2 };
+  return [...rows].sort((a, b) => {
+    const ya = parseInt(a.policy, 10) || 99;
+    const yb = parseInt(b.policy, 10) || 99;
+    if (ya !== yb) return ya - yb;
+    const ka = /Visit/.test(a.policy) ? 0 : /Self/.test(a.policy) ? 1 : 2;
+    const kb = /Visit/.test(b.policy) ? 0 : /Self/.test(b.policy) ? 1 : 2;
+    return ka - kb || order[ka] - order[kb];
+  });
+}
+
+// ชิปบนการ์ด: policy เดียวกันซ้ำได้ (รอบสัญญาต่างกัน) → เก็บราคาต่ำสุดต่อชื่อ policy
+function policyChips(p) {
+  const byName = new Map();
+  for (const r of p.policies) {
+    const name = r.policy.replace(/[_ ]/g, ' ').trim();
+    const cur = byName.get(name);
+    if (!cur || (r.price != null && r.price < cur.price)) byName.set(name, r);
+  }
+  return sortPolicies([...byName.values()]);
+}
 ---
 
 <!doctype html>
@@ -16,76 +75,200 @@ const modeLabel = (m) => (m === 'outright' ? 'บาท (ซื้อขาด)'
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>รายการสินค้า LG Subscribe</title>
-    <meta name="description" content="รายการสินค้าและราคา LG Subscribe อัปเดตล่าสุดจากเอกสารราคา" />
-    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📦</text></svg>" />
+    <meta name="description" content="แคตตาล็อกสินค้าและราคา LG Subscribe — เป็นเจ้าของเครื่องใช้ไฟฟ้า LG แบบรายเดือน พร้อมบริการดูแลโดยผู้เชี่ยวชาญ" />
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='20' fill='%23a50034'/><text x='50' y='68' font-size='52' text-anchor='middle' fill='white'>S</text></svg>" />
   </head>
   <body>
     <header class="site-header">
       <div class="container site-header-inner">
-        <div class="brand">
-          <span class="brand-mark">📦</span>
+        <a class="brand" href={`${base}`}>
+          <span class="brand-mark">S</span>
           <span>
-            รายการสินค้า LG Subscribe
-            <small>จากเอกสารราคา ส.ค. 2569</small>
+            LG Subscribe
+            <small>รายการสินค้าและราคา ส.ค. 2569</small>
           </span>
-        </div>
+        </a>
         <div class="header-meta">{products.length} รายการ · {categories.length} หมวดหมู่</div>
       </div>
     </header>
 
-    <main class="container">
-      <div class="toolbar">
-        <label class="search-box">
-          <span aria-hidden="true">🔍</span>
-          <input id="search" type="search" placeholder="ค้นหาชื่อ รุ่น หรือรหัสสินค้า…" autocomplete="off" />
-        </label>
-      </div>
-      <div class="chips" id="chips">
-        <button class="chip active" data-cat="">ทั้งหมด<span class="count">({products.length})</span></button>
-        {categories.map((c) => (
-          <button class="chip" data-cat={c}>
-            {c}<span class="count">({products.filter((p) => p.category === c).length})</span>
-          </button>
-        ))}
-      </div>
-      <p class="result-count" id="result-count"></p>
-
-      <div class="grid" id="grid">
-        {products.map((p) => (
-          <a class="card" href={`${base}product/${p.slug}/`} data-search={(p.name + ' ' + p.code + ' ' + (p.category || '')).toLowerCase()} data-cat={p.category || ''}>
-            <div class="card-category">{p.category || 'อื่นๆ'}</div>
-            {p.name !== p.code && <div class="card-name">{p.name}</div>}
-            {!p.code.startsWith('XBOOM-') && <div class="card-code">{p.code}</div>}
-            <div class="card-price">
-              <span class="price-amount">{fmt(p.price)}</span>
-              <span class="price-unit">{modeLabel(p.mode)}</span>
+    <!-- Hero -->
+    <section class="hero">
+      <div class="hero-inner">
+        <div>
+          <span class="hero-badge">● LG Subscribe — ราคา ส.ค. 2569</span>
+          <h1>ครอบครองง่าย พร้อมบริการผู้เชี่ยวชาญจาก LG</h1>
+          <p class="sub">
+            เป็นเจ้าของเครื่องใช้ไฟฟ้า LG ได้โดยไม่ต้องจ่ายก้อนใหญ่ — แบ่งจ่ายเป็นรายเดือน
+            พร้อมบริการดูแลรักษาโดยช่างผู้เชี่ยวชาญของ LG ตลอดอายุสัญญา
+          </p>
+          <div class="hero-stats">
+            <div class="stat"><b>{products.length}</b><span>รุ่นสินค้า</span></div>
+            <div class="stat"><b>{categories.length}</b><span>หมวดหมู่</span></div>
+            <div class="stat"><b>5-7 ปี</b><span>แผน Subscribe</span></div>
+          </div>
+          <a class="hero-cta" href="#catalog">ดูแคตตาล็อกสินค้า ↓</a>
+        </div>
+        <div class="hero-visual">
+          <div class="plan-label">ตัวอย่างแผนบริการ · {heroProduct.code}</div>
+          {policyRows.map((r) => (
+            <div class="plan-row">
+              <span class="tag">{r.label}</span>
+              <b>{fmt(r.price)} บาท/เดือน</b>
             </div>
-          </a>
-        ))}
+          ))}
+          <div class="plan-row">
+            <span class="tag">ราคาเริ่มต้น</span>
+            <b>{fmt(heroProduct.price)} บาท/เดือน</b>
+          </div>
+        </div>
       </div>
-      <div class="empty" id="empty" hidden>ไม่พบสินค้าที่ค้นหา</div>
+    </section>
+
+    <main class="container">
+      <!-- 3 ข้อดี -->
+      <section class="benefits">
+        <h2 class="section-title">3 ข้อดีของ LG Subscribe</h2>
+        <p class="section-sub">เป็นเจ้าของได้จริง บริการดูแลครบ เครื่องใช้ไฟฟ้าคุณภาพระดับ LG</p>
+        <div class="benefit-grid">
+          <div class="benefit">
+            <span class="ico">💳</span>
+            <div>
+              <h3>Easy Own — เป็นเจ้าของง่าย</h3>
+              <p>แบ่งจ่ายรายเดือน ไม่ต้องจ่ายก้อนใหญ่ เข้าถึงสินค้าราคาพรีเมียมได้สบาย</p>
+            </div>
+          </div>
+          <div class="benefit">
+            <span class="ico">🛠️</span>
+            <div>
+              <h3>Easy Care — ดูแลโดยผู้เชี่ยวชาญ</h3>
+              <p>บริการดูแลรักษาตามรอบโดยช่างผู้เชี่ยวชาญของ LG ตลอดอายุสัญญา</p>
+            </div>
+          </div>
+          <div class="benefit">
+            <span class="ico">📋</span>
+            <div>
+              <h3>หลากหลายแผน — เลือกได้ตามใจ</h3>
+              <p>แผน 5 ปี / 6 ปี / 7 ปี และแบบ Visit (ถึงบ้าน) หรือ Self (เช็คเอง) ดูราคาได้ทุกรุ่น</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ซื้อขาด VS Subscribe -->
+      {compareItems.length > 0 && (
+        <section class="compare">
+          <div>
+            <h2>ซื้อขาด VS Subscribe</h2>
+            <p>
+              เปรียบเทียบราคาเครื่องกรองน้ำ LG — ซื้อขาดจ่ายครั้งเดียว หรือ Subscribe แบ่งจ่ายรายเดือน
+              พร้อมบริการดูแลตลอดสัญญา
+            </p>
+          </div>
+          <div class="compare-cols">
+            {compareItems.map((c) => (
+              <div class="compare-col">
+                <span class="lbl">{c.code} · ซื้อขาด</span>
+                <b>{fmt(c.outright)} บาท</b>
+                <small>vs Subscribe เริ่ม {fmt(c.monthly)} บาท/เดือน</small>
+              </div>
+            ))}
+          </div>
+        </section>
+      )}
+
+      <!-- แคตตาล็อก -->
+      <section class="catalog" id="catalog">
+        <div class="catalog-head">
+          <h2>แคตตาล็อกสินค้า</h2>
+          <label class="search-box">
+            <span aria-hidden="true">🔍</span>
+            <input id="search" type="search" placeholder="ค้นหาชื่อ รุ่น หรือรหัสสินค้า…" autocomplete="off" />
+          </label>
+        </div>
+        <div class="chips" id="chips">
+          <button class="chip active" data-cat="">ทั้งหมด<span class="count">({products.length})</span></button>
+          {categories.map((c) => (
+            <button class="chip" data-cat={c}>
+              {c}<span class="count">({groups.get(c).length})</span>
+            </button>
+          ))}
+        </div>
+        <p class="result-count" id="result-count"></p>
+
+        {sections.map((sec) => (
+          <div class="cat-section" data-cat={sec.name}>
+            <div class="cat-head">
+              <h3>{sec.name}</h3>
+              <span class="cat-count">{sec.count} รุ่น</span>
+            </div>
+            <div class="grid">
+              {sec.products.map((p) => {
+                const chips = policyChips(p);
+                const shown = chips.slice(0, 4);
+                const more = chips.length - shown.length;
+                return (
+                  <a
+                    class="card"
+                    href={`${base}product/${p.slug}/`}
+                    data-search={(p.name + ' ' + p.code + ' ' + (p.category || '')).toLowerCase()}
+                    data-cat={sec.name}
+                  >
+                    <div class="card-category">{p.category || sec.name}</div>
+                    {p.name !== p.code && <div class="card-name">{p.name}</div>}
+                    <div class="card-code">{p.code}</div>
+                    {shown.length > 0 && (
+                      <div class="card-policies">
+                        {shown.map((r) => (
+                          <span class="policy-chip">
+                            {r.policy.replace(/[_ ]/g, ' ')} <b>{fmt(r.price)}</b>
+                          </span>
+                        ))}
+                        {more > 0 && <span class="policy-chip">+{more}</span>}
+                      </div>
+                    )}
+                    <div class="card-price">
+                      <span>
+                        <span class="price-from">{priceLabel(p.mode)}</span>
+                        <span class="price-amount">{fmt(p.price)}</span>
+                      </span>
+                      <span class="price-unit">{modeLabel(p.mode)}</span>
+                    </div>
+                  </a>
+                );
+              })}
+            </div>
+          </div>
+        ))}
+        <div class="empty" id="empty" hidden>ไม่พบสินค้าที่ค้นหา</div>
+      </section>
     </main>
 
     <footer class="site-footer container">
-      ข้อมูลอัตโนมัติจากไฟล์ PDF ราคา — กรุณาตรวจสอบราคากับเอกสารต้นฉบับก่อนใช้งานจริง
+      ข้อมูลอัตโนมัติจากไฟล์ PDF ราคา ส.ค. 2569 — กรุณาตรวจสอบราคากับเอกสารต้นฉบับก่อนใช้งานจริง
     </footer>
 
     <script>
-      const grid = document.getElementById('grid');
       const chips = document.getElementById('chips');
       const search = document.getElementById('search');
       const count = document.getElementById('result-count');
       const empty = document.getElementById('empty');
+      const sections = [...document.querySelectorAll('.cat-section')];
       let activeCat = '';
 
       function render() {
         const q = search.value.trim().toLowerCase();
         let shown = 0;
-        for (const card of grid.querySelectorAll('.card')) {
-          const okCat = !activeCat || card.dataset.cat === activeCat;
-          const okQ = !q || card.dataset.search.includes(q);
-          card.hidden = !(okCat && okQ);
-          if (okCat && okQ) shown++;
+        for (const sec of sections) {
+          let vis = 0;
+          for (const card of sec.querySelectorAll('.card')) {
+            const okCat = !activeCat || card.dataset.cat === activeCat;
+            const okQ = !q || card.dataset.search.includes(q);
+            card.hidden = !(okCat && okQ);
+            if (okCat && okQ) vis++;
+          }
+          sec.hidden = vis === 0;
+          shown += vis;
         }
         count.textContent = `พบ ${shown} รายการ`;
         empty.hidden = shown !== 0;
