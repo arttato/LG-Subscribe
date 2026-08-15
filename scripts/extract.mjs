@@ -523,6 +523,8 @@ async function main() {
     process.exit(1);
   }
 
+  fs.mkdirSync(PUBLIC_PDF_DIR, { recursive: true }); // ต้องสร้างก่อน writeTrimmedPdf (CI clone ใหม่ไม่มีโฟลเดอร์นี้)
+
   const allProducts = [];
   const sources = [];
   for (const file of pdfFiles) {
@@ -610,8 +612,6 @@ async function main() {
       a.code.localeCompare(b.code, 'en') ||
       0
   );
-
-  fs.mkdirSync(PUBLIC_PDF_DIR, { recursive: true });
 
   const data = {
     generatedAt: new Date().toISOString(),
