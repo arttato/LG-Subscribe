@@ -1904,132 +1904,6 @@
       "description": "Life Style TV\nLG StanbyME 2 Max NOSERVICE_5Y_PRO_ADV50%(12M)_\n5Y 5,094 849 3,400\nDC50%(8M)\n32LX6BDGA.ATM"
     },
     {
-      "code": "32U889.GRAB",
-      "slug": "32u889-grab",
-      "category": "โทรทัศน์",
-      "name": "32U889.GRAB",
-      "source": "Price list_Aug_V3.pdf",
-      "page": 47,
-      "pdf": "/pdfs/Price%20list_Aug_V3.pdf",
-      "mode": "monthly",
-      "price": 699,
-      "priceFrom": "5Y",
-      "policies": [
-        {
-          "policy": "5Y",
-          "term": null,
-          "price": 699,
-          "promoCode": null
-        }
-      ],
-      "description": "32U889.GRAB 5Y\n(32U889SA-W+GRAB)\nNOSERVICE_5Y_PRO_ADV50%(12M)\nจอมอนิเตอร์ 31.5\" 4K IPS\n4,194 699 1,050 _DC50%(3M)\nSmart Monitor รอบบิลที่ 13 - 15 (349)\n13M~15M (3 Months 50% Discount)\nSwing จอสัมผัสขาตั้งหมุนได้ •\nNo Service\nขนาดแบบรวมขาตั้ง (WxHxD mm) • รอบบิลที่ 16 - 60 (699)\n727.4 x 1312.3 x 420 *มีรีโมท"
-    },
-    {
-      "code": "32U889SA-W.ATM",
-      "slug": "32u889sa-w-atm",
-      "category": "โทรทัศน์",
-      "name": "32U889SA-W.ATM",
-      "source": "Price list_Aug_V3.pdf",
-      "page": 46,
-      "pdf": "/pdfs/Price%20list_Aug_V3.pdf",
-      "mode": "monthly",
-      "price": 699,
-      "priceFrom": "5Y",
-      "policies": [
-        {
-          "policy": "5Y",
-          "term": null,
-          "price": 699,
-          "promoCode": null
-        }
-      ],
-      "description": "32U889SA-W.ATM 5Y\nNOSERVICE_5Y_PRO_ADV50%(12M) _\nจอมอนิเตอร์ 31.5\" 4K IPS Smart Monitor\nSwing จอสัมผัสขาตั้งหมุนได้ 4,194 699 2,800 DC50%(8M)\nขนาดแบบรวมขาตั้ง (WxHxD mm) No • 13M~20M (8 Months 50% Discount)\n727.4 x 1312.3 x 420 *มีรีโมท Service • รอบบิลที่ 21 - 60 (699)"
-    },
-    {
-      "code": "34U650A-B.ATM",
-      "slug": "34u650a-b-atm",
-      "category": "โทรทัศน์",
-      "name": "34U650A-B.ATM",
-      "source": "Price list_Aug_V3.pdf",
-      "page": 46,
-      "pdf": "/pdfs/Price%20list_Aug_V3.pdf",
-      "mode": "monthly",
-      "price": 399,
-      "priceFrom": "5Y",
-      "policies": [
-        {
-          "policy": "5Y",
-          "term": null,
-          "price": 399,
-          "promoCode": null
-        }
-      ],
-      "description": "จาก\nรยะเวลาราคา\nราคาต่อโปรโมชัน\nรอบ\nจานวนเงินที่ต้องชาระราคาโปรปกติ\nเดือน (New)\nบริการ\n45GX950A-B.ATM\n5Y\nLG UltraGear 45\" OLED Dual-Mode\n5K2K 0.03ms, DisplayHDR True Black 8,994 1,499 Advance payment 50% 12 บิลแรก - NOSERVICE_5Y_PRO_ADV50%(12M)\nNo\nขนาดแบบรวมขาตั้ง (WxHxD mm) •รอบบิลที่ 13 - 60 (1,499)\nService\n991.6 x 665.6 x 342 *ไม่มีรีโมท\n52G930B-B.ATM\n5Y\nLG UltraGear evo G9| จอเกมมิ่ง 52”\nThe World’s Largest 5K2K 240Hz 7,194 1,199 Advance payment 50% 12 บิลแรก - NOSERVICE_5Y_PRO_ADV50%(12M)\nNo\nขนาดแบบรวมขาตั้ง (WxHxD mm) รอบบิลที่ 13 - 60 (1,199)\nService\n1174.6 x 713.1 x 350 *ไม่มีรีโมท\n40U990A-W.ATM\n5Y\nLG UltraFine 40 นิ้ว |40U990A| Nano IPS\nBlack 5K2K with Thunderbolt 5 5,994 999 Advance payment 50% 12 บิลแรก - NOSERVICE_5Y_PRO_ADV50%(12M)\nNo\nขนาดแบบรวมขาตั้ง (WxHxD mm) รอบบิลที่ 13 - 60 (999)\nService\n947.7 x 614.3 x 260 *ไม่มีรีโมท\n34U650A-B.ATM\n5Y\n“34” WQHD IPS 100Hz” IPS,\nCurved (3800R) IPS 100Hz 2,394 399 Advance payment 50% 12 บิลแรก - NOSERVICE_5Y_PRO_ADV50%(12M)\nNo\nขนาดแบบรวมขาตั้ง (WxHxD mm) รอบบิลที่ 13 - 60 (399)\nService\n816.7x535.2x230 *ไม่มีรีโมท"
-    },
-    {
-      "code": "40U990A-W.ATM",
-      "slug": "40u990a-w-atm",
-      "category": "โทรทัศน์",
-      "name": "40U990A-W.ATM",
-      "source": "Price list_Aug_V3.pdf",
-      "page": 46,
-      "pdf": "/pdfs/Price%20list_Aug_V3.pdf",
-      "mode": "monthly",
-      "price": 999,
-      "priceFrom": "5Y",
-      "policies": [
-        {
-          "policy": "5Y",
-          "term": null,
-          "price": 999,
-          "promoCode": null
-        }
-      ],
-      "description": "จาก\nรยะเวลาราคา\nราคาต่อโปรโมชัน\nรอบ\nจานวนเงินที่ต้องชาระราคาโปรปกติ\nเดือน (New)\nบริการ\n45GX950A-B.ATM\n5Y\nLG UltraGear 45\" OLED Dual-Mode\n5K2K 0.03ms, DisplayHDR True Black 8,994 1,499 Advance payment 50% 12 บิลแรก - NOSERVICE_5Y_PRO_ADV50%(12M)\nNo\nขนาดแบบรวมขาตั้ง (WxHxD mm) •รอบบิลที่ 13 - 60 (1,499)\nService\n991.6 x 665.6 x 342 *ไม่มีรีโมท\n52G930B-B.ATM\n5Y\nLG UltraGear evo G9| จอเกมมิ่ง 52”\nThe World’s Largest 5K2K 240Hz 7,194 1,199 Advance payment 50% 12 บิลแรก - NOSERVICE_5Y_PRO_ADV50%(12M)\nNo\nขนาดแบบรวมขาตั้ง (WxHxD mm) รอบบิลที่ 13 - 60 (1,199)\nService\n1174.6 x 713.1 x 350 *ไม่มีรีโมท\n40U990A-W.ATM\n5Y\nLG UltraFine 40 นิ้ว |40U990A| Nano IPS\nBlack 5K2K with Thunderbolt 5 5,994 999 Advance payment 50% 12 บิลแรก - NOSERVICE_5Y_PRO_ADV50%(12M)\nNo\nขนาดแบบรวมขาตั้ง (WxHxD mm) รอบบิลที่ 13 - 60 (999)\nService\n947.7 x 614.3 x 260 *ไม่มีรีโมท\n34U650A-B.ATM\n5Y\n“34” WQHD IPS 100Hz” IPS,\nCurved (3800R) IPS 100Hz 2,394 399 Advance payment 50% 12 บิลแรก - NOSERVICE_5Y_PRO_ADV50%(12M)\nNo\nขนาดแบบรวมขาตั้ง (WxHxD mm) รอบบิลที่ 13 - 60 (399)\nService\n816.7x535.2x230 *ไม่มีรีโมท"
-    },
-    {
-      "code": "45GX950A-B.ATM",
-      "slug": "45gx950a-b-atm",
-      "category": "โทรทัศน์",
-      "name": "45GX950A-B.ATM",
-      "source": "Price list_Aug_V3.pdf",
-      "page": 46,
-      "pdf": "/pdfs/Price%20list_Aug_V3.pdf",
-      "mode": "monthly",
-      "price": 1499,
-      "priceFrom": "5Y",
-      "policies": [
-        {
-          "policy": "5Y",
-          "term": null,
-          "price": 1499,
-          "promoCode": null
-        }
-      ],
-      "description": "จาก\nรยะเวลาราคา\nราคาต่อโปรโมชัน\nรอบ\nจานวนเงินที่ต้องชาระราคาโปรปกติ\nเดือน (New)\nบริการ\n45GX950A-B.ATM\n5Y\nLG UltraGear 45\" OLED Dual-Mode\n5K2K 0.03ms, DisplayHDR True Black 8,994 1,499 Advance payment 50% 12 บิลแรก - NOSERVICE_5Y_PRO_ADV50%(12M)\nNo\nขนาดแบบรวมขาตั้ง (WxHxD mm) •รอบบิลที่ 13 - 60 (1,499)\nService\n991.6 x 665.6 x 342 *ไม่มีรีโมท\n52G930B-B.ATM\n5Y\nLG UltraGear evo G9| จอเกมมิ่ง 52”\nThe World’s Largest 5K2K 240Hz 7,194 1,199 Advance payment 50% 12 บิลแรก - NOSERVICE_5Y_PRO_ADV50%(12M)\nNo\nขนาดแบบรวมขาตั้ง (WxHxD mm) รอบบิลที่ 13 - 60 (1,199)\nService\n1174.6 x 713.1 x 350 *ไม่มีรีโมท\n40U990A-W.ATM\n5Y\nLG UltraFine 40 นิ้ว |40U990A| Nano IPS\nBlack 5K2K with Thunderbolt 5 5,994 999 Advance payment 50% 12 บิลแรก - NOSERVICE_5Y_PRO_ADV50%(12M)\nNo\nขนาดแบบรวมขาตั้ง (WxHxD mm) รอบบิลที่ 13 - 60 (999)\nService\n947.7 x 614.3 x 260 *ไม่มีรีโมท\n34U650A-B.ATM\n5Y\n“34” WQHD IPS 100Hz” IPS,\nCurved (3800R) IPS 100Hz 2,394 399 Advance payment 50% 12 บิลแรก - NOSERVICE_5Y_PRO_ADV50%(12M)\nNo\nขนาดแบบรวมขาตั้ง (WxHxD mm) รอบบิลที่ 13 - 60 (399)\nService\n816.7x535.2x230 *ไม่มีรีโมท"
-    },
-    {
-      "code": "52G930B-B.ATM",
-      "slug": "52g930b-b-atm",
-      "category": "โทรทัศน์",
-      "name": "52G930B-B.ATM",
-      "source": "Price list_Aug_V3.pdf",
-      "page": 46,
-      "pdf": "/pdfs/Price%20list_Aug_V3.pdf",
-      "mode": "monthly",
-      "price": 1199,
-      "priceFrom": "5Y",
-      "policies": [
-        {
-          "policy": "5Y",
-          "term": null,
-          "price": 1199,
-          "promoCode": null
-        }
-      ],
-      "description": "จาก\nรยะเวลาราคา\nราคาต่อโปรโมชัน\nรอบ\nจานวนเงินที่ต้องชาระราคาโปรปกติ\nเดือน (New)\nบริการ\n45GX950A-B.ATM\n5Y\nLG UltraGear 45\" OLED Dual-Mode\n5K2K 0.03ms, DisplayHDR True Black 8,994 1,499 Advance payment 50% 12 บิลแรก - NOSERVICE_5Y_PRO_ADV50%(12M)\nNo\nขนาดแบบรวมขาตั้ง (WxHxD mm) •รอบบิลที่ 13 - 60 (1,499)\nService\n991.6 x 665.6 x 342 *ไม่มีรีโมท\n52G930B-B.ATM\n5Y\nLG UltraGear evo G9| จอเกมมิ่ง 52”\nThe World’s Largest 5K2K 240Hz 7,194 1,199 Advance payment 50% 12 บิลแรก - NOSERVICE_5Y_PRO_ADV50%(12M)\nNo\nขนาดแบบรวมขาตั้ง (WxHxD mm) รอบบิลที่ 13 - 60 (1,199)\nService\n1174.6 x 713.1 x 350 *ไม่มีรีโมท\n40U990A-W.ATM\n5Y\nLG UltraFine 40 นิ้ว |40U990A| Nano IPS\nBlack 5K2K with Thunderbolt 5 5,994 999 Advance payment 50% 12 บิลแรก - NOSERVICE_5Y_PRO_ADV50%(12M)\nNo\nขนาดแบบรวมขาตั้ง (WxHxD mm) รอบบิลที่ 13 - 60 (999)\nService\n947.7 x 614.3 x 260 *ไม่มีรีโมท\n34U650A-B.ATM\n5Y\n“34” WQHD IPS 100Hz” IPS,\nCurved (3800R) IPS 100Hz 2,394 399 Advance payment 50% 12 บิลแรก - NOSERVICE_5Y_PRO_ADV50%(12M)\nNo\nขนาดแบบรวมขาตั้ง (WxHxD mm) รอบบิลที่ 13 - 60 (399)\nService\n816.7x535.2x230 *ไม่มีรีโมท"
-    },
-    {
       "code": "55QNED80BSA.ATM",
       "slug": "55qned80bsa-atm",
       "category": "โทรทัศน์",
@@ -2328,6 +2202,132 @@
         }
       ],
       "description": "27GX704A-B.ATM 5Y •รอบบิลที่ 1- 12 (174.50)\nบิลแรก\nLG UltraGear™ GX7 27 นิ้ว240Hz รอบบิลที่ 1-12 (199.5)\nOLED QHD Gaming Monitor\nDisplayHDR™ True Black 400 รอบบิลที่ 13-15 (199)\nOBS Subscription 2,094 349 - NOSERVICE_5Y_PRO_ADV50%(12M)\nขนาดแบบรวมขาตั้ง 2,394 399 +Discount 50 % 600\n(WxHxD mm)\nNo service •รอบบิลที่ 13 - 60 (349)\n605.2x532.6x220\n(3Month)\n*ไม่มีรีโมท"
+    },
+    {
+      "code": "32U889.GRAB",
+      "slug": "32u889-grab",
+      "category": "มอนิเตอร์",
+      "name": "32U889.GRAB",
+      "source": "Price list_Aug_V3.pdf",
+      "page": 47,
+      "pdf": "/pdfs/Price%20list_Aug_V3.pdf",
+      "mode": "monthly",
+      "price": 699,
+      "priceFrom": "5Y",
+      "policies": [
+        {
+          "policy": "5Y",
+          "term": null,
+          "price": 699,
+          "promoCode": null
+        }
+      ],
+      "description": "32U889.GRAB 5Y\n(32U889SA-W+GRAB)\nNOSERVICE_5Y_PRO_ADV50%(12M)\nจอมอนิเตอร์ 31.5\" 4K IPS\n4,194 699 1,050 _DC50%(3M)\nSmart Monitor รอบบิลที่ 13 - 15 (349)\n13M~15M (3 Months 50% Discount)\nSwing จอสัมผัสขาตั้งหมุนได้ •\nNo Service\nขนาดแบบรวมขาตั้ง (WxHxD mm) • รอบบิลที่ 16 - 60 (699)\n727.4 x 1312.3 x 420 *มีรีโมท"
+    },
+    {
+      "code": "32U889SA-W.ATM",
+      "slug": "32u889sa-w-atm",
+      "category": "มอนิเตอร์",
+      "name": "32U889SA-W.ATM",
+      "source": "Price list_Aug_V3.pdf",
+      "page": 46,
+      "pdf": "/pdfs/Price%20list_Aug_V3.pdf",
+      "mode": "monthly",
+      "price": 699,
+      "priceFrom": "5Y",
+      "policies": [
+        {
+          "policy": "5Y",
+          "term": null,
+          "price": 699,
+          "promoCode": null
+        }
+      ],
+      "description": "32U889SA-W.ATM 5Y\nNOSERVICE_5Y_PRO_ADV50%(12M) _\nจอมอนิเตอร์ 31.5\" 4K IPS Smart Monitor\nSwing จอสัมผัสขาตั้งหมุนได้ 4,194 699 2,800 DC50%(8M)\nขนาดแบบรวมขาตั้ง (WxHxD mm) No • 13M~20M (8 Months 50% Discount)\n727.4 x 1312.3 x 420 *มีรีโมท Service • รอบบิลที่ 21 - 60 (699)"
+    },
+    {
+      "code": "34U650A-B.ATM",
+      "slug": "34u650a-b-atm",
+      "category": "มอนิเตอร์",
+      "name": "34U650A-B.ATM",
+      "source": "Price list_Aug_V3.pdf",
+      "page": 46,
+      "pdf": "/pdfs/Price%20list_Aug_V3.pdf",
+      "mode": "monthly",
+      "price": 399,
+      "priceFrom": "5Y",
+      "policies": [
+        {
+          "policy": "5Y",
+          "term": null,
+          "price": 399,
+          "promoCode": null
+        }
+      ],
+      "description": "จาก\nรยะเวลาราคา\nราคาต่อโปรโมชัน\nรอบ\nจานวนเงินที่ต้องชาระราคาโปรปกติ\nเดือน (New)\nบริการ\n45GX950A-B.ATM\n5Y\nLG UltraGear 45\" OLED Dual-Mode\n5K2K 0.03ms, DisplayHDR True Black 8,994 1,499 Advance payment 50% 12 บิลแรก - NOSERVICE_5Y_PRO_ADV50%(12M)\nNo\nขนาดแบบรวมขาตั้ง (WxHxD mm) •รอบบิลที่ 13 - 60 (1,499)\nService\n991.6 x 665.6 x 342 *ไม่มีรีโมท\n52G930B-B.ATM\n5Y\nLG UltraGear evo G9| จอเกมมิ่ง 52”\nThe World’s Largest 5K2K 240Hz 7,194 1,199 Advance payment 50% 12 บิลแรก - NOSERVICE_5Y_PRO_ADV50%(12M)\nNo\nขนาดแบบรวมขาตั้ง (WxHxD mm) รอบบิลที่ 13 - 60 (1,199)\nService\n1174.6 x 713.1 x 350 *ไม่มีรีโมท\n40U990A-W.ATM\n5Y\nLG UltraFine 40 นิ้ว |40U990A| Nano IPS\nBlack 5K2K with Thunderbolt 5 5,994 999 Advance payment 50% 12 บิลแรก - NOSERVICE_5Y_PRO_ADV50%(12M)\nNo\nขนาดแบบรวมขาตั้ง (WxHxD mm) รอบบิลที่ 13 - 60 (999)\nService\n947.7 x 614.3 x 260 *ไม่มีรีโมท\n34U650A-B.ATM\n5Y\n“34” WQHD IPS 100Hz” IPS,\nCurved (3800R) IPS 100Hz 2,394 399 Advance payment 50% 12 บิลแรก - NOSERVICE_5Y_PRO_ADV50%(12M)\nNo\nขนาดแบบรวมขาตั้ง (WxHxD mm) รอบบิลที่ 13 - 60 (399)\nService\n816.7x535.2x230 *ไม่มีรีโมท"
+    },
+    {
+      "code": "40U990A-W.ATM",
+      "slug": "40u990a-w-atm",
+      "category": "มอนิเตอร์",
+      "name": "40U990A-W.ATM",
+      "source": "Price list_Aug_V3.pdf",
+      "page": 46,
+      "pdf": "/pdfs/Price%20list_Aug_V3.pdf",
+      "mode": "monthly",
+      "price": 999,
+      "priceFrom": "5Y",
+      "policies": [
+        {
+          "policy": "5Y",
+          "term": null,
+          "price": 999,
+          "promoCode": null
+        }
+      ],
+      "description": "จาก\nรยะเวลาราคา\nราคาต่อโปรโมชัน\nรอบ\nจานวนเงินที่ต้องชาระราคาโปรปกติ\nเดือน (New)\nบริการ\n45GX950A-B.ATM\n5Y\nLG UltraGear 45\" OLED Dual-Mode\n5K2K 0.03ms, DisplayHDR True Black 8,994 1,499 Advance payment 50% 12 บิลแรก - NOSERVICE_5Y_PRO_ADV50%(12M)\nNo\nขนาดแบบรวมขาตั้ง (WxHxD mm) •รอบบิลที่ 13 - 60 (1,499)\nService\n991.6 x 665.6 x 342 *ไม่มีรีโมท\n52G930B-B.ATM\n5Y\nLG UltraGear evo G9| จอเกมมิ่ง 52”\nThe World’s Largest 5K2K 240Hz 7,194 1,199 Advance payment 50% 12 บิลแรก - NOSERVICE_5Y_PRO_ADV50%(12M)\nNo\nขนาดแบบรวมขาตั้ง (WxHxD mm) รอบบิลที่ 13 - 60 (1,199)\nService\n1174.6 x 713.1 x 350 *ไม่มีรีโมท\n40U990A-W.ATM\n5Y\nLG UltraFine 40 นิ้ว |40U990A| Nano IPS\nBlack 5K2K with Thunderbolt 5 5,994 999 Advance payment 50% 12 บิลแรก - NOSERVICE_5Y_PRO_ADV50%(12M)\nNo\nขนาดแบบรวมขาตั้ง (WxHxD mm) รอบบิลที่ 13 - 60 (999)\nService\n947.7 x 614.3 x 260 *ไม่มีรีโมท\n34U650A-B.ATM\n5Y\n“34” WQHD IPS 100Hz” IPS,\nCurved (3800R) IPS 100Hz 2,394 399 Advance payment 50% 12 บิลแรก - NOSERVICE_5Y_PRO_ADV50%(12M)\nNo\nขนาดแบบรวมขาตั้ง (WxHxD mm) รอบบิลที่ 13 - 60 (399)\nService\n816.7x535.2x230 *ไม่มีรีโมท"
+    },
+    {
+      "code": "45GX950A-B.ATM",
+      "slug": "45gx950a-b-atm",
+      "category": "มอนิเตอร์",
+      "name": "45GX950A-B.ATM",
+      "source": "Price list_Aug_V3.pdf",
+      "page": 46,
+      "pdf": "/pdfs/Price%20list_Aug_V3.pdf",
+      "mode": "monthly",
+      "price": 1499,
+      "priceFrom": "5Y",
+      "policies": [
+        {
+          "policy": "5Y",
+          "term": null,
+          "price": 1499,
+          "promoCode": null
+        }
+      ],
+      "description": "จาก\nรยะเวลาราคา\nราคาต่อโปรโมชัน\nรอบ\nจานวนเงินที่ต้องชาระราคาโปรปกติ\nเดือน (New)\nบริการ\n45GX950A-B.ATM\n5Y\nLG UltraGear 45\" OLED Dual-Mode\n5K2K 0.03ms, DisplayHDR True Black 8,994 1,499 Advance payment 50% 12 บิลแรก - NOSERVICE_5Y_PRO_ADV50%(12M)\nNo\nขนาดแบบรวมขาตั้ง (WxHxD mm) •รอบบิลที่ 13 - 60 (1,499)\nService\n991.6 x 665.6 x 342 *ไม่มีรีโมท\n52G930B-B.ATM\n5Y\nLG UltraGear evo G9| จอเกมมิ่ง 52”\nThe World’s Largest 5K2K 240Hz 7,194 1,199 Advance payment 50% 12 บิลแรก - NOSERVICE_5Y_PRO_ADV50%(12M)\nNo\nขนาดแบบรวมขาตั้ง (WxHxD mm) รอบบิลที่ 13 - 60 (1,199)\nService\n1174.6 x 713.1 x 350 *ไม่มีรีโมท\n40U990A-W.ATM\n5Y\nLG UltraFine 40 นิ้ว |40U990A| Nano IPS\nBlack 5K2K with Thunderbolt 5 5,994 999 Advance payment 50% 12 บิลแรก - NOSERVICE_5Y_PRO_ADV50%(12M)\nNo\nขนาดแบบรวมขาตั้ง (WxHxD mm) รอบบิลที่ 13 - 60 (999)\nService\n947.7 x 614.3 x 260 *ไม่มีรีโมท\n34U650A-B.ATM\n5Y\n“34” WQHD IPS 100Hz” IPS,\nCurved (3800R) IPS 100Hz 2,394 399 Advance payment 50% 12 บิลแรก - NOSERVICE_5Y_PRO_ADV50%(12M)\nNo\nขนาดแบบรวมขาตั้ง (WxHxD mm) รอบบิลที่ 13 - 60 (399)\nService\n816.7x535.2x230 *ไม่มีรีโมท"
+    },
+    {
+      "code": "52G930B-B.ATM",
+      "slug": "52g930b-b-atm",
+      "category": "มอนิเตอร์",
+      "name": "52G930B-B.ATM",
+      "source": "Price list_Aug_V3.pdf",
+      "page": 46,
+      "pdf": "/pdfs/Price%20list_Aug_V3.pdf",
+      "mode": "monthly",
+      "price": 1199,
+      "priceFrom": "5Y",
+      "policies": [
+        {
+          "policy": "5Y",
+          "term": null,
+          "price": 1199,
+          "promoCode": null
+        }
+      ],
+      "description": "จาก\nรยะเวลาราคา\nราคาต่อโปรโมชัน\nรอบ\nจานวนเงินที่ต้องชาระราคาโปรปกติ\nเดือน (New)\nบริการ\n45GX950A-B.ATM\n5Y\nLG UltraGear 45\" OLED Dual-Mode\n5K2K 0.03ms, DisplayHDR True Black 8,994 1,499 Advance payment 50% 12 บิลแรก - NOSERVICE_5Y_PRO_ADV50%(12M)\nNo\nขนาดแบบรวมขาตั้ง (WxHxD mm) •รอบบิลที่ 13 - 60 (1,499)\nService\n991.6 x 665.6 x 342 *ไม่มีรีโมท\n52G930B-B.ATM\n5Y\nLG UltraGear evo G9| จอเกมมิ่ง 52”\nThe World’s Largest 5K2K 240Hz 7,194 1,199 Advance payment 50% 12 บิลแรก - NOSERVICE_5Y_PRO_ADV50%(12M)\nNo\nขนาดแบบรวมขาตั้ง (WxHxD mm) รอบบิลที่ 13 - 60 (1,199)\nService\n1174.6 x 713.1 x 350 *ไม่มีรีโมท\n40U990A-W.ATM\n5Y\nLG UltraFine 40 นิ้ว |40U990A| Nano IPS\nBlack 5K2K with Thunderbolt 5 5,994 999 Advance payment 50% 12 บิลแรก - NOSERVICE_5Y_PRO_ADV50%(12M)\nNo\nขนาดแบบรวมขาตั้ง (WxHxD mm) รอบบิลที่ 13 - 60 (999)\nService\n947.7 x 614.3 x 260 *ไม่มีรีโมท\n34U650A-B.ATM\n5Y\n“34” WQHD IPS 100Hz” IPS,\nCurved (3800R) IPS 100Hz 2,394 399 Advance payment 50% 12 บิลแรก - NOSERVICE_5Y_PRO_ADV50%(12M)\nNo\nขนาดแบบรวมขาตั้ง (WxHxD mm) รอบบิลที่ 13 - 60 (399)\nService\n816.7x535.2x230 *ไม่มีรีโมท"
     },
     {
       "code": "MS3032JAS.BBKPETH",

@@ -45,6 +45,17 @@ const CAPACITY_RE = /^\d[\d.,]*\s*Btu\b/;
 // (ถ้า LG เปลี่ยนชื่อเดือนหน้า รหัสใหม่จะโผล่ใน report เป็นสินค้าใหม่)
 const NAMED_ANCHOR_RE = /^LG\s+xboom\s+([A-Za-z0-9]+)/i;
 
+// รหัสสินค้าที่ PDF วางผิดหมวด (จอมอนิเตอร์ UltraGear ขึ้นต้น U/GX ไปอยู่ในหน้าหมวดโทรทัศน์)
+// → บังคับหมวดหมู่ตามรหัส (prefix ก่อนจุด) ทุกครั้งที่รัน extract — เดือนหน้า PDF ใหม่ก็ยังแยกถูก
+const CATEGORY_OVERRIDES = {
+  '27GX704A': 'มอนิเตอร์',
+  '32U889': 'มอนิเตอร์',
+  '34U650A': 'มอนิเตอร์',
+  '40U990A': 'มอนิเตอร์',
+  '45GX950A': 'มอนิเตอร์',
+  '52G930B': 'มอนิเตอร์',
+};
+
 // ---------- บรรทัดที่ไม่ใช่ข้อมูลสินค้า ----------
 function isNoise(line) {
   if (!line) return true;
@@ -606,6 +617,10 @@ async function main() {
       if (m.name) p.name = m.name;
       if (m.category) p.category = m.category;
     }
+    // บังคับหมวดหมู่สำหรับรุ่นที่ PDF วางผิดหน้า (ใส่หลัง meta เพื่อให้ override เสมอ)
+    // เทียบเป็น prefix เพราะรหัสมี suffix สี/เวอร์ชันคั่นด้วย - เช่น "32U889SA-W.ATM", "45GX950A-B.ATM"
+    const overrideKey = Object.keys(CATEGORY_OVERRIDES).find((k) => p.code.startsWith(k));
+    if (overrideKey) p.category = CATEGORY_OVERRIDES[overrideKey];
   }
 
   products.sort(
