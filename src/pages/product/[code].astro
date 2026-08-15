@@ -98,6 +98,78 @@ const gallery = lgGallery.products.find((s) => s.code === p.code);
         <button class="btn btn-primary btn-interest" data-open-inquiry>สนใจรุ่นนี้</button>
       </section>
 
+      {
+        // ── ทดลอง: ตารางแผนการชำระเงิน (เครื่องกรองน้ำ WD516) ──
+        p.code === 'WD516' && p.policies.length > 0 && (
+          <section class="plans">
+            <h2 class="plans-title">แผนการชำระเงิน</h2>
+            {
+              (() => {
+                const outright = p.policies.filter((x) => /^2Y/.test(x.policy));
+                const monthly = p.policies.filter((x) => !/^2Y/.test(x.policy));
+                const minMonthly = Math.min(...monthly.map((x) => x.price));
+                const planName = (policy) => {
+                  const [yr, type] = policy.split('_');
+                  const svc =
+                    type === 'Visit'
+                      ? 'ช่างเข้าบริการถึงบ้าน'
+                      : type === 'Self'
+                        ? 'เปลี่ยนอะไหล่ด้วยตนเอง'
+                        : type || '';
+                  return { yr: yr.replace('Y', ' ปี'), svc };
+                };
+                const fmtN = (n) => (n == null ? '—' : n.toLocaleString('th-TH'));
+                return (
+                  <>
+                    {outright.length > 0 && (
+                      <div class="plans-group">
+                        <div class="plans-group-title">
+                          <span>ซื้อขาด</span>
+                          <small>จ่ายครั้งเดียว · รับประกัน 2 ปี</small>
+                        </div>
+                        <table class="plans-table">
+                          <tbody>
+                            {outright.map((x) => (
+                              <tr>
+                                <th scope="row">{planName(x.policy).svc}</th>
+                                <td class="plans-price">{fmtN(x.price)} <span>บาท</span></td>
+                              </tr>
+                            ))}
+                          </tbody>
+                        </table>
+                      </div>
+                    )}
+                    {monthly.length > 0 && (
+                      <div class="plans-group">
+                        <div class="plans-group-title">
+                          <span>Subscribe รายเดือน</span>
+                          <small>รวมค่าดูแลตลอดสัญญา</small>
+                        </div>
+                        <table class="plans-table">
+                          <tbody>
+                            {monthly.map((x) => (
+                              <tr>
+                                <th scope="row">
+                                  <b>{planName(x.policy).yr}</b>
+                                  <span class="plans-svc">{planName(x.policy).svc}</span>
+                                </th>
+                                <td class="plans-price">
+                                  {x.price === minMonthly && <span class="plans-best">เริ่มต้น</span>}
+                                  {fmtN(x.price)} <span>บาท/เดือน</span>
+                                </td>
+                              </tr>
+                            ))}
+                          </tbody>
+                        </table>
+                      </div>
+                    )}
+                  </>
+                );
+              })()}
+          </section>
+        )
+      }
+
       {spec && (
         <section class="specs">
           <h2 class="specs-title">{spec.features && spec.features.length > 0 ? 'คุณลักษณะที่สำคัญ' : 'คุณสมบัติและสเปค'}</h2>

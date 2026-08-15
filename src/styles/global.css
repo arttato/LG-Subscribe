@@ -1225,6 +1225,100 @@ a {
   margin: 0 0 14px;
 }
 
+/* ── แผนการชำระเงิน (ทดลอง WD516) ── */
+.plans {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 24px;
+  margin-bottom: 20px;
+}
+
+.plans-title {
+  font-size: 1.15rem;
+  font-weight: 800;
+  margin: 0 0 16px;
+}
+
+.plans-group {
+  margin-bottom: 18px;
+}
+
+.plans-group:last-child {
+  margin-bottom: 0;
+}
+
+.plans-group-title {
+  display: flex;
+  align-items: baseline;
+  gap: 10px;
+  margin-bottom: 8px;
+  padding-bottom: 6px;
+  border-bottom: 2px solid var(--primary);
+}
+
+.plans-group-title span {
+  font-weight: 800;
+  font-size: 1rem;
+}
+
+.plans-group-title small {
+  color: var(--muted);
+  font-size: 0.78rem;
+}
+
+.plans-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.plans-table th {
+  text-align: left;
+  font-weight: 500;
+  font-size: 0.92rem;
+  padding: 9px 10px;
+  border-bottom: 1px solid var(--border);
+}
+
+.plans-table th b {
+  font-weight: 700;
+}
+
+.plans-svc {
+  display: block;
+  color: var(--muted);
+  font-size: 0.78rem;
+  font-weight: 400;
+  margin-top: 1px;
+}
+
+.plans-table td {
+  text-align: right;
+  white-space: nowrap;
+  padding: 9px 10px;
+  border-bottom: 1px solid var(--border);
+  font-size: 0.95rem;
+  font-weight: 700;
+}
+
+.plans-table td span {
+  color: var(--muted);
+  font-weight: 500;
+  font-size: 0.8rem;
+}
+
+.plans-best {
+  display: inline-block;
+  background: var(--primary);
+  color: #fff !important;
+  font-weight: 700 !important;
+  font-size: 0.68rem !important;
+  border-radius: 999px;
+  padding: 2px 8px;
+  margin-right: 6px;
+  vertical-align: middle;
+}
+
 .specs-features {
   list-style: none;
   margin: 0 0 18px;
