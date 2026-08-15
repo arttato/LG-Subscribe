@@ -16,8 +16,6 @@ const imgUrl = `${import.meta.env.BASE_URL}img/products/${p.slug}.jpg`;
 const fmt = (n) => (n == null ? '—' : n.toLocaleString('th-TH'));
 const modeLabel = (m) => (m === 'outright' ? 'บาท (ซื้อขาด)' : 'บาท/เดือน');
 const base = import.meta.env.BASE_URL;
-const pdfUrl = `${base}${p.pdf}`.replace(/\/{2,}/g, '/'); // base + '/pdfs/...' → ไม่ให้มี // ซ้อน
-const pdfPage = p.page ? `#page=${p.page}` : '';
 const titleText = p.code.startsWith('XBOOM-') ? p.name : p.name !== p.code ? `${p.name} — ${p.code}` : p.code;
 ---
 
@@ -61,48 +59,6 @@ const titleText = p.code.startsWith('XBOOM-') ? p.name : p.name !== p.code ? `${
           <span class="price-unit">{modeLabel(p.mode)}</span>
           {p.priceNote && <span class="price-note">({p.priceNote})</span>}
         </div>
-        <div class="detail-actions">
-          <a class="btn btn-primary" href={pdfUrl} target="_blank" rel="noopener">เปิด PDF ราคา ↗</a>
-          <a class="btn btn-ghost" href={`${pdfUrl}${pdfPage}`} target="_blank" rel="noopener">ไปที่หน้า {p.page} ใน PDF</a>
-        </div>
-      </section>
-
-      <div class="detail-cols">
-        <section class="panel">
-          <h2>รายละเอียดจากเอกสาร</h2>
-          {p.description ? <pre class="description">{p.description}</pre> : <p class="description">—</p>}
-        </section>
-
-        <section class="panel">
-          <h2>ราคาและนโยบาย ({p.policies.length})</h2>
-          {p.policies.length > 0 ? (
-            <table class="policies">
-              <thead>
-                <tr>
-                  <th>นโยบาย</th>
-                  <th>รอบบริการ</th>
-                  <th>ราคา/เดือน</th>
-                </tr>
-              </thead>
-              <tbody>
-                {p.policies.map((r) => (
-                  <tr>
-                    <td><span class="policy-tag">{r.policy}</span></td>
-                    <td>{r.term ? `ทุกๆ ${r.term} เดือน` : '—'}</td>
-                    <td>{fmt(r.price)}</td>
-                  </tr>
-                ))}
-              </tbody>
-            </table>
-          ) : (
-            <p class="description">ไม่พบแถวราคาในเอกสาร</p>
-          )}
-        </section>
-      </div>
-
-      <section class="panel" style="margin-top: 20px">
-        <h2>เอกสารต้นฉบับ</h2>
-        <iframe class="pdf-frame" src={pdfUrl} title={`PDF: ${p.source}`}></iframe>
       </section>
     </main>
 
