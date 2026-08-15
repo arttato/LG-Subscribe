@@ -53,29 +53,6 @@ const policyRows = [...heroProduct.policies]
   .slice(0, 4)
   .map((r) => ({ label: r.policy.replace(/[_ ]/g, ' '), price: r.price }));
 
-// จัดเรียง policy สำหรับชิปบนการ์ด: ปีน้อยก่อน, Visit ก่อน Self
-function sortPolicies(rows) {
-  const order = { Visit: 0, Self: 1, No: 2 };
-  return [...rows].sort((a, b) => {
-    const ya = parseInt(a.policy, 10) || 99;
-    const yb = parseInt(b.policy, 10) || 99;
-    if (ya !== yb) return ya - yb;
-    const ka = /Visit/.test(a.policy) ? 0 : /Self/.test(a.policy) ? 1 : 2;
-    const kb = /Visit/.test(b.policy) ? 0 : /Self/.test(b.policy) ? 1 : 2;
-    return ka - kb || order[ka] - order[kb];
-  });
-}
-
-// ชิปบนการ์ด: policy เดียวกันซ้ำได้ (รอบสัญญาต่างกัน) → เก็บราคาต่ำสุดต่อชื่อ policy
-function policyChips(p) {
-  const byName = new Map();
-  for (const r of p.policies) {
-    const name = r.policy.replace(/[_ ]/g, ' ').trim();
-    const cur = byName.get(name);
-    if (!cur || (r.price != null && r.price < cur.price)) byName.set(name, r);
-  }
-  return sortPolicies([...byName.values()]);
-}
 ---
 
 <!doctype html>
@@ -212,11 +189,7 @@ function policyChips(p) {
               <span class="cat-count">{sec.count} รุ่น</span>
             </div>
             <div class="grid">
-              {sec.products.map((p) => {
-                const chips = policyChips(p);
-                const shown = chips.slice(0, 4);
-                const more = chips.length - shown.length;
-                return (
+              {sec.products.map((p) => (
                   <a
                     class="card"
                     href={`${base}product/${p.slug}/`}
@@ -229,16 +202,6 @@ function policyChips(p) {
                     <div class="card-category">{p.category || sec.name}</div>
                     {p.name !== p.code && <div class="card-name">{p.name}</div>}
                     <div class="card-code">{p.code}</div>
-                    {shown.length > 0 && (
-                      <div class="card-policies">
-                        {shown.map((r) => (
-                          <span class="policy-chip">
-                            {r.policy.replace(/[_ ]/g, ' ')} <b>{fmt(r.price)}</b>
-                          </span>
-                        ))}
-                        {more > 0 && <span class="policy-chip">+{more}</span>}
-                      </div>
-                    )}
                     <div class="card-price">
                       <span>
                         <span class="price-from">{priceLabel(p.mode)}</span>
@@ -247,8 +210,7 @@ function policyChips(p) {
                       <span class="price-unit">{modeLabel(p.mode)}</span>
                     </div>
                   </a>
-                );
-              })}
+              ))}
             </div>
           </div>
         ))}
