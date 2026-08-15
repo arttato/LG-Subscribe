@@ -1377,6 +1377,10 @@ a {
   padding: 16px;
 }
 
+.plan-detail[hidden] {
+  display: none; /* display:flex ทับ hidden attribute — ต้องปิดไว้ไม่งั้น modal ค้างตลอด */
+}
+
 .plan-detail-backdrop {
   position: absolute;
   inset: 0;
