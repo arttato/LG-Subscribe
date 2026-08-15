@@ -9,8 +9,10 @@ pdfs/                     ← วางไฟล์ PDF ราคาใหม่
 scripts/extract.mjs       ← สคริปต์อ่าน PDF → สร้างข้อมูล + ตัด PDF เหลือหน้าสินค้าไป public/pdfs/
 scripts/extract-images.mjs← สคริปต์ดึงรูปสินค้าจาก PDF → public/img/products/ (ต้อง commit)
 scripts/fetch-lg-specs.mjs← สคริปต์ดึงคุณสมบัติ/สเปคจากเว็บ LG Thailand → src/data/lg-specs.json
+scripts/fetch-lg-gallery.mjs ← สคริปต์ดึง URL รูปสินค้าหลายมุมจากเว็บ LG → src/data/lg-gallery.json
 src/data/products.json    ← ข้อมูลสินค้าที่สกัดได้ (ห้ามแก้เอง — สคริปต์เขียนทับ)
 src/data/lg-specs.json    ← สเปคสินค้าจากเว็บ LG Thailand (รัน npm run specs — commit ไฟล์นี้)
+src/data/lg-gallery.json  ← URL รูป gallery จากเว็บ LG (รัน npm run gallery — commit ไฟล์นี้)
 src/data/meta.json        ← ใส่ชื่อไทย/หมวดหมู่ที่ต้องการให้สินค้า (กรอกเองได้)
 src/pages/                ← หน้าเว็บ (Astro static)
 public/pdfs/              ← PDF ฉบับย่อที่เว็บใช้แสดง (สคริปต์สร้างให้อัตโนมัติ — ไม่ต้อง commit)
@@ -33,8 +35,9 @@ npm run extract
 # 5. ดึงรูปสินค้าจาก PDF (รุ่นไหน PDF มีรูปให้ จะได้รูปคู่กัน)
 npm run images
 
-# 6. (แนะนำ) ดึงคุณสมบัติ/สเปคจากเว็บ LG Thailand ใส่หน้า detail
+# 6. (แนะนำ) ดึงคุณสมบัติ/สเปค + รูปหลายมุมจากเว็บ LG Thailand ใส่หน้า detail
 npm run specs
+npm run gallery
 
 # 7. build และ deploy
 npm run build        # ผลลัพธ์อยู่ในโฟลเดอร์ dist/
@@ -43,6 +46,18 @@ npm run build        # ผลลัพธ์อยู่ในโฟลเดอ
 > รูปสินค้าถูกดึงจากรูปที่ฝังใน PDF (จับคู่ตามตำแหน่งบนหน้า) — ต้องรัน `npm run images` แล้ว commit ไฟล์ใน `public/img/products/` ด้วย ไม่งั้น CI จะ build โดยไม่มีรูป (รุ่นที่ PDF ไม่มีรูปจะแสดงแบบไม่มีการ์ดรูป)
 > สเปคมาจากเว็บ LG Thailand ต้องรัน `npm run specs` แล้ว commit `src/data/lg-specs.json` — สคริปต์จับคู่รุ่นกับหน้า lg.com/th อัตโนมัติจาก sitemap (รุ่นที่ LG ไทยไม่มีหน้า product จะไม่มีส่วนสเปคในหน้า detail)
 > CI (GitHub Actions) ไม่รัน `npm run images` / `npm run specs` เพื่อให้ build เร็ว — ข้อมูลที่ commit ไว้จะถูกใช้
+
+### รูปสินค้าหลายมุม (แกลเลอรี) — จากเว็บ LG Thailand
+
+หน้า detail ของสินค้าที่มีหน้า LG จะแสดงแกลเลอรีรูปหลายมุม (เลื่อนซ้าย/ขวา + เลือกจาก thumbnails) แทนรูปเดี่ยว:
+
+```bash
+npm run gallery
+```
+
+- สคริปต์อ่านรายการหน้า LG จาก `lg-specs.json` → แกะ URL รูป gallery จากหน้า (โฟลเดอร์ `/gallery/` รองรับชื่อไฟล์ทุกรูปแบบของ LG) → เขียน `src/data/lg-gallery.json` แล้ว commit
+- **รูปไม่ได้เก็บใน repo** — เป็น URL hotlink ไปยัง CDN ของ LG โดยตรง (โหลดจากเว็บ LG ตอนแสดงผล) จึงไม่เปลืองพื้นที่ repo
+- รุ่นที่ไม่มี gallery (LG ลงรูปเดียว หรือไม่มีหน้า) จะแสดงรูปจาก PDF เหมือนเดิม
 
 ### ดึงสเปคจากเว็บ LG Thailand (หน้า detail)
 
@@ -54,8 +69,9 @@ npm run specs
 
 - สคริปต์จับคู่รุ่นกับหน้า lg.com/th อัตโนมัติจาก `sitemap.xml` + รายการระบุเองใน `OVERRIDES` (รุ่นที่ sitemap จับคู่ไม่ได้)
 - ข้อมูลที่ดึงได้เขียนไป `src/data/lg-specs.json` แล้ว commit — หน้า detail อ่านจากไฟล์นี้ (โหลดตอน build)
-- กลุ่มสเปคแสดงเป็นหัวข้อเปิด/ปิดได้ (`<details>`) — กลุ่มแรกเปิดให้ดูทันที
-- รุ่นที่ LG ไทยไม่มีหน้า product (เช่น แอร์ติดฝ้า ZT4Q / ZTRQ หรือรุ่นที่เลิกขายแล้ว) จะไม่มีส่วนสเปคในหน้า detail — แสดงเฉพาะ รูป ชื่อ ราคา เหมือนเดิม
+- กลุ่มสเปคแสดงเป็นหัวข้อเปิด/ปิดได้ (`<details>`) — กลุ่มแรกเปิดให้ดูทันที + จุดเด่นเป็นการ์ดด้านบน
+- หน้าแคตตาล็อก: ชี้การ์ดค้างไว้จะเห็น **tooltip สเปคเด่น 2-3 รายการ** (ข้อมูลจากไฟล์เดียวกัน)
+- ครอบคลุม 84/91 รุ่น — รุ่นที่ LG ไทยไม่มีหน้า product (เช่น แอร์ติดฝ้า ZT4Q24GPLA1, เครื่องซัก FV1413H4M, แอร์ IXY) จะไม่มีส่วนสเปค — แสดงเฉพาะ รูป ชื่อ ราคา เหมือนเดิม
 
 ### รุ่นที่ PDF ไม่มีรูป → ดึงจากเว็บ LG Thailand
 
@@ -88,7 +104,7 @@ node scripts/download-lg-images.mjs   # ดาวน์โหลดรูปต�
 ## ฟีเจอร์เว็บ
 
 - หน้าแรก: รายการสินค้าทั้งหมด + ค้นหา (ชื่อ/รุ่น/รหัส) + กรองตามหมวดหมู่
-- หน้า detail แต่ละสินค้า: รูป + ชื่อ + ราคาเริ่มต้น + **คุณสมบัติและสเปคจากเว็บ LG Thailand** (จุดเด่น + ตารางสเปคแยกหมวด)
+- หน้า detail แต่ละสินค้า: **แกลเลอรีรูปหลายมุม** (จากเว็บ LG) + ชื่อ + ราคาเริ่มต้น + **คุณสมบัติและสเปคจากเว็บ LG Thailand** (จุดเด่น + ตารางสเปคแยกหมวด)
 - ราคาแสดงแบบ "ราคาเริ่มต้นราคาเดียว" ตามที่ตกลงกัน — ราคาทุก policy (5Y/6Y/7Y Visit/Self) อยู่ในข้อมูลสินค้า
 - ส่วนท้ายหน้า detail มีลิงก์กลับไปหน้า product ทางการของ LG Thailand (เปิดแท็บใหม่)
 
@@ -141,6 +157,7 @@ npm run extract && cat scripts/report.txt
 | `npm run extract` | อ่าน PDF ใน `pdfs/` → เขียน `src/data/products.json` + `scripts/report.txt` |
 | `npm run images` | ดึงรูปสินค้าจาก PDF → `public/img/products/` (ต้อง commit) |
 | `npm run specs` | ดึงสเปคจากเว็บ LG Thailand → `src/data/lg-specs.json` (ต้อง commit) |
+| `npm run gallery` | ดึง URL รูปหลายมุมจากเว็บ LG → `src/data/lg-gallery.json` (ต้อง commit) |
 | `npm run dev` | รัน dev server (localhost:4321) |
 | `npm run build` | build เว็บ static ไปที่ `dist/` |
 | `npm run preview` | ทดสอบเวอร์ชัน build ที่ `dist/` |

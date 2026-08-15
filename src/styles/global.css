@@ -585,6 +585,66 @@ a {
   inset: 0;
 }
 
+/* tooltip สเปคเด่นบนการ์ด */
+.card-tip {
+  position: absolute;
+  left: 50%;
+  bottom: calc(100% + 10px);
+  transform: translateX(-50%);
+  width: min(260px, calc(100vw - 40px));
+  background: var(--dark);
+  color: #fff;
+  border-radius: 10px;
+  padding: 12px 14px;
+  font-size: 0.78rem;
+  z-index: 30;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.15s;
+  box-shadow: var(--shadow);
+}
+
+.card:hover .card-tip,
+.card:focus-within .card-tip {
+  opacity: 1;
+}
+
+.card-tip::after {
+  content: '';
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  border: 7px solid transparent;
+  border-top-color: var(--dark);
+}
+
+.card-tip-title {
+  font-weight: 700;
+  font-size: 0.8rem;
+  color: #ffd9e2;
+  margin-bottom: 6px;
+}
+
+.card-tip-row {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 2px 0;
+  line-height: 1.45;
+}
+
+.card-tip-row span {
+  color: #d6d6da;
+}
+
+.card-tip-row b {
+  text-align: right;
+  font-weight: 600;
+  color: #fff;
+  min-width: 40%;
+}
+
 .empty {
   text-align: center;
   color: var(--muted);
@@ -695,6 +755,102 @@ a {
   display: grid;
   grid-template-columns: 1.4fr 1fr;
   gap: 20px;
+}
+
+/* ================= gallery ================= */
+.gallery {
+  margin-bottom: 16px;
+}
+
+.gallery-stage {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.gallery-stage .gallery-img {
+  margin-bottom: 0;
+  max-height: 340px;
+}
+
+.gallery-nav {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  border: 1px solid var(--border);
+  background: var(--surface);
+  color: var(--text);
+  font-size: 1.3rem;
+  line-height: 1;
+  cursor: pointer;
+  box-shadow: var(--shadow);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 2;
+}
+
+.gallery-nav:hover {
+  border-color: var(--brand);
+  color: var(--brand);
+}
+
+.gallery-nav.prev {
+  left: 6px;
+}
+
+.gallery-nav.next {
+  right: 6px;
+}
+
+.gallery-count {
+  position: absolute;
+  right: 10px;
+  bottom: 10px;
+  background: rgba(20, 20, 22, 0.75);
+  color: #fff;
+  font-size: 0.75rem;
+  font-weight: 600;
+  border-radius: 999px;
+  padding: 3px 10px;
+}
+
+.gallery-thumbs {
+  display: flex;
+  gap: 8px;
+  margin-top: 12px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.gallery-thumb {
+  width: 56px;
+  height: 56px;
+  border-radius: 8px;
+  overflow: hidden;
+  padding: 0;
+  border: 2px solid transparent;
+  background: var(--bg);
+  cursor: pointer;
+}
+
+.gallery-thumb img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.gallery-thumb:hover {
+  border-color: var(--brand-soft);
+}
+
+.gallery-thumb.active {
+  border-color: var(--brand);
 }
 
 /* ================= specs section ================= */
