@@ -257,6 +257,10 @@ function toCanvas(imgData) {
 
 async function main() {
   const { products } = JSON.parse(fs.readFileSync(PRODUCTS_JSON, 'utf8'));
+  // รุ่นที่มีรูปจริงจากเว็บ LG (lg-gallery.json) — ไม่ทับด้วยภาพสกรีนจาก PDF
+  const lgGallery = JSON.parse(fs.readFileSync(path.join(ROOT, 'src', 'data', 'lg-gallery.json'), 'utf8')).products;
+  const lgCodes = new Set(lgGallery.map((g) => g.code));
+  let skippedLg = 0;
   fs.mkdirSync(OUT_DIR, { recursive: true });
 
   const byFile = new Map();
@@ -317,6 +321,11 @@ async function main() {
         }
       }
       if (!canvas) continue;
+      if (lgCodes.has(c.p.code)) {
+        // มีรูปจริงจากเว็บ LG แล้ว → ข้าม ไม่ทับด้วยรูป PDF
+        skippedLg++;
+        continue;
+      }
       const out = path.join(OUT_DIR, `${c.p.slug}.jpg`);
       fs.writeFileSync(out, canvas.toBuffer('image/jpeg', { quality: 82 }));
       matched++;
@@ -330,7 +339,7 @@ async function main() {
     if (!withImg.has(p.slug)) noImg.push(`${p.code} (หน้า ${p.srcPage})`);
   }
 
-  console.log(`\n✅ บันทึกรูป ${matched} ใบ ลง public/img/products/`);
+  console.log(`\n✅ บันทึกรูป ${matched} ใบ ลง public/img/products/ (ข้าม ${skippedLg} รุ่นที่มีรูป LG แล้ว)`);
   console.log(`ยังไม่มีรูปใน PDF (${noImg.length}/${products.length}):`);
   for (const n of noImg) console.log('   -', n);
 }

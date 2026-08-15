@@ -10,6 +10,7 @@
     "specs": "node scripts/fetch-lg-specs.mjs",
     "pdfspecs": "node scripts/extract-pdf-specs.mjs",
     "gallery": "node scripts/fetch-lg-gallery.mjs",
+    "lgimages": "node scripts/download-all-lg-images.mjs",
     "banners": "node scripts/fetch-lg-banners.mjs",
     "bannertext": "node scripts/ocr-banners.mjs",
     "auditprices": "node scripts/audit-prices.mjs",

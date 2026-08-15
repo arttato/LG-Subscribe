@@ -37,14 +37,16 @@ npm run extract
 # 5. ดึงรูปสินค้าจาก PDF (รุ่นไหน PDF มีรูปให้ จะได้รูปคู่กัน)
 npm run images
 
-# 6. (แนะนำ) ดึงคุณสมบัติ/สเปค + รูปหลายมุมจากเว็บ LG Thailand ใส่หน้า detail
-npm run specs
-npm run pdfspecs     # สเปคย่อของรุ่นที่ LG ไม่มีหน้า (อ่านจากคอลัมน์รายการใน PDF)
-npm run gallery
+# 6. (แนะนำ) ใช้รูปสินค้าจริงจากเว็บ LG Thailand แทนภาพสกรีนจาก PDF (ทุก 92 รุ่น)
+npm run specs        # คุณสมบัติ/สเปคจาก lg.com/th (จำเป็นสำหรับขั้นตอนนี้)
+npm run gallery      # URL รูปหลายมุมจาก lg.com/th
+npm run lgimages     # ดาวน์โหลดรูปจริงลง public/img/products/ (ทับรูป PDF)
 
 # 7. build และ deploy
 npm run build        # ผลลัพธ์อยู่ในโฟลเดอร์ dist/
 ```
+
+> **รูปการ์ดสินค้า:** ตอนนี้ใช้รูปจริงจากเว็บ LG Thailand (`npm run lgimages` — ดาวน์โหลดจาก CDN ของ LG ให้ทุก 92 รุ่น) แทนภาพสกรีนจาก PDF `npm run images` จะ**ไม่ทับ**รุ่นที่มีรูปจาก LG แล้ว (มีใน `lg-gallery.json`) — ใช้รูป PDF เฉพาะรุ่นที่ LG ไม่มีหน้าเท่านั้น
 
 > รูปสินค้าถูกดึงจากรูปที่ฝังใน PDF (จับคู่ตามตำแหน่งบนหน้า) — ต้องรัน `npm run images` แล้ว commit ไฟล์ใน `public/img/products/` ด้วย ไม่งั้น CI จะ build โดยไม่มีรูป (รุ่นที่ PDF ไม่มีรูปจะแสดงแบบไม่มีการ์ดรูป)
 > สเปคมาจากเว็บ LG Thailand ต้องรัน `npm run specs` แล้ว commit `src/data/lg-specs.json` — สคริปต์จับคู่รุ่นกับหน้า lg.com/th อัตโนมัติจาก sitemap (รุ่นที่ LG ไทยไม่มีหน้า product จะไม่มีส่วนสเปคในหน้า detail)
