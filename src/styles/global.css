@@ -331,7 +331,19 @@ a {
   font-size: 1.02rem;
   color: rgba(255, 255, 255, 0.82);
   max-width: 540px;
-  margin: 0 0 26px;
+  margin: 0 0 22px;
+}
+
+.hero-note {
+  font-size: 0.78rem;
+  color: rgba(255, 255, 255, 0.55);
+  line-height: 1.65;
+  max-width: 540px;
+  margin: 0 0 24px;
+  padding: 9px 13px;
+  background: rgba(255, 255, 255, 0.05);
+  border-left: 3px solid rgba(255, 217, 227, 0.55);
+  border-radius: 0 8px 8px 0;
 }
 
 .hero-stats {
