@@ -1,0 +1,23 @@
+# dependencies / build
+node_modules/
+dist/
+.astro/
+
+# เครื่องมือ
+.freebuff/
+
+# ไฟล์ชั่วคราวจากสคริปต์
+scripts/dev.log
+scripts/debug-*.txt
+scripts/.last-products.json
+scripts/report.txt
+
+# PDF ที่เว็บแสดง — สร้างอัตโนมัติตอน build (จาก pdfs/)
+public/pdfs/
+
+# เอกสารที่ไม่ได้ใช้ในเว็บ (ไม่ใช่ใบราคาสินค้า)
+Care Service 2026.pdf
+
+# PDF สำเนาในโฟลเดอร์หลัก (ซ้ำกับ pdfs/ ที่ระบบใช้)
+/Price list_Aug_V3.pdf
+/Sale Price8 - Subscription_V3.pdf

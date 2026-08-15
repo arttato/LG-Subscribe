@@ -1,0 +1,104 @@
+---
+import '../../styles/global.css';
+import data from '../../data/products.json';
+import { slugify } from '../../lib/utils';
+
+export function getStaticPaths() {
+  return data.products.map((p) => ({ params: { code: p.slug }, props: { p } }));
+}
+
+const { p } = Astro.props;
+const fmt = (n) => (n == null ? '—' : n.toLocaleString('th-TH'));
+const modeLabel = (m) => (m === 'outright' ? 'บาท (ซื้อขาด)' : 'บาท/เดือน');
+const base = import.meta.env.BASE_URL;
+const pdfUrl = `${base}${p.pdf}`.replace(/\/{2,}/g, '/'); // base + '/pdfs/...' → ไม่ให้มี // ซ้อน
+const pdfPage = p.page ? `#page=${p.page}` : '';
+---
+
+<!doctype html>
+<html lang="th">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{p.name !== p.code ? `${p.name} — ` : ''}{p.code}</title>
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📦</text></svg>" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container site-header-inner">
+        <a class="brand" href={`${base}`}>
+          <span class="brand-mark">📦</span>
+          <span>
+            รายการสินค้า LG Subscribe
+            <small>จากเอกสารราคา ส.ค. 2569</small>
+          </span>
+        </a>
+      </div>
+    </header>
+
+    <main class="container detail">
+      <nav class="breadcrumb">
+        <a href={`${base}`}>หน้าหลัก</a>
+        <span> › </span>
+        <span>{p.category || 'อื่นๆ'}</span>
+        <span> › </span>
+        <span>{p.code}</span>
+      </nav>
+
+      <section class="detail-head">
+        <div class="detail-category">{p.category || 'อื่นๆ'}</div>
+        {p.name !== p.code && <h1 class="detail-name">{p.name}</h1>}
+        <div class="detail-code">รุ่น: {p.code}</div>
+        <div class="price-row">
+          <span class="price-amount">{fmt(p.price)}</span>
+          <span class="price-unit">{modeLabel(p.mode)}</span>
+          {p.priceNote && <span class="price-note">({p.priceNote})</span>}
+        </div>
+        <div class="detail-actions">
+          <a class="btn btn-primary" href={pdfUrl} target="_blank" rel="noopener">เปิด PDF ราคา ↗</a>
+          <a class="btn btn-ghost" href={`${pdfUrl}${pdfPage}`} target="_blank" rel="noopener">ไปที่หน้า {p.page} ใน PDF</a>
+        </div>
+      </section>
+
+      <div class="detail-cols">
+        <section class="panel">
+          <h2>รายละเอียดจากเอกสาร</h2>
+          {p.description ? <pre class="description">{p.description}</pre> : <p class="description">—</p>}
+        </section>
+
+        <section class="panel">
+          <h2>ราคาและนโยบาย ({p.policies.length})</h2>
+          {p.policies.length > 0 ? (
+            <table class="policies">
+              <thead>
+                <tr>
+                  <th>นโยบาย</th>
+                  <th>รอบบริการ</th>
+                  <th>ราคา/เดือน</th>
+                </tr>
+              </thead>
+              <tbody>
+                {p.policies.map((r) => (
+                  <tr>
+                    <td><span class="policy-tag">{r.policy}</span></td>
+                    <td>{r.term ? `ทุกๆ ${r.term} เดือน` : '—'}</td>
+                    <td>{fmt(r.price)}</td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          ) : (
+            <p class="description">ไม่พบแถวราคาในเอกสาร</p>
+          )}
+        </section>
+      </div>
+
+      <section class="panel" style="margin-top: 20px">
+        <h2>เอกสารต้นฉบับ</h2>
+        <iframe class="pdf-frame" src={pdfUrl} title={`PDF: ${p.source}`}></iframe>
+      </section>
+    </main>
+
+    <footer class="site-footer container">ข้อมูลอัตโนมัติจากไฟล์ PDF — กรุณาตรวจสอบกับเอกสารต้นฉบับก่อนใช้งานจริง</footer>
+  </body>
+</html>

@@ -1,0 +1,629 @@
+// สคริปต์ดึงข้อมูลสินค้าจากไฟล์ PDF ใบราคา → src/data/products.json + scripts/report.txt
+//
+// วิธีใช้:  วาง PDF ใหม่ลงในโฟลเดอร์ pdfs/ แล้วรัน  npm run extract
+//
+// หลักการอ่านตาราง: แต่ละรุ่นสินค้าอยู่ใน "แถบ" แถวหนึ่งของตาราง (บรรทัดที่ y ใกล้กัน)
+// รหัสสินค้า / แถว policy / ขนาด อาจสลับตำแหน่งกันภายในแถบได้ (หลายคอลัมน์)
+// จึงจัดกลุ่มบรรทัดด้วยระยะห่าง y แล้วค่อยหาความหมายในแต่ละกลุ่ม
+import fs from 'node:fs';
+import path from 'node:path';
+import { fileURLToPath } from 'node:url';
+import { PDFDocument } from 'pdf-lib';
+import { extractLines } from './lib/pdf-layout.mjs';
+
+const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
+const PDF_DIR = path.join(ROOT, 'pdfs');
+const PUBLIC_PDF_DIR = path.join(ROOT, 'public', 'pdfs');
+const OUT_JSON = path.join(ROOT, 'src', 'data', 'products.json');
+const META_JSON = path.join(ROOT, 'src', 'data', 'meta.json');
+const REPORT = path.join(ROOT, 'scripts', 'report.txt');
+const SNAPSHOT = path.join(ROOT, 'scripts', '.last-products.json');
+const DEBUG = process.argv.includes('--debug');
+
+const CLUSTER_GAP = 21; // pt — บรรทัดที่ห่างกันเกินนี้ถือว่าคนละรุ่น
+
+// ---------- ตัวช่วยภาษาไทย ----------
+// ภาษาไทยใน PDF ถูกตัดเป็นชิ้น (เช่น "น ้า", "รายกา ระยะเวลา") → รวมชิ้นที่อยู่ติดกันเข้าด้วยกัน
+const thaiJoin = (s) =>
+  s
+    .replace(/([\u0E00-\u0E7F])\s+(?=[\u0E00-\u0E7F])/g, '$1') // "น ้า" → "น้ำ"
+    // pdf.js สลับ ำ→า บางครั้ง ("เครื่องกรองน้า" → "เครื่องกรองน้ำ")
+    // แต่ "หน้า" ก็มี "น้า" ติดกัน (วรรณยุกต์ไปอยู่ผิดตัว) — ต้องไม่แตะตัวที่ตามหลัง ห
+    .replace(/(?<!ห)น้า/g, 'น้ำ');
+
+// ---------- regex ----------
+const DOT_CODE_RE = /[A-Z0-9]{1,12}(?:-[A-Z0-9]{1,8})?\.[A-Z0-9]{2,12}/;
+const PLAIN_CODE_RE = /(?<![A-Z0-9_])[A-Z]{2,4}\d{2,4}[A-Z]?\d*(?![A-Z0-9_])/; // เช่น WD516, SAQ11A (ไม่ใช่ "H13" เกรดฟิลเตอร์)
+const NUM_RE = /^[\d,]+(?:\.\d+)?$/;
+const POLICY_RE = /([2567])Y[\s_](Visit|Self)\b/g; // รองรับทั้ง "5Y_Visit" และ "5Y Visit"
+const POLICY_CODE_RE = /\b(?:VISIT|SELF|NOSERVICE|OUT)_[A-Z0-9_%().\-]{4,}\b/;
+const SCHEDULE_RE = /(\d+)\s*-\s*(\d+)\s*\(\s*([\d,]+(?:\.\d+)?)/;
+const RANGE_RE = /รอบบิลที่\s*(\d+)\s*(?:ถึง|-)\s*(\d+)\s*\(\s*([\d,]+(?:\.\d+)?)/g;
+const CAPACITY_RE = /^\d[\d.,]*\s*Btu\b/;
+
+// ---------- บรรทัดที่ไม่ใช่ข้อมูลสินค้า ----------
+function isNoise(line) {
+  if (!line) return true;
+  if (/^\[?\d{1,3}\]?$/.test(line)) return true; // เลขหน้าล้วน
+  if (/^Advance\s*Payment|^Policy\b|Policy\s*name/i.test(line)) return true;
+  if (/^Subscription\b/.test(line)) return true;
+  if (/^New\s*Model\b|^Control\s*Stock\b/.test(line)) return true;
+  if (/พื้นที่ติดตั้งเฉพำะ/.test(line)) return true;
+  if (/Free Premium Gift/i.test(line)) return true;
+  if (/^\*{2}/.test(line)) return true;
+  if (/2569/.test(line)) return true; // วันที่โปรโมชัน
+  const c = thaiJoin(line);
+  return (
+    /^ช[ำา]?ระล่วงหน้า/.test(c) || // ชำระล่วงหน้า / ชาระล่วงหน้า (อักษร ำ/า มักสลับกัน)
+    /^ราคาปกติ/.test(c) ||
+    /^ส[่]?วนลด/.test(c) || // ส่วนลด (บางครั้งวรรณยุกต์หลุด)
+    /^รายการ/.test(c) ||
+    /^แบบการขาย/.test(c) ||
+    /^สัญญา/.test(c) ||
+    /^รอบบริการ/.test(c) ||
+    /^ราคาต่อเดือน/.test(c) ||
+    /^ราคาโปร/.test(c) ||
+    /^โปรโมชัน/.test(c) ||
+    /^เงื่อนไข/.test(c) ||
+    /^รุ่น\b/.test(c) ||
+    /^หมายเหตุ/.test(c)
+  );
+}
+
+// บรรทัดที่เป็นหัวหมวดหมู่ (ต้องเป็นบรรทัดแรกๆ ของหน้า)
+function isCategory(line) {
+  if (isNoise(line)) return false;
+  if (line.length < 2 || line.length > 60) return false;
+  if (/^\d/.test(line)) return false;
+  if (/^SAC\b/i.test(line)) return true; // SAC(4Way Cassette Type)...
+  if (/^OBS\b/i.test(line)) return true;
+  if (/\d/.test(line)) return false; // หัวหมวดหมู่ปกติไม่มีตัวเลข
+  if (/[\u0E00-\u0E7F]/.test(line)) return true;
+  return /^(Wash\s*Tower|Sound\s*bar|Life\s*Style\s*TV|COMBO)/i.test(line);
+}
+
+function cleanCategory(line) {
+  return thaiJoin(line)
+    .replace(/\s*New\s*Model\)?/gi, '')
+    .replace(/เครื่องอบผ้าเครื่องซักผ้า/g, 'เครื่องอบผ้า/เครื่องซักผ้า')
+    .replace(/\s+-\s+/g, '-')
+    .replace(/\s+/g, ' ')
+    .replace(/^([\u0E00-\u0E7F]{2,20})\1$/, '$1') // "เครื่องซักผ้าเครื่องซักผ้า" → "เครื่องซักผ้า"
+    .replace(/MULTI-DOOR/g, 'Multi-Door')
+    .replace(/SIDE-BY-SIDE/g, 'Side-by-Side')
+    .replace(/^SOUND\s*BAR$/i, 'Sound bar')
+    .replace(/[()]$/, '')
+    .trim();
+}
+
+// รหัสสินค้าที่เป็น "หัวบล็อก" (ขึ้นต้นบรรทัด) เช่น "GC-X257CMHW.AEEPLMT", "WD516 หรือ WD518"
+function leadingCode(line) {
+  const codes = findEligibleCodes(line);
+  return codes.length > 0 && line.startsWith(codes[0]) ? codes[0] : null;
+}
+
+// หารหัสสินค้าในบรรทัด — ตัวที่ "มีสิทธิ์" เป็นรหัสหลัก
+function findEligibleCodes(line) {
+  const codes = [];
+  const dotMatches = [...line.matchAll(new RegExp(DOT_CODE_RE.source, 'g'))];
+  const plainMatches = [...line.matchAll(new RegExp(PLAIN_CODE_RE.source, 'g'))];
+  const plainOnly = plainMatches.filter((m) => !dotMatches.some((d) => d.index === m.index));
+  for (const m of [...dotMatches, ...plainOnly].sort((a, b) => a.index - b.index)) {
+    const code = m[0];
+    const before = line[m.index - 1] || '';
+    const after = line[m.index + code.length] || '';
+    if (before === '+' || before === '(' || before === '!') continue; // สมาชิกชุดโปรโมชัน/ของแถม
+    if (after === ':') continue; // เช่น "WD516 : น้ำเงิน"
+    if (after === '%' || after === '(') continue; // เช่น "DC50%(8M)" ไม่ใช่รุ่น
+    if (/^PTO/.test(code)) continue; // รหัสชุด/แพ็กเกจ (PTODFC..., PTOL24...)
+    if (/^\d+\.[\d]{2,4}$/.test(code)) continue; // "11.942" = ความจุ Btu ไม่ใช่รุ่น
+    codes.push(code);
+  }
+  return codes;
+}
+
+// ราคา "1,249" → 1249, "1.149" → 1149
+function toNumber(s) {
+  if (!s) return null;
+  let t = s.replace(/,/g, '');
+  if (/^\d{1,3}\.\d{3}$/.test(t)) t = t.replace('.', '');
+  const n = Number(t);
+  return Number.isFinite(n) ? n : null;
+}
+
+// หาตำแหน่ง policy ใน tokens (รองรับทั้ง "5Y_Visit" และ "5Y Visit" ที่แยกเป็น 2 คำ)
+function findPolicyIndex(tokens, policyToken) {
+  const parts = policyToken.split(/\s+/);
+  for (let i = 0; i <= tokens.length - parts.length; i++) {
+    if (tokens.slice(i, i + parts.length).join(' ') === parts.join(' ')) return i;
+  }
+  return -1;
+}
+
+// แยกแถว policy ออกจากทั้งหน้า (คืนค่าแถวพร้อมตำแหน่ง y เพื่อจับคู่กับรหัสสินค้า)
+function parsePolicies(items) {
+  const lines = items.map((i) => i.text);
+  const out = [];
+  const clusterText = lines.join(' ');
+
+  for (let li = 0; li < lines.length; li++) {
+    for (const m of lines[li].matchAll(POLICY_RE)) {
+      const row = parsePolicyRow(lines, li, m[0], false);
+      if (row && row.price != null) out.push({ ...row, y: items[li].y });
+    }
+  }
+  // รูปแบบ No Service: "5Y No Service", "5Y No", หรือ "5Y" ลอยเดี่ยว (หน้า TV/ซาวด์บาร์)
+  for (let li = 0; li < lines.length; li++) {
+    for (const m of lines[li].matchAll(/([2567])Y\s+No\s+Service\b/g)) {
+      const row = parsePolicyRow(lines, li, m[0], true, clusterText);
+      if (row && row.price != null) out.push({ ...row, y: items[li].y });
+    }
+    for (const m of lines[li].matchAll(/([2567])Y\s+No\b/g)) {
+      const row = parsePolicyRow(lines, li, m[0], true, clusterText);
+      if (row && row.price != null) out.push({ ...row, y: items[li].y });
+    }
+  }
+  // "5Y" / "6Y" ลอยเดี่ยว + มี Advance payment ในหน้า → นโยบาย No Service
+  // (ไม่ตัดแถวที่ policy ซ้ำกัน — แต่ละรุ่นมี "5Y" ของตัวเอง)
+  if (/Advance\s+payment/i.test(clusterText)) {
+    for (let li = 0; li < lines.length; li++) {
+      for (const m of lines[li].matchAll(/\b([2567])Y\b(?!\s*(?:Visit|Self)|\s+No|_)/g)) {
+        const row = parsePolicyRow(lines, li, m[0], true, clusterText);
+        if (row && row.price != null) out.push({ ...row, y: items[li].y });
+      }
+    }
+  }
+  // dedupe แถวซ้ำในหน้า (เช่น รุ่นเดียวกันถูกกล่าวถึงหลายที่)
+  const seen = new Set();
+  return out.filter((r) => {
+    const k = `${r.policy}|${r.price}|${Math.round(r.y / 5)}`;
+    if (seen.has(k)) return false;
+    seen.add(k);
+    return true;
+  });
+}
+
+// ตัวเลขที่ "พอเป็นราคา" (ข้ามเลขตารางงวดที่เล็กๆ เช่น 1, 2, 8, 60)
+const PRICE_MIN = 100; // ราคาต่ำสุดในเอกสาร ≈ 89 (ไมโครเวฟ) — เลขงวด/จำนวนเดือนจะต่ำกว่านี้มาก
+
+function priceNumbers(tokens, from) {
+  const nums = [];
+  for (let j = from; j < tokens.length && nums.length < 4; j++) {
+    if (NUM_RE.test(tokens[j])) {
+      const n = toNumber(tokens[j]);
+      if (n != null && n >= PRICE_MIN) nums.push(n);
+    }
+  }
+  return nums;
+}
+
+function parsePolicyRow(lines, lineIndex, policyToken, noService, clusterText) {
+  const sameLine = lines[lineIndex];
+  const tokens = sameLine.split(/\s+/);
+  const i = findPolicyIndex(tokens, policyToken);
+  if (i === -1) return null;
+
+  let term = null;
+  let price = null;
+
+  if (noService) {
+    // ราคาต่อเดือน = เงินงวดแรกในตาราง × 2 (จ่ายล่วงหน้า 50% 12 งวด)
+    // ค้นในบรรทัดใกล้เคียง (ไม่ใช่ทั้งหน้า เพราะแต่ละรุ่นมีตารางงวดของตัวเอง)
+    const local = lines.slice(lineIndex, lineIndex + 6).join(' ');
+    const m = local.match(SCHEDULE_RE);
+    if (m) {
+      const first = toNumber(m[3]);
+      if (first != null) price = Math.round(first * 2);
+    }
+    if (price == null) {
+      // ไม่มีตารางงวด → ตัวเลขแรกที่ตามหลัง policy (เช่น "6Y No Service 89")
+      const nums = tokens.slice(i + 1).map(toNumber).filter((n) => n != null);
+      if (nums.length >= 1) price = nums[0];
+    }
+  } else {
+    let j = i + 1;
+    while (j < tokens.length && !NUM_RE.test(tokens[j])) j++;
+    if (j < tokens.length) term = toNumber(tokens[j]);
+    const same = priceNumbers(tokens, j + 1);
+    if (/^2Y/.test(policyToken)) {
+      // ซื้อขาด: ใช้ราคาเต็ม (เช่น 37,900 — ไม่เอาเลขส่วนลด 3,790)
+      if (same.length >= 1) price = same[0];
+    } else {
+      const cands = [...same];
+      // ราคาต่อเดือนจริงบางทีอยู่บรรทัดถัดไป (หรือเป็นค่าที่น้อยกว่าในบรรทัดเดียวกัน)
+      // มองหาตัวเลข ≥ 3 หลักตัวแรกของบรรทัดถัดไป โดยข้ามเลขที่อยู่ในวงเล็บ (ตารางงวด)
+      const nextLine = lines[lineIndex + 1] || '';
+      const m = nextLine.match(/(?<![(\d])[\d,]{3,}(?:\.\d+)?\b/);
+      if (m) cands.push(toNumber(m[0]));
+      const valid = cands.filter((n) => n != null && n >= PRICE_MIN);
+      if (valid.length >= 1) price = Math.min(...valid);
+    }
+    if (price != null && price >= PRICE_MIN) {
+      // ใช้ราคาจากตารางงวด ("รอบบิลที่ X-Y (ราคา)") แทน เพราะเป็นราคาต่อเดือนจริงเสมอ
+      // (ราคาโปรรวม/ราคาโปรโมชันในคอลัมน์ข้างๆ อาจน้อยหรือมากกว่าราคาจริงก็ได้)
+      const window = lines.slice(lineIndex, lineIndex + 8).join(' ');
+      const ranges = [...window.matchAll(RANGE_RE)];
+      if (ranges.length > 0) {
+        // ราคาต่อเดือนจริง = งวดที่สิ้นสุดไกลสุด (9-60/13-72) และจำนวนมากที่สุด
+        const best = ranges.reduce((a, b) =>
+          +b[2] > +a[2] || (+b[2] === +a[2] && toNumber(b[3]) > toNumber(a[3])) ? b : a
+        );
+        price = toNumber(best[3]);
+      }
+    }
+  }
+
+  const codeM = sameLine.match(POLICY_CODE_RE);
+  return {
+    policy: policyToken,
+    term,
+    price,
+    promoCode: codeM ? codeM[0] : null,
+  };
+}
+
+// ---------- แยกหน้าเป็นสินค้า ----------
+// หลักการ: ดึง "รหัสสินค้า" และ "แถวราคา" ออกจากกันทั้งหน้า แล้วจับคู่กันด้วยระยะ y ที่ใกล้ที่สุด
+// เพราะตารางใน PDF มีหลายคอลัมน์ รหัสกับราคาอาจอยู่คนละตำแหน่ง/คนละบรรทัด
+function parsePage(pageNo, rawLines, inheritedCategory) {
+  const items = [];
+  for (const { y, text } of rawLines) {
+    const line = text.trim();
+    if (!line) continue;
+    if (isNoise(line)) continue;
+    items.push({ y, text: line });
+  }
+  if (items.length === 0) return { category: null, products: [] };
+
+  // หาหมวดหมู่: ไล่จากบนลงล่าง หยุดเมื่อเจอเนื้อหาสินค้า
+  let category = inheritedCategory || null;
+  for (const { text: line } of items) {
+    const contentStart =
+      /[2567]Y[\s_](Visit|Self)|[2567]Y\s+No/.test(line) ||
+      leadingCode(line) ||
+      /^รอบบิลที่|^•/.test(line);
+    if (contentStart) break;
+    const merged = line.match(/^(.+?)\s*ช[ำา]?ระล่วงหน้า|^(.+?)\s*(?:Advance\s*Payment)/i);
+    if (merged) {
+      const cat = (merged[1] || merged[2] || '').trim();
+      if (cat) {
+        category = cleanCategory(cat);
+        break;
+      }
+    }
+    if (isCategory(line)) {
+      category = cleanCategory(line);
+      break;
+    }
+  }
+
+  // 1) รหัสสินค้าที่ "มีสิทธิ์" เป็นสินค้าจริง: ขึ้นต้นบรรทัด หรือ อยู่หลังความจุ ("9,200 Btu SAQ11A")
+  //    บรรทัด "WD516 หรือ WD518" = 2 รุ่นที่ใช้ราคาชุดเดียวกัน
+  const anchors = [];
+  const seen = new Set();
+  for (const { y, text: line } of items) {
+    // บรรทัดต่อของชื่อชุด (เช่น "(DFC533FV.APYPETH+" / "MS2032GAS.BBKPETH)") — ไม่ใช่รุ่นจริง
+    if (/^\(/.test(line)) continue;
+    const lc = leadingCode(line);
+    if (lc && line.slice(lc.length).trim() === ')') continue;
+    let codes;
+    if (CAPACITY_RE.test(line)) {
+      // "9,200 Btu SAQ11A 5Y_Visit ..." — รหัสอยู่หลังความจุ ตัดส่วน Btu ออกก่อนหา
+      codes = findEligibleCodes(line.replace(/^\d[\d.,]*\s*Btu\b/, ''));
+    } else if (/หรือ/.test(line)) {
+      codes = findEligibleCodes(line); // "WD516 หรือ WD518" = หลายรุ่นในบรรทัดเดียว
+    } else if (leadingCode(line)) {
+      codes = [leadingCode(line)];
+    } else {
+      codes = [];
+    }
+    for (const code of codes) {
+      if (seen.has(code)) continue;
+      seen.add(code);
+      anchors.push({ code, y, line });
+    }
+  }
+
+  // 2) แถวราคาทั้งหน้า (พร้อมตำแหน่ง y)
+  const rows = parsePolicies(items);
+
+  // 3) จับคู่แถวราคากับรหัสที่อยู่ใกล้ที่สุด (ภายใน 200pt)
+  const byCode = new Map();
+  for (const r of rows) {
+    let best = null;
+    let bestD = 201;
+    for (const a of anchors) {
+      const d = Math.abs(r.y - a.y);
+      if (d < bestD) {
+        bestD = d;
+        best = a;
+      }
+    }
+    if (best) {
+      if (!byCode.has(best.code)) byCode.set(best.code, []);
+      byCode.get(best.code).push(r);
+    }
+  }
+
+  // 4) รุ่น "X หรือ Y" ใช้ราคาร่วมกัน → แชร์แถวราคาให้ครบทุกตัว
+  for (let i = 0; i < anchors.length; i++) {
+    for (let j = i + 1; j < anchors.length; j++) {
+      if (anchors[i].y === anchors[j].y && /หรือ/.test(anchors[i].line)) {
+        const merged = [...(byCode.get(anchors[i].code) || []), ...(byCode.get(anchors[j].code) || [])];
+        byCode.set(anchors[i].code, merged);
+        byCode.set(anchors[j].code, merged);
+      }
+    }
+  }
+
+  // 5) กลุ่มบรรทัดรอบรหัส ใช้หาชื่อ/คำอธิบาย
+  const clusters = [];
+  let current = null;
+  for (const { y, text: line } of items) {
+    if (!current || y - current.yLast > CLUSTER_GAP) {
+      if (current) clusters.push(current);
+      current = { yLast: y, lines: [line] };
+    } else {
+      current.yLast = y;
+      current.lines.push(line);
+    }
+  }
+  if (current) clusters.push(current);
+  const clusterAt = (y) => clusters.find((c) => y >= c.yLast - CLUSTER_GAP && y <= c.yLast + 2 * CLUSTER_GAP);
+
+  const products = anchors.map((a) => {
+    const cluster = clusterAt(a.y);
+    const lines = cluster ? cluster.lines : [a.line];
+    return { category, page: pageNo, code: a.code, y: a.y, lines, rows: byCode.get(a.code) || [] };
+  });
+  return { category, products };
+}
+
+// ---------- สร้างข้อมูลสินค้าจากกลุ่มบรรทัด ----------
+const NAME_KEYWORDS = /(Tower|InstaView|AeroHit|AeroCat|AeroMini|Freezer|Door|Compressor|Plumbing|Water Filter|xboom|Grab|Bounce|STAGE|Sound bar|Soundbar|UltraGear|StanbyME|OLED|QNED|DUAL|ARTCOOL|DUALCOOL|Monitor|Washer|Dryer|Combo)/i;
+const NAME_STOP = /^(รอบบิลที่|•|ราคา|ลด\b|SIZE|สี\b|ขนาด|ประหยัด|SEER|Phase|Subscription|Disc|Promotion|รับประกัน|LG\s+Subscribe|Combo\s+Promotion)/;
+
+function pickName(lines) {
+  for (const line of lines) {
+    const l = line.trim();
+    if (!l || NAME_STOP.test(l)) continue;
+    if (findEligibleCodes(l).length > 0) continue; // ข้ามบรรทัดรหัสสินค้า
+    if (/^\(/.test(l) && l.length < 80) return thaiJoin(l).replace(/^\(|\)$/g, '').trim();
+  }
+  for (const line of lines) {
+    const l = line.trim();
+    if (!l || NAME_STOP.test(l)) continue;
+    if (findEligibleCodes(l).length > 0) continue;
+    if (NAME_KEYWORDS.test(l) && l.length < 80) return thaiJoin(l);
+  }
+  for (const line of lines) {
+    const l = line.trim();
+    if (!l || NAME_STOP.test(l)) continue;
+    if (findEligibleCodes(l).length > 0) continue;
+    if (/[\u0E00-\u0E7F]/.test(l) && l.length < 60) return thaiJoin(l);
+  }
+  return '';
+}
+
+function slugify(s) {
+  return (s || '').toLowerCase().replace(/[^a-z0-9\u0E00-\u0E7F]+/g, '-').replace(/^-+|-+$/g, '') || 'product';
+}
+
+function buildBlock(model, pdfFile) {
+  const { lines, rows } = model;
+  const policies = [...rows];
+  const monthly = policies.filter((p) => !/^2Y/.test(p.policy));
+  const outright = policies.filter((p) => /^2Y/.test(p.policy));
+  const mode = monthly.length > 0 ? 'monthly' : outright.length > 0 ? 'outright' : policies.length > 0 ? 'noservice' : 'none';
+
+  let best = null;
+  for (const p of policies) {
+    if (p.price == null) continue;
+    if (!best || p.price < best.price) best = p;
+  }
+
+  const name = pickName(lines);
+  const description = lines
+    .filter((l) => !/^•/.test(l) && !/^รอบบิลที่/.test(l))
+    .map((l) => thaiJoin(l))
+    .join('\n')
+    .trim()
+    .slice(0, 2000);
+
+  const cleanPolicies = policies.map(({ policy, term, price, promoCode }) => ({ policy, term, price, promoCode }));
+  return {
+    code: model.code,
+    slug: slugify(model.code || name),
+    category: model.category || null,
+    name: name || model.code,
+    source: pdfFile,
+    page: model.page,
+    pdf: `/pdfs/${encodeURIComponent(pdfFile)}`,
+    mode,
+    price: best ? best.price : null,
+    priceFrom: best ? best.policy : null,
+    policies: cleanPolicies,
+    description,
+  };
+}
+
+// ---------- ตัด PDF เหลือเฉพาะหน้าสินค้า ----------
+// เอกสารราคามีหน้าปก/หน้าโปรโมชัน/เงื่อนไขท้ายเล่มที่ไม่ใช่ข้อมูลสินค้า
+// → สร้าง PDF ฉบับย่อเฉพาะหน้าที่มีสินค้า ไปไว้ public/pdfs/ แล้ว remap หมายเลขหน้า
+async function writeTrimmedPdf(file, pageNumbers) {
+  if (pageNumbers.length === 0) return null;
+  const first = Math.min(...pageNumbers);
+  const last = Math.max(...pageNumbers);
+  const src = fs.readFileSync(path.join(PDF_DIR, file));
+  const doc = await PDFDocument.load(src, { ignoreEncryption: true });
+  const trimmed = await PDFDocument.create();
+  const pages = await trimmed.copyPages(doc, Array.from({ length: last - first + 1 }, (_, i) => first - 1 + i));
+  for (const pg of pages) trimmed.addPage(pg);
+  const out = path.join(PUBLIC_PDF_DIR, file);
+  fs.writeFileSync(out, await trimmed.save());
+  return { offset: first - 1, total: trimmed.getPageCount() };
+}
+
+// ---------- diff report ----------
+function diffReport(products, previous) {
+  const cur = new Map(products.map((p) => [p.code, p.price]));
+  const lines = [];
+  lines.push(`อัปเดตเมื่อ: ${new Date().toISOString().slice(0, 16).replace('T', ' ')}`);
+  lines.push(`สินค้าทั้งหมด: ${products.length} รายการ`);
+  lines.push('');
+
+  if (previous) {
+    const prev = new Map(Object.entries(previous));
+    const added = [...cur.entries()].filter(([c]) => !prev.has(c));
+    const removed = [...prev.entries()].filter(([c]) => !cur.has(c));
+    const changed = [...cur.entries()].filter(([c, p]) => prev.has(c) && prev.get(c) !== p);
+    lines.push(`สินค้าใหม่ (+${added.length}):`);
+    for (const [c, p] of added) lines.push(`   + ${c}  ${p == null ? '?' : p.toLocaleString()}`);
+    lines.push('');
+    lines.push(`ราคาเปลี่ยน (~${changed.length}):`);
+    for (const [c, p] of changed) lines.push(`   ~ ${c}  ${prev.get(c)?.toLocaleString()} → ${p == null ? '?' : p.toLocaleString()}`);
+    lines.push('');
+    lines.push(`สินค้าหาย (-${removed.length}):`);
+    for (const [c] of removed) lines.push(`   - ${c}`);
+    lines.push('');
+  } else {
+    lines.push('(run ครั้งแรก — ไม่มีข้อมูลเดิมให้เทียบ)');
+    lines.push('');
+  }
+
+  const noPrice = products.filter((p) => p.price == null);
+  lines.push(`⚠️ ยังไม่มีราคา (${noPrice.length}):`);
+  for (const p of noPrice) lines.push(`   ? ${p.code || p.name} (หน้า ${p.page}, ${p.source})`);
+  lines.push('');
+  return lines.join('\n');
+}
+
+// ---------- main ----------
+async function main() {
+  if (!fs.existsSync(PDF_DIR)) fs.mkdirSync(PDF_DIR, { recursive: true });
+  const pdfFiles = fs.readdirSync(PDF_DIR).filter((f) => f.toLowerCase().endsWith('.pdf')).sort();
+  if (pdfFiles.length === 0) {
+    console.error('ไม่พบไฟล์ PDF ในโฟลเดอร์ pdfs/ — กรุณาวางไฟล์ PDF ลงในโฟลเดอร์ pdfs/ ก่อน');
+    process.exit(1);
+  }
+
+  const allProducts = [];
+  const sources = [];
+  for (const file of pdfFiles) {
+    const pages = await extractLines(path.join(PDF_DIR, file));
+    let lastCat = null;
+    const pageProducts = [];
+    for (const p of pages) {
+      const parsed = parsePage(p.page, p.lines, lastCat);
+      if (parsed.products.length === 0) continue; // ข้ามหน้าปก/หน้าโปรโมชันรวม
+      if (parsed.category) lastCat = parsed.category;
+      pageProducts.push(...parsed.products);
+    }
+    const products = pageProducts.map((m) => buildBlock(m, file));
+    allProducts.push(...products);
+
+    // ตัด PDF เหลือเฉพาะหน้าที่มีสินค้า (หน้าแรก→หน้าสุดท้ายที่มีสินค้า) แล้ว remap หมายเลขหน้า
+    const trim = await writeTrimmedPdf(file, [...new Set(pageProducts.map((m) => m.page))]);
+    if (trim) {
+      for (const p of products) p.page = p.page - trim.offset;
+      sources.push({ file, pages: pages.length, keptPages: trim.total, products: products.length });
+      console.log(
+        `✓ ${file}: ${pages.length} หน้า → เหลือ ${trim.total} หน้า (เฉพาะหน้าสินค้า), เจอสินค้า ${products.length} รายการ`
+      );
+    } else {
+      sources.push({ file, pages: pages.length, products: products.length });
+      console.log(`✓ ${file}: ${pages.length} หน้า, เจอสินค้า ${products.length} รายการ`);
+    }
+    if (DEBUG) {
+      fs.writeFileSync(
+        path.join(ROOT, 'scripts', `debug-${file.replace(/\.pdf$/, '')}.txt`),
+        pages.map((p) => `===== หน้า ${p.page} =====\n` + p.lines.map((l) => `[${l.y}] ${l.text}`).join('\n')).join('\n')
+      );
+    }
+  }
+
+  // dedupe ด้วยรหัสสินค้า (เก็บตัวที่มีแถว policy ครบที่สุด)
+  const byCode = new Map();
+  for (const p of allProducts) {
+    const existing = byCode.get(p.code);
+    if (existing) {
+      if (p.policies.length > existing.policies.length) {
+        console.warn(`⚠️ รหัสซ้ำ: ${p.code} — เก็บเวอร์ชันหน้า ${p.page} (${p.policies.length} policy) แทนหน้า ${existing.page}`);
+        byCode.set(p.code, p);
+      }
+      continue;
+    }
+    byCode.set(p.code, p);
+  }
+  const products = [...byCode.values()];
+
+  // ชื่อไทย/หมวดหมู่ที่กรอกเองใน meta.json (คีย์ = รุ่นก่อนจุด เช่น "WD516AN" หรือโค้ดเต็ม)
+  // คีย์ที่ขึ้นต้น _ (คำอธิบาย/ตัวอย่าง) ถูกข้าม
+  let meta = {};
+  if (fs.existsSync(META_JSON)) {
+    try {
+      const raw = JSON.parse(fs.readFileSync(META_JSON, 'utf8'));
+      meta = Object.fromEntries(Object.entries(raw).filter(([k]) => !k.startsWith('_')));
+    } catch (e) {
+      console.warn('⚠️ meta.json อ่านไม่ได้:', e.message);
+    }
+  }
+
+  // รุ่นสี variants ไม่มีแถวราคาของตัวเอง (เช่น WD516AN.AEWPLMT) → ใช้ราคาต่ำสุดของครอบครัวเดียวกัน
+  const familyOf = (c) => (c || '').split('.')[0];
+  const famPrice = new Map();
+  for (const p of products) {
+    const f = familyOf(p.code);
+    if (p.price != null && (!famPrice.has(f) || p.price < famPrice.get(f))) famPrice.set(f, p.price);
+  }
+  for (const p of products) {
+    if (p.price == null && famPrice.has(familyOf(p.code))) {
+      p.price = famPrice.get(familyOf(p.code));
+      p.priceNote = 'ราคารุ่นเดียวกัน';
+    }
+    const m = meta[p.code] || meta[familyOf(p.code)];
+    if (m) {
+      if (m.name) p.name = m.name;
+      if (m.category) p.category = m.category;
+    }
+  }
+
+  products.sort(
+    (a, b) =>
+      (a.category || '').localeCompare(b.category || '', 'th') ||
+      a.code.localeCompare(b.code, 'en') ||
+      0
+  );
+
+  fs.mkdirSync(PUBLIC_PDF_DIR, { recursive: true });
+
+  const data = {
+    generatedAt: new Date().toISOString(),
+    sources,
+    products,
+  };
+  fs.mkdirSync(path.dirname(OUT_JSON), { recursive: true });
+  fs.writeFileSync(OUT_JSON, JSON.stringify(data, null, 2));
+
+  // diff report
+  let previous = null;
+  if (fs.existsSync(SNAPSHOT)) {
+    try { previous = JSON.parse(fs.readFileSync(SNAPSHOT, 'utf8')); } catch { /* ignore */ }
+  }
+  const report = diffReport(products, previous);
+  fs.writeFileSync(REPORT, report);
+  fs.writeFileSync(SNAPSHOT, JSON.stringify(Object.fromEntries(products.map((p) => [p.code || `slug:${p.slug}`, p.price])), null, 2));
+
+  console.log('');
+  console.log(report);
+  console.log(`\nเขียนข้อมูลไปที่: ${path.relative(ROOT, OUT_JSON)}`);
+}
+
+if (process.argv[1] && path.resolve(process.argv[1]) === fileURLToPath(import.meta.url)) {
+  main().catch((e) => {
+    console.error(e);
+    process.exit(1);
+  });
+}
+
+export { parsePage, buildBlock, parsePolicies, parsePolicyRow, isNoise, isCategory, cleanCategory, toNumber, thaiJoin, findEligibleCodes, leadingCode };

@@ -1,0 +1,2592 @@
+{
+  "generatedAt": "2026-08-15T03:31:40.345Z",
+  "sources": [
+    {
+      "file": "Price list_Aug_V3.pdf",
+      "pages": 60,
+      "keptPages": 49,
+      "products": 86
+    },
+    {
+      "file": "Sale Price8 - Subscription_V3.pdf",
+      "pages": 9,
+      "keptPages": 8,
+      "products": 14
+    }
+  ],
+  "products": [
+    {
+      "code": "WD110MN.ABGPLMT",
+      "slug": "wd110mn-abgplmt",
+      "category": "เครื่องกรองน้ำ",
+      "name": "WD110MN.ABGPLMT",
+      "source": "Price list_Aug_V3.pdf",
+      "page": 2,
+      "pdf": "/pdfs/Price%20list_Aug_V3.pdf",
+      "mode": "monthly",
+      "price": 399,
+      "priceFrom": "7Y_Self",
+      "policies": [
+        {
+          "policy": "5Y_Visit",
+          "term": 6,
+          "price": 549,
+          "promoCode": "VISIT_5Y_6M_PRO_149(1M)_DC50%(11M"
+        },
+        {
+          "policy": "5Y_Self",
+          "term": 6,
+          "price": 449,
+          "promoCode": "SELF_5Y_6M_PRO_149(1M)_DC50%(11M"
+        },
+        {
+          "policy": "7Y_Visit",
+          "term": 6,
+          "price": 449,
+          "promoCode": "VISIT_7Y_6M_PRO_149(1M)_DC50%(11M"
+        },
+        {
+          "policy": "7Y_Self",
+          "term": 6,
+          "price": 399,
+          "promoCode": "SELF_7Y_6M_PRO_149(1M)_DC50%(11M"
+        }
+      ],
+      "description": "WD110MN.ABGPLMT"
+    },
+    {
+      "code": "WD516",
+      "slug": "wd516",
+      "category": "เครื่องกรองน้ำ",
+      "name": "เครื่องกรองน้ำ LG WD516",
+      "source": "Price list_Aug_V3.pdf",
+      "page": 1,
+      "pdf": "/pdfs/Price%20list_Aug_V3.pdf",
+      "mode": "outright",
+      "price": 34900,
+      "priceFrom": "2Y_Self",
+      "policies": [
+        {
+          "policy": "2Y_Visit",
+          "term": 6,
+          "price": 37900,
+          "promoCode": "OUT_VISIT_2Y_DC10%_2026"
+        },
+        {
+          "policy": "2Y_Self",
+          "term": 6,
+          "price": 34900,
+          "promoCode": "OUT_SELF_2Y_DC10%_2026"
+        }
+      ],
+      "description": "WD516 หรือ WD518"
+    },
+    {
+      "code": "WD516AN.ACNPLMT",
+      "slug": "wd516an-acnplmt",
+      "category": "เครื่องกรองน้ำ",
+      "name": "เครื่องกรองน้ำ LG WD516AN",
+      "source": "Price list_Aug_V3.pdf",
+      "page": 2,
+      "pdf": "/pdfs/Price%20list_Aug_V3.pdf",
+      "mode": "monthly",
+      "price": 799,
+      "priceFrom": "5Y_Visit",
+      "policies": [
+        {
+          "policy": "5Y_Visit",
+          "term": 6,
+          "price": 799,
+          "promoCode": "VISIT_5Y_6M_PRO_149(1M)_DC50%(11M"
+        }
+      ],
+      "description": "WD516AN.ACNPLMT (น้ำเงิน)"
+    },
+    {
+      "code": "WD516AN.AEWPLMT",
+      "slug": "wd516an-aewplmt",
+      "category": "เครื่องกรองน้ำ",
+      "name": "เครื่องกรองน้ำ LG WD516AN",
+      "source": "Price list_Aug_V3.pdf",
+      "page": 2,
+      "pdf": "/pdfs/Price%20list_Aug_V3.pdf",
+      "mode": "none",
+      "price": 599,
+      "priceFrom": null,
+      "policies": [],
+      "description": "WD516AN.AEWPLMT (ขาว) ลด 50% 11 เดือน (รอบบิลที่ 2-12) รอบบิลที่ 1 (149)",
+      "priceNote": "ราคารุ่นเดียวกัน"
+    },
+    {
+      "code": "WD516AN.ASLPLMT",
+      "slug": "wd516an-aslplmt",
+      "category": "เครื่องกรองน้ำ",
+      "name": "เครื่องกรองน้ำ LG WD516AN",
+      "source": "Price list_Aug_V3.pdf",
+      "page": 2,
+      "pdf": "/pdfs/Price%20list_Aug_V3.pdf",
+      "mode": "monthly",
+      "price": 599,
+      "priceFrom": "5Y_Self",
+      "policies": [
+        {
+          "policy": "5Y_Self",
+          "term": 6,
+          "price": 599,
+          "promoCode": "SELF_5Y_6M_PRO_149(1M)_DC50%(11M"
+        }
+      ],
+      "description": "WD516AN.ASLPLMT (เงิน)"
+    },
+    {
+      "code": "WD518",
+      "slug": "wd518",
+      "category": "เครื่องกรองน้ำ",
+      "name": "เครื่องกรองน้ำ LG WD518",
+      "source": "Price list_Aug_V3.pdf",
+      "page": 1,
+      "pdf": "/pdfs/Price%20list_Aug_V3.pdf",
+      "mode": "outright",
+      "price": 34900,
+      "priceFrom": "2Y_Self",
+      "policies": [
+        {
+          "policy": "2Y_Visit",
+          "term": 6,
+          "price": 37900,
+          "promoCode": "OUT_VISIT_2Y_DC10%_2026"
+        },
+        {
+          "policy": "2Y_Self",
+          "term": 6,
+          "price": 34900,
+          "promoCode": "OUT_SELF_2Y_DC10%_2026"
+        }
+      ],
+      "description": "WD516 หรือ WD518"
+    },
+    {
+      "code": "WD518AN.ABGPLMT",
+      "slug": "wd518an-abgplmt",
+      "category": "เครื่องกรองน้ำ",
+      "name": "เครื่องกรองน้ำ LG WD518AN",
+      "source": "Price list_Aug_V3.pdf",
+      "page": 2,
+      "pdf": "/pdfs/Price%20list_Aug_V3.pdf",
+      "mode": "none",
+      "price": 499,
+      "priceFrom": null,
+      "policies": [],
+      "description": "WD518AN.ABGPLMT (เบจ) รอบบิลที่ 13-60 (699)",
+      "priceNote": "ราคารุ่นเดียวกัน"
+    },
+    {
+      "code": "WD518AN.AWHPLMT",
+      "slug": "wd518an-awhplmt",
+      "category": "เครื่องกรองน้ำ",
+      "name": "เครื่องกรองน้ำ LG WD518AN",
+      "source": "Price list_Aug_V3.pdf",
+      "page": 2,
+      "pdf": "/pdfs/Price%20list_Aug_V3.pdf",
+      "mode": "monthly",
+      "price": 499,
+      "priceFrom": "7Y_Self",
+      "policies": [
+        {
+          "policy": "7Y_Visit",
+          "term": 6,
+          "price": 599,
+          "promoCode": "VISIT_7Y_6M_PRO_149(1M)_DC50%(11M"
+        },
+        {
+          "policy": "7Y_Self",
+          "term": 6,
+          "price": 499,
+          "promoCode": "SELF_7Y_6M_PRO_149(1M)_DC50%(11M"
+        }
+      ],
+      "description": "WD518AN.AWHPLMT (ขาว)"
+    },
+    {
+      "code": "F2520RNTB.AEBPETH",
+      "slug": "f2520rntb-aebpeth",
+      "category": "เครื่องซักผ้า",
+      "name": "F2520RNTB.AEBPETH",
+      "source": "Price list_Aug_V3.pdf",
+      "page": 16,
+      "pdf": "/pdfs/Price%20list_Aug_V3.pdf",
+      "mode": "monthly",
+      "price": 799,
+      "priceFrom": "6Y_Self",
+      "policies": [
+        {
+          "policy": "5Y_Visit",
+          "term": 12,
+          "price": 899,
+          "promoCode": "VISIT_5Y_12M_PRO_149(1M)_DC50%(7M"
+        },
+        {
+          "policy": "5Y_Self",
+          "term": 12,
+          "price": 849,
+          "promoCode": "SELF_5Y_12M_PRO_149(1M)_DC50%(7M"
+        },
+        {
+          "policy": "6Y_Visit",
+          "term": 12,
+          "price": 849,
+          "promoCode": "VISIT_6Y_12M_PRO_149(1M)_DC50%(7M"
+        },
+        {
+          "policy": "6Y_Self",
+          "term": 12,
+          "price": 799,
+          "promoCode": "SELF_6Y_12M_PRO_149(1M)_DC50%(7M"
+        }
+      ],
+      "description": "F2520RNTB.AEBPETH"
+    },
+    {
+      "code": "FV1409H4W.ABWPETH",
+      "slug": "fv1409h4w-abwpeth",
+      "category": "เครื่องซักผ้า",
+      "name": "FV1409H4W.ABWPETH",
+      "source": "Sale Price8 - Subscription_V3.pdf",
+      "page": 3,
+      "pdf": "/pdfs/Sale%20Price8%20-%20Subscription_V3.pdf",
+      "mode": "monthly",
+      "price": 299,
+      "priceFrom": "6Y_Self",
+      "policies": [
+        {
+          "policy": "5Y_Visit",
+          "term": 12,
+          "price": 349,
+          "promoCode": "VISIT_5Y_12M_DC50%8M_AUG"
+        },
+        {
+          "policy": "5Y_Self",
+          "term": 12,
+          "price": 349,
+          "promoCode": "SELF_5Y_12M_DC50%8M_AUG"
+        },
+        {
+          "policy": "6Y_Visit",
+          "term": 12,
+          "price": 349,
+          "promoCode": "VISIT_6Y_12M_DC50%8M_AUG"
+        },
+        {
+          "policy": "6Y_Self",
+          "term": 12,
+          "price": 299,
+          "promoCode": "SELF_6Y_12M_DC50%8M_AUG"
+        }
+      ],
+      "description": "FV1409H4W.ABWPETH"
+    },
+    {
+      "code": "FV1413H4M.AMBPETH",
+      "slug": "fv1413h4m-ambpeth",
+      "category": "เครื่องซักผ้า",
+      "name": "FV1413H4M.AMBPETH",
+      "source": "Price list_Aug_V3.pdf",
+      "page": 17,
+      "pdf": "/pdfs/Price%20list_Aug_V3.pdf",
+      "mode": "monthly",
+      "price": 599,
+      "priceFrom": "6Y_Self",
+      "policies": [
+        {
+          "policy": "5Y_Visit",
+          "term": 12,
+          "price": 749,
+          "promoCode": "VISIT_5Y_12M_PRO_149(1M)_DC50%(7M"
+        },
+        {
+          "policy": "5Y_Self",
+          "term": 12,
+          "price": 649,
+          "promoCode": "SELF_5Y_12M_PRO_149(1M)_DC50%(7M"
+        },
+        {
+          "policy": "6Y_Visit",
+          "term": 12,
+          "price": 649,
+          "promoCode": "VISIT_6Y_12M_PRO_149(1M)_DC50%(7M"
+        },
+        {
+          "policy": "6Y_Self",
+          "term": 12,
+          "price": 599,
+          "promoCode": "SELF_6Y_12M_PRO_149(1M)_DC50%(7M"
+        }
+      ],
+      "description": "FV1413H4M.AMBPETH •"
+    },
+    {
+      "code": "FV1413S4M.AMBPETH",
+      "slug": "fv1413s4m-ambpeth",
+      "category": "เครื่องซักผ้า",
+      "name": "FV1413S4M.AMBPETH",
+      "source": "Price list_Aug_V3.pdf",
+      "page": 18,
+      "pdf": "/pdfs/Price%20list_Aug_V3.pdf",
+      "mode": "monthly",
+      "price": 549,
+      "priceFrom": "6Y_Self",
+      "policies": [
+        {
+          "policy": "5Y_Visit",
+          "term": 12,
+          "price": 699,
+          "promoCode": "VISIT_5Y_12M_PRO_149(1M)_DC50%(2M"
+        },
+        {
+          "policy": "5Y_Self",
+          "term": 12,
+          "price": 599,
+          "promoCode": "SELF_5Y_12M_PRO_149(1M)_DC50%(2M"
+        },
+        {
+          "policy": "6Y_Visit",
+          "term": 12,
+          "price": 599,
+          "promoCode": "VISIT_6Y_12M_PRO_149(1M)_DC50%(2M"
+        },
+        {
+          "policy": "6Y_Self",
+          "term": 12,
+          "price": 549,
+          "promoCode": "SELF_6Y_12M_PRO_149(1M)_DC50%(2M"
+        }
+      ],
+      "description": "FV1413S4M.AMBPETH ราคา 149.- (1 รอบบิลแรก)"
+    },
+    {
+      "code": "TX2315DT5G.DEGPETH",
+      "slug": "tx2315dt5g-degpeth",
+      "category": "เครื่องซักผ้า",
+      "name": "TX2315DT5G.DEGPETH",
+      "source": "Price list_Aug_V3.pdf",
+      "page": 20,
+      "pdf": "/pdfs/Price%20list_Aug_V3.pdf",
+      "mode": "monthly",
+      "price": 399,
+      "priceFrom": "6Y_Self",
+      "policies": [
+        {
+          "policy": "5Y_Visit",
+          "term": 12,
+          "price": 549,
+          "promoCode": "VISIT_5Y_12M_PRO_149(1M"
+        },
+        {
+          "policy": "5Y_Self",
+          "term": 12,
+          "price": 499,
+          "promoCode": "SELF_5Y_12M_PRO_149(1M"
+        },
+        {
+          "policy": "6Y_Visit",
+          "term": 12,
+          "price": 499,
+          "promoCode": "VISIT_6Y_12M_PRO_149(1M"
+        },
+        {
+          "policy": "6Y_Self",
+          "term": 12,
+          "price": 399,
+          "promoCode": "SELF_6Y_12M_PRO_149(1M"
+        }
+      ],
+      "description": "TX2315DT5G.DEGPETH • รอบบิลที่ 1 (149)"
+    },
+    {
+      "code": "TX2723ST5J.APBPETH",
+      "slug": "tx2723st5j-apbpeth",
+      "category": "เครื่องซักผ้า",
+      "name": "TX2723ST5J.APBPETH",
+      "source": "Price list_Aug_V3.pdf",
+      "page": 19,
+      "pdf": "/pdfs/Price%20list_Aug_V3.pdf",
+      "mode": "monthly",
+      "price": 549,
+      "priceFrom": "6Y_Self",
+      "policies": [
+        {
+          "policy": "5Y_Visit",
+          "term": 12,
+          "price": 649,
+          "promoCode": "VISIT_5Y_12M_PRO_149(1M)_DC50%(2M"
+        },
+        {
+          "policy": "5Y_Self",
+          "term": 12,
+          "price": 599,
+          "promoCode": "SELF_5Y_12M_PRO_149(1M)_DC50%(2M"
+        },
+        {
+          "policy": "6Y_Visit",
+          "term": 12,
+          "price": 599,
+          "promoCode": "VISIT_6Y_12M_PRO_149(1M)_DC50%(2M"
+        },
+        {
+          "policy": "6Y_Self",
+          "term": 12,
+          "price": 549,
+          "promoCode": "SELF_6Y_12M_PRO_149(1M)_DC50%(2M"
+        }
+      ],
+      "description": "TX2723ST5J.APBPETH"
+    },
+    {
+      "code": "A9T-CORE.DCGPETH",
+      "slug": "a9t-core-dcgpeth",
+      "category": "เครื่องดูดฝุ่น",
+      "name": "A9T-CORE.DCGPETH",
+      "source": "Price list_Aug_V3.pdf",
+      "page": 3,
+      "pdf": "/pdfs/Price%20list_Aug_V3.pdf",
+      "mode": "monthly",
+      "price": 649,
+      "priceFrom": "5Y_Self",
+      "policies": [
+        {
+          "policy": "5Y_Self",
+          "term": 12,
+          "price": 649,
+          "promoCode": "SELF_5Y_12M_PRO_149(1M"
+        }
+      ],
+      "description": "A9T-CORE.DCGPETH"
+    },
+    {
+      "code": "A9T-LITE.DCGPETH",
+      "slug": "a9t-lite-dcgpeth",
+      "category": "เครื่องดูดฝุ่น",
+      "name": "A9T-LITE.DCGPETH",
+      "source": "Price list_Aug_V3.pdf",
+      "page": 3,
+      "pdf": "/pdfs/Price%20list_Aug_V3.pdf",
+      "mode": "monthly",
+      "price": 549,
+      "priceFrom": "5Y_Self",
+      "policies": [
+        {
+          "policy": "5Y_Self",
+          "term": 12,
+          "price": 549,
+          "promoCode": "SELF_5Y_12M_PRO_149(1M"
+        }
+      ],
+      "description": "A9T-LITE.DCGPETH"
+    },
+    {
+      "code": "A9T-ULTRA.DCBPETH",
+      "slug": "a9t-ultra-dcbpeth",
+      "category": "เครื่องดูดฝุ่น",
+      "name": "A9T-ULTRA.DCBPETH",
+      "source": "Price list_Aug_V3.pdf",
+      "page": 3,
+      "pdf": "/pdfs/Price%20list_Aug_V3.pdf",
+      "mode": "monthly",
+      "price": 749,
+      "priceFrom": "5Y_Self",
+      "policies": [
+        {
+          "policy": "5Y_Self",
+          "term": 12,
+          "price": 749,
+          "promoCode": "SELF_5Y_12M_PRO_149(1M)_DC50%(2M"
+        }
+      ],
+      "description": "A9T-ULTRA.DCBPETH"
+    },
+    {
+      "code": "ART13A.SR1",
+      "slug": "art13a-sr1",
+      "category": "เครื่องปรับอากาศ",
+      "name": "ART13A.SR1",
+      "source": "Price list_Aug_V3.pdf",
+      "page": 31,
+      "pdf": "/pdfs/Price%20list_Aug_V3.pdf",
+      "mode": "monthly",
+      "price": 949,
+      "priceFrom": "5Y_Visit",
+      "policies": [
+        {
+          "policy": "5Y_Visit",
+          "term": 6,
+          "price": 1049,
+          "promoCode": "VISIT_5Y_6M_PRO_149(1M)_DC50%(7M"
+        },
+        {
+          "policy": "5Y_Visit",
+          "term": 12,
+          "price": 949,
+          "promoCode": "VISIT_5Y_12M_PRO_149(1M)_DC50%(7M"
+        }
+      ],
+      "description": "ART13A.SR1"
+    },
+    {
+      "code": "ART18A.SR1",
+      "slug": "art18a-sr1",
+      "category": "เครื่องปรับอากาศ",
+      "name": "ART18A.SR1",
+      "source": "Price list_Aug_V3.pdf",
+      "page": 31,
+      "pdf": "/pdfs/Price%20list_Aug_V3.pdf",
+      "mode": "monthly",
+      "price": 1149,
+      "priceFrom": "5Y_Visit",
+      "policies": [
+        {
+          "policy": "5Y_Visit",
+          "term": 6,
+          "price": 1249,
+          "promoCode": null
+        },
+        {
+          "policy": "5Y_Visit",
+          "term": 12,
+          "price": 1149,
+          "promoCode": "VISIT_5Y_12M_PRO_149(1M)_DC50%(7M"
+        }
+      ],
+      "description": "ART18A.SR1"
+    },
+    {
+      "code": "IXY11A",
+      "slug": "ixy11a",
+      "category": "เครื่องปรับอากาศ",
+      "name": "IXY11A",
+      "source": "Sale Price8 - Subscription_V3.pdf",
+      "page": 6,
+      "pdf": "/pdfs/Sale%20Price8%20-%20Subscription_V3.pdf",
+      "mode": "monthly",
+      "price": 399,
+      "priceFrom": "5Y_Visit",
+      "policies": [
+        {
+          "policy": "5Y_Visit",
+          "term": 6,
+          "price": 399,
+          "promoCode": "VISIT_5Y_6M00"
+        }
+      ],
+      "description": "IXY11A รอบบิลที่ 2 ถึง 60 (499)"
+    },
+    {
+      "code": "IXY13A",
+      "slug": "ixy13a",
+      "category": "เครื่องปรับอากาศ",
+      "name": "IXY13A",
+      "source": "Sale Price8 - Subscription_V3.pdf",
+      "page": 6,
+      "pdf": "/pdfs/Sale%20Price8%20-%20Subscription_V3.pdf",
+      "mode": "monthly",
+      "price": 449,
+      "priceFrom": "5Y_Visit",
+      "policies": [
+        {
+          "policy": "5Y_Visit",
+          "term": 12,
+          "price": 549,
+          "promoCode": "VISIT_5Y_12M"
+        },
+        {
+          "policy": "5Y_Visit",
+          "term": 6,
+          "price": 449,
+          "promoCode": "VISIT_5Y_6M"
+        }
+      ],
+      "description": "IXY13A รอบบิลที่ 2 ถึง 60 (549)"
+    },
+    {
+      "code": "IXY18A",
+      "slug": "ixy18a",
+      "category": "เครื่องปรับอากาศ",
+      "name": "IXY18A",
+      "source": "Sale Price8 - Subscription_V3.pdf",
+      "page": 6,
+      "pdf": "/pdfs/Sale%20Price8%20-%20Subscription_V3.pdf",
+      "mode": "monthly",
+      "price": 230,
+      "priceFrom": "5Y_Visit",
+      "policies": [
+        {
+          "policy": "5Y_Visit",
+          "term": 12,
+          "price": 230,
+          "promoCode": "VISIT_5Y_12M"
+        },
+        {
+          "policy": "5Y_Visit",
+          "term": 6,
+          "price": 599,
+          "promoCode": "VISIT_5Y_6M"
+        }
+      ],
+      "description": "IXY18A รอบบิลที่ 2 ถึง 60 (699)"
+    },
+    {
+      "code": "IXY24A",
+      "slug": "ixy24a",
+      "category": "เครื่องปรับอากาศ",
+      "name": "IXY24A",
+      "source": "Sale Price8 - Subscription_V3.pdf",
+      "page": 6,
+      "pdf": "/pdfs/Sale%20Price8%20-%20Subscription_V3.pdf",
+      "mode": "monthly",
+      "price": 600,
+      "priceFrom": "5Y_Visit",
+      "policies": [
+        {
+          "policy": "5Y_Visit",
+          "term": 12,
+          "price": 849,
+          "promoCode": "VISIT_5Y_12M"
+        },
+        {
+          "policy": "5Y_Visit",
+          "term": 6,
+          "price": 749,
+          "promoCode": "VISIT_5Y_6M"
+        },
+        {
+          "policy": "5Y_Visit",
+          "term": 12,
+          "price": 600,
+          "promoCode": "VISIT_5Y_12M"
+        }
+      ],
+      "description": "IXY24A"
+    },
+    {
+      "code": "SAQ11A",
+      "slug": "saq11a",
+      "category": "เครื่องปรับอากาศ",
+      "name": "SAQ11A",
+      "source": "Price list_Aug_V3.pdf",
+      "page": 32,
+      "pdf": "/pdfs/Price%20list_Aug_V3.pdf",
+      "mode": "monthly",
+      "price": 799,
+      "priceFrom": "5Y_Visit",
+      "policies": [
+        {
+          "policy": "5Y_Visit",
+          "term": 6,
+          "price": 899,
+          "promoCode": "VISIT_5Y_6M_PRO_149(1M)_DC50%(7M"
+        },
+        {
+          "policy": "5Y_Visit",
+          "term": 12,
+          "price": 799,
+          "promoCode": null
+        }
+      ],
+      "description": "9,200 Btu SAQ11A 5Y_Visit ทุกๆ 6 เดือน 899 3,900 VISIT_5Y_6M_PRO_149(1M)_DC50%(7M)"
+    },
+    {
+      "code": "SAQ13A",
+      "slug": "saq13a",
+      "category": "เครื่องปรับอากาศ",
+      "name": "SAQ13A",
+      "source": "Price list_Aug_V3.pdf",
+      "page": 32,
+      "pdf": "/pdfs/Price%20list_Aug_V3.pdf",
+      "mode": "monthly",
+      "price": 849,
+      "priceFrom": "5Y_Visit",
+      "policies": [
+        {
+          "policy": "5Y_Visit",
+          "term": 6,
+          "price": 949,
+          "promoCode": "VISIT_5Y_6M_PRO_149(1M)_DC50%(7M"
+        },
+        {
+          "policy": "5Y_Visit",
+          "term": 12,
+          "price": 849,
+          "promoCode": "VISIT_5Y_12M_PRO_149(1M)_DC50%(7M"
+        }
+      ],
+      "description": "SAQ13A • รอบบิลที่ 2-8 (474)"
+    },
+    {
+      "code": "SAQ18B",
+      "slug": "saq18b",
+      "category": "เครื่องปรับอากาศ",
+      "name": "SAQ18B",
+      "source": "Price list_Aug_V3.pdf",
+      "page": 33,
+      "pdf": "/pdfs/Price%20list_Aug_V3.pdf",
+      "mode": "monthly",
+      "price": 1049,
+      "priceFrom": "5Y_Visit",
+      "policies": [
+        {
+          "policy": "5Y_Visit",
+          "term": 6,
+          "price": 1149,
+          "promoCode": "VISIT_5Y_6M_PRO_149(1M)_DC50%(7M"
+        },
+        {
+          "policy": "5Y_Visit",
+          "term": 12,
+          "price": 1049,
+          "promoCode": "VISIT_5Y_12M_PRO_149(1M)_DC50%(7M"
+        }
+      ],
+      "description": "SAQ18B."
+    },
+    {
+      "code": "SAQ24B",
+      "slug": "saq24b",
+      "category": "เครื่องปรับอากาศ",
+      "name": "SAQ24B",
+      "source": "Price list_Aug_V3.pdf",
+      "page": 33,
+      "pdf": "/pdfs/Price%20list_Aug_V3.pdf",
+      "mode": "monthly",
+      "price": 1199,
+      "priceFrom": "5Y_Visit",
+      "policies": [
+        {
+          "policy": "5Y_Visit",
+          "term": 6,
+          "price": 1299,
+          "promoCode": "VISIT_5Y_6M_PRO_149(1M)_DC50%(7M"
+        },
+        {
+          "policy": "5Y_Visit",
+          "term": 12,
+          "price": 1199,
+          "promoCode": "VISIT_5Y_12M_PRO_149(1M)_DC50%(7M"
+        }
+      ],
+      "description": "SAQ24B. • รอบบิลที่ 2-8 (649)"
+    },
+    {
+      "code": "SIQ11B",
+      "slug": "siq11b",
+      "category": "เครื่องปรับอากาศ",
+      "name": "SIQ11B",
+      "source": "Price list_Aug_V3.pdf",
+      "page": 34,
+      "pdf": "/pdfs/Price%20list_Aug_V3.pdf",
+      "mode": "monthly",
+      "price": 599,
+      "priceFrom": "5Y_Visit",
+      "policies": [
+        {
+          "policy": "5Y_Visit",
+          "term": 6,
+          "price": 699,
+          "promoCode": "VISIT_5Y_6M_PRO_149(1M)_DC50%(7M"
+        },
+        {
+          "policy": "5Y_Visit",
+          "term": 12,
+          "price": 599,
+          "promoCode": null
+        }
+      ],
+      "description": "SIQ11B ลด 50% 7 เดือน (รอบบิลที่ 2-8)"
+    },
+    {
+      "code": "SIQ13B",
+      "slug": "siq13b",
+      "category": "เครื่องปรับอากาศ",
+      "name": "SIQ13B",
+      "source": "Price list_Aug_V3.pdf",
+      "page": 34,
+      "pdf": "/pdfs/Price%20list_Aug_V3.pdf",
+      "mode": "monthly",
+      "price": 699,
+      "priceFrom": "5Y_Visit",
+      "policies": [
+        {
+          "policy": "5Y_Visit",
+          "term": 6,
+          "price": 799,
+          "promoCode": "VISIT_5Y_6M_PRO_149(1M)_DC50%(7M"
+        },
+        {
+          "policy": "5Y_Visit",
+          "term": 12,
+          "price": 699,
+          "promoCode": "VISIT_5Y_12M_PRO_149(1M)_DC50%(7M"
+        }
+      ],
+      "description": "SIQ13B"
+    },
+    {
+      "code": "SIQ18B",
+      "slug": "siq18b",
+      "category": "เครื่องปรับอากาศ",
+      "name": "SIQ18B",
+      "source": "Price list_Aug_V3.pdf",
+      "page": 35,
+      "pdf": "/pdfs/Price%20list_Aug_V3.pdf",
+      "mode": "monthly",
+      "price": 899,
+      "priceFrom": "5Y_Visit",
+      "policies": [
+        {
+          "policy": "5Y_Visit",
+          "term": 6,
+          "price": 999,
+          "promoCode": "VISIT_5Y_6M_PRO_149(1M)_DC50%(7M"
+        },
+        {
+          "policy": "5Y_Visit",
+          "term": 12,
+          "price": 899,
+          "promoCode": "VISIT_5Y_12M_PRO_149(1M)_DC50%(7M"
+        }
+      ],
+      "description": "SIQ18B"
+    },
+    {
+      "code": "SIQ24B",
+      "slug": "siq24b",
+      "category": "เครื่องปรับอากาศ",
+      "name": "SIQ24B",
+      "source": "Price list_Aug_V3.pdf",
+      "page": 35,
+      "pdf": "/pdfs/Price%20list_Aug_V3.pdf",
+      "mode": "monthly",
+      "price": 1099,
+      "priceFrom": "5Y_Visit",
+      "policies": [
+        {
+          "policy": "5Y_Visit",
+          "term": 6,
+          "price": 1199,
+          "promoCode": "VISIT_5Y_6M_PRO_149(1M)_DC50%(7M"
+        },
+        {
+          "policy": "5Y_Visit",
+          "term": 12,
+          "price": 1099,
+          "promoCode": "VISIT_5Y_12M_PRO_149(1M)_DC50%(7M"
+        }
+      ],
+      "description": "SIQ24B"
+    },
+    {
+      "code": "ZT1Q12GULA1.EWGHATH",
+      "slug": "zt1q12gula1-ewghath",
+      "category": "เครื่องปรับอากาศ",
+      "name": "ZT1Q12GULA1.EWGHATH",
+      "source": "Price list_Aug_V3.pdf",
+      "page": 37,
+      "pdf": "/pdfs/Price%20list_Aug_V3.pdf",
+      "mode": "monthly",
+      "price": 450,
+      "priceFrom": "5Y_Visit",
+      "policies": [
+        {
+          "policy": "5Y_Visit",
+          "term": 4,
+          "price": 450,
+          "promoCode": "VISIT_5Y_4M"
+        }
+      ],
+      "description": "ZT1Q12GULA1.EWGHATH"
+    },
+    {
+      "code": "ZT1Q18GTLA1.EWGHATH",
+      "slug": "zt1q18gtla1-ewghath",
+      "category": "เครื่องปรับอากาศ",
+      "name": "ZT1Q18GTLA1.EWGHATH",
+      "source": "Price list_Aug_V3.pdf",
+      "page": 37,
+      "pdf": "/pdfs/Price%20list_Aug_V3.pdf",
+      "mode": "monthly",
+      "price": 1599,
+      "priceFrom": "5Y_Visit",
+      "policies": [
+        {
+          "policy": "5Y_Visit",
+          "term": 4,
+          "price": 1599,
+          "promoCode": "VISIT_5Y_4M"
+        }
+      ],
+      "description": "ZT1Q18GTLA1.EWGHATH"
+    },
+    {
+      "code": "ZT1Q24GTLA1.EWGHATH",
+      "slug": "zt1q24gtla1-ewghath",
+      "category": "เครื่องปรับอากาศ",
+      "name": "ZT1Q24GTLA1.EWGHATH",
+      "source": "Price list_Aug_V3.pdf",
+      "page": 37,
+      "pdf": "/pdfs/Price%20list_Aug_V3.pdf",
+      "mode": "monthly",
+      "price": 450,
+      "priceFrom": "5Y_Visit",
+      "policies": [
+        {
+          "policy": "5Y_Visit",
+          "term": 4,
+          "price": 450,
+          "promoCode": "VISIT_5Y_4M"
+        }
+      ],
+      "description": "23,500 Btu ZT1Q24GTLA1.EWGHATH"
+    },
+    {
+      "code": "ZT4Q18GPLA1.EWGHATH",
+      "slug": "zt4q18gpla1-ewghath",
+      "category": "เครื่องปรับอากาศ",
+      "name": "ZT4Q18GPLA1.EWGHATH",
+      "source": "Price list_Aug_V3.pdf",
+      "page": 36,
+      "pdf": "/pdfs/Price%20list_Aug_V3.pdf",
+      "mode": "monthly",
+      "price": 840,
+      "priceFrom": "5Y_Visit",
+      "policies": [
+        {
+          "policy": "5Y_Visit",
+          "term": 4,
+          "price": 840,
+          "promoCode": "VISIT_5Y_4M"
+        }
+      ],
+      "description": "ZT4Q18GPLA1.EWGHATH"
+    },
+    {
+      "code": "ZT4Q24GPLA1.EWGHATH",
+      "slug": "zt4q24gpla1-ewghath",
+      "category": "เครื่องปรับอากาศ",
+      "name": "ZT4Q24GPLA1.EWGHATH",
+      "source": "Price list_Aug_V3.pdf",
+      "page": 36,
+      "pdf": "/pdfs/Price%20list_Aug_V3.pdf",
+      "mode": "monthly",
+      "price": 1949,
+      "priceFrom": "5Y_Visit",
+      "policies": [
+        {
+          "policy": "5Y_Visit",
+          "term": 4,
+          "price": 1949,
+          "promoCode": "VISIT_5Y_4M"
+        }
+      ],
+      "description": "ZT4Q24GPLA1.EWGHATH"
+    },
+    {
+      "code": "ZT4Q36GNLA1.EWGHATH",
+      "slug": "zt4q36gnla1-ewghath",
+      "category": "เครื่องปรับอากาศ",
+      "name": "ZT4Q36GNLA1.EWGHATH",
+      "source": "Price list_Aug_V3.pdf",
+      "page": 36,
+      "pdf": "/pdfs/Price%20list_Aug_V3.pdf",
+      "mode": "monthly",
+      "price": 2349,
+      "priceFrom": "5Y_Visit",
+      "policies": [
+        {
+          "policy": "5Y_Visit",
+          "term": 4,
+          "price": 2349,
+          "promoCode": "VISIT_5Y_4M"
+        }
+      ],
+      "description": "ZT4Q36GNLA1.EWGHATH"
+    },
+    {
+      "code": "ZT4Q48GMLA1.EWGHATH",
+      "slug": "zt4q48gmla1-ewghath",
+      "category": "เครื่องปรับอากาศ",
+      "name": "ZT4Q48GMLA1.EWGHATH",
+      "source": "Price list_Aug_V3.pdf",
+      "page": 36,
+      "pdf": "/pdfs/Price%20list_Aug_V3.pdf",
+      "mode": "monthly",
+      "price": 2499,
+      "priceFrom": "5Y_Visit",
+      "policies": [
+        {
+          "policy": "5Y_Visit",
+          "term": 4,
+          "price": 2499,
+          "promoCode": "VISIT_5Y_4M"
+        }
+      ],
+      "description": "48,000Btu ZT4Q48GMLA1.EWGHATH"
+    },
+    {
+      "code": "ZTRQ36GYLA1.EWGHATH",
+      "slug": "ztrq36gyla1-ewghath",
+      "category": "เครื่องปรับอากาศ",
+      "name": "ZTRQ36GYLA1.EWGHATH",
+      "source": "Price list_Aug_V3.pdf",
+      "page": 38,
+      "pdf": "/pdfs/Price%20list_Aug_V3.pdf",
+      "mode": "monthly",
+      "price": 2599,
+      "priceFrom": "5Y_Visit",
+      "policies": [
+        {
+          "policy": "5Y_Visit",
+          "term": 4,
+          "price": 2599,
+          "promoCode": "VISIT_5Y_4M"
+        }
+      ],
+      "description": "36,700Btu ZTRQ36GYLA1.EWGHATH"
+    },
+    {
+      "code": "ZTRQ48GYLA1.EWGHATH",
+      "slug": "ztrq48gyla1-ewghath",
+      "category": "เครื่องปรับอากาศ",
+      "name": "ZTRQ48GYLA1.EWGHATH",
+      "source": "Price list_Aug_V3.pdf",
+      "page": 38,
+      "pdf": "/pdfs/Price%20list_Aug_V3.pdf",
+      "mode": "monthly",
+      "price": 2799,
+      "priceFrom": "5Y_Visit",
+      "policies": [
+        {
+          "policy": "5Y_Visit",
+          "term": 4,
+          "price": 2799,
+          "promoCode": "VISIT_5Y_4M"
+        }
+      ],
+      "description": "47,100 Btu ZTRQ48GYLA1.EWGHATH"
+    },
+    {
+      "code": "AS10GDBY0.ABAE",
+      "slug": "as10gdby0-abae",
+      "category": "เครื่องฟอกอากาศ",
+      "name": "AS10GDBY0.ABAE",
+      "source": "Price list_Aug_V3.pdf",
+      "page": 30,
+      "pdf": "/pdfs/Price%20list_Aug_V3.pdf",
+      "mode": "monthly",
+      "price": 1099,
+      "priceFrom": "5Y Self",
+      "policies": [
+        {
+          "policy": "5Y Visit",
+          "term": 12,
+          "price": 1149,
+          "promoCode": "VISIT_5Y_12M_PRO_149(1M)_DC50%(2M"
+        },
+        {
+          "policy": "5Y Self",
+          "term": 12,
+          "price": 1099,
+          "promoCode": "SELF_5Y_12M_PRO_149(1M)_DC50%(2M"
+        }
+      ],
+      "description": "AS10GDBY0.ABAE"
+    },
+    {
+      "code": "AS25GCBY0.ABAE",
+      "slug": "as25gcby0-abae",
+      "category": "เครื่องฟอกอากาศ",
+      "name": "AS25GCBY0.ABAE",
+      "source": "Price list_Aug_V3.pdf",
+      "page": 27,
+      "pdf": "/pdfs/Price%20list_Aug_V3.pdf",
+      "mode": "monthly",
+      "price": 549,
+      "priceFrom": "5Y_Self",
+      "policies": [
+        {
+          "policy": "5Y_Visit",
+          "term": 12,
+          "price": 599,
+          "promoCode": "VISIT_5Y_12M_PRO_149(1M)_DC50%(2M"
+        },
+        {
+          "policy": "5Y_Self",
+          "term": 12,
+          "price": 549,
+          "promoCode": "SELF_5Y_12M_PRO_149(1M)_DC50%(2M"
+        }
+      ],
+      "description": "AS25GCBY0.ABAE • ราคา 149.- (1 รอบบิลแรก)"
+    },
+    {
+      "code": "AS35GGW10.ATH",
+      "slug": "as35ggw10-ath",
+      "category": "เครื่องฟอกอากาศ",
+      "name": "AS35GGW10.ATH",
+      "source": "Sale Price8 - Subscription_V3.pdf",
+      "page": 5,
+      "pdf": "/pdfs/Sale%20Price8%20-%20Subscription_V3.pdf",
+      "mode": "monthly",
+      "price": 199,
+      "priceFrom": "5Y_Self",
+      "policies": [
+        {
+          "policy": "5Y_Visit",
+          "term": 6,
+          "price": 249,
+          "promoCode": "VISIT_5Y_6M"
+        },
+        {
+          "policy": "5Y_Self",
+          "term": 6,
+          "price": 199,
+          "promoCode": "SELF_5Y_6M"
+        }
+      ],
+      "description": "AS35GGW10.ATH Disc.50% รอบที่ 1 ถึง 3 (124)"
+    },
+    {
+      "code": "AS60GHWG0.ABAE",
+      "slug": "as60ghwg0-abae",
+      "category": "เครื่องฟอกอากาศ",
+      "name": "AS60GHWG0.ABAE",
+      "source": "Price list_Aug_V3.pdf",
+      "page": 28,
+      "pdf": "/pdfs/Price%20list_Aug_V3.pdf",
+      "mode": "monthly",
+      "price": 399,
+      "priceFrom": "5Y Self",
+      "policies": [
+        {
+          "policy": "5Y Visit",
+          "term": 12,
+          "price": 449,
+          "promoCode": "VISIT_5Y_12M_PRO_149(1M)_DC50%(2M"
+        },
+        {
+          "policy": "5Y Self",
+          "term": 12,
+          "price": 399,
+          "promoCode": "SELF_5Y_12M_PRO_149(1M)_DC50%(2M"
+        },
+        {
+          "policy": "5Y Visit",
+          "term": 6,
+          "price": 499,
+          "promoCode": null
+        },
+        {
+          "policy": "5Y Self",
+          "term": 6,
+          "price": 449,
+          "promoCode": "SELF_5Y_6M_PRO_149(1M)_DC50%(2M"
+        }
+      ],
+      "description": "AS60GHWG0.ABAE • รอบบิลที่ 1 (149)"
+    },
+    {
+      "code": "AS65GDBY0.ABAE",
+      "slug": "as65gdby0-abae",
+      "category": "เครื่องฟอกอากาศ",
+      "name": "AS65GDBY0.ABAE",
+      "source": "Price list_Aug_V3.pdf",
+      "page": 29,
+      "pdf": "/pdfs/Price%20list_Aug_V3.pdf",
+      "mode": "monthly",
+      "price": 699,
+      "priceFrom": "5Y Self",
+      "policies": [
+        {
+          "policy": "5Y Visit",
+          "term": 12,
+          "price": 749,
+          "promoCode": "VISIT_5Y_12M_PRO_149(1M)_DC50%(2M"
+        },
+        {
+          "policy": "5Y Self",
+          "term": 12,
+          "price": 699,
+          "promoCode": "SELF_5Y_12M_PRO_149(1M)_DC50%(2M"
+        },
+        {
+          "policy": "5Y Visit",
+          "term": 6,
+          "price": 799,
+          "promoCode": null
+        }
+      ],
+      "description": "AS65GDBY0.ABAE"
+    },
+    {
+      "code": "DD23GMWE1.ATH",
+      "slug": "dd23gmwe1-ath",
+      "category": "เครื่องลดความชื้น",
+      "name": "DD23GMWE1.ATH",
+      "source": "Price list_Aug_V3.pdf",
+      "page": 26,
+      "pdf": "/pdfs/Price%20list_Aug_V3.pdf",
+      "mode": "none",
+      "price": null,
+      "priceFrom": null,
+      "policies": [],
+      "description": "DD23GMWE1.ATH รับฟรี! เครื่องฟอกอำกำศ LG PuriCare AeroMini รุ่น AS30GGW10"
+    },
+    {
+      "code": "DD23GMWE1S.ATH",
+      "slug": "dd23gmwe1s-ath",
+      "category": "เครื่องลดความชื้น",
+      "name": "DD23GMWE1S.ATH",
+      "source": "Price list_Aug_V3.pdf",
+      "page": 26,
+      "pdf": "/pdfs/Price%20list_Aug_V3.pdf",
+      "mode": "monthly",
+      "price": 549,
+      "priceFrom": "5Y_Self",
+      "policies": [
+        {
+          "policy": "5Y_Visit",
+          "term": 12,
+          "price": 599,
+          "promoCode": "VISIT_5Y_12M_PRO_149(1M)_DC50%(2M)_FREE_GIFT"
+        },
+        {
+          "policy": "5Y_Self",
+          "term": 12,
+          "price": 549,
+          "promoCode": "SELF_5Y_12M_PRO_149(1M)_DC50%(2M)_FREE_GIFT"
+        }
+      ],
+      "description": "DD23GMWE1S.ATH"
+    },
+    {
+      "code": "MD19GQGA1.ATH",
+      "slug": "md19gqga1-ath",
+      "category": "เครื่องลดความชื้น",
+      "name": "MD19GQGA1.ATH",
+      "source": "Sale Price8 - Subscription_V3.pdf",
+      "page": 4,
+      "pdf": "/pdfs/Sale%20Price8%20-%20Subscription_V3.pdf",
+      "mode": "monthly",
+      "price": 399,
+      "priceFrom": "5Y_Self",
+      "policies": [
+        {
+          "policy": "5Y_Visit",
+          "term": 12,
+          "price": 449,
+          "promoCode": "VISIT_5Y_12M_DC50%3M_AUG"
+        },
+        {
+          "policy": "5Y_Self",
+          "term": 12,
+          "price": 399,
+          "promoCode": "SELF_5Y_12M_DC50%3M_AUG"
+        }
+      ],
+      "description": "MD19GQGA1.ATH Disc.50% รอบบิลที่ 1 ถึง 3 (224)"
+    },
+    {
+      "code": "DFC335HM.ABMPETH",
+      "slug": "dfc335hm-abmpeth",
+      "category": "เครื่องล้างจาน",
+      "name": "DFC335HM.ABMPETH",
+      "source": "Price list_Aug_V3.pdf",
+      "page": 22,
+      "pdf": "/pdfs/Price%20list_Aug_V3.pdf",
+      "mode": "monthly",
+      "price": 849,
+      "priceFrom": "5Y Self",
+      "policies": [
+        {
+          "policy": "5Y Visit",
+          "term": 12,
+          "price": 899,
+          "promoCode": "VISIT_5Y_12M_PRO_149(1M)_DC50%(7M"
+        },
+        {
+          "policy": "5Y Self",
+          "term": 12,
+          "price": 849,
+          "promoCode": "SELF_5Y_12M_PRO_149(1M)_DC50%(7M"
+        }
+      ],
+      "description": "DFC335HM.ABMPETH"
+    },
+    {
+      "code": "DFC533FV.APYPETH",
+      "slug": "dfc533fv-apypeth",
+      "category": "เครื่องล้างจาน",
+      "name": "DFC533FV.APYPETH",
+      "source": "Price list_Aug_V3.pdf",
+      "page": 23,
+      "pdf": "/pdfs/Price%20list_Aug_V3.pdf",
+      "mode": "monthly",
+      "price": 749,
+      "priceFrom": "5Y Visit",
+      "policies": [
+        {
+          "policy": "5Y Visit",
+          "term": 12,
+          "price": 749,
+          "promoCode": null
+        }
+      ],
+      "description": "DFC533FV.APYPETH รับฟรี! ไมโครเวฟ 20 ลิตรรุ่น MS2032GAS.BBKPETH"
+    },
+    {
+      "code": "RV10VHP2B.BBLPETH",
+      "slug": "rv10vhp2b-bblpeth",
+      "category": "เครื่องอบผ้า/เครื่องซักผ้า",
+      "name": "RV10VHP2B.BBLPETH",
+      "source": "Price list_Aug_V3.pdf",
+      "page": 21,
+      "pdf": "/pdfs/Price%20list_Aug_V3.pdf",
+      "mode": "monthly",
+      "price": 649,
+      "priceFrom": "6Y_Self",
+      "policies": [
+        {
+          "policy": "5Y_Visit",
+          "term": 12,
+          "price": 849,
+          "promoCode": "VISIT_5Y_12M_PRO_149(1M)_DC50%(7M"
+        },
+        {
+          "policy": "6Y_Visit",
+          "term": 12,
+          "price": 749,
+          "promoCode": "VISIT_6Y_12M_PRO_149(1M)_DC50%(7M"
+        },
+        {
+          "policy": "6Y_Self",
+          "term": 12,
+          "price": 649,
+          "promoCode": "SELF_6Y_12M_PRO_149(1M)_DC50%(7M"
+        }
+      ],
+      "description": "RV10VHP2B.BBLPETH •"
+    },
+    {
+      "code": "S3MFC.ALBPETH",
+      "slug": "s3mfc-albpeth",
+      "category": "ตู้ถนอมผ้า",
+      "name": "S3MFC.ALBPETH",
+      "source": "Price list_Aug_V3.pdf",
+      "page": 24,
+      "pdf": "/pdfs/Price%20list_Aug_V3.pdf",
+      "mode": "monthly",
+      "price": 799,
+      "priceFrom": "6Y Self",
+      "policies": [
+        {
+          "policy": "5Y Self",
+          "term": 12,
+          "price": 899,
+          "promoCode": "SELF_5Y_12M_PRO_149(1M)_DC50%(7M"
+        },
+        {
+          "policy": "6Y Self",
+          "term": 12,
+          "price": 799,
+          "promoCode": "SELF_6Y_12M_PRO_149(1M)_DC50%(7M"
+        }
+      ],
+      "description": "S3MFC.ALBPETH"
+    },
+    {
+      "code": "GC-B257SQYL.AMCPLMT",
+      "slug": "gc-b257sqyl-amcplmt",
+      "category": "ตู้เย็น",
+      "name": "GC-B257SQYL.AMCPLMT",
+      "source": "Sale Price8 - Subscription_V3.pdf",
+      "page": 2,
+      "pdf": "/pdfs/Sale%20Price8%20-%20Subscription_V3.pdf",
+      "mode": "monthly",
+      "price": 449,
+      "priceFrom": "6Y_Visit",
+      "policies": [
+        {
+          "policy": "5Y_Visit",
+          "term": 24,
+          "price": 549,
+          "promoCode": "VISIT_5Y_24M"
+        },
+        {
+          "policy": "6Y_Visit",
+          "term": 24,
+          "price": 449,
+          "promoCode": "VISIT_6Y_24M"
+        }
+      ],
+      "description": "GC-B257SQYL.AMCPLMT"
+    },
+    {
+      "code": "GC-L257KQKW.AEPPLMT",
+      "slug": "gc-l257kqkw-aepplmt",
+      "category": "ตู้เย็น",
+      "name": "GC-L257KQKW.AEPPLMT",
+      "source": "Sale Price8 - Subscription_V3.pdf",
+      "page": 1,
+      "pdf": "/pdfs/Sale%20Price8%20-%20Subscription_V3.pdf",
+      "mode": "monthly",
+      "price": 649,
+      "priceFrom": "5Y_Visit",
+      "policies": [
+        {
+          "policy": "5Y_Visit",
+          "term": 24,
+          "price": 649,
+          "promoCode": "VISIT_5Y_24M"
+        },
+        {
+          "policy": "6Y_Visit",
+          "term": 24,
+          "price": 699,
+          "promoCode": "VISIT_6Y_24M"
+        }
+      ],
+      "description": "GC-L257KQKW.AEPPLMT"
+    },
+    {
+      "code": "GN-F392PQAK.AEPPLM1",
+      "slug": "gn-f392pqak-aepplm1",
+      "category": "ตู้เย็น",
+      "name": "GN-F392PQAK.AEPPLM1",
+      "source": "Sale Price8 - Subscription_V3.pdf",
+      "page": 2,
+      "pdf": "/pdfs/Sale%20Price8%20-%20Subscription_V3.pdf",
+      "mode": "monthly",
+      "price": 349,
+      "priceFrom": "5Y_Visit",
+      "policies": [
+        {
+          "policy": "5Y_Visit",
+          "term": 24,
+          "price": 349,
+          "promoCode": "VISIT_5Y_24M"
+        },
+        {
+          "policy": "6Y_Visit",
+          "term": 24,
+          "price": 349,
+          "promoCode": "VISIT_6Y_24M"
+        }
+      ],
+      "description": "GN-F392PQAK.AEPPLM1 5Y_Visit ทุกๆ 24 เดือน 449 รอบบิลที่ 4 ถึง 60 (449) VISIT_5Y_24M"
+    },
+    {
+      "code": "GV-B25FFGDB.ABMPLMT",
+      "slug": "gv-b25ffgdb-abmplmt",
+      "category": "ตู้เย็น",
+      "name": "GV-B25FFGDB.ABMPLMT",
+      "source": "Sale Price8 - Subscription_V3.pdf",
+      "page": 1,
+      "pdf": "/pdfs/Sale%20Price8%20-%20Subscription_V3.pdf",
+      "mode": "monthly",
+      "price": 599,
+      "priceFrom": "6Y_Visit",
+      "policies": [
+        {
+          "policy": "5Y_Visit",
+          "term": 24,
+          "price": 699,
+          "promoCode": "VISIT_5Y_24M"
+        },
+        {
+          "policy": "6Y_Visit",
+          "term": 24,
+          "price": 599,
+          "promoCode": "VISIT_6Y_24M"
+        }
+      ],
+      "description": "GV-B25FFGDB.ABMPLMT (1st Billing) 149 รอบบิลที่ 2 ถึง 60 (699)"
+    },
+    {
+      "code": "GN-F452PQAK.AEPPLMT",
+      "slug": "gn-f452pqak-aepplmt",
+      "category": "ตู้เย็น / 2 ประตู",
+      "name": "GN-F452PQAK.AEPPLMT",
+      "source": "Price list_Aug_V3.pdf",
+      "page": 10,
+      "pdf": "/pdfs/Price%20list_Aug_V3.pdf",
+      "mode": "monthly",
+      "price": 599,
+      "priceFrom": "5Y_Visit",
+      "policies": [
+        {
+          "policy": "5Y_Visit",
+          "term": 24,
+          "price": 599,
+          "promoCode": "VISIT_5Y_24M_PRO_149(1M)_DC50%(2M"
+        }
+      ],
+      "description": "GN-F452PQAK.AEPPLMT"
+    },
+    {
+      "code": "GN-V389FQEF.AEPPLMT",
+      "slug": "gn-v389fqef-aepplmt",
+      "category": "ตู้เย็น / 2 ประตู",
+      "name": "GN-V389FQEF.AEPPLMT",
+      "source": "Price list_Aug_V3.pdf",
+      "page": 10,
+      "pdf": "/pdfs/Price%20list_Aug_V3.pdf",
+      "mode": "monthly",
+      "price": 499,
+      "priceFrom": "6Y_Visit",
+      "policies": [
+        {
+          "policy": "6Y_Visit",
+          "term": 24,
+          "price": 499,
+          "promoCode": "VISIT_6Y_24M_PRO_149(1M)_DC50%(2M"
+        },
+        {
+          "policy": "5Y_Visit",
+          "term": 24,
+          "price": 649,
+          "promoCode": "VISIT_5Y_24M_PRO_149(1M)_DC50%(2M"
+        },
+        {
+          "policy": "6Y_Visit",
+          "term": 24,
+          "price": 549,
+          "promoCode": "VISIT_6Y_24M_PRO_149(1M)_DC50%(2M"
+        }
+      ],
+      "description": "GN-V389FQEF.AEPPLMT ราคา 149.- (1 รอบบิลแรก)"
+    },
+    {
+      "code": "GC-B48FPGAM.ADBPLMT",
+      "slug": "gc-b48fpgam-adbplmt",
+      "category": "ตู้เย็น / Multi-Door",
+      "name": "GC-B48FPGAM.ADBPLMT",
+      "source": "Price list_Aug_V3.pdf",
+      "page": 8,
+      "pdf": "/pdfs/Price%20list_Aug_V3.pdf",
+      "mode": "monthly",
+      "price": 699,
+      "priceFrom": "6Y_Visit",
+      "policies": [
+        {
+          "policy": "5Y_Visit",
+          "term": 24,
+          "price": 799,
+          "promoCode": "VISIT_5Y_24M_PRO_149(1M)_DC50%(2M"
+        },
+        {
+          "policy": "6Y_Visit",
+          "term": 24,
+          "price": 699,
+          "promoCode": "VISIT_6Y_24M_PRO_149(1M)_DC50%(2M"
+        }
+      ],
+      "description": "GC-B48FPGAM.ADBPLMT • รอบบิลที่ 2-3 (399)"
+    },
+    {
+      "code": "GC-G24FFQKB.AEEPLM1",
+      "slug": "gc-g24ffqkb-aeeplm1",
+      "category": "ตู้เย็น / Multi-Door",
+      "name": "GC-G24FFQKB.AEEPLM1",
+      "source": "Price list_Aug_V3.pdf",
+      "page": 7,
+      "pdf": "/pdfs/Price%20list_Aug_V3.pdf",
+      "mode": "monthly",
+      "price": 1349,
+      "priceFrom": "5Y_Visit",
+      "policies": [
+        {
+          "policy": "5Y_Visit",
+          "term": 24,
+          "price": 1349,
+          "promoCode": "VISIT_5Y_24M_PRO_149(1M)_DC50%(7M"
+        }
+      ],
+      "description": "GC-G24FFQKB.AEEPLM1 • รอบบิลที่ 1 (149)"
+    },
+    {
+      "code": "GC-V22FFQMB.AEPPLMT",
+      "slug": "gc-v22ffqmb-aepplmt",
+      "category": "ตู้เย็น / Multi-Door",
+      "name": "GC-V22FFQMB.AEPPLMT",
+      "source": "Price list_Aug_V3.pdf",
+      "page": 7,
+      "pdf": "/pdfs/Price%20list_Aug_V3.pdf",
+      "mode": "monthly",
+      "price": 799,
+      "priceFrom": "6Y_Visit",
+      "policies": [
+        {
+          "policy": "6Y_Visit",
+          "term": 24,
+          "price": 1149,
+          "promoCode": "VISIT_6Y_24M_PRO_149(1M)_DC50%(7M"
+        },
+        {
+          "policy": "5Y_Visit",
+          "term": 24,
+          "price": 949,
+          "promoCode": "VISIT_5Y_24M_PRO_149(1M)_DC50%(2M"
+        },
+        {
+          "policy": "6Y_Visit",
+          "term": 24,
+          "price": 799,
+          "promoCode": "VISIT_6Y_24M_PRO_149(1M)_DC50%(2M"
+        }
+      ],
+      "description": "GC-V22FFQMB.AEPPLMT 5Y_Visit ทุกๆ 24 เดือน 949 1,750 VISIT_5Y_24M_PRO_149(1M)_DC50%(2M)"
+    },
+    {
+      "code": "GV-V25FFGRB.ABMPLMT",
+      "slug": "gv-v25ffgrb-abmplmt",
+      "category": "ตู้เย็น / Multi-Door",
+      "name": "GV-V25FFGRB.ABMPLMT",
+      "source": "Price list_Aug_V3.pdf",
+      "page": 9,
+      "pdf": "/pdfs/Price%20list_Aug_V3.pdf",
+      "mode": "monthly",
+      "price": 949,
+      "priceFrom": "6Y_Visit",
+      "policies": [
+        {
+          "policy": "5Y_Visit",
+          "term": 24,
+          "price": 999,
+          "promoCode": "VISIT_5Y_24M_PRO_149(1M"
+        },
+        {
+          "policy": "6Y_Visit",
+          "term": 24,
+          "price": 949,
+          "promoCode": "VISIT_6Y_24M_PRO_149(1M"
+        }
+      ],
+      "description": "GV-V25FFGRB.ABMPLMT 5Y_Visit ทุกๆ 24 เดือน 999 850 VISIT_5Y_24M_PRO_149(1M)"
+    },
+    {
+      "code": "GC-L24FFCBB.AEVPLM1",
+      "slug": "gc-l24ffcbb-aevplm1",
+      "category": "ตู้เย็น / Plumbing",
+      "name": "GC-L24FFCBB.AEVPLM1",
+      "source": "Price list_Aug_V3.pdf",
+      "page": 4,
+      "pdf": "/pdfs/Price%20list_Aug_V3.pdf",
+      "mode": "monthly",
+      "price": 1249,
+      "priceFrom": "5Y_Visit",
+      "policies": [
+        {
+          "policy": "5Y_Visit",
+          "term": 6,
+          "price": 1249,
+          "promoCode": null
+        }
+      ],
+      "description": "GC-L24FFCBB.AEVPLM1 รับฟรี! ไมโครเวฟ 20 ลิตรรุ่น MS2032GAS.BBKPETH"
+    },
+    {
+      "code": "GC-J257SQZW.AEPPLMT",
+      "slug": "gc-j257sqzw-aepplmt",
+      "category": "ตู้เย็น / Side-by-Side",
+      "name": "GC-J257SQZW.AEPPLMT",
+      "source": "Price list_Aug_V3.pdf",
+      "page": 6,
+      "pdf": "/pdfs/Price%20list_Aug_V3.pdf",
+      "mode": "monthly",
+      "price": 899,
+      "priceFrom": "6Y_Visit",
+      "policies": [
+        {
+          "policy": "5Y_Visit",
+          "term": 24,
+          "price": 1049,
+          "promoCode": "VISIT_5Y_24M_PRO_149(1M)_DC50%(2M"
+        },
+        {
+          "policy": "6Y_Visit",
+          "term": 24,
+          "price": 899,
+          "promoCode": "VISIT_6Y_24M_PRO_149(1M)_DC50%(2M"
+        }
+      ],
+      "description": "GC-J257SQZW.AEPPLMT"
+    },
+    {
+      "code": "GC-L257SFZW.APYPLMT",
+      "slug": "gc-l257sfzw-apyplmt",
+      "category": "ตู้เย็น / Side-by-Side",
+      "name": "GC-L257SFZW.APYPLMT",
+      "source": "Price list_Aug_V3.pdf",
+      "page": 5,
+      "pdf": "/pdfs/Price%20list_Aug_V3.pdf",
+      "mode": "monthly",
+      "price": 749,
+      "priceFrom": "6Y_Visit",
+      "policies": [
+        {
+          "policy": "6Y_Visit",
+          "term": 6,
+          "price": 1249,
+          "promoCode": null
+        },
+        {
+          "policy": "5Y_Visit",
+          "term": 24,
+          "price": 849,
+          "promoCode": "VISIT_5Y_24M_PRO_149(1M"
+        },
+        {
+          "policy": "6Y_Visit",
+          "term": 24,
+          "price": 749,
+          "promoCode": "VISIT_6Y_24M_PRO_149(1M"
+        }
+      ],
+      "description": "GC-L257SFZW.APYPLMT • รอบบิลที่ 1 (149)"
+    },
+    {
+      "code": "GC-X257CMEW.ATEPLMT",
+      "slug": "gc-x257cmew-ateplmt",
+      "category": "ตู้เย็น / Side-by-Side",
+      "name": "GC-X257CMEW.ATEPLMT",
+      "source": "Price list_Aug_V3.pdf",
+      "page": 6,
+      "pdf": "/pdfs/Price%20list_Aug_V3.pdf",
+      "mode": "monthly",
+      "price": 1049,
+      "priceFrom": "6Y_Visit",
+      "policies": [
+        {
+          "policy": "5Y_Visit",
+          "term": 24,
+          "price": 1249,
+          "promoCode": "VISIT_5Y_24M_PRO_149(1M)_DC50%(7M"
+        },
+        {
+          "policy": "6Y_Visit",
+          "term": 24,
+          "price": 1049,
+          "promoCode": "VISIT_6Y_24M_PRO_149(1M)_DC50%(7M"
+        }
+      ],
+      "description": "GC-X257CMEW.ATEPLMT ลด 50% 7 เดือน (รอบบิลที่ 2-8)"
+    },
+    {
+      "code": "GC-X257CMHW.AEEPLMT",
+      "slug": "gc-x257cmhw-aeeplmt",
+      "category": "ตู้เย็น / Side-by-Side",
+      "name": "GC-X257CMHW.AEEPLMT",
+      "source": "Price list_Aug_V3.pdf",
+      "page": 5,
+      "pdf": "/pdfs/Price%20list_Aug_V3.pdf",
+      "mode": "monthly",
+      "price": 1449,
+      "priceFrom": "5Y_Visit",
+      "policies": [
+        {
+          "policy": "5Y_Visit",
+          "term": 6,
+          "price": 1449,
+          "promoCode": null
+        }
+      ],
+      "description": "GC-X257CMHW.AEEPLMT"
+    },
+    {
+      "code": "100MRGB96BS.ATM",
+      "slug": "100mrgb96bs-atm",
+      "category": "โทรทัศน์",
+      "name": "100MRGB96BS.ATM",
+      "source": "Price list_Aug_V3.pdf",
+      "page": 39,
+      "pdf": "/pdfs/Price%20list_Aug_V3.pdf",
+      "mode": "monthly",
+      "price": 4499,
+      "priceFrom": "5Y",
+      "policies": [
+        {
+          "policy": "5Y",
+          "term": null,
+          "price": 4499,
+          "promoCode": null
+        }
+      ],
+      "description": "100MRGB96BS.ATM"
+    },
+    {
+      "code": "100QNED86BS.ATM",
+      "slug": "100qned86bs-atm",
+      "category": "โทรทัศน์",
+      "name": "100QNED86BS.ATM",
+      "source": "Price list_Aug_V3.pdf",
+      "page": 43,
+      "pdf": "/pdfs/Price%20list_Aug_V3.pdf",
+      "mode": "monthly",
+      "price": 2599,
+      "priceFrom": "5Y",
+      "policies": [
+        {
+          "policy": "5Y",
+          "term": null,
+          "price": 2599,
+          "promoCode": null
+        }
+      ],
+      "description": "100QNED86BS.ATM"
+    },
+    {
+      "code": "27LX6TDGA.ATM",
+      "slug": "27lx6tdga-atm",
+      "category": "โทรทัศน์",
+      "name": "27LX6TDGA.ATM",
+      "source": "Price list_Aug_V3.pdf",
+      "page": 41,
+      "pdf": "/pdfs/Price%20list_Aug_V3.pdf",
+      "mode": "monthly",
+      "price": 749,
+      "priceFrom": "5Y",
+      "policies": [
+        {
+          "policy": "5Y",
+          "term": null,
+          "price": 749,
+          "promoCode": null
+        }
+      ],
+      "description": "27LX6TDGA.ATM"
+    },
+    {
+      "code": "27LX6TDGA.GRAB",
+      "slug": "27lx6tdga-grab",
+      "category": "โทรทัศน์",
+      "name": "27LX6TDGA.GRAB",
+      "source": "Price list_Aug_V3.pdf",
+      "page": 41,
+      "pdf": "/pdfs/Price%20list_Aug_V3.pdf",
+      "mode": "monthly",
+      "price": 749,
+      "priceFrom": "5Y",
+      "policies": [
+        {
+          "policy": "5Y",
+          "term": null,
+          "price": 749,
+          "promoCode": null
+        }
+      ],
+      "description": "27LX6TDGA.GRAB"
+    },
+    {
+      "code": "32LX6BDGA.ATM",
+      "slug": "32lx6bdga-atm",
+      "category": "โทรทัศน์",
+      "name": "32LX6BDGA.ATM",
+      "source": "Price list_Aug_V3.pdf",
+      "page": 45,
+      "pdf": "/pdfs/Price%20list_Aug_V3.pdf",
+      "mode": "monthly",
+      "price": 5094,
+      "priceFrom": "5Y",
+      "policies": [
+        {
+          "policy": "5Y",
+          "term": null,
+          "price": 5094,
+          "promoCode": null
+        }
+      ],
+      "description": "32LX6BDGA.ATM"
+    },
+    {
+      "code": "32U889.GRAB",
+      "slug": "32u889-grab",
+      "category": "โทรทัศน์",
+      "name": "32U889.GRAB",
+      "source": "Price list_Aug_V3.pdf",
+      "page": 47,
+      "pdf": "/pdfs/Price%20list_Aug_V3.pdf",
+      "mode": "monthly",
+      "price": 699,
+      "priceFrom": "5Y",
+      "policies": [
+        {
+          "policy": "5Y",
+          "term": null,
+          "price": 699,
+          "promoCode": null
+        }
+      ],
+      "description": "32U889.GRAB 5Y"
+    },
+    {
+      "code": "32U889SA-W.ATM",
+      "slug": "32u889sa-w-atm",
+      "category": "โทรทัศน์",
+      "name": "32U889SA-W.ATM",
+      "source": "Price list_Aug_V3.pdf",
+      "page": 46,
+      "pdf": "/pdfs/Price%20list_Aug_V3.pdf",
+      "mode": "monthly",
+      "price": 699,
+      "priceFrom": "5Y",
+      "policies": [
+        {
+          "policy": "5Y",
+          "term": null,
+          "price": 699,
+          "promoCode": null
+        }
+      ],
+      "description": "32U889SA-W.ATM 5Y"
+    },
+    {
+      "code": "34U650A-B.ATM",
+      "slug": "34u650a-b-atm",
+      "category": "โทรทัศน์",
+      "name": "34U650A-B.ATM",
+      "source": "Price list_Aug_V3.pdf",
+      "page": 46,
+      "pdf": "/pdfs/Price%20list_Aug_V3.pdf",
+      "mode": "monthly",
+      "price": 399,
+      "priceFrom": "5Y",
+      "policies": [
+        {
+          "policy": "5Y",
+          "term": null,
+          "price": 399,
+          "promoCode": null
+        }
+      ],
+      "description": "34U650A-B.ATM"
+    },
+    {
+      "code": "40U990A-W.ATM",
+      "slug": "40u990a-w-atm",
+      "category": "โทรทัศน์",
+      "name": "40U990A-W.ATM",
+      "source": "Price list_Aug_V3.pdf",
+      "page": 46,
+      "pdf": "/pdfs/Price%20list_Aug_V3.pdf",
+      "mode": "monthly",
+      "price": 999,
+      "priceFrom": "5Y",
+      "policies": [
+        {
+          "policy": "5Y",
+          "term": null,
+          "price": 999,
+          "promoCode": null
+        }
+      ],
+      "description": "40U990A-W.ATM"
+    },
+    {
+      "code": "45GX950A-B.ATM",
+      "slug": "45gx950a-b-atm",
+      "category": "โทรทัศน์",
+      "name": "45GX950A-B.ATM",
+      "source": "Price list_Aug_V3.pdf",
+      "page": 46,
+      "pdf": "/pdfs/Price%20list_Aug_V3.pdf",
+      "mode": "monthly",
+      "price": 1499,
+      "priceFrom": "5Y",
+      "policies": [
+        {
+          "policy": "5Y",
+          "term": null,
+          "price": 1499,
+          "promoCode": null
+        }
+      ],
+      "description": "45GX950A-B.ATM"
+    },
+    {
+      "code": "52G930B-B.ATM",
+      "slug": "52g930b-b-atm",
+      "category": "โทรทัศน์",
+      "name": "52G930B-B.ATM",
+      "source": "Price list_Aug_V3.pdf",
+      "page": 46,
+      "pdf": "/pdfs/Price%20list_Aug_V3.pdf",
+      "mode": "monthly",
+      "price": 1199,
+      "priceFrom": "5Y",
+      "policies": [
+        {
+          "policy": "5Y",
+          "term": null,
+          "price": 1199,
+          "promoCode": null
+        }
+      ],
+      "description": "52G930B-B.ATM"
+    },
+    {
+      "code": "55QNED80BSA.ATM",
+      "slug": "55qned80bsa-atm",
+      "category": "โทรทัศน์",
+      "name": "55QNED80BSA.ATM",
+      "source": "Price list_Aug_V3.pdf",
+      "page": 43,
+      "pdf": "/pdfs/Price%20list_Aug_V3.pdf",
+      "mode": "monthly",
+      "price": 549,
+      "priceFrom": "5Y",
+      "policies": [
+        {
+          "policy": "5Y",
+          "term": null,
+          "price": 549,
+          "promoCode": null
+        }
+      ],
+      "description": "55QNED80BSA.ATM"
+    },
+    {
+      "code": "65NU855BPSA.ATM",
+      "slug": "65nu855bpsa-atm",
+      "category": "โทรทัศน์",
+      "name": "65NU855BPSA.ATM",
+      "source": "Price list_Aug_V3.pdf",
+      "page": 44,
+      "pdf": "/pdfs/Price%20list_Aug_V3.pdf",
+      "mode": "monthly",
+      "price": 549,
+      "priceFrom": "5Y",
+      "policies": [
+        {
+          "policy": "5Y",
+          "term": null,
+          "price": 549,
+          "promoCode": null
+        }
+      ],
+      "description": "65NU855BPSA.ATM"
+    },
+    {
+      "code": "65QNED80BSA.ATM",
+      "slug": "65qned80bsa-atm",
+      "category": "โทรทัศน์",
+      "name": "65QNED80BSA.ATM",
+      "source": "Price list_Aug_V3.pdf",
+      "page": 43,
+      "pdf": "/pdfs/Price%20list_Aug_V3.pdf",
+      "mode": "monthly",
+      "price": 649,
+      "priceFrom": "5Y",
+      "policies": [
+        {
+          "policy": "5Y",
+          "term": null,
+          "price": 649,
+          "promoCode": null
+        }
+      ],
+      "description": "65QNED80BSA.ATM"
+    },
+    {
+      "code": "75NU855BPSA.ATM",
+      "slug": "75nu855bpsa-atm",
+      "category": "โทรทัศน์",
+      "name": "75NU855BPSA.ATM",
+      "source": "Price list_Aug_V3.pdf",
+      "page": 44,
+      "pdf": "/pdfs/Price%20list_Aug_V3.pdf",
+      "mode": "monthly",
+      "price": 699,
+      "priceFrom": "5Y",
+      "policies": [
+        {
+          "policy": "5Y",
+          "term": null,
+          "price": 699,
+          "promoCode": null
+        }
+      ],
+      "description": "75NU855BPSA.ATM 5Y"
+    },
+    {
+      "code": "75QNED86BSA.ATM",
+      "slug": "75qned86bsa-atm",
+      "category": "โทรทัศน์",
+      "name": "75QNED86BSA.ATM",
+      "source": "Sale Price8 - Subscription_V3.pdf",
+      "page": 7,
+      "pdf": "/pdfs/Sale%20Price8%20-%20Subscription_V3.pdf",
+      "mode": "monthly",
+      "price": 749,
+      "priceFrom": "5Y",
+      "policies": [
+        {
+          "policy": "5Y",
+          "term": null,
+          "price": 1698,
+          "promoCode": null
+        },
+        {
+          "policy": "5Y",
+          "term": null,
+          "price": 749,
+          "promoCode": null
+        }
+      ],
+      "description": "75QNED86BSA.ATM 5Y"
+    },
+    {
+      "code": "85QNED80BSA.ATM",
+      "slug": "85qned80bsa-atm",
+      "category": "โทรทัศน์",
+      "name": "85QNED80BSA.ATM",
+      "source": "Price list_Aug_V3.pdf",
+      "page": 43,
+      "pdf": "/pdfs/Price%20list_Aug_V3.pdf",
+      "mode": "monthly",
+      "price": 1349,
+      "priceFrom": "5Y",
+      "policies": [
+        {
+          "policy": "5Y",
+          "term": null,
+          "price": 1349,
+          "promoCode": null
+        }
+      ],
+      "description": "85QNED80BSA.ATM 5Y"
+    },
+    {
+      "code": "OLED48C6PSA.ATM",
+      "slug": "oled48c6psa-atm",
+      "category": "โทรทัศน์",
+      "name": "OLED48C6PSA.ATM",
+      "source": "Sale Price8 - Subscription_V3.pdf",
+      "page": 7,
+      "pdf": "/pdfs/Sale%20Price8%20-%20Subscription_V3.pdf",
+      "mode": "monthly",
+      "price": 849,
+      "priceFrom": "5Y",
+      "policies": [
+        {
+          "policy": "5Y",
+          "term": null,
+          "price": 849,
+          "promoCode": null
+        }
+      ],
+      "description": "OLED48C6PSA.ATM 5Y"
+    },
+    {
+      "code": "OLED55C6PSA.ATM",
+      "slug": "oled55c6psa-atm",
+      "category": "โทรทัศน์",
+      "name": "OLED55C6PSA.ATM",
+      "source": "Price list_Aug_V3.pdf",
+      "page": 42,
+      "pdf": "/pdfs/Price%20list_Aug_V3.pdf",
+      "mode": "monthly",
+      "price": 1099,
+      "priceFrom": "5Y",
+      "policies": [
+        {
+          "policy": "5Y",
+          "term": null,
+          "price": 1099,
+          "promoCode": null
+        }
+      ],
+      "description": "OLED55C6PSA.ATM"
+    },
+    {
+      "code": "OLED55C6PSA.S30A",
+      "slug": "oled55c6psa-s30a",
+      "category": "โทรทัศน์",
+      "name": "OLED55C6PSA.S30A",
+      "source": "Price list_Aug_V3.pdf",
+      "page": 40,
+      "pdf": "/pdfs/Price%20list_Aug_V3.pdf",
+      "mode": "monthly",
+      "price": 1099,
+      "priceFrom": "5Y",
+      "policies": [
+        {
+          "policy": "5Y",
+          "term": null,
+          "price": 1099,
+          "promoCode": null
+        }
+      ],
+      "description": "OLED55C6PSA.S30A"
+    },
+    {
+      "code": "OLED65C6PSA.ATM",
+      "slug": "oled65c6psa-atm",
+      "category": "โทรทัศน์",
+      "name": "OLED65C6PSA.ATM",
+      "source": "Price list_Aug_V3.pdf",
+      "page": 42,
+      "pdf": "/pdfs/Price%20list_Aug_V3.pdf",
+      "mode": "monthly",
+      "price": 1299,
+      "priceFrom": "5Y",
+      "policies": [
+        {
+          "policy": "5Y",
+          "term": null,
+          "price": 1299,
+          "promoCode": null
+        }
+      ],
+      "description": "OLED65C6PSA.ATM"
+    },
+    {
+      "code": "OLED65C6PSA.S80TY",
+      "slug": "oled65c6psa-s80ty",
+      "category": "โทรทัศน์",
+      "name": "OLED65C6PSA.S80TY",
+      "source": "Price list_Aug_V3.pdf",
+      "page": 40,
+      "pdf": "/pdfs/Price%20list_Aug_V3.pdf",
+      "mode": "monthly",
+      "price": 1299,
+      "priceFrom": "5Y",
+      "policies": [
+        {
+          "policy": "5Y",
+          "term": null,
+          "price": 1299,
+          "promoCode": null
+        }
+      ],
+      "description": "OLED65C6PSA.S80TY"
+    },
+    {
+      "code": "OLED77C6PSA.ATM",
+      "slug": "oled77c6psa-atm",
+      "category": "โทรทัศน์",
+      "name": "OLED77C6PSA.ATM",
+      "source": "Price list_Aug_V3.pdf",
+      "page": 42,
+      "pdf": "/pdfs/Price%20list_Aug_V3.pdf",
+      "mode": "monthly",
+      "price": 1999,
+      "priceFrom": "5Y",
+      "policies": [
+        {
+          "policy": "5Y",
+          "term": null,
+          "price": 1999,
+          "promoCode": null
+        }
+      ],
+      "description": "OLED77C6PSA.ATM"
+    },
+    {
+      "code": "OLED77C6PSA.S80TY",
+      "slug": "oled77c6psa-s80ty",
+      "category": "โทรทัศน์",
+      "name": "OLED77C6PSA.S80TY",
+      "source": "Price list_Aug_V3.pdf",
+      "page": 40,
+      "pdf": "/pdfs/Price%20list_Aug_V3.pdf",
+      "mode": "monthly",
+      "price": 1999,
+      "priceFrom": "5Y",
+      "policies": [
+        {
+          "policy": "5Y",
+          "term": null,
+          "price": 1999,
+          "promoCode": null
+        }
+      ],
+      "description": "OLED77C6PSA.S80TY"
+    },
+    {
+      "code": "27GX704A-B.ATM",
+      "slug": "27gx704a-b-atm",
+      "category": "มอนิเตอร์",
+      "name": "27GX704A-B.ATM",
+      "source": "Sale Price8 - Subscription_V3.pdf",
+      "page": 8,
+      "pdf": "/pdfs/Sale%20Price8%20-%20Subscription_V3.pdf",
+      "mode": "monthly",
+      "price": 349,
+      "priceFrom": "5Y",
+      "policies": [
+        {
+          "policy": "5Y",
+          "term": null,
+          "price": 349,
+          "promoCode": null
+        }
+      ],
+      "description": "27GX704A-B.ATM 5Y •รอบบิลที่ 1- 12 (174.50)"
+    },
+    {
+      "code": "MS3032JAS.BBKPETH",
+      "slug": "ms3032jas-bbkpeth",
+      "category": "ไมโครเวฟ",
+      "name": "MS3032JAS.BBKPETH",
+      "source": "Price list_Aug_V3.pdf",
+      "page": 25,
+      "pdf": "/pdfs/Price%20list_Aug_V3.pdf",
+      "mode": "monthly",
+      "price": 89,
+      "priceFrom": "6Y No Service",
+      "policies": [
+        {
+          "policy": "6Y No Service",
+          "term": null,
+          "price": 89,
+          "promoCode": null
+        },
+        {
+          "policy": "6Y No",
+          "term": null,
+          "price": 89,
+          "promoCode": null
+        }
+      ],
+      "description": "MS3032JAS.BBKPETH"
+    },
+    {
+      "code": "S70TY.ATHALLD",
+      "slug": "s70ty-athalld",
+      "category": "Sound bar",
+      "name": "S70TY.ATHALLD",
+      "source": "Price list_Aug_V3.pdf",
+      "page": 49,
+      "pdf": "/pdfs/Price%20list_Aug_V3.pdf",
+      "mode": "monthly",
+      "price": 189,
+      "priceFrom": "5Y",
+      "policies": [
+        {
+          "policy": "5Y",
+          "term": null,
+          "price": 189,
+          "promoCode": null
+        }
+      ],
+      "description": "S70TY.ATHALLD • รอบบิลที่ 1- 12 (94.50)"
+    },
+    {
+      "code": "S95TR.DTHALLK",
+      "slug": "s95tr-dthallk",
+      "category": "Sound bar",
+      "name": "S95TR.DTHALLK",
+      "source": "Price list_Aug_V3.pdf",
+      "page": 49,
+      "pdf": "/pdfs/Price%20list_Aug_V3.pdf",
+      "mode": "monthly",
+      "price": 449,
+      "priceFrom": "5Y",
+      "policies": [
+        {
+          "policy": "5Y",
+          "term": null,
+          "price": 449,
+          "promoCode": null
+        }
+      ],
+      "description": "S95TR.DTHALLK"
+    },
+    {
+      "code": "WT1410NHEG.ABGPQTH",
+      "slug": "wt1410nheg-abgpqth",
+      "category": "Wash Tower",
+      "name": "WT1410NHEG.ABGPQTH",
+      "source": "Price list_Aug_V3.pdf",
+      "page": 14,
+      "pdf": "/pdfs/Price%20list_Aug_V3.pdf",
+      "mode": "monthly",
+      "price": 1299,
+      "priceFrom": "6Y_Self",
+      "policies": [
+        {
+          "policy": "5Y_Visit",
+          "term": 12,
+          "price": 1599,
+          "promoCode": "VISIT_5Y_12M_PRO_149(1M)_DC50%(11M"
+        },
+        {
+          "policy": "5Y_Self",
+          "term": 12,
+          "price": 1499,
+          "promoCode": "SELF_5Y_12M_PRO_149(1M)_DC50%(11M"
+        },
+        {
+          "policy": "6Y_Visit",
+          "term": 12,
+          "price": 1399,
+          "promoCode": "VISIT_6Y_12M_PRO_149(1M)_DC50%(11M"
+        },
+        {
+          "policy": "6Y_Self",
+          "term": 12,
+          "price": 1299,
+          "promoCode": "SELF_6Y_12M_PRO_149(1M)_DC50%(11M"
+        }
+      ],
+      "description": "WT1410NHEG.ABGPQTH"
+    },
+    {
+      "code": "WT1410NHEN.ABNPQTH",
+      "slug": "wt1410nhen-abnpqth",
+      "category": "Wash Tower",
+      "name": "WT1410NHEN.ABNPQTH",
+      "source": "Price list_Aug_V3.pdf",
+      "page": 15,
+      "pdf": "/pdfs/Price%20list_Aug_V3.pdf",
+      "mode": "monthly",
+      "price": 1399,
+      "priceFrom": "6Y_Visit",
+      "policies": [
+        {
+          "policy": "5Y_Visit",
+          "term": 12,
+          "price": 1599,
+          "promoCode": "VISIT_5Y_12M_PRO_149(1M)_DC50%(11M"
+        },
+        {
+          "policy": "5Y_Self",
+          "term": 12,
+          "price": 1499,
+          "promoCode": "SELF_5Y_12M_PRO_149(1M)_DC50%(11M"
+        },
+        {
+          "policy": "6Y_Visit",
+          "term": 12,
+          "price": 1399,
+          "promoCode": "VISIT_6Y_12M_PRO_149(1M)_DC50%(11M"
+        }
+      ],
+      "description": "WT1410NHEN.ABNPQTH • รอบบิลที่ 13-60 (1,599)"
+    },
+    {
+      "code": "WT2116SHEG.ABGPETH",
+      "slug": "wt2116sheg-abgpeth",
+      "category": "Wash Tower",
+      "name": "WT2116SHEG.ABGPETH",
+      "source": "Price list_Aug_V3.pdf",
+      "page": 13,
+      "pdf": "/pdfs/Price%20list_Aug_V3.pdf",
+      "mode": "monthly",
+      "price": 1649,
+      "priceFrom": "6Y_Self",
+      "policies": [
+        {
+          "policy": "5Y_Visit",
+          "term": 12,
+          "price": 1999,
+          "promoCode": "VISIT_5Y_12M_PRO_149(1M)_DC50%(11M"
+        },
+        {
+          "policy": "5Y_Self",
+          "term": 12,
+          "price": 1899,
+          "promoCode": "SELF_5Y_12M_PRO_149(1M)_DC50%(11M"
+        },
+        {
+          "policy": "6Y_Visit",
+          "term": 12,
+          "price": 1749,
+          "promoCode": "VISIT_6Y_12M_PRO_149(1M)_DC50%(11M"
+        },
+        {
+          "policy": "6Y_Self",
+          "term": 12,
+          "price": 1649,
+          "promoCode": "SELF_6Y_12M_PRO_149(1M)_DC50%(11M"
+        }
+      ],
+      "description": "WT2116SHEG.ABGPETH รอบบิลที่ 1 (149)"
+    },
+    {
+      "code": "WT2520NHEG.ABGPETH",
+      "slug": "wt2520nheg-abgpeth",
+      "category": "Wash Tower",
+      "name": "WT2520NHEG.ABGPETH",
+      "source": "Price list_Aug_V3.pdf",
+      "page": 11,
+      "pdf": "/pdfs/Price%20list_Aug_V3.pdf",
+      "mode": "monthly",
+      "price": 1999,
+      "priceFrom": "6Y_Self",
+      "policies": [
+        {
+          "policy": "5Y_Visit",
+          "term": 12,
+          "price": 2399,
+          "promoCode": "VISIT_5Y_12M_PRO_149(1M)_DC50%(11M"
+        },
+        {
+          "policy": "5Y_Self",
+          "term": 12,
+          "price": 2199,
+          "promoCode": "SELF_5Y_12M_PRO_149(1M)_DC50%(11M"
+        },
+        {
+          "policy": "6Y_Visit",
+          "term": 12,
+          "price": 2199,
+          "promoCode": "VISIT_6Y_12M_PRO_149(1M)_DC50%(11M"
+        },
+        {
+          "policy": "6Y_Self",
+          "term": 12,
+          "price": 1999,
+          "promoCode": "SELF_6Y_12M_PRO_149(1M)_DC50%(11M"
+        }
+      ],
+      "description": "WT2520NHEG.ABGPETH"
+    },
+    {
+      "code": "WT2520NHEN.ABNPETH",
+      "slug": "wt2520nhen-abnpeth",
+      "category": "Wash Tower",
+      "name": "WT2520NHEN.ABNPETH",
+      "source": "Price list_Aug_V3.pdf",
+      "page": 12,
+      "pdf": "/pdfs/Price%20list_Aug_V3.pdf",
+      "mode": "monthly",
+      "price": 1999,
+      "priceFrom": "6Y_Self",
+      "policies": [
+        {
+          "policy": "5Y_Visit",
+          "term": 12,
+          "price": 2399,
+          "promoCode": "VISIT_5Y_12M_PRO_149(1M)_DC50%(11M"
+        },
+        {
+          "policy": "5Y_Self",
+          "term": 12,
+          "price": 2199,
+          "promoCode": "SELF_5Y_12M_PRO_149(1M)_DC50%(11M"
+        },
+        {
+          "policy": "6Y_Visit",
+          "term": 12,
+          "price": 2199,
+          "promoCode": "VISIT_6Y_12M_PRO_149(1M)_DC50%(11M"
+        },
+        {
+          "policy": "6Y_Self",
+          "term": 12,
+          "price": 1999,
+          "promoCode": "SELF_6Y_12M_PRO_149(1M)_DC50%(11M"
+        }
+      ],
+      "description": "WT2520NHEN.ABNPETH รอบบิลที่ 1 (149)"
+    }
+  ]
+}

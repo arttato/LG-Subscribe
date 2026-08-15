@@ -1,0 +1,19 @@
+{
+  "name": "lg-subscribe-catalog",
+  "type": "module",
+  "version": "0.1.0",
+  "private": true,
+  "description": "เว็บรายการสินค้า LG Subscribe — สร้างข้อมูลจากไฟล์ PDF ราคารายเดือนด้วยสคริปต์อัตโนมัติ",
+  "scripts": {
+    "extract": "node scripts/extract.mjs",
+    "prebuild": "node scripts/extract.mjs",
+    "dev": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview"
+  },
+  "dependencies": {
+    "astro": "^5.7.0",
+    "pdf-lib": "^1.17.1",
+    "pdfjs-dist": "^4.10.38"
+  }
+}

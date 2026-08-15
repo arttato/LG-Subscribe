@@ -1,0 +1,60 @@
+# Deploy อัตโนมัติไป GitHub Pages — รันทุกครั้งที่ push ไป branch main
+#
+# วิธีเปิดใช้งาน: ไปที่ repo บน GitHub → Settings → Pages →
+#   Source: เลือก "GitHub Actions" แล้ว push ครั้งแรก
+name: Deploy to GitHub Pages
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+
+      # คำนวณ base path: repo ชื่อ xxx.github.io โฮสต์ที่ root (ไม่ต้อง base)
+      # แต่ repo ชื่ออื่น (เช่น lg-subscribe) จะอยู่ใต้ /lg-subscribe/
+      - name: Compute base path
+        run: |
+          REPO="${GITHUB_REPOSITORY#*/}"
+          if [[ "$REPO" == *.github.io ]]; then
+            echo "ASTRO_BASE=" >> "$GITHUB_ENV"
+          else
+            echo "ASTRO_BASE=/$REPO/" >> "$GITHUB_ENV"
+          fi
+
+      - run: npm ci
+
+      # prebuild รัน extract อัตโนมัติ: อ่าน pdfs/ → สร้าง products.json + PDF ฉบับย่อ
+      - run: npm run build
+
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: dist
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4
