@@ -162,7 +162,9 @@ node scripts/download-lg-images.mjs   # ดาวน์โหลดรูปต�
 # 1. วาง PDF ใหม่ลง pdfs/ (แทนไฟล์เก่า)
 # 2. ตรวจผลก่อน push (optional แต่แนะนำ)
 npm run extract && cat scripts/report.txt
-# 3. push → deploy อัตโนมัติ
+# 3. (optional) อัปเดตสเปค + รูปหลายมุม + banner โปรโมชันจากเว็บ LG
+npm run specs && npm run gallery && npm run banners
+# 4. push → deploy อัตโนมัติ
 ```
 
 ## คำสั่ง
@@ -174,6 +176,7 @@ npm run extract && cat scripts/report.txt
 | `npm run specs` | ดึงสเปคจากเว็บ LG Thailand → `src/data/lg-specs.json` (ต้อง commit) |
 | `npm run pdfspecs` | ดึงสเปคย่อของรุ่นที่ LG ไม่มีหน้าจาก PDF → `src/data/pdf-specs.json` (ต้อง commit) |
 | `npm run gallery` | ดึง URL รูปหลายมุมจากเว็บ LG → `src/data/lg-gallery.json` (ต้อง commit) |
+| `npm run banners` | ดึง banner โปรโมชันหน้า LG Subscribe → `public/img/banners/` + `src/data/banners.json` (ต้อง commit) |
 | `npm run dev` | รัน dev server (localhost:4321) |
 | `npm run build` | build เว็บ static ไปที่ `dist/` |
 | `npm run preview` | ทดสอบเวอร์ชัน build ที่ `dist/` |

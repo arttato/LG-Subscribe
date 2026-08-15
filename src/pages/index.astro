@@ -4,6 +4,7 @@ import '../styles/global.css';
 import data from '../data/products.json';
 import lgSpecs from '../data/lg-specs.json';
 import pdfSpecs from '../data/pdf-specs.json';
+import banners from '../data/banners.json';
 
 const products = data.products;
 const base = import.meta.env.BASE_URL;
@@ -89,6 +90,34 @@ const policyRows = [...heroProduct.policies]
         <div class="header-meta">{products.length} รายการ · {categories.length} หมวดหมู่</div>
       </div>
     </header>
+
+    <!-- Banner โปรโมชัน (จากหน้า LG Subscribe) -->
+    {banners.slides.length > 0 && (
+      <div class="banner-carousel" id="banner-carousel">
+        <div class="banner-track">
+          {banners.slides.map((s) => (
+            <div class="banner-slide">
+              <picture>
+                {s.mobile && <source media="(max-width: 768px)" srcSet={`${base}${s.mobile.replace(/^\//, '')}`} />}
+                {s.desktop && <source media="(min-width: 769px)" srcSet={`${base}${s.desktop.replace(/^\//, '')}`} />}
+                <img src={`${base}${s.desktop.replace(/^\//, '')}`} alt="โปรโมชัน LG Subscribe" loading="eager" />
+              </picture>
+            </div>
+          ))}
+        </div>
+        {banners.slides.length > 1 && (
+          <>
+            <button class="banner-arrow prev" aria-label="สไลด์ก่อนหน้า">‹</button>
+            <button class="banner-arrow next" aria-label="สไลด์ถัดไป">›</button>
+            <div class="banner-dots">
+              {banners.slides.map((_, i) => (
+                <button class="banner-dot" data-i={i} aria-label={`สไลด์ ${i + 1}`}></button>
+              ))}
+            </div>
+          </>
+        )}
+      </div>
+    )}
 
     <!-- Hero -->
     <section class="hero">
@@ -281,6 +310,53 @@ const policyRows = [...heroProduct.policies]
 
       search.addEventListener('input', render);
       render();
+    </script>
+
+    <script>
+      // ── Banner carousel ──
+      const carousel = document.getElementById('banner-carousel');
+      if (carousel) {
+        const track = carousel.querySelector('.banner-track');
+        const slides = [...carousel.querySelectorAll('.banner-slide')];
+        const dots = [...carousel.querySelectorAll('.banner-dot')];
+        const prev = carousel.querySelector('.prev');
+        const next = carousel.querySelector('.next');
+        const count = slides.length;
+        let idx = 0;
+        let timer = null;
+
+        const go = (i) => {
+          idx = (i + count) % count;
+          track.style.transform = `translateX(-${idx * 100}%)`;
+          dots.forEach((d, j) => d.classList.toggle('active', j === idx));
+        };
+        const autoplay = () => {
+          clearInterval(timer);
+          timer = setInterval(() => go(idx + 1), 5000);
+        };
+
+        next && next.addEventListener('click', () => { go(idx + 1); autoplay(); });
+        prev && prev.addEventListener('click', () => { go(idx - 1); autoplay(); });
+        dots.forEach((d) => d.addEventListener('click', () => { go(+d.dataset.i); autoplay(); }));
+
+        // ปัดนิ้ว (มือถือ)
+        let startX = null;
+        carousel.addEventListener('touchstart', (e) => { startX = e.touches[0].clientX; }, { passive: true });
+        carousel.addEventListener('touchend', (e) => {
+          if (startX == null) return;
+          const dx = e.changedTouches[0].clientX - startX;
+          if (Math.abs(dx) > 40) go(idx + (dx < 0 ? 1 : -1));
+          autoplay();
+          startX = null;
+        }, { passive: true });
+
+        // หยุดเลื่อนอัตโนมัติเมื่อชี้/สัมผัส
+        carousel.addEventListener('mouseenter', () => clearInterval(timer));
+        carousel.addEventListener('mouseleave', autoplay);
+
+        go(0);
+        autoplay();
+      }
     </script>
   </body>
 </html>

@@ -1,0 +1,54 @@
+{
+  "fetchedAt": "2026-08-15T08:07:39.793Z",
+  "source": "https://www.lg.com/th/subscribe/",
+  "slides": [
+    {
+      "desktop": "/img/banners/banner-01.jpg",
+      "mobile": "/img/banners/banner-01-m.jpg",
+      "lgDesktop": "https://www.lg.com/content/dam/channel/wcms/th/image-update/subscription/promotion/2026/08-birthday/-Birthday_1920x720.jpg",
+      "lgMobile": "https://www.lg.com/content/dam/channel/wcms/th/image-update/subscription/promotion/2026/08-birthday/-Birthday_720x960.jpg"
+    },
+    {
+      "desktop": "/img/banners/banner-02.jpg",
+      "mobile": "/img/banners/banner-02-m.jpg",
+      "lgDesktop": "https://www.lg.com/content/dam/channel/wcms/th/image-update/subscription/promotion/2026/08-birthday/IXY_1920x720.jpg",
+      "lgMobile": "https://www.lg.com/content/dam/channel/wcms/th/image-update/subscription/promotion/2026/08-birthday/IXY_720x960.jpg"
+    },
+    {
+      "desktop": "/img/banners/banner-03.jpg",
+      "mobile": "/img/banners/banner-03-m.jpg",
+      "lgDesktop": "https://www.lg.com/content/dam/channel/wcms/th/image-update/subscription/promotion/2026/08-birthday/OLED-S80TY_1920x720.jpg",
+      "lgMobile": "https://www.lg.com/content/dam/channel/wcms/th/image-update/subscription/promotion/2026/08-birthday/OLED-S80TY_720x960.jpg"
+    },
+    {
+      "desktop": "/img/banners/banner-04.jpg",
+      "mobile": "/img/banners/banner-04-m.jpg",
+      "lgDesktop": "https://www.lg.com/content/dam/channel/wcms/th/image-update/subscription/promotion/2026/08-birthday/AP_1920x720.jpg",
+      "lgMobile": "https://www.lg.com/content/dam/channel/wcms/th/image-update/subscription/promotion/2026/08-birthday/AP_720x960.jpg"
+    },
+    {
+      "desktop": "/img/banners/banner-05.jpg",
+      "mobile": "/img/banners/banner-05-m.jpg",
+      "lgDesktop": "https://www.lg.com/content/dam/channel/wcms/th/image-update/subscription/promotion/2026/07-sub/all-Banner_1920x720.jpg",
+      "lgMobile": "https://www.lg.com/content/dam/channel/wcms/th/image-update/subscription/promotion/2026/07-sub/all-Banner_720x960.jpg"
+    },
+    {
+      "desktop": "/img/banners/banner-06.jpg",
+      "mobile": "/img/banners/banner-06-m.jpg",
+      "lgDesktop": "https://www.lg.com/content/dam/channel/wcms/th/image-update/subscription/promotion/2026/07-sub/AWO-Subscribe-Banner_1920x720.jpg",
+      "lgMobile": "https://www.lg.com/content/dam/channel/wcms/th/image-update/subscription/promotion/2026/07-sub/AWO-Subscribe-Banner_720x960.jpg"
+    },
+    {
+      "desktop": "/img/banners/banner-07.jpg",
+      "mobile": "/img/banners/banner-07-m.jpg",
+      "lgDesktop": "https://www.lg.com/content/dam/channel/wcms/th/image-update/subscription/promotion/2026/07-sub/WP_1920x720.jpg",
+      "lgMobile": "https://www.lg.com/content/dam/channel/wcms/th/image-update/subscription/promotion/2026/07-sub/WP_720x960.jpg"
+    },
+    {
+      "desktop": "/img/banners/banner-08.jpg",
+      "mobile": "/img/banners/banner-08-m.jpg",
+      "lgDesktop": "https://www.lg.com/content/dam/channel/wcms/th/image-update/subscription/promotion/2026/07-sub/Sub07-TV_1920x720.jpg",
+      "lgMobile": "https://www.lg.com/content/dam/channel/wcms/th/image-update/subscription/promotion/2026/07-sub/Sub07-TV_720x960.jpg"
+    }
+  ]
+}
