@@ -305,21 +305,6 @@ a {
   align-items: center;
 }
 
-.hero-badge {
-  display: inline-flex;
-  align-items: center;
-  gap: 8px;
-  border: 1px solid rgba(255, 255, 255, 0.22);
-  background: rgba(255, 255, 255, 0.06);
-  border-radius: 999px;
-  padding: 5px 14px;
-  font-size: 0.78rem;
-  font-weight: 600;
-  color: #ffd9e3;
-  letter-spacing: 0.4px;
-  margin-bottom: 18px;
-}
-
 .hero h1 {
   font-size: clamp(1.7rem, 4vw, 2.6rem);
   line-height: 1.25;
