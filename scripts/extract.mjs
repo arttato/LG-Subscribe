@@ -398,26 +398,26 @@ function parsePage(pageNo, rawLines, inheritedCategory) {
 // ---------- สร้างข้อมูลสินค้าจากกลุ่มบรรทัด ----------
 const NAME_KEYWORDS = /(Tower|InstaView|AeroHit|AeroCat|AeroMini|Freezer|Door|Compressor|Plumbing|Water Filter|xboom|Grab|Bounce|STAGE|Sound bar|Soundbar|UltraGear|StanbyME|OLED|QNED|DUAL|ARTCOOL|DUALCOOL|Monitor|Washer|Dryer|Combo)/i;
 const NAME_STOP = /^(รอบบิลที่|•|ราคา|ลด\b|SIZE|สี\b|ขนาด|ประหยัด|SEER|Phase|Subscription|Disc|Promotion|รับประกัน|LG\s+Subscribe|Combo\s+Promotion)/;
+// บรรทัดที่ไม่ใช่ชื่อสินค้า (สเปก/ตารางงวด/แถว policy) — PDF นี้ไม่มีชื่อสินค้าจริง
+// มีแต่รหัส+สี+ขนาด+ราคา จึงกรองให้เหลือเฉพาะบรรทัดที่ "ดูเป็นชื่อ" จริงๆ เท่านั้น
+const NAME_JUNK = /รอบบิล|รอบที่|Disc\.|ราคา|ลด\s|กก|มม|กว้าง|สูง|ลึก|พลังเสียง|ซับวูฟเฟอร์|ซาวด์บาร์|VISIT|SELF|NOSERVICE|OUT_|•|\d{2,}/;
 
 function pickName(lines) {
   for (const line of lines) {
     const l = line.trim();
     if (!l || NAME_STOP.test(l)) continue;
     if (findEligibleCodes(l).length > 0) continue; // ข้ามบรรทัดรหัสสินค้า
+    if (NAME_JUNK.test(l)) continue;
     if (/^\(/.test(l) && l.length < 80) return thaiJoin(l).replace(/^\(|\)$/g, '').trim();
   }
   for (const line of lines) {
     const l = line.trim();
     if (!l || NAME_STOP.test(l)) continue;
     if (findEligibleCodes(l).length > 0) continue;
+    if (NAME_JUNK.test(l)) continue;
     if (NAME_KEYWORDS.test(l) && l.length < 80) return thaiJoin(l);
   }
-  for (const line of lines) {
-    const l = line.trim();
-    if (!l || NAME_STOP.test(l)) continue;
-    if (findEligibleCodes(l).length > 0) continue;
-    if (/[\u0E00-\u0E7F]/.test(l) && l.length < 60) return thaiJoin(l);
-  }
+  // PDF นี้ไม่มีชื่อไทยในตาราง — ถ้าไม่มีชื่อที่ชัดเจน ปล่อยว่าง (หน้าเว็บจะแสดงแค่รหัส)
   return '';
 }
 
@@ -438,7 +438,9 @@ function buildBlock(model, pdfFile) {
     if (!best || p.price < best.price) best = p;
   }
 
-  const name = model.named ? thaiJoin(model.named) : pickName(lines);
+  // ชื่อสินค้า: มาจาก meta.json (กรอกเอง) หรือชื่อที่จับคู่สินค้าไร้รหัส (xboom) เท่านั้น
+  // — ไม่อนุมานชื่อจาก PDF เพราะตารางราคาไม่มีชื่อสินค้าจริง (มีแต่รหัส/สี/ขนาด/ราคา)
+  const name = model.named ? thaiJoin(model.named) : '';
   const description = lines
     .filter((l) => !/^•/.test(l) && !/^รอบบิลที่/.test(l))
     .map((l) => thaiJoin(l))
