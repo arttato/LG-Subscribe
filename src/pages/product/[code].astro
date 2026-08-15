@@ -34,8 +34,87 @@ else {
   }
 }
 const gallery = lgGallery.products.find((s) => s.code === p.code);
----
 
+// ── แผนการชำระเงิน (ทดลอง WD516) — คำนวณใน frontmatter (JS ล้วน ไม่ผ่าน expression slot ของ Astro) ──
+const planCards = (() => {
+  if (p.code !== 'WD516' || !p.policies.length) return null;
+  const outright = p.policies.filter((x) => /^2Y/.test(x.policy));
+  const monthly = p.policies.filter((x) => !/^2Y/.test(x.policy));
+  const minMonthly = Math.min(...monthly.map((x) => x.price));
+  const planName = (policy) => {
+    const [yr, type] = policy.split('_');
+    const svc =
+      type === 'Visit'
+        ? 'ช่างเข้าบริการถึงบ้าน'
+        : type === 'Self'
+          ? 'เปลี่ยนอะไหล่ด้วยตนเอง'
+          : type || '';
+    return { yr: yr.replace('Y', ' ปี'), svc };
+  };
+  const decodePromo = (x) => {
+    const code = x.promoCode || '';
+    const out = [];
+    if (/^2Y/.test(x.policy)) {
+      const dc = code.match(/DC(\d+)%/);
+      if (dc) out.push(`ลด ${dc[1]}%`);
+      const yr = code.match(/_(20\d{2})$/);
+      if (yr) out.push(`แคมเปญ ${yr[1]}`);
+    } else {
+      const m1 = code.match(/PRO_(\d+)\((\d+)M\)?/); // วงเล็บปิดอาจถูกตัดใน PDF
+      if (m1) out.push(`รอบบิลแรก ${m1[1]}.-`);
+      const dc = code.match(/DC(\d+)%\((\d+)M\)?/);
+      if (dc) out.push(`ลด ${dc[1]}% นาน ${dc[2]} รอบบิล`);
+      const [type] = x.policy.split('_').slice(1);
+      if (x.term) out.push(`${type === 'Visit' ? 'ช่างเข้าบริการ' : 'จัดส่งอะไหล่'}ทุก ${x.term} เดือน`);
+    }
+    return out.length ? out : null;
+  };
+  // ตารางรอบบิล (ค่าใช้จ่ายหลังหักส่วนลด): จาก promoCode + ระยะเวลาสัญญา
+  const buildSchedule = (x) => {
+    const code = x.promoCode || '';
+    const m1 = code.match(/PRO_(\d+)\((\d+)M\)?/);
+    const dc = code.match(/DC(\d+)%\((\d+)M\)?/);
+    const yr = parseInt((x.policy || '').split('_')[0], 10) || 5;
+    const total = yr * 12;
+    const rows = [];
+    if (m1) rows.push({ from: 1, to: +m1[2], price: +m1[1], note: 'รอบบิลแรก (ราคาโปร)' });
+    if (dc) {
+      const dFrom = rows.length ? rows[0].to + 1 : 1;
+      rows.push({
+        from: dFrom,
+        to: dFrom + +dc[2] - 1,
+        price: Math.floor((x.price * (100 - +dc[1])) / 100),
+        note: `ลด ${dc[1]}%`,
+      });
+    }
+    const fFrom = rows.length ? rows[rows.length - 1].to + 1 : 1;
+    if (fFrom <= total) rows.push({ from: fFrom, to: total, price: x.price, note: 'ราคาปกติ' });
+    const sum = rows.reduce((a, r) => a + r.price * (r.to - r.from + 1), 0);
+    return { total, rows, sum };
+  };
+  const outrightPay = (x) => {
+    const dc = (x.promoCode || '').match(/DC(\d+)%/);
+    return dc ? Math.round((x.price * (100 - +dc[1])) / 100) : x.price;
+  };
+  return {
+    outright: outright.map((x) => ({
+      svc: planName(x.policy).svc,
+      price: fmt(x.price),
+      pay: fmt(outrightPay(x)),
+      promo: decodePromo(x),
+    })),
+    monthly: monthly.map((x) => ({
+      head: `${planName(x.policy).yr} · ${planName(x.policy).svc}`,
+      svc: planName(x.policy).svc,
+      yr: planName(x.policy).yr,
+      price: `${fmt(x.price)} บาท/เดือน`,
+      promo: decodePromo(x),
+      schedule: buildSchedule(x),
+      best: x.price === minMonthly,
+    })),
+  };
+})();
+---
 <!doctype html>
 <html lang="th">
   <head>
@@ -98,100 +177,78 @@ const gallery = lgGallery.products.find((s) => s.code === p.code);
         <button class="btn btn-primary btn-interest" data-open-inquiry>สนใจรุ่นนี้</button>
       </section>
 
-      {
-        // ── ทดลอง: ตารางแผนการชำระเงิน (เครื่องกรองน้ำ WD516) ──
-        p.code === 'WD516' && p.policies.length > 0 && (
-          <section class="plans">
-            <h2 class="plans-title">แผนการชำระเงิน</h2>
-            {
-              (() => {
-                const outright = p.policies.filter((x) => /^2Y/.test(x.policy));
-                const monthly = p.policies.filter((x) => !/^2Y/.test(x.policy));
-                const minMonthly = Math.min(...monthly.map((x) => x.price));
-                const planName = (policy) => {
-                  const [yr, type] = policy.split('_');
-                  const svc =
-                    type === 'Visit'
-                      ? 'ช่างเข้าบริการถึงบ้าน'
-                      : type === 'Self'
-                        ? 'เปลี่ยนอะไหล่ด้วยตนเอง'
-                        : type || '';
-                  return { yr: yr.replace('Y', ' ปี'), svc };
-                };
-                const fmtN = (n) => (n == null ? '—' : n.toLocaleString('th-TH'));
-                // ถอดรหัส promoCode → ข้อความโปรโมชัน/รอบบิล
-                const decodePromo = (x) => {
-                  const code = x.promoCode || '';
-                  const out = [];
-                  if (/^2Y/.test(x.policy)) {
-                    const dc = code.match(/DC(\d+)%/);
-                    if (dc) out.push(`ลด ${dc[1]}%`);
-                    const yr = code.match(/_(20\d{2})$/);
-                    if (yr) out.push(`แคมเปญ ${yr[1]}`);
-                  } else {
-                    const m1 = code.match(/PRO_(\d+)\((\d+)M\)?/); // วงเล็บปิดอาจถูกตัดใน PDF
-                    if (m1) out.push(`รอบบิลแรก ${m1[1]}.-`);
-                    const dc = code.match(/DC(\d+)%\((\d+)M\)?/);
-                    if (dc) out.push(`ลด ${dc[1]}% นาน ${dc[2]} รอบบิล`);
-                    const [type] = x.policy.split('_').slice(1);
-                    if (x.term) out.push(`${type === 'Visit' ? 'ช่างเข้าบริการ' : 'จัดส่งอะไหล่'}ทุก ${x.term} เดือน`);
-                  }
-                  return out.length ? out : null;
-                };
-                return (
-                  <>
-                    {outright.length > 0 && (
-                      <div class="plans-group">
-                        <div class="plans-group-title">
-                          <span>ซื้อขาด</span>
-                          <small>จ่ายครั้งเดียว · รับประกัน 2 ปี</small>
-                        </div>
-                        <div class="plans-cards">
-                          {outright.map((x) => (
-                            <div class="plan-card">
-                              <div class="plan-card-head">{planName(x.policy).svc}</div>
-                              <div class="plan-card-price">{fmtN(x.price)} <span>บาท</span></div>
-                              <ul class="plan-card-promo">
-                                {(decodePromo(x) || []).map((t) => (
-                                  <li>{t}</li>
-                                ))}
-                              </ul>
-                            </div>
-                          ))}
-                        </div>
-                      </div>
-                    )}
-                    {monthly.length > 0 && (
-                      <div class="plans-group">
-                        <div class="plans-group-title">
-                          <span>Subscribe รายเดือน</span>
-                          <small>รวมค่าดูแลตลอดสัญญา</small>
-                        </div>
-                        <div class="plans-cards">
-                          {monthly.map((x) => (
-                            <div class={`plan-card${x.price === minMonthly ? ' is-best' : ''}`}>
-                              <div class="plan-card-head">
-                                <b>{planName(x.policy).yr}</b>
-                                <span class="plan-card-svc">{planName(x.policy).svc}</span>
-                                {x.price === minMonthly && <span class="plans-best">เริ่มต้น</span>}
-                              </div>
-                              <div class="plan-card-price">{fmtN(x.price)} <span>บาท/เดือน</span></div>
-                              <ul class="plan-card-promo">
-                                {(decodePromo(x) || []).map((t) => (
-                                  <li>{t}</li>
-                                ))}
-                              </ul>
-                            </div>
-                          ))}
-                        </div>
-                      </div>
-                    )}
-                  </>
-                );
-              })()}
-          </section>
-        )
-      }
+            {planCards && (
+        <section class="plans">
+          <h2 class="plans-title">แผนการชำระเงิน</h2>
+          {planCards.outright.length > 0 && (
+            <div class="plans-group">
+              <div class="plans-group-title">
+                <span>ซื้อขาด</span>
+                <small>จ่ายครั้งเดียว · รับประกัน 2 ปี</small>
+              </div>
+              <div class="plans-cards">
+                {planCards.outright.map((x) => (
+                  <div
+                    class="plan-card"
+                    data-plan
+                    data-plan-outright
+                    data-plan-price={x.price}
+                    data-plan-pay={x.pay}
+                    data-plan-promo={JSON.stringify(x.promo || [])}
+                    data-plan-svc={x.svc}
+                    role="button"
+                    tabindex="0"
+                    aria-label={`ดูรายละเอียด ${x.svc}`}
+                  >
+                    <div class="plan-card-head">{x.svc}</div>
+                    <div class="plan-card-price">{x.price} <span>บาท</span></div>
+                    <ul class="plan-card-promo">
+                      {(x.promo || []).map((t) => (
+                        <li>{t}</li>
+                      ))}
+                    </ul>
+                  </div>
+                ))}
+              </div>
+            </div>
+          )}
+          {planCards.monthly.length > 0 && (
+            <div class="plans-group">
+              <div class="plans-group-title">
+                <span>Subscribe รายเดือน</span>
+                <small>รวมค่าดูแลตลอดสัญญา</small>
+              </div>
+              <div class="plans-cards">
+                {planCards.monthly.map((x) => (
+                  <div
+                    class={`plan-card${x.best ? ' is-best' : ''}`}
+                    data-plan
+                    data-plan-schedule={JSON.stringify(x.schedule)}
+                    data-plan-head={x.head}
+                    data-plan-price={x.price}
+                    data-plan-promo={JSON.stringify(x.promo || [])}
+                    role="button"
+                    tabindex="0"
+                    aria-label={`ดูรายละเอียด ${x.head}`}
+                  >
+                    <div class="plan-card-head">
+                      <b>{x.yr}</b>
+                      <span class="plan-card-svc">{x.svc}</span>
+                      {x.best && <span class="plans-best">เริ่มต้น</span>}
+                    </div>
+                    <div class="plan-card-price">{x.price}</div>
+                    <ul class="plan-card-promo">
+                      {(x.promo || []).map((t) => (
+                        <li>{t}</li>
+                      ))}
+                    </ul>
+                  </div>
+                ))}
+              </div>
+            </div>
+          )}
+        </section>
+      )}
 
       {spec && (
         <section class="specs">
@@ -275,7 +332,110 @@ const gallery = lgGallery.products.find((s) => s.code === p.code);
       </div>
     </div>
 
+    <!-- รายละเอียดแผนการชำระ (คลิกการ์ด) -->
+    <div class="plan-detail" data-plan-detail hidden>
+      <div class="plan-detail-backdrop" data-plan-close></div>
+      <div class="plan-detail-box" role="dialog" aria-modal="true" aria-labelledby="plan-detail-title">
+        <button class="plan-detail-close" data-plan-close aria-label="ปิด">×</button>
+        <h3 id="plan-detail-title" data-plan-title></h3>
+        <div class="plan-detail-sub" data-plan-sub></div>
+        <div class="plan-detail-body" data-plan-body></div>
+      </div>
+    </div>
+
     <script>
+      const planDetail = document.querySelector('[data-plan-detail]');
+      if (planDetail) {
+        const planTitle = planDetail.querySelector('[data-plan-title]');
+        const planSub = planDetail.querySelector('[data-plan-sub]');
+        const planBody = planDetail.querySelector('[data-plan-body]');
+        const openPlan = () => { planDetail.hidden = false; document.body.style.overflow = 'hidden'; };
+        const closePlan = () => { planDetail.hidden = true; document.body.style.overflow = ''; };
+        const fmtB = (n) => Number(n).toLocaleString('th-TH');
+        const renderRows = (s, promo) => {
+          const t = document.createElement('table');
+          t.className = 'plan-detail-table';
+          t.innerHTML = '<thead><tr><th>รอบบิล</th><th>ราคา/เดือน</th><th>หมายเหตุ</th></tr></thead>';
+          const tb = document.createElement('tbody');
+          for (const r of s.rows) {
+            const tr = document.createElement('tr');
+            const label = r.from === r.to ? 'รอบบิลที่ ' + r.from : 'รอบบิลที่ ' + r.from + '–' + r.to;
+            tr.innerHTML = '<td>' + label + '</td><td>' + fmtB(r.price) + ' บาท</td><td>' + r.note + '</td>';
+            tb.appendChild(tr);
+          }
+          t.appendChild(tb);
+          const total = document.createElement('div');
+          total.className = 'plan-detail-total';
+          total.textContent = 'รวมตลอดสัญญา ' + s.total + ' รอบบิล = ' + fmtB(s.sum) + ' บาท';
+          const promoList = document.createElement('ul');
+          promoList.className = 'plan-detail-promo';
+          (promo || []).forEach((p) => {
+            const li = document.createElement('li');
+            li.textContent = p;
+            promoList.appendChild(li);
+          });
+          planBody.replaceChildren(promoList, t, total);
+        };
+        const renderOutright = (price, pay, promo, svc) => {
+          const box = document.createElement('div');
+          box.className = 'plan-detail-outright';
+          const p0 = document.createElement('p');
+          p0.textContent = 'จ่ายครั้งเดียว พร้อมรับประกัน 2 ปี';
+          box.appendChild(p0);
+          const priceRow = document.createElement('div');
+          priceRow.className = 'plan-detail-outright-price';
+          if (pay !== price) {
+            const old = document.createElement('span');
+            old.className = 'old';
+            old.textContent = price + ' บาท';
+            const now = document.createElement('span');
+            now.className = 'now';
+            now.textContent = pay + ' บาท';
+            priceRow.append(old, now);
+          } else {
+            const now = document.createElement('span');
+            now.className = 'now';
+            now.textContent = price + ' บาท';
+            priceRow.appendChild(now);
+          }
+          box.appendChild(priceRow);
+          const promoList = document.createElement('ul');
+          promoList.className = 'plan-detail-promo';
+          (promo || []).forEach((p) => {
+            const li = document.createElement('li');
+            li.textContent = p;
+            promoList.appendChild(li);
+          });
+          box.appendChild(promoList);
+          const svcNote = document.createElement('p');
+          svcNote.className = 'plan-detail-svc';
+          svcNote.textContent = 'บริการ: ' + svc + ' · รับประกัน 2 ปี';
+          box.appendChild(svcNote);
+          planBody.replaceChildren(box);
+        };
+        document.querySelectorAll('[data-plan]').forEach((card) => {
+          const open = () => {
+            planTitle.textContent = card.dataset.planHead || card.dataset.planSvc || 'แผนการชำระเงิน';
+            planSub.textContent = card.dataset.planPrice ? 'ราคา ' + card.dataset.planPrice : '';
+            if (card.dataset.planOutright !== undefined) {
+              renderOutright(card.dataset.planPrice, card.dataset.planPay, JSON.parse(card.dataset.planPromo || '[]'), card.dataset.planSvc);
+            } else {
+              renderRows(JSON.parse(card.dataset.planSchedule), JSON.parse(card.dataset.planPromo || '[]'));
+            }
+            openPlan();
+          };
+          card.addEventListener('click', open);
+          card.addEventListener('keydown', (e) => {
+            if (e.key === 'Enter' || e.key === ' ') {
+              e.preventDefault();
+              open();
+            }
+          });
+        });
+        planDetail.querySelectorAll('[data-plan-close]').forEach((el) => el.addEventListener('click', closePlan));
+        document.addEventListener('keydown', (e) => { if (e.key === 'Escape') closePlan(); });
+      }
+
       const inq = document.querySelector('[data-inquiry]');
       if (inq) {
         const name = inq.dataset.name;
