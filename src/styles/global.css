@@ -121,34 +121,57 @@ a {
   height: auto;
 }
 
+/* ข้อความ overlay มุมซ้ายบน banner (แบบหน้า LG จริง) */
+.banner-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 26px 30px;
+  max-width: 64%;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  pointer-events: none;
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.45);
+}
+
+.banner-eyebrow {
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 2.5px;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.banner-title {
+  font-size: clamp(1.15rem, 2.6vw, 1.75rem);
+  font-weight: 800;
+  line-height: 1.22;
+  color: #fff;
+}
+
+.banner-sub {
+  font-size: 0.9rem;
+  font-weight: 500;
+  line-height: 1.5;
+  color: rgba(255, 255, 255, 0.95);
+}
+
+/* แถบใต้ภาพ: จุดเลื่อน + ป้ายหมวด + ข้อความแนะนำ */
 .banner-caption {
   display: flex;
   align-items: center;
   justify-content: space-between;
   gap: 14px;
-  padding: 12px 18px;
-  background: linear-gradient(135deg, var(--brand), var(--brand-dark));
+  padding: 10px 18px;
+  background: linear-gradient(135deg, var(--brand-dark), #5c001c);
   color: #fff;
 }
 
-.banner-caption-text {
-  display: flex;
-  flex-direction: column;
-  gap: 2px;
-  min-width: 0;
-}
-
-.banner-caption-text b {
-  font-size: 1rem;
-  font-weight: 800;
-  line-height: 1.35;
-}
-
-.banner-caption-text small {
-  font-size: 0.8rem;
+.banner-caption-hint {
+  font-size: 0.78rem;
   font-weight: 500;
-  color: rgba(255, 255, 255, 0.85);
-  line-height: 1.4;
+  color: rgba(255, 255, 255, 0.78);
 }
 
 .banner-caption-cat {
@@ -229,16 +252,30 @@ a {
     border-radius: 12px;
   }
 
+  .banner-overlay {
+    padding: 16px 18px;
+    max-width: 78%;
+  }
+
+  .banner-eyebrow {
+    font-size: 0.62rem;
+    letter-spacing: 1.5px;
+  }
+
+  .banner-title {
+    font-size: 1.02rem;
+  }
+
+  .banner-sub {
+    font-size: 0.76rem;
+  }
+
   .banner-caption {
-    padding: 10px 14px;
+    padding: 8px 14px;
   }
 
-  .banner-caption-text b {
-    font-size: 0.88rem;
-  }
-
-  .banner-caption-text small {
-    font-size: 0.72rem;
+  .banner-caption-hint {
+    font-size: 0.7rem;
   }
 
   .banner-caption-cat {

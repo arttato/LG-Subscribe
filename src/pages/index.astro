@@ -102,15 +102,19 @@ const policyRows = [...heroProduct.policies]
                 {s.desktop && <source media="(min-width: 769px)" srcSet={`${base}${s.desktop.replace(/^\//, '')}`} />}
                 <img src={`${base}${s.desktop.replace(/^\//, '')}`} alt={(s.title || '') + (s.subtitle ? ' — ' + s.subtitle : '')} loading="eager" />
               </picture>
-              {(s.title || s.category) && (
-                <div class="banner-caption">
-                  <span class="banner-caption-text">
-                    {s.title && <b>{s.title}</b>}
-                    {s.subtitle && <small>{s.subtitle}</small>}
-                  </span>
-                  {s.category && <span class="banner-caption-cat">{s.category}</span>}
+              {(s.title || s.subtitle) && (
+                <div class="banner-overlay">
+                  <span class="banner-eyebrow">LG Subscribe</span>
+                  {s.title && <b class="banner-title">{s.title}</b>}
+                  {s.subtitle && <span class="banner-sub">{s.subtitle}</span>}
                 </div>
               )}
+              <div class="banner-caption">
+                <span class="banner-caption-hint">
+                  {s.query ? 'คลิกดูเฉพาะรุ่นที่เกี่ยวข้อง' : s.category ? `คลิกดูสินค้าหมวด ${s.category}` : 'คลิกดูสินค้าทั้งหมด'}
+                </span>
+                {s.category && <span class="banner-caption-cat">{s.category}</span>}
+              </div>
             </div>
           ))}
         </div>
