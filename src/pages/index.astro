@@ -8,6 +8,10 @@ const base = import.meta.env.BASE_URL;
 // รวมหมวดหมู่ย่อยเป็นกลุ่มหลักแบบ LG (ตู้เย็น / 2 ประตู → ตู้เย็น)
 const topCat = (c) => (c || 'อื่นๆ').split(' / ')[0];
 
+// ชื่อหัวข้อหมวดที่แสดง (ต่างจากชื่อหมวดในข้อมูล — ใช้กับหัวข้อใหญ่เท่านั้น ป้ายบนการ์ด/ชิปคงชื่อสั้น)
+const catTitles = { 'Sound bar': 'Sound bar และ Bluetooth Speaker' };
+const titleOf = (name) => catTitles[name] || name;
+
 const groups = new Map();
 for (const p of products) {
   const g = topCat(p.category);
@@ -199,7 +203,7 @@ function policyChips(p) {
         {sections.map((sec) => (
           <div class="cat-section" data-cat={sec.name}>
             <div class="cat-head">
-              <h3>{sec.name}</h3>
+              <h3>{titleOf(sec.name)}</h3>
               <span class="cat-count">{sec.count} รุ่น</span>
             </div>
             <div class="grid">
