@@ -21,3 +21,10 @@ Care Service 2026.pdf
 # PDF สำเนาในโฟลเดอร์หลัก (ซ้ำกับ pdfs/ ที่ระบบใช้)
 /Price list_Aug_V3.pdf
 /Sale Price8 - Subscription_V3.pdf
+
+# ไฟล์ชั่วคราวจากงาน OCR/ทดสอบ
+*.traineddata
+lg-wd516-test.html
+
+# โฟลเดอร์ต้นทางสเปคการ์ด (import เข้าเว็บแล้ว)
+/สเปคการ์ด/
