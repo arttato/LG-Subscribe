@@ -45,18 +45,6 @@ const cardNameOf = (p) => {
   return n;
 };
 
-// สเปคเด่น 2-3 รายการสำหรับ tooltip บนการ์ด (จากเว็บ LG Thailand + PDF ราคา)
-const specMap = new Map([...lgSpecs.products, ...pdfSpecs.products].map((s) => [s.code, s]));
-const tipMap = new Map();
-for (const p of products) {
-  const s = specMap.get(p.code);
-  if (!s) continue;
-  const items = (s.keySpecs && s.keySpecs.length) ? s.keySpecs
-    : (s.features && s.features.length) ? s.features.map((f) => ({ name: 'คุณลักษณะ', value: f }))
-    : (s.groups?.[0]?.specs || s.specs || []);
-  tipMap.set(p.slug, items.filter((i) => i.name && i.value).slice(0, 3));
-}
-
 // รูปสินค้าที่สกัดจาก PDF (scripts/extract-images.mjs) — รุ่นไหนไม่มีรูปจะไม่แสดง <img>
 const imgDir = process.cwd() + '/public/img/products';
 const imgSlugs = new Set(fs.existsSync(imgDir) ? fs.readdirSync(imgDir).map((f) => f.replace(/\.jpg$/, '')) : []);
@@ -400,17 +388,6 @@ const VIDEO_ID = 'uNwPkrefazo';
                           ></span>
                         ))}
                         <span class="card-colors-note">{colorMap.get(p.code).length} สี</span>
-                      </div>
-                    )}
-                    {tipMap.get(p.slug) && tipMap.get(p.slug).length > 0 && (
-                      <div class="card-tip">
-                        <div class="card-tip-title">สเปคเด่น</div>
-                        {tipMap.get(p.slug).map((i) => (
-                          <div class="card-tip-row">
-                            <span>{i.name}</span>
-                            <b>{i.value}</b>
-                          </div>
-                        ))}
                       </div>
                     )}
                     <div class="card-price">

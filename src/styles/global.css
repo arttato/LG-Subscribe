@@ -911,66 +911,6 @@ a {
   inset: 0;
 }
 
-/* tooltip สเปคเด่นบนการ์ด */
-.card-tip {
-  position: absolute;
-  left: 50%;
-  bottom: calc(100% + 10px);
-  transform: translateX(-50%);
-  width: min(260px, calc(100vw - 40px));
-  background: var(--dark);
-  color: #fff;
-  border-radius: 10px;
-  padding: 12px 14px;
-  font-size: 0.78rem;
-  z-index: 30;
-  opacity: 0;
-  pointer-events: none;
-  transition: opacity 0.15s;
-  box-shadow: var(--shadow);
-}
-
-.card:hover .card-tip,
-.card:focus-within .card-tip {
-  opacity: 1;
-}
-
-.card-tip::after {
-  content: '';
-  position: absolute;
-  top: 100%;
-  left: 50%;
-  transform: translateX(-50%);
-  border: 7px solid transparent;
-  border-top-color: var(--dark);
-}
-
-.card-tip-title {
-  font-weight: 700;
-  font-size: 0.8rem;
-  color: #ffd9e2;
-  margin-bottom: 6px;
-}
-
-.card-tip-row {
-  display: flex;
-  justify-content: space-between;
-  gap: 12px;
-  padding: 2px 0;
-  line-height: 1.45;
-}
-
-.card-tip-row span {
-  color: #d6d6da;
-}
-
-.card-tip-row b {
-  text-align: right;
-  font-weight: 600;
-  color: #fff;
-  min-width: 40%;
-}
-
 .empty {
   text-align: center;
   color: var(--muted);
