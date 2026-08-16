@@ -25,16 +25,6 @@ const FAMILIES = {
     { key: 'white',  th: 'ขาว',    model: 'WD518AN.AWHPLMT', url: 'https://www.lg.com/th/water-purifiers/wd518an-awhplmt/', swatch: '#f2f2f2' },
     { key: 'gray',   th: 'เทา',     model: 'WD518AN.ACGPLMT', url: 'https://www.lg.com/th/water-purifiers/wd518an-acgplmt/', swatch: '#8d9198' },
   ],
-  // ── เครื่องซักผ้าฝาหน้า 20/10 กก. (2 สี) ──
-  'F2520RNTB.AEBPETH': [
-    { key: 'blackmetal', th: 'สีดำโลหะ',      model: 'F2520RNTB', url: 'https://www.lg.com/th/laundry/front-load-washing-machine/f2520rntb/', swatch: '#3a3a3d' },
-    { key: 'graphite',   th: 'เอสเซนส์กราไฟต์', model: 'F2520RNTG', url: 'https://www.lg.com/th/laundry/front-load-washing-machine/f2520rntg/', swatch: '#6e7074' },
-  ],
-  // ── WashTower 21/16 กก. (2 สี) ──
-  'WT2116SHEG.ABGPETH': [
-    { key: 'green', th: 'สีเขียว', model: 'WT2116SHEG', url: 'https://www.lg.com/th/laundry/wash-tower/wt2116sheg/', swatch: '#8a9a6f' },
-    { key: 'black', th: 'สีดำ',   model: 'WT2116SHBB', url: 'https://www.lg.com/th/laundry/wash-tower/wt2116shbb/', swatch: '#2c2c2e' },
-  ],
   // ── WashTower 14/10 กก. (2 สี — แยกการ์ดตามสี) ──
   'WT1410NHEG.ABGPQTH': [
     { key: 'naturalgreen', th: 'เขียวธรรมชาติ', model: 'WT1410NHEG', url: 'https://www.lg.com/th/laundry/wash-tower/wt1410nheg/', swatch: '#8b9b7e' },
