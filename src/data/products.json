@@ -2532,7 +2532,7 @@
       "code": "WT1410NHEG.ABGPQTH",
       "slug": "wt1410nheg-abgpqth",
       "category": "Wash Tower",
-      "name": "เครื่องซักอบผ้า LG WashTower 14/10 กก. รุ่น NHEG",
+      "name": "เครื่องซักอบผ้า LG WashTower 14/10 กก.",
       "source": "Price list_Aug_V3.pdf",
       "page": 14,
       "srcPage": 16,
@@ -2569,42 +2569,6 @@
         }
       ],
       "description": "WT1410NHEG.ABGPQTH\nซัก 14 กก./ อบ 10 กก.\n5Y_Self ทุกๆ 12 เดือน 1,499 9,600 SELF_5Y_12M_PRO_149(1M)_DC50%(11M)\nรับประกันมอเตอร์และ • ลด 50% 11 เดือน (รอบบิลที่ 2-12)\nคอมเพรสเซอร์ 10 ปี"
-    },
-    {
-      "code": "WT1410NHEN.ABNPQTH",
-      "slug": "wt1410nhen-abnpqth",
-      "category": "Wash Tower",
-      "name": "เครื่องซักอบผ้า LG WashTower 14/10 กก. รุ่น NHEN",
-      "source": "Price list_Aug_V3.pdf",
-      "page": 15,
-      "srcPage": 17,
-      "y": 363,
-      "y2": 188,
-      "pdf": "/pdfs/Price%20list_Aug_V3.pdf",
-      "mode": "monthly",
-      "price": 1399,
-      "priceFrom": "6Y_Visit",
-      "policies": [
-        {
-          "policy": "5Y_Visit",
-          "term": 12,
-          "price": 1599,
-          "promoCode": "VISIT_5Y_12M_PRO_149(1M)_DC50%(11M"
-        },
-        {
-          "policy": "5Y_Self",
-          "term": 12,
-          "price": 1499,
-          "promoCode": "SELF_5Y_12M_PRO_149(1M)_DC50%(11M"
-        },
-        {
-          "policy": "6Y_Visit",
-          "term": 12,
-          "price": 1399,
-          "promoCode": "VISIT_6Y_12M_PRO_149(1M)_DC50%(11M"
-        }
-      ],
-      "description": "5Y_Visit ทุกๆ 12 เดือน 1,599 10,250 VISIT_5Y_12M_PRO_149(1M)_DC50%(11M)\nWT1410NHEN.ABNPQTH • รอบบิลที่ 13-60 (1,599)"
     },
     {
       "code": "WT2116SHEG.ABGPETH",
@@ -2652,7 +2616,7 @@
       "code": "WT2520NHEG.ABGPETH",
       "slug": "wt2520nheg-abgpeth",
       "category": "Wash Tower",
-      "name": "เครื่องซักอบผ้า LG WashTower 25/20 กก. รุ่น NHEG",
+      "name": "เครื่องซักอบผ้า LG WashTower 25/20 กก.",
       "source": "Price list_Aug_V3.pdf",
       "page": 11,
       "srcPage": 13,
@@ -2689,48 +2653,6 @@
         }
       ],
       "description": "5Y_Visit ทุกๆ 12 เดือน 2,399 15,450 VISIT_5Y_12M_PRO_149(1M)_DC50%(11M)\nWT2520NHEG.ABGPETH\nซัก 25 กก./ อบ 20 กก. รอบบิลที่ 1 (149)\n5Y_Self ทุกๆ 12 เดือน 2,199 14,150 SELF_5Y_12M_PRO_149(1M)_DC50%(11M)\nรับประกันมอเตอร์และ\nคอมเพรสเซอร์ 10 ปีรอบบิลที่ 13-60 (2,199)"
-    },
-    {
-      "code": "WT2520NHEN.ABNPETH",
-      "slug": "wt2520nhen-abnpeth",
-      "category": "Wash Tower",
-      "name": "เครื่องซักอบผ้า LG WashTower 25/20 กก. รุ่น NHEN",
-      "source": "Price list_Aug_V3.pdf",
-      "page": 12,
-      "srcPage": 14,
-      "y": 339,
-      "y2": 114,
-      "pdf": "/pdfs/Price%20list_Aug_V3.pdf",
-      "mode": "monthly",
-      "price": 1999,
-      "priceFrom": "6Y_Self",
-      "policies": [
-        {
-          "policy": "5Y_Visit",
-          "term": 12,
-          "price": 2399,
-          "promoCode": "VISIT_5Y_12M_PRO_149(1M)_DC50%(11M"
-        },
-        {
-          "policy": "5Y_Self",
-          "term": 12,
-          "price": 2199,
-          "promoCode": "SELF_5Y_12M_PRO_149(1M)_DC50%(11M"
-        },
-        {
-          "policy": "6Y_Visit",
-          "term": 12,
-          "price": 2199,
-          "promoCode": "VISIT_6Y_12M_PRO_149(1M)_DC50%(11M"
-        },
-        {
-          "policy": "6Y_Self",
-          "term": 12,
-          "price": 1999,
-          "promoCode": "SELF_6Y_12M_PRO_149(1M)_DC50%(11M"
-        }
-      ],
-      "description": "WT2520NHEN.ABNPETH รอบบิลที่ 1 (149)\nซัก 25 กก./ อบ 20 กก. • ราคา 149.- (1 รอบบิลแรก)\n5Y_Self ทุกๆ 12 เดือน 2,199 14,150 SELF_5Y_12M_PRO_149(1M)_DC50%(11M)\nรับประกันมอเตอร์และคอมเพรสเซอร์รอบบิลที่ 13-60 (2,199)\n10 ปี\nขนาดผลิตภัณฑ์ • ราคา 149.- (1 รอบบิลแรก)\n6Y_Visit ทุกๆ 12 เดือน 2,199 14,150 VISIT_6Y_12M_PRO_149(1M)_DC50%(11M)\n(กว้างxสูงxลึก, มม.)\n700 x 1890 x 830"
     }
   ]
 }

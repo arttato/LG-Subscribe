@@ -42,7 +42,7 @@ npm run specs        # คุณสมบัติ/สเปคจาก lg.com/
 npm run gallery      # URL รูปหลายมุมจาก lg.com/th
 npm run lgimages     # ดาวน์โหลดรูปจริงลง public/img/products/ (ทับรูป PDF)
 npm run cardhero     # ตรวจ/แก้รูปการ์ดให้เป็นรูปสินค้าจริงตามหน้า LG (og:image)
-npm run colors       # gallery แยกสี → ปุ่มเลือกสีบนหน้า detail (WD516/WD518 3 สี, เครื่องซักผ้า/WashTower 2 สี)
+npm run colors       # gallery แยกสี → ปุ่มเลือกสีบนหน้า detail (WD516/WD518 3 สี, WashTower 14/10 และ 25/20 → 1 การ์ด 2 สี)
 
 # 7. build และ deploy
 npm run build        # ผลลัพธ์อยู่ในโฟลเดอร์ dist/
