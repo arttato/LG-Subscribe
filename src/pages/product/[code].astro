@@ -44,7 +44,8 @@ const colorVariants = colorInfo ? colorInfo.colors : [];
 // เตรียม JSON ไว้ให้ <script> อ่าน (เอา `</` ออกก่อนกัน HTML parser สะดุด)
 const galleryJson = JSON.stringify({ baseImages: gallery ? gallery.images : [], variants: colorVariants }).replaceAll('</', '\\u003c\\u002f');
 const care = careData.products.find((s) => s.code === p.code);
-const careImg = care && care.page ? `${base}img/care/care-${String(care.page).padStart(2, '0')}.png` : null;
+// รูปบริการ: ใช้รูปเฉพาะรุ่น (care.img) ถ้ามี ไม่งั้นใช้หน้าที่ render จาก PDF (care-NN.png)
+const careImg = care && (care.img ? `${base}img/care/${care.img}` : care.page ? `${base}img/care/care-${String(care.page).padStart(2, '0')}.png` : null);
 
 // ── แผนการชำระเงิน (ทดลอง WD516) — คำนวณใน frontmatter (JS ล้วน ไม่ผ่าน expression slot ของ Astro) ──
 const planCards = (() => {

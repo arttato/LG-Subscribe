@@ -46,6 +46,13 @@ const PAGE_TITLE = {
 // ตู้เย็นที่เดินท่อน้ำพร้อมชุดกรองน้ำ (หน้า 6 ของ Care Service ระบุรุ่นตระกูล X24, L24)
 const FRIDGE_WATERLINE = new Set(['GC-X257CMHW.AEEPLMT', 'GC-L24FFCBB.AEVPLM1']);
 
+// รูปบริการเฉพาะรุ่น — ใช้รูปทางการจาก LG (ลูกค้าส่งมา) แทนหน้า PDF ทั่วไป
+// key = รหัสเต็ม, img = ไฟล์ใน public/img/care/, title = คำบรรยายบนหน้า detail
+const CARE_IMG_OVERRIDE = {
+  'DD23GMWE1S.ATH': { img: 'care-dd23gmwe1s.jpg', title: 'บริการดูแลเครื่องลดความชื้น' },
+  'AS25GCBY0.ABAE': { img: 'care-as25gcby0.jpg', title: 'บริการดูแลเครื่องฟอกอากาศ AeroCat Tower AS25GCBY0' },
+};
+
 function carePageOf(p) {
   const c = p.category || '';
   if (c.startsWith('เครื่องกรองน้ำ')) return 3;
@@ -75,8 +82,11 @@ const products = [];
 let mapped = 0;
 for (const p of PRODUCTS.products) {
   const page = carePageOf(p);
-  products.push({ code: p.code, page, title: page ? PAGE_TITLE[page] : null });
-  if (page) mapped++;
+  const ov = CARE_IMG_OVERRIDE[p.code];
+  const entry = { code: p.code, page, title: (ov && ov.title) || (page ? PAGE_TITLE[page] : null) };
+  if (ov) entry.img = ov.img; // ใช้รูปเฉพาะรุ่นแทนหน้า PDF
+  products.push(entry);
+  if (page || ov) mapped++;
 }
 fs.writeFileSync(
   `${ROOT}/src/data/care.json`,
