@@ -15,8 +15,32 @@ const base = import.meta.env.BASE_URL;
 const lgNameMap = new Map(lgSpecs.products.map((s) => [s.code, s.lgName]).filter(([, n]) => n));
 // รุ่นที่มีหลายสี (จุดสีบนการ์ด) — ตัดชื่อสีไทยออกจากชื่อการ์ด (เช่น "... สีน้ำเงิน" → "...")
 const thaiColorRe = /(?:^|\s)สี[^\s]{1,10}(?=\s|$)/g;
+// ครอบครัวของรุ่น (โค้ดก่อนจุด ตัด suffix สี/เวอร์ชันหลังขีดแรก) เช่น A9T-CORE → A9T
+const famOf = (code) => code.split('.')[0].split('-')[0];
+// ชื่อการ์ดที่ย่อจาก lgName แล้วชนกับรุ่นพี่น้อง (เช่น A9T Core/Lite: "เครื่องดูดฝุ่น LG CordZero™ แบบด้ามจับ..." ซ้ำกัน)
+// → ใช้ชื่อจาก p.name (มีรุ่นกำกับ เช่น "รุ่น A9T-CORE") แทน กันการ์ดชื่อซ้ำ และใช้ทั้งครอบครัวให้ชื่อรูปแบบเดียวกัน
+const shortNameCollisions = new Set();
+{
+  const seen = new Map();
+  for (const p of products) {
+    if (!lgNameMap.has(p.code)) continue;
+    const s = lgShortName(lgNameMap.get(p.code));
+    if (!seen.has(s)) seen.set(s, []);
+    seen.get(s).push(p);
+  }
+  for (const list of seen.values()) {
+    if (list.length < 2) continue;
+    for (const p of list) shortNameCollisions.add(p.code);
+    // ครอบครัวเดียวกันทั้งหมด (เช่น A9T Ultra ที่ชื่อย่อไม่ซ้ำแต่ควรใช้รูปแบบเดียวกันกับ Core/Lite)
+    const fams = new Set(list.map((p) => famOf(p.code)));
+    for (const p of products) if (fams.has(famOf(p.code))) shortNameCollisions.add(p.code);
+  }
+}
 const cardNameOf = (p) => {
-  let n = lgNameMap.has(p.code) ? lgShortName(lgNameMap.get(p.code)) : p.name;
+  let n =
+    lgNameMap.has(p.code) && !shortNameCollisions.has(p.code)
+      ? lgShortName(lgNameMap.get(p.code))
+      : p.name;
   if (colorMap.has(p.code)) n = n.replace(thaiColorRe, ' ').replace(/\s{2,}/g, ' ').trim();
   return n;
 };
