@@ -109,8 +109,11 @@ const badgeTip = {
 };
 const capBadge = (p) => {
   const re = /([\d.,/]+)\s*(BTU|กก|คิว|ตร\.ม|นิ้ว)/i;
-  const m = (p.name || '').match(re);
-  const hit = m || (cardNameOf(p) || '').match(re);
+  const cardName = cardNameOf(p) || '';
+  // BTU: ให้ตรงกับตัวเลขที่แสดงในชื่อการ์ด (LG ใช้ BTU จริง เช่น 9,212 — ต่างจาก PDF ที่ปัดเป็น 9,200)
+  const mBtu = cardName.match(/([\d.,/]+)\s*BTU/i);
+  if (mBtu) return { text: `${mBtu[1]} BTU`, unitKey: 'btu' };
+  const hit = (p.name || '').match(re) || cardName.match(re);
   if (!hit) return null;
   const unitKey = hit[2].toLowerCase().includes('btu') ? 'btu' : hit[2].toLowerCase().includes('กก') ? 'kg' : hit[2].toLowerCase().includes('นิ้ว') ? 'inch' : hit[2].toLowerCase().includes('คิว') ? 'cubic' : 'sqm';
   return { text: `${hit[1]} ${hit[2]}`, unitKey };
