@@ -363,6 +363,73 @@ const planCards = (() => {
           </div>
         </section>
       )}
+
+      {spec && spec.featureBlocks && spec.featureBlocks.length > 0 && (
+        <section class="lg-features">
+          <h2 class="section-title">คุณสมบัติ</h2>
+          <div class="lg-features-grid">
+            {spec.featureBlocks.map((b) => (
+              <div class="lg-feature">
+                <div class="lg-feature-img-wrap">
+                  <img class="lg-feature-img" src={b.image} alt={b.title} loading="lazy" />
+                </div>
+                <div class="lg-feature-text">
+                  <h3 class="lg-feature-title">{b.title}</h3>
+                  {b.desc && <p class="lg-feature-desc">{b.desc}</p>}
+                </div>
+              </div>
+            ))}
+          </div>
+          <div class="specs-source">
+            ข้อมูลจาก <a href={spec.url} target="_blank" rel="noopener">เว็บ LG Thailand</a>
+          </div>
+        </section>
+      )}
+
+      {spec && spec.groups && spec.groups.length > 0 && (
+        <section class="lg-specs-full">
+          <h2 class="section-title">สเปคทั้งหมด</h2>
+          {spec.groups.map((g, gi) => (
+            <details class="specs-group" open={gi === 0}>
+              <summary>
+                {g.title}
+                <span class="specs-count">{g.specs.length}</span>
+              </summary>
+              <table class="specs-table">
+                <tbody>
+                  {g.specs.map((s) => (
+                    <tr>
+                      <th scope="row">{s.name}</th>
+                      <td>{s.value}</td>
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+            </details>
+          ))}
+          <div class="specs-source">
+            ข้อมูลจาก <a href={spec.url} target="_blank" rel="noopener">เว็บ LG Thailand</a>
+          </div>
+        </section>
+      )}
+
+      {spec && spec.faq && spec.faq.length > 0 && (
+        <section class="lg-faq">
+          <h2 class="section-title">คำถามที่พบบ่อย</h2>
+          {spec.faq.map((f, fi) => (
+            <details class="faq-item" open={fi === 0}>
+              <summary>
+                <span class="faq-q">Q. {f.q}</span>
+                <span class="faq-toggle" aria-hidden="true"></span>
+              </summary>
+              <div class="faq-a">{f.a}</div>
+            </details>
+          ))}
+          <div class="specs-source">
+            ข้อมูลจาก <a href={spec.url} target="_blank" rel="noopener">เว็บ LG Thailand</a>
+          </div>
+        </section>
+      )}
     </main>
 
     <!-- ดูรูปขยายเต็มจอ -->

@@ -2262,9 +2262,169 @@ a {
   text-decoration: underline;
 }
 
+/* ================= คุณสมบัติ (รูปจากเว็บ LG) ================= */
+.lg-features,
+.lg-specs-full,
+.lg-faq {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 24px;
+  margin-bottom: 20px;
+}
+
+.lg-features .section-title,
+.lg-specs-full .section-title,
+.lg-faq .section-title {
+  font-size: 1.15rem;
+  font-weight: 800;
+  margin: 0 0 16px;
+}
+
+.lg-features-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+}
+
+.lg-feature {
+  display: grid;
+  grid-template-columns: minmax(0, 1.4fr) minmax(0, 1fr);
+  align-items: center;
+  gap: 22px;
+  padding: 14px;
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  background: var(--bg);
+}
+
+.lg-feature:nth-child(even) .lg-feature-img-wrap {
+  order: 2;
+}
+
+.lg-feature-img-wrap {
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+  background: #fff;
+  aspect-ratio: 16 / 9;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.lg-feature-img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.lg-feature-text {
+  min-width: 0;
+}
+
+.lg-feature-title {
+  font-size: 1.02rem;
+  font-weight: 800;
+  margin: 0 0 6px;
+  line-height: 1.4;
+}
+
+.lg-feature-desc {
+  font-size: 0.88rem;
+  line-height: 1.6;
+  color: var(--muted);
+  margin: 0;
+}
+
+/* ================= คำถามที่พบบ่อย (FAQ) ================= */
+.faq-item {
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  margin-bottom: 10px;
+  background: var(--bg);
+  overflow: hidden;
+}
+
+.faq-item summary {
+  cursor: pointer;
+  padding: 13px 16px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  list-style: none;
+  user-select: none;
+}
+
+.faq-item summary::-webkit-details-marker {
+  display: none;
+}
+
+.faq-q {
+  font-weight: 700;
+  font-size: 0.92rem;
+  line-height: 1.45;
+}
+
+.faq-toggle {
+  flex-shrink: 0;
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  border: 1.5px solid var(--brand);
+  position: relative;
+  transition: transform 0.15s;
+}
+
+.faq-toggle::before,
+.faq-toggle::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: var(--brand);
+  border-radius: 2px;
+}
+
+.faq-toggle::before {
+  width: 10px;
+  height: 2px;
+}
+
+.faq-toggle::after {
+  width: 2px;
+  height: 10px;
+}
+
+.faq-item[open] .faq-toggle {
+  transform: rotate(45deg);
+}
+
+.faq-a {
+  padding: 2px 16px 14px 16px;
+  font-size: 0.88rem;
+  line-height: 1.7;
+  color: var(--muted);
+  white-space: pre-line;
+}
+
 @media (max-width: 860px) {
   .detail-cols {
     grid-template-columns: 1fr;
+  }
+
+  .lg-feature {
+    grid-template-columns: 1fr;
+  }
+
+  .lg-feature:nth-child(even) .lg-feature-img-wrap {
+    order: 0;
+  }
+
+  .lg-feature-img-wrap {
+    aspect-ratio: 16 / 10;
   }
 }
 

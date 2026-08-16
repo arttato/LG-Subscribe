@@ -61,8 +61,12 @@ function parseItem(li) {
 }
 
 // แยกข้อมูลจาก HTML:
-//   features  = "คุณลักษณะที่สำคัญ" (id=keyFeatureList) — จุดเด่น marketing แบบ bullet
-//   keySpecs  = "คุณลักษณะเด่น" (ตาราง c-compare-selling ชื่อ/ค่า) — ใช้ทำ tooltip บนการ์ด
+//   features       = "คุณลักษณะที่สำคัญ" (id=keyFeatureList) — จุดเด่น marketing แบบ bullet
+//   keySpecs       = "คุณลักษณะเด่น" (ตาราง c-compare-selling ชื่อ/ค่า) — ใช้ทำ tooltip บนการ์ด
+//   featureBlocks  = "คุณสมบัติ" — ช่วง pdp-overview-section ถึง pdp-support-section
+//                    แต่ละ block: { title, desc, image } (headline + คำอธิบาย + รูป desktop)
+//   groups         = "สเปคทั้งหมด" (c-all-specs-area) — ตารางสเปคเต็มแยกกลุ่ม
+//   faq            = JSON-LD FAQPage — คำถาม/คำตอบ
 function extractSpecsFromHtml(html) {
   // คุณลักษณะที่สำคัญ (bullet list id=keyFeatureList) — แสดงบนหน้า detail
   const features = [];
@@ -83,7 +87,103 @@ function extractSpecsFromHtml(html) {
       if (item) keySpecs.push(item);
     }
   }
-  return { features, keySpecs, groups: [] };
+
+  // ── คุณสมบัติ (ภาพ + ข้อความ) — เฉพาะ block ใน c-folding ──
+  const featureBlocks = extractFeatureBlocks(html);
+
+  // ── สเปคเต็ม (กลุ่ม) ──
+  const groups = extractSpecGroups(html);
+
+  // ── FAQ (JSON-LD) ──
+  const faq = extractFaq(html);
+
+  return { features, keySpecs, groups, featureBlocks, faq };
+}
+
+// ชื่อ section ที่ไม่ใช่คุณสมบัติ (รีวิว/FAQ/subscribe/แนะนำสินค้า/บริการ) — ตัดออก
+const NON_FEATURE_TITLE = /(รีวิว|คำถามที่พบบ่อย|LG Subscribe|สินค้าแนะนำ|สนับสนุน|บริการดูแล|คุณสมบัติและสเปค|สเปคทั้งหมด)/;
+
+// c-folding block (component CM0007) = 1 คุณสมบัติ: eyebrow + headline + ข้อความ + รูป
+// ใช้ c-folding เป็นตัวแบ่ง เพราะ feature ส่วนใหญ่ของ LG ใช้ component นี้ (support/FAQ ไม่ใช่)
+function extractFeatureBlocks(html) {
+  const sIdx = html.indexOf('id="pdp-overview-section"');
+  const eIdx = html.indexOf('id="pdp-support-section"');
+  if (sIdx === -1 || eIdx === -1) return [];
+  const seg = html.slice(sIdx, eIdx);
+  const blocks = [];
+  const parts = seg.split('<div class="c-folding">');
+  for (let i = 1; i < parts.length; i++) {
+    const chunk = parts[i];
+    const headM = chunk.match(/<h2[^>]*cmp-title__text[^>]*>([\s\S]*?)<\/h2>/);
+    if (!headM) continue;
+    const title = stripTags(headM[1]);
+    if (!title || title.length > 90 || NON_FEATURE_TITLE.test(title)) continue;
+    // รูป: ชอบ desktop (min-width: 1025px) → mobile → img src
+    const srcM =
+      chunk.match(/<source media="\(min-width: 1025px\)" srcSet="([^"]+)"/) ||
+      chunk.match(/<source media="\(max-width: 1024px\)" srcSet="([^"]+)"/) ||
+      chunk.match(/<img[^>]*src="([^"]+)"/);
+    const src = srcM ? srcM[1] : null;
+    if (!src) continue;
+    // คำอธิบาย: ข้อความทุก <p> ก่อนรูป (ตัดชื่อ headline ออก) — ตัดให้สั้นพอดีสำหรับการ์ด
+    const upToPic = chunk.slice(0, Math.max(chunk.indexOf('<picture'), chunk.indexOf('<img')));
+    const ps = [...upToPic.matchAll(/<p[^>]*>([\s\S]*?)<\/p>/g)]
+      .map((m) => stripTags(m[1]))
+      .filter((t) => t && t !== title);
+    let desc = ps.join(' ');
+    if (desc.length > 320) {
+      desc = desc.slice(0, 320).replace(/\s+\S*$/, '') + '…';
+    }
+    blocks.push({
+      title,
+      desc,
+      image: src.startsWith('http') ? src : 'https://www.lg.com' + src,
+    });
+  }
+  return blocks;
+}
+
+// สเปคเต็ม: ทุกกลุ่ม (table-head + spec-list) ใน c-all-specs-area
+function extractSpecGroups(html) {
+  const groups = [];
+  const start = html.indexOf('c-all-specs-area');
+  if (start === -1) return groups;
+  const faq = html.indexOf('js-accordion', start);
+  const end = faq > start ? faq : start + 200000;
+  const seg = html.slice(start, end);
+  const re = /<div class="c-compare-selling__table-head[^"]*">([\s\S]*?)<\/div>([\s\S]*?)<ul class="c-compare-selling__spec-list">([\s\S]*?)<\/ul>/g;
+  for (const m of seg.matchAll(re)) {
+    const title = stripTags(m[1]);
+    const items = [];
+    for (const liM of m[3].matchAll(/<li[^>]*class="[^"]*c-compare-selling__item[^"]*">([\s\S]*?)<\/li>/g)) {
+      const nameM = liM[1].match(/c-compare-selling__spec-name[^>]*>([\s\S]*?)<\/div>/);
+      const valM = liM[1].match(/c-compare-selling__spec-desc[^>]*>([\s\S]*?)<\/div>/);
+      const name = nameM ? stripTags(nameM[1]) : '';
+      const value = valM ? stripTags(valM[1]) : '';
+      if (name || value) items.push({ name, value });
+    }
+    if (items.length) groups.push({ title, specs: items });
+  }
+  return groups;
+}
+
+// FAQ จาก JSON-LD (FAQPage)
+function extractFaq(html) {
+  for (const m of html.matchAll(/<script[^>]*type="application\/ld\+json"[^>]*>([\s\S]*?)<\/script>/gi)) {
+    try {
+      const j = JSON.parse(m[1].trim());
+      const arr = Array.isArray(j) ? j : [j];
+      for (const item of arr) {
+        const t = item['@type'];
+        if (t === 'FAQPage' || (Array.isArray(t) && t.includes('FAQPage'))) {
+          return (item.mainEntity || [])
+            .map((q) => ({ q: stripTags(q.name), a: stripTags(q.acceptedAnswer?.text || '') }))
+            .filter((x) => x.q && x.a);
+        }
+      }
+    } catch (e) {}
+  }
+  return [];
 }
 
 async function fetchHtml(url) {
@@ -134,9 +234,9 @@ for (let i = 0; i < targets.length; i++) {
   const t = targets[i];
   try {
     const html = await fetchHtml(t.url);
-    const { features, keySpecs, groups } = extractSpecsFromHtml(html);
+    const { features, keySpecs, groups, featureBlocks, faq } = extractSpecsFromHtml(html);
     if (features.length === 0 && keySpecs.length === 0) throw new Error('ไม่พบคุณลักษณะ/สเปกในหน้า');
-    results.push({ code: t.code, slug: t.slug, url: t.url, features, keySpecs, groups });
+    results.push({ code: t.code, slug: t.slug, url: t.url, features, keySpecs, groups, featureBlocks, faq });
     ok++;
     console.log(`✅ [${i + 1}/${targets.length}] ${t.code} → ${features.length} จุดเด่น, ${keySpecs.length} สเปคเด่น`);
   } catch (e) {
