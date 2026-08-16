@@ -141,177 +141,9 @@
       "description": "WD516 หรือ WD518\nOutright"
     },
     {
-      "code": "F2520RNTB.AEBPETH",
-      "slug": "f2520rntb-aebpeth",
-      "category": "เครื่องซักผ้า",
-      "name": "เครื่องซักผ้าอบผ้า LG 20/10 กก.",
-      "source": "Price list_Aug_V3.pdf",
-      "page": 16,
-      "srcPage": 18,
-      "y": 310,
-      "y2": 56,
-      "pdf": "/pdfs/Price%20list_Aug_V3.pdf",
-      "mode": "monthly",
-      "price": 799,
-      "priceFrom": "6Y_Self",
-      "policies": [
-        {
-          "policy": "5Y_Visit",
-          "term": 12,
-          "price": 899,
-          "promoCode": "VISIT_5Y_12M_PRO_149(1M)_DC50%(7M"
-        },
-        {
-          "policy": "5Y_Self",
-          "term": 12,
-          "price": 849,
-          "promoCode": "SELF_5Y_12M_PRO_149(1M)_DC50%(7M"
-        },
-        {
-          "policy": "6Y_Visit",
-          "term": 12,
-          "price": 849,
-          "promoCode": "VISIT_6Y_12M_PRO_149(1M)_DC50%(7M"
-        },
-        {
-          "policy": "6Y_Self",
-          "term": 12,
-          "price": 799,
-          "promoCode": "SELF_6Y_12M_PRO_149(1M)_DC50%(7M"
-        }
-      ],
-      "description": "F2520RNTB.AEBPETH\nซัก : 20 กก. อบ 10 กก. • ราคา 149.- (1 รอบบิลแรก)\n5Y_Self ทุกๆ 12 เดือน 849 3,675 SELF_5Y_12M_PRO_149(1M)_DC50%(7M)\nรับประกันมอเตอร์ 10 ปี"
-    },
-    {
-      "code": "FV1409H4W.ABWPETH",
-      "slug": "fv1409h4w-abwpeth",
-      "category": "เครื่องซักผ้า",
-      "name": "เครื่องซักผ้าอบผ้า LG 9/5 กก.",
-      "source": "Sale Price8 - Subscription_V3.pdf",
-      "page": 3,
-      "srcPage": 4,
-      "y": 350,
-      "y2": 156,
-      "pdf": "/pdfs/Sale%20Price8%20-%20Subscription_V3.pdf",
-      "mode": "monthly",
-      "price": 299,
-      "priceFrom": "6Y_Self",
-      "policies": [
-        {
-          "policy": "5Y_Visit",
-          "term": 12,
-          "price": 399,
-          "promoCode": "VISIT_5Y_12M_DC50%8M_AUG"
-        },
-        {
-          "policy": "5Y_Self",
-          "term": 12,
-          "price": 349,
-          "promoCode": "SELF_5Y_12M_DC50%8M_AUG"
-        },
-        {
-          "policy": "6Y_Visit",
-          "term": 12,
-          "price": 349,
-          "promoCode": "VISIT_6Y_12M_DC50%8M_AUG"
-        },
-        {
-          "policy": "6Y_Self",
-          "term": 12,
-          "price": 299,
-          "promoCode": "SELF_6Y_12M_DC50%8M_AUG"
-        }
-      ],
-      "description": "FV1409H4W.ABWPETH\nซัก : 9 กก. อบ 5 กก. Disc.50%\n5Y_Self ทุกๆ 12 เดือน 349 1,400 SELF_5Y_12M_DC50%8M_AUG\n(8รอบบิล) รอบบิลที่ 9 ถึง 72 (349)\nรับประกันมอเตอร์ 10 ปี\nOBS Subscription\nขนาดผลิตภัณฑ์\nDisc.50%\n6Y_Visit ทุกๆ 12 เดือน 349 1,400 VISIT_6Y_12M_DC50%8M_AUG\n(กว้างxสูงxลึก, มม.) (8 รอบบิล)\n600 x 850 x 475"
-    },
-    {
-      "code": "FV1413H4M.AMBPETH",
-      "slug": "fv1413h4m-ambpeth",
-      "category": "เครื่องซักผ้า",
-      "name": "เครื่องซักผ้าอบผ้า LG 13/8 กก.",
-      "source": "Price list_Aug_V3.pdf",
-      "page": 17,
-      "srcPage": 19,
-      "y": 326,
-      "y2": 86,
-      "pdf": "/pdfs/Price%20list_Aug_V3.pdf",
-      "mode": "monthly",
-      "price": 599,
-      "priceFrom": "6Y_Self",
-      "policies": [
-        {
-          "policy": "5Y_Visit",
-          "term": 12,
-          "price": 749,
-          "promoCode": "VISIT_5Y_12M_PRO_149(1M)_DC50%(7M"
-        },
-        {
-          "policy": "5Y_Self",
-          "term": 12,
-          "price": 649,
-          "promoCode": "SELF_5Y_12M_PRO_149(1M)_DC50%(7M"
-        },
-        {
-          "policy": "6Y_Visit",
-          "term": 12,
-          "price": 649,
-          "promoCode": "VISIT_6Y_12M_PRO_149(1M)_DC50%(7M"
-        },
-        {
-          "policy": "6Y_Self",
-          "term": 12,
-          "price": 599,
-          "promoCode": "SELF_6Y_12M_PRO_149(1M)_DC50%(7M"
-        }
-      ],
-      "description": "FV1413H4M.AMBPETH •\nซัก : 13 กก. อบ 8 กก. 5Y_Self ทุกๆ 12 เดือน 649 2,775 SELF_5Y_12M_PRO_149(1M)_DC50%(7M)\nรับประกันมอเตอร์ 10 ปี •"
-    },
-    {
-      "code": "FV1413S4M.AMBPETH",
-      "slug": "fv1413s4m-ambpeth",
-      "category": "เครื่องซักผ้า",
-      "name": "เครื่องซักผ้า LG ฝาหน้า 13 กก.",
-      "source": "Price list_Aug_V3.pdf",
-      "page": 18,
-      "srcPage": 20,
-      "y": 361,
-      "y2": 124,
-      "pdf": "/pdfs/Price%20list_Aug_V3.pdf",
-      "mode": "monthly",
-      "price": 549,
-      "priceFrom": "6Y_Self",
-      "policies": [
-        {
-          "policy": "5Y_Visit",
-          "term": 12,
-          "price": 699,
-          "promoCode": "VISIT_5Y_12M_PRO_149(1M)_DC50%(2M"
-        },
-        {
-          "policy": "5Y_Self",
-          "term": 12,
-          "price": 599,
-          "promoCode": "SELF_5Y_12M_PRO_149(1M)_DC50%(2M"
-        },
-        {
-          "policy": "6Y_Visit",
-          "term": 12,
-          "price": 599,
-          "promoCode": "VISIT_6Y_12M_PRO_149(1M)_DC50%(2M"
-        },
-        {
-          "policy": "6Y_Self",
-          "term": 12,
-          "price": 549,
-          "promoCode": "SELF_6Y_12M_PRO_149(1M)_DC50%(2M"
-        }
-      ],
-      "description": "FV1413S4M.AMBPETH ราคา 149.- (1 รอบบิลแรก)\n5Y_Self ทุกๆ 12 เดือน 599 1,050 SELF_5Y_12M_PRO_149(1M)_DC50%(2M)\nซัก : 13 กก. • รอบบิลที่ 2-3 (299)\nรับประกันมอเตอร์ 10 ปี"
-    },
-    {
       "code": "TX2315DT5G.DEGPETH",
       "slug": "tx2315dt5g-degpeth",
-      "category": "เครื่องซักผ้า",
+      "category": "เครื่องซักผ้า ฝาบน",
       "name": "เครื่องซักผ้า LG ฝาบน 15 กก.",
       "source": "Price list_Aug_V3.pdf",
       "page": 20,
@@ -353,7 +185,7 @@
     {
       "code": "TX2723ST5J.APBPETH",
       "slug": "tx2723st5j-apbpeth",
-      "category": "เครื่องซักผ้า",
+      "category": "เครื่องซักผ้า ฝาบน",
       "name": "เครื่องซักผ้า LG ฝาบน 23 กก. AI DD",
       "source": "Price list_Aug_V3.pdf",
       "page": 19,
@@ -391,6 +223,174 @@
         }
       ],
       "description": "TX2723ST5J.APBPETH\nSIZE : 23KG 5Y_Self ทุกๆ 12 เดือน 599 รอบบิลที่ 2-3 (299) 1,050 SELF_5Y_12M_PRO_149(1M)_DC50%(2M)\nT/L LG AI DD Inverter"
+    },
+    {
+      "code": "F2520RNTB.AEBPETH",
+      "slug": "f2520rntb-aebpeth",
+      "category": "เครื่องซักผ้า ฝาหน้า",
+      "name": "เครื่องซักผ้าอบผ้า LG 20/10 กก.",
+      "source": "Price list_Aug_V3.pdf",
+      "page": 16,
+      "srcPage": 18,
+      "y": 310,
+      "y2": 56,
+      "pdf": "/pdfs/Price%20list_Aug_V3.pdf",
+      "mode": "monthly",
+      "price": 799,
+      "priceFrom": "6Y_Self",
+      "policies": [
+        {
+          "policy": "5Y_Visit",
+          "term": 12,
+          "price": 899,
+          "promoCode": "VISIT_5Y_12M_PRO_149(1M)_DC50%(7M"
+        },
+        {
+          "policy": "5Y_Self",
+          "term": 12,
+          "price": 849,
+          "promoCode": "SELF_5Y_12M_PRO_149(1M)_DC50%(7M"
+        },
+        {
+          "policy": "6Y_Visit",
+          "term": 12,
+          "price": 849,
+          "promoCode": "VISIT_6Y_12M_PRO_149(1M)_DC50%(7M"
+        },
+        {
+          "policy": "6Y_Self",
+          "term": 12,
+          "price": 799,
+          "promoCode": "SELF_6Y_12M_PRO_149(1M)_DC50%(7M"
+        }
+      ],
+      "description": "F2520RNTB.AEBPETH\nซัก : 20 กก. อบ 10 กก. • ราคา 149.- (1 รอบบิลแรก)\n5Y_Self ทุกๆ 12 เดือน 849 3,675 SELF_5Y_12M_PRO_149(1M)_DC50%(7M)\nรับประกันมอเตอร์ 10 ปี"
+    },
+    {
+      "code": "FV1409H4W.ABWPETH",
+      "slug": "fv1409h4w-abwpeth",
+      "category": "เครื่องซักผ้า ฝาหน้า",
+      "name": "เครื่องซักผ้าอบผ้า LG 9/5 กก.",
+      "source": "Sale Price8 - Subscription_V3.pdf",
+      "page": 3,
+      "srcPage": 4,
+      "y": 350,
+      "y2": 156,
+      "pdf": "/pdfs/Sale%20Price8%20-%20Subscription_V3.pdf",
+      "mode": "monthly",
+      "price": 299,
+      "priceFrom": "6Y_Self",
+      "policies": [
+        {
+          "policy": "5Y_Visit",
+          "term": 12,
+          "price": 399,
+          "promoCode": "VISIT_5Y_12M_DC50%8M_AUG"
+        },
+        {
+          "policy": "5Y_Self",
+          "term": 12,
+          "price": 349,
+          "promoCode": "SELF_5Y_12M_DC50%8M_AUG"
+        },
+        {
+          "policy": "6Y_Visit",
+          "term": 12,
+          "price": 349,
+          "promoCode": "VISIT_6Y_12M_DC50%8M_AUG"
+        },
+        {
+          "policy": "6Y_Self",
+          "term": 12,
+          "price": 299,
+          "promoCode": "SELF_6Y_12M_DC50%8M_AUG"
+        }
+      ],
+      "description": "FV1409H4W.ABWPETH\nซัก : 9 กก. อบ 5 กก. Disc.50%\n5Y_Self ทุกๆ 12 เดือน 349 1,400 SELF_5Y_12M_DC50%8M_AUG\n(8รอบบิล) รอบบิลที่ 9 ถึง 72 (349)\nรับประกันมอเตอร์ 10 ปี\nOBS Subscription\nขนาดผลิตภัณฑ์\nDisc.50%\n6Y_Visit ทุกๆ 12 เดือน 349 1,400 VISIT_6Y_12M_DC50%8M_AUG\n(กว้างxสูงxลึก, มม.) (8 รอบบิล)\n600 x 850 x 475"
+    },
+    {
+      "code": "FV1413H4M.AMBPETH",
+      "slug": "fv1413h4m-ambpeth",
+      "category": "เครื่องซักผ้า ฝาหน้า",
+      "name": "เครื่องซักผ้าอบผ้า LG 13/8 กก.",
+      "source": "Price list_Aug_V3.pdf",
+      "page": 17,
+      "srcPage": 19,
+      "y": 326,
+      "y2": 86,
+      "pdf": "/pdfs/Price%20list_Aug_V3.pdf",
+      "mode": "monthly",
+      "price": 599,
+      "priceFrom": "6Y_Self",
+      "policies": [
+        {
+          "policy": "5Y_Visit",
+          "term": 12,
+          "price": 749,
+          "promoCode": "VISIT_5Y_12M_PRO_149(1M)_DC50%(7M"
+        },
+        {
+          "policy": "5Y_Self",
+          "term": 12,
+          "price": 649,
+          "promoCode": "SELF_5Y_12M_PRO_149(1M)_DC50%(7M"
+        },
+        {
+          "policy": "6Y_Visit",
+          "term": 12,
+          "price": 649,
+          "promoCode": "VISIT_6Y_12M_PRO_149(1M)_DC50%(7M"
+        },
+        {
+          "policy": "6Y_Self",
+          "term": 12,
+          "price": 599,
+          "promoCode": "SELF_6Y_12M_PRO_149(1M)_DC50%(7M"
+        }
+      ],
+      "description": "FV1413H4M.AMBPETH •\nซัก : 13 กก. อบ 8 กก. 5Y_Self ทุกๆ 12 เดือน 649 2,775 SELF_5Y_12M_PRO_149(1M)_DC50%(7M)\nรับประกันมอเตอร์ 10 ปี •"
+    },
+    {
+      "code": "FV1413S4M.AMBPETH",
+      "slug": "fv1413s4m-ambpeth",
+      "category": "เครื่องซักผ้า ฝาหน้า",
+      "name": "เครื่องซักผ้า LG ฝาหน้า 13 กก.",
+      "source": "Price list_Aug_V3.pdf",
+      "page": 18,
+      "srcPage": 20,
+      "y": 361,
+      "y2": 124,
+      "pdf": "/pdfs/Price%20list_Aug_V3.pdf",
+      "mode": "monthly",
+      "price": 549,
+      "priceFrom": "6Y_Self",
+      "policies": [
+        {
+          "policy": "5Y_Visit",
+          "term": 12,
+          "price": 699,
+          "promoCode": "VISIT_5Y_12M_PRO_149(1M)_DC50%(2M"
+        },
+        {
+          "policy": "5Y_Self",
+          "term": 12,
+          "price": 599,
+          "promoCode": "SELF_5Y_12M_PRO_149(1M)_DC50%(2M"
+        },
+        {
+          "policy": "6Y_Visit",
+          "term": 12,
+          "price": 599,
+          "promoCode": "VISIT_6Y_12M_PRO_149(1M)_DC50%(2M"
+        },
+        {
+          "policy": "6Y_Self",
+          "term": 12,
+          "price": 549,
+          "promoCode": "SELF_6Y_12M_PRO_149(1M)_DC50%(2M"
+        }
+      ],
+      "description": "FV1413S4M.AMBPETH ราคา 149.- (1 รอบบิลแรก)\n5Y_Self ทุกๆ 12 เดือน 599 1,050 SELF_5Y_12M_PRO_149(1M)_DC50%(2M)\nซัก : 13 กก. • รอบบิลที่ 2-3 (299)\nรับประกันมอเตอร์ 10 ปี"
     },
     {
       "code": "A9T-CORE.DCGPETH",

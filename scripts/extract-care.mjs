@@ -49,7 +49,7 @@ const FRIDGE_WATERLINE = new Set(['GC-X257CMHW.AEEPLMT', 'GC-L24FFCBB.AEVPLM1'])
 function carePageOf(p) {
   const c = p.category || '';
   if (c.startsWith('เครื่องกรองน้ำ')) return 3;
-  if (c === 'เครื่องซักผ้า') {
+  if (c.startsWith('เครื่องซักผ้า')) {
     if (p.code.startsWith('F')) return 10; // ฝาหน้า
     if (p.code.startsWith('T')) return 11; // ฝาบน
     return null;
