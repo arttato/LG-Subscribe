@@ -251,84 +251,189 @@
       "code": "ART13A",
       "images": [
         "spec-ART13A-1-4e0b.jpg"
+      ],
+      "promo": [
+        "lg-subscribe-install-free.png"
       ]
     },
     {
       "code": "ART18A",
       "images": [
         "spec-ART13A-1-4e0b.jpg"
+      ],
+      "promo": [
+        "lg-subscribe-install-free.png"
       ]
     },
     {
       "code": "SAQ11A",
       "images": [
         "spec-SAQ11A-2-87e6.jpg"
+      ],
+      "promo": [
+        "lg-subscribe-install-free.png"
       ]
     },
     {
       "code": "SAQ13A",
       "images": [
         "spec-SAQ11A-2-87e6.jpg"
+      ],
+      "promo": [
+        "lg-subscribe-install-free.png"
       ]
     },
     {
       "code": "SAQ18B",
       "images": [
         "spec-SAQ11A-2-87e6.jpg"
+      ],
+      "promo": [
+        "lg-subscribe-install-free.png"
       ]
     },
     {
       "code": "SAQ24B",
       "images": [
         "spec-SAQ11A-2-87e6.jpg"
+      ],
+      "promo": [
+        "lg-subscribe-install-free.png"
       ]
     },
     {
       "code": "SIQ11B",
       "images": [
         "spec-SIQ11B-3-14b4.jpg"
+      ],
+      "promo": [
+        "lg-subscribe-install-free.png"
       ]
     },
     {
       "code": "SIQ13B",
       "images": [
         "spec-SIQ11B-3-14b4.jpg"
+      ],
+      "promo": [
+        "lg-subscribe-install-free.png"
       ]
     },
     {
       "code": "SIQ18B",
       "images": [
         "spec-SIQ11B-3-14b4.jpg"
+      ],
+      "promo": [
+        "lg-subscribe-install-free.png"
       ]
     },
     {
       "code": "SIQ24B",
       "images": [
         "spec-SIQ11B-3-14b4.jpg"
+      ],
+      "promo": [
+        "lg-subscribe-install-free.png"
       ]
     },
     {
       "code": "IXY11A",
       "images": [
         "spec-IXY11A-4-bbd6.jpg"
+      ],
+      "promo": [
+        "lg-subscribe-install-free.png"
       ]
     },
     {
       "code": "IXY13A",
       "images": [
         "spec-IXY11A-4-bbd6.jpg"
+      ],
+      "promo": [
+        "lg-subscribe-install-free.png"
       ]
     },
     {
       "code": "IXY18A",
       "images": [
         "spec-IXY11A-4-bbd6.jpg"
+      ],
+      "promo": [
+        "lg-subscribe-install-free.png"
       ]
     },
     {
       "code": "IXY24A",
       "images": [
         "spec-IXY11A-4-bbd6.jpg"
+      ],
+      "promo": [
+        "lg-subscribe-install-free.png"
+      ]
+    },
+    {
+      "code": "ZT1Q12GULA1",
+      "images": [],
+      "promo": [
+        "lg-subscribe-install-free.png"
+      ]
+    },
+    {
+      "code": "ZT1Q18GTLA1",
+      "images": [],
+      "promo": [
+        "lg-subscribe-install-free.png"
+      ]
+    },
+    {
+      "code": "ZT1Q24GTLA1",
+      "images": [],
+      "promo": [
+        "lg-subscribe-install-free.png"
+      ]
+    },
+    {
+      "code": "ZT4Q18GPLA1",
+      "images": [],
+      "promo": [
+        "lg-subscribe-install-free.png"
+      ]
+    },
+    {
+      "code": "ZT4Q24GPLA1",
+      "images": [],
+      "promo": [
+        "lg-subscribe-install-free.png"
+      ]
+    },
+    {
+      "code": "ZT4Q36GNLA1",
+      "images": [],
+      "promo": [
+        "lg-subscribe-install-free.png"
+      ]
+    },
+    {
+      "code": "ZT4Q48GMLA1",
+      "images": [],
+      "promo": [
+        "lg-subscribe-install-free.png"
+      ]
+    },
+    {
+      "code": "ZTRQ36GYLA1",
+      "images": [],
+      "promo": [
+        "lg-subscribe-install-free.png"
+      ]
+    },
+    {
+      "code": "ZTRQ48GYLA1",
+      "images": [],
+      "promo": [
+        "lg-subscribe-install-free.png"
       ]
     }
   ]

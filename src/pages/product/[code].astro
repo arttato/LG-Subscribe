@@ -45,8 +45,10 @@ const colorVariants = colorInfo ? colorInfo.colors : [];
 // สเปคการ์ด (รูปถ่ายจากเอกสาร LG) — ต่อท้าย gallery เสมอ ไม่เปลี่ยนตามสี
 const specInfo = specCards.products.find((s) => s.code === p.code.split('.')[0]);
 const specImages = specInfo ? specInfo.images.map((f) => `${base}img/specs/${f}`) : [];
+// รูปโปรโมชัน/ใบปลิว (เช่น ฟรีติดตั้งแอร์ LG Subscribe) — ต่อท้ายแกลเลอรี่ ไม่มีป้าย "สเปค"
+const promoImages = specInfo ? (specInfo.promo || []).map((f) => `${base}img/promo/${f}`) : [];
 // เตรียม JSON ไว้ให้ <script> อ่าน (เอา `</` ออกก่อนกัน HTML parser สะดุด)
-const galleryJson = JSON.stringify({ baseImages: gallery ? gallery.images : [], variants: colorVariants, specs: specImages }).replaceAll('</', '\\u003c\\u002f');
+const galleryJson = JSON.stringify({ baseImages: gallery ? gallery.images : [], variants: colorVariants, specs: specImages, promo: promoImages }).replaceAll('</', '\\u003c\\u002f');
 const care = careData.products.find((s) => s.code === p.code);
 // รูปบริการ: ใช้รูปเฉพาะรุ่น (care.img) ถ้ามี ไม่งั้นใช้หน้าที่ render จาก PDF (care-NN.png)
 const careImg = care && (care.img ? `${base}img/care/${care.img}` : care.page ? `${base}img/care/care-${String(care.page).padStart(2, '0')}.png` : null);
@@ -627,7 +629,8 @@ const planCards = (() => {
         const chips = [...gal.querySelectorAll('[data-color]')];
         let colorIdx = 0;
         const specs = galleryData.specs || [];
-        const curImages = () => [...(variants.length ? variants[colorIdx].images : baseImages), ...specs];
+        const promo = galleryData.promo || [];
+        const curImages = () => [...(variants.length ? variants[colorIdx].images : baseImages), ...specs, ...promo];
         let cur = 0;
         const isSpec = (u) => u.includes('/img/specs/');
 
