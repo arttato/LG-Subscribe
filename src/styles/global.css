@@ -682,13 +682,12 @@ a {
   box-shadow: var(--shadow);
 }
 
-/* ป้ายขนาด/ความจุบนการ์ด (เช่น BTU, กก., คิว, ตร.ม., นิ้ว) — เล็กพอไม่บังสินค้า */
+/* ป้ายขนาด/ความจุบนการ์ด (เช่น BTU, กก., คิว, ตร.ม., นิ้ว) — มุมขวาบน เล็กพอไม่บังสินค้า */
 .card-badge {
   position: absolute;
   top: 8px;
-  left: 8px;
+  right: 8px;
   z-index: 1;
-  background: var(--brand);
   color: #fff;
   font-size: 0.64rem;
   font-weight: 800;
@@ -696,6 +695,27 @@ a {
   padding: 2px 7px;
   border-radius: 999px;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25);
+}
+
+/* สีป้ายแยกตามประเภท: BTU=แดง, กก.=เขียว, นิ้ว=น้ำเงิน, คิว=ส้ม, ตร.ม.=ม่วง */
+.badge-btu {
+  background: var(--brand);
+}
+
+.badge-kg {
+  background: #2e7d32;
+}
+
+.badge-inch {
+  background: #1565c0;
+}
+
+.badge-cubic {
+  background: #e67e22;
+}
+
+.badge-sqm {
+  background: #6a1b9a;
 }
 
 .card-img {
