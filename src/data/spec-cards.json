@@ -189,7 +189,6 @@
       "code": "A9T-ULTRA",
       "images": [
         "spec-A9T-ULTRA-1-8791.jpg",
-        "spec-A9T-ULTRA-2-91ce.jpg",
         "spec-A9T-CORE-4-cb0b.jpg"
       ]
     },
@@ -203,6 +202,7 @@
     {
       "code": "A9T-CORE",
       "images": [
+        "spec-A9T-CORE-2-91ce.jpg",
         "spec-A9T-CORE-4-cb0b.jpg"
       ]
     },

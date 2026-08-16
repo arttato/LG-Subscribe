@@ -38,7 +38,7 @@ const MAP = {
   'LINE_ALBUM_เครื่องซักผ้า  อบผ้า  ตู้ถนอมผ้า_260816_8.jpg': ['F2520RNTB'],
   'LINE_ALBUM_เครื่องซักผ้า  อบผ้า  ตู้ถนอมผ้า_260816_9.jpg': ['TX2723ST5J'],
   'LINE_ALBUM_เครื่องดูดฝุ่น_260816_1.jpg': ['A9T-ULTRA'],
-  'LINE_ALBUM_เครื่องดูดฝุ่น_260816_2.jpg': ['A9T-ULTRA'],
+  'LINE_ALBUM_เครื่องดูดฝุ่น_260816_2.jpg': ['A9T-CORE'], // OCR หัวการ์ดซูม x2: "su A9T-CORE" (เดิมจับคู่ผิดเป็น ULTRA)
   'LINE_ALBUM_เครื่องดูดฝุ่น_260816_3.jpg': ['A9T-LITE'],
   'LINE_ALBUM_เครื่องดูดฝุ่น_260816_4.jpg': ['A9T-CORE', 'A9T-LITE', 'A9T-ULTRA'],
   'LINE_ALBUM_เครื่องฟอกอากาศ_260816_1.jpg': ['AS10GDBY0'],
