@@ -99,14 +99,7 @@ const sectionSort = (name) => (a, b) =>
 
 // ป้ายขนาด/ความจุบนการ์ด: แอร์ BTU, ซักผ้า/อบผ้า/WashTower กก., ตู้เย็น คิว, ฟอกอากาศ ตร.ม., ทีวี นิ้ว
 // ใช้ชื่อ meta (แก้เองแล้ว ตรงกับ PDF เช่น "20/10 กก.") ก่อน — ถ้าไม่มีค่อยดึงจากชื่อที่แสดงบนการ์ด
-// unitKey ใช้แยกสีป้าย (btu=แดง, kg=เขียว, inch=น้ำเงิน, cubic=ส้ม, sqm=ม่วง) + tooltip อธิบายหน่วย
-const badgeTip = {
-  btu: 'ขนาดความเย็น (BTU)',
-  kg: 'ความจุ (กก.) — น้ำหนักผ้าสูงสุดต่อรอบ (ซัก/อบ)',
-  cubic: 'ความจุรวม (คิว = ลูกบาศก์ฟุต)',
-  sqm: 'พื้นที่ครอบคลุมฟอกอากาศ (ตร.ม.)',
-  inch: 'ขนาดจอภาพ (นิ้ว)',
-};
+// unitKey ใช้แยกสีป้าย (btu=แดง, kg=เขียว, inch=น้ำเงิน, cubic=ส้ม, sqm=ม่วง)
 const capBadge = (p) => {
   const re = /([\d.,/]+)\s*(BTU|กก|คิว|ตร\.ม|นิ้ว)/i;
   const cardName = cardNameOf(p) || '';
@@ -345,7 +338,7 @@ const VIDEO_ID = 'uNwPkrefazo';
                       <img class="card-img" src={`${base}img/products/${p.slug}.jpg`} alt={cardNameOf(p)} loading="lazy" />
                     )}
                     {capBadge(p) && (
-                      <span class={`card-badge badge-${capBadge(p).unitKey}`} title={badgeTip[capBadge(p).unitKey] || ''}>{capBadge(p).text}</span>
+                      <span class={`card-badge badge-${capBadge(p).unitKey}`}>{capBadge(p).text}</span>
                     )}
                     {p.gift && p.gift.image && (
                       <div class="card-gift">
