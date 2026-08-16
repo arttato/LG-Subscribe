@@ -1901,30 +1901,6 @@
       "description": "GC-X257CMHW.AEEPLMT\n(Side by Side) Plumbing 5Y_Visit ทุกๆ 6 เดือน 1,449 ราคา 149.- (1 รอบบิลแรก) 1,300\nWATERFILTER\n+ Water Filter • รอบบิลที่ 2-60 (1,449)\nSIZE : 22.4 คิว/ 635 ลิตร\nสี Beige\nVISIT_6Y_6M_PRO_149(1M)_ADD_\nขนาดผลิตภัณฑ์ 6Y_Visit ทุกๆ 6 เดือน 1,249 1,100 WATERFILTER\nราคา 149.- (1 รอบบิลแรก)\n(กว้างxสูงxลึก, มม.) • รอบบิลที่ 2-72 (1,249)\n913x 1790x 735"
     },
     {
-      "code": "100MRGB96BS.ATM",
-      "slug": "100mrgb96bs-atm",
-      "category": "โทรทัศน์ Micro RGB",
-      "name": "ทีวี LG 100 นิ้ว",
-      "source": "Price list_Aug_V3.pdf",
-      "page": 39,
-      "srcPage": 41,
-      "y": 324,
-      "y2": 217,
-      "pdf": "/pdfs/Price%20list_Aug_V3.pdf",
-      "mode": "monthly",
-      "price": 4499,
-      "priceFrom": "5Y",
-      "policies": [
-        {
-          "policy": "5Y",
-          "term": null,
-          "price": 4499,
-          "promoCode": null
-        }
-      ],
-      "description": "NEW\n5Y\n100MRGB96BS.ATM\nขนาดทีวีแบบไม่รวมขาตั้ง\n(WxHxD mm)\n2230 x 1277 x 49.9 26,994 4,499 รอบบิลที่ 13 - 20 (2,249) 18,000\nNo DC50%(8M)\nขนาดทีวีแบบรวมขาตั้ง • 13M~20M (8 Months 50% Discount)\nService\n(WxHxD mm) • รอบบิลที่ 21 - 60 (4,499)\n2230 x 1372 x 434"
-    },
-    {
       "code": "65NU855BPSA.ATM",
       "slug": "65nu855bpsa-atm",
       "category": "โทรทัศน์ NanoCell",
@@ -2067,6 +2043,30 @@
         }
       ],
       "description": "OLED77C6PSA.ATM\n5Y\nขนาดทีวีแบบไม่รวมขาตั้ง\n(WxHxD mm)\n1711 x 982 x 47.1 11,994 1,999 8,000 NOSERVICE_5Y_PRO_ADV50%(12M)_\nขนาดทีวีแบบรวมขาตั้ง 13M~20M (8 Months 50% Discount) DC50%(8M)\nNo Service\n(WxHxD mm) •รอบบิลที่ 21 - 60 (1,999)\n1711 x 1035 x 267"
+    },
+    {
+      "code": "100MRGB96BS.ATM",
+      "slug": "100mrgb96bs-atm",
+      "category": "โทรทัศน์ QNED",
+      "name": "ทีวี LG 100 นิ้ว",
+      "source": "Price list_Aug_V3.pdf",
+      "page": 39,
+      "srcPage": 41,
+      "y": 324,
+      "y2": 217,
+      "pdf": "/pdfs/Price%20list_Aug_V3.pdf",
+      "mode": "monthly",
+      "price": 4499,
+      "priceFrom": "5Y",
+      "policies": [
+        {
+          "policy": "5Y",
+          "term": null,
+          "price": 4499,
+          "promoCode": null
+        }
+      ],
+      "description": "NEW\n5Y\n100MRGB96BS.ATM\nขนาดทีวีแบบไม่รวมขาตั้ง\n(WxHxD mm)\n2230 x 1277 x 49.9 26,994 4,499 รอบบิลที่ 13 - 20 (2,249) 18,000\nNo DC50%(8M)\nขนาดทีวีแบบรวมขาตั้ง • 13M~20M (8 Months 50% Discount)\nService\n(WxHxD mm) • รอบบิลที่ 21 - 60 (4,499)\n2230 x 1372 x 434"
     },
     {
       "code": "100QNED86BS.ATM",

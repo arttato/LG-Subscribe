@@ -66,7 +66,7 @@
   "GC-L257SFZW": { "name": "ตู้เย็น LG Side by Side 22.4 คิว (L257SFZW)", "category": "ตู้เย็น / Side-by-Side" },
   "GC-X257CMEW": { "name": "ตู้เย็น LG Side by Side InstaView", "category": "ตู้เย็น / Side-by-Side" },
   "GC-X257CMHW": { "name": "ตู้เย็น LG Side by Side พร้อมเครื่องกรองน้ำ", "category": "ตู้เย็น / Side-by-Side" },
-  "100MRGB96BS": { "name": "ทีวี LG 100 นิ้ว", "category": "โทรทัศน์ Micro RGB" },
+  "100MRGB96BS": { "name": "ทีวี LG 100 นิ้ว", "category": "โทรทัศน์ QNED" },
   "100QNED86BS": { "name": "ทีวี LG QNED 100 นิ้ว 4K", "category": "โทรทัศน์ QNED" },
   "27LX6TDGA": { "name": "ทีวีพกพา LG StanbyME 27 นิ้ว", "category": "โทรทัศน์ StanbyME" },
   "32LX6BDGA": { "name": "ทีวีพกพา LG StanbyME 32 นิ้ว", "category": "โทรทัศน์ StanbyME" },
