@@ -15,6 +15,7 @@
     "gallery3": "node scripts/refetch-missing.mjs",
     "auditgallery": "node scripts/audit-galleries.mjs",
     "auditnames": "node scripts/audit-names.mjs",
+    "colors": "node scripts/fetch-color-galleries.mjs",
     "titles": "node scripts/fetch-lg-titles.mjs",
     "lgimages": "node scripts/download-all-lg-images.mjs",
     "imgupgrade": "node scripts/upgrade-small-images.mjs",

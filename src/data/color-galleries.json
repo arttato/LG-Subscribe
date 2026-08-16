@@ -1,0 +1,160 @@
+{
+  "fetchedAt": "2026-08-16T07:03:22.846Z",
+  "source": "https://www.lg.com/th",
+  "products": [
+    {
+      "code": "WD516",
+      "colors": [
+        {
+          "key": "navy",
+          "th": "น้ำเงิน",
+          "model": "WD516AN.ACNPLMT",
+          "url": "https://www.lg.com/th/water-purifiers/wd516an-acnplmt/",
+          "lgName": "เครื่องกรองน้ำ LG PuriCare รุ่น WD516AN.ACNPLMT สีน้ำเงิน",
+          "swatch": "#2f4a6e",
+          "images": [
+            "https://www.lg.com/content/dam/channel/wcms/th/image-update/water-purifier/2024/wd516an-acnplmt/ha-wp-wd516an-navy-blue-gp1-2024-gallery/2010x1334/01_1.ATOM4D+_WD516AN.ANVRLML_Front_Up.jpg",
+            "https://www.lg.com/content/dam/channel/wcms/th/image-update/water-purifier/2024/wd516an-acnplmt/ha-wp-wd516an-navy-blue-gp1-2024-gallery/2010x1334/02_4.ATOM4D+_WD516AN.ANVRLML_TopLeftSide2_1.jpg",
+            "https://www.lg.com/content/dam/channel/wcms/th/image-update/water-purifier/2024/wd516an-acnplmt/ha-wp-wd516an-navy-blue-gp1-2024-gallery/2010x1334/03_15.ATOM4D+_WD516AN.ANVRLML_Top.jpg",
+            "https://www.lg.com/content/dam/channel/wcms/th/image-update/water-purifier/2024/wd516an-acnplmt/ha-wp-wd516an-navy-blue-gp1-2024-gallery/2010x1334/04_15.ATOM4D+_WD516AN.ANVRLML_Top_Swing.jpg",
+            "https://www.lg.com/content/dam/channel/wcms/th/image-update/water-purifier/2024/wd516an-acnplmt/ha-wp-wd516an-navy-blue-gp1-2024-gallery/2010x1334/05_12.ATOM4D+_WD516AN.ANVRLML_Detail5.jpg",
+            "https://www.lg.com/content/dam/channel/wcms/th/image-update/water-purifier/2024/wd516an-acnplmt/ha-wp-wd516an-navy-blue-gp1-2024-gallery/2010x1334/06_10.ATOM4D+_WD516AN.ANVRLML_Detail2.jpg",
+            "https://www.lg.com/content/dam/channel/wcms/th/image-update/water-purifier/2024/wd516an-acnplmt/ha-wp-wd516an-navy-blue-gp1-2024-gallery/2010x1334/07_10.ATOM4D+_WD516AN.ANVRLML_Detail3.jpg",
+            "https://www.lg.com/content/dam/channel/wcms/th/image-update/water-purifier/2024/wd516an-acnplmt/ha-wp-wd516an-navy-blue-gp1-2024-gallery/2010x1334/08_11.ATOM4D+_WD516AN.ANVRLML_Detail4.jpg",
+            "https://www.lg.com/content/dam/channel/wcms/th/image-update/water-purifier/2024/wd516an-acnplmt/ha-wp-wd516an-navy-blue-gp1-2024-gallery/2010x1334/09_4.ATOM4D+_WD516AN.ANVRLML_TopLeftSide2_2.jpg",
+            "https://www.lg.com/content/dam/channel/wcms/th/image-update/water-purifier/2024/wd516an-acnplmt/ha-wp-wd516an-navy-blue-gp1-2024-gallery/2010x1334/10_4.ATOM4D+_WD516AN.ANVRLML_TopLeftSide2_4.jpg",
+            "https://www.lg.com/content/dam/channel/wcms/th/image-update/water-purifier/2024/wd516an-acnplmt/ha-wp-wd516an-navy-blue-gp1-2024-gallery/2010x1334/11_7.ATOM4D+_WD516AN.ANVRLML_RightPerspective_Up.jpg",
+            "https://www.lg.com/content/dam/channel/wcms/th/image-update/water-purifier/2024/wd516an-acnplmt/ha-wp-wd516an-navy-blue-gp1-2024-gallery/2010x1334/12_7.ATOM4D+_WD516AN.ANVRLML_RightPerspective_Down.jpg",
+            "https://www.lg.com/content/dam/channel/wcms/th/image-update/water-purifier/2024/wd516an-acnplmt/ha-wp-wd516an-navy-blue-gp1-2024-gallery/2010x1334/13_5.ATOM4D+_WD516AN.ANVRLML_TopRightSide2_Swing.jpg",
+            "https://www.lg.com/content/dam/channel/wcms/th/image-update/water-purifier/2024/wd516an-acnplmt/ha-wp-wd516an-navy-blue-gp1-2024-gallery/2010x1334/14_8.ATOM4D+_WD516AN.ANVRLML_LeftSide.jpg",
+            "https://www.lg.com/content/dam/channel/wcms/th/image-update/water-purifier/2024/wd516an-acnplmt/ha-wp-wd516an-navy-blue-gp1-2024-gallery/2010x1334/15_8.ATOM4D+_WD516AN.ANVRLML_LeftSide_Down.jpg"
+          ]
+        },
+        {
+          "key": "white",
+          "th": "ขาว",
+          "model": "WD516AN.AEWPLMT",
+          "url": "https://www.lg.com/th/water-purifiers/wd516an-aewplmt/",
+          "lgName": "เครื่องกรองน้ำ LG PuriCare รุ่น WD516AN.AEWPLMT สีขาว",
+          "swatch": "#f2f2f2",
+          "images": [
+            "https://www.lg.com/content/dam/channel/wcms/th/image-update/water-purifier/2024/wd516an-aewplmt/gallery/1_WD516AN.AWHRLML-2010.jpg",
+            "https://www.lg.com/content/dam/channel/wcms/th/image-update/water-purifier/2024/wd516an-aewplmt/gallery/2_WD516AN.AWHRLML-2010.jpg",
+            "https://www.lg.com/content/dam/channel/wcms/th/image-update/water-purifier/2024/wd516an-aewplmt/gallery/3_WD516AN.AWHRLML-2010.jpg",
+            "https://www.lg.com/content/dam/channel/wcms/th/image-update/water-purifier/2024/wd516an-aewplmt/gallery/4_WD516AN.AWHRLML-2010.jpg",
+            "https://www.lg.com/content/dam/channel/wcms/th/image-update/water-purifier/2024/wd516an-aewplmt/gallery/5_WD516AN.AWHRLML-2010.jpg",
+            "https://www.lg.com/content/dam/channel/wcms/th/image-update/water-purifier/2024/wd516an-aewplmt/gallery/6_WD516AN.AWHRLML-2010.jpg",
+            "https://www.lg.com/content/dam/channel/wcms/th/image-update/water-purifier/2024/wd516an-aewplmt/gallery/7_WD516AN.AWHRLML-2010.jpg",
+            "https://www.lg.com/content/dam/channel/wcms/th/image-update/water-purifier/2024/wd516an-aewplmt/gallery/8_WD516AN.AWHRLML-2010.jpg",
+            "https://www.lg.com/content/dam/channel/wcms/th/image-update/water-purifier/2024/wd516an-aewplmt/gallery/9_WD516AN.AWHRLML-2010.jpg",
+            "https://www.lg.com/content/dam/channel/wcms/th/image-update/water-purifier/2024/wd516an-aewplmt/gallery/10_WD516AN.AWHRLML-2010.jpg",
+            "https://www.lg.com/content/dam/channel/wcms/th/image-update/water-purifier/2024/wd516an-aewplmt/gallery/11_WD516AN.AWHRLML-2010.jpg",
+            "https://www.lg.com/content/dam/channel/wcms/th/image-update/water-purifier/2024/wd516an-aewplmt/gallery/12_WD516AN.AWHRLML-2010.jpg",
+            "https://www.lg.com/content/dam/channel/wcms/th/image-update/water-purifier/2024/wd516an-aewplmt/gallery/13_WD516AN.AWHRLML-2010.jpg",
+            "https://www.lg.com/content/dam/channel/wcms/th/image-update/water-purifier/2024/wd516an-aewplmt/gallery/14_WD516AN.AWHRLML-2010.jpg",
+            "https://www.lg.com/content/dam/channel/wcms/th/image-update/water-purifier/2024/wd516an-aewplmt/gallery/15_WD516AN.AWHRLML-2010.jpg"
+          ]
+        },
+        {
+          "key": "silver",
+          "th": "เงิน",
+          "model": "WD516AN.ASLPLMT",
+          "url": "https://www.lg.com/th/water-purifiers/wd516an-aslplmt/",
+          "lgName": "เครื่องกรองน้ำ LG PuriCare รุ่น WD516AN.ASLPLMT สีเงิน (Silver)",
+          "swatch": "#b9bec6",
+          "images": [
+            "https://www.lg.com/content/dam/channel/wcms/th/image-update/water-purifier/2024/wd516an-aslplmt/gallery/1-WD516AN.ASLRLML-2010.jpg",
+            "https://www.lg.com/content/dam/channel/wcms/th/image-update/water-purifier/2024/wd516an-aslplmt/gallery/2-WD516AN.ASLRLML-2010.jpg",
+            "https://www.lg.com/content/dam/channel/wcms/th/image-update/water-purifier/2024/wd516an-aslplmt/gallery/3-WD516AN.ASLRLML-2010.jpg",
+            "https://www.lg.com/content/dam/channel/wcms/th/image-update/water-purifier/2024/wd516an-aslplmt/gallery/4-WD516AN.ASLRLML-2010.jpg",
+            "https://www.lg.com/content/dam/channel/wcms/th/image-update/water-purifier/2024/wd516an-aslplmt/gallery/5-WD516AN.ASLRLML-2010.jpg",
+            "https://www.lg.com/content/dam/channel/wcms/th/image-update/water-purifier/2024/wd516an-aslplmt/gallery/6-WD516AN.ASLRLML-2010.jpg",
+            "https://www.lg.com/content/dam/channel/wcms/th/image-update/water-purifier/2024/wd516an-aslplmt/gallery/7-WD516AN.ASLRLML-2010.jpg",
+            "https://www.lg.com/content/dam/channel/wcms/th/image-update/water-purifier/2024/wd516an-aslplmt/gallery/8-WD516AN.ASLRLML-2010.jpg",
+            "https://www.lg.com/content/dam/channel/wcms/th/image-update/water-purifier/2024/wd516an-aslplmt/gallery/9-WD516AN.ASLRLML-2010.jpg",
+            "https://www.lg.com/content/dam/channel/wcms/th/image-update/water-purifier/2024/wd516an-aslplmt/gallery/10-WD516AN.ASLRLML-2010.jpg",
+            "https://www.lg.com/content/dam/channel/wcms/th/image-update/water-purifier/2024/wd516an-aslplmt/gallery/11-WD516AN.ASLRLML-2010.jpg",
+            "https://www.lg.com/content/dam/channel/wcms/th/image-update/water-purifier/2024/wd516an-aslplmt/gallery/12-WD516AN.ASLRLML-2010.jpg",
+            "https://www.lg.com/content/dam/channel/wcms/th/image-update/water-purifier/2024/wd516an-aslplmt/gallery/13-WD516AN.ASLRLML-1044.jpg",
+            "https://www.lg.com/content/dam/channel/wcms/th/image-update/water-purifier/2024/wd516an-aslplmt/gallery/14-WD516AN.ASLRLML-2010.jpg",
+            "https://www.lg.com/content/dam/channel/wcms/th/image-update/water-purifier/2024/wd516an-aslplmt/gallery/15-WD516AN.ASLRLML-2010.jpg"
+          ]
+        }
+      ]
+    },
+    {
+      "code": "WD518",
+      "colors": [
+        {
+          "key": "beige",
+          "th": "เบจ",
+          "model": "WD518AN.ABGPLMT",
+          "url": "https://www.lg.com/th/water-purifiers/wd518an-abgplmt/",
+          "lgName": "เครื่องกรองน้ำ สีเบจ LG PuriCare Objet Collection รุ่น WD518AN.ABGPLMT",
+          "swatch": "#d9c6a9",
+          "images": [
+            "https://www.lg.com/content/dam/channel/wcms/th/image-update/water-purifier/2024/wd518an-abgplmt/ha-wp-wd518an-calming-beige-gp1-2024-gallery/1600x1062/01_ATOM-V_Objet_WD518AN.ABGRLML1.jpg",
+            "https://www.lg.com/content/dam/channel/wcms/th/image-update/water-purifier/2024/wd518an-abgplmt/ha-wp-wd518an-calming-beige-gp1-2024-gallery/1600x1062/02_ATOM-V_Objet_WD518AN.ABGRLML2.jpg",
+            "https://www.lg.com/content/dam/channel/wcms/th/image-update/water-purifier/2024/wd518an-abgplmt/ha-wp-wd518an-calming-beige-gp1-2024-gallery/1600x1062/03_ATOM-V_Objet_WD518AN.ABGRLML3.jpg",
+            "https://www.lg.com/content/dam/channel/wcms/th/image-update/water-purifier/2024/wd518an-abgplmt/ha-wp-wd518an-calming-beige-gp1-2024-gallery/1600x1062/04_ATOM-V_Objet_WD518AN.ABGRLML4.jpg",
+            "https://www.lg.com/content/dam/channel/wcms/th/image-update/water-purifier/2024/wd518an-abgplmt/ha-wp-wd518an-calming-beige-gp1-2024-gallery/1600x1062/05_ATOM-V_Objet_WD518AN.ABGRLML5.jpg",
+            "https://www.lg.com/content/dam/channel/wcms/th/image-update/water-purifier/2024/wd518an-abgplmt/ha-wp-wd518an-calming-beige-gp1-2024-gallery/1600x1062/06_ATOM-V_Objet_WD518AN.ABGRLML6.jpg",
+            "https://www.lg.com/content/dam/channel/wcms/th/image-update/water-purifier/2024/wd518an-abgplmt/ha-wp-wd518an-calming-beige-gp1-2024-gallery/1600x1062/07_ATOM-V_Objet_WD518AN.ABGRLML15.jpg",
+            "https://www.lg.com/content/dam/channel/wcms/th/image-update/water-purifier/2024/wd518an-abgplmt/ha-wp-wd518an-calming-beige-gp1-2024-gallery/1600x1062/08_ATOM-V_Objet_WD518AN.ABGRLML20.jpg",
+            "https://www.lg.com/content/dam/channel/wcms/th/image-update/water-purifier/2024/wd518an-abgplmt/ha-wp-wd518an-calming-beige-gp1-2024-gallery/1600x1062/09_ATOM-V_Objet_WD518AN.ABGRLML22.jpg",
+            "https://www.lg.com/content/dam/channel/wcms/th/image-update/water-purifier/2024/wd518an-abgplmt/ha-wp-wd518an-calming-beige-gp1-2024-gallery/1600x1062/10_ATOM-V_Objet_WD518AN.ABGRLML24.jpg",
+            "https://www.lg.com/content/dam/channel/wcms/th/image-update/water-purifier/2024/wd518an-abgplmt/ha-wp-wd518an-calming-beige-gp1-2024-gallery/1600x1062/11_ATOM-V_Objet_WD518AN.ABGRLML26.jpg",
+            "https://www.lg.com/content/dam/channel/wcms/th/image-update/water-purifier/2024/wd518an-abgplmt/ha-wp-wd518an-calming-beige-gp1-2024-gallery/1600x1062/12_ATOM-V_Objet_WD518AN.ABGRLML28.jpg",
+            "https://www.lg.com/content/dam/channel/wcms/th/image-update/water-purifier/2024/wd518an-abgplmt/ha-wp-wd518an-calming-beige-gp1-2024-gallery/1600x1062/13_ATOM-V_Objet_WD518AN.ABGRLML32.jpg",
+            "https://www.lg.com/content/dam/channel/wcms/th/image-update/water-purifier/2024/wd518an-abgplmt/ha-wp-wd518an-calming-beige-gp1-2024-gallery/1600x1062/14_ATOM-V_Objet_WD518AN.ABGRLML33.jpg",
+            "https://www.lg.com/content/dam/channel/wcms/th/image-update/water-purifier/2024/wd518an-abgplmt/ha-wp-wd518an-calming-beige-gp1-2024-gallery/1600x1062/15_ATOM-V_Objet_WD518AN.ABGRLML34.jpg"
+          ]
+        },
+        {
+          "key": "white",
+          "th": "ขาว",
+          "model": "WD518AN.AWHPLMT",
+          "url": "https://www.lg.com/th/water-purifiers/wd518an-awhplmt/",
+          "lgName": "เครื่องกรองน้ำ LG PuriCare Objet Collection รุ่น WD518AN.AWHPLMT สีขาว",
+          "swatch": "#f2f2f2",
+          "images": [
+            "https://www.lg.com/content/dam/channel/wcms/th/image-update/water-purifier/2024/wd518an-awhplmt/gallery/WD518AN_AWHPLMT_1-2010.jpg",
+            "https://www.lg.com/content/dam/channel/wcms/th/image-update/water-purifier/2024/wd518an-awhplmt/gallery/WD518AN_AWHPLMT_2-2010.jpg",
+            "https://www.lg.com/content/dam/channel/wcms/th/image-update/water-purifier/2024/wd518an-awhplmt/gallery/WD518AN_AWHPLMT_3-2010.jpg",
+            "https://www.lg.com/content/dam/channel/wcms/th/image-update/water-purifier/2024/wd518an-awhplmt/gallery/WD518AN_AWHPLMT_4-2010.jpg",
+            "https://www.lg.com/content/dam/channel/wcms/th/image-update/water-purifier/2024/wd518an-awhplmt/gallery/WD518AN_AWHPLMT_5-2010.jpg",
+            "https://www.lg.com/content/dam/channel/wcms/th/image-update/water-purifier/2024/wd518an-awhplmt/gallery/WD518AN_AWHPLMT_6-2010.jpg",
+            "https://www.lg.com/content/dam/channel/wcms/th/image-update/water-purifier/2024/wd518an-awhplmt/gallery/WD518AN_AWHPLMT_7-2010.jpg",
+            "https://www.lg.com/content/dam/channel/wcms/th/image-update/water-purifier/2024/wd518an-awhplmt/gallery/WD518AN_AWHPLMT_8-2010.jpg",
+            "https://www.lg.com/content/dam/channel/wcms/th/image-update/water-purifier/2024/wd518an-awhplmt/gallery/WD518AN_AWHPLMT_9-2010.jpg",
+            "https://www.lg.com/content/dam/channel/wcms/th/image-update/water-purifier/2024/wd518an-awhplmt/gallery/WD518AN_AWHPLMT_10-2010.jpg",
+            "https://www.lg.com/content/dam/channel/wcms/th/image-update/water-purifier/2024/wd518an-awhplmt/gallery/WD518AN_AWHPLMT_11-2010.jpg",
+            "https://www.lg.com/content/dam/channel/wcms/th/image-update/water-purifier/2024/wd518an-awhplmt/gallery/WD518AN_AWHPLMT_12-2010.jpg"
+          ]
+        },
+        {
+          "key": "gray",
+          "th": "เทา",
+          "model": "WD518AN.ACGPLMT",
+          "url": "https://www.lg.com/th/water-purifiers/wd518an-acgplmt/",
+          "lgName": "เครื่องกรองน้ำ สีเทา LG PuriCare Objet Collection รุ่น WD518AN.ACGPLMT",
+          "swatch": "#8d9198",
+          "images": [
+            "https://www.lg.com/content/dam/channel/wcms/th/image-update/water-purifier/2024/wd518an-acgplmt/gallery/WD518AN_ACGPLMT_1-2010.jpg",
+            "https://www.lg.com/content/dam/channel/wcms/th/image-update/water-purifier/2024/wd518an-acgplmt/gallery/WD518AN_ACGPLMT_2-2010.jpg",
+            "https://www.lg.com/content/dam/channel/wcms/th/image-update/water-purifier/2024/wd518an-acgplmt/gallery/WD518AN_ACGPLMT_3-2010.jpg",
+            "https://www.lg.com/content/dam/channel/wcms/th/image-update/water-purifier/2024/wd518an-acgplmt/gallery/WD518AN_ACGPLMT_4-2010.jpg",
+            "https://www.lg.com/content/dam/channel/wcms/th/image-update/water-purifier/2024/wd518an-acgplmt/gallery/WD518AN_ACGPLMT_5-2010.jpg",
+            "https://www.lg.com/content/dam/channel/wcms/th/image-update/water-purifier/2024/wd518an-acgplmt/gallery/WD518AN_ACGPLMT_6-2010.jpg",
+            "https://www.lg.com/content/dam/channel/wcms/th/image-update/water-purifier/2024/wd518an-acgplmt/gallery/WD518AN_ACGPLMT_7-2010.jpg",
+            "https://www.lg.com/content/dam/channel/wcms/th/image-update/water-purifier/2024/wd518an-acgplmt/gallery/WD518AN_ACGPLMT_8-2010.jpg",
+            "https://www.lg.com/content/dam/channel/wcms/th/image-update/water-purifier/2024/wd518an-acgplmt/gallery/WD518AN_ACGPLMT_9-2010.jpg",
+            "https://www.lg.com/content/dam/channel/wcms/th/image-update/water-purifier/2024/wd518an-acgplmt/gallery/WD518AN_ACGPLMT_10-2010.jpg",
+            "https://www.lg.com/content/dam/channel/wcms/th/image-update/water-purifier/2024/wd518an-acgplmt/gallery/WD518AN_ACGPLMT_11-2010.jpg",
+            "https://www.lg.com/content/dam/channel/wcms/th/image-update/water-purifier/2024/wd518an-acgplmt/gallery/WD518AN_ACGPLMT_12-2010.jpg"
+          ]
+        }
+      ]
+    }
+  ]
+}

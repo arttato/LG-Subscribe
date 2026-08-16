@@ -4,6 +4,7 @@ import '../../styles/global.css';
 import data from '../../data/products.json';
 import lgSpecs from '../../data/lg-specs.json';
 import lgGallery from '../../data/lg-gallery.json';
+import colorGalleries from '../../data/color-galleries.json';
 import pdfSpecs from '../../data/pdf-specs.json';
 import careData from '../../data/care.json';
 import { slugify } from '../../lib/utils';
@@ -37,6 +38,11 @@ else {
   }
 }
 const gallery = lgGallery.products.find((s) => s.code === p.code);
+// สีของรุ่น (เช่น เครื่องกรองน้ำ WD516/WD518 มี 3 สี) — ปุ่มสลับ gallery แยกสี
+const colorInfo = colorGalleries.products.find((s) => s.code === p.code);
+const colorVariants = colorInfo ? colorInfo.colors : [];
+// เตรียม JSON ไว้ให้ <script> อ่าน (เอา `</` ออกก่อนกัน HTML parser สะดุด)
+const galleryJson = JSON.stringify({ baseImages: gallery ? gallery.images : [], variants: colorVariants }).replaceAll('</', '\\u003c\\u002f');
 const care = careData.products.find((s) => s.code === p.code);
 const careImg = care && care.page ? `${base}img/care/care-${String(care.page).padStart(2, '0')}.png` : null;
 
@@ -153,6 +159,17 @@ const planCards = (() => {
       <section class="detail-head">
         {gallery ? (
           <div class="gallery" data-gallery>
+            <script type="application/json" data-gallery-json set:html={galleryJson}></script>
+            {colorVariants.length > 1 && (
+              <div class="color-switcher" data-colors>
+                {colorVariants.map((v, i) => (
+                  <button class="color-chip" data-color={i} type="button" aria-pressed={i === 0}>
+                    <span class="color-dot" style={`background:${v.swatch || '#999'}`} aria-hidden="true"></span>
+                    {v.th}
+                  </button>
+                ))}
+              </div>
+            )}
             <div class="gallery-stage">
               <button class="gallery-nav prev" aria-label="รูปก่อนหน้า" data-prev>‹</button>
               <img class="detail-img gallery-img" src={gallery.images[0]} alt={fullName} data-img />
@@ -171,8 +188,8 @@ const planCards = (() => {
           hasImg && <img class="detail-img" src={imgUrl} alt={fullName} />
         )}
         <div class="detail-category">{p.category || 'อื่นๆ'}</div>
-        {fullName !== p.code && <h1 class="detail-name">{fullName}</h1>}
-        {!p.code.startsWith('XBOOM-') && <div class="detail-code">รุ่น: {p.code}</div>}
+        {fullName !== p.code && <h1 class="detail-name" data-color-name>{fullName}</h1>}
+        {!p.code.startsWith('XBOOM-') && <div class="detail-code" data-color-code>รุ่น: {p.code}</div>}
         <div class="price-row">
           <span class="price-from">{priceLabel(p.mode)}</span>
           <span class="price-amount">{fmt(p.price)}</span>
@@ -511,19 +528,58 @@ const planCards = (() => {
 
       const gal = document.querySelector('[data-gallery]');
       if (gal) {
-        const thumbs = [...gal.querySelectorAll('[data-thumb]')];
+        const galleryData = JSON.parse(document.querySelector('[data-gallery-json]').textContent);
+        const baseImages = galleryData.baseImages;
+        const variants = galleryData.variants;
+        const thumbsWrap = gal.querySelector('[data-thumbs]');
         const imgEl = gal.querySelector('[data-img]');
         const countEl = gal.querySelector('[data-count]');
+        const nameEl = document.querySelector('[data-color-name]');
+        const codeEl = document.querySelector('[data-color-code]');
+        const chips = [...gal.querySelectorAll('[data-color]')];
+        let colorIdx = 0;
+        const curImages = () => (variants.length ? variants[colorIdx].images : baseImages);
         let cur = 0;
-        const show = (i) => {
-          cur = (i + thumbs.length) % thumbs.length;
-          imgEl.src = thumbs[cur].querySelector('img').src;
-          countEl.textContent = cur + 1 + ' / ' + thumbs.length;
-          thumbs.forEach((t, ti) => t.classList.toggle('active', ti === cur));
+
+        const renderThumbs = () => {
+          thumbsWrap.innerHTML = curImages()
+            .map((u, i) => `<button class="gallery-thumb" data-thumb="${i}" aria-label="มุม ${i + 1}"><img src="${u}" alt="มุม ${i + 1}" loading="lazy"></button>`)
+            .join('');
         };
+
+        const show = (i) => {
+          const imgs = curImages();
+          cur = (i + imgs.length) % imgs.length;
+          imgEl.src = imgs[cur];
+          imgEl.alt = nameEl ? nameEl.textContent : imgEl.alt;
+          countEl.textContent = cur + 1 + ' / ' + imgs.length;
+          thumbsWrap.querySelectorAll('[data-thumb]').forEach((t, ti) => t.classList.toggle('active', ti === cur));
+        };
+
+        const setColor = (i) => {
+          colorIdx = i;
+          const v = variants[i];
+          chips.forEach((c, ci) => {
+            c.classList.toggle('active', ci === i);
+            c.setAttribute('aria-pressed', ci === i ? 'true' : 'false');
+          });
+          if (v) {
+            if (nameEl && v.lgName) nameEl.textContent = v.lgName;
+            if (codeEl && v.model) codeEl.textContent = 'รุ่น: ' + v.model;
+          }
+          renderThumbs();
+          show(0);
+        };
+
+        chips.forEach((c, i) => c.addEventListener('click', () => setColor(i)));
         gal.querySelector('[data-prev]').addEventListener('click', () => show(cur - 1));
         gal.querySelector('[data-next]').addEventListener('click', () => show(cur + 1));
-        thumbs.forEach((t, ti) => t.addEventListener('click', () => show(ti)));
+        thumbsWrap.addEventListener('click', (e) => {
+          const t = e.target.closest('[data-thumb]');
+          if (t) show(parseInt(t.dataset.thumb, 10));
+        });
+        if (variants.length) setColor(0);
+        renderThumbs();
         show(0);
       }
     </script>
