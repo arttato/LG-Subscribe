@@ -347,7 +347,10 @@ const VIDEO_ID = 'uNwPkrefazo';
                     {p.gift && p.gift.image && (
                       <div class="card-gift">
                         <img class="card-gift-img" src={p.gift.image} alt={`ของแถม: ${p.gift.name}`} loading="lazy" />
-                        <span class="card-gift-label">🎁 แถมฟรี <b>{p.gift.name}</b></span>
+                        <div class="card-gift-info">
+                          <span class="card-gift-label">🎁 แถมฟรี <b>{p.gift.name}</b></span>
+                          {p.gift.promo && <span class="card-gift-promo">{p.gift.promo}</span>}
+                        </div>
                       </div>
                     )}
                     <div class="card-category">{p.category || sec.name}</div>

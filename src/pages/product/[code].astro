@@ -330,6 +330,7 @@ const planCards = (() => {
             <img class="gift-img" src={p.gift.image} alt={`ของแถม: ${p.gift.name}`} loading="lazy" />
             <div class="gift-info">
               <div class="gift-name">{p.gift.name}</div>
+              {p.gift.promo && <div class="gift-promo">{p.gift.promo}</div>}
               <div class="gift-note">รับฟรีเมื่อสมัคร Subscribe รุ่นนี้ — ตามเงื่อนไขของแคมเปญ</div>
             </div>
           </div>
