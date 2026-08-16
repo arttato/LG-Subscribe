@@ -42,7 +42,16 @@ const noCare = [...new Set(products.filter((p) => !careData.products.find((c) =>
     <meta name="description" content="รายละเอียดบริการดูแลรักษาเครื่องใช้ไฟฟ้า LG Subscribe แยกตามหมวดสินค้า — ช่างผู้เชี่ยวชาญจาก LG เข้าบริการถึงบ้าน หรือบำรุงรักษาด้วยตัวเอง" />
     <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='20' fill='%23a50034'/><text x='50' y='68' font-size='52' text-anchor='middle' fill='white'>S</text></svg>" />
   </head>
-  <body>
+  <body data-placeholder={`${base}img/placeholder.svg`}>
+    <script is:inline>
+      // ถ้ารูปโหลดไม่ขึ้น → เปลี่ยนเป็นรูปสำรองอัตโนมัติ
+      document.addEventListener('error', (e) => {
+        const t = e.target;
+        if (!t || t.tagName !== 'IMG' || t.dataset.fbApplied) return;
+        t.dataset.fbApplied = '1';
+        t.src = document.body.dataset.placeholder || 'img/placeholder.svg';
+      }, true);
+    </script>
     <header class="site-header">
       <div class="container site-header-inner">
         <a class="brand" href={`${base}`}>

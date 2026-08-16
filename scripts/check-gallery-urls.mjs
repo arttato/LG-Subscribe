@@ -1,5 +1,9 @@
 // เช็คว่ารูปในแกลเลอรี่ทุกภาพเปิดได้หรือไม่ (HTTP 200)
+// 用法: node scripts/check-gallery-urls.mjs            → เตือน (exit 0 เสมอ)
+//       node scripts/check-gallery-urls.mjs --fail     → ถ้ามีรูปพัง exit 1
 import fs from 'fs';
+
+const FAIL = process.argv.includes('--fail');
 
 const g = JSON.parse(fs.readFileSync('./src/data/lg-gallery.json', 'utf8'));
 const arr = Array.isArray(g) ? g : (g.products || []);
@@ -17,39 +21,41 @@ for (const p of carr) for (const col of (p.colors || [])) for (const u of (col.i
 }
 
 const all = [...urls.keys()];
-console.log('URL ทั้งหมด:', all.length);
-
 const bad = [];
-const concurrency = 12;
+const concurrency = 25;
+const started = Date.now();
 for (let i = 0; i < all.length; i += concurrency) {
   const batch = all.slice(i, i + concurrency);
   await Promise.all(batch.map(async (u) => {
     try {
-      const r = await fetch(u, { method: 'HEAD', signal: AbortSignal.timeout(15000) });
+      const r = await fetch(u, { method: 'HEAD', signal: AbortSignal.timeout(8000) });
       if (!r.ok) bad.push({ url: u, status: r.status, codes: urls.get(u) });
-    } catch (e) {
-      bad.push({ url: u, status: 'ERR ' + e.message.slice(0, 40), codes: urls.get(u) });
+    } catch {
+      bad.push({ url: u, status: 'ERR', codes: urls.get(u) });
     }
   }));
-  process.stdout.write(`\r  ${Math.min(i + concurrency, all.length)}/${all.length}`);
 }
-console.log('\n');
 
 // ลอง GET อีกครั้งสำหรับ HEAD ที่ล้มเหลว (บาง CDN ไม่รองรับ HEAD)
 const finalBad = [];
 for (const b of bad) {
   try {
-    const r = await fetch(b.url);
-    if (r.ok) continue; // GET สำเร็จ → ไม่นับ
+    const r = await fetch(b.url, { signal: AbortSignal.timeout(8000) });
+    if (r.ok) continue;
     finalBad.push(b);
   } catch {
     finalBad.push(b);
   }
 }
 
-console.log('=== รูปที่ error ไม่โชว์: ' + finalBad.length + ' รูป ===');
-for (const b of finalBad) {
-  console.log(`[${b.status}]`);
-  for (const code of b.codes) console.log('   ', code);
-  console.log('    URL:', b.url.slice(0, 160));
+const secs = ((Date.now() - started) / 1000).toFixed(1);
+if (finalBad.length === 0) {
+  console.log(`✅ [gallerycheck] รูปแกลเลอรี่ ${all.length} ภาพ ผ่านทั้งหมด (${secs}s)`);
+  process.exit(0);
 }
+console.log(`⚠️ [gallerycheck] รูปที่ error ไม่โชว์: ${finalBad.length}/${all.length} ภาพ (${secs}s)`);
+for (const b of finalBad) {
+  console.log(`  [${b.status}] ${b.codes.join(', ')}`);
+  console.log(`      ${b.url.slice(0, 170)}`);
+}
+process.exit(FAIL ? 1 : 0);

@@ -135,7 +135,16 @@ const VIDEO_ID = 'uNwPkrefazo';
     <meta name="description" content="แคตตาล็อกสินค้าและราคา LG Subscribe — เป็นเจ้าของเครื่องใช้ไฟฟ้า LG แบบรายเดือน พร้อมบริการดูแลโดยผู้เชี่ยวชาญ" />
     <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='20' fill='%23a50034'/><text x='50' y='68' font-size='52' text-anchor='middle' fill='white'>S</text></svg>" />
   </head>
-  <body>
+  <body data-placeholder={`${base}img/placeholder.svg`}>
+    <script is:inline>
+      // ถ้ารูปโหลดไม่ขึ้น → เปลี่ยนเป็นรูปสำรองอัตโนมัติ
+      document.addEventListener('error', (e) => {
+        const t = e.target;
+        if (!t || t.tagName !== 'IMG' || t.dataset.fbApplied) return;
+        t.dataset.fbApplied = '1';
+        t.src = document.body.dataset.placeholder || 'img/placeholder.svg';
+      }, true);
+    </script>
     <header class="site-header">
       <div class="container site-header-inner">
         <a class="brand" href={`${base}`}>
