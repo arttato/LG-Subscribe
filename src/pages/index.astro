@@ -13,7 +13,13 @@ const base = import.meta.env.BASE_URL;
 
 // ชื่อสินค้าสำหรับการ์ด: ใช้ชื่อเต็มจากเว็บ LG (ตัด "รุ่น XXXX"/หัวข้อย่อย) ถ้ามี, ไม่งั้นชื่อเดิม
 const lgNameMap = new Map(lgSpecs.products.map((s) => [s.code, s.lgName]).filter(([, n]) => n));
-const cardNameOf = (p) => (lgNameMap.has(p.code) ? lgShortName(lgNameMap.get(p.code)) : p.name);
+// รุ่นที่มีหลายสี (จุดสีบนการ์ด) — ตัดชื่อสีไทยออกจากชื่อการ์ด (เช่น "... สีน้ำเงิน" → "...")
+const thaiColorRe = /(?:^|\s)สี[^\s]{1,10}(?=\s|$)/g;
+const cardNameOf = (p) => {
+  let n = lgNameMap.has(p.code) ? lgShortName(lgNameMap.get(p.code)) : p.name;
+  if (colorMap.has(p.code)) n = n.replace(thaiColorRe, ' ').replace(/\s{2,}/g, ' ').trim();
+  return n;
+};
 
 // สเปคเด่น 2-3 รายการสำหรับ tooltip บนการ์ด (จากเว็บ LG Thailand + PDF ราคา)
 const specMap = new Map([...lgSpecs.products, ...pdfSpecs.products].map((s) => [s.code, s]));
