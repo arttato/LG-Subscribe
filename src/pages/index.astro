@@ -36,10 +36,14 @@ const shortNameCollisions = new Set();
     for (const p of products) if (fams.has(famOf(p.code))) shortNameCollisions.add(p.code);
   }
 }
+// รุ่นที่การ์ดต้องแสดงชื่อเต็มแบบมีรุ่น (ไม่ตัด "รุ่น XXXX" ออก) — ตามที่ลูกค้าต้องการ เช่น WD516
+const keepFullNameCodes = new Set(['WD516']);
 const cardNameOf = (p) => {
   let n =
     lgNameMap.has(p.code) && !shortNameCollisions.has(p.code)
-      ? lgShortName(lgNameMap.get(p.code))
+      ? keepFullNameCodes.has(p.code)
+        ? lgNameMap.get(p.code)
+        : lgShortName(lgNameMap.get(p.code))
       : p.name;
   if (colorMap.has(p.code)) n = n.replace(thaiColorRe, ' ').replace(/\s{2,}/g, ' ').trim();
   return n;
