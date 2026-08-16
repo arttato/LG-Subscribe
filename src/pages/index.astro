@@ -36,10 +36,10 @@ const shortNameCollisions = new Set();
     for (const p of products) if (fams.has(famOf(p.code))) shortNameCollisions.add(p.code);
   }
 }
-// รุ่นที่การ์ดต้องแสดงชื่อเต็มแบบมีรุ่น (ไม่ตัด "รุ่น XXXX" ออก) — ตามที่ลูกค้าต้องการ เช่น WD516/WD518
-const keepFullNameCodes = new Set(['WD516', 'WD518']);
+// รุ่นที่การ์ดต้องแสดงชื่อเต็มแบบมีรุ่น (ไม่ตัด "รุ่น XXXX" ออก) — เครื่องกรองน้ำทั้ง 3 รุ่นใช้ชื่อรูปแบบเดียวกัน
+const keepFullNameCodes = new Set(['WD516', 'WD518', 'WD110MN']);
 // รุ่นที่การ์ดคงชื่อจาก p.name เสมอ (แม้จะมี lgName) — กันชื่อเปลี่ยนเมื่อ lgName รุ่นพี่น้องถูกแก้
-const keepProductNameCodes = new Set(['WD110MN']);
+const keepProductNameCodes = new Set();
 const cardNameOf = (p) => {
   const base = p.code.split('.')[0];
   let n;
