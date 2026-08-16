@@ -77,7 +77,11 @@ const CATEGORY_ORDER = [
   'เครื่องปรับอากาศ SAC 4Way Cassette',
   'เครื่องปรับอากาศ SAC 1 Way Cassette',
   'เครื่องปรับอากาศ SAC Round Cassette',
-  'โทรทัศน์',
+  'โทรทัศน์ NanoCell',
+  'โทรทัศน์ QNED',
+  'โทรทัศน์ OLED',
+  'โทรทัศน์ StanbyME',
+  'โทรทัศน์ Micro RGB',
   'มอนิเตอร์',
   'Sound bar',
 ];
@@ -85,10 +89,14 @@ const orderOf = (name) => {
   const i = CATEGORY_ORDER.indexOf(name);
   return i === -1 ? CATEGORY_ORDER.length : i;
 };
-// เรียงสินค้าในหมวด: แอร์เรียงตาม BTU (น้อย→มาก จากชื่อรุ่น) หมวดอื่นเรียงตามราคา
+// เรียงสินค้าในหมวด: แอร์เรียงตาม BTU, ทีวีเรียงตามนิ้ว (น้อย→มาก) หมวดอื่นเรียงตามราคา
 const btuOfName = (s) => parseInt(((s || '').match(/([\d,]+)\s*BTU/i) || [])[1]?.replace(/,/g, '') || '0', 10);
 const btuOf = (p) => btuOfName(p.name);
-const sectionSort = (name) => (a, b) => (name.startsWith('เครื่องปรับอากาศ') ? btuOf(a) - btuOf(b) : (a.price ?? 9e9) - (b.price ?? 9e9));
+const inchOf = (p) => parseFloat(((p.name || '').match(/([\d.]+)\s*นิ้ว/) || [])[1] || '0');
+const sectionSort = (name) => (a, b) =>
+  name.startsWith('เครื่องปรับอากาศ') ? btuOf(a) - btuOf(b)
+  : name.startsWith('โทรทัศน์') ? inchOf(a) - inchOf(b)
+  : (a.price ?? 9e9) - (b.price ?? 9e9);
 
 // ป้ายขนาด/ความจุบนการ์ด: แอร์ BTU, ซักผ้า/อบผ้า/WashTower กก., ตู้เย็น คิว, ฟอกอากาศ ตร.ม., ทีวี นิ้ว
 // ใช้ชื่อ meta (แก้เองแล้ว ตรงกับ PDF เช่น "20/10 กก.") ก่อน — ถ้าไม่มีค่อยดึงจากชื่อที่แสดงบนการ์ด

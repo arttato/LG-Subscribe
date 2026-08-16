@@ -1903,7 +1903,7 @@
     {
       "code": "100MRGB96BS.ATM",
       "slug": "100mrgb96bs-atm",
-      "category": "โทรทัศน์",
+      "category": "โทรทัศน์ Micro RGB",
       "name": "ทีวี LG 100 นิ้ว",
       "source": "Price list_Aug_V3.pdf",
       "page": 39,
@@ -1925,105 +1925,9 @@
       "description": "NEW\n5Y\n100MRGB96BS.ATM\nขนาดทีวีแบบไม่รวมขาตั้ง\n(WxHxD mm)\n2230 x 1277 x 49.9 26,994 4,499 รอบบิลที่ 13 - 20 (2,249) 18,000\nNo DC50%(8M)\nขนาดทีวีแบบรวมขาตั้ง • 13M~20M (8 Months 50% Discount)\nService\n(WxHxD mm) • รอบบิลที่ 21 - 60 (4,499)\n2230 x 1372 x 434"
     },
     {
-      "code": "100QNED86BS.ATM",
-      "slug": "100qned86bs-atm",
-      "category": "โทรทัศน์",
-      "name": "ทีวี LG QNED 100 นิ้ว 4K",
-      "source": "Price list_Aug_V3.pdf",
-      "page": 43,
-      "srcPage": 45,
-      "y": 344,
-      "y2": 286,
-      "pdf": "/pdfs/Price%20list_Aug_V3.pdf",
-      "mode": "monthly",
-      "price": 2599,
-      "priceFrom": "5Y",
-      "policies": [
-        {
-          "policy": "5Y",
-          "term": null,
-          "price": 2599,
-          "promoCode": null
-        }
-      ],
-      "description": "100QNED86BS.ATM\n5Y\nขนาดทีวีแบบไม่รวมขาตั้ง (WxHxD mm)\n2230 x 1277 x 49.9 15,594 2,599 - NOSERVICE_5Y_PRO_ADV50%(12M)\nNo • Advance payment 50% 12 บิลแรก\nขนาดทีวีแบบรวมขาตั้ง (WxHxD mm) •รอบบิลที่ 13 - 60 (2,599)\nService\n2230 x 1372 x 434"
-    },
-    {
-      "code": "27LX6TDGA.ATM",
-      "slug": "27lx6tdga-atm",
-      "category": "โทรทัศน์",
-      "name": "ทีวีพกพา LG StanbyME 27 นิ้ว",
-      "source": "Price list_Aug_V3.pdf",
-      "page": 41,
-      "srcPage": 43,
-      "y": 314,
-      "y2": 225,
-      "pdf": "/pdfs/Price%20list_Aug_V3.pdf",
-      "mode": "monthly",
-      "price": 749,
-      "priceFrom": "5Y",
-      "policies": [
-        {
-          "policy": "5Y",
-          "term": null,
-          "price": 749,
-          "promoCode": null
-        }
-      ],
-      "description": "Life Style TV 5Y\n27LX6TDGA.ATM\nLG StanbyME2 • รอบบิลที่ 1- 12 (374.50)\nขนาดทีวีแบบไม่รวมขาตั้ง (WxHxD mm) •\n4,494 749 3,000\n623 x 364 x 28.5 No DC50%(8M)\nขนาดทีวีแบบรวมขาตั้ง (WxHxD mm) Service\n623 x 1265 x 398"
-    },
-    {
-      "code": "32LX6BDGA.ATM",
-      "slug": "32lx6bdga-atm",
-      "category": "โทรทัศน์",
-      "name": "ทีวีพกพา LG StanbyME 32 นิ้ว",
-      "source": "Price list_Aug_V3.pdf",
-      "page": 45,
-      "srcPage": 47,
-      "y": 306,
-      "y2": 259,
-      "pdf": "/pdfs/Price%20list_Aug_V3.pdf",
-      "mode": "monthly",
-      "price": 5094,
-      "priceFrom": "5Y",
-      "policies": [
-        {
-          "policy": "5Y",
-          "term": null,
-          "price": 5094,
-          "promoCode": null
-        }
-      ],
-      "description": "Life Style TV\nLG StanbyME 2 Max NOSERVICE_5Y_PRO_ADV50%(12M)_\n5Y 5,094 849 3,400\nDC50%(8M)\n32LX6BDGA.ATM"
-    },
-    {
-      "code": "55QNED80BSA.ATM",
-      "slug": "55qned80bsa-atm",
-      "category": "โทรทัศน์",
-      "name": "ทีวี LG QNED 55 นิ้ว 4K",
-      "source": "Price list_Aug_V3.pdf",
-      "page": 43,
-      "srcPage": 45,
-      "y": 98,
-      "y2": 33,
-      "pdf": "/pdfs/Price%20list_Aug_V3.pdf",
-      "mode": "monthly",
-      "price": 549,
-      "priceFrom": "5Y",
-      "policies": [
-        {
-          "policy": "5Y",
-          "term": null,
-          "price": 549,
-          "promoCode": null
-        }
-      ],
-      "description": "5Y\n55QNED80BSA.ATM\nขนาดทีวีแบบไม่รวมขาตั้ง (WxHxD mm)\n1236 x 718 x 67.9 No 3,294 549 -\nขนาดทีวีแบบรวมขาตั้ง (WxHxD mm) Service\n1236 x 780 x 230"
-    },
-    {
       "code": "65NU855BPSA.ATM",
       "slug": "65nu855bpsa-atm",
-      "category": "โทรทัศน์",
+      "category": "โทรทัศน์ NanoCell",
       "name": "ทีวี LG NanoCell 65 นิ้ว 4K",
       "source": "Price list_Aug_V3.pdf",
       "page": 44,
@@ -2045,33 +1949,9 @@
       "description": "65NU855BPSA.ATM\n5Y\nขนาดทีวีแบบไม่รวมขาตั้ง (WxHxD mm)\n1447 x 838 x 70.8 • รอบบิลที่ 1- 12 (274.50)\n3,294 549 - NOSERVICE_5Y_PRO_ADV50%(12M)\nขนาดทีวีแบบรวมขาตั้ง (WxHxD mm) No •\n1447 x 901 x 269 Service"
     },
     {
-      "code": "65QNED80BSA.ATM",
-      "slug": "65qned80bsa-atm",
-      "category": "โทรทัศน์",
-      "name": "ทีวี LG QNED 65 นิ้ว 4K",
-      "source": "Price list_Aug_V3.pdf",
-      "page": 43,
-      "srcPage": 45,
-      "y": 182,
-      "y2": 124,
-      "pdf": "/pdfs/Price%20list_Aug_V3.pdf",
-      "mode": "monthly",
-      "price": 649,
-      "priceFrom": "5Y",
-      "policies": [
-        {
-          "policy": "5Y",
-          "term": null,
-          "price": 649,
-          "promoCode": null
-        }
-      ],
-      "description": "65QNED80BSA.ATM\n5Y\nขนาดทีวีแบบไม่รวมขาตั้ง (WxHxD mm)\n1455 x 841 x 67.9 3,894 649 - NOSERVICE_5Y_PRO_ADV50%(12M)\nNo • Advance payment 50% 12 บิลแรก\nขนาดทีวีแบบรวมขาตั้ง (WxHxD mm) รอบบิลที่ 13 - 60 (649)\nService\n1455 x 904 x 269"
-    },
-    {
       "code": "75NU855BPSA.ATM",
       "slug": "75nu855bpsa-atm",
-      "category": "โทรทัศน์",
+      "category": "โทรทัศน์ NanoCell",
       "name": "ทีวี LG NanoCell 75 นิ้ว 4K",
       "source": "Price list_Aug_V3.pdf",
       "page": 44,
@@ -2093,9 +1973,177 @@
       "description": "75NU855BPSA.ATM 5Y\nขนาดทีวีแบบไม่รวมขาตั้ง (WxHxD mm)\n1669 x 963 x 72.1 4,194 699 -\nNOSERVICE_5Y_PRO_ADV50%(12M)\nขนาดทีวีแบบรวมขาตั้ง (WxHxD mm) No •รอบบิลที่ 13 - 60 (699)\n1669 x1026 x 361 Service"
     },
     {
+      "code": "OLED48C6PSA.ATM",
+      "slug": "oled48c6psa-atm",
+      "category": "โทรทัศน์ OLED",
+      "name": "ทีวี LG OLED 48 นิ้ว 4K",
+      "source": "Sale Price8 - Subscription_V3.pdf",
+      "page": 7,
+      "srcPage": 8,
+      "y": 329,
+      "y2": 268,
+      "pdf": "/pdfs/Sale%20Price8%20-%20Subscription_V3.pdf",
+      "mode": "monthly",
+      "price": 849,
+      "priceFrom": "5Y",
+      "policies": [
+        {
+          "policy": "5Y",
+          "term": null,
+          "price": 849,
+          "promoCode": null
+        }
+      ],
+      "description": "OLED48C6PSA.ATM 5Y\nขนาดทีวีแบบไม่รวมขาตั้ง\n(WxHxD mm)\nOBS Subscription 4,194 699 รอบบิลที่•รอบบิลที่1313 - 60 (699)-20(374) 3,000- NOSERVICE_5Y_PRO_ADV50%(12M)\n1071 x 620 x 46.9 4,494 749\nขนาดทีวีแบบรวมขาตั้งรอบบิลที่ 21-60 (749)\n+Discount 50 %\n(WxHxD mm)\nNo service\n1071 x 675 x 230 (8 Month)"
+    },
+    {
+      "code": "OLED55C6PSA.ATM",
+      "slug": "oled55c6psa-atm",
+      "category": "โทรทัศน์ OLED",
+      "name": "ทีวี LG OLED 55 นิ้ว 4K",
+      "source": "Price list_Aug_V3.pdf",
+      "page": 42,
+      "srcPage": 44,
+      "y": 118,
+      "y2": 30,
+      "pdf": "/pdfs/Price%20list_Aug_V3.pdf",
+      "mode": "monthly",
+      "price": 1099,
+      "priceFrom": "5Y",
+      "policies": [
+        {
+          "policy": "5Y",
+          "term": null,
+          "price": 1099,
+          "promoCode": null
+        }
+      ],
+      "description": "OLED55C6PSA.ATM\n5Y • รอบบิลที่ 1- 12 (549.50)\nขนาดทีวีแบบไม่รวมขาตั้ง\nNOSERVICE_5Y_PRO_ADV50%(12M)_\n(WxHxD mm)\n1222 x 703 x 45.1 6,594 1,099 4,400 DC50%(8M)\nขนาดทีวีแบบรวมขาตั้งรอบบิลที่ 21 - 60 (1,099)\nNo Service\n(WxHxD mm)\n1222 x 757 x 230"
+    },
+    {
+      "code": "OLED65C6PSA.ATM",
+      "slug": "oled65c6psa-atm",
+      "category": "โทรทัศน์ OLED",
+      "name": "ทีวี LG OLED 65 นิ้ว 4K",
+      "source": "Price list_Aug_V3.pdf",
+      "page": 42,
+      "srcPage": 44,
+      "y": 234,
+      "y2": 146,
+      "pdf": "/pdfs/Price%20list_Aug_V3.pdf",
+      "mode": "monthly",
+      "price": 1299,
+      "priceFrom": "5Y",
+      "policies": [
+        {
+          "policy": "5Y",
+          "term": null,
+          "price": 1299,
+          "promoCode": null
+        }
+      ],
+      "description": "OLED65C6PSA.ATM\nขนาดทีวีแบบไม่รวมขาตั้ง 5Y\n(WxHxD mm)\n1441 x 826 x 45.1 7,794 1,299 5,200\nDC50%(8M)\nขนาดทีวีแบบรวมขาตั้ง 13M~20M (8 Months 50% Discount)\nNo Service\n(WxHxD mm) • รอบบิลที่ 21 - 60 (1,299)\n1441 x 880 x 230"
+    },
+    {
+      "code": "OLED77C6PSA.ATM",
+      "slug": "oled77c6psa-atm",
+      "category": "โทรทัศน์ OLED",
+      "name": "ทีวี LG OLED 77 นิ้ว 4K",
+      "source": "Price list_Aug_V3.pdf",
+      "page": 42,
+      "srcPage": 44,
+      "y": 346,
+      "y2": 258,
+      "pdf": "/pdfs/Price%20list_Aug_V3.pdf",
+      "mode": "monthly",
+      "price": 1999,
+      "priceFrom": "5Y",
+      "policies": [
+        {
+          "policy": "5Y",
+          "term": null,
+          "price": 1999,
+          "promoCode": null
+        }
+      ],
+      "description": "OLED77C6PSA.ATM\n5Y\nขนาดทีวีแบบไม่รวมขาตั้ง\n(WxHxD mm)\n1711 x 982 x 47.1 11,994 1,999 8,000 NOSERVICE_5Y_PRO_ADV50%(12M)_\nขนาดทีวีแบบรวมขาตั้ง 13M~20M (8 Months 50% Discount) DC50%(8M)\nNo Service\n(WxHxD mm) •รอบบิลที่ 21 - 60 (1,999)\n1711 x 1035 x 267"
+    },
+    {
+      "code": "100QNED86BS.ATM",
+      "slug": "100qned86bs-atm",
+      "category": "โทรทัศน์ QNED",
+      "name": "ทีวี LG QNED 100 นิ้ว 4K",
+      "source": "Price list_Aug_V3.pdf",
+      "page": 43,
+      "srcPage": 45,
+      "y": 344,
+      "y2": 286,
+      "pdf": "/pdfs/Price%20list_Aug_V3.pdf",
+      "mode": "monthly",
+      "price": 2599,
+      "priceFrom": "5Y",
+      "policies": [
+        {
+          "policy": "5Y",
+          "term": null,
+          "price": 2599,
+          "promoCode": null
+        }
+      ],
+      "description": "100QNED86BS.ATM\n5Y\nขนาดทีวีแบบไม่รวมขาตั้ง (WxHxD mm)\n2230 x 1277 x 49.9 15,594 2,599 - NOSERVICE_5Y_PRO_ADV50%(12M)\nNo • Advance payment 50% 12 บิลแรก\nขนาดทีวีแบบรวมขาตั้ง (WxHxD mm) •รอบบิลที่ 13 - 60 (2,599)\nService\n2230 x 1372 x 434"
+    },
+    {
+      "code": "55QNED80BSA.ATM",
+      "slug": "55qned80bsa-atm",
+      "category": "โทรทัศน์ QNED",
+      "name": "ทีวี LG QNED 55 นิ้ว 4K",
+      "source": "Price list_Aug_V3.pdf",
+      "page": 43,
+      "srcPage": 45,
+      "y": 98,
+      "y2": 33,
+      "pdf": "/pdfs/Price%20list_Aug_V3.pdf",
+      "mode": "monthly",
+      "price": 549,
+      "priceFrom": "5Y",
+      "policies": [
+        {
+          "policy": "5Y",
+          "term": null,
+          "price": 549,
+          "promoCode": null
+        }
+      ],
+      "description": "5Y\n55QNED80BSA.ATM\nขนาดทีวีแบบไม่รวมขาตั้ง (WxHxD mm)\n1236 x 718 x 67.9 No 3,294 549 -\nขนาดทีวีแบบรวมขาตั้ง (WxHxD mm) Service\n1236 x 780 x 230"
+    },
+    {
+      "code": "65QNED80BSA.ATM",
+      "slug": "65qned80bsa-atm",
+      "category": "โทรทัศน์ QNED",
+      "name": "ทีวี LG QNED 65 นิ้ว 4K",
+      "source": "Price list_Aug_V3.pdf",
+      "page": 43,
+      "srcPage": 45,
+      "y": 182,
+      "y2": 124,
+      "pdf": "/pdfs/Price%20list_Aug_V3.pdf",
+      "mode": "monthly",
+      "price": 649,
+      "priceFrom": "5Y",
+      "policies": [
+        {
+          "policy": "5Y",
+          "term": null,
+          "price": 649,
+          "promoCode": null
+        }
+      ],
+      "description": "65QNED80BSA.ATM\n5Y\nขนาดทีวีแบบไม่รวมขาตั้ง (WxHxD mm)\n1455 x 841 x 67.9 3,894 649 - NOSERVICE_5Y_PRO_ADV50%(12M)\nNo • Advance payment 50% 12 บิลแรก\nขนาดทีวีแบบรวมขาตั้ง (WxHxD mm) รอบบิลที่ 13 - 60 (649)\nService\n1455 x 904 x 269"
+    },
+    {
       "code": "75QNED86BSA.ATM",
       "slug": "75qned86bsa-atm",
-      "category": "โทรทัศน์",
+      "category": "โทรทัศน์ QNED",
       "name": "ทีวี LG QNED 75 นิ้ว 4K",
       "source": "Sale Price8 - Subscription_V3.pdf",
       "page": 7,
@@ -2125,7 +2173,7 @@
     {
       "code": "85QNED80BSA.ATM",
       "slug": "85qned80bsa-atm",
-      "category": "โทรทัศน์",
+      "category": "โทรทัศน์ QNED",
       "name": "ทีวี LG QNED 85 นิ้ว 4K",
       "source": "Price list_Aug_V3.pdf",
       "page": 43,
@@ -2147,100 +2195,52 @@
       "description": "85QNED80BSA.ATM 5Y\nขนาดทีวีแบบไม่รวมขาตั้ง (WxHxD mm)\n1889 x 1087 x 67.0 8,094 1,349 - NOSERVICE_5Y_PRO_ADV50%(12M)\nNo • Advance payment 50% 12 บิลแรก • รอบบิลที่ 13 - 60 (1,349)\nขนาดทีวีแบบรวมขาตั้ง (WxHxD mm)\nService\n1889 x 1149 x 362"
     },
     {
-      "code": "OLED48C6PSA.ATM",
-      "slug": "oled48c6psa-atm",
-      "category": "โทรทัศน์",
-      "name": "ทีวี LG OLED 48 นิ้ว 4K",
-      "source": "Sale Price8 - Subscription_V3.pdf",
-      "page": 7,
-      "srcPage": 8,
-      "y": 329,
-      "y2": 268,
-      "pdf": "/pdfs/Sale%20Price8%20-%20Subscription_V3.pdf",
-      "mode": "monthly",
-      "price": 849,
-      "priceFrom": "5Y",
-      "policies": [
-        {
-          "policy": "5Y",
-          "term": null,
-          "price": 849,
-          "promoCode": null
-        }
-      ],
-      "description": "OLED48C6PSA.ATM 5Y\nขนาดทีวีแบบไม่รวมขาตั้ง\n(WxHxD mm)\nOBS Subscription 4,194 699 รอบบิลที่•รอบบิลที่1313 - 60 (699)-20(374) 3,000- NOSERVICE_5Y_PRO_ADV50%(12M)\n1071 x 620 x 46.9 4,494 749\nขนาดทีวีแบบรวมขาตั้งรอบบิลที่ 21-60 (749)\n+Discount 50 %\n(WxHxD mm)\nNo service\n1071 x 675 x 230 (8 Month)"
-    },
-    {
-      "code": "OLED55C6PSA.ATM",
-      "slug": "oled55c6psa-atm",
-      "category": "โทรทัศน์",
-      "name": "ทีวี LG OLED 55 นิ้ว 4K",
+      "code": "27LX6TDGA.ATM",
+      "slug": "27lx6tdga-atm",
+      "category": "โทรทัศน์ StanbyME",
+      "name": "ทีวีพกพา LG StanbyME 27 นิ้ว",
       "source": "Price list_Aug_V3.pdf",
-      "page": 42,
-      "srcPage": 44,
-      "y": 118,
-      "y2": 30,
+      "page": 41,
+      "srcPage": 43,
+      "y": 314,
+      "y2": 225,
       "pdf": "/pdfs/Price%20list_Aug_V3.pdf",
       "mode": "monthly",
-      "price": 1099,
+      "price": 749,
       "priceFrom": "5Y",
       "policies": [
         {
           "policy": "5Y",
           "term": null,
-          "price": 1099,
+          "price": 749,
           "promoCode": null
         }
       ],
-      "description": "OLED55C6PSA.ATM\n5Y • รอบบิลที่ 1- 12 (549.50)\nขนาดทีวีแบบไม่รวมขาตั้ง\nNOSERVICE_5Y_PRO_ADV50%(12M)_\n(WxHxD mm)\n1222 x 703 x 45.1 6,594 1,099 4,400 DC50%(8M)\nขนาดทีวีแบบรวมขาตั้งรอบบิลที่ 21 - 60 (1,099)\nNo Service\n(WxHxD mm)\n1222 x 757 x 230"
+      "description": "Life Style TV 5Y\n27LX6TDGA.ATM\nLG StanbyME2 • รอบบิลที่ 1- 12 (374.50)\nขนาดทีวีแบบไม่รวมขาตั้ง (WxHxD mm) •\n4,494 749 3,000\n623 x 364 x 28.5 No DC50%(8M)\nขนาดทีวีแบบรวมขาตั้ง (WxHxD mm) Service\n623 x 1265 x 398"
     },
     {
-      "code": "OLED65C6PSA.ATM",
-      "slug": "oled65c6psa-atm",
-      "category": "โทรทัศน์",
-      "name": "ทีวี LG OLED 65 นิ้ว 4K",
+      "code": "32LX6BDGA.ATM",
+      "slug": "32lx6bdga-atm",
+      "category": "โทรทัศน์ StanbyME",
+      "name": "ทีวีพกพา LG StanbyME 32 นิ้ว",
       "source": "Price list_Aug_V3.pdf",
-      "page": 42,
-      "srcPage": 44,
-      "y": 234,
-      "y2": 146,
+      "page": 45,
+      "srcPage": 47,
+      "y": 306,
+      "y2": 259,
       "pdf": "/pdfs/Price%20list_Aug_V3.pdf",
       "mode": "monthly",
-      "price": 1299,
+      "price": 5094,
       "priceFrom": "5Y",
       "policies": [
         {
           "policy": "5Y",
           "term": null,
-          "price": 1299,
+          "price": 5094,
           "promoCode": null
         }
       ],
-      "description": "OLED65C6PSA.ATM\nขนาดทีวีแบบไม่รวมขาตั้ง 5Y\n(WxHxD mm)\n1441 x 826 x 45.1 7,794 1,299 5,200\nDC50%(8M)\nขนาดทีวีแบบรวมขาตั้ง 13M~20M (8 Months 50% Discount)\nNo Service\n(WxHxD mm) • รอบบิลที่ 21 - 60 (1,299)\n1441 x 880 x 230"
-    },
-    {
-      "code": "OLED77C6PSA.ATM",
-      "slug": "oled77c6psa-atm",
-      "category": "โทรทัศน์",
-      "name": "ทีวี LG OLED 77 นิ้ว 4K",
-      "source": "Price list_Aug_V3.pdf",
-      "page": 42,
-      "srcPage": 44,
-      "y": 346,
-      "y2": 258,
-      "pdf": "/pdfs/Price%20list_Aug_V3.pdf",
-      "mode": "monthly",
-      "price": 1999,
-      "priceFrom": "5Y",
-      "policies": [
-        {
-          "policy": "5Y",
-          "term": null,
-          "price": 1999,
-          "promoCode": null
-        }
-      ],
-      "description": "OLED77C6PSA.ATM\n5Y\nขนาดทีวีแบบไม่รวมขาตั้ง\n(WxHxD mm)\n1711 x 982 x 47.1 11,994 1,999 8,000 NOSERVICE_5Y_PRO_ADV50%(12M)_\nขนาดทีวีแบบรวมขาตั้ง 13M~20M (8 Months 50% Discount) DC50%(8M)\nNo Service\n(WxHxD mm) •รอบบิลที่ 21 - 60 (1,999)\n1711 x 1035 x 267"
+      "description": "Life Style TV\nLG StanbyME 2 Max NOSERVICE_5Y_PRO_ADV50%(12M)_\n5Y 5,094 849 3,400\nDC50%(8M)\n32LX6BDGA.ATM"
     },
     {
       "code": "27GX704A-B.ATM",
