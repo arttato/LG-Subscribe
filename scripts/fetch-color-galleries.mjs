@@ -16,24 +16,24 @@ const DELAY_MS = 250;
 const FAMILIES = {
   // ── เครื่องกรองน้ำ (3 สี) ──
   WD516: [
-    { key: 'navy',   th: 'น้ำเงิน', model: 'WD516AN.ACNPLMT', url: 'https://www.lg.com/th/water-purifiers/wd516an-acnplmt/', swatch: '#2f4a6e' },
-    { key: 'white',  th: 'ขาว',    model: 'WD516AN.AEWPLMT', url: 'https://www.lg.com/th/water-purifiers/wd516an-aewplmt/', swatch: '#f2f2f2' },
-    { key: 'silver', th: 'เงิน',    model: 'WD516AN.ASLPLMT', url: 'https://www.lg.com/th/water-purifiers/wd516an-aslplmt/', swatch: '#b9bec6' },
+    { key: 'navy',   th: 'น้ำเงิน', en: 'Navy Blue', model: 'WD516AN.ACNPLMT', url: 'https://www.lg.com/th/water-purifiers/wd516an-acnplmt/', swatch: '#2f4a6e' },
+    { key: 'white',  th: 'ขาว',    en: 'White',     model: 'WD516AN.AEWPLMT', url: 'https://www.lg.com/th/water-purifiers/wd516an-aewplmt/', swatch: '#f2f2f2' },
+    { key: 'silver', th: 'เงิน',    en: 'Silver',    model: 'WD516AN.ASLPLMT', url: 'https://www.lg.com/th/water-purifiers/wd516an-aslplmt/', swatch: '#b9bec6' },
   ],
   WD518: [
-    { key: 'beige',  th: 'เบจ',     model: 'WD518AN.ABGPLMT', url: 'https://www.lg.com/th/water-purifiers/wd518an-abgplmt/', swatch: '#d9c6a9' },
-    { key: 'white',  th: 'ขาว',    model: 'WD518AN.AWHPLMT', url: 'https://www.lg.com/th/water-purifiers/wd518an-awhplmt/', swatch: '#f2f2f2' },
-    { key: 'gray',   th: 'เทา',     model: 'WD518AN.ACGPLMT', url: 'https://www.lg.com/th/water-purifiers/wd518an-acgplmt/', swatch: '#8d9198' },
+    { key: 'beige',  th: 'เบจ',     en: 'Beige',     model: 'WD518AN.ABGPLMT', url: 'https://www.lg.com/th/water-purifiers/wd518an-abgplmt/', swatch: '#d9c6a9' },
+    { key: 'white',  th: 'ขาว',    en: 'White',     model: 'WD518AN.AWHPLMT', url: 'https://www.lg.com/th/water-purifiers/wd518an-awhplmt/', swatch: '#f2f2f2' },
+    { key: 'gray',   th: 'เทา',     en: 'Gray',      model: 'WD518AN.ACGPLMT', url: 'https://www.lg.com/th/water-purifiers/wd518an-acgplmt/', swatch: '#8d9198' },
   ],
   // ── WashTower 14/10 กก. (2 สี — 1 การ์ด ครอบครัวเดียวกับ WT1410NHEN) ──
   'WT1410NHEG.ABGPQTH': [
-    { key: 'naturalgreen', th: 'เขียวธรรมชาติ', model: 'WT1410NHEG', url: 'https://www.lg.com/th/laundry/wash-tower/wt1410nheg/', swatch: '#8b9b7e' },
-    { key: 'bluewhite',    th: 'น้ำเงินขาว',    model: 'WT1410NHEN', url: 'https://www.lg.com/th/laundry/wash-tower/wt1410nhen/', swatch: '#b8c4d6' },
+    { key: 'naturalgreen', th: 'เขียวธรรมชาติ', en: 'Nature Green', model: 'WT1410NHEG', url: 'https://www.lg.com/th/laundry/wash-tower/wt1410nheg/', swatch: '#8b9b7e' },
+    { key: 'bluewhite',    th: 'น้ำเงินขาว',    en: 'Blue White',   model: 'WT1410NHEN', url: 'https://www.lg.com/th/laundry/wash-tower/wt1410nhen/', swatch: '#b8c4d6' },
   ],
   // ── WashTower 25/20 กก. (2 สี — 1 การ์ด ครอบครัวเดียวกับ WT2520NHEN) ──
   'WT2520NHEG.ABGPETH': [
-    { key: 'naturalgreen', th: 'เขียวธรรมชาติ', model: 'WT2520NHEG', url: 'https://www.lg.com/th/laundry/wash-tower/wt2520nheg/', swatch: '#8b9b7e' },
-    { key: 'navy',         th: 'น้ำเงินกรม',    model: 'WT2520NHEN', url: 'https://www.lg.com/th/laundry/wash-tower/wt2520nhen/', swatch: '#2f4a6e' },
+    { key: 'naturalgreen', th: 'เขียวธรรมชาติ', en: 'Nature Green', model: 'WT2520NHEG', url: 'https://www.lg.com/th/laundry/wash-tower/wt2520nheg/', swatch: '#8b9b7e' },
+    { key: 'navy',         th: 'น้ำเงินกรม',    en: 'Navy Blue',    model: 'WT2520NHEN', url: 'https://www.lg.com/th/laundry/wash-tower/wt2520nhen/', swatch: '#2f4a6e' },
   ],
 };
 
@@ -232,6 +232,7 @@ for (const [code, variants] of Object.entries(FAMILIES)) {
       colors.push({
         key: v.key,
         th: v.th,
+        en: v.en || '',
         model: v.model,
         url: v.url,
         lgName: lgName || v.model,

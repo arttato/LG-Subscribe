@@ -163,9 +163,9 @@ const planCards = (() => {
             {colorVariants.length > 1 && (
               <div class="color-switcher" data-colors>
                 {colorVariants.map((v, i) => (
-                  <button class="color-chip" data-color={i} type="button" aria-pressed={i === 0}>
+                  <button class="color-chip" data-color={i} data-color-key={v.key} type="button" aria-pressed={i === 0} title={v.th}>
                     <span class="color-dot" style={`background:${v.swatch || '#999'}`} aria-hidden="true"></span>
-                    {v.th}
+                    {v.en || v.th}
                   </button>
                 ))}
               </div>
@@ -578,7 +578,11 @@ const planCards = (() => {
           const t = e.target.closest('[data-thumb]');
           if (t) show(parseInt(t.dataset.thumb, 10));
         });
-        if (variants.length) setColor(0);
+        if (variants.length) {
+          const want = new URLSearchParams(location.search).get('color');
+          const idx = want ? variants.findIndex((v) => v.key === want) : -1;
+          setColor(idx >= 0 ? idx : 0);
+        }
         renderThumbs();
         show(0);
       }

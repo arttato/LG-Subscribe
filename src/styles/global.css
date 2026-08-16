@@ -728,6 +728,37 @@ a {
   word-break: break-all;
 }
 
+/* จุดสีบนการ์ด (รุ่นมีหลายสี เช่น WD516/WD518, WashTower) — กดแล้วเปิดหน้า detail สีนั้น */
+.card-colors {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  margin-top: 1px;
+}
+
+.card-color-dot {
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  border: 2px solid #fff;
+  box-shadow: 0 0 0 1px var(--border), 0 1px 3px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  transition: transform 0.12s ease, box-shadow 0.12s ease;
+}
+
+.card-color-dot:hover,
+.card-color-dot:focus-visible {
+  transform: scale(1.2);
+  box-shadow: 0 0 0 2px var(--brand), 0 2px 5px rgba(0, 0, 0, 0.25);
+  outline: none;
+}
+
+.card-colors-note {
+  font-size: 0.7rem;
+  color: var(--muted);
+  font-weight: 600;
+}
+
 .card-policies {
   display: flex;
   flex-wrap: wrap;

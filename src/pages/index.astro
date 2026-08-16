@@ -5,6 +5,7 @@ import data from '../data/products.json';
 import lgSpecs from '../data/lg-specs.json';
 import pdfSpecs from '../data/pdf-specs.json';
 import banners from '../data/banners.json';
+import colorGalleries from '../data/color-galleries.json';
 import { lgShortName } from '../lib/utils';
 
 const products = data.products;
@@ -29,6 +30,9 @@ for (const p of products) {
 // รูปสินค้าที่สกัดจาก PDF (scripts/extract-images.mjs) — รุ่นไหนไม่มีรูปจะไม่แสดง <img>
 const imgDir = process.cwd() + '/public/img/products';
 const imgSlugs = new Set(fs.existsSync(imgDir) ? fs.readdirSync(imgDir).map((f) => f.replace(/\.jpg$/, '')) : []);
+
+// สีของรุ่น (WD516/WD518 3 สี, WashTower 2 สี) — จุดสีบนการ์ด กดแล้วเปิดหน้า detail สีนั้น
+const colorMap = new Map(colorGalleries.products.map((s) => [s.code, s.colors]));
 
 // รวมหมวดหมู่ย่อยเป็นกลุ่มหลักแบบ LG (ตู้เย็น / 2 ประตู → ตู้เย็น)
 const topCat = (c) => (c || 'อื่นๆ').split(' / ')[0];
@@ -297,6 +301,22 @@ const VIDEO_ID = 'uNwPkrefazo';
                     <div class="card-category">{p.category || sec.name}</div>
                     {cardNameOf(p) !== p.code && <div class="card-name">{cardNameOf(p)}</div>}
                     <div class="card-code">{p.code}</div>
+                    {colorMap.has(p.code) && colorMap.get(p.code).length > 1 && (
+                      <div class="card-colors">
+                        {colorMap.get(p.code).map((v) => (
+                          <span
+                            class="card-color-dot"
+                            style={`background:${v.swatch || '#999'}`}
+                            title={`${v.en || v.th}${v.th ? ' (' + v.th + ')' : ''}`}
+                            data-url={`${base}product/${p.slug}/?color=${encodeURIComponent(v.key)}`}
+                            role="button"
+                            tabindex="0"
+                            aria-label={`ดูสี ${v.en || v.th}`}
+                          ></span>
+                        ))}
+                        <span class="card-colors-note">{colorMap.get(p.code).length} สี</span>
+                      </div>
+                    )}
                     {tipMap.get(p.slug) && tipMap.get(p.slug).length > 0 && (
                       <div class="card-tip">
                         <div class="card-tip-title">สเปคเด่น</div>
@@ -364,6 +384,23 @@ const VIDEO_ID = 'uNwPkrefazo';
 
       search.addEventListener('input', render);
       render();
+
+      // ── จุดสีบนการ์ด: กดแล้วเปิดหน้า detail สีนั้น (กันการกดลิงก์การ์ดเอง) ──
+      document.addEventListener('click', (e) => {
+        const dot = e.target.closest('.card-color-dot');
+        if (!dot) return;
+        e.preventDefault();
+        e.stopPropagation();
+        if (dot.dataset.url) location.href = dot.dataset.url;
+      });
+      document.addEventListener('keydown', (e) => {
+        const dot = e.target.closest && e.target.closest('.card-color-dot');
+        if (dot && (e.key === 'Enter' || e.key === ' ')) {
+          e.preventDefault();
+          e.stopPropagation();
+          if (dot.dataset.url) location.href = dot.dataset.url;
+        }
+      });
     </script>
 
     <script>

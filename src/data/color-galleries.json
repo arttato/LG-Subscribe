@@ -8,6 +8,7 @@
         {
           "key": "navy",
           "th": "น้ำเงิน",
+          "en": "Navy Blue",
           "model": "WD516AN.ACNPLMT",
           "url": "https://www.lg.com/th/water-purifiers/wd516an-acnplmt/",
           "lgName": "เครื่องกรองน้ำ LG PuriCare รุ่น WD516AN.ACNPLMT สีน้ำเงิน",
@@ -33,6 +34,7 @@
         {
           "key": "white",
           "th": "ขาว",
+          "en": "White",
           "model": "WD516AN.AEWPLMT",
           "url": "https://www.lg.com/th/water-purifiers/wd516an-aewplmt/",
           "lgName": "เครื่องกรองน้ำ LG PuriCare รุ่น WD516AN.AEWPLMT สีขาว",
@@ -58,6 +60,7 @@
         {
           "key": "silver",
           "th": "เงิน",
+          "en": "Silver",
           "model": "WD516AN.ASLPLMT",
           "url": "https://www.lg.com/th/water-purifiers/wd516an-aslplmt/",
           "lgName": "เครื่องกรองน้ำ LG PuriCare รุ่น WD516AN.ASLPLMT สีเงิน (Silver)",
@@ -89,6 +92,7 @@
         {
           "key": "beige",
           "th": "เบจ",
+          "en": "Beige",
           "model": "WD518AN.ABGPLMT",
           "url": "https://www.lg.com/th/water-purifiers/wd518an-abgplmt/",
           "lgName": "เครื่องกรองน้ำ สีเบจ LG PuriCare Objet Collection รุ่น WD518AN.ABGPLMT",
@@ -115,6 +119,7 @@
         {
           "key": "white",
           "th": "ขาว",
+          "en": "White",
           "model": "WD518AN.AWHPLMT",
           "url": "https://www.lg.com/th/water-purifiers/wd518an-awhplmt/",
           "lgName": "เครื่องกรองน้ำ LG PuriCare Objet Collection รุ่น WD518AN.AWHPLMT สีขาว",
@@ -137,6 +142,7 @@
         {
           "key": "gray",
           "th": "เทา",
+          "en": "Gray",
           "model": "WD518AN.ACGPLMT",
           "url": "https://www.lg.com/th/water-purifiers/wd518an-acgplmt/",
           "lgName": "เครื่องกรองน้ำ สีเทา LG PuriCare Objet Collection รุ่น WD518AN.ACGPLMT",
@@ -164,6 +170,7 @@
         {
           "key": "naturalgreen",
           "th": "เขียวธรรมชาติ",
+          "en": "Nature Green",
           "model": "WT1410NHEG",
           "url": "https://www.lg.com/th/laundry/wash-tower/wt1410nheg/",
           "lgName": "WashTower ซักผ้า 14 กก. และอบผ้า 10 กก. รุ่น WT1410NHEG ระบบ AI DD™ พร้อม Smart WI-FI control ควบคุมสั่งงานผ่านสมาร์ทโฟน",
@@ -190,6 +197,7 @@
         {
           "key": "bluewhite",
           "th": "น้ำเงินขาว",
+          "en": "Blue White",
           "model": "WT1410NHEN",
           "url": "https://www.lg.com/th/laundry/wash-tower/wt1410nhen/",
           "lgName": "WashTower รุ่น WT1410NHEN ระบบ AI DD™ ความจุเครื่องซักผ้า 14 กก./ เครื่องอบผ้า 10 กก. พร้อม Smart WI-FI control ควบคุมสั่งงานผ่านสมาร์ทโฟน",
@@ -220,6 +228,7 @@
         {
           "key": "naturalgreen",
           "th": "เขียวธรรมชาติ",
+          "en": "Nature Green",
           "model": "WT2520NHEG",
           "url": "https://www.lg.com/th/laundry/wash-tower/wt2520nheg/",
           "lgName": "Wash Tower รุ่น WT2520NHEG ระบบ AI DD™ ความจุเครื่องซักผ้า 25 กก./ เครื่องอบผ้า 20 กก. พร้อม Smart WI-FI control ควบคุมสั่งงานผ่านสมาร์ทโฟน",
@@ -245,6 +254,7 @@
         {
           "key": "navy",
           "th": "น้ำเงินกรม",
+          "en": "Navy Blue",
           "model": "WT2520NHEN",
           "url": "https://www.lg.com/th/laundry/wash-tower/wt2520nhen/",
           "lgName": "Wash Tower รุ่น WT2520NHEN ระบบ AI DD™ ความจุเครื่องซักผ้า 25 กก./ เครื่องอบผ้า 20 กก. พร้อม Smart WI-FI control ควบคุมสั่งงานผ่านสมาร์ทโฟน",
