@@ -44,8 +44,7 @@ const colorMap = new Map(colorGalleries.products.map((s) => [s.code, s.colors]))
 const topCat = (c) => (c || 'อื่นๆ').split(' / ')[0];
 
 // ชื่อหัวข้อหมวดที่แสดง (ต่างจากชื่อหมวดในข้อมูล — ใช้กับหัวข้อใหญ่เท่านั้น ป้ายบนการ์ด/ชิปคงชื่อสั้น)
-const catTitles = { 'Sound bar': 'Sound bar และ Bluetooth Speaker' };
-const titleOf = (name) => catTitles[name] || name;
+const titleOf = (name) => name;
 
 const groups = new Map();
 for (const p of products) {
@@ -83,6 +82,7 @@ const CATEGORY_ORDER = [
   'โทรทัศน์ StanbyME',
   'มอนิเตอร์',
   'Sound bar',
+  'Bluetooth Speaker',
 ];
 const orderOf = (name) => {
   const i = CATEGORY_ORDER.indexOf(name);

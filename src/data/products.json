@@ -2433,6 +2433,78 @@
       "description": "MS3032JAS.BBKPETH"
     },
     {
+      "code": "XBOOM-BOUNCE",
+      "slug": "xboom-bounce",
+      "category": "Bluetooth Speaker",
+      "name": "LG xboom Bounce",
+      "source": "Price list_Aug_V3.pdf",
+      "page": 48,
+      "srcPage": 50,
+      "y": 234,
+      "y2": 226,
+      "pdf": "/pdfs/Price%20list_Aug_V3.pdf",
+      "mode": "monthly",
+      "price": 139,
+      "priceFrom": "5Y",
+      "policies": [
+        {
+          "policy": "5Y",
+          "term": null,
+          "price": 139,
+          "promoCode": null
+        }
+      ],
+      "description": "LG xboom Bounce\n5Y"
+    },
+    {
+      "code": "XBOOM-GRAB",
+      "slug": "xboom-grab",
+      "category": "Bluetooth Speaker",
+      "name": "LG xboom Grab",
+      "source": "Price list_Aug_V3.pdf",
+      "page": 48,
+      "srcPage": 50,
+      "y": 337,
+      "y2": 264,
+      "pdf": "/pdfs/Price%20list_Aug_V3.pdf",
+      "mode": "monthly",
+      "price": 109,
+      "priceFrom": "5Y",
+      "policies": [
+        {
+          "policy": "5Y",
+          "term": null,
+          "price": 109,
+          "promoCode": null
+        }
+      ],
+      "description": "LG xboom Grab\n5Y\nพลังเสียง 20W (Woofer)+ 10W •รอบบิลที่ 1- 12 (54.50)\n654 109 -\n(Tweeter) • NOSERVICE_5Y_PRO_ADV50%(12M)\nNo •รอบบิลที่ 13 - 60 (109)\nขนาดผลิตภัณฑ์ (WxHxD mm)\nService\n211 x 71.6 x 70"
+    },
+    {
+      "code": "XBOOM-STAGE301",
+      "slug": "xboom-stage301",
+      "category": "Bluetooth Speaker",
+      "name": "LG xboom STAGE301",
+      "source": "Price list_Aug_V3.pdf",
+      "page": 48,
+      "srcPage": 50,
+      "y": 118,
+      "y2": 46,
+      "pdf": "/pdfs/Price%20list_Aug_V3.pdf",
+      "mode": "monthly",
+      "price": 299,
+      "priceFrom": "5Y",
+      "policies": [
+        {
+          "policy": "5Y",
+          "term": null,
+          "price": 299,
+          "promoCode": null
+        }
+      ],
+      "description": "5Y\nLG xboom STAGE301 • รอบบิลที่ 1- 12 (149.50)\n1,794 299 -\nขนาดผลิตภัณฑ์ •\n(WxHxD mm) 352 x 415 x 385 No\nService"
+    },
+    {
       "code": "S70TY.ATHALLD",
       "slug": "s70ty-athalld",
       "category": "Sound bar",
@@ -2479,78 +2551,6 @@
         }
       ],
       "description": "LG Sound bar 5Y\nS95TR.DTHALLK\nDolby Atmos 9.1.5 channel\n2,694 449 -\nพลังเสียง 820W / Hi-res 24bit/96kHz Advance payment 50% 12 บิลแรก\nNOSERVICE_5Y_PRO_ADV50%(12M)\nขนาดผลิตภัณฑ์ (WxHxD mm) •รอบบิลที่ 13 - 60 (449)\nNo Service\nซาวด์บาร์: 1250 x 63x 135\nซับวูฟเฟอร์ : 202 x 407 x403"
-    },
-    {
-      "code": "XBOOM-BOUNCE",
-      "slug": "xboom-bounce",
-      "category": "Sound bar",
-      "name": "LG xboom Bounce",
-      "source": "Price list_Aug_V3.pdf",
-      "page": 48,
-      "srcPage": 50,
-      "y": 234,
-      "y2": 226,
-      "pdf": "/pdfs/Price%20list_Aug_V3.pdf",
-      "mode": "monthly",
-      "price": 139,
-      "priceFrom": "5Y",
-      "policies": [
-        {
-          "policy": "5Y",
-          "term": null,
-          "price": 139,
-          "promoCode": null
-        }
-      ],
-      "description": "LG xboom Bounce\n5Y"
-    },
-    {
-      "code": "XBOOM-GRAB",
-      "slug": "xboom-grab",
-      "category": "Sound bar",
-      "name": "LG xboom Grab",
-      "source": "Price list_Aug_V3.pdf",
-      "page": 48,
-      "srcPage": 50,
-      "y": 337,
-      "y2": 264,
-      "pdf": "/pdfs/Price%20list_Aug_V3.pdf",
-      "mode": "monthly",
-      "price": 109,
-      "priceFrom": "5Y",
-      "policies": [
-        {
-          "policy": "5Y",
-          "term": null,
-          "price": 109,
-          "promoCode": null
-        }
-      ],
-      "description": "LG xboom Grab\n5Y\nพลังเสียง 20W (Woofer)+ 10W •รอบบิลที่ 1- 12 (54.50)\n654 109 -\n(Tweeter) • NOSERVICE_5Y_PRO_ADV50%(12M)\nNo •รอบบิลที่ 13 - 60 (109)\nขนาดผลิตภัณฑ์ (WxHxD mm)\nService\n211 x 71.6 x 70"
-    },
-    {
-      "code": "XBOOM-STAGE301",
-      "slug": "xboom-stage301",
-      "category": "Sound bar",
-      "name": "LG xboom STAGE301",
-      "source": "Price list_Aug_V3.pdf",
-      "page": 48,
-      "srcPage": 50,
-      "y": 118,
-      "y2": 46,
-      "pdf": "/pdfs/Price%20list_Aug_V3.pdf",
-      "mode": "monthly",
-      "price": 299,
-      "priceFrom": "5Y",
-      "policies": [
-        {
-          "policy": "5Y",
-          "term": null,
-          "price": 299,
-          "promoCode": null
-        }
-      ],
-      "description": "5Y\nLG xboom STAGE301 • รอบบิลที่ 1- 12 (149.50)\n1,794 299 -\nขนาดผลิตภัณฑ์ •\n(WxHxD mm) 352 x 415 x 385 No\nService"
     },
     {
       "code": "WT1410NHEG.ABGPQTH",
