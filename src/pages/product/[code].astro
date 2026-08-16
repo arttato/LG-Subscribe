@@ -180,6 +180,7 @@ const planCards = (() => {
               <img class="detail-img gallery-img" src={gallery.images[0]} alt={fullName} data-img />
               <button class="gallery-nav next" aria-label="รูปถัดไป" data-next>›</button>
               <span class="gallery-count" data-count>1 / {gallery.images.length}</span>
+              <span class="gallery-zoom" aria-hidden="true">🔍</span>
             </div>
             <div class="gallery-thumbs" data-thumbs>
               {gallery.images.map((u, i) => (
@@ -190,7 +191,7 @@ const planCards = (() => {
             </div>
           </div>
         ) : (
-          hasImg && <img class="detail-img" src={imgUrl} alt={fullName} />
+          hasImg && <img class="detail-img" src={imgUrl} alt={fullName} data-single-img title="กดเพื่อดูรูปใหญ่" />
         )}
         <div class="detail-category">{p.category || 'อื่นๆ'}</div>
         {fullName !== p.code && <h1 class="detail-name" data-color-name>{fullName}</h1>}
@@ -342,7 +343,10 @@ const planCards = (() => {
         <section class="care">
           <h2 class="care-title">บริการดูแลจากผู้เชี่ยวชาญ LG</h2>
           <div class="care-body">
-            <img class="care-img" src={careImg} alt={care.title || 'บริการดูแล'} loading="lazy" />
+            <div class="care-img-wrap">
+              <img class="care-img" src={careImg} alt={care.title || 'บริการดูแล'} loading="lazy" data-care-img />
+              <span class="gallery-zoom" aria-hidden="true">🔍</span>
+            </div>
             <p class="care-caption">
               {care.title || 'บริการดูแล'} — ตามเอกสาร <b>Care Service 2026</b> สำหรับลูกค้า Subscribe
             </p>
@@ -351,6 +355,16 @@ const planCards = (() => {
         </section>
       )}
     </main>
+
+    <!-- ดูรูปขยายเต็มจอ -->
+    <div class="lightbox" data-lightbox hidden>
+      <div class="lightbox-backdrop" data-lightbox-close></div>
+      <button class="lightbox-close" data-lightbox-close aria-label="ปิด">✕</button>
+      <button class="lightbox-nav prev" data-lightbox-prev aria-label="รูปก่อนหน้า">‹</button>
+      <img class="lightbox-img" data-lightbox-img alt="" />
+      <button class="lightbox-nav next" data-lightbox-next aria-label="รูปถัดไป">›</button>
+      <span class="lightbox-count" data-lightbox-count></span>
+    </div>
 
     <!-- แบบฟอร์มสอบถามราคา -->
     <div class="inquiry" data-inquiry hidden data-name={fullName} data-code={p.code} data-price={fmt(p.price)} data-pricelabel={priceLabel(p.mode)}>
@@ -547,6 +561,60 @@ const planCards = (() => {
         document.addEventListener('keydown', (e) => { if (e.key === 'Escape') close(); });
       }
 
+      // Lightbox — ดูรูปขยายเต็มจอ (แกลเลอรี่ + รูปบริการดูแล + รูปเดี่ยว)
+      const lb = document.querySelector('[data-lightbox]');
+      let lbMode = '';
+      let lbList = [];
+      let lbIdx = 0;
+      let lbNav = null;
+      let lbOpen = null;
+      let lbRender = null;
+      if (lb) {
+        const lbImg = lb.querySelector('[data-lightbox-img]');
+        const lbCount = lb.querySelector('[data-lightbox-count]');
+        const lbPrev = lb.querySelector('[data-lightbox-prev]');
+        const lbNext = lb.querySelector('[data-lightbox-next]');
+        const lbCloseBtns = [...lb.querySelectorAll('[data-lightbox-close]')];
+        lbRender = () => {
+          const multi = lbMode === 'gallery' && lbList.length > 1;
+          lbPrev.hidden = !multi;
+          lbNext.hidden = !multi;
+          lbCount.hidden = !multi;
+          if (multi) lbCount.textContent = (lbIdx + 1) + ' / ' + lbList.length;
+          lbImg.src = lbList[lbIdx] || '';
+        };
+        lbOpen = (mode, list, i) => {
+          lbMode = mode;
+          lbList = list;
+          lbIdx = i;
+          lbRender();
+          lb.hidden = false;
+          document.body.style.overflow = 'hidden';
+        };
+        const lbClose = () => {
+          lb.hidden = true;
+          lbImg.removeAttribute('src');
+          document.body.style.overflow = '';
+        };
+        lbCloseBtns.forEach((b) => b.addEventListener('click', lbClose));
+        lbPrev.addEventListener('click', () => { if (lbNav) lbNav(lbIdx - 1); });
+        lbNext.addEventListener('click', () => { if (lbNav) lbNav(lbIdx + 1); });
+        document.addEventListener('keydown', (e) => {
+          if (lb.hidden) return;
+          if (e.key === 'Escape') lbClose();
+          if (lbMode === 'gallery' && lbNav) {
+            if (e.key === 'ArrowLeft') lbNav(lbIdx - 1);
+            if (e.key === 'ArrowRight') lbNav(lbIdx + 1);
+          }
+        });
+        // รูปบริการดูแล → เปิด lightbox (รูปเดียว)
+        const careImgEl = document.querySelector('[data-care-img]');
+        if (careImgEl) careImgEl.addEventListener('click', () => lbOpen('care', [careImgEl.src], 0));
+        // รูปเดี่ยว (รุ่นที่ไม่มีแกลเลอรี่) → เปิด lightbox
+        const singleImg = document.querySelector('[data-single-img]');
+        if (singleImg) singleImg.addEventListener('click', () => lbOpen('care', [singleImg.src], 0));
+      }
+
       const gal = document.querySelector('[data-gallery]');
       if (gal) {
         const galleryData = JSON.parse(document.querySelector('[data-gallery-json]').textContent);
@@ -594,6 +662,10 @@ const planCards = (() => {
           show(0);
         };
 
+        if (lbOpen) {
+          lbNav = (i) => { show(i); lbIdx = cur; lbRender(); };
+          imgEl.addEventListener('click', () => lbOpen('gallery', curImages(), cur));
+        }
         chips.forEach((c, i) => c.addEventListener('click', () => setColor(i)));
         gal.querySelector('[data-prev]').addEventListener('click', () => show(cur - 1));
         gal.querySelector('[data-next]').addEventListener('click', () => show(cur + 1));
