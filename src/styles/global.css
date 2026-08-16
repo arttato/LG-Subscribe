@@ -1253,38 +1253,6 @@ a {
   box-shadow: 0 10px 40px rgba(0, 0, 0, 0.55);
 }
 
-.lightbox-actions {
-  position: absolute;
-  top: 16px;
-  left: 18px;
-  display: flex;
-  gap: 8px;
-  z-index: 2;
-}
-
-.lightbox-action {
-  width: 42px;
-  height: 42px;
-  border-radius: 50%;
-  border: none;
-  background: rgba(255, 255, 255, 0.14);
-  color: #fff;
-  font-size: 0.95rem;
-  line-height: 1;
-  cursor: pointer;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.lightbox-action:hover {
-  background: rgba(255, 255, 255, 0.3);
-}
-
-.lightbox-action.copied {
-  background: #16a34a;
-}
-
 .lightbox-close {
   position: absolute;
   top: 16px;
