@@ -359,6 +359,10 @@ const planCards = (() => {
     <!-- ดูรูปขยายเต็มจอ -->
     <div class="lightbox" data-lightbox hidden>
       <div class="lightbox-backdrop" data-lightbox-close></div>
+      <div class="lightbox-actions">
+        <button class="lightbox-action" data-lightbox-share title="คัดลอกลิงก์สินค้า" aria-label="คัดลอกลิงก์สินค้า">🔗</button>
+        <button class="lightbox-action" data-lightbox-share-img title="คัดลอกลิงก์รูป" aria-label="คัดลอกลิงก์รูป">🖼️</button>
+      </div>
       <button class="lightbox-close" data-lightbox-close aria-label="ปิด">✕</button>
       <button class="lightbox-nav prev" data-lightbox-prev aria-label="รูปก่อนหน้า">‹</button>
       <img class="lightbox-img" data-lightbox-img alt="" />
@@ -599,6 +603,43 @@ const planCards = (() => {
         lbCloseBtns.forEach((b) => b.addEventListener('click', lbClose));
         lbPrev.addEventListener('click', () => { if (lbNav) lbNav(lbIdx - 1); });
         lbNext.addEventListener('click', () => { if (lbNav) lbNav(lbIdx + 1); });
+        // ปุ่มแชร์/คัดลอกลิงก์ (สินค้า + รูป)
+        const fallbackCopy = (text) => {
+          try {
+            const ta = document.createElement('textarea');
+            ta.value = text;
+            ta.style.position = 'fixed';
+            ta.style.opacity = '0';
+            document.body.appendChild(ta);
+            ta.select();
+            const ok = document.execCommand('copy');
+            document.body.removeChild(ta);
+            return ok;
+          } catch { return false; }
+        };
+        const copyWithFeedback = (btn, text) => {
+          const prev = btn.innerHTML;
+          const done = () => {
+            const prevLabel = btn.getAttribute('aria-label');
+            btn.classList.add('copied');
+            btn.innerHTML = '✓';
+            btn.setAttribute('aria-label', 'คัดลอกแล้ว');
+            setTimeout(() => { btn.classList.remove('copied'); btn.innerHTML = prev; btn.setAttribute('aria-label', prevLabel); }, 1600);
+          };
+          const fail = () => {
+            btn.innerHTML = '⚠';
+            setTimeout(() => { btn.innerHTML = prev; }, 1600);
+          };
+          if (navigator.clipboard && navigator.clipboard.writeText) {
+            navigator.clipboard.writeText(text).then(done).catch(() => { fallbackCopy(text) ? done() : fail(); });
+          } else {
+            fallbackCopy(text) ? done() : fail();
+          }
+        };
+        const shareBtn = lb.querySelector('[data-lightbox-share]');
+        if (shareBtn) shareBtn.addEventListener('click', () => copyWithFeedback(shareBtn, location.href));
+        const shareImgBtn = lb.querySelector('[data-lightbox-share-img]');
+        if (shareImgBtn) shareImgBtn.addEventListener('click', () => copyWithFeedback(shareImgBtn, lbImg.src));
         document.addEventListener('keydown', (e) => {
           if (lb.hidden) return;
           if (e.key === 'Escape') lbClose();
