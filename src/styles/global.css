@@ -797,6 +797,12 @@ a {
   white-space: nowrap;
 }
 
+.card-gift-cond {
+  font-size: 0.72rem;
+  color: #7a4a00;
+  line-height: 1.35;
+}
+
 .card-category {
   font-size: 0.72rem;
   color: var(--brand);
@@ -1514,7 +1520,14 @@ a {
   border: 1px solid #f0c98d;
   border-radius: 999px;
   padding: 3px 10px;
-  margin-bottom: 8px;
+  margin-bottom: 6px;
+}
+
+.gift-cond {
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: #7a4a00;
+  margin-bottom: 4px;
 }
 
 .gift-note {
