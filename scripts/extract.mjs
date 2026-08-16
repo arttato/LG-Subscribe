@@ -58,16 +58,16 @@ const CATEGORY_OVERRIDES = {
   'GC-B257SQYL': 'ตู้เย็น Side by Side',
   'GC-L257KQKW': 'ตู้เย็น Side by Side',
   'GN-F392PQAK': 'ตู้เย็น 2 ประตู',
-  'GV-B25FFGDB': 'ตู้เย็น หลายประตู',
-  'GC-L24FFCBB': 'ตู้เย็น หลายประตู', // PDF: "(Multi Door)/ Plumbing"
+  'GV-B25FFGDB': 'ตู้เย็น Multi-Door',
+  'GC-L24FFCBB': 'ตู้เย็น Multi-Door', // PDF: "(Multi Door)/ Plumbing"
 };
 
 // หมวดย่อยตู้เย็นใน Price list PDF → ชื่อหมวดบนเว็บ (แยกการ์ดตามหัวข้อย่อยของ PDF: Plumbing, Side-by-Side, Multi-Door, 2 ประตู)
 const FRIDGE_SUB = {
   'ตู้เย็น / Side-by-Side': 'ตู้เย็น Side by Side',
-  'ตู้เย็น / Multi-Door': 'ตู้เย็น หลายประตู',
+  'ตู้เย็น / Multi-Door': 'ตู้เย็น Multi-Door',
   'ตู้เย็น / 2 ประตู': 'ตู้เย็น 2 ประตู',
-  'ตู้เย็น / Plumbing': 'ตู้เย็น หลายประตู',
+  'ตู้เย็น / Plumbing': 'ตู้เย็น Multi-Door',
 };
 
 // หน้าแบบตารางหลายคอลัมน์: รหัสสี (ทุกสี) อยู่คอลัมน์ซ้าย แต่แถวราคาอยู่คอลัมน์กลาง

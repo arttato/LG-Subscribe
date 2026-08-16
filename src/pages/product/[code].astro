@@ -646,7 +646,7 @@ const planCards = (() => {
           thumbsWrap.querySelectorAll('[data-thumb]').forEach((t, ti) => t.classList.toggle('active', ti === cur));
         };
 
-        const setColor = (i) => {
+        const setColor = (i, updateName = true) => {
           colorIdx = i;
           const v = variants[i];
           chips.forEach((c, ci) => {
@@ -654,8 +654,9 @@ const planCards = (() => {
             c.setAttribute('aria-pressed', ci === i ? 'true' : 'false');
           });
           if (v) {
-            if (nameEl && v.lgName) nameEl.textContent = v.lgName;
-            if (codeEl && v.model) codeEl.textContent = 'รุ่น: ' + v.model;
+            // เฉพาะเมื่อผู้ใช้กดเลือกสีเอง: เปลี่ยนชื่อ/รุ่นให้ตรงสี (ตอนโหลดหน้าแรกคงชื่อรุ่นหลัก)
+            if (updateName && nameEl && v.lgName) nameEl.textContent = v.lgName;
+            if (updateName && codeEl && v.model) codeEl.textContent = 'รุ่น: ' + v.model;
           }
           renderThumbs();
           show(0);
@@ -675,7 +676,8 @@ const planCards = (() => {
         if (variants.length) {
           const want = new URLSearchParams(location.search).get('color');
           const idx = want ? variants.findIndex((v) => v.key === want) : -1;
-          setColor(idx >= 0 ? idx : 0);
+          // โหลดหน้าแรก: เลือกสีแต่ไม่เขียนชื่อทับ (ชื่อคงเป็นชื่อรุ่นหลักจาก server)
+          setColor(idx >= 0 ? idx : 0, false);
         }
         renderThumbs();
         show(0);
