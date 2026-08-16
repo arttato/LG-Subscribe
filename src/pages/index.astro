@@ -89,6 +89,16 @@ const orderOf = (name) => {
 const btuOfName = (s) => parseInt(((s || '').match(/([\d,]+)\s*BTU/i) || [])[1]?.replace(/,/g, '') || '0', 10);
 const btuOf = (p) => btuOfName(p.name);
 const sectionSort = (name) => (a, b) => (name.startsWith('เครื่องปรับอากาศ') ? btuOf(a) - btuOf(b) : (a.price ?? 9e9) - (b.price ?? 9e9));
+
+// ป้ายขนาด/ความจุบนการ์ด: แอร์ BTU, ซักผ้า/อบผ้า/WashTower กก., ตู้เย็น คิว, ฟอกอากาศ ตร.ม., ทีวี นิ้ว
+// ใช้ชื่อ meta (แก้เองแล้ว ตรงกับ PDF เช่น "20/10 กก.") ก่อน — ถ้าไม่มีค่อยดึงจากชื่อที่แสดงบนการ์ด
+const capBadge = (p) => {
+  const re = /([\d.,/]+)\s*(BTU|กก|คิว|ตร\.ม|นิ้ว)/i;
+  const m = (p.name || '').match(re);
+  if (m) return `${m[1]} ${m[2]}`;
+  const d = (cardNameOf(p) || '').match(re);
+  return d ? `${d[1]} ${d[2]}` : null;
+};
 const sections = [...groups.entries()]
   .map(([name, list]) => ({ name, count: list.length, products: [...list].sort(sectionSort(name)) }))
   .sort((a, b) => orderOf(a.name) - orderOf(b.name));
@@ -315,8 +325,8 @@ const VIDEO_ID = 'uNwPkrefazo';
                     {imgSlugs.has(p.slug) && (
                       <img class="card-img" src={`${base}img/products/${p.slug}.jpg`} alt={cardNameOf(p)} loading="lazy" />
                     )}
-                    {btuOfName(cardNameOf(p)) > 0 && (
-                      <span class="card-btu">{btuOfName(cardNameOf(p)).toLocaleString('th-TH')} BTU</span>
+                    {capBadge(p) && (
+                      <span class="card-badge">{capBadge(p)}</span>
                     )}
                     {p.gift && p.gift.image && (
                       <div class="card-gift">
