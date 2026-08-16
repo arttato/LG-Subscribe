@@ -1367,6 +1367,59 @@ a {
   color: var(--text);
 }
 
+/* ================= gift section (ของแถมฟรี) ================= */
+.gift {
+  background: linear-gradient(90deg, #fff5e6, #ffe9d1);
+  border: 1px solid #f3d9b0;
+  border-radius: var(--radius);
+  padding: 24px;
+  margin-bottom: 20px;
+}
+
+.gift-title {
+  font-size: 1.15rem;
+  font-weight: 800;
+  margin: 0 0 14px;
+  color: #5c3700;
+}
+
+.gift-box {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  flex-wrap: wrap;
+}
+
+.gift-img {
+  width: 150px;
+  max-width: 100%;
+  height: auto;
+  background: #fff;
+  border: 1px solid var(--border);
+  border-radius: calc(var(--radius) - 4px);
+  padding: 8px;
+  box-sizing: border-box;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+}
+
+.gift-info {
+  min-width: 200px;
+  flex: 1;
+}
+
+.gift-name {
+  font-size: 1.05rem;
+  font-weight: 800;
+  color: #5c3700;
+  margin-bottom: 6px;
+}
+
+.gift-note {
+  font-size: 0.85rem;
+  color: #7a4a00;
+  line-height: 1.5;
+}
+
 /* ================= specs section ================= */
 .specs {
   background: var(--surface);

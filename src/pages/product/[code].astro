@@ -318,6 +318,19 @@ const planCards = (() => {
         </section>
       )}
 
+      {p.gift && p.gift.image && (
+        <section class="gift">
+          <h2 class="gift-title">ของแถมฟรี</h2>
+          <div class="gift-box">
+            <img class="gift-img" src={p.gift.image} alt={`ของแถม: ${p.gift.name}`} loading="lazy" />
+            <div class="gift-info">
+              <div class="gift-name">{p.gift.name}</div>
+              <div class="gift-note">รับฟรีเมื่อสมัคร Subscribe รุ่นนี้ — ตามเงื่อนไขของแคมเปญ</div>
+            </div>
+          </div>
+        </section>
+      )}
+
       {careImg && (
         <section class="care">
           <h2 class="care-title">บริการดูแลจากผู้เชี่ยวชาญ LG</h2>
