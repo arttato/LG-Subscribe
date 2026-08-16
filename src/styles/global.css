@@ -1367,6 +1367,23 @@ a {
   color: var(--text);
 }
 
+.care-more {
+  align-self: center;
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: var(--brand);
+  text-decoration: none;
+  padding: 6px 16px;
+  border: 1px solid var(--brand);
+  border-radius: 999px;
+  transition: background 0.12s, color 0.12s;
+}
+
+.care-more:hover {
+  background: var(--brand);
+  color: #fff;
+}
+
 /* ================= gift section (ของแถมฟรี) ================= */
 .gift {
   background: linear-gradient(90deg, #fff5e6, #ffe9d1);
@@ -1418,6 +1435,130 @@ a {
   font-size: 0.85rem;
   color: #7a4a00;
   line-height: 1.5;
+}
+
+/* ================= services page (บริการดูแลแยกหมวด) ================= */
+.services-hero {
+  margin: 28px 0 24px;
+}
+
+.services-hero h1 {
+  font-size: 1.7rem;
+  font-weight: 800;
+  margin: 0 0 10px;
+}
+
+.services-hero p {
+  color: var(--muted);
+  max-width: 720px;
+  line-height: 1.6;
+  margin: 0;
+}
+
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.service-card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.12s ease, box-shadow 0.12s ease;
+}
+
+.service-card:hover {
+  transform: translateY(-3px);
+  box-shadow: var(--shadow);
+}
+
+.service-img-link {
+  display: block;
+  background: #fff;
+  border-bottom: 1px solid var(--border);
+}
+
+.service-img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: contain;
+}
+
+.service-body {
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.service-title {
+  font-size: 1.05rem;
+  font-weight: 800;
+  margin: 0;
+}
+
+.service-meta {
+  font-size: 0.78rem;
+  color: var(--muted);
+  margin: 0;
+}
+
+.service-models {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  margin-top: 4px;
+}
+
+.service-model {
+  font-size: 0.85rem;
+  color: var(--brand);
+  text-decoration: none;
+  font-weight: 600;
+  display: flex;
+  align-items: baseline;
+  gap: 8px;
+}
+
+.service-model:hover {
+  text-decoration: underline;
+}
+
+.service-model-code {
+  font-size: 0.7rem;
+  color: var(--muted);
+  font-family: ui-monospace, 'Cascadia Code', Consolas, monospace;
+  font-weight: 400;
+}
+
+.services-note {
+  margin: 26px 0 10px;
+  font-size: 0.78rem;
+  color: var(--muted);
+  line-height: 1.6;
+}
+
+/* ลิงก์นำทางใน header */
+.header-nav {
+  color: var(--brand);
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 0.9rem;
+  margin-left: 14px;
+}
+
+.header-nav:hover {
+  text-decoration: underline;
+}
+
+.header-nav.current {
+  color: var(--text);
+  pointer-events: none;
 }
 
 /* ================= specs section ================= */

@@ -116,7 +116,10 @@ const VIDEO_ID = 'uNwPkrefazo';
             <small>รายการสินค้าและราคา ส.ค. 2569</small>
           </span>
         </a>
-        <div class="header-meta">{products.length} รายการ · {categories.length} หมวดหมู่</div>
+        <div class="header-meta">
+          <a class="header-nav" href={`${base}services/`}>บริการดูแล</a>
+          <span>{products.length} รายการ · {categories.length} หมวดหมู่</span>
+        </div>
       </div>
     </header>
 

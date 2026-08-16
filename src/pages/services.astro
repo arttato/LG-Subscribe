@@ -1,0 +1,104 @@
+---
+import '../styles/global.css';
+import data from '../data/products.json';
+import careData from '../data/care.json';
+import lgSpecs from '../data/lg-specs.json';
+import { lgShortName } from '../lib/utils';
+
+const base = import.meta.env.BASE_URL;
+const products = data.products;
+
+// ชื่อสินค้าสำหรับการ์ด (เหมือนหน้าแคตตาล็อก)
+const lgNameMap = new Map(lgSpecs.products.map((s) => [s.code, s.lgName]).filter(([, n]) => n));
+const nameOf = (p) => (lgNameMap.has(p.code) ? lgShortName(lgNameMap.get(p.code)) : p.name);
+
+const byCode = new Map(products.map((p) => [p.code, p]));
+
+// รวมกลุ่มสินค้าที่ใช้รูปบริการดูแลเดียวกัน (หน้า PDF หรือรูปเฉพาะรุ่น)
+const groups = new Map();
+for (const c of careData.products) {
+  if (!c.page && !c.img) continue;
+  const img = c.img || `care-${String(c.page).padStart(2, '0')}.png`;
+  if (!groups.has(img)) groups.set(img, { img, title: c.title || 'บริการดูแล', codes: [] });
+  groups.get(img).codes.push(c.code);
+}
+
+// เรียงกลุ่มตามหน้า PDF ของรุ่นแรกสุดในกลุ่ม (ลำดับเหมือนเอกสารต้นฉบับ)
+const ordered = [...groups.values()].sort((a, b) => {
+  const pa = Math.min(...a.codes.map((cd) => byCode.get(cd)?.page ?? 999));
+  const pb = Math.min(...b.codes.map((cd) => byCode.get(cd)?.page ?? 999));
+  return pa - pb || a.title.localeCompare(b.title, 'th');
+});
+
+const noCare = [...new Set(products.filter((p) => !careData.products.find((c) => c.code === p.code)?.page && !careData.products.find((c) => c.code === p.code)?.img).map((p) => (p.category || 'อื่นๆ').split(' / ')[0]))];
+---
+
+<!doctype html>
+<html lang="th">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>บริการดูแลจากผู้เชี่ยวชาญ LG — LG Subscribe</title>
+    <meta name="description" content="รายละเอียดบริการดูแลรักษาเครื่องใช้ไฟฟ้า LG Subscribe แยกตามหมวดสินค้า — ช่างผู้เชี่ยวชาญจาก LG เข้าบริการถึงบ้าน หรือบำรุงรักษาด้วยตัวเอง" />
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='20' fill='%23a50034'/><text x='50' y='68' font-size='52' text-anchor='middle' fill='white'>S</text></svg>" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container site-header-inner">
+        <a class="brand" href={`${base}`}>
+          <span class="brand-mark">S</span>
+          <span>
+            LG Subscribe
+            <small>รายการสินค้าและราคา ส.ค. 2569</small>
+          </span>
+        </a>
+        <div class="header-meta">
+          <a class="header-nav" href={`${base}`}>แคตตาล็อก</a>
+          <span class="header-nav current">บริการดูแล</span>
+        </div>
+      </div>
+    </header>
+
+    <main class="container">
+      <section class="services-hero">
+        <h1>บริการดูแลจากผู้เชี่ยวชาญ LG</h1>
+        <p>
+          ทุกรุ่นใน LG Subscribe มาพร้อมบริการดูแลตามรอบ — ช่างผู้เชี่ยวชาญจาก LG เข้าบริการถึงบ้าน (Visit)
+          หรือจัดส่งอะไหล่/ไส้กรองให้ดูแลด้วยตัวเอง (Self) ตลอดอายุสัญญา เลือกดูรายละเอียดบริการของแต่ละหมวดได้ด้านล่าง
+        </p>
+      </section>
+
+      <div class="services-grid">
+        {ordered.map((g) => {
+          const items = g.codes.map((cd) => byCode.get(cd)).filter(Boolean);
+          return (
+            <article class="service-card">
+              <a class="service-img-link" href={`${base}img/care/${g.img}`} target="_blank" rel="noopener" aria-label="ดูรูปบริการขนาดเต็ม">
+                <img class="service-img" src={`${base}img/care/${g.img}`} alt={g.title} loading="lazy" />
+              </a>
+              <div class="service-body">
+                <h3 class="service-title">{g.title}</h3>
+                <p class="service-meta">{items.length} รุ่น</p>
+                <div class="service-models">
+                  {items.map((p) => (
+                    <a class="service-model" href={`${base}product/${p.slug}/`}>
+                      {nameOf(p)}
+                      <span class="service-model-code">{p.code}</span>
+                    </a>
+                  ))}
+                </div>
+              </div>
+            </article>
+          );
+        })}
+      </div>
+
+      <p class="services-note">
+        *บริการดูแลจากเอกสาร <b>Care Service 2026</b> สำหรับลูกค้า Subscribe เท่านั้น — ไม่ครอบคลุมความเสียหายจากภัยธรรมชาติ การใช้งานผิดวิธี หรือการดัดแปลง
+        {noCare.length > 0 && <> · หมวดทีวี/จอ/ไมโครเวฟ/Sound bar ยังไม่มีบริการดูแลในเอกสารนี้</>}
+      </p>
+    </main>
+
+    <footer class="site-footer container">ข้อมูลอัตโนมัติจากไฟล์ PDF — กรุณาตรวจสอบกับเอกสารต้นฉบับก่อนใช้งานจริง</footer>
+  </body>
+</html>
