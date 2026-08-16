@@ -540,7 +540,7 @@
       "code": "IXY11A",
       "slug": "ixy11a",
       "category": "เครื่องปรับอากาศ IXY",
-      "name": "แอร์ LG DUAL INVERTER 9,200 BTU",
+      "name": "แอร์ LG DUAL INVERTER 9,212 BTU",
       "source": "Sale Price8 - Subscription_V3.pdf",
       "page": 6,
       "srcPage": 7,
@@ -554,8 +554,14 @@
         {
           "policy": "5Y_Visit",
           "term": 6,
-          "price": 399,
+          "price": 499,
           "promoCode": "VISIT_5Y_6M00"
+        },
+        {
+          "policy": "5Y_Visit",
+          "term": 12,
+          "price": 399,
+          "promoCode": "VISIT_5Y_12M"
         }
       ],
       "description": "(New)\n9,212Btu รอบบิลที่ 1 (149)\nIXY11A รอบบิลที่ 2 ถึง 60 (499)\n5Y_Visit ทุกๆ 6 เดือน 499 350 VISIT_5Y_6M00\nขนาดตัวเครื่องภายในอาคาร\n(กว้างxสูงxลึก(มม.)\n837x308x189\nขนาดตัวเครื่องภายนอกอาคาร\n717x495x230 5Y_Visit ทุกๆ 12 เดือน 399 250 VISIT_5Y_12M\nLG DUAL INVERTER\nประหยัดไฟเบอร์ 5",
@@ -570,11 +576,11 @@
       "code": "IXY13A",
       "slug": "ixy13a",
       "category": "เครื่องปรับอากาศ IXY",
-      "name": "แอร์ LG DUAL INVERTER 12,000 BTU",
+      "name": "แอร์ LG DUAL INVERTER 12,283 BTU",
       "source": "Sale Price8 - Subscription_V3.pdf",
       "page": 6,
       "srcPage": 7,
-      "y": 328,
+      "y": 295,
       "y2": 6,
       "pdf": "/pdfs/Sale%20Price8%20-%20Subscription_V3.pdf",
       "mode": "monthly",
@@ -583,15 +589,15 @@
       "policies": [
         {
           "policy": "5Y_Visit",
-          "term": 12,
+          "term": 6,
           "price": 549,
-          "promoCode": "VISIT_5Y_12M"
+          "promoCode": "VISIT_5Y_6M"
         },
         {
           "policy": "5Y_Visit",
-          "term": 6,
+          "term": 12,
           "price": 449,
-          "promoCode": "VISIT_5Y_6M"
+          "promoCode": "VISIT_5Y_12M"
         }
       ],
       "description": "9200Btu\n12,283Btu รอบบิลที่ 1 (149)\nIXY13A รอบบิลที่ 2 ถึง 60 (549)\n5Y_Visit ทุกๆ 6 เดือน 549 400 VISIT_5Y_6M\nขนาดตัวเครื่องภายในอาคาร\n(กว้างxสูงxลึก(มม.)\n837x308x189 Promotion Aug รอบบิลที่ 1 (149)\nขนาดตัวเครื่องภายนอกอาคารรอบบิลที่ 2 ถึง 60 (449)\nLG DUAL INVERTER 5Y_Visit ทุกๆ 12 เดือน 449 300 VISIT_5Y_12M\n717x495x230\n(1st Billing) 149\nประหยัดไฟเบอร์ 5\nOBS Subscription\n18,084Btu\nBuy 2 RAC Get Free\nIXY18A รอบบิลที่ 2 ถึง 60 (699)\n5Y_Visit ทุกๆ 6 เดือน 699 550 VISIT_5Y_6M\nขนาดตัวเครื่องภายในอาคาร\n(กว้างxสูงxลึก(มม.) 1 AS35\n998x345x210 รอบบิลที่ 1 (149)\nขนาดตัวเครื่องภายนอกอาคารรอบบิลที่ 2 ถึง 60 (599)\nLG DUAL INVERTER 5Y_Visit ทุกๆ 12 เดือน 599 450 VISIT_5Y_12M\n870x650x330\nประหยัดไฟเบอร์ 5\n21,154 Btu\nIXY24A\n5Y_Visit ทุกๆ 6 เดือน 849 700 VISIT_5Y_6M\nขนาดตัวเครื่องภายในอาคาร\n(กว้างxสูงxลึก(มม.)\n998x345x210\nขนาดตัวเครื่องภายนอกอาคาร\nLG DUAL INVERTER 870x650x330 5Y_Visit ทุกๆ 12 เดือน 749 600 VISIT_5Y_12M\nประหยัดไฟเบอร์ 5",
@@ -606,7 +612,7 @@
       "code": "IXY18A",
       "slug": "ixy18a",
       "category": "เครื่องปรับอากาศ IXY",
-      "name": "แอร์ LG DUAL INVERTER 18,000 BTU",
+      "name": "แอร์ LG DUAL INVERTER 18,084 BTU",
       "source": "Sale Price8 - Subscription_V3.pdf",
       "page": 6,
       "srcPage": 7,
@@ -614,20 +620,20 @@
       "y2": 6,
       "pdf": "/pdfs/Sale%20Price8%20-%20Subscription_V3.pdf",
       "mode": "monthly",
-      "price": 300,
+      "price": 599,
       "priceFrom": "5Y_Visit",
       "policies": [
         {
           "policy": "5Y_Visit",
-          "term": 12,
-          "price": 300,
-          "promoCode": "VISIT_5Y_12M"
+          "term": 6,
+          "price": 699,
+          "promoCode": "VISIT_5Y_6M"
         },
         {
           "policy": "5Y_Visit",
-          "term": 6,
+          "term": 12,
           "price": 599,
-          "promoCode": "VISIT_5Y_6M"
+          "promoCode": "VISIT_5Y_12M"
         }
       ],
       "description": "9200Btu\n12,283Btu รอบบิลที่ 1 (149)\nIXY13A รอบบิลที่ 2 ถึง 60 (549)\n5Y_Visit ทุกๆ 6 เดือน 549 400 VISIT_5Y_6M\nขนาดตัวเครื่องภายในอาคาร\n(กว้างxสูงxลึก(มม.)\n837x308x189 Promotion Aug รอบบิลที่ 1 (149)\nขนาดตัวเครื่องภายนอกอาคารรอบบิลที่ 2 ถึง 60 (449)\nLG DUAL INVERTER 5Y_Visit ทุกๆ 12 เดือน 449 300 VISIT_5Y_12M\n717x495x230\n(1st Billing) 149\nประหยัดไฟเบอร์ 5\nOBS Subscription\n18,084Btu\nBuy 2 RAC Get Free\nIXY18A รอบบิลที่ 2 ถึง 60 (699)\n5Y_Visit ทุกๆ 6 เดือน 699 550 VISIT_5Y_6M\nขนาดตัวเครื่องภายในอาคาร\n(กว้างxสูงxลึก(มม.) 1 AS35\n998x345x210 รอบบิลที่ 1 (149)\nขนาดตัวเครื่องภายนอกอาคารรอบบิลที่ 2 ถึง 60 (599)\nLG DUAL INVERTER 5Y_Visit ทุกๆ 12 เดือน 599 450 VISIT_5Y_12M\n870x650x330\nประหยัดไฟเบอร์ 5\n21,154 Btu\nIXY24A\n5Y_Visit ทุกๆ 6 เดือน 849 700 VISIT_5Y_6M\nขนาดตัวเครื่องภายในอาคาร\n(กว้างxสูงxลึก(มม.)\n998x345x210\nขนาดตัวเครื่องภายนอกอาคาร\nLG DUAL INVERTER 870x650x330 5Y_Visit ทุกๆ 12 เดือน 749 600 VISIT_5Y_12M\nประหยัดไฟเบอร์ 5",
@@ -642,7 +648,7 @@
       "code": "IXY24A",
       "slug": "ixy24a",
       "category": "เครื่องปรับอากาศ IXY",
-      "name": "แอร์ LG DUAL INVERTER 24,000 BTU",
+      "name": "แอร์ LG DUAL INVERTER 21,154 BTU",
       "source": "Sale Price8 - Subscription_V3.pdf",
       "page": 6,
       "srcPage": 7,
@@ -650,25 +656,19 @@
       "y2": 6,
       "pdf": "/pdfs/Sale%20Price8%20-%20Subscription_V3.pdf",
       "mode": "monthly",
-      "price": 600,
+      "price": 749,
       "priceFrom": "5Y_Visit",
       "policies": [
         {
           "policy": "5Y_Visit",
-          "term": 12,
-          "price": 849,
-          "promoCode": "VISIT_5Y_12M"
-        },
-        {
-          "policy": "5Y_Visit",
           "term": 6,
-          "price": 749,
+          "price": 849,
           "promoCode": "VISIT_5Y_6M"
         },
         {
           "policy": "5Y_Visit",
           "term": 12,
-          "price": 600,
+          "price": 749,
           "promoCode": "VISIT_5Y_12M"
         }
       ],

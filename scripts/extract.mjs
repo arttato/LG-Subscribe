@@ -82,6 +82,43 @@ const POLICY_BLOCK_OVERRIDES = {
       { yMin: 45, yMax: 135, family: 'WD110MN' }, // 7Y_Visit 449 / 7Y_Self 399
     ],
   },
+  // ตาราง OBS แอร์ IXY (Sale PDF): รหัสกับแถวราคาอยู่คนละคอลัมน์ แถว 12M ใกล้รุ่นถัดไป
+  // (ค่า y จาก PDF ต้นฉบับ — ถ้า LG เปลี่ยนโครงสร้างหน้าต้องอัปเดต)
+  'Sale Price8 - Subscription_V3.pdf': {
+    7: [
+      { yMin: 320, yMax: 395, family: 'IXY11A' }, // 5Y_Visit 6M 499 / 12M 399
+      { yMin: 215, yMax: 280, family: 'IXY13A' }, // 5Y_Visit 6M 549 / 12M 449
+      { yMin: 115, yMax: 180, family: 'IXY18A' }, // 5Y_Visit 6M 699 / 12M 599
+      { yMin: 10, yMax: 85, family: 'IXY24A' }, // 5Y_Visit 6M 849 / 12M 749
+    ],
+  },
+};
+
+// แผนราคาแบบกำหนดเอง (ตรวจค่ากับ PDF ต้นฉบับแล้ว) — ใช้เมื่อตารางมีโครงสร้างที่ parser อ่านผิด
+// ตาราง OBS แอร์ IXY (Sale PDF หน้า 7): ราคาในแถวเป็น "ราคาโปร" และบรรทัดงวดของแถวถัดไป
+// หลุดเข้ามาใน window → parser ได้ราคา/เทอมสลับกัน (เริ่มต้น 18A=300, 24A=600 ผิดจาก PDF)
+// (ค่า y ของแถว override ใช้ของแถวเดิมที่จับคู่ได้ เพื่อกัน crop รูปเพี้ยน)
+const PRICE_OVERRIDES = {
+  'Sale Price8 - Subscription_V3.pdf': {
+    7: {
+      'IXY11A': [
+        { policy: '5Y_Visit', term: 6, price: 499, promoCode: 'VISIT_5Y_6M00' },
+        { policy: '5Y_Visit', term: 12, price: 399, promoCode: 'VISIT_5Y_12M' },
+      ],
+      'IXY13A': [
+        { policy: '5Y_Visit', term: 6, price: 549, promoCode: 'VISIT_5Y_6M' },
+        { policy: '5Y_Visit', term: 12, price: 449, promoCode: 'VISIT_5Y_12M' },
+      ],
+      'IXY18A': [
+        { policy: '5Y_Visit', term: 6, price: 699, promoCode: 'VISIT_5Y_6M' },
+        { policy: '5Y_Visit', term: 12, price: 599, promoCode: 'VISIT_5Y_12M' },
+      ],
+      'IXY24A': [
+        { policy: '5Y_Visit', term: 6, price: 849, promoCode: 'VISIT_5Y_6M' },
+        { policy: '5Y_Visit', term: 12, price: 749, promoCode: 'VISIT_5Y_12M' },
+      ],
+    },
+  },
 };
 
 // ตระกูลของรหัส (ก่อนจุด) เช่น "WD516AN.ACNPLMT" → "WD516AN"
@@ -413,6 +450,16 @@ function parsePage(pageNo, rawLines, inheritedCategory, pdfFile) {
       if (!byCode.has(best.code)) byCode.set(best.code, []);
       byCode.get(best.code).push(r);
     }
+  }
+
+  // 3.5) แผนราคาแบบกำหนดเอง (PRICE_OVERRIDES) — กันบั๊กตารางที่ parser อ่านผิด (เช่น OBS แอร์ IXY)
+  const priceOv = (PRICE_OVERRIDES[pdfFile] || {})[pageNo] || {};
+  for (const [code, plans] of Object.entries(priceOv)) {
+    const oldRows = byCode.get(code) || [];
+    byCode.set(
+      code,
+      plans.map((pl, i) => ({ ...pl, y: oldRows[i] ? oldRows[i].y : anchors.find((a) => a.code === code)?.y ?? 0 }))
+    );
   }
 
   // 4) รุ่น "X หรือ Y" ใช้ราคาร่วมกัน → แชร์แถวราคาให้ครบทุกตัว
