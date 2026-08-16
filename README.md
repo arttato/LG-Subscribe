@@ -15,6 +15,8 @@ src/data/products.json    ← ข้อมูลสินค้าที่ส�
 src/data/lg-specs.json    ← สเปคสินค้าจากเว็บ LG Thailand (รัน npm run specs — commit ไฟล์นี้)
 src/data/lg-gallery.json  ← URL รูป gallery จากเว็บ LG (รัน npm run gallery — commit ไฟล์นี้)
 src/data/pdf-specs.json   ← สเปคย่อจาก PDF ราคา (รัน npm run pdfspecs — commit ไฟล์นี้)
+src/data/spec-cards.json  ← รูปสเปคการ์ดสินค้า (รัน npm run specimport — commit ไฟล์นี้)
+public/img/specs/         ← รูปสเปคการ์ดสินค้า (รัน npm run specimport — commit ไฟล์เหล่านี้)
 src/data/meta.json        ← ใส่ชื่อไทย/หมวดหมู่ที่ต้องการให้สินค้า (กรอกเองได้)
 src/pages/                ← หน้าเว็บ (Astro static)
 public/pdfs/              ← PDF ฉบับย่อที่เว็บใช้แสดง (สคริปต์สร้างให้อัตโนมัติ — ไม่ต้อง commit)
@@ -43,6 +45,7 @@ npm run gallery      # URL รูปหลายมุมจาก lg.com/th
 npm run lgimages     # ดาวน์โหลดรูปจริงลง public/img/products/ (ทับรูป PDF)
 npm run cardhero     # ตรวจ/แก้รูปการ์ดให้เป็นรูปสินค้าจริงตามหน้า LG (og:image)
 npm run colors       # gallery แยกสี → ปุ่มเลือกสีบนหน้า detail (WD516/WD518 3 สี, WashTower 14/10 และ 25/20 → 1 การ์ด 2 สี)
+npm run specimport   # นำเข้าสเปคการ์ดจากโฟลเดอร์ สเปคการ์ด/ → public/img/specs/ + src/data/spec-cards.json (จับคู่รุ่นอัตโนมัติ, ต้องมี scripts/spec-card-ocr.json)
 
 # 7. build และ deploy
 npm run build        # ผลลัพธ์อยู่ในโฟลเดอร์ dist/

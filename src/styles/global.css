@@ -1203,6 +1203,25 @@ a {
   border-color: var(--brand);
 }
 
+/* ป้าย "สเปค" บน thumb ของรูปสเปคการ์ด (เพิ่มจากโฟลเดอร์ สเปคการ์ด/) */
+.gallery-thumb.spec {
+  position: relative;
+}
+
+.gallery-thumb.spec .thumb-tag {
+  position: absolute;
+  left: 2px;
+  bottom: 2px;
+  font-size: 9px;
+  font-weight: 800;
+  line-height: 1;
+  color: #fff;
+  background: var(--brand);
+  border-radius: 4px;
+  padding: 2px 4px;
+  pointer-events: none;
+}
+
 /* ================= inquiry modal ================= */
 .btn-interest {
   margin-top: 18px;

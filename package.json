@@ -26,7 +26,8 @@
     "prebuild": "node scripts/extract.mjs",
     "dev": "astro dev",
     "build": "astro build",
-    "preview": "astro preview"
+    "preview": "astro preview",
+    "specimport": "node scripts/import-spec-cards.mjs"
   },
   "dependencies": {
     "astro": "^5.7.0",

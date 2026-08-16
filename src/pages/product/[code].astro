@@ -7,6 +7,7 @@ import lgGallery from '../../data/lg-gallery.json';
 import colorGalleries from '../../data/color-galleries.json';
 import pdfSpecs from '../../data/pdf-specs.json';
 import careData from '../../data/care.json';
+import specCards from '../../data/spec-cards.json';
 import { slugify } from '../../lib/utils';
 
 export function getStaticPaths() {
@@ -41,8 +42,11 @@ const gallery = lgGallery.products.find((s) => s.code === p.code);
 // สีของรุ่น (เช่น เครื่องกรองน้ำ WD516/WD518 มี 3 สี) — ปุ่มสลับ gallery แยกสี
 const colorInfo = colorGalleries.products.find((s) => s.code === p.code);
 const colorVariants = colorInfo ? colorInfo.colors : [];
+// สเปคการ์ด (รูปถ่ายจากเอกสาร LG) — ต่อท้าย gallery เสมอ ไม่เปลี่ยนตามสี
+const specInfo = specCards.products.find((s) => s.code === p.code.split('.')[0]);
+const specImages = specInfo ? specInfo.images.map((f) => `${base}img/specs/${f}`) : [];
 // เตรียม JSON ไว้ให้ <script> อ่าน (เอา `</` ออกก่อนกัน HTML parser สะดุด)
-const galleryJson = JSON.stringify({ baseImages: gallery ? gallery.images : [], variants: colorVariants }).replaceAll('</', '\\u003c\\u002f');
+const galleryJson = JSON.stringify({ baseImages: gallery ? gallery.images : [], variants: colorVariants, specs: specImages }).replaceAll('</', '\\u003c\\u002f');
 const care = careData.products.find((s) => s.code === p.code);
 // รูปบริการ: ใช้รูปเฉพาะรุ่น (care.img) ถ้ามี ไม่งั้นใช้หน้าที่ render จาก PDF (care-NN.png)
 const careImg = care && (care.img ? `${base}img/care/${care.img}` : care.page ? `${base}img/care/care-${String(care.page).padStart(2, '0')}.png` : null);
@@ -553,12 +557,14 @@ const planCards = (() => {
         const codeEl = document.querySelector('[data-color-code]');
         const chips = [...gal.querySelectorAll('[data-color]')];
         let colorIdx = 0;
-        const curImages = () => (variants.length ? variants[colorIdx].images : baseImages);
+        const specs = galleryData.specs || [];
+        const curImages = () => [...(variants.length ? variants[colorIdx].images : baseImages), ...specs];
         let cur = 0;
+        const isSpec = (u) => u.includes('/img/specs/');
 
         const renderThumbs = () => {
           thumbsWrap.innerHTML = curImages()
-            .map((u, i) => `<button class="gallery-thumb" data-thumb="${i}" aria-label="มุม ${i + 1}"><img src="${u}" alt="มุม ${i + 1}" loading="lazy"></button>`)
+            .map((u, i) => `<button class="gallery-thumb${isSpec(u) ? ' spec' : ''}" data-thumb="${i}" aria-label="มุม ${i + 1}"><img src="${u}" alt="มุม ${i + 1}" loading="lazy">${isSpec(u) ? '<span class="thumb-tag">สเปค</span>' : ''}</button>`)
             .join('');
         };
 
