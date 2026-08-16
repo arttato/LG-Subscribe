@@ -707,6 +707,41 @@ a {
   margin-bottom: 16px;
 }
 
+/* ของแถมบนการ์ด (เช่น DD23GMWE1S แถม AeroMini, DFC533FV แถมไมโครเวฟ) */
+.card-gift {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  width: calc(100% + 36px);
+  margin: -9px -18px 0;
+  padding: 8px 12px;
+  background: linear-gradient(90deg, #fff5e6, #ffe9d1);
+  border-top: 1px solid #f3d9b0;
+  border-bottom: 1px solid #f3d9b0;
+}
+
+.card-gift-img {
+  width: 42px;
+  height: 42px;
+  object-fit: contain;
+  background: #fff;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 3px;
+  flex: none;
+}
+
+.card-gift-label {
+  font-size: 0.8rem;
+  color: #7a4a00;
+  line-height: 1.3;
+}
+
+.card-gift-label b {
+  font-weight: 800;
+  color: #5c3700;
+}
+
 .card-category {
   font-size: 0.72rem;
   color: var(--brand);

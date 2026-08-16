@@ -686,6 +686,7 @@ async function main() {
     if (m) {
       if (m.name) p.name = m.name;
       if (m.category) p.category = m.category;
+      if (m.gift) p.gift = m.gift; // ของแถม (แสดงรูปบนการ์ด) — ใส่ใน meta.json
       if ((mExact && mExact.hide) || (mFam && mFam.hide)) p.hidden = true; // ต้องการซ่อนรุ่นนี้ออกจากแคตตาล็อก (meta.json)
     }
     // รวมการ์ดรุ่นย่อยเข้ากับรุ่นหลัก (เช่น WD516AN.ACNPLMT → WD516) — ค่าจาก meta `merge`

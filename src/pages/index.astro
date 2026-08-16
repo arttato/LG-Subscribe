@@ -305,6 +305,12 @@ const VIDEO_ID = 'uNwPkrefazo';
                     {imgSlugs.has(p.slug) && (
                       <img class="card-img" src={`${base}img/products/${p.slug}.jpg`} alt={cardNameOf(p)} loading="lazy" />
                     )}
+                    {p.gift && p.gift.image && (
+                      <div class="card-gift">
+                        <img class="card-gift-img" src={p.gift.image} alt={`ของแถม: ${p.gift.name}`} loading="lazy" />
+                        <span class="card-gift-label">🎁 แถมฟรี <b>{p.gift.name}</b></span>
+                      </div>
+                    )}
                     <div class="card-category">{p.category || sec.name}</div>
                     {cardNameOf(p) !== p.code && <div class="card-name">{cardNameOf(p)}</div>}
                     <div class="card-code">{p.code}</div>

@@ -1296,7 +1296,11 @@
           "promoCode": "SELF_5Y_12M_PRO_149(1M)_DC50%(2M)_FREE_GIFT"
         }
       ],
-      "description": "5Y_Visit ทุกๆ 12 เดือน 599 1,050 VISIT_5Y_12M_PRO_149(1M)_DC50%(2M)_FREE_GIFT)\nDD23GMWE1S.ATH\n23 ลิตร • แถมฟรี AeroMini • รอบบิลที่ 4-60 (599)"
+      "description": "5Y_Visit ทุกๆ 12 เดือน 599 1,050 VISIT_5Y_12M_PRO_149(1M)_DC50%(2M)_FREE_GIFT)\nDD23GMWE1S.ATH\n23 ลิตร • แถมฟรี AeroMini • รอบบิลที่ 4-60 (599)",
+      "gift": {
+        "name": "AeroMini (เครื่องฟอกอากาศ)",
+        "image": "https://www.lg.com/content/dam/channel/wcms/th/image-update/air-puricare/2026/as30ggw10-abae/gallery-re/lg-air-purifier-aerohit2-2026-as30ggw10-gallery-basic-medium.jpg"
+      }
     },
     {
       "code": "MD19GQGA1.ATH",
@@ -1380,7 +1384,11 @@
           "promoCode": null
         }
       ],
-      "description": "DFC533FV.APYPETH รับฟรี! ไมโครเวฟ 20 ลิตรรุ่น MS2032GAS.BBKPETH"
+      "description": "DFC533FV.APYPETH รับฟรี! ไมโครเวฟ 20 ลิตรรุ่น MS2032GAS.BBKPETH",
+      "gift": {
+        "name": "ไมโครเวฟ 20 ลิตร (MS2032GAS)",
+        "image": "https://www.lg.com/content/dam/channel/wcms/th/image-update/microwave/2024/ms2032gas/gallery/01-basic/450x450/01-ms2032jas-front-450x450.jpg"
+      }
     },
     {
       "code": "RV10VHP2B.BBLPETH",
