@@ -70,7 +70,10 @@ const CATEGORY_ORDER = [
   'ไมโครเวฟ',
   'เครื่องลดความชื้น',
   'เครื่องฟอกอากาศ',
-  'เครื่องปรับอากาศ',
+  'เครื่องปรับอากาศ IXY',
+  'เครื่องปรับอากาศ ART',
+  'เครื่องปรับอากาศ SAQ',
+  'เครื่องปรับอากาศ SIQ',
   'เครื่องปรับอากาศ SAC 4Way Cassette',
   'เครื่องปรับอากาศ SAC 1 Way Cassette',
   'เครื่องปรับอากาศ SAC Round Cassette',
@@ -82,8 +85,11 @@ const orderOf = (name) => {
   const i = CATEGORY_ORDER.indexOf(name);
   return i === -1 ? CATEGORY_ORDER.length : i;
 };
+// เรียงสินค้าในหมวด: แอร์เรียงตาม BTU (น้อย→มาก จากชื่อรุ่น) หมวดอื่นเรียงตามราคา
+const btuOf = (p) => parseInt(((p.name || '').match(/([\d,]+)\s*BTU/i) || [])[1]?.replace(/,/g, '') || '0', 10);
+const sectionSort = (name) => (a, b) => (name.startsWith('เครื่องปรับอากาศ') ? btuOf(a) - btuOf(b) : (a.price ?? 9e9) - (b.price ?? 9e9));
 const sections = [...groups.entries()]
-  .map(([name, list]) => ({ name, count: list.length, products: [...list].sort((a, b) => (a.price ?? 9e9) - (b.price ?? 9e9)) }))
+  .map(([name, list]) => ({ name, count: list.length, products: [...list].sort(sectionSort(name)) }))
   .sort((a, b) => orderOf(a.name) - orderOf(b.name));
 
 const categories = sections.map((s) => s.name);

@@ -467,7 +467,7 @@
     {
       "code": "ART13A.SR1",
       "slug": "art13a-sr1",
-      "category": "เครื่องปรับอากาศ",
+      "category": "เครื่องปรับอากาศ ART",
       "name": "แอร์ LG ARTCOOL AI 12,000 BTU",
       "source": "Price list_Aug_V3.pdf",
       "page": 31,
@@ -497,7 +497,7 @@
     {
       "code": "ART18A.SR1",
       "slug": "art18a-sr1",
-      "category": "เครื่องปรับอากาศ",
+      "category": "เครื่องปรับอากาศ ART",
       "name": "แอร์ LG ARTCOOL AI 18,000 BTU",
       "source": "Price list_Aug_V3.pdf",
       "page": 31,
@@ -527,7 +527,7 @@
     {
       "code": "IXY11A",
       "slug": "ixy11a",
-      "category": "เครื่องปรับอากาศ",
+      "category": "เครื่องปรับอากาศ IXY",
       "name": "แอร์ LG DUAL INVERTER 9,200 BTU",
       "source": "Sale Price8 - Subscription_V3.pdf",
       "page": 6,
@@ -551,7 +551,7 @@
     {
       "code": "IXY13A",
       "slug": "ixy13a",
-      "category": "เครื่องปรับอากาศ",
+      "category": "เครื่องปรับอากาศ IXY",
       "name": "แอร์ LG DUAL INVERTER 12,000 BTU",
       "source": "Sale Price8 - Subscription_V3.pdf",
       "page": 6,
@@ -581,7 +581,7 @@
     {
       "code": "IXY18A",
       "slug": "ixy18a",
-      "category": "เครื่องปรับอากาศ",
+      "category": "เครื่องปรับอากาศ IXY",
       "name": "แอร์ LG DUAL INVERTER 18,000 BTU",
       "source": "Sale Price8 - Subscription_V3.pdf",
       "page": 6,
@@ -611,7 +611,7 @@
     {
       "code": "IXY24A",
       "slug": "ixy24a",
-      "category": "เครื่องปรับอากาศ",
+      "category": "เครื่องปรับอากาศ IXY",
       "name": "แอร์ LG DUAL INVERTER 24,000 BTU",
       "source": "Sale Price8 - Subscription_V3.pdf",
       "page": 6,
@@ -643,246 +643,6 @@
         }
       ],
       "description": "9200Btu\n12,283Btu รอบบิลที่ 1 (149)\nIXY13A รอบบิลที่ 2 ถึง 60 (549)\n5Y_Visit ทุกๆ 6 เดือน 549 400 VISIT_5Y_6M\nขนาดตัวเครื่องภายในอาคาร\n(กว้างxสูงxลึก(มม.)\n837x308x189 Promotion Aug รอบบิลที่ 1 (149)\nขนาดตัวเครื่องภายนอกอาคารรอบบิลที่ 2 ถึง 60 (449)\nLG DUAL INVERTER 5Y_Visit ทุกๆ 12 เดือน 449 300 VISIT_5Y_12M\n717x495x230\n(1st Billing) 149\nประหยัดไฟเบอร์ 5\nOBS Subscription\n18,084Btu\nBuy 2 RAC Get Free\nIXY18A รอบบิลที่ 2 ถึง 60 (699)\n5Y_Visit ทุกๆ 6 เดือน 699 550 VISIT_5Y_6M\nขนาดตัวเครื่องภายในอาคาร\n(กว้างxสูงxลึก(มม.) 1 AS35\n998x345x210 รอบบิลที่ 1 (149)\nขนาดตัวเครื่องภายนอกอาคารรอบบิลที่ 2 ถึง 60 (599)\nLG DUAL INVERTER 5Y_Visit ทุกๆ 12 เดือน 599 450 VISIT_5Y_12M\n870x650x330\nประหยัดไฟเบอร์ 5\n21,154 Btu\nIXY24A\n5Y_Visit ทุกๆ 6 เดือน 849 700 VISIT_5Y_6M\nขนาดตัวเครื่องภายในอาคาร\n(กว้างxสูงxลึก(มม.)\n998x345x210\nขนาดตัวเครื่องภายนอกอาคาร\nLG DUAL INVERTER 870x650x330 5Y_Visit ทุกๆ 12 เดือน 749 600 VISIT_5Y_12M\nประหยัดไฟเบอร์ 5"
-    },
-    {
-      "code": "SAQ11A",
-      "slug": "saq11a",
-      "category": "เครื่องปรับอากาศ",
-      "name": "แอร์ LG DUALCOOL AI 9,200 BTU รุ่น SAQ11A",
-      "source": "Price list_Aug_V3.pdf",
-      "page": 32,
-      "srcPage": 34,
-      "y": 362,
-      "y2": 247,
-      "pdf": "/pdfs/Price%20list_Aug_V3.pdf",
-      "mode": "monthly",
-      "price": 799,
-      "priceFrom": "5Y_Visit",
-      "policies": [
-        {
-          "policy": "5Y_Visit",
-          "term": 6,
-          "price": 899,
-          "promoCode": "VISIT_5Y_6M_PRO_149(1M)_DC50%(7M"
-        },
-        {
-          "policy": "5Y_Visit",
-          "term": 12,
-          "price": 799,
-          "promoCode": null
-        }
-      ],
-      "description": "9,200 Btu SAQ11A 5Y_Visit ทุกๆ 6 เดือน 899 3,900 VISIT_5Y_6M_PRO_149(1M)_DC50%(7M)\nขนาดตัวเครื่องภายในอาคารลด 50% 7 เดือน (รอบบิลที่ 2-8)\n(กว้างxสูงxลึก(มม.) • รอบบิลที่ 9-60 (899)\n895x307x235\nขนาดตัวเครื่องภายนอกอาคาร\n770x545x288\nประหยัดไฟเบอร์ 5 ★★★★★ 5Y_Visit ทุกๆ 12 เดือน 799 3,490\nLG DUALCOOL AI"
-    },
-    {
-      "code": "SAQ13A",
-      "slug": "saq13a",
-      "category": "เครื่องปรับอากาศ",
-      "name": "แอร์ LG DUALCOOL AI 12,000 BTU รุ่น SAQ13A",
-      "source": "Price list_Aug_V3.pdf",
-      "page": 32,
-      "srcPage": 34,
-      "y": 218,
-      "y2": 94,
-      "pdf": "/pdfs/Price%20list_Aug_V3.pdf",
-      "mode": "monthly",
-      "price": 849,
-      "priceFrom": "5Y_Visit",
-      "policies": [
-        {
-          "policy": "5Y_Visit",
-          "term": 6,
-          "price": 949,
-          "promoCode": "VISIT_5Y_6M_PRO_149(1M)_DC50%(7M"
-        },
-        {
-          "policy": "5Y_Visit",
-          "term": 12,
-          "price": 849,
-          "promoCode": "VISIT_5Y_12M_PRO_149(1M)_DC50%(7M"
-        }
-      ],
-      "description": "12,000Btu 5Y_Visit ทุกๆ 6 เดือน 949 4,125 VISIT_5Y_6M_PRO_149(1M)_DC50%(7M)\nSAQ13A • รอบบิลที่ 2-8 (474)\nขนาดตัวเครื่องภายในอาคาร • ลด 50% 7 เดือน (รอบบิลที่ 2-8)\n(กว้างxสูงxลึก(มม.) •\n895x307x235\nขนาดตัวเครื่องภายนอกอาคาร\n770x545x288 • รอบบิลที่ 1 (149)\nLG DUALCOOL AI ประหยัดไฟเบอร์ 5 ★★★★★ • ราคา 149.- (1 รอบบิลแรก)\n5Y_Visit ทุกๆ 12 เดือน 849 3,675 VISIT_5Y_12M_PRO_149(1M)_DC50%(7M)"
-    },
-    {
-      "code": "SAQ18B",
-      "slug": "saq18b",
-      "category": "เครื่องปรับอากาศ",
-      "name": "แอร์ LG DUALCOOL AI 18,000 BTU รุ่น SAQ18B",
-      "source": "Price list_Aug_V3.pdf",
-      "page": 33,
-      "srcPage": 35,
-      "y": 378,
-      "y2": 253,
-      "pdf": "/pdfs/Price%20list_Aug_V3.pdf",
-      "mode": "monthly",
-      "price": 1049,
-      "priceFrom": "5Y_Visit",
-      "policies": [
-        {
-          "policy": "5Y_Visit",
-          "term": 6,
-          "price": 1149,
-          "promoCode": "VISIT_5Y_6M_PRO_149(1M)_DC50%(7M"
-        },
-        {
-          "policy": "5Y_Visit",
-          "term": 12,
-          "price": 1049,
-          "promoCode": "VISIT_5Y_12M_PRO_149(1M)_DC50%(7M"
-        }
-      ],
-      "description": "18,000Btu\n5Y_Visit ทุกๆ 6 เดือน 1.149 5,025 VISIT_5Y_6M_PRO_149(1M)_DC50%(7M)\nSAQ18B.\nขนาดตัวเครื่องภายในอาคาร • รอบบิลที่ 9-60 (1,149)\n(กว้างxสูงxลึก(มม.)\n1050x307x235\nขนาดตัวเครื่องภายนอกอาคาร\n9200Btu • รอบบิลที่ 1 (149)\n870x650x330\nLG DUALCOOL AI\nประหยัดไฟเบอร์ 5 ★★★★ 5Y_Visit ทุกๆ 12 เดือน 1,049 รอบบิลที่ 2-8 (524) 4,575 VISIT_5Y_12M_PRO_149(1M)_DC50%(7M)"
-    },
-    {
-      "code": "SAQ24B",
-      "slug": "saq24b",
-      "category": "เครื่องปรับอากาศ",
-      "name": "แอร์ LG DUALCOOL AI 24,000 BTU รุ่น SAQ24B",
-      "source": "Price list_Aug_V3.pdf",
-      "page": 33,
-      "srcPage": 35,
-      "y": 214,
-      "y2": 88,
-      "pdf": "/pdfs/Price%20list_Aug_V3.pdf",
-      "mode": "monthly",
-      "price": 1199,
-      "priceFrom": "5Y_Visit",
-      "policies": [
-        {
-          "policy": "5Y_Visit",
-          "term": 6,
-          "price": 1299,
-          "promoCode": "VISIT_5Y_6M_PRO_149(1M)_DC50%(7M"
-        },
-        {
-          "policy": "5Y_Visit",
-          "term": 12,
-          "price": 1199,
-          "promoCode": "VISIT_5Y_12M_PRO_149(1M)_DC50%(7M"
-        }
-      ],
-      "description": "24,000Btu • ราคา 149.- (1 รอบบิลแรก)\n5Y_Visit ทุกๆ 6 เดือน 1,299 5,700 VISIT_5Y_6M_PRO_149(1M)_DC50%(7M)\nSAQ24B. • รอบบิลที่ 2-8 (649)\nลด 50% 7 เดือน (รอบบิลที่ 2-8)\nขนาดตัวเครื่องภายในอาคาร •\n(กว้างxสูงxลึก(มม.)\n1050x307x235\nขนาดตัวเครื่องภายนอกอาคาร\n870x650x330 • รอบบิลที่ 1 (149)\nLG DUALCOOL AI\nราคา 149.- (1 รอบบิลแรก)\nประหยัดไฟเบอร์ 5 ★★★ •\n5Y_Visit ทุกๆ 12 เดือน 1,199 5,250 VISIT_5Y_12M_PRO_149(1M)_DC50%(7M)"
-    },
-    {
-      "code": "SIQ11B",
-      "slug": "siq11b",
-      "category": "เครื่องปรับอากาศ",
-      "name": "แอร์ LG DUALCOOL AI 9,200 BTU รุ่น SIQ11B",
-      "source": "Price list_Aug_V3.pdf",
-      "page": 34,
-      "srcPage": 36,
-      "y": 378,
-      "y2": 253,
-      "pdf": "/pdfs/Price%20list_Aug_V3.pdf",
-      "mode": "monthly",
-      "price": 599,
-      "priceFrom": "5Y_Visit",
-      "policies": [
-        {
-          "policy": "5Y_Visit",
-          "term": 6,
-          "price": 699,
-          "promoCode": "VISIT_5Y_6M_PRO_149(1M)_DC50%(7M"
-        },
-        {
-          "policy": "5Y_Visit",
-          "term": 12,
-          "price": 599,
-          "promoCode": null
-        }
-      ],
-      "description": "9,200Btu 5Y_Visit ทุกๆ 6 เดือน 699 3,000 VISIT_5Y_6M_PRO_149(1M)_DC50%(7M)\nSIQ11B ลด 50% 7 เดือน (รอบบิลที่ 2-8)\nขนาดตัวเครื่องภายในอาคาร • รอบบิลที่ 9-60 (699)\n(กว้างxสูงxลึก(มม.)\n799x307x235\nขนาดตัวเครื่องภายนอกอาคาร\n717x495x230 ราคา 149.- (1 รอบบิลแรก)\n5Y_Visit ทุกๆ 12 เดือน 599\nประหยัดไฟเบอร์ 5 ★ • รอบบิลที่ 2-8 (299)\nLG DUALCOOL AI 2,550 VISIT_5Y_12M_PRO_149(1M)_DC50%(7M)"
-    },
-    {
-      "code": "SIQ13B",
-      "slug": "siq13b",
-      "category": "เครื่องปรับอากาศ",
-      "name": "แอร์ LG DUALCOOL AI 12,000 BTU รุ่น SIQ13B",
-      "source": "Price list_Aug_V3.pdf",
-      "page": 34,
-      "srcPage": 36,
-      "y": 214,
-      "y2": 89,
-      "pdf": "/pdfs/Price%20list_Aug_V3.pdf",
-      "mode": "monthly",
-      "price": 699,
-      "priceFrom": "5Y_Visit",
-      "policies": [
-        {
-          "policy": "5Y_Visit",
-          "term": 6,
-          "price": 799,
-          "promoCode": "VISIT_5Y_6M_PRO_149(1M)_DC50%(7M"
-        },
-        {
-          "policy": "5Y_Visit",
-          "term": 12,
-          "price": 699,
-          "promoCode": "VISIT_5Y_12M_PRO_149(1M)_DC50%(7M"
-        }
-      ],
-      "description": "5Y_Visit ทุกๆ 6 เดือน 799 3,450 VISIT_5Y_6M_PRO_149(1M)_DC50%(7M)\n920012,200 BtuBtu • รอบบิลที่ 2-8 (399)\nSIQ13B\nขนาดตัวเครื่องภายในอาคารรอบบิลที่ 9-60 (799)\n(กว้างxสูงxลึก(มม.)\n799x307x235\nขนาดตัวเครื่องภายนอกอาคาร\n717x495x230\nประหยัดไฟเบอร์ 5 ★ 5Y_Visit ทุกๆ 12 เดือน 699 รอบบิลที่ 2-8 (349) 3000 VISIT_5Y_12M_PRO_149(1M)_DC50%(7M)\nLG DUALCOOL AI"
-    },
-    {
-      "code": "SIQ18B",
-      "slug": "siq18b",
-      "category": "เครื่องปรับอากาศ",
-      "name": "แอร์ LG DUALCOOL AI 18,000 BTU รุ่น SIQ18B",
-      "source": "Price list_Aug_V3.pdf",
-      "page": 35,
-      "srcPage": 37,
-      "y": 371,
-      "y2": 242,
-      "pdf": "/pdfs/Price%20list_Aug_V3.pdf",
-      "mode": "monthly",
-      "price": 899,
-      "priceFrom": "5Y_Visit",
-      "policies": [
-        {
-          "policy": "5Y_Visit",
-          "term": 6,
-          "price": 999,
-          "promoCode": "VISIT_5Y_6M_PRO_149(1M)_DC50%(7M"
-        },
-        {
-          "policy": "5Y_Visit",
-          "term": 12,
-          "price": 899,
-          "promoCode": "VISIT_5Y_12M_PRO_149(1M)_DC50%(7M"
-        }
-      ],
-      "description": "5Y_Visit ทุกๆ 6 เดือน 999 4,350 VISIT_5Y_6M_PRO_149(1M)_DC50%(7M)\n18,000Btu • รอบบิลที่ 2-8 (499)\nSIQ18B\nขนาดตัวเครื่องภายในอาคาร • รอบบิลที่ 9-60 (999)\n(กว้างxสูงxลึก(มม.)\n895x307x235\nขนาดตัวเครื่องภายนอกอาคาร\n770x545x288\nประหยัดไฟเบอร์ 5 ★\nLG DUALCOOL AI 5Y_Visit ทุกๆ 12 เดือน 899 3,900 VISIT_5Y_12M_PRO_149(1M)_DC50%(7M)"
-    },
-    {
-      "code": "SIQ24B",
-      "slug": "siq24b",
-      "category": "เครื่องปรับอากาศ",
-      "name": "แอร์ LG DUALCOOL AI 24,000 BTU รุ่น SIQ24B",
-      "source": "Price list_Aug_V3.pdf",
-      "page": 35,
-      "srcPage": 37,
-      "y": 190,
-      "y2": 51,
-      "pdf": "/pdfs/Price%20list_Aug_V3.pdf",
-      "mode": "monthly",
-      "price": 1099,
-      "priceFrom": "5Y_Visit",
-      "policies": [
-        {
-          "policy": "5Y_Visit",
-          "term": 6,
-          "price": 1199,
-          "promoCode": "VISIT_5Y_6M_PRO_149(1M)_DC50%(7M"
-        },
-        {
-          "policy": "5Y_Visit",
-          "term": 12,
-          "price": 1099,
-          "promoCode": "VISIT_5Y_12M_PRO_149(1M)_DC50%(7M"
-        }
-      ],
-      "description": "24,000Btu\n5Y_Visit ทุกๆ 6 เดือน 1,199 5.250 VISIT_5Y_6M_PRO_149(1M)_DC50%(7M)\nSIQ24B\nขนาดตัวเครื่องภายในอาคาร\n(กว้างxสูงxลึก(มม.)\n895x307x235\nขนาดตัวเครื่องภายนอกอาคาร\nLG DUALCOOL AI 870x650x330 • รอบบิลที่ 1 (149)\nราคา 149.- (1 รอบบิลแรก)\nประหยัดไฟเบอร์ 5 ★ •\n5Y_Visit ทุกๆ 12 เดือน 1,099 4,800 VISIT_5Y_12M_PRO_149(1M)_DC50%(7M)"
     },
     {
       "code": "ZT1Q12GULA1.EWGHATH",
@@ -1099,6 +859,246 @@
         }
       ],
       "description": "47,100 Btu ZTRQ48GYLA1.EWGHATH\nแอร์แบบวงกลมม (คาสเซ็ทรอบทิศทาง)\nPhase (220V)"
+    },
+    {
+      "code": "SAQ11A",
+      "slug": "saq11a",
+      "category": "เครื่องปรับอากาศ SAQ",
+      "name": "แอร์ LG DUALCOOL AI 9,200 BTU รุ่น SAQ11A",
+      "source": "Price list_Aug_V3.pdf",
+      "page": 32,
+      "srcPage": 34,
+      "y": 362,
+      "y2": 247,
+      "pdf": "/pdfs/Price%20list_Aug_V3.pdf",
+      "mode": "monthly",
+      "price": 799,
+      "priceFrom": "5Y_Visit",
+      "policies": [
+        {
+          "policy": "5Y_Visit",
+          "term": 6,
+          "price": 899,
+          "promoCode": "VISIT_5Y_6M_PRO_149(1M)_DC50%(7M"
+        },
+        {
+          "policy": "5Y_Visit",
+          "term": 12,
+          "price": 799,
+          "promoCode": null
+        }
+      ],
+      "description": "9,200 Btu SAQ11A 5Y_Visit ทุกๆ 6 เดือน 899 3,900 VISIT_5Y_6M_PRO_149(1M)_DC50%(7M)\nขนาดตัวเครื่องภายในอาคารลด 50% 7 เดือน (รอบบิลที่ 2-8)\n(กว้างxสูงxลึก(มม.) • รอบบิลที่ 9-60 (899)\n895x307x235\nขนาดตัวเครื่องภายนอกอาคาร\n770x545x288\nประหยัดไฟเบอร์ 5 ★★★★★ 5Y_Visit ทุกๆ 12 เดือน 799 3,490\nLG DUALCOOL AI"
+    },
+    {
+      "code": "SAQ13A",
+      "slug": "saq13a",
+      "category": "เครื่องปรับอากาศ SAQ",
+      "name": "แอร์ LG DUALCOOL AI 12,000 BTU รุ่น SAQ13A",
+      "source": "Price list_Aug_V3.pdf",
+      "page": 32,
+      "srcPage": 34,
+      "y": 218,
+      "y2": 94,
+      "pdf": "/pdfs/Price%20list_Aug_V3.pdf",
+      "mode": "monthly",
+      "price": 849,
+      "priceFrom": "5Y_Visit",
+      "policies": [
+        {
+          "policy": "5Y_Visit",
+          "term": 6,
+          "price": 949,
+          "promoCode": "VISIT_5Y_6M_PRO_149(1M)_DC50%(7M"
+        },
+        {
+          "policy": "5Y_Visit",
+          "term": 12,
+          "price": 849,
+          "promoCode": "VISIT_5Y_12M_PRO_149(1M)_DC50%(7M"
+        }
+      ],
+      "description": "12,000Btu 5Y_Visit ทุกๆ 6 เดือน 949 4,125 VISIT_5Y_6M_PRO_149(1M)_DC50%(7M)\nSAQ13A • รอบบิลที่ 2-8 (474)\nขนาดตัวเครื่องภายในอาคาร • ลด 50% 7 เดือน (รอบบิลที่ 2-8)\n(กว้างxสูงxลึก(มม.) •\n895x307x235\nขนาดตัวเครื่องภายนอกอาคาร\n770x545x288 • รอบบิลที่ 1 (149)\nLG DUALCOOL AI ประหยัดไฟเบอร์ 5 ★★★★★ • ราคา 149.- (1 รอบบิลแรก)\n5Y_Visit ทุกๆ 12 เดือน 849 3,675 VISIT_5Y_12M_PRO_149(1M)_DC50%(7M)"
+    },
+    {
+      "code": "SAQ18B",
+      "slug": "saq18b",
+      "category": "เครื่องปรับอากาศ SAQ",
+      "name": "แอร์ LG DUALCOOL AI 18,000 BTU รุ่น SAQ18B",
+      "source": "Price list_Aug_V3.pdf",
+      "page": 33,
+      "srcPage": 35,
+      "y": 378,
+      "y2": 253,
+      "pdf": "/pdfs/Price%20list_Aug_V3.pdf",
+      "mode": "monthly",
+      "price": 1049,
+      "priceFrom": "5Y_Visit",
+      "policies": [
+        {
+          "policy": "5Y_Visit",
+          "term": 6,
+          "price": 1149,
+          "promoCode": "VISIT_5Y_6M_PRO_149(1M)_DC50%(7M"
+        },
+        {
+          "policy": "5Y_Visit",
+          "term": 12,
+          "price": 1049,
+          "promoCode": "VISIT_5Y_12M_PRO_149(1M)_DC50%(7M"
+        }
+      ],
+      "description": "18,000Btu\n5Y_Visit ทุกๆ 6 เดือน 1.149 5,025 VISIT_5Y_6M_PRO_149(1M)_DC50%(7M)\nSAQ18B.\nขนาดตัวเครื่องภายในอาคาร • รอบบิลที่ 9-60 (1,149)\n(กว้างxสูงxลึก(มม.)\n1050x307x235\nขนาดตัวเครื่องภายนอกอาคาร\n9200Btu • รอบบิลที่ 1 (149)\n870x650x330\nLG DUALCOOL AI\nประหยัดไฟเบอร์ 5 ★★★★ 5Y_Visit ทุกๆ 12 เดือน 1,049 รอบบิลที่ 2-8 (524) 4,575 VISIT_5Y_12M_PRO_149(1M)_DC50%(7M)"
+    },
+    {
+      "code": "SAQ24B",
+      "slug": "saq24b",
+      "category": "เครื่องปรับอากาศ SAQ",
+      "name": "แอร์ LG DUALCOOL AI 24,000 BTU รุ่น SAQ24B",
+      "source": "Price list_Aug_V3.pdf",
+      "page": 33,
+      "srcPage": 35,
+      "y": 214,
+      "y2": 88,
+      "pdf": "/pdfs/Price%20list_Aug_V3.pdf",
+      "mode": "monthly",
+      "price": 1199,
+      "priceFrom": "5Y_Visit",
+      "policies": [
+        {
+          "policy": "5Y_Visit",
+          "term": 6,
+          "price": 1299,
+          "promoCode": "VISIT_5Y_6M_PRO_149(1M)_DC50%(7M"
+        },
+        {
+          "policy": "5Y_Visit",
+          "term": 12,
+          "price": 1199,
+          "promoCode": "VISIT_5Y_12M_PRO_149(1M)_DC50%(7M"
+        }
+      ],
+      "description": "24,000Btu • ราคา 149.- (1 รอบบิลแรก)\n5Y_Visit ทุกๆ 6 เดือน 1,299 5,700 VISIT_5Y_6M_PRO_149(1M)_DC50%(7M)\nSAQ24B. • รอบบิลที่ 2-8 (649)\nลด 50% 7 เดือน (รอบบิลที่ 2-8)\nขนาดตัวเครื่องภายในอาคาร •\n(กว้างxสูงxลึก(มม.)\n1050x307x235\nขนาดตัวเครื่องภายนอกอาคาร\n870x650x330 • รอบบิลที่ 1 (149)\nLG DUALCOOL AI\nราคา 149.- (1 รอบบิลแรก)\nประหยัดไฟเบอร์ 5 ★★★ •\n5Y_Visit ทุกๆ 12 เดือน 1,199 5,250 VISIT_5Y_12M_PRO_149(1M)_DC50%(7M)"
+    },
+    {
+      "code": "SIQ11B",
+      "slug": "siq11b",
+      "category": "เครื่องปรับอากาศ SIQ",
+      "name": "แอร์ LG DUALCOOL AI 9,200 BTU รุ่น SIQ11B",
+      "source": "Price list_Aug_V3.pdf",
+      "page": 34,
+      "srcPage": 36,
+      "y": 378,
+      "y2": 253,
+      "pdf": "/pdfs/Price%20list_Aug_V3.pdf",
+      "mode": "monthly",
+      "price": 599,
+      "priceFrom": "5Y_Visit",
+      "policies": [
+        {
+          "policy": "5Y_Visit",
+          "term": 6,
+          "price": 699,
+          "promoCode": "VISIT_5Y_6M_PRO_149(1M)_DC50%(7M"
+        },
+        {
+          "policy": "5Y_Visit",
+          "term": 12,
+          "price": 599,
+          "promoCode": null
+        }
+      ],
+      "description": "9,200Btu 5Y_Visit ทุกๆ 6 เดือน 699 3,000 VISIT_5Y_6M_PRO_149(1M)_DC50%(7M)\nSIQ11B ลด 50% 7 เดือน (รอบบิลที่ 2-8)\nขนาดตัวเครื่องภายในอาคาร • รอบบิลที่ 9-60 (699)\n(กว้างxสูงxลึก(มม.)\n799x307x235\nขนาดตัวเครื่องภายนอกอาคาร\n717x495x230 ราคา 149.- (1 รอบบิลแรก)\n5Y_Visit ทุกๆ 12 เดือน 599\nประหยัดไฟเบอร์ 5 ★ • รอบบิลที่ 2-8 (299)\nLG DUALCOOL AI 2,550 VISIT_5Y_12M_PRO_149(1M)_DC50%(7M)"
+    },
+    {
+      "code": "SIQ13B",
+      "slug": "siq13b",
+      "category": "เครื่องปรับอากาศ SIQ",
+      "name": "แอร์ LG DUALCOOL AI 12,000 BTU รุ่น SIQ13B",
+      "source": "Price list_Aug_V3.pdf",
+      "page": 34,
+      "srcPage": 36,
+      "y": 214,
+      "y2": 89,
+      "pdf": "/pdfs/Price%20list_Aug_V3.pdf",
+      "mode": "monthly",
+      "price": 699,
+      "priceFrom": "5Y_Visit",
+      "policies": [
+        {
+          "policy": "5Y_Visit",
+          "term": 6,
+          "price": 799,
+          "promoCode": "VISIT_5Y_6M_PRO_149(1M)_DC50%(7M"
+        },
+        {
+          "policy": "5Y_Visit",
+          "term": 12,
+          "price": 699,
+          "promoCode": "VISIT_5Y_12M_PRO_149(1M)_DC50%(7M"
+        }
+      ],
+      "description": "5Y_Visit ทุกๆ 6 เดือน 799 3,450 VISIT_5Y_6M_PRO_149(1M)_DC50%(7M)\n920012,200 BtuBtu • รอบบิลที่ 2-8 (399)\nSIQ13B\nขนาดตัวเครื่องภายในอาคารรอบบิลที่ 9-60 (799)\n(กว้างxสูงxลึก(มม.)\n799x307x235\nขนาดตัวเครื่องภายนอกอาคาร\n717x495x230\nประหยัดไฟเบอร์ 5 ★ 5Y_Visit ทุกๆ 12 เดือน 699 รอบบิลที่ 2-8 (349) 3000 VISIT_5Y_12M_PRO_149(1M)_DC50%(7M)\nLG DUALCOOL AI"
+    },
+    {
+      "code": "SIQ18B",
+      "slug": "siq18b",
+      "category": "เครื่องปรับอากาศ SIQ",
+      "name": "แอร์ LG DUALCOOL AI 18,000 BTU รุ่น SIQ18B",
+      "source": "Price list_Aug_V3.pdf",
+      "page": 35,
+      "srcPage": 37,
+      "y": 371,
+      "y2": 242,
+      "pdf": "/pdfs/Price%20list_Aug_V3.pdf",
+      "mode": "monthly",
+      "price": 899,
+      "priceFrom": "5Y_Visit",
+      "policies": [
+        {
+          "policy": "5Y_Visit",
+          "term": 6,
+          "price": 999,
+          "promoCode": "VISIT_5Y_6M_PRO_149(1M)_DC50%(7M"
+        },
+        {
+          "policy": "5Y_Visit",
+          "term": 12,
+          "price": 899,
+          "promoCode": "VISIT_5Y_12M_PRO_149(1M)_DC50%(7M"
+        }
+      ],
+      "description": "5Y_Visit ทุกๆ 6 เดือน 999 4,350 VISIT_5Y_6M_PRO_149(1M)_DC50%(7M)\n18,000Btu • รอบบิลที่ 2-8 (499)\nSIQ18B\nขนาดตัวเครื่องภายในอาคาร • รอบบิลที่ 9-60 (999)\n(กว้างxสูงxลึก(มม.)\n895x307x235\nขนาดตัวเครื่องภายนอกอาคาร\n770x545x288\nประหยัดไฟเบอร์ 5 ★\nLG DUALCOOL AI 5Y_Visit ทุกๆ 12 เดือน 899 3,900 VISIT_5Y_12M_PRO_149(1M)_DC50%(7M)"
+    },
+    {
+      "code": "SIQ24B",
+      "slug": "siq24b",
+      "category": "เครื่องปรับอากาศ SIQ",
+      "name": "แอร์ LG DUALCOOL AI 24,000 BTU รุ่น SIQ24B",
+      "source": "Price list_Aug_V3.pdf",
+      "page": 35,
+      "srcPage": 37,
+      "y": 190,
+      "y2": 51,
+      "pdf": "/pdfs/Price%20list_Aug_V3.pdf",
+      "mode": "monthly",
+      "price": 1099,
+      "priceFrom": "5Y_Visit",
+      "policies": [
+        {
+          "policy": "5Y_Visit",
+          "term": 6,
+          "price": 1199,
+          "promoCode": "VISIT_5Y_6M_PRO_149(1M)_DC50%(7M"
+        },
+        {
+          "policy": "5Y_Visit",
+          "term": 12,
+          "price": 1099,
+          "promoCode": "VISIT_5Y_12M_PRO_149(1M)_DC50%(7M"
+        }
+      ],
+      "description": "24,000Btu\n5Y_Visit ทุกๆ 6 เดือน 1,199 5.250 VISIT_5Y_6M_PRO_149(1M)_DC50%(7M)\nSIQ24B\nขนาดตัวเครื่องภายในอาคาร\n(กว้างxสูงxลึก(มม.)\n895x307x235\nขนาดตัวเครื่องภายนอกอาคาร\nLG DUALCOOL AI 870x650x330 • รอบบิลที่ 1 (149)\nราคา 149.- (1 รอบบิลแรก)\nประหยัดไฟเบอร์ 5 ★ •\n5Y_Visit ทุกๆ 12 เดือน 1,099 4,800 VISIT_5Y_12M_PRO_149(1M)_DC50%(7M)"
     },
     {
       "code": "AS10GDBY0.ABAE",

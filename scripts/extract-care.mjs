@@ -62,8 +62,8 @@ function carePageOf(p) {
     return null;
   }
   if (c === 'เครื่องดูดฝุ่น') return 15;
-  if (c === 'เครื่องปรับอากาศ') return 24; // แอร์บ้าน
   if (c.startsWith('เครื่องปรับอากาศ SAC')) return 25; // แอร์เชิงพาณิชย์
+  if (c.startsWith('เครื่องปรับอากาศ')) return 24; // แอร์บ้าน (รวมหมวดย่อย IXY/SIQ/SAQ/ART)
   if (c === 'เครื่องฟอกอากาศ') {
     if (p.code.startsWith('AS25GCBY0')) return 19; // AeroCat Tower
     if (p.code.startsWith('AS35GGW10')) return 18;
