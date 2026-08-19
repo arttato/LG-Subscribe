@@ -167,7 +167,7 @@ const VIDEO_ID = 'uNwPkrefazo';
         t.src = document.body.dataset.placeholder || 'img/placeholder.svg';
       }, true);
     </script>
-    <header class="site-header">
+    <header class="site-header" id="site-header">
       <div class="container site-header-inner">
         <a class="brand" href={`${base}`}>
           <span class="brand-mark">S</span>
@@ -182,6 +182,16 @@ const VIDEO_ID = 'uNwPkrefazo';
         </div>
       </div>
     </header>
+
+    <script is:inline>
+      // Glassmorphism header: add .scrolled class on scroll
+      const header = document.getElementById('site-header');
+      if (header) {
+        const onScroll = () => header.classList.toggle('scrolled', window.scrollY > 20);
+        window.addEventListener('scroll', onScroll, { passive: true });
+        onScroll();
+      }
+    </script>
 
     <!-- Banner โปรโมชัน (จากหน้า LG Subscribe) -->
     {banners.slides.length > 0 && (
@@ -365,12 +375,14 @@ const VIDEO_ID = 'uNwPkrefazo';
                     data-search={(cardNameOf(p) + ' ' + p.name + ' ' + p.code + ' ' + (p.category || '')).toLowerCase()}
                     data-cat={sec.name}
                   >
-                    {imgSlugs.has(p.slug) && (
-                      <img class="card-img" src={`${base}img/products/${p.slug}.jpg`} alt={cardNameOf(p)} loading="lazy" />
-                    )}
-                    {capBadge(p) && (
-                      <span class={`card-badge badge-${capBadge(p).unitKey}`}>{capBadge(p).text}</span>
-                    )}
+                    <div class="card-img-wrap">
+                      {imgSlugs.has(p.slug) && (
+                        <img class="card-img" src={`${base}img/products/${p.slug}.jpg`} alt={cardNameOf(p)} loading="lazy" />
+                      )}
+                      {capBadge(p) && (
+                        <span class={`card-badge badge-${capBadge(p).unitKey}`}>{capBadge(p).text}</span>
+                      )}
+                    </div>
                     {p.gift && p.gift.image && (
                       <div class="card-gift">
                         <img class="card-gift-img" src={p.gift.image} alt={`ของแถม: ${p.gift.name}`} loading="lazy" />
@@ -381,25 +393,27 @@ const VIDEO_ID = 'uNwPkrefazo';
                         </div>
                       </div>
                     )}
-                    <div class="card-category">{p.category || sec.name}</div>
-                    {cardNameOf(p) !== p.code && <div class="card-name">{cardNameOf(p)}</div>}
-                    <div class="card-code">{p.code}</div>
-                    {colorMap.has(p.code) && colorMap.get(p.code).length > 1 && (
-                      <div class="card-colors">
-                        {colorMap.get(p.code).map((v) => (
-                          <span
-                            class="card-color-dot"
-                            style={`background:${v.swatch || '#999'}`}
-                            title={`${v.en || v.th}${v.th ? ' (' + v.th + ')' : ''}`}
-                            data-url={`${base}product/${p.slug}/?color=${encodeURIComponent(v.key)}`}
-                            role="button"
-                            tabindex="0"
-                            aria-label={`ดูสี ${v.en || v.th}`}
-                          ></span>
-                        ))}
-                        <span class="card-colors-note">{colorMap.get(p.code).length} สี</span>
-                      </div>
-                    )}
+                    <div class="card-body">
+                      <div class="card-category">{p.category || sec.name}</div>
+                      {cardNameOf(p) !== p.code && <div class="card-name">{cardNameOf(p)}</div>}
+                      <div class="card-code">{p.code}</div>
+                      {colorMap.has(p.code) && colorMap.get(p.code).length > 1 && (
+                        <div class="card-colors">
+                          {colorMap.get(p.code).map((v) => (
+                            <span
+                              class="card-color-dot"
+                              style={`background:${v.swatch || '#999'}`}
+                              title={`${v.en || v.th}${v.th ? ' (' + v.th + ')' : ''}`}
+                              data-url={`${base}product/${p.slug}/?color=${encodeURIComponent(v.key)}`}
+                              role="button"
+                              tabindex="0"
+                              aria-label={`ดูสี ${v.en || v.th}`}
+                            ></span>
+                          ))}
+                          <span class="card-colors-note">{colorMap.get(p.code).length} สี</span>
+                        </div>
+                      )}
+                    </div>
                     <div class="card-price">
                       <span>
                         <span class="price-from">{priceLabel(p.mode)}</span>

@@ -25,7 +25,8 @@ const priceLabel = (m) => (m === 'outright' ? 'ซื้อขาด' : 'เร�
 const base = import.meta.env.BASE_URL;
 // ชื่อเต็มจากเว็บ LG (ถ้ามี) — ใช้เป็นหัวข้อ/alt เหมือนเว็บจริง; XBOOM ใช้ชื่อเล่นจาก PDF
 const fullName = (lgSpecs.products.find((s) => s.code === p.code)?.lgName) || p.name;
-const titleText = fullName;
+const titleText = `${fullName} — LG Subscribe`;
+const metaDesc = `${fullName} เริ่มต้น ${fmt(p.price)} บาท/เดือน — ${p.category || 'สินค้า'} LG Subscribe พร้อมบริการดูแลตลอดอายุสัญญา`;
 // สเปค: มาจากเว็บ LG (keySpecs + groups) หรือ PDF ราคา (specs รายการตรง)
 let spec = null;
 let specFromPdf = false;
@@ -53,12 +54,13 @@ const care = careData.products.find((s) => s.code === p.code);
 // รูปบริการ: ใช้รูปเฉพาะรุ่น (care.img) ถ้ามี ไม่งั้นใช้หน้าที่ render จาก PDF (care-NN.png)
 const careImg = care && (care.img ? `${base}img/care/${care.img}` : care.page ? `${base}img/care/care-${String(care.page).padStart(2, '0')}.png` : null);
 
-// ── แผนการชำระเงิน (ทดลอง WD516) — คำนวณใน frontmatter (JS ล้วน ไม่ผ่าน expression slot ของ Astro) ──
+// ── แผนการชำระเงิน — คำนวณใน frontmatter (JS ล้วน ไม่ผ่าน expression slot ของ Astro) ──
 const planCards = (() => {
-  if (p.code !== 'WD516' || !p.policies.length) return null;
+  if (!p.policies.length) return null;
   const outright = p.policies.filter((x) => /^2Y/.test(x.policy));
   const monthly = p.policies.filter((x) => !/^2Y/.test(x.policy));
-  const minMonthly = Math.min(...monthly.map((x) => x.price));
+  if (!outright.length && !monthly.length) return null;
+  const minMonthly = monthly.length ? Math.min(...monthly.map((x) => x.price)) : null;
   const planName = (policy) => {
     const [yr, type] = policy.split('_');
     const svc =
@@ -139,6 +141,12 @@ const planCards = (() => {
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>{titleText}</title>
+    <meta name="description" content={metaDesc} />
+    <meta property="og:title" content={titleText} />
+    <meta property="og:description" content={metaDesc} />
+    <meta property="og:image" content={`${import.meta.env.BASE_URL}img/products/${p.slug}.jpg`} />
+    <meta property="og:type" content="product" />
+    <meta property="og:site_name" content="LG Subscribe" />
     <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📦</text></svg>" />
   </head>
   <body data-placeholder={`${base}img/placeholder.svg`}>
@@ -151,7 +159,7 @@ const planCards = (() => {
         t.src = document.body.dataset.placeholder || 'img/placeholder.svg';
       }, true);
     </script>
-    <header class="site-header">
+    <header class="site-header" id="site-header">
       <div class="container site-header-inner">
         <a class="brand" href={`${base}`}>
           <span class="brand-mark">📦</span>
@@ -162,6 +170,15 @@ const planCards = (() => {
         </a>
       </div>
     </header>
+
+    <script is:inline>
+      const header = document.getElementById('site-header');
+      if (header) {
+        const onScroll = () => header.classList.toggle('scrolled', window.scrollY > 20);
+        window.addEventListener('scroll', onScroll, { passive: true });
+        onScroll();
+      }
+    </script>
 
     <main class="container detail">
       <nav class="breadcrumb">
@@ -382,12 +399,14 @@ const planCards = (() => {
             ))}
           </div>
           <div class="specs-source">
-            ข้อมูลจาก <a href={spec.url} target="_blank" rel="noopener">เว็บ LG Thailand</a>
+            {spec.url ? (
+              <>ข้อมูลจาก <a href={spec.url} target="_blank" rel="noopener">เว็บ LG Thailand</a></>
+            ) : 'ข้อมูลจากเอกสาร PDF ราคา'}
           </div>
         </section>
       )}
 
-      {spec && spec.groups && spec.groups.length > 0 && (
+      {!specFromPdf && spec.groups && spec.groups.length > 0 && (
         <section class="lg-specs-full">
           <h2 class="section-title">สเปคทั้งหมด</h2>
           {spec.groups.map((g, gi) => (
@@ -427,7 +446,9 @@ const planCards = (() => {
             </details>
           ))}
           <div class="specs-source">
-            ข้อมูลจาก <a href={spec.url} target="_blank" rel="noopener">เว็บ LG Thailand</a>
+            {spec.url ? (
+              <>ข้อมูลจาก <a href={spec.url} target="_blank" rel="noopener">เว็บ LG Thailand</a></>
+            ) : 'ข้อมูลจากเอกสาร PDF ราคา'}
           </div>
         </section>
       )}

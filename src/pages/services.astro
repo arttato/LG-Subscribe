@@ -52,7 +52,7 @@ const noCare = [...new Set(products.filter((p) => !careData.products.find((c) =>
         t.src = document.body.dataset.placeholder || 'img/placeholder.svg';
       }, true);
     </script>
-    <header class="site-header">
+    <header class="site-header" id="site-header">
       <div class="container site-header-inner">
         <a class="brand" href={`${base}`}>
           <span class="brand-mark">S</span>
@@ -67,6 +67,15 @@ const noCare = [...new Set(products.filter((p) => !careData.products.find((c) =>
         </div>
       </div>
     </header>
+
+    <script is:inline>
+      const header = document.getElementById('site-header');
+      if (header) {
+        const onScroll = () => header.classList.toggle('scrolled', window.scrollY > 20);
+        window.addEventListener('scroll', onScroll, { passive: true });
+        onScroll();
+      }
+    </script>
 
     <main class="container">
       <section class="services-hero">

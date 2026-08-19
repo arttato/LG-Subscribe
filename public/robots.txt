@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://arttato.github.io/LG-Subscribe/sitemap.xml
