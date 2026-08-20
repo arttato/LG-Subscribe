@@ -30,16 +30,16 @@
       "priceFrom": "7Y_Self",
       "policies": [
         {
-          "policy": "5Y_Visit",
+          "policy": "7Y_Self",
           "term": 6,
-          "price": 549,
-          "promoCode": "VISIT_7Y_6M_PRO_149(1M)_DC50%(11M)"
+          "price": 399,
+          "promoCode": "SELF_7Y_6M_PRO_149(1M)_DC50%(11M)"
         },
         {
-          "policy": "5Y_Self",
+          "policy": "7Y_Visit",
           "term": 6,
-          "price": 499,
-          "promoCode": "SELF_7Y_6M_PRO_149(1M)_DC50%(11M)"
+          "price": 449,
+          "promoCode": "VISIT_7Y_6M_PRO_149(1M)_DC50%(11M)"
         }
       ],
       "description": "(NEW)\n5Y_Visit ทุกๆ 6 เดือน 799 รอบบิลที่ 2-12 (399) 5,050 VISIT_5Y_6M_PRO_149(1M)_DC50%(11M)\nราคา 149.- (1 รอบบิลแรก) รอบบิลที่ 13-60 (799)\nWD516AN.ACNPLMT (น้ำเงิน)\nWD516AN.AEWPLMT (ขาว) ลด 50% 11 เดือน (รอบบิลที่ 2-12) รอบบิลที่ 1 (149)\nWD516AN.ASLPLMT (เงิน)\n5Y_Self ทุกๆ 6 เดือน 699 รอบบิลที่ 2-12 (349) 4,400 SELF_5Y_6M_PRO_149(1M)_DC50%(11M)\nWD518AN.ABGPLMT (เบจ) รอบบิลที่ 13-60 (699)\nWD518AN.AWHPLMT (ขาว)\nขนาดผลิตภัณฑ์ (กxสxลมม.) WD518AN.ACGPLMT (เทา)\nWD516: 170 x 419 x 550 7Y_Visit ทุกๆ 6 เดือน 599 รอบบิลที่ 2-12 (299) 3,750 VISIT_7Y_6M_PRO_149(1M)_DC50%(11M)\nWD518: 168 x 398 x 400\nราคา 149.- (1 รอบบิลแรก) รอบบิลที่ 13-84 (599)\n(ทุกสี)\nลด 50% 11 เดือน (รอบบิลที่ 2-12) รอบบิลที่ 1 (149)\n7Y_Self ทุกๆ 6 เดือน 499 รอบบิลที่ 2-12 (249) 3,100 SELF_7Y_6M_PRO_149(1M)_DC50%(11M)\n5Y_Visit ทุกๆ 6 เดือน 549 รอบบิลที่ 2-12 (274) 3,425 VISIT_5Y_6M_PRO_149(1M)_DC50%(11M)\nราคา 149.- (1 รอบบิลแรก) รอบบิลที่ 13-60 (549)\nลด 50% 11 เดือน (รอบบิลที่ 2-12) รอบบิลที่ 1 (149)\n5Y_Self ทุกๆ 6 เดือน 499 รอบบิลที่ 2-12 (249) 3,100 SELF_5Y_6M_PRO_149(1M)_DC50%(11M)\nWD110MN.ABGPLMT\n(Calming Beige)\n7Y_Visit ทุกๆ 6 เดือน 449 รอบบิลที่ 2-12 (224) 2,775 VISIT_7Y_6M_PRO_149(1M)_DC50%(11M)\nขนาดผลิตภัณฑ์ (กxสxลมม.)\n132 x 358 x 230 ราคา 149.- (1 รอบบิลแรก) รอบบิลที่ 13-84 (449)\nลด 50% 11 เดือน (รอบบิลที่ 2-12) รอบบิลที่ 1 (149)\n7Y_Self ทุกๆ 6 เดือน 399 รอบบิลที่ 2-12 (199) 2,450 SELF_7Y_6M_PRO_149(1M)_DC50%(11M)"
@@ -128,13 +128,13 @@
         {
           "policy": "5Y_Visit",
           "term": 6,
-          "price": 799,
+          "price": 549,
           "promoCode": "VISIT_5Y_6M_PRO_149(1M)_DC50%(11M)"
         },
         {
           "policy": "5Y_Self",
           "term": 6,
-          "price": 699,
+          "price": 499,
           "promoCode": "SELF_5Y_6M_PRO_149(1M)_DC50%(11M)"
         }
       ],
@@ -554,13 +554,13 @@
         {
           "policy": "5Y_Visit",
           "term": 6,
-          "price": 599,
+          "price": 499,
           "promoCode": "VISIT_5Y_6M"
         },
         {
           "policy": "5Y_Visit",
           "term": 12,
-          "price": 499,
+          "price": 399,
           "promoCode": "VISIT_5Y_12M"
         }
       ],
@@ -590,13 +590,13 @@
         {
           "policy": "5Y_Visit",
           "term": 6,
-          "price": 649,
+          "price": 549,
           "promoCode": "VISIT_5Y_6M"
         },
         {
           "policy": "5Y_Visit",
           "term": 12,
-          "price": 549,
+          "price": 449,
           "promoCode": "VISIT_5Y_12M"
         }
       ],
@@ -626,13 +626,13 @@
         {
           "policy": "5Y_Visit",
           "term": 6,
-          "price": 849,
+          "price": 699,
           "promoCode": "VISIT_5Y_6M"
         },
         {
           "policy": "5Y_Visit",
           "term": 12,
-          "price": 749,
+          "price": 599,
           "promoCode": "VISIT_5Y_12M"
         }
       ],
@@ -662,13 +662,13 @@
         {
           "policy": "5Y_Visit",
           "term": 6,
-          "price": 999,
+          "price": 849,
           "promoCode": "VISIT_5Y_6M"
         },
         {
           "policy": "5Y_Visit",
           "term": 12,
-          "price": 899,
+          "price": 749,
           "promoCode": "VISIT_5Y_12M"
         }
       ],
@@ -1202,13 +1202,13 @@
         {
           "policy": "5Y_Visit",
           "term": 12,
-          "price": 1299,
+          "price": 1149,
           "promoCode": "VISIT_5Y_12M_PRO_149(1M)_DC50%(2M)"
         },
         {
           "policy": "5Y_Self",
           "term": 12,
-          "price": 1249,
+          "price": 1099,
           "promoCode": "SELF_5Y_12M_PRO_149(1M)_DC50%(2M)"
         }
       ],
@@ -1262,13 +1262,13 @@
         {
           "policy": "5Y_Visit",
           "term": 6,
-          "price": 349,
+          "price": 249,
           "promoCode": "VISIT_5Y_6M"
         },
         {
           "policy": "5Y_Self",
           "term": 6,
-          "price": 299,
+          "price": 199,
           "promoCode": "SELF_5Y_6M"
         }
       ],
@@ -1292,25 +1292,25 @@
         {
           "policy": "5Y_Visit",
           "term": 12,
-          "price": 549,
+          "price": 449,
           "promoCode": "VISIT_5Y_12M_PRO_149(1M)_DC50%(2M)"
         },
         {
           "policy": "5Y_Self",
           "term": 12,
-          "price": 499,
+          "price": 399,
           "promoCode": "SELF_5Y_12M_PRO_149(1M)_DC50%(2M)"
         },
         {
           "policy": "5Y_Visit",
           "term": 6,
-          "price": 599,
+          "price": 499,
           "promoCode": "VISIT_5Y_6M_PRO_149(1M)_DC50%(2M)"
         },
         {
           "policy": "5Y_Self",
           "term": 6,
-          "price": 549,
+          "price": 449,
           "promoCode": "SELF_5Y_6M_PRO_149(1M)_DC50%(2M)"
         }
       ],
@@ -1332,22 +1332,28 @@
       "priceFrom": "5Y_Self",
       "policies": [
         {
-          "policy": "5Y_Visit",
-          "term": 12,
-          "price": 849,
-          "promoCode": "VISIT_5Y_12M_PRO_149(1M)_DC50%(2M)"
+          "policy": "5Y_Self",
+          "price": 799,
+          "term": 6,
+          "promoCode": "SELF_5Y_6M_PRO_149(1M)_DC50%(2M)"
         },
         {
           "policy": "5Y_Self",
           "term": 12,
-          "price": 799,
+          "price": 699,
           "promoCode": "SELF_5Y_12M_PRO_149(1M)_DC50%(2M)"
         },
         {
           "policy": "5Y_Visit",
           "term": 6,
-          "price": 899,
+          "price": 799,
           "promoCode": "VISIT_5Y_6M_PRO_149(1M)_DC50%(2M)"
+        },
+        {
+          "policy": "5Y_Visit",
+          "term": 12,
+          "price": 749,
+          "promoCode": "VISIT_5Y_12M_PRO_149(1M)_DC50%(2M)"
         }
       ],
       "description": "AS65GDBY0.ABAE\n(Alpha Pet) • รอบบิลที่ 1 (149)\n5Y Self ทุกๆ 12 เดือน 1,250 SELF_5Y_12M_PRO_149(1M)_DC50%(2M)\n699 • รอบบิลที่ 2-3 (349)\nลด 50% 2 เดือน (รอบบิลที่ 2-3)\nพื้นที่การใช้งาน 61.2 ตร.ม. •\nH13 HEPA/กาจัดกลิ่น"
@@ -1404,13 +1410,13 @@
         {
           "policy": "5Y_Visit",
           "term": 12,
-          "price": 549,
+          "price": 449,
           "promoCode": "VISIT_5Y_12M_DC50%3M_AUG"
         },
         {
           "policy": "5Y_Self",
           "term": 12,
-          "price": 499,
+          "price": 399,
           "promoCode": "SELF_5Y_12M_DC50%3M_AUG"
         }
       ],
@@ -1462,10 +1468,22 @@
       "priceFrom": "5Y_Visit",
       "policies": [
         {
+          "policy": "5Y_Self",
+          "price": 699,
+          "term": 12,
+          "promoCode": "SELF_5Y_12M_PRO_149(1M)_DC50%(7M)_FREE_GIFT"
+        },
+        {
           "policy": "5Y_Visit",
           "term": 12,
           "price": 749,
           "promoCode": "VISIT_5Y_12M_PRO_149(1M)_DC50%(7M)_FREE_GIFT"
+        },
+        {
+          "policy": "6Y_Visit",
+          "price": 649,
+          "term": 12,
+          "promoCode": "VISIT_6Y_12M_PRO_149(1M)_DC50%(7M)_FREE_GIFT"
         }
       ],
       "description": "DFC533FV.APYPETH รับฟรี! ไมโครเวฟ 20 ลิตรรุ่น MS2032GAS.BBKPETH",
@@ -1490,22 +1508,28 @@
       "priceFrom": "6Y_Self",
       "policies": [
         {
+          "policy": "5Y_Self",
+          "price": 749,
+          "term": 12,
+          "promoCode": "SELF_5Y_12M_PRO_149(1M)_DC50%(7M)"
+        },
+        {
           "policy": "5Y_Visit",
           "term": 12,
           "price": 849,
           "promoCode": "VISIT_5Y_12M_PRO_149(1M)_DC50%(7M)"
         },
         {
-          "policy": "6Y_Visit",
-          "term": 12,
-          "price": 749,
-          "promoCode": "VISIT_6Y_12M_PRO_149(1M)_DC50%(7M)"
-        },
-        {
           "policy": "6Y_Self",
           "term": 12,
           "price": 649,
           "promoCode": "SELF_6Y_12M_PRO_149(1M)_DC50%(7M)"
+        },
+        {
+          "policy": "6Y_Visit",
+          "term": 12,
+          "price": 749,
+          "promoCode": "VISIT_6Y_12M_PRO_149(1M)_DC50%(7M)"
         }
       ],
       "description": "RV10VHP2B.BBLPETH •\n749 3,225 SELF_5Y_12M_PRO_149(1M)_DC50%(7M)\nSIZE : 10 KG 5Y_Self ทุกๆ 12 เดือน • รอบบิลที่ 2-8 (374)\nรับประกันมอเตอร์ 10 ปี"
@@ -1590,6 +1614,12 @@
           "term": 24,
           "price": 599,
           "promoCode": "VISIT_5Y_24M_PRO_149(1M)_DC50%(2M)"
+        },
+        {
+          "policy": "6Y_Visit",
+          "price": 499,
+          "term": 24,
+          "promoCode": "VISIT_6Y_24M_PRO_149(1M)_DC50%(2M)"
         }
       ],
       "description": "GN-F452PQAK.AEPPLMT\n5Y_Visit ทุกๆ 24 เดือน 599 1,050 VISIT_5Y_24M_PRO_149(1M)_DC50%(2M)\n(Top Freezer) • รอบบิลที่ 2-3 (299)\nSIZE : 16.2 คิว/ 459 ลิตร"
@@ -1609,12 +1639,6 @@
       "price": 499,
       "priceFrom": "6Y_Visit",
       "policies": [
-        {
-          "policy": "6Y_Visit",
-          "term": 24,
-          "price": 499,
-          "promoCode": "VISIT_6Y_24M_PRO_149(1M)_DC50%(2M)"
-        },
         {
           "policy": "5Y_Visit",
           "term": 24,
@@ -1678,8 +1702,14 @@
         {
           "policy": "5Y_Visit",
           "term": 24,
-          "price": 1299,
+          "price": 1349,
           "promoCode": "VISIT_5Y_24M_PRO_149(1M)_DC50%(7M)"
+        },
+        {
+          "policy": "6Y_Visit",
+          "price": 1149,
+          "term": 24,
+          "promoCode": "VISIT_6Y_24M_PRO_149(1M)_DC50%(7M)"
         }
       ],
       "description": "GC-G24FFQKB.AEEPLM1 • รอบบิลที่ 1 (149)\nราคา 149.- (1 รอบบิลแรก)\n(Multi Door) •\n5Y_Visit ทุกๆ 24 เดือน 1,349 5,925 VISIT_5Y_24M_PRO_149(1M)_DC50%(7M)\nSmart Inverter Compressor\n(I&W Dispenser)\nสี : เบจ\nSIZE : 22.5 คิว/ 637 ลิตรราคา 149.- (1 รอบบิลแรก)\nขนาดผลิตภัณฑ์ 6Y_Visit ทุกๆ 24 เดือน 1,149 รอบบิลที่ 2-8 (574) 5,025 VISIT_6Y_24M_PRO_149(1M)_DC50%(7M)\n(กว้างxสูงxลึก, มม.) • ลด 50% 7 เดือน (รอบบิลที่ 2-8)\n914x 1,792 x 733 • รอบบิลที่ 9-72 (1,149)"
@@ -1702,8 +1732,14 @@
         {
           "policy": "5Y_Visit",
           "term": 6,
-          "price": 1549,
+          "price": 1249,
           "promoCode": "VISIT_5Y_6M_PRO_149(1M)_DC50%(2M)_FREE_GIFT_"
+        },
+        {
+          "policy": "6Y_Visit",
+          "price": 1049,
+          "term": 6,
+          "promoCode": "VISIT_6Y_6M_PRO_149(1M)_DC50%(2M)_FREE_GIFT_ADD_WATERFILTER"
         }
       ],
       "description": "GC-L24FFCBB.AEVPLM1 รับฟรี! ไมโครเวฟ 20 ลิตรรุ่น MS2032GAS.BBKPETH"
@@ -1723,12 +1759,6 @@
       "price": 799,
       "priceFrom": "6Y_Visit",
       "policies": [
-        {
-          "policy": "6Y_Visit",
-          "term": 24,
-          "price": 1149,
-          "promoCode": "VISIT_6Y_24M_PRO_149(1M)_DC50%(7M)"
-        },
         {
           "policy": "5Y_Visit",
           "term": 24,
@@ -1942,13 +1972,13 @@
         {
           "policy": "5Y_Visit",
           "term": 24,
-          "price": 1199,
+          "price": 1249,
           "promoCode": "VISIT_5Y_24M_PRO_149(1M)_DC50%(7M)"
         },
         {
           "policy": "6Y_Visit",
           "term": 24,
-          "price": 999,
+          "price": 1049,
           "promoCode": "VISIT_6Y_24M_PRO_149(1M)_DC50%(7M)"
         }
       ],
@@ -1972,13 +2002,13 @@
         {
           "policy": "5Y_Visit",
           "term": 6,
-          "price": 1349,
+          "price": 1449,
           "promoCode": "VISIT_5Y_6M_PRO_149(1M)_ADD_"
         },
         {
           "policy": "6Y_Visit",
           "term": 6,
-          "price": 1149,
+          "price": 1249,
           "promoCode": "VISIT_6Y_6M_PRO_149(1M)_ADD_"
         }
       ],

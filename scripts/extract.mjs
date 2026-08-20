@@ -866,6 +866,85 @@ async function main() {
       // → These are intentional (no promoCode in PDF), leave as null
     }
   }
+  // === Post-fix: เพิ่มนโยบายที่หายไปจาก PDF extraction ===
+  const POLICY_POSTFIX = {
+    // ตู้เย็น 2 ประตู — PDF มี 6Y_Visit แต่ extract จับไม่ได้
+    'GN-F452PQAK.AEPPLMT': [
+      { policy: '6Y_Visit', price: 499, term: 24, promoCode: 'VISIT_6Y_24M_PRO_149(1M)_DC50%(2M)' },
+    ],
+    'GN-V389FQEF.AEPPLMT': [
+      { policy: '5Y_Visit', price: 649, term: 24, promoCode: 'VISIT_5Y_24M_PRO_149(1M)_DC50%(2M)' },
+      { policy: '6Y_Visit', price: 549, term: 24, promoCode: 'VISIT_6Y_24M_PRO_149(1M)_DC50%(2M)' },
+    ],
+    // ตู้เย็น Multi-Door
+    'GC-G24FFQKB.AEEPLM1': [
+      { policy: '5Y_Visit', price: 1349, term: 24 },
+      { policy: '6Y_Visit', price: 1149, term: 24, promoCode: 'VISIT_6Y_24M_PRO_149(1M)_DC50%(7M)' },
+    ],
+    'GC-L24FFCBB.AEVPLM1': [
+      { policy: '5Y_Visit', price: 1249, term: 6 },
+      { policy: '6Y_Visit', price: 1049, term: 6, promoCode: 'VISIT_6Y_6M_PRO_149(1M)_DC50%(2M)_FREE_GIFT_ADD_WATERFILTER' },
+    ],
+    'GC-V22FFQMB.AEPPLMT': [
+      { policy: '5Y_Visit', price: 949, term: 24, promoCode: 'VISIT_5Y_24M_PRO_149(1M)_DC50%(2M)' },
+      { policy: '6Y_Visit', price: 799, term: 24, promoCode: 'VISIT_6Y_24M_PRO_149(1M)_DC50%(2M)' },
+    ],
+    // เครื่องกรองน้ำ — PDF จริงเป็น 7Y ไม่ใช่ 5Y
+    'WD110MN.ABGPLMT': [
+      { policy: '7Y_Visit', price: 449, term: 6, promoCode: 'VISIT_7Y_6M_PRO_149(1M)_DC50%(11M)' },
+      { policy: '7Y_Self', price: 399, term: 6, promoCode: 'SELF_7Y_6M_PRO_149(1M)_DC50%(11M)' },
+    ],
+    // เครื่องอบผ้า — เพิ่ม 5Y_Self
+    'RV10VHP2B.BBLPETH': [
+      { policy: '5Y_Self', price: 749, term: 12, promoCode: 'SELF_5Y_12M_PRO_149(1M)_DC50%(7M)' },
+    ],
+    // เครื่องล้างจาน — เพิ่ม 5Y_Self + 6Y_Visit
+    'DFC533FV.APYPETH': [
+      { policy: '5Y_Self', price: 699, term: 12, promoCode: 'SELF_5Y_12M_PRO_149(1M)_DC50%(7M)_FREE_GIFT' },
+      { policy: '6Y_Visit', price: 649, term: 12, promoCode: 'VISIT_6Y_12M_PRO_149(1M)_DC50%(7M)_FREE_GIFT' },
+    ],
+    // เครื่องฟอกอากาศ — เพิ่ม 5Y_Self 6M
+    'AS65GDBY0.ABAE': [
+      { policy: '5Y_Self', price: 799, term: 6, promoCode: 'SELF_5Y_6M_PRO_149(1M)_DC50%(2M)' },
+    ],
+  };
+
+  for (const p of products) {
+    const fixes = POLICY_POSTFIX[p.code];
+    if (!fixes) continue;
+    for (const fix of fixes) {
+      // Overwrite existing or add new
+      const idx = p.policies.findIndex(pol => pol.policy === fix.policy && pol.term === fix.term);
+      if (idx >= 0) {
+        Object.assign(p.policies[idx], fix);
+      } else {
+        p.policies.push({ ...fix });
+      }
+    }
+    // Remove duplicates: keep unique (policy + term)
+    const seen = new Set();
+    p.policies = p.policies.filter(pol => {
+      const key = pol.policy + '_' + pol.term;
+      if (seen.has(key)) return false;
+      seen.add(key);
+      return true;
+    });
+    // WD110MN: rename 5Y → 7Y (PDF shows 7Y not 5Y)
+    if (p.code === 'WD110MN.ABGPLMT') {
+      p.policies.forEach(pol => {
+        if (pol.policy.startsWith('5Y_')) {
+          pol.policy = pol.policy.replace('5Y_', '7Y_');
+        }
+      });
+    }
+    // Sort policies
+    p.policies.sort((a, b) => {
+      const pa = parseInt(a.policy) || 0;
+      const pb = parseInt(b.policy) || 0;
+      return pa - pb || a.policy.localeCompare(b.policy) || a.term - b.term;
+    });
+  }
+
   fs.writeFileSync(OUT_JSON, JSON.stringify(data, null, 2));
 
   // diff report
