@@ -1097,6 +1097,33 @@ img { max-width: 100%; }
   padding: 28px 0 70px;
 }
 
+.detail-grid {
+  display: grid;
+  grid-template-columns: 1fr 380px;
+  gap: 24px;
+  align-items: start;
+}
+
+.detail-left {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.detail-right {
+  position: sticky;
+  top: 24px;
+}
+
+@media (max-width: 900px) {
+  .detail-grid {
+    grid-template-columns: 1fr;
+  }
+  .detail-right {
+    position: static;
+  }
+}
+
 .breadcrumb {
   font-size: 0.85rem;
   color: var(--muted);
