@@ -554,13 +554,13 @@
         {
           "policy": "5Y_Visit",
           "term": 6,
-          "price": 499,
+          "price": 599,
           "promoCode": "VISIT_5Y_6M"
         },
         {
           "policy": "5Y_Visit",
           "term": 12,
-          "price": 399,
+          "price": 499,
           "promoCode": "VISIT_5Y_12M"
         }
       ],
@@ -590,13 +590,13 @@
         {
           "policy": "5Y_Visit",
           "term": 6,
-          "price": 549,
+          "price": 649,
           "promoCode": "VISIT_5Y_6M"
         },
         {
           "policy": "5Y_Visit",
           "term": 12,
-          "price": 449,
+          "price": 549,
           "promoCode": "VISIT_5Y_12M"
         }
       ],
@@ -626,13 +626,13 @@
         {
           "policy": "5Y_Visit",
           "term": 6,
-          "price": 699,
+          "price": 849,
           "promoCode": "VISIT_5Y_6M"
         },
         {
           "policy": "5Y_Visit",
           "term": 12,
-          "price": 599,
+          "price": 749,
           "promoCode": "VISIT_5Y_12M"
         }
       ],
@@ -662,13 +662,13 @@
         {
           "policy": "5Y_Visit",
           "term": 6,
-          "price": 849,
+          "price": 999,
           "promoCode": "VISIT_5Y_6M"
         },
         {
           "policy": "5Y_Visit",
           "term": 12,
-          "price": 749,
+          "price": 899,
           "promoCode": "VISIT_5Y_12M"
         }
       ],
