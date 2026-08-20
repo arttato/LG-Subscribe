@@ -11,12 +11,14 @@ const sections = [
     steps: [
       {
         title: 'เข้าสู่ระบบ OSMS',
+        images: ['step-2.png'],
         items: [
           'เข้าใช้งานผ่าน OTP ผ่าน SMS หรือ Email',
         ],
       },
       {
         title: 'ลงทะเบียนลูกค้า',
+        images: ['step-3.png'],
         items: [
           'เลือก "Subscription"',
           'เลือก "Type of Customer"',
@@ -26,6 +28,7 @@ const sections = [
       },
       {
         title: 'กรอกข้อมูลลูกค้า',
+        images: ['step-4.png'],
         items: [
           'เลือก "Individual"',
           'คลิก "Validity Check"',
@@ -34,6 +37,7 @@ const sections = [
       },
       {
         title: 'ยืนยันตัวตนด้วย OTP',
+        images: ['step-5.png', 'step-6.png'],
         items: [
           'คลิก "Send auth code"',
           'กรอก OTP จาก SMS ในช่องที่กำหนด',
@@ -44,6 +48,7 @@ const sections = [
       },
       {
         title: 'เลือกสินค้าและเงื่อนไข',
+        images: ['step-7.png', 'step-8.png', 'step-9.png'],
         items: [
           'ลูกค้าอ่านข้อกำหนดและเงื่อนไข',
           'เลือกสินค้า',
@@ -54,6 +59,7 @@ const sections = [
       },
       {
         title: 'เลือกโปรโมชันและวิธีชำระเงิน',
+        images: ['step-10.png'],
         items: [
           'ลูกค้าอ่านข้อกำหนดและเงื่อนไข',
           'เลือกประเภทโปรโมชัน',
@@ -62,6 +68,7 @@ const sections = [
       },
       {
         title: 'ชำระเงิน',
+        images: ['step-11.png'],
         items: [
           'เซ็นลายเซ็น (กรณีจ่ายเงินด้วยบัตรเครดิต)',
           'กรอกข้อมูลบัตร',
@@ -76,6 +83,7 @@ const sections = [
     steps: [
       {
         title: 'ฝั่ง LP (ผู้ขาย) — สร้างออเดอร์',
+        images: ['step-13.png'],
         items: [
           'คลิก "Remote Order"',
           'กรอกข้อมูลที่จำเป็นทั้งหมด',
@@ -87,6 +95,7 @@ const sections = [
       },
       {
         title: 'ฝั่ง LP — เลือกสินค้าและโปรโมชัน',
+        images: ['step-14.png', 'step-15.png'],
         items: [
           'เลือกสินค้า',
           'เลือก Price Policy',
@@ -98,6 +107,7 @@ const sections = [
       },
       {
         title: 'ฝั่งลูกค้า — ลงทะเบียน',
+        images: ['step-16.png'],
         items: [
           'กรอกข้อมูลที่จำเป็นทั้งหมด',
           'กรอกเลขบัตรประชาชน',
@@ -107,6 +117,7 @@ const sections = [
       },
       {
         title: 'ฝั่งลูกค้า — ยืนยัน OTP',
+        images: ['step-17.png'],
         items: [
           'คลิก "ขอ OTP SMS" — ระบบจะส่ง OTP ไปยังเบอร์มือถือลูกค้า',
           'กรอกหมายเลข OTP ที่ได้รับ',
@@ -117,6 +128,7 @@ const sections = [
       },
       {
         title: 'ฝั่งลูกค้า — กรอกที่อยู่และชำระเงิน',
+        images: ['step-18.png', 'step-19.png'],
         items: [
           'กรอกที่อยู่สำหรับติดตั้ง หรือคลิกเพื่อใช้ข้อมูลเดียวกับ "ข้อมูลผู้สั่งซื้อ"',
           'ลูกค้าอ่านข้อกำหนดและเงื่อนไขทั้งหมด',
@@ -137,6 +149,25 @@ const sections = [
     <title>วิธีการคีย์ข้อมูลสั่งซื้อ — LG Subscribe</title>
     <meta name="description" content="คู่มือวิธีการคีย์ข้อมูลสั่งซื้อผ่านระบบ OSMS สำหรับการลงทะเบียนแบบพบหน้าและสั่งซื้อทางไกล" />
     <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='20' fill='%23a50034'/><text x='50' y='68' font-size='52' text-anchor='middle' fill='white'>S</text></svg>" />
+    <style>
+      .step-img {
+        display: block;
+        width: 100%;
+        border: 1px solid #e0e0e0;
+        border-radius: 8px;
+        margin-bottom: 12px;
+        cursor: pointer;
+        transition: box-shadow 0.2s;
+      }
+      .step-img:hover { box-shadow: 0 2px 12px rgba(0,0,0,0.15); }
+      .step-img-full {
+        position: fixed; inset: 0; z-index: 999; background: rgba(0,0,0,0.85);
+        display: flex; align-items: center; justify-content: center; cursor: zoom-out;
+      }
+      .step-img-full img { max-width: 95vw; max-height: 95vh; border-radius: 8px; }
+      .step-row { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; align-items: start; }
+      @media (max-width: 640px) { .step-row { grid-template-columns: 1fr; } }
+    </style>
   </head>
   <body>
     <header class="site-header">
@@ -151,11 +182,12 @@ const sections = [
         <div class="header-meta">
           <a class="header-nav" href={`${base}`}>แคตตาล็อก</a>
           <a class="header-nav" href={`${base}services/`}>บริการดูแล</a>
+          <span class="header-nav current">วิธีสั่งซื้อ</span>
         </div>
       </div>
     </header>
 
-    <main class="container" style="max-width:900px;margin:0 auto;padding:24px 16px 80px">
+    <main class="container" style="max-width:960px;margin:0 auto;padding:24px 16px 80px">
       <div style="text-align:center;margin-bottom:40px">
         <h1 style="font-size:1.8rem;margin:0 0 8px">วิธีการคีย์ข้อมูลสั่งซื้อ</h1>
         <p style="color:#666;margin:0">คู่มือการใช้งานระบบ OSMS สำหรับการสั่งซื้อสินค้า LG Subscribe</p>
@@ -192,10 +224,35 @@ const sections = [
 
           {section.steps.map((step, i) => (
             <div id={`${section.id}-${i}`} style="background:#fff;border:1px solid #eee;border-radius:10px;padding:20px;margin-bottom:16px;scroll-margin-top:80px">
-              <div style="display:flex;align-items:flex-start;gap:12px">
+              <div style="display:flex;align-items:flex-start;gap:12px;margin-bottom:12px">
                 <span style="background:#a50034;color:#fff;border-radius:50%;min-width:32px;height:32px;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:0.9rem">{i + 1}</span>
-                <div style="flex:1">
-                  <h3 style="margin:0 0 10px;font-size:1.05rem;color:#333">{step.title}</h3>
+                <h3 style="margin:0;font-size:1.05rem;color:#333">{step.title}</h3>
+              </div>
+              <div class="step-row">
+                <div>
+                  {step.images.length > 1 ? (
+                    <div style="display:grid;grid-template-columns:1fr 1fr;gap:8px">
+                      {step.images.map((img) => (
+                        <img
+                          class="step-img"
+                          src={`${base}how-to-order/${img}`}
+                          alt={step.title}
+                          loading="lazy"
+                          onclick="this.classList.toggle('zoomed');var o=document.getElementById('overlay');if(o){o.style.display=o.style.display==='flex'?'none':'flex';o.querySelector('img').src=this.src}"
+                        />
+                      ))}
+                    </div>
+                  ) : (
+                    <img
+                      class="step-img"
+                      src={`${base}how-to-order/${step.images[0]}`}
+                      alt={step.title}
+                      loading="lazy"
+                      onclick="var o=document.getElementById('overlay');if(o){o.style.display='flex';o.querySelector('img').src=this.src}"
+                    />
+                  )}
+                </div>
+                <div>
                   <ul style="margin:0;padding-left:20px">
                     {step.items.map((item) => (
                       <li style="margin-bottom:6px;color:#444;line-height:1.6">{item}</li>
@@ -218,6 +275,11 @@ const sections = [
         </ul>
       </div>
     </main>
+
+    <!-- Image Lightbox -->
+    <div id="overlay" style="display:none;position:fixed;inset:0;z-index:999;background:rgba(0,0,0,0.85);align-items:center;justify-content:center;cursor:zoom-out" onclick="this.style.display='none'">
+      <img src="" style="max-width:95vw;max-height:95vh;border-radius:8px" />
+    </div>
 
     <footer style="background:#1a1a1a;color:#888;text-align:center;padding:24px 16px;font-size:0.8rem">
       © 2026 LG Subscribe Catalog
