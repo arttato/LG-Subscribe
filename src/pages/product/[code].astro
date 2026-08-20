@@ -504,7 +504,7 @@ const planCards = (() => {
         const openPlan = () => { planDetail.hidden = false; document.body.style.overflow = 'hidden'; };
         const closePlan = () => { planDetail.hidden = true; document.body.style.overflow = ''; };
         const fmtB = (n) => Number(n).toLocaleString('th-TH');
-        const renderRows = (s, promo) => {
+        const renderRows = (s, promo, careList, careTitleText) => {
           const t = document.createElement('table');
           t.className = 'plan-detail-table';
           t.innerHTML = '<thead><tr><th>รอบบิล</th><th>ราคา/เดือน</th><th>หมายเหตุ</th></tr></thead>';
@@ -521,8 +521,7 @@ const planCards = (() => {
           svcSection.className = 'plan-detail-service';
           const svcType = s.svcType || '';
           const svcLabel = svcType === 'Visit' ? 'ผู้เชี่ยวชาญจากแอลจีเข้าบริการถึงบ้าน' : svcType === 'Self' ? 'บำรุงรักษาด้วยตัวเอง' : '';
-          const careList = JSON.parse(card.dataset.planCareList || '[]');
-          const careTitleText = card.dataset.planCareTitle || '';
+
           if (svcLabel) {
             const svcHead = document.createElement('div');
             svcHead.className = 'plan-detail-service-head';
@@ -615,7 +614,9 @@ const planCards = (() => {
             if (card.dataset.planOutright !== undefined) {
               renderOutright(card.dataset.planPrice, card.dataset.planPay, JSON.parse(card.dataset.planPromo || '[]'), card.dataset.planSvc);
             } else {
-              renderRows(JSON.parse(card.dataset.planSchedule), JSON.parse(card.dataset.planPromo || '[]'));
+              const cl = JSON.parse(card.dataset.planCareList || '[]');
+              const ct = card.dataset.planCareTitle || '';
+              renderRows(JSON.parse(card.dataset.planSchedule), JSON.parse(card.dataset.planPromo || '[]'), cl, ct);
             }
             openPlan();
           };
