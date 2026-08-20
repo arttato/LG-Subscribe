@@ -30,13 +30,13 @@
       "priceFrom": "7Y_Self",
       "policies": [
         {
-          "policy": "7Y_Visit",
+          "policy": "5Y_Visit",
           "term": 6,
           "price": 549,
           "promoCode": "VISIT_7Y_6M_PRO_149(1M)_DC50%(11M)"
         },
         {
-          "policy": "7Y_Self",
+          "policy": "5Y_Self",
           "term": 6,
           "price": 499,
           "promoCode": "SELF_7Y_6M_PRO_149(1M)_DC50%(11M)"
@@ -128,13 +128,13 @@
         {
           "policy": "5Y_Visit",
           "term": 6,
-          "price": 549,
+          "price": 799,
           "promoCode": "VISIT_5Y_6M_PRO_149(1M)_DC50%(11M)"
         },
         {
           "policy": "5Y_Self",
           "term": 6,
-          "price": 499,
+          "price": 699,
           "promoCode": "SELF_5Y_6M_PRO_149(1M)_DC50%(11M)"
         }
       ],
