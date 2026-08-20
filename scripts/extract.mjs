@@ -81,6 +81,12 @@ const POLICY_BLOCK_OVERRIDES = {
       { yMin: 140, yMax: 200, family: 'WD518AN' }, // 5Y_Visit 549 / 5Y_Self 499
       { yMin: 45, yMax: 135, family: 'WD110MN' }, // 7Y_Visit 449 / 7Y_Self 399
     ],
+    // ตู้เย็น Side-by-Side / Plumbing: รหัส GC-X257CMHW (y=345) กับ GC-L257SFZW (y=190)
+    // แถวราคา 6Y_Visit 1249 (y=258) อยู่ระหว่างสองรหัส → จับคู่ผิด
+    7: [
+      { yMin: 225, yMax: 500, family: 'GC-X257CMHW' }, // 5Y_Visit 1449 + 6Y_Visit 1249
+      { yMin: 10, yMax: 224, family: 'GC-L257SFZW' }, // 5Y_Visit 849 + 6Y_Visit 749
+    ],
   },
   // ตาราง OBS แอร์ IXY (Sale PDF): รหัสกับแถวราคาอยู่คนละคอลัมน์ แถว 12M ใกล้รุ่นถัดไป
   // (ค่า y จาก PDF ต้นฉบับ — ถ้า LG เปลี่ยนโครงสร้างหน้าต้องอัปเดต)
@@ -346,9 +352,19 @@ function parsePolicyRow(lines, lineIndex, policyToken, noService, clusterText) {
     }
   }
 
-  const codeM = sameLine.match(POLICY_CODE_RE);
+  let codeM = sameLine.match(POLICY_CODE_RE);
+  // PromoCode มักอยู่บรรทัดใกล้เคียง (PDF ตัดคำข้ามบรรทัด) — ค้นใน 5 บรรทัดรอบๆ
+  if (!codeM) {
+    for (let k = lineIndex - 3; k <= lineIndex + 3 && k < lines.length; k++) {
+      if (k < 0) continue;
+      codeM = lines[k].match(POLICY_CODE_RE);
+      if (codeM) break;
+    }
+  }
+  // Normalize: "5Y Visit" → "5Y_Visit" (PDF มีทั้งเว้นวรรคและ underscore)
+  const normalizedPolicy = policyToken.replace(/\s+/g, '_');
   return {
-    policy: policyToken,
+    policy: normalizedPolicy,
     term,
     price,
     promoCode: codeM ? codeM[0] : null,
@@ -812,6 +828,19 @@ async function main() {
       if (openCount > closeCount) pol.promoCode += ')'.repeat(openCount - closeCount);
       // Fix known typos from PDF extraction
       if (pol.promoCode === 'VISIT_5Y_6M00') pol.promoCode = 'VISIT_5Y_6M';
+    }
+  }
+  // Fix policies with missing promoCode (PDF layout splits code across lines)
+  for (const p of products) {
+    for (const pol of p.policies) {
+      if (pol.promoCode) continue;
+      // No Service policies: NOSERVICE prefix
+      if (/No[_ ]?Service|^\d+Y_No/i.test(pol.policy)) {
+        const yr = (pol.policy.match(/(\d)Y/) || [])[1] || '5';
+        pol.promoCode = `NOSERVICE_${yr}Y`;
+      }
+      // Plain "5Y" / "6Y" without Visit/Self = advance payment / no service
+      // → These are intentional (no promoCode in PDF), leave as null
     }
   }
   fs.writeFileSync(OUT_JSON, JSON.stringify(data, null, 2));
