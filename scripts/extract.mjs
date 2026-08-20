@@ -802,6 +802,18 @@ async function main() {
     products,
   };
   fs.mkdirSync(path.dirname(OUT_JSON), { recursive: true });
+  // Fix promoCode issues: add missing closing parentheses, fix known typos
+  for (const p of products) {
+    for (const pol of p.policies) {
+      if (!pol.promoCode) continue;
+      // Add missing closing parentheses
+      const openCount = (pol.promoCode.match(/\(/g) || []).length;
+      const closeCount = (pol.promoCode.match(/\)/g) || []).length;
+      if (openCount > closeCount) pol.promoCode += ')'.repeat(openCount - closeCount);
+      // Fix known typos from PDF extraction
+      if (pol.promoCode === 'VISIT_5Y_6M00') pol.promoCode = 'VISIT_5Y_6M';
+    }
+  }
   fs.writeFileSync(OUT_JSON, JSON.stringify(data, null, 2));
 
   // diff report

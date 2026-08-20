@@ -33,13 +33,13 @@
           "policy": "7Y_Visit",
           "term": 6,
           "price": 449,
-          "promoCode": "VISIT_7Y_6M_PRO_149(1M)_DC50%(11M"
+          "promoCode": "VISIT_7Y_6M_PRO_149(1M)_DC50%(11M)"
         },
         {
           "policy": "7Y_Self",
           "term": 6,
           "price": 399,
-          "promoCode": "SELF_7Y_6M_PRO_149(1M)_DC50%(11M"
+          "promoCode": "SELF_7Y_6M_PRO_149(1M)_DC50%(11M)"
         }
       ],
       "description": "(NEW)\n5Y_Visit ทุกๆ 6 เดือน 799 รอบบิลที่ 2-12 (399) 5,050 VISIT_5Y_6M_PRO_149(1M)_DC50%(11M)\nราคา 149.- (1 รอบบิลแรก) รอบบิลที่ 13-60 (799)\nWD516AN.ACNPLMT (น้ำเงิน)\nWD516AN.AEWPLMT (ขาว) ลด 50% 11 เดือน (รอบบิลที่ 2-12) รอบบิลที่ 1 (149)\nWD516AN.ASLPLMT (เงิน)\n5Y_Self ทุกๆ 6 เดือน 699 รอบบิลที่ 2-12 (349) 4,400 SELF_5Y_6M_PRO_149(1M)_DC50%(11M)\nWD518AN.ABGPLMT (เบจ) รอบบิลที่ 13-60 (699)\nWD518AN.AWHPLMT (ขาว)\nขนาดผลิตภัณฑ์ (กxสxลมม.) WD518AN.ACGPLMT (เทา)\nWD516: 170 x 419 x 550 7Y_Visit ทุกๆ 6 เดือน 599 รอบบิลที่ 2-12 (299) 3,750 VISIT_7Y_6M_PRO_149(1M)_DC50%(11M)\nWD518: 168 x 398 x 400\nราคา 149.- (1 รอบบิลแรก) รอบบิลที่ 13-84 (599)\n(ทุกสี)\nลด 50% 11 เดือน (รอบบิลที่ 2-12) รอบบิลที่ 1 (149)\n7Y_Self ทุกๆ 6 เดือน 499 รอบบิลที่ 2-12 (249) 3,100 SELF_7Y_6M_PRO_149(1M)_DC50%(11M)\n5Y_Visit ทุกๆ 6 เดือน 549 รอบบิลที่ 2-12 (274) 3,425 VISIT_5Y_6M_PRO_149(1M)_DC50%(11M)\nราคา 149.- (1 รอบบิลแรก) รอบบิลที่ 13-60 (549)\nลด 50% 11 เดือน (รอบบิลที่ 2-12) รอบบิลที่ 1 (149)\n5Y_Self ทุกๆ 6 เดือน 499 รอบบิลที่ 2-12 (249) 3,100 SELF_5Y_6M_PRO_149(1M)_DC50%(11M)\nWD110MN.ABGPLMT\n(Calming Beige)\n7Y_Visit ทุกๆ 6 เดือน 449 รอบบิลที่ 2-12 (224) 2,775 VISIT_7Y_6M_PRO_149(1M)_DC50%(11M)\nขนาดผลิตภัณฑ์ (กxสxลมม.)\n132 x 358 x 230 ราคา 149.- (1 รอบบิลแรก) รอบบิลที่ 13-84 (449)\nลด 50% 11 เดือน (รอบบิลที่ 2-12) รอบบิลที่ 1 (149)\n7Y_Self ทุกๆ 6 เดือน 399 รอบบิลที่ 2-12 (199) 2,450 SELF_7Y_6M_PRO_149(1M)_DC50%(11M)"
@@ -75,25 +75,25 @@
           "policy": "5Y_Visit",
           "term": 6,
           "price": 799,
-          "promoCode": "VISIT_5Y_6M_PRO_149(1M)_DC50%(11M"
+          "promoCode": "VISIT_5Y_6M_PRO_149(1M)_DC50%(11M)"
         },
         {
           "policy": "5Y_Self",
           "term": 6,
           "price": 699,
-          "promoCode": "SELF_5Y_6M_PRO_149(1M)_DC50%(11M"
+          "promoCode": "SELF_5Y_6M_PRO_149(1M)_DC50%(11M)"
         },
         {
           "policy": "7Y_Visit",
           "term": 6,
           "price": 599,
-          "promoCode": "VISIT_7Y_6M_PRO_149(1M)_DC50%(11M"
+          "promoCode": "VISIT_7Y_6M_PRO_149(1M)_DC50%(11M)"
         },
         {
           "policy": "7Y_Self",
           "term": 6,
           "price": 499,
-          "promoCode": "SELF_7Y_6M_PRO_149(1M)_DC50%(11M"
+          "promoCode": "SELF_7Y_6M_PRO_149(1M)_DC50%(11M)"
         }
       ],
       "description": "WD516 หรือ WD518\nOutright"
@@ -129,13 +129,13 @@
           "policy": "5Y_Visit",
           "term": 6,
           "price": 549,
-          "promoCode": "VISIT_5Y_6M_PRO_149(1M)_DC50%(11M"
+          "promoCode": "VISIT_5Y_6M_PRO_149(1M)_DC50%(11M)"
         },
         {
           "policy": "5Y_Self",
           "term": 6,
           "price": 499,
-          "promoCode": "SELF_5Y_6M_PRO_149(1M)_DC50%(11M"
+          "promoCode": "SELF_5Y_6M_PRO_149(1M)_DC50%(11M)"
         }
       ],
       "description": "WD516 หรือ WD518\nOutright"
@@ -159,25 +159,25 @@
           "policy": "5Y_Visit",
           "term": 12,
           "price": 549,
-          "promoCode": "VISIT_5Y_12M_PRO_149(1M"
+          "promoCode": "VISIT_5Y_12M_PRO_149(1M)"
         },
         {
           "policy": "5Y_Self",
           "term": 12,
           "price": 449,
-          "promoCode": "SELF_5Y_12M_PRO_149(1M"
+          "promoCode": "SELF_5Y_12M_PRO_149(1M)"
         },
         {
           "policy": "6Y_Visit",
           "term": 12,
           "price": 499,
-          "promoCode": "VISIT_6Y_12M_PRO_149(1M"
+          "promoCode": "VISIT_6Y_12M_PRO_149(1M)"
         },
         {
           "policy": "6Y_Self",
           "term": 12,
           "price": 399,
-          "promoCode": "SELF_6Y_12M_PRO_149(1M"
+          "promoCode": "SELF_6Y_12M_PRO_149(1M)"
         }
       ],
       "description": "TX2315DT5G.DEGPETH • รอบบิลที่ 1 (149)\nSIZE : 15 KG\n5Y_Self ทุกๆ 12 เดือน 449 • ราคา 149.- (1 รอบบิลแรก) 300 SELF_5Y_12M_PRO_149(1M)"
@@ -201,25 +201,25 @@
           "policy": "5Y_Visit",
           "term": 12,
           "price": 649,
-          "promoCode": "VISIT_5Y_12M_PRO_149(1M)_DC50%(2M"
+          "promoCode": "VISIT_5Y_12M_PRO_149(1M)_DC50%(2M)"
         },
         {
           "policy": "5Y_Self",
           "term": 12,
           "price": 599,
-          "promoCode": "SELF_5Y_12M_PRO_149(1M)_DC50%(2M"
+          "promoCode": "SELF_5Y_12M_PRO_149(1M)_DC50%(2M)"
         },
         {
           "policy": "6Y_Visit",
           "term": 12,
           "price": 599,
-          "promoCode": "VISIT_6Y_12M_PRO_149(1M)_DC50%(2M"
+          "promoCode": "VISIT_6Y_12M_PRO_149(1M)_DC50%(2M)"
         },
         {
           "policy": "6Y_Self",
           "term": 12,
           "price": 549,
-          "promoCode": "SELF_6Y_12M_PRO_149(1M)_DC50%(2M"
+          "promoCode": "SELF_6Y_12M_PRO_149(1M)_DC50%(2M)"
         }
       ],
       "description": "TX2723ST5J.APBPETH\nSIZE : 23KG 5Y_Self ทุกๆ 12 เดือน 599 รอบบิลที่ 2-3 (299) 1,050 SELF_5Y_12M_PRO_149(1M)_DC50%(2M)\nT/L LG AI DD Inverter"
@@ -243,25 +243,25 @@
           "policy": "5Y_Visit",
           "term": 12,
           "price": 899,
-          "promoCode": "VISIT_5Y_12M_PRO_149(1M)_DC50%(7M"
+          "promoCode": "VISIT_5Y_12M_PRO_149(1M)_DC50%(7M)"
         },
         {
           "policy": "5Y_Self",
           "term": 12,
           "price": 849,
-          "promoCode": "SELF_5Y_12M_PRO_149(1M)_DC50%(7M"
+          "promoCode": "SELF_5Y_12M_PRO_149(1M)_DC50%(7M)"
         },
         {
           "policy": "6Y_Visit",
           "term": 12,
           "price": 849,
-          "promoCode": "VISIT_6Y_12M_PRO_149(1M)_DC50%(7M"
+          "promoCode": "VISIT_6Y_12M_PRO_149(1M)_DC50%(7M)"
         },
         {
           "policy": "6Y_Self",
           "term": 12,
           "price": 799,
-          "promoCode": "SELF_6Y_12M_PRO_149(1M)_DC50%(7M"
+          "promoCode": "SELF_6Y_12M_PRO_149(1M)_DC50%(7M)"
         }
       ],
       "description": "F2520RNTB.AEBPETH\nซัก : 20 กก. อบ 10 กก. • ราคา 149.- (1 รอบบิลแรก)\n5Y_Self ทุกๆ 12 เดือน 849 3,675 SELF_5Y_12M_PRO_149(1M)_DC50%(7M)\nรับประกันมอเตอร์ 10 ปี"
@@ -327,25 +327,25 @@
           "policy": "5Y_Visit",
           "term": 12,
           "price": 749,
-          "promoCode": "VISIT_5Y_12M_PRO_149(1M)_DC50%(7M"
+          "promoCode": "VISIT_5Y_12M_PRO_149(1M)_DC50%(7M)"
         },
         {
           "policy": "5Y_Self",
           "term": 12,
           "price": 649,
-          "promoCode": "SELF_5Y_12M_PRO_149(1M)_DC50%(7M"
+          "promoCode": "SELF_5Y_12M_PRO_149(1M)_DC50%(7M)"
         },
         {
           "policy": "6Y_Visit",
           "term": 12,
           "price": 649,
-          "promoCode": "VISIT_6Y_12M_PRO_149(1M)_DC50%(7M"
+          "promoCode": "VISIT_6Y_12M_PRO_149(1M)_DC50%(7M)"
         },
         {
           "policy": "6Y_Self",
           "term": 12,
           "price": 599,
-          "promoCode": "SELF_6Y_12M_PRO_149(1M)_DC50%(7M"
+          "promoCode": "SELF_6Y_12M_PRO_149(1M)_DC50%(7M)"
         }
       ],
       "description": "FV1413H4M.AMBPETH •\nซัก : 13 กก. อบ 8 กก. 5Y_Self ทุกๆ 12 เดือน 649 2,775 SELF_5Y_12M_PRO_149(1M)_DC50%(7M)\nรับประกันมอเตอร์ 10 ปี •"
@@ -369,25 +369,25 @@
           "policy": "5Y_Visit",
           "term": 12,
           "price": 699,
-          "promoCode": "VISIT_5Y_12M_PRO_149(1M)_DC50%(2M"
+          "promoCode": "VISIT_5Y_12M_PRO_149(1M)_DC50%(2M)"
         },
         {
           "policy": "5Y_Self",
           "term": 12,
           "price": 599,
-          "promoCode": "SELF_5Y_12M_PRO_149(1M)_DC50%(2M"
+          "promoCode": "SELF_5Y_12M_PRO_149(1M)_DC50%(2M)"
         },
         {
           "policy": "6Y_Visit",
           "term": 12,
           "price": 599,
-          "promoCode": "VISIT_6Y_12M_PRO_149(1M)_DC50%(2M"
+          "promoCode": "VISIT_6Y_12M_PRO_149(1M)_DC50%(2M)"
         },
         {
           "policy": "6Y_Self",
           "term": 12,
           "price": 549,
-          "promoCode": "SELF_6Y_12M_PRO_149(1M)_DC50%(2M"
+          "promoCode": "SELF_6Y_12M_PRO_149(1M)_DC50%(2M)"
         }
       ],
       "description": "FV1413S4M.AMBPETH ราคา 149.- (1 รอบบิลแรก)\n5Y_Self ทุกๆ 12 เดือน 599 1,050 SELF_5Y_12M_PRO_149(1M)_DC50%(2M)\nซัก : 13 กก. • รอบบิลที่ 2-3 (299)\nรับประกันมอเตอร์ 10 ปี"
@@ -411,7 +411,7 @@
           "policy": "5Y_Self",
           "term": 12,
           "price": 649,
-          "promoCode": "SELF_5Y_12M_PRO_149(1M"
+          "promoCode": "SELF_5Y_12M_PRO_149(1M)"
         }
       ],
       "description": "A9T-CORE.DCGPETH\nAll in one Tower.\nBattery = 2 5Y_Self ทุกๆ 12 เดือน 649 500 SELF_5Y_12M_PRO_149(1M)\nสี : Calming Green"
@@ -435,7 +435,7 @@
           "policy": "5Y_Self",
           "term": 12,
           "price": 549,
-          "promoCode": "SELF_5Y_12M_PRO_149(1M"
+          "promoCode": "SELF_5Y_12M_PRO_149(1M)"
         }
       ],
       "description": "A9T-LITE.DCGPETH"
@@ -459,7 +459,7 @@
           "policy": "5Y_Self",
           "term": 12,
           "price": 749,
-          "promoCode": "SELF_5Y_12M_PRO_149(1M)_DC50%(2M"
+          "promoCode": "SELF_5Y_12M_PRO_149(1M)_DC50%(2M)"
         }
       ],
       "description": "A9T-ULTRA.DCBPETH\nรับประกันมอเตอร์ 10 ปี • ราคา 149.- (1 รอบบิลแรก)\n5Y_Self ทุกๆ 12 เดือน 749 1,350 SELF_5Y_12M_PRO_149(1M)_DC50%(2M)\nBattery = 2 •\nสี : Calming Beige"
@@ -483,13 +483,13 @@
           "policy": "5Y_Visit",
           "term": 6,
           "price": 1049,
-          "promoCode": "VISIT_5Y_6M_PRO_149(1M)_DC50%(7M"
+          "promoCode": "VISIT_5Y_6M_PRO_149(1M)_DC50%(7M)"
         },
         {
           "policy": "5Y_Visit",
           "term": 12,
           "price": 949,
-          "promoCode": "VISIT_5Y_12M_PRO_149(1M)_DC50%(7M"
+          "promoCode": "VISIT_5Y_12M_PRO_149(1M)_DC50%(7M)"
         }
       ],
       "description": "11.942 Btu • ราคา 149.- (1 รอบบิลแรก)\n5Y_Visit ทุกๆ 6 เดือน 1,049 4,575 VISIT_5Y_6M_PRO_149(1M)_DC50%(7M)\nART13A.SR1\nขนาดตัวเครื่องภายในอาคารรอบบิลที่ 9-60 (1,049)\n(กว้างxสูงxลึก(มม.)\n895x307x235\n11.942Btu ขนาดตัวเครื่องภายนอกอาคาร\n770x545x288\nประหยัดไฟเบอร์ 5 ★★★★★ • รอบบิลที่ 1 (149)\nLG ARTCOOL AI • ราคา 149.- (1 รอบบิลแรก)\n5Y_Visit ทุกๆ 12 เดือน 949 4,125 VISIT_5Y_12M_PRO_149(1M)_DC50%(7M)",
@@ -525,7 +525,7 @@
           "policy": "5Y_Visit",
           "term": 12,
           "price": 1149,
-          "promoCode": "VISIT_5Y_12M_PRO_149(1M)_DC50%(7M"
+          "promoCode": "VISIT_5Y_12M_PRO_149(1M)_DC50%(7M)"
         }
       ],
       "description": "5Y_Visit ทุกๆ 6 เดือน 1,249 5,475\n18,084Btu\nART18A.SR1\nขนาดตัวเครื่องภายในอาคาร\n(กว้างxสูงxลึก(มม.)\n935x307x235\nขนาดตัวเครื่องภายนอกอาคาร\n870x650x330\nLG ARTCOOL AI ประหยัดไฟเบอร์ 5 ★★★ 5Y_Visit ทุกๆ 12 เดือน 1,149 5,025 VISIT_5Y_12M_PRO_149(1M)_DC50%(7M)",
@@ -555,7 +555,7 @@
           "policy": "5Y_Visit",
           "term": 6,
           "price": 499,
-          "promoCode": "VISIT_5Y_6M00"
+          "promoCode": "VISIT_5Y_6M"
         },
         {
           "policy": "5Y_Visit",
@@ -915,7 +915,7 @@
           "policy": "5Y_Visit",
           "term": 6,
           "price": 899,
-          "promoCode": "VISIT_5Y_6M_PRO_149(1M)_DC50%(7M"
+          "promoCode": "VISIT_5Y_6M_PRO_149(1M)_DC50%(7M)"
         },
         {
           "policy": "5Y_Visit",
@@ -951,13 +951,13 @@
           "policy": "5Y_Visit",
           "term": 6,
           "price": 949,
-          "promoCode": "VISIT_5Y_6M_PRO_149(1M)_DC50%(7M"
+          "promoCode": "VISIT_5Y_6M_PRO_149(1M)_DC50%(7M)"
         },
         {
           "policy": "5Y_Visit",
           "term": 12,
           "price": 849,
-          "promoCode": "VISIT_5Y_12M_PRO_149(1M)_DC50%(7M"
+          "promoCode": "VISIT_5Y_12M_PRO_149(1M)_DC50%(7M)"
         }
       ],
       "description": "12,000Btu 5Y_Visit ทุกๆ 6 เดือน 949 4,125 VISIT_5Y_6M_PRO_149(1M)_DC50%(7M)\nSAQ13A • รอบบิลที่ 2-8 (474)\nขนาดตัวเครื่องภายในอาคาร • ลด 50% 7 เดือน (รอบบิลที่ 2-8)\n(กว้างxสูงxลึก(มม.) •\n895x307x235\nขนาดตัวเครื่องภายนอกอาคาร\n770x545x288 • รอบบิลที่ 1 (149)\nLG DUALCOOL AI ประหยัดไฟเบอร์ 5 ★★★★★ • ราคา 149.- (1 รอบบิลแรก)\n5Y_Visit ทุกๆ 12 เดือน 849 3,675 VISIT_5Y_12M_PRO_149(1M)_DC50%(7M)",
@@ -987,13 +987,13 @@
           "policy": "5Y_Visit",
           "term": 6,
           "price": 1149,
-          "promoCode": "VISIT_5Y_6M_PRO_149(1M)_DC50%(7M"
+          "promoCode": "VISIT_5Y_6M_PRO_149(1M)_DC50%(7M)"
         },
         {
           "policy": "5Y_Visit",
           "term": 12,
           "price": 1049,
-          "promoCode": "VISIT_5Y_12M_PRO_149(1M)_DC50%(7M"
+          "promoCode": "VISIT_5Y_12M_PRO_149(1M)_DC50%(7M)"
         }
       ],
       "description": "18,000Btu\n5Y_Visit ทุกๆ 6 เดือน 1.149 5,025 VISIT_5Y_6M_PRO_149(1M)_DC50%(7M)\nSAQ18B.\nขนาดตัวเครื่องภายในอาคาร • รอบบิลที่ 9-60 (1,149)\n(กว้างxสูงxลึก(มม.)\n1050x307x235\nขนาดตัวเครื่องภายนอกอาคาร\n9200Btu • รอบบิลที่ 1 (149)\n870x650x330\nLG DUALCOOL AI\nประหยัดไฟเบอร์ 5 ★★★★ 5Y_Visit ทุกๆ 12 เดือน 1,049 รอบบิลที่ 2-8 (524) 4,575 VISIT_5Y_12M_PRO_149(1M)_DC50%(7M)",
@@ -1023,13 +1023,13 @@
           "policy": "5Y_Visit",
           "term": 6,
           "price": 1299,
-          "promoCode": "VISIT_5Y_6M_PRO_149(1M)_DC50%(7M"
+          "promoCode": "VISIT_5Y_6M_PRO_149(1M)_DC50%(7M)"
         },
         {
           "policy": "5Y_Visit",
           "term": 12,
           "price": 1199,
-          "promoCode": "VISIT_5Y_12M_PRO_149(1M)_DC50%(7M"
+          "promoCode": "VISIT_5Y_12M_PRO_149(1M)_DC50%(7M)"
         }
       ],
       "description": "24,000Btu • ราคา 149.- (1 รอบบิลแรก)\n5Y_Visit ทุกๆ 6 เดือน 1,299 5,700 VISIT_5Y_6M_PRO_149(1M)_DC50%(7M)\nSAQ24B. • รอบบิลที่ 2-8 (649)\nลด 50% 7 เดือน (รอบบิลที่ 2-8)\nขนาดตัวเครื่องภายในอาคาร •\n(กว้างxสูงxลึก(มม.)\n1050x307x235\nขนาดตัวเครื่องภายนอกอาคาร\n870x650x330 • รอบบิลที่ 1 (149)\nLG DUALCOOL AI\nราคา 149.- (1 รอบบิลแรก)\nประหยัดไฟเบอร์ 5 ★★★ •\n5Y_Visit ทุกๆ 12 เดือน 1,199 5,250 VISIT_5Y_12M_PRO_149(1M)_DC50%(7M)",
@@ -1059,7 +1059,7 @@
           "policy": "5Y_Visit",
           "term": 6,
           "price": 699,
-          "promoCode": "VISIT_5Y_6M_PRO_149(1M)_DC50%(7M"
+          "promoCode": "VISIT_5Y_6M_PRO_149(1M)_DC50%(7M)"
         },
         {
           "policy": "5Y_Visit",
@@ -1095,13 +1095,13 @@
           "policy": "5Y_Visit",
           "term": 6,
           "price": 799,
-          "promoCode": "VISIT_5Y_6M_PRO_149(1M)_DC50%(7M"
+          "promoCode": "VISIT_5Y_6M_PRO_149(1M)_DC50%(7M)"
         },
         {
           "policy": "5Y_Visit",
           "term": 12,
           "price": 699,
-          "promoCode": "VISIT_5Y_12M_PRO_149(1M)_DC50%(7M"
+          "promoCode": "VISIT_5Y_12M_PRO_149(1M)_DC50%(7M)"
         }
       ],
       "description": "5Y_Visit ทุกๆ 6 เดือน 799 3,450 VISIT_5Y_6M_PRO_149(1M)_DC50%(7M)\n920012,200 BtuBtu • รอบบิลที่ 2-8 (399)\nSIQ13B\nขนาดตัวเครื่องภายในอาคารรอบบิลที่ 9-60 (799)\n(กว้างxสูงxลึก(มม.)\n799x307x235\nขนาดตัวเครื่องภายนอกอาคาร\n717x495x230\nประหยัดไฟเบอร์ 5 ★ 5Y_Visit ทุกๆ 12 เดือน 699 รอบบิลที่ 2-8 (349) 3000 VISIT_5Y_12M_PRO_149(1M)_DC50%(7M)\nLG DUALCOOL AI",
@@ -1131,13 +1131,13 @@
           "policy": "5Y_Visit",
           "term": 6,
           "price": 999,
-          "promoCode": "VISIT_5Y_6M_PRO_149(1M)_DC50%(7M"
+          "promoCode": "VISIT_5Y_6M_PRO_149(1M)_DC50%(7M)"
         },
         {
           "policy": "5Y_Visit",
           "term": 12,
           "price": 899,
-          "promoCode": "VISIT_5Y_12M_PRO_149(1M)_DC50%(7M"
+          "promoCode": "VISIT_5Y_12M_PRO_149(1M)_DC50%(7M)"
         }
       ],
       "description": "5Y_Visit ทุกๆ 6 เดือน 999 4,350 VISIT_5Y_6M_PRO_149(1M)_DC50%(7M)\n18,000Btu • รอบบิลที่ 2-8 (499)\nSIQ18B\nขนาดตัวเครื่องภายในอาคาร • รอบบิลที่ 9-60 (999)\n(กว้างxสูงxลึก(มม.)\n895x307x235\nขนาดตัวเครื่องภายนอกอาคาร\n770x545x288\nประหยัดไฟเบอร์ 5 ★\nLG DUALCOOL AI 5Y_Visit ทุกๆ 12 เดือน 899 3,900 VISIT_5Y_12M_PRO_149(1M)_DC50%(7M)",
@@ -1167,13 +1167,13 @@
           "policy": "5Y_Visit",
           "term": 6,
           "price": 1199,
-          "promoCode": "VISIT_5Y_6M_PRO_149(1M)_DC50%(7M"
+          "promoCode": "VISIT_5Y_6M_PRO_149(1M)_DC50%(7M)"
         },
         {
           "policy": "5Y_Visit",
           "term": 12,
           "price": 1099,
-          "promoCode": "VISIT_5Y_12M_PRO_149(1M)_DC50%(7M"
+          "promoCode": "VISIT_5Y_12M_PRO_149(1M)_DC50%(7M)"
         }
       ],
       "description": "24,000Btu\n5Y_Visit ทุกๆ 6 เดือน 1,199 5.250 VISIT_5Y_6M_PRO_149(1M)_DC50%(7M)\nSIQ24B\nขนาดตัวเครื่องภายในอาคาร\n(กว้างxสูงxลึก(มม.)\n895x307x235\nขนาดตัวเครื่องภายนอกอาคาร\nLG DUALCOOL AI 870x650x330 • รอบบิลที่ 1 (149)\nราคา 149.- (1 รอบบิลแรก)\nประหยัดไฟเบอร์ 5 ★ •\n5Y_Visit ทุกๆ 12 เดือน 1,099 4,800 VISIT_5Y_12M_PRO_149(1M)_DC50%(7M)",
@@ -1203,13 +1203,13 @@
           "policy": "5Y Visit",
           "term": 12,
           "price": 1149,
-          "promoCode": "VISIT_5Y_12M_PRO_149(1M)_DC50%(2M"
+          "promoCode": "VISIT_5Y_12M_PRO_149(1M)_DC50%(2M)"
         },
         {
           "policy": "5Y Self",
           "term": 12,
           "price": 1099,
-          "promoCode": "SELF_5Y_12M_PRO_149(1M)_DC50%(2M"
+          "promoCode": "SELF_5Y_12M_PRO_149(1M)_DC50%(2M)"
         }
       ],
       "description": "AS10GDBY0.ABAE\n(Alpha Pet)\n5Y Self ทุกๆ 12 เดือน 2,050 SELF_5Y_12M_PRO_149(1M)_DC50%(2M)\n1,099 • รอบบิลที่ 2-3 (549)\nพื้นที่การใช้งาน 104 ตร.ม.\nH13 HEPA/กาจัดกลิ่น • รอบบิลที่ 4 ถึง 60 (1,099)\nระบบ Baby-Care\n*ไม่มีรีโมท\nขนาดผลิตภัณฑ์ 2,250 VISIT_5Y_6M_PRO_149(1M)_DC50%(2M)\n1,199 รอบบิลที่ 2-3 (599)\n5Y Visit ทุกๆ 6 เดือน •\nกว้างxสูงxลึก (มม.) • ลด 50% 2 เดือน (รอบบิลที่ 2-3)\n377 x11002x 377\n*ไม่มีรีโมท"
@@ -1233,13 +1233,13 @@
           "policy": "5Y_Visit",
           "term": 12,
           "price": 599,
-          "promoCode": "VISIT_5Y_12M_PRO_149(1M)_DC50%(2M"
+          "promoCode": "VISIT_5Y_12M_PRO_149(1M)_DC50%(2M)"
         },
         {
           "policy": "5Y_Self",
           "term": 12,
           "price": 549,
-          "promoCode": "SELF_5Y_12M_PRO_149(1M)_DC50%(2M"
+          "promoCode": "SELF_5Y_12M_PRO_149(1M)_DC50%(2M)"
         }
       ],
       "description": "AS25GCBY0.ABAE • ราคา 149.- (1 รอบบิลแรก)\n5Y_Visit ทุกๆ 12 เดือน 599 1,050 VISIT_5Y_12M_PRO_149(1M)_DC50%(2M)\nLG PuriCare AeroCat\nTower\nพื้นที่การใช้งาน 24.8 ตร.ม."
@@ -1293,13 +1293,13 @@
           "policy": "5Y Visit",
           "term": 12,
           "price": 449,
-          "promoCode": "VISIT_5Y_12M_PRO_149(1M)_DC50%(2M"
+          "promoCode": "VISIT_5Y_12M_PRO_149(1M)_DC50%(2M)"
         },
         {
           "policy": "5Y Self",
           "term": 12,
           "price": 399,
-          "promoCode": "SELF_5Y_12M_PRO_149(1M)_DC50%(2M"
+          "promoCode": "SELF_5Y_12M_PRO_149(1M)_DC50%(2M)"
         },
         {
           "policy": "5Y Visit",
@@ -1311,7 +1311,7 @@
           "policy": "5Y Self",
           "term": 6,
           "price": 449,
-          "promoCode": "SELF_5Y_6M_PRO_149(1M)_DC50%(2M"
+          "promoCode": "SELF_5Y_6M_PRO_149(1M)_DC50%(2M)"
         }
       ],
       "description": "AS60GHWG0.ABAE • รอบบิลที่ 1 (149)\n(Hit) 5Y Self ทุกๆ 12 เดือน 650 SELF_5Y_12M_PRO_149(1M)_DC50%(2M)\n399 • รอบบิลที่ 2-3 (199)\nพื้นที่การใช้งาน 61 ตร.ม."
@@ -1335,13 +1335,13 @@
           "policy": "5Y Visit",
           "term": 12,
           "price": 749,
-          "promoCode": "VISIT_5Y_12M_PRO_149(1M)_DC50%(2M"
+          "promoCode": "VISIT_5Y_12M_PRO_149(1M)_DC50%(2M)"
         },
         {
           "policy": "5Y Self",
           "term": 12,
           "price": 699,
-          "promoCode": "SELF_5Y_12M_PRO_149(1M)_DC50%(2M"
+          "promoCode": "SELF_5Y_12M_PRO_149(1M)_DC50%(2M)"
         },
         {
           "policy": "5Y Visit",
@@ -1435,13 +1435,13 @@
           "policy": "5Y Visit",
           "term": 12,
           "price": 899,
-          "promoCode": "VISIT_5Y_12M_PRO_149(1M)_DC50%(7M"
+          "promoCode": "VISIT_5Y_12M_PRO_149(1M)_DC50%(7M)"
         },
         {
           "policy": "5Y Self",
           "term": 12,
           "price": 849,
-          "promoCode": "SELF_5Y_12M_PRO_149(1M)_DC50%(7M"
+          "promoCode": "SELF_5Y_12M_PRO_149(1M)_DC50%(7M)"
         }
       ],
       "description": "5Y Visit ทุกๆ 12 เดือน 3,900 VISIT_5Y_12M_PRO_149(1M)_DC50%(7M)\n899 • รอบบิลที่ 2-8 (449)\nDFC335HM.ABMPETH\nราคา 149.- (1 รอบบิลแรก)\nสีดา WI-FI control •\n5Y Self ทุกๆ 12 เดือน 3,675 SELF_5Y_12M_PRO_149(1M)_DC50%(7M)\n849 • รอบบิลที่ 2-8 (424)\nFunction Auto Open Dry"
@@ -1493,19 +1493,19 @@
           "policy": "5Y_Visit",
           "term": 12,
           "price": 849,
-          "promoCode": "VISIT_5Y_12M_PRO_149(1M)_DC50%(7M"
+          "promoCode": "VISIT_5Y_12M_PRO_149(1M)_DC50%(7M)"
         },
         {
           "policy": "6Y_Visit",
           "term": 12,
           "price": 749,
-          "promoCode": "VISIT_6Y_12M_PRO_149(1M)_DC50%(7M"
+          "promoCode": "VISIT_6Y_12M_PRO_149(1M)_DC50%(7M)"
         },
         {
           "policy": "6Y_Self",
           "term": 12,
           "price": 649,
-          "promoCode": "SELF_6Y_12M_PRO_149(1M)_DC50%(7M"
+          "promoCode": "SELF_6Y_12M_PRO_149(1M)_DC50%(7M)"
         }
       ],
       "description": "RV10VHP2B.BBLPETH •\n749 3,225 SELF_5Y_12M_PRO_149(1M)_DC50%(7M)\nSIZE : 10 KG 5Y_Self ทุกๆ 12 เดือน • รอบบิลที่ 2-8 (374)\nรับประกันมอเตอร์ 10 ปี"
@@ -1529,13 +1529,13 @@
           "policy": "5Y Self",
           "term": 12,
           "price": 899,
-          "promoCode": "SELF_5Y_12M_PRO_149(1M)_DC50%(7M"
+          "promoCode": "SELF_5Y_12M_PRO_149(1M)_DC50%(7M)"
         },
         {
           "policy": "6Y Self",
           "term": 12,
           "price": 799,
-          "promoCode": "SELF_6Y_12M_PRO_149(1M)_DC50%(7M"
+          "promoCode": "SELF_6Y_12M_PRO_149(1M)_DC50%(7M)"
         }
       ],
       "description": "5Y Self ทุกๆ 12 เดือน 3,900 SELF_5Y_12M_PRO_149(1M)_DC50%(7M)\n899 • รอบบิลที่ 2-8 (449)\nS3MFC.ALBPETH"
@@ -1589,7 +1589,7 @@
           "policy": "5Y_Visit",
           "term": 24,
           "price": 599,
-          "promoCode": "VISIT_5Y_24M_PRO_149(1M)_DC50%(2M"
+          "promoCode": "VISIT_5Y_24M_PRO_149(1M)_DC50%(2M)"
         }
       ],
       "description": "GN-F452PQAK.AEPPLMT\n5Y_Visit ทุกๆ 24 เดือน 599 1,050 VISIT_5Y_24M_PRO_149(1M)_DC50%(2M)\n(Top Freezer) • รอบบิลที่ 2-3 (299)\nSIZE : 16.2 คิว/ 459 ลิตร"
@@ -1613,19 +1613,19 @@
           "policy": "6Y_Visit",
           "term": 24,
           "price": 499,
-          "promoCode": "VISIT_6Y_24M_PRO_149(1M)_DC50%(2M"
+          "promoCode": "VISIT_6Y_24M_PRO_149(1M)_DC50%(2M)"
         },
         {
           "policy": "5Y_Visit",
           "term": 24,
           "price": 649,
-          "promoCode": "VISIT_5Y_24M_PRO_149(1M)_DC50%(2M"
+          "promoCode": "VISIT_5Y_24M_PRO_149(1M)_DC50%(2M)"
         },
         {
           "policy": "6Y_Visit",
           "term": 24,
           "price": 549,
-          "promoCode": "VISIT_6Y_24M_PRO_149(1M)_DC50%(2M"
+          "promoCode": "VISIT_6Y_24M_PRO_149(1M)_DC50%(2M)"
         }
       ],
       "description": "GN-V389FQEF.AEPPLMT ราคา 149.- (1 รอบบิลแรก)\n5Y_Visit ทุกๆ 24 เดือน 649 1,150 VISIT_5Y_24M_PRO_149(1M)_DC50%(2M)\n(Bottom Freezer) •\n2 Doors Instaview\nSIZE : 12 คิว/ 340 ลิตร\nขนาดผลิตภัณฑ์ • รอบบิลที่ 1 (149)\n(กว้างxสูงxลึก, มม.)\n6Y_Visit ทุกๆ 24 เดือน 549 950 VISIT_6Y_24M_PRO_149(1M)_DC50%(2M)\n600 x 1720 x 720"
@@ -1649,13 +1649,13 @@
           "policy": "5Y_Visit",
           "term": 24,
           "price": 799,
-          "promoCode": "VISIT_5Y_24M_PRO_149(1M)_DC50%(2M"
+          "promoCode": "VISIT_5Y_24M_PRO_149(1M)_DC50%(2M)"
         },
         {
           "policy": "6Y_Visit",
           "term": 24,
           "price": 699,
-          "promoCode": "VISIT_6Y_24M_PRO_149(1M)_DC50%(2M"
+          "promoCode": "VISIT_6Y_24M_PRO_149(1M)_DC50%(2M)"
         }
       ],
       "description": "NEW\n5Y_Visit ทุกๆ 24 เดือน 799 1,450 VISIT_5Y_24M_PRO_149(1M)_DC50%(2M)\nGC-B48FPGAM.ADBPLMT • รอบบิลที่ 2-3 (399)\n(Multi Door)\nSmart Inverter Compressor"
@@ -1679,7 +1679,7 @@
           "policy": "5Y_Visit",
           "term": 24,
           "price": 1349,
-          "promoCode": "VISIT_5Y_24M_PRO_149(1M)_DC50%(7M"
+          "promoCode": "VISIT_5Y_24M_PRO_149(1M)_DC50%(7M)"
         }
       ],
       "description": "GC-G24FFQKB.AEEPLM1 • รอบบิลที่ 1 (149)\nราคา 149.- (1 รอบบิลแรก)\n(Multi Door) •\n5Y_Visit ทุกๆ 24 เดือน 1,349 5,925 VISIT_5Y_24M_PRO_149(1M)_DC50%(7M)\nSmart Inverter Compressor\n(I&W Dispenser)\nสี : เบจ\nSIZE : 22.5 คิว/ 637 ลิตรราคา 149.- (1 รอบบิลแรก)\nขนาดผลิตภัณฑ์ 6Y_Visit ทุกๆ 24 เดือน 1,149 รอบบิลที่ 2-8 (574) 5,025 VISIT_6Y_24M_PRO_149(1M)_DC50%(7M)\n(กว้างxสูงxลึก, มม.) • ลด 50% 7 เดือน (รอบบิลที่ 2-8)\n914x 1,792 x 733 • รอบบิลที่ 9-72 (1,149)"
@@ -1727,19 +1727,19 @@
           "policy": "6Y_Visit",
           "term": 24,
           "price": 1149,
-          "promoCode": "VISIT_6Y_24M_PRO_149(1M)_DC50%(7M"
+          "promoCode": "VISIT_6Y_24M_PRO_149(1M)_DC50%(7M)"
         },
         {
           "policy": "5Y_Visit",
           "term": 24,
           "price": 949,
-          "promoCode": "VISIT_5Y_24M_PRO_149(1M)_DC50%(2M"
+          "promoCode": "VISIT_5Y_24M_PRO_149(1M)_DC50%(2M)"
         },
         {
           "policy": "6Y_Visit",
           "term": 24,
           "price": 799,
-          "promoCode": "VISIT_6Y_24M_PRO_149(1M)_DC50%(2M"
+          "promoCode": "VISIT_6Y_24M_PRO_149(1M)_DC50%(2M)"
         }
       ],
       "description": "GC-V22FFQMB.AEPPLMT 5Y_Visit ทุกๆ 24 เดือน 949 1,750 VISIT_5Y_24M_PRO_149(1M)_DC50%(2M)\n(Multi Door) • ลด 50% 2 เดือน (รอบบิลที่ 2-3)\nSIZE : 18.7 คิว/ 530 ลิตร\nขนาดผลิตภัณฑ์\n(กว้างxสูงxลึก, มม.)\n835x 1787x 730\n6Y_Visit ทุกๆ 24 เดือน 799 1,450 VISIT_6Y_24M_PRO_149(1M)_DC50%(2M)"
@@ -1793,13 +1793,13 @@
           "policy": "5Y_Visit",
           "term": 24,
           "price": 999,
-          "promoCode": "VISIT_5Y_24M_PRO_149(1M"
+          "promoCode": "VISIT_5Y_24M_PRO_149(1M)"
         },
         {
           "policy": "6Y_Visit",
           "term": 24,
           "price": 949,
-          "promoCode": "VISIT_6Y_24M_PRO_149(1M"
+          "promoCode": "VISIT_6Y_24M_PRO_149(1M)"
         }
       ],
       "description": "GV-V25FFGRB.ABMPLMT 5Y_Visit ทุกๆ 24 เดือน 999 850 VISIT_5Y_24M_PRO_149(1M)\n(Multi Door) รอบบิลที่ 2-60 (999)\nSmart Inverter Compressor"
@@ -1853,13 +1853,13 @@
           "policy": "5Y_Visit",
           "term": 24,
           "price": 1049,
-          "promoCode": "VISIT_5Y_24M_PRO_149(1M)_DC50%(2M"
+          "promoCode": "VISIT_5Y_24M_PRO_149(1M)_DC50%(2M)"
         },
         {
           "policy": "6Y_Visit",
           "term": 24,
           "price": 899,
-          "promoCode": "VISIT_6Y_24M_PRO_149(1M)_DC50%(2M"
+          "promoCode": "VISIT_6Y_24M_PRO_149(1M)_DC50%(2M)"
         }
       ],
       "description": "5Y_Visit ทุกๆ 24 เดือน 1,049 1,950 VISIT_5Y_24M_PRO_149(1M)_DC50%(2M)\nGC-J257SQZW.AEPPLMT\n(Side by Side)\nSIZE : 22.4 คิว /635 ลิตร\nขนาดผลิตภัณฑ์รอบบิลที่ 1 (149)\nราคา 149.- (1 รอบบิลแรก)\n(กว้างxสูงxลึก, มม.) •\n6Y_Visit ทุกๆ 24 เดือน 899 1,650 VISIT_6Y_24M_PRO_149(1M)_DC50%(2M)\n913 x 1790 x 735"
@@ -1919,13 +1919,13 @@
           "policy": "5Y_Visit",
           "term": 24,
           "price": 849,
-          "promoCode": "VISIT_5Y_24M_PRO_149(1M"
+          "promoCode": "VISIT_5Y_24M_PRO_149(1M)"
         },
         {
           "policy": "6Y_Visit",
           "term": 24,
           "price": 749,
-          "promoCode": "VISIT_6Y_24M_PRO_149(1M"
+          "promoCode": "VISIT_6Y_24M_PRO_149(1M)"
         }
       ],
       "description": "GC-L257SFZW.APYPLMT • รอบบิลที่ 1 (149)\n5Y_Visit ทุกๆ 24 เดือน 849 700 VISIT_5Y_24M_PRO_149(1M)\nราคา 149.- (1 รอบบิลแรก)\n(Side by Side)\nSIZE : 22.4 คิว/ 635 ลิตร"
@@ -1949,13 +1949,13 @@
           "policy": "5Y_Visit",
           "term": 24,
           "price": 1249,
-          "promoCode": "VISIT_5Y_24M_PRO_149(1M)_DC50%(7M"
+          "promoCode": "VISIT_5Y_24M_PRO_149(1M)_DC50%(7M)"
         },
         {
           "policy": "6Y_Visit",
           "term": 24,
           "price": 1049,
-          "promoCode": "VISIT_6Y_24M_PRO_149(1M)_DC50%(7M"
+          "promoCode": "VISIT_6Y_24M_PRO_149(1M)_DC50%(7M)"
         }
       ],
       "description": "5Y_Visit ทุกๆ 24 เดือน 1,249 5,475 VISIT_5Y_24M_PRO_149(1M)_DC50%(7M)\nGC-X257CMEW.ATEPLMT ลด 50% 7 เดือน (รอบบิลที่ 2-8)\n(Side by Side) (InstaView) • รอบบิลที่ 9-60 (1,249)"
@@ -2659,25 +2659,25 @@
           "policy": "5Y_Visit",
           "term": 12,
           "price": 1599,
-          "promoCode": "VISIT_5Y_12M_PRO_149(1M)_DC50%(11M"
+          "promoCode": "VISIT_5Y_12M_PRO_149(1M)_DC50%(11M)"
         },
         {
           "policy": "5Y_Self",
           "term": 12,
           "price": 1499,
-          "promoCode": "SELF_5Y_12M_PRO_149(1M)_DC50%(11M"
+          "promoCode": "SELF_5Y_12M_PRO_149(1M)_DC50%(11M)"
         },
         {
           "policy": "6Y_Visit",
           "term": 12,
           "price": 1399,
-          "promoCode": "VISIT_6Y_12M_PRO_149(1M)_DC50%(11M"
+          "promoCode": "VISIT_6Y_12M_PRO_149(1M)_DC50%(11M)"
         },
         {
           "policy": "6Y_Self",
           "term": 12,
           "price": 1299,
-          "promoCode": "SELF_6Y_12M_PRO_149(1M)_DC50%(11M"
+          "promoCode": "SELF_6Y_12M_PRO_149(1M)_DC50%(11M)"
         }
       ],
       "description": "WT1410NHEG.ABGPQTH\nซัก 14 กก./ อบ 10 กก.\n5Y_Self ทุกๆ 12 เดือน 1,499 9,600 SELF_5Y_12M_PRO_149(1M)_DC50%(11M)\nรับประกันมอเตอร์และ • ลด 50% 11 เดือน (รอบบิลที่ 2-12)\nคอมเพรสเซอร์ 10 ปี"
@@ -2701,25 +2701,25 @@
           "policy": "5Y_Visit",
           "term": 12,
           "price": 1999,
-          "promoCode": "VISIT_5Y_12M_PRO_149(1M)_DC50%(11M"
+          "promoCode": "VISIT_5Y_12M_PRO_149(1M)_DC50%(11M)"
         },
         {
           "policy": "5Y_Self",
           "term": 12,
           "price": 1899,
-          "promoCode": "SELF_5Y_12M_PRO_149(1M)_DC50%(11M"
+          "promoCode": "SELF_5Y_12M_PRO_149(1M)_DC50%(11M)"
         },
         {
           "policy": "6Y_Visit",
           "term": 12,
           "price": 1749,
-          "promoCode": "VISIT_6Y_12M_PRO_149(1M)_DC50%(11M"
+          "promoCode": "VISIT_6Y_12M_PRO_149(1M)_DC50%(11M)"
         },
         {
           "policy": "6Y_Self",
           "term": 12,
           "price": 1649,
-          "promoCode": "SELF_6Y_12M_PRO_149(1M)_DC50%(11M"
+          "promoCode": "SELF_6Y_12M_PRO_149(1M)_DC50%(11M)"
         }
       ],
       "description": "WT2116SHEG.ABGPETH รอบบิลที่ 1 (149)\nซัก 21 กก./ อบ 16 กก. • ราคา 149.- (1 รอบบิลแรก)\n5Y_Self ทุกๆ 12 เดือน 1,899 12,200 SELF_5Y_12M_PRO_149(1M)_DC50%(11M)\nรับประกันมอเตอร์และรอบบิลที่ 13-60 (1,899)\nคอมเพรสเซอร์ 10 ปี\nขนาดผลิตภัณฑ์ • ราคา 149.- (1 รอบบิลแรก)\n6Y_Visit ทุกๆ 12 เดือน 1,749 11,225 VISIT_6Y_12M_PRO_149(1M)_DC50%(11M)\n(กว้างxสูงxลึก, มม.)\n700 x 1890 x 770"
@@ -2743,25 +2743,25 @@
           "policy": "5Y_Visit",
           "term": 12,
           "price": 2399,
-          "promoCode": "VISIT_5Y_12M_PRO_149(1M)_DC50%(11M"
+          "promoCode": "VISIT_5Y_12M_PRO_149(1M)_DC50%(11M)"
         },
         {
           "policy": "5Y_Self",
           "term": 12,
           "price": 2199,
-          "promoCode": "SELF_5Y_12M_PRO_149(1M)_DC50%(11M"
+          "promoCode": "SELF_5Y_12M_PRO_149(1M)_DC50%(11M)"
         },
         {
           "policy": "6Y_Visit",
           "term": 12,
           "price": 2199,
-          "promoCode": "VISIT_6Y_12M_PRO_149(1M)_DC50%(11M"
+          "promoCode": "VISIT_6Y_12M_PRO_149(1M)_DC50%(11M)"
         },
         {
           "policy": "6Y_Self",
           "term": 12,
           "price": 1999,
-          "promoCode": "SELF_6Y_12M_PRO_149(1M)_DC50%(11M"
+          "promoCode": "SELF_6Y_12M_PRO_149(1M)_DC50%(11M)"
         }
       ],
       "description": "5Y_Visit ทุกๆ 12 เดือน 2,399 15,450 VISIT_5Y_12M_PRO_149(1M)_DC50%(11M)\nWT2520NHEG.ABGPETH\nซัก 25 กก./ อบ 20 กก. รอบบิลที่ 1 (149)\n5Y_Self ทุกๆ 12 เดือน 2,199 14,150 SELF_5Y_12M_PRO_149(1M)_DC50%(11M)\nรับประกันมอเตอร์และ\nคอมเพรสเซอร์ 10 ปีรอบบิลที่ 13-60 (2,199)"
