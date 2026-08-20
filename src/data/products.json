@@ -32,13 +32,13 @@
         {
           "policy": "7Y_Visit",
           "term": 6,
-          "price": 449,
+          "price": 549,
           "promoCode": "VISIT_7Y_6M_PRO_149(1M)_DC50%(11M)"
         },
         {
           "policy": "7Y_Self",
           "term": 6,
-          "price": 399,
+          "price": 499,
           "promoCode": "SELF_7Y_6M_PRO_149(1M)_DC50%(11M)"
         }
       ],
@@ -1202,13 +1202,13 @@
         {
           "policy": "5Y_Visit",
           "term": 12,
-          "price": 1149,
+          "price": 1299,
           "promoCode": "VISIT_5Y_12M_PRO_149(1M)_DC50%(2M)"
         },
         {
           "policy": "5Y_Self",
           "term": 12,
-          "price": 1099,
+          "price": 1249,
           "promoCode": "SELF_5Y_12M_PRO_149(1M)_DC50%(2M)"
         }
       ],
@@ -1262,13 +1262,13 @@
         {
           "policy": "5Y_Visit",
           "term": 6,
-          "price": 249,
+          "price": 349,
           "promoCode": "VISIT_5Y_6M"
         },
         {
           "policy": "5Y_Self",
           "term": 6,
-          "price": 199,
+          "price": 299,
           "promoCode": "SELF_5Y_6M"
         }
       ],
@@ -1292,25 +1292,25 @@
         {
           "policy": "5Y_Visit",
           "term": 12,
-          "price": 449,
+          "price": 549,
           "promoCode": "VISIT_5Y_12M_PRO_149(1M)_DC50%(2M)"
         },
         {
           "policy": "5Y_Self",
           "term": 12,
-          "price": 399,
+          "price": 499,
           "promoCode": "SELF_5Y_12M_PRO_149(1M)_DC50%(2M)"
         },
         {
           "policy": "5Y_Visit",
           "term": 6,
-          "price": 499,
+          "price": 599,
           "promoCode": "VISIT_5Y_6M_PRO_149(1M)_DC50%(2M)"
         },
         {
           "policy": "5Y_Self",
           "term": 6,
-          "price": 449,
+          "price": 549,
           "promoCode": "SELF_5Y_6M_PRO_149(1M)_DC50%(2M)"
         }
       ],
@@ -1334,19 +1334,19 @@
         {
           "policy": "5Y_Visit",
           "term": 12,
-          "price": 749,
+          "price": 849,
           "promoCode": "VISIT_5Y_12M_PRO_149(1M)_DC50%(2M)"
         },
         {
           "policy": "5Y_Self",
           "term": 12,
-          "price": 699,
+          "price": 799,
           "promoCode": "SELF_5Y_12M_PRO_149(1M)_DC50%(2M)"
         },
         {
           "policy": "5Y_Visit",
           "term": 6,
-          "price": 799,
+          "price": 899,
           "promoCode": "VISIT_5Y_6M_PRO_149(1M)_DC50%(2M)"
         }
       ],
@@ -1404,13 +1404,13 @@
         {
           "policy": "5Y_Visit",
           "term": 12,
-          "price": 449,
+          "price": 549,
           "promoCode": "VISIT_5Y_12M_DC50%3M_AUG"
         },
         {
           "policy": "5Y_Self",
           "term": 12,
-          "price": 399,
+          "price": 499,
           "promoCode": "SELF_5Y_12M_DC50%3M_AUG"
         }
       ],
@@ -1678,7 +1678,7 @@
         {
           "policy": "5Y_Visit",
           "term": 24,
-          "price": 1349,
+          "price": 1299,
           "promoCode": "VISIT_5Y_24M_PRO_149(1M)_DC50%(7M)"
         }
       ],
@@ -1702,7 +1702,7 @@
         {
           "policy": "5Y_Visit",
           "term": 6,
-          "price": 1249,
+          "price": 1549,
           "promoCode": "VISIT_5Y_6M_PRO_149(1M)_DC50%(2M)_FREE_GIFT_"
         }
       ],
@@ -1942,13 +1942,13 @@
         {
           "policy": "5Y_Visit",
           "term": 24,
-          "price": 1249,
+          "price": 1199,
           "promoCode": "VISIT_5Y_24M_PRO_149(1M)_DC50%(7M)"
         },
         {
           "policy": "6Y_Visit",
           "term": 24,
-          "price": 1049,
+          "price": 999,
           "promoCode": "VISIT_6Y_24M_PRO_149(1M)_DC50%(7M)"
         }
       ],
@@ -1972,13 +1972,13 @@
         {
           "policy": "5Y_Visit",
           "term": 6,
-          "price": 1449,
+          "price": 1349,
           "promoCode": "VISIT_5Y_6M_PRO_149(1M)_ADD_"
         },
         {
           "policy": "6Y_Visit",
           "term": 6,
-          "price": 1249,
+          "price": 1149,
           "promoCode": "VISIT_6Y_6M_PRO_149(1M)_ADD_"
         }
       ],
