@@ -65,9 +65,9 @@ const planCards = (() => {
     const [yr, type] = policy.split('_');
     const svc =
       type === 'Visit'
-        ? 'ช่างเข้าบริการถึงบ้าน'
+        ? 'ผู้เชี่ยวชาญจากแอลจีเข้าบริการถึงบ้าน'
         : type === 'Self'
-          ? 'เปลี่ยนอะไหล่ด้วยตนเอง'
+          ? 'บำรุงรักษาด้วยตัวเอง'
           : type || '';
     return { yr: yr.replace('Y', ' ปี'), svc };
   };
@@ -85,7 +85,7 @@ const planCards = (() => {
       const dc = code.match(/DC(\d+)%\((\d+)M\)?/);
       if (dc) out.push(`ลด ${dc[1]}% นาน ${dc[2]} รอบบิล`);
       const [type] = x.policy.split('_').slice(1);
-      if (x.term) out.push(`${type === 'Visit' ? 'ช่างเข้าบริการ' : 'จัดส่งอะไหล่'}ทุก ${x.term} เดือน`);
+      if (x.term) out.push(`${type === 'Visit' ? 'ผู้เชี่ยวชาญจากแอลจีเข้าบริการ' : 'บำรุงรักษา'}ทุก ${x.term} เดือน`);
     }
     return out.length ? out : null;
   };
