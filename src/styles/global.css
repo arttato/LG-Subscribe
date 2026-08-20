@@ -2132,6 +2132,64 @@ img { max-width: 100%; }
 
 .plan-detail-table tr:last-child td { border-bottom: none; }
 
+.plan-detail-service {
+  margin-top: 16px;
+  padding: 14px 16px;
+  background: linear-gradient(135deg, #f0f7ff 0%, #eef4ff 100%);
+  border: 1px solid rgba(37, 99, 235, 0.15);
+  border-radius: var(--radius);
+}
+
+.plan-detail-service-head {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.88rem;
+  font-weight: 600;
+  color: var(--text);
+  margin-bottom: 10px;
+}
+
+.plan-detail-service-icon {
+  font-size: 1.1rem;
+}
+
+.plan-detail-service-title {
+  font-size: 0.82rem;
+  font-weight: 600;
+  color: var(--text);
+  margin-bottom: 8px;
+}
+
+.plan-detail-service-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  gap: 6px;
+}
+
+.plan-detail-service-list li {
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+  font-size: 0.82rem;
+  color: var(--text);
+  line-height: 1.5;
+  padding: 6px 10px;
+  background: #fff;
+  border: 1px solid rgba(37, 99, 235, 0.08);
+  border-radius: 6px;
+}
+
+.plan-detail-service-list li::before {
+  content: '✓';
+  flex: none;
+  color: #2563eb;
+  font-weight: 700;
+  font-size: 0.75rem;
+}
+
 .plan-detail-notice {
   display: grid;
   gap: 8px;

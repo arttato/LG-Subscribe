@@ -7,6 +7,7 @@ import lgGallery from '../../data/lg-gallery.json';
 import colorGalleries from '../../data/color-galleries.json';
 import pdfSpecs from '../../data/pdf-specs.json';
 import careData from '../../data/care.json';
+import careServices from '../../data/care-services.json';
 import specCards from '../../data/spec-cards.json';
 import { slugify } from '../../lib/utils';
 
@@ -53,6 +54,12 @@ const galleryJson = JSON.stringify({ baseImages: gallery ? gallery.images : [], 
 const care = careData.products.find((s) => s.code === p.code);
 // รูปบริการ: ใช้รูปเฉพาะรุ่น (care.img) ถ้ามี ไม่งั้นใช้หน้าที่ render จาก PDF (care-NN.png)
 const careImg = care && (care.img ? `${base}img/care/${care.img}` : care.page ? `${base}img/care/care-${String(care.page).padStart(2, '0')}.png` : null);
+// ข้อความบริการดูแล (แยกตาม Visit / Self)
+const category = p.category || '';
+const careKey = Object.keys(careServices.services)
+  .filter((k) => category.startsWith(k))
+  .sort((a, b) => b.length - a.length)[0] || category;
+const careItems = careServices.services[careKey] || null;
 
 // ── แผนการชำระเงิน — คำนวณใน frontmatter (JS ล้วน ไม่ผ่าน expression slot ของ Astro) ──
 const planCards = (() => {
@@ -110,7 +117,11 @@ const planCards = (() => {
     const fFrom = rows.length ? rows[rows.length - 1].to + 1 : 1;
     if (fFrom <= total) rows.push({ from: fFrom, to: total, price: x.price, note: 'ราคาปกติ' });
     const sum = rows.reduce((a, r) => a + r.price * (r.to - r.from + 1), 0);
-    return { total, rows, sum };
+    const svcType = (x.policy || '').split('_').slice(1).join('_');
+    const term = x.term || 6;
+    const visitMonths = [];
+    for (let m = term; m <= total; m += term) visitMonths.push(m);
+    return { total, rows, sum, svcType, term, visitMonths };
   };
   const outrightPay = (x) => {
     const dc = (x.promoCode || '').match(/DC(\d+)%/);
@@ -123,15 +134,21 @@ const planCards = (() => {
       pay: fmt(outrightPay(x)),
       promo: decodePromo(x),
     })),
-    monthly: monthly.map((x) => ({
-      head: `${planName(x.policy).yr} · ${planName(x.policy).svc}`,
-      svc: planName(x.policy).svc,
-      yr: planName(x.policy).yr,
-      price: `${fmt(x.price)} บาท/เดือน`,
-      promo: decodePromo(x),
-      schedule: buildSchedule(x),
-      best: x.price === minMonthly,
-    })),
+    monthly: monthly.map((x) => {
+      const svcType = (x.policy || '').split('_').slice(1).join('_');
+      const careList = careItems ? (svcType === 'Visit' ? careItems.visit : careItems.self) : [];
+      return {
+        head: `${planName(x.policy).yr} · ${planName(x.policy).svc}`,
+        svc: planName(x.policy).svc,
+        yr: planName(x.policy).yr,
+        price: `${fmt(x.price)} บาท/เดือน`,
+        promo: decodePromo(x),
+        schedule: buildSchedule(x),
+        best: x.price === minMonthly,
+        careList: careList || [],
+        careTitle: care?.title || null,
+      };
+    }),
   };
 })();
 ---
@@ -281,6 +298,9 @@ const planCards = (() => {
                     data-plan-schedule={JSON.stringify(x.schedule)}
                     data-plan-head={x.head}
                     data-plan-price={x.price}
+                    data-plan-svc={x.svc}
+                    data-plan-care-list={JSON.stringify(x.careList || [])}
+                    data-plan-care-title={x.careTitle || ''}
                     data-plan-promo={JSON.stringify(x.promo || [])}
                     role="button"
                     tabindex="0"
@@ -496,6 +516,35 @@ const planCards = (() => {
             tb.appendChild(tr);
           }
           t.appendChild(tb);
+          // ส่วนการบริการดูแล (ใต้ตารางรอบบิล)
+          const svcSection = document.createElement('div');
+          svcSection.className = 'plan-detail-service';
+          const svcType = s.svcType || '';
+          const svcLabel = svcType === 'Visit' ? 'ผู้เชี่ยวชาญจากแอลจีเข้าบริการถึงบ้าน' : svcType === 'Self' ? 'บำรุงรักษาด้วยตัวเอง' : '';
+          const careList = JSON.parse(card.dataset.planCareList || '[]');
+          const careTitleText = card.dataset.planCareTitle || '';
+          if (svcLabel) {
+            const svcHead = document.createElement('div');
+            svcHead.className = 'plan-detail-service-head';
+            svcHead.innerHTML = '<span class="plan-detail-service-icon">' + (svcType === 'Visit' ? '🔧' : '🛠️') + '</span><span>' + svcLabel + '</span>';
+            svcSection.appendChild(svcHead);
+          }
+          if (careTitleText) {
+            const titleEl = document.createElement('p');
+            titleEl.className = 'plan-detail-service-title';
+            titleEl.textContent = careTitleText;
+            svcSection.appendChild(titleEl);
+          }
+          if (careList.length > 0) {
+            const ul = document.createElement('ul');
+            ul.className = 'plan-detail-service-list';
+            careList.forEach((item) => {
+              const li = document.createElement('li');
+              li.textContent = item;
+              ul.appendChild(li);
+            });
+            svcSection.appendChild(ul);
+          }
           const notice = document.createElement('div');
           notice.className = 'plan-detail-notice';
           const items = [
@@ -520,7 +569,7 @@ const planCards = (() => {
             li.textContent = p;
             promoList.appendChild(li);
           });
-          planBody.replaceChildren(promoList, t, notice);
+          planBody.replaceChildren(promoList, t, svcSection, notice);
         };
         const renderOutright = (price, pay, promo, svc) => {
           const box = document.createElement('div');
