@@ -88,9 +88,18 @@ const POLICY_BLOCK_OVERRIDES = {
       { yMin: 10, yMax: 224, family: 'GC-L257SFZW' }, // 5Y_Visit 849 + 6Y_Visit 749
     ],
   },
-  // ตาราง OBS แอร์ IXY (Sale PDF): รหัสกับแถวราคาอยู่คนละคอลัมน์ แถว 12M ใกล้รุ่นถัดไป
-  // (ค่า y จาก PDF ต้นฉบับ — ถ้า LG เปลี่ยนโครงสร้างหน้าต้องอัปเดต)
+  // ตู้เย็นใน Sale PDF: รหัสสินค้ากับแถวราคาอยู่คนละคอลัมน์ → y-proximity จับผิด
+  // ตู้เย็น Side-by-Side / 2 ประตู (หน้า 2-3)
   'Sale Price8 - Subscription_V3.pdf': {
+    2: [
+      { yMin: 225, yMax: 400, family: 'GC-L257KQKW' }, // 5Y_Visit 749 + 6Y_Visit 649
+      { yMin: 10, yMax: 220, family: 'GV-B25FFGDB' }, // 5Y_Visit 699 + 6Y_Visit 599
+    ],
+    3: [
+      { yMin: 205, yMax: 400, family: 'GC-B257SQYL' }, // 5Y_Visit 549 + 6Y_Visit 449
+      { yMin: 10, yMax: 200, family: 'GN-F392PQAK' }, // 5Y_Visit 449 + 6Y_Visit 349
+    ],
+    // ตาราง OBS แอร์ IXY: รหัสกับแถวราคาอยู่คนละคอลัมน์ แถว 12M ใกล้รุ่นถัดไป
     7: [
       { yMin: 320, yMax: 395, family: 'IXY11A' }, // 5Y_Visit 6M 499 / 12M 399
       { yMin: 215, yMax: 280, family: 'IXY13A' }, // 5Y_Visit 6M 549 / 12M 449
@@ -106,6 +115,20 @@ const POLICY_BLOCK_OVERRIDES = {
 // (ค่า y ของแถว override ใช้ของแถวเดิมที่จับคู่ได้ เพื่อกัน crop รูปเพี้ยน)
 const PRICE_OVERRIDES = {
   'Sale Price8 - Subscription_V3.pdf': {
+    // ตู้เย็น Side-by-Side / 2 ประตู (หน้า 2-3): ราคา 5Y_Visit ถูกจับผิดเป็นราคา 6Y_Visit
+    2: {
+      'GC-L257KQKW.AEPPLMT': [
+        { policy: '5Y_Visit', term: 24, price: 749, promoCode: 'VISIT_5Y_24M' },
+        { policy: '6Y_Visit', term: 24, price: 649, promoCode: 'VISIT_6Y_24M' },
+      ],
+    },
+    3: {
+      'GN-F392PQAK.AEPPLM1': [
+        { policy: '5Y_Visit', term: 24, price: 449, promoCode: 'VISIT_5Y_24M' },
+        { policy: '6Y_Visit', term: 24, price: 349, promoCode: 'VISIT_6Y_24M' },
+      ],
+    },
+    // แอร์ IXY (หน้า 7)
     7: {
       'IXY11A': [
         { policy: '5Y_Visit', term: 6, price: 499, promoCode: 'VISIT_5Y_6M00' },

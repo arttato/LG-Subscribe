@@ -519,7 +519,7 @@
           "policy": "5Y_Visit",
           "term": 6,
           "price": 1249,
-          "promoCode": null
+          "promoCode": "VISIT_5Y_6M_PRO_149(1M)_DC50%(7M)"
         },
         {
           "policy": "5Y_Visit",
@@ -921,7 +921,7 @@
           "policy": "5Y_Visit",
           "term": 12,
           "price": 799,
-          "promoCode": null
+          "promoCode": "VISIT_5Y_12M_PRO_149(1M)_DC50%(7M)"
         }
       ],
       "description": "9,200 Btu SAQ11A 5Y_Visit ทุกๆ 6 เดือน 899 3,900 VISIT_5Y_6M_PRO_149(1M)_DC50%(7M)\nขนาดตัวเครื่องภายในอาคารลด 50% 7 เดือน (รอบบิลที่ 2-8)\n(กว้างxสูงxลึก(มม.) • รอบบิลที่ 9-60 (899)\n895x307x235\nขนาดตัวเครื่องภายนอกอาคาร\n770x545x288\nประหยัดไฟเบอร์ 5 ★★★★★ 5Y_Visit ทุกๆ 12 เดือน 799 3,490\nLG DUALCOOL AI",
@@ -1065,7 +1065,7 @@
           "policy": "5Y_Visit",
           "term": 12,
           "price": 599,
-          "promoCode": null
+          "promoCode": "VISIT_5Y_12M_PRO_149(1M)_DC50%(7M)"
         }
       ],
       "description": "9,200Btu 5Y_Visit ทุกๆ 6 เดือน 699 3,000 VISIT_5Y_6M_PRO_149(1M)_DC50%(7M)\nSIQ11B ลด 50% 7 เดือน (รอบบิลที่ 2-8)\nขนาดตัวเครื่องภายในอาคาร • รอบบิลที่ 9-60 (699)\n(กว้างxสูงxลึก(มม.)\n799x307x235\nขนาดตัวเครื่องภายนอกอาคาร\n717x495x230 ราคา 149.- (1 รอบบิลแรก)\n5Y_Visit ทุกๆ 12 เดือน 599\nประหยัดไฟเบอร์ 5 ★ • รอบบิลที่ 2-8 (299)\nLG DUALCOOL AI 2,550 VISIT_5Y_12M_PRO_149(1M)_DC50%(7M)",
@@ -1197,16 +1197,16 @@
       "pdf": "/pdfs/Price%20list_Aug_V3.pdf",
       "mode": "monthly",
       "price": 1099,
-      "priceFrom": "5Y Self",
+      "priceFrom": "5Y_Self",
       "policies": [
         {
-          "policy": "5Y Visit",
+          "policy": "5Y_Visit",
           "term": 12,
           "price": 1149,
           "promoCode": "VISIT_5Y_12M_PRO_149(1M)_DC50%(2M)"
         },
         {
-          "policy": "5Y Self",
+          "policy": "5Y_Self",
           "term": 12,
           "price": 1099,
           "promoCode": "SELF_5Y_12M_PRO_149(1M)_DC50%(2M)"
@@ -1287,28 +1287,28 @@
       "pdf": "/pdfs/Price%20list_Aug_V3.pdf",
       "mode": "monthly",
       "price": 399,
-      "priceFrom": "5Y Self",
+      "priceFrom": "5Y_Self",
       "policies": [
         {
-          "policy": "5Y Visit",
+          "policy": "5Y_Visit",
           "term": 12,
           "price": 449,
           "promoCode": "VISIT_5Y_12M_PRO_149(1M)_DC50%(2M)"
         },
         {
-          "policy": "5Y Self",
+          "policy": "5Y_Self",
           "term": 12,
           "price": 399,
           "promoCode": "SELF_5Y_12M_PRO_149(1M)_DC50%(2M)"
         },
         {
-          "policy": "5Y Visit",
+          "policy": "5Y_Visit",
           "term": 6,
           "price": 499,
-          "promoCode": null
+          "promoCode": "VISIT_5Y_6M_PRO_149(1M)_DC50%(2M)"
         },
         {
-          "policy": "5Y Self",
+          "policy": "5Y_Self",
           "term": 6,
           "price": 449,
           "promoCode": "SELF_5Y_6M_PRO_149(1M)_DC50%(2M)"
@@ -1329,25 +1329,25 @@
       "pdf": "/pdfs/Price%20list_Aug_V3.pdf",
       "mode": "monthly",
       "price": 699,
-      "priceFrom": "5Y Self",
+      "priceFrom": "5Y_Self",
       "policies": [
         {
-          "policy": "5Y Visit",
+          "policy": "5Y_Visit",
           "term": 12,
           "price": 749,
           "promoCode": "VISIT_5Y_12M_PRO_149(1M)_DC50%(2M)"
         },
         {
-          "policy": "5Y Self",
+          "policy": "5Y_Self",
           "term": 12,
           "price": 699,
           "promoCode": "SELF_5Y_12M_PRO_149(1M)_DC50%(2M)"
         },
         {
-          "policy": "5Y Visit",
+          "policy": "5Y_Visit",
           "term": 6,
           "price": 799,
-          "promoCode": null
+          "promoCode": "VISIT_5Y_6M_PRO_149(1M)_DC50%(2M)"
         }
       ],
       "description": "AS65GDBY0.ABAE\n(Alpha Pet) • รอบบิลที่ 1 (149)\n5Y Self ทุกๆ 12 เดือน 1,250 SELF_5Y_12M_PRO_149(1M)_DC50%(2M)\n699 • รอบบิลที่ 2-3 (349)\nลด 50% 2 เดือน (รอบบิลที่ 2-3)\nพื้นที่การใช้งาน 61.2 ตร.ม. •\nH13 HEPA/กาจัดกลิ่น"
@@ -1429,16 +1429,16 @@
       "pdf": "/pdfs/Price%20list_Aug_V3.pdf",
       "mode": "monthly",
       "price": 849,
-      "priceFrom": "5Y Self",
+      "priceFrom": "5Y_Self",
       "policies": [
         {
-          "policy": "5Y Visit",
+          "policy": "5Y_Visit",
           "term": 12,
           "price": 899,
           "promoCode": "VISIT_5Y_12M_PRO_149(1M)_DC50%(7M)"
         },
         {
-          "policy": "5Y Self",
+          "policy": "5Y_Self",
           "term": 12,
           "price": 849,
           "promoCode": "SELF_5Y_12M_PRO_149(1M)_DC50%(7M)"
@@ -1459,13 +1459,13 @@
       "pdf": "/pdfs/Price%20list_Aug_V3.pdf",
       "mode": "monthly",
       "price": 749,
-      "priceFrom": "5Y Visit",
+      "priceFrom": "5Y_Visit",
       "policies": [
         {
-          "policy": "5Y Visit",
+          "policy": "5Y_Visit",
           "term": 12,
           "price": 749,
-          "promoCode": null
+          "promoCode": "VISIT_5Y_12M_PRO_149(1M)_DC50%(7M)_FREE_GIFT"
         }
       ],
       "description": "DFC533FV.APYPETH รับฟรี! ไมโครเวฟ 20 ลิตรรุ่น MS2032GAS.BBKPETH",
@@ -1523,16 +1523,16 @@
       "pdf": "/pdfs/Price%20list_Aug_V3.pdf",
       "mode": "monthly",
       "price": 799,
-      "priceFrom": "6Y Self",
+      "priceFrom": "6Y_Self",
       "policies": [
         {
-          "policy": "5Y Self",
+          "policy": "5Y_Self",
           "term": 12,
           "price": 899,
           "promoCode": "SELF_5Y_12M_PRO_149(1M)_DC50%(7M)"
         },
         {
-          "policy": "6Y Self",
+          "policy": "6Y_Self",
           "term": 12,
           "price": 799,
           "promoCode": "SELF_6Y_12M_PRO_149(1M)_DC50%(7M)"
@@ -1553,12 +1553,12 @@
       "pdf": "/pdfs/Sale%20Price8%20-%20Subscription_V3.pdf",
       "mode": "monthly",
       "price": 349,
-      "priceFrom": "5Y_Visit",
+      "priceFrom": "6Y_Visit",
       "policies": [
         {
           "policy": "5Y_Visit",
           "term": 24,
-          "price": 349,
+          "price": 449,
           "promoCode": "VISIT_5Y_24M"
         },
         {
@@ -1703,7 +1703,7 @@
           "policy": "5Y_Visit",
           "term": 6,
           "price": 1249,
-          "promoCode": null
+          "promoCode": "VISIT_5Y_6M_PRO_149(1M)_DC50%(2M)_FREE_GIFT_"
         }
       ],
       "description": "GC-L24FFCBB.AEVPLM1 รับฟรี! ไมโครเวฟ 20 ลิตรรุ่น MS2032GAS.BBKPETH"
@@ -1877,12 +1877,12 @@
       "pdf": "/pdfs/Sale%20Price8%20-%20Subscription_V3.pdf",
       "mode": "monthly",
       "price": 649,
-      "priceFrom": "5Y_Visit",
+      "priceFrom": "6Y_Visit",
       "policies": [
         {
           "policy": "5Y_Visit",
           "term": 24,
-          "price": 649,
+          "price": 749,
           "promoCode": "VISIT_5Y_24M"
         },
         {
@@ -1902,19 +1902,13 @@
       "source": "Price list_Aug_V3.pdf",
       "page": 5,
       "srcPage": 7,
-      "y": 258,
+      "y": 190,
       "y2": 117,
       "pdf": "/pdfs/Price%20list_Aug_V3.pdf",
       "mode": "monthly",
       "price": 749,
       "priceFrom": "6Y_Visit",
       "policies": [
-        {
-          "policy": "6Y_Visit",
-          "term": 6,
-          "price": 1249,
-          "promoCode": null
-        },
         {
           "policy": "5Y_Visit",
           "term": 24,
@@ -1972,14 +1966,20 @@
       "y2": 231,
       "pdf": "/pdfs/Price%20list_Aug_V3.pdf",
       "mode": "monthly",
-      "price": 1449,
-      "priceFrom": "5Y_Visit",
+      "price": 1249,
+      "priceFrom": "6Y_Visit",
       "policies": [
         {
           "policy": "5Y_Visit",
           "term": 6,
           "price": 1449,
-          "promoCode": null
+          "promoCode": "VISIT_5Y_6M_PRO_149(1M)_ADD_"
+        },
+        {
+          "policy": "6Y_Visit",
+          "term": 6,
+          "price": 1249,
+          "promoCode": "VISIT_6Y_6M_PRO_149(1M)_ADD_"
         }
       ],
       "description": "GC-X257CMHW.AEEPLMT\n(Side by Side) Plumbing 5Y_Visit ทุกๆ 6 เดือน 1,449 ราคา 149.- (1 รอบบิลแรก) 1,300\nWATERFILTER\n+ Water Filter • รอบบิลที่ 2-60 (1,449)\nSIZE : 22.4 คิว/ 635 ลิตร\nสี Beige\nVISIT_6Y_6M_PRO_149(1M)_ADD_\nขนาดผลิตภัณฑ์ 6Y_Visit ทุกๆ 6 เดือน 1,249 1,100 WATERFILTER\nราคา 149.- (1 รอบบิลแรก)\n(กว้างxสูงxลึก, มม.) • รอบบิลที่ 2-72 (1,249)\n913x 1790x 735"
@@ -2003,7 +2003,7 @@
           "policy": "5Y",
           "term": null,
           "price": 549,
-          "promoCode": null
+          "promoCode": "NOSERVICE_5Y_PRO_ADV50%(12M)"
         }
       ],
       "description": "65NU855BPSA.ATM\n5Y\nขนาดทีวีแบบไม่รวมขาตั้ง (WxHxD mm)\n1447 x 838 x 70.8 • รอบบิลที่ 1- 12 (274.50)\n3,294 549 - NOSERVICE_5Y_PRO_ADV50%(12M)\nขนาดทีวีแบบรวมขาตั้ง (WxHxD mm) No •\n1447 x 901 x 269 Service"
@@ -2080,7 +2080,7 @@
           "policy": "5Y",
           "term": null,
           "price": 1099,
-          "promoCode": null
+          "promoCode": "NOSERVICE_5Y_PRO_ADV50%(12M)_"
         }
       ],
       "description": "OLED55C6PSA.ATM\n5Y • รอบบิลที่ 1- 12 (549.50)\nขนาดทีวีแบบไม่รวมขาตั้ง\nNOSERVICE_5Y_PRO_ADV50%(12M)_\n(WxHxD mm)\n1222 x 703 x 45.1 6,594 1,099 4,400 DC50%(8M)\nขนาดทีวีแบบรวมขาตั้งรอบบิลที่ 21 - 60 (1,099)\nNo Service\n(WxHxD mm)\n1222 x 757 x 230",
@@ -2109,7 +2109,7 @@
           "policy": "5Y",
           "term": null,
           "price": 1299,
-          "promoCode": null
+          "promoCode": "NOSERVICE_5Y_PRO_ADV50%(12M)_"
         }
       ],
       "description": "OLED65C6PSA.ATM\nขนาดทีวีแบบไม่รวมขาตั้ง 5Y\n(WxHxD mm)\n1441 x 826 x 45.1 7,794 1,299 5,200\nDC50%(8M)\nขนาดทีวีแบบรวมขาตั้ง 13M~20M (8 Months 50% Discount)\nNo Service\n(WxHxD mm) • รอบบิลที่ 21 - 60 (1,299)\n1441 x 880 x 230",
@@ -2191,7 +2191,7 @@
           "policy": "5Y",
           "term": null,
           "price": 2599,
-          "promoCode": null
+          "promoCode": "NOSERVICE_5Y_PRO_ADV50%(12M)"
         }
       ],
       "description": "100QNED86BS.ATM\n5Y\nขนาดทีวีแบบไม่รวมขาตั้ง (WxHxD mm)\n2230 x 1277 x 49.9 15,594 2,599 - NOSERVICE_5Y_PRO_ADV50%(12M)\nNo • Advance payment 50% 12 บิลแรก\nขนาดทีวีแบบรวมขาตั้ง (WxHxD mm) •รอบบิลที่ 13 - 60 (2,599)\nService\n2230 x 1372 x 434"
@@ -2239,7 +2239,7 @@
           "policy": "5Y",
           "term": null,
           "price": 649,
-          "promoCode": null
+          "promoCode": "NOSERVICE_5Y_PRO_ADV50%(12M)"
         }
       ],
       "description": "65QNED80BSA.ATM\n5Y\nขนาดทีวีแบบไม่รวมขาตั้ง (WxHxD mm)\n1455 x 841 x 67.9 3,894 649 - NOSERVICE_5Y_PRO_ADV50%(12M)\nNo • Advance payment 50% 12 บิลแรก\nขนาดทีวีแบบรวมขาตั้ง (WxHxD mm) รอบบิลที่ 13 - 60 (649)\nService\n1455 x 904 x 269"
@@ -2263,7 +2263,7 @@
           "policy": "5Y",
           "term": null,
           "price": 1698,
-          "promoCode": null
+          "promoCode": "NOSERVICE_5Y_PRO_ADV50%(12M)"
         },
         {
           "policy": "5Y",
@@ -2293,7 +2293,7 @@
           "policy": "5Y",
           "term": null,
           "price": 1349,
-          "promoCode": null
+          "promoCode": "NOSERVICE_5Y_PRO_ADV50%(12M)"
         }
       ],
       "description": "85QNED80BSA.ATM 5Y\nขนาดทีวีแบบไม่รวมขาตั้ง (WxHxD mm)\n1889 x 1087 x 67.0 8,094 1,349 - NOSERVICE_5Y_PRO_ADV50%(12M)\nNo • Advance payment 50% 12 บิลแรก • รอบบิลที่ 13 - 60 (1,349)\nขนาดทีวีแบบรวมขาตั้ง (WxHxD mm)\nService\n1889 x 1149 x 362"
@@ -2341,7 +2341,7 @@
           "policy": "5Y",
           "term": null,
           "price": 5094,
-          "promoCode": null
+          "promoCode": "NOSERVICE_5Y_PRO_ADV50%(12M)_"
         }
       ],
       "description": "Life Style TV\nLG StanbyME 2 Max NOSERVICE_5Y_PRO_ADV50%(12M)_\n5Y 5,094 849 3,400\nDC50%(8M)\n32LX6BDGA.ATM"
@@ -2389,7 +2389,7 @@
           "policy": "5Y",
           "term": null,
           "price": 699,
-          "promoCode": null
+          "promoCode": "NOSERVICE_5Y_PRO_ADV50%(12M)"
         }
       ],
       "description": "32U889SA-W.ATM 5Y\nNOSERVICE_5Y_PRO_ADV50%(12M) _\nจอมอนิเตอร์ 31.5\" 4K IPS Smart Monitor\nSwing จอสัมผัสขาตั้งหมุนได้ 4,194 699 2,800 DC50%(8M)\nขนาดแบบรวมขาตั้ง (WxHxD mm) No • 13M~20M (8 Months 50% Discount)\n727.4 x 1312.3 x 420 *มีรีโมท Service • รอบบิลที่ 21 - 60 (699)"
@@ -2413,7 +2413,7 @@
           "policy": "5Y",
           "term": null,
           "price": 399,
-          "promoCode": null
+          "promoCode": "NOSERVICE_5Y_PRO_ADV50%(12M)"
         }
       ],
       "description": "จาก\nรยะเวลาราคา\nราคาต่อโปรโมชัน\nรอบ\nจานวนเงินที่ต้องชาระราคาโปรปกติ\nเดือน (New)\nบริการ\n45GX950A-B.ATM\n5Y\nLG UltraGear 45\" OLED Dual-Mode\n5K2K 0.03ms, DisplayHDR True Black 8,994 1,499 Advance payment 50% 12 บิลแรก - NOSERVICE_5Y_PRO_ADV50%(12M)\nNo\nขนาดแบบรวมขาตั้ง (WxHxD mm) •รอบบิลที่ 13 - 60 (1,499)\nService\n991.6 x 665.6 x 342 *ไม่มีรีโมท\n52G930B-B.ATM\n5Y\nLG UltraGear evo G9| จอเกมมิ่ง 52”\nThe World’s Largest 5K2K 240Hz 7,194 1,199 Advance payment 50% 12 บิลแรก - NOSERVICE_5Y_PRO_ADV50%(12M)\nNo\nขนาดแบบรวมขาตั้ง (WxHxD mm) รอบบิลที่ 13 - 60 (1,199)\nService\n1174.6 x 713.1 x 350 *ไม่มีรีโมท\n40U990A-W.ATM\n5Y\nLG UltraFine 40 นิ้ว |40U990A| Nano IPS\nBlack 5K2K with Thunderbolt 5 5,994 999 Advance payment 50% 12 บิลแรก - NOSERVICE_5Y_PRO_ADV50%(12M)\nNo\nขนาดแบบรวมขาตั้ง (WxHxD mm) รอบบิลที่ 13 - 60 (999)\nService\n947.7 x 614.3 x 260 *ไม่มีรีโมท\n34U650A-B.ATM\n5Y\n“34” WQHD IPS 100Hz” IPS,\nCurved (3800R) IPS 100Hz 2,394 399 Advance payment 50% 12 บิลแรก - NOSERVICE_5Y_PRO_ADV50%(12M)\nNo\nขนาดแบบรวมขาตั้ง (WxHxD mm) รอบบิลที่ 13 - 60 (399)\nService\n816.7x535.2x230 *ไม่มีรีโมท"
@@ -2437,7 +2437,7 @@
           "policy": "5Y",
           "term": null,
           "price": 999,
-          "promoCode": null
+          "promoCode": "NOSERVICE_5Y_PRO_ADV50%(12M)"
         }
       ],
       "description": "จาก\nรยะเวลาราคา\nราคาต่อโปรโมชัน\nรอบ\nจานวนเงินที่ต้องชาระราคาโปรปกติ\nเดือน (New)\nบริการ\n45GX950A-B.ATM\n5Y\nLG UltraGear 45\" OLED Dual-Mode\n5K2K 0.03ms, DisplayHDR True Black 8,994 1,499 Advance payment 50% 12 บิลแรก - NOSERVICE_5Y_PRO_ADV50%(12M)\nNo\nขนาดแบบรวมขาตั้ง (WxHxD mm) •รอบบิลที่ 13 - 60 (1,499)\nService\n991.6 x 665.6 x 342 *ไม่มีรีโมท\n52G930B-B.ATM\n5Y\nLG UltraGear evo G9| จอเกมมิ่ง 52”\nThe World’s Largest 5K2K 240Hz 7,194 1,199 Advance payment 50% 12 บิลแรก - NOSERVICE_5Y_PRO_ADV50%(12M)\nNo\nขนาดแบบรวมขาตั้ง (WxHxD mm) รอบบิลที่ 13 - 60 (1,199)\nService\n1174.6 x 713.1 x 350 *ไม่มีรีโมท\n40U990A-W.ATM\n5Y\nLG UltraFine 40 นิ้ว |40U990A| Nano IPS\nBlack 5K2K with Thunderbolt 5 5,994 999 Advance payment 50% 12 บิลแรก - NOSERVICE_5Y_PRO_ADV50%(12M)\nNo\nขนาดแบบรวมขาตั้ง (WxHxD mm) รอบบิลที่ 13 - 60 (999)\nService\n947.7 x 614.3 x 260 *ไม่มีรีโมท\n34U650A-B.ATM\n5Y\n“34” WQHD IPS 100Hz” IPS,\nCurved (3800R) IPS 100Hz 2,394 399 Advance payment 50% 12 บิลแรก - NOSERVICE_5Y_PRO_ADV50%(12M)\nNo\nขนาดแบบรวมขาตั้ง (WxHxD mm) รอบบิลที่ 13 - 60 (399)\nService\n816.7x535.2x230 *ไม่มีรีโมท"
@@ -2461,7 +2461,7 @@
           "policy": "5Y",
           "term": null,
           "price": 1499,
-          "promoCode": null
+          "promoCode": "NOSERVICE_5Y_PRO_ADV50%(12M)"
         }
       ],
       "description": "จาก\nรยะเวลาราคา\nราคาต่อโปรโมชัน\nรอบ\nจานวนเงินที่ต้องชาระราคาโปรปกติ\nเดือน (New)\nบริการ\n45GX950A-B.ATM\n5Y\nLG UltraGear 45\" OLED Dual-Mode\n5K2K 0.03ms, DisplayHDR True Black 8,994 1,499 Advance payment 50% 12 บิลแรก - NOSERVICE_5Y_PRO_ADV50%(12M)\nNo\nขนาดแบบรวมขาตั้ง (WxHxD mm) •รอบบิลที่ 13 - 60 (1,499)\nService\n991.6 x 665.6 x 342 *ไม่มีรีโมท\n52G930B-B.ATM\n5Y\nLG UltraGear evo G9| จอเกมมิ่ง 52”\nThe World’s Largest 5K2K 240Hz 7,194 1,199 Advance payment 50% 12 บิลแรก - NOSERVICE_5Y_PRO_ADV50%(12M)\nNo\nขนาดแบบรวมขาตั้ง (WxHxD mm) รอบบิลที่ 13 - 60 (1,199)\nService\n1174.6 x 713.1 x 350 *ไม่มีรีโมท\n40U990A-W.ATM\n5Y\nLG UltraFine 40 นิ้ว |40U990A| Nano IPS\nBlack 5K2K with Thunderbolt 5 5,994 999 Advance payment 50% 12 บิลแรก - NOSERVICE_5Y_PRO_ADV50%(12M)\nNo\nขนาดแบบรวมขาตั้ง (WxHxD mm) รอบบิลที่ 13 - 60 (999)\nService\n947.7 x 614.3 x 260 *ไม่มีรีโมท\n34U650A-B.ATM\n5Y\n“34” WQHD IPS 100Hz” IPS,\nCurved (3800R) IPS 100Hz 2,394 399 Advance payment 50% 12 บิลแรก - NOSERVICE_5Y_PRO_ADV50%(12M)\nNo\nขนาดแบบรวมขาตั้ง (WxHxD mm) รอบบิลที่ 13 - 60 (399)\nService\n816.7x535.2x230 *ไม่มีรีโมท"
@@ -2485,7 +2485,7 @@
           "policy": "5Y",
           "term": null,
           "price": 1199,
-          "promoCode": null
+          "promoCode": "NOSERVICE_5Y_PRO_ADV50%(12M)"
         }
       ],
       "description": "จาก\nรยะเวลาราคา\nราคาต่อโปรโมชัน\nรอบ\nจานวนเงินที่ต้องชาระราคาโปรปกติ\nเดือน (New)\nบริการ\n45GX950A-B.ATM\n5Y\nLG UltraGear 45\" OLED Dual-Mode\n5K2K 0.03ms, DisplayHDR True Black 8,994 1,499 Advance payment 50% 12 บิลแรก - NOSERVICE_5Y_PRO_ADV50%(12M)\nNo\nขนาดแบบรวมขาตั้ง (WxHxD mm) •รอบบิลที่ 13 - 60 (1,499)\nService\n991.6 x 665.6 x 342 *ไม่มีรีโมท\n52G930B-B.ATM\n5Y\nLG UltraGear evo G9| จอเกมมิ่ง 52”\nThe World’s Largest 5K2K 240Hz 7,194 1,199 Advance payment 50% 12 บิลแรก - NOSERVICE_5Y_PRO_ADV50%(12M)\nNo\nขนาดแบบรวมขาตั้ง (WxHxD mm) รอบบิลที่ 13 - 60 (1,199)\nService\n1174.6 x 713.1 x 350 *ไม่มีรีโมท\n40U990A-W.ATM\n5Y\nLG UltraFine 40 นิ้ว |40U990A| Nano IPS\nBlack 5K2K with Thunderbolt 5 5,994 999 Advance payment 50% 12 บิลแรก - NOSERVICE_5Y_PRO_ADV50%(12M)\nNo\nขนาดแบบรวมขาตั้ง (WxHxD mm) รอบบิลที่ 13 - 60 (999)\nService\n947.7 x 614.3 x 260 *ไม่มีรีโมท\n34U650A-B.ATM\n5Y\n“34” WQHD IPS 100Hz” IPS,\nCurved (3800R) IPS 100Hz 2,394 399 Advance payment 50% 12 บิลแรก - NOSERVICE_5Y_PRO_ADV50%(12M)\nNo\nขนาดแบบรวมขาตั้ง (WxHxD mm) รอบบิลที่ 13 - 60 (399)\nService\n816.7x535.2x230 *ไม่มีรีโมท"
@@ -2503,19 +2503,19 @@
       "pdf": "/pdfs/Price%20list_Aug_V3.pdf",
       "mode": "monthly",
       "price": 89,
-      "priceFrom": "6Y No Service",
+      "priceFrom": "6Y_No_Service",
       "policies": [
         {
-          "policy": "6Y No Service",
+          "policy": "6Y_No_Service",
           "term": null,
           "price": 89,
-          "promoCode": null
+          "promoCode": "NOSERVICE_6Y"
         },
         {
-          "policy": "6Y No",
+          "policy": "6Y_No",
           "term": null,
           "price": 89,
-          "promoCode": null
+          "promoCode": "NOSERVICE_6Y"
         }
       ],
       "description": "MS3032JAS.BBKPETH"
@@ -2539,7 +2539,7 @@
           "policy": "5Y",
           "term": null,
           "price": 139,
-          "promoCode": null
+          "promoCode": "NOSERVICE_5Y_PRO_ADV50%(12M)"
         }
       ],
       "description": "LG xboom Bounce\n5Y"
@@ -2563,7 +2563,7 @@
           "policy": "5Y",
           "term": null,
           "price": 109,
-          "promoCode": null
+          "promoCode": "NOSERVICE_5Y_PRO_ADV50%(12M)"
         }
       ],
       "description": "LG xboom Grab\n5Y\nพลังเสียง 20W (Woofer)+ 10W •รอบบิลที่ 1- 12 (54.50)\n654 109 -\n(Tweeter) • NOSERVICE_5Y_PRO_ADV50%(12M)\nNo •รอบบิลที่ 13 - 60 (109)\nขนาดผลิตภัณฑ์ (WxHxD mm)\nService\n211 x 71.6 x 70"
@@ -2587,7 +2587,7 @@
           "policy": "5Y",
           "term": null,
           "price": 299,
-          "promoCode": null
+          "promoCode": "NOSERVICE_5Y_PRO_ADV50%(12M)"
         }
       ],
       "description": "5Y\nLG xboom STAGE301 • รอบบิลที่ 1- 12 (149.50)\n1,794 299 -\nขนาดผลิตภัณฑ์ •\n(WxHxD mm) 352 x 415 x 385 No\nService"
@@ -2611,7 +2611,7 @@
           "policy": "5Y",
           "term": null,
           "price": 189,
-          "promoCode": null
+          "promoCode": "NOSERVICE_5Y_PRO_ADV50%(12M)"
         }
       ],
       "description": "LG Sound bar 5Y\nS70TY.ATHALLD • รอบบิลที่ 1- 12 (94.50)\nDolby Atmos 3.1.1 channel\n1,134 189 -\nพลังเสียง 400W / Hi-res 24bit/96kHz\nขนาดผลิตภัณฑ์ (WxHxD mm)\nNo Service\nซาวด์บาร์: 950 x 63x 115\nซับวูฟเฟอร์ : 202 x 377 x285"
